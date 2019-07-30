@@ -1,0 +1,168 @@
+{
+  "haxe-openfl": {
+    "Getting started": [
+      "haxe-openfl/installation",
+      {
+        "type": "subcategory",
+        "label": "Create a new project in…",
+        "ids": ["haxe-openfl/haxedevelop", "haxe-openfl/visual-studio-code"]
+      }
+    ]
+  },
+  "as3-starling": {
+    "Getting started": [
+      "as3-starling/installation",
+      "as3-starling/getting-started",
+      {
+        "type": "subcategory",
+        "label": "Create a new project in…",
+        "ids": [
+          "as3-starling/flash-builder",
+          "as3-starling/intellij-idea",
+          "as3-starling/flashdevelop",
+          "as3-starling/flash-pro"
+        ]
+      },
+      "as3-starling/features",
+      "as3-starling/faq/index"
+    ],
+    "Components": [
+      "as3-starling/alert",
+      "as3-starling/auto-complete",
+      "as3-starling/button",
+      "as3-starling/button-group",
+      "as3-starling/callout",
+      "as3-starling/check",
+      "as3-starling/data-grid",
+      "as3-starling/date-time-spinner",
+      "as3-starling/default-item-renderers",
+      "as3-starling/drawers",
+      "as3-starling/grouped-list",
+      "as3-starling/header",
+      "as3-starling/image-loader",
+      "as3-starling/label",
+      "as3-starling/layout-group",
+      "as3-starling/list",
+      "as3-starling/numeric-stepper",
+      "as3-starling/page-indicator",
+      "as3-starling/panel",
+      "as3-starling/panel-screen",
+      "as3-starling/picker-list",
+      "as3-starling/progress-bar",
+      "as3-starling/radio",
+      "as3-starling/screen",
+      "as3-starling/screen-navigator",
+      "as3-starling/scroll-bar",
+      "as3-starling/scroll-container",
+      "as3-starling/scroll-screen",
+      "as3-starling/scroll-text",
+      "as3-starling/simple-scroll-bar",
+      "as3-starling/slider",
+      "as3-starling/sound-player",
+      "as3-starling/spinner-list",
+      "as3-starling/stack-screen-navigator",
+      "as3-starling/tab-bar",
+      "as3-starling/tab-navigator",
+      "as3-starling/text-area",
+      "as3-starling/text-callout",
+      "as3-starling/text-input",
+      "as3-starling/toast",
+      "as3-starling/toggle-button",
+      "as3-starling/toggle-switch",
+      "as3-starling/tree",
+      "as3-starling/video-player",
+      "as3-starling/web-view"
+    ],
+    "Media components": [
+      "as3-starling/sound-player",
+      "as3-starling/video-player",
+      "as3-starling/media-player-controls"
+    ],
+    "Text": [
+      "as3-starling/text-renderers",
+      "as3-starling/text-editors",
+      "as3-starling/text-block-text-renderer",
+      "as3-starling/bitmap-font-text-renderer",
+      "as3-starling/text-field-text-renderer",
+      "as3-starling/stage-text-text-editor",
+      "as3-starling/text-block-text-editor",
+      "as3-starling/bitmap-font-text-editor",
+      "as3-starling/text-field-text-editor"
+    ],
+    "Layouts": [
+      "as3-starling/anchor-layout",
+      "as3-starling/flow-layout",
+      "as3-starling/horizontal-layout",
+      "as3-starling/horizontal-spinner-layout",
+      "as3-starling/slide-show-layout",
+      "as3-starling/tiled-columns-layout",
+      "as3-starling/tiled-rows-layout",
+      "as3-starling/vertical-layout",
+      "as3-starling/vertical-spinner-layout",
+      "as3-starling/waterfall-layout",
+      "as3-starling/custom-layouts",
+      "as3-starling/layout-data",
+      "as3-starling/virtual-custom-layouts"
+    ],
+    "Skinning and themes": [
+      "as3-starling/skinning",
+      "as3-starling/themes",
+      "as3-starling/extending-themes",
+      "as3-starling/custom-themes",
+      "as3-starling/style-providers",
+      "as3-starling/theme-assets",
+      "as3-starling/theme-sources"
+    ],
+    "Custom components": [
+      "as3-starling/component-lifecycle",
+      "as3-starling/component-properties-methods",
+      "as3-starling/component-validation",
+      "as3-starling/item-renderers",
+      "as3-starling/layout-group-item-renderers",
+      "as3-starling/feathers-control-item-renderers"
+    ],
+    "Animation": ["as3-starling/effects", "as3-starling/transitions"],
+    "Miscellaneous": [
+      "as3-starling/pop-ups",
+      "as3-starling/focus",
+      "as3-starling/drag-drop",
+      "as3-starling/tool-tips",
+      "as3-starling/sdk/index",
+      "as3-starling/cookbook/index",
+      "as3-starling/faq/index",
+      "as3-starling/prerelease",
+      "as3-starling/deprecation-policy",
+      "as3-starling/beta-policy"
+    ],
+    "Contributing": ["as3-starling/build", "as3-starling/coding-conventions"],
+    "Migration guides": [
+      "as3-starling/migration-guide-4.0",
+      "as3-starling/migration-guide-3.3",
+      "as3-starling/migration-guide-3.1",
+      "as3-starling/migration-guide-3.0",
+      "as3-starling/migrating-themes"
+    ]
+  },
+  "as3-starling-sdk": {
+    "Getting started": [
+      "as3-starling/sdk/installation-instructions",
+      "as3-starling/sdk/getting-started-mxml",
+      {
+        "type": "subcategory",
+        "label": "Create a new project in…",
+        "ids": [
+          "as3-starling/sdk/flash-builder",
+          "as3-starling/sdk/intellij-idea",
+          "as3-starling/sdk/visual-studio-code"
+        ]
+      },
+      "as3-starling/sdk/features"
+    ],
+    "Core concepts": ["as3-starling/sdk/mxml"],
+    "Advanced": [
+      "as3-starling/sdk/custom-starling-initialization",
+      "as3-starling/sdk/build-source-code",
+      "as3-starling/sdk/build-binary-distribution"
+    ]
+  }
+}

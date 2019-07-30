@@ -1,0 +1,166 @@
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-family: "Source Sans Pro", source-sans-pro, sans-serif;
+	font-size: 24px;
+	line-height: 1.5em;
+	background-color: #faf1eb;
+	background-image: url("../img/top-right.png");
+	background-position: top right;
+	background-repeat: no-repeat;
+	background-size: 88px 51px;
+	color: #292522;
+}
+
+html, body {
+	padding: 0;
+	margin: 0;
+}
+
+a:link, a:visited {
+	color: #3073bf;
+}
+
+a:hover, a:active {
+	color: #314459;
+}
+
+a.anchor {
+	font-size: 18px;
+	text-decoration: none;
+	color: #a99582;
+	margin-left: 4px;
+}
+
+a.anchor:hover, a.anchor:active {
+	color: #3073bf;
+}
+
+h2 a.anchor, h3 a.anchor {
+	visibility: hidden;
+}
+
+h2:hover a.anchor, h3:hover a.anchor {
+	visibility: visible;
+}
+
+.container {
+	text-align: center;
+	margin-top: 1.5em;
+}
+
+.container:first-of-type {
+	margin-top: 0;
+}
+
+.row {
+	max-width: 760px;
+	margin: auto;
+	text-align: left;
+	padding: 0 20px;
+}
+
+picture > img, .row > img {
+	max-width: 100%;
+}
+
+header h1 {
+	background: url("../img/feathers-openfl-haxe.png") top center no-repeat;
+	background-size: 354px 89px;
+	min-width: 354px;
+	height: 89px;
+	text-indent: -10000px;
+	margin: 100px 65px 60px 0;
+}
+
+h1 {
+	font-size: 36px;
+}
+
+h2 {
+	font-size: 30px;
+}
+
+h3 {
+	font-size: 24px;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, monospace;
+}
+
+form {
+	margin: auto;
+	text-align: left;
+	font-size: 22px;
+}
+
+form > .mc-field-group {
+	margin-bottom: 0.5em;
+}
+
+form > .mc-field-group > input[type="text"],
+	form > .mc-field-group > input[type="email"] {
+	display: block;
+	width: 100%;
+	background-color: #ffffff;
+	color: #292522;
+	font-size: 24px;
+	border-radius: 6px;
+	border: none;
+	padding: 0.5em;
+	margin-top: 0.25em;
+}
+
+form > .mc-field-group .asterisk {
+	color: #ff7700;
+}
+
+button, input[type="submit"] {
+	background-color: #ff9940;
+	border: solid 4px #ff9940;
+	border-radius: 20px;
+	color: #292522;
+	font-size: 24px;
+	line-height: 1.5em;
+	padding: 0.25em 0.75em;
+	margin-top: 1em;
+}
+
+button:hover, input[type="submit"]:hover {
+	background-color: #ffa759;
+	cursor: pointer;
+}
+
+.container#signup {
+	background-color: #ffddbf;
+	padding: 1.5em 0;
+}
+
+.container#signup h2 {
+	margin-top: 0;
+}
+
+footer {
+	font-size: 18px;
+}
+
+.publication-date {
+	text-align: right;
+}
+
+#countdown-timer {
+	font-size: 24px;
+	font-weight: normal;
+	text-align: center;
+}
+
+#kickstarter {
+	display: none;
+	text-align: center;
+	font-weight: bold;
+	margin: 4em 0;
+}

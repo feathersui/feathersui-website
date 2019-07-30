@@ -1,0 +1,23 @@
+.showcaseContainer .blockElement {
+  max-width: 940px;
+  margin: 0 auto 3em auto;
+  text-align: left;
+}
+
+.showcaseContainer .blockImage {
+  max-width: 100%;
+}
+
+.showcastContainer .imageAlignTop .blockImage {
+  max-width: 100%;
+}
+
+.showcaseContainer .container .wrapper .blockContent h2 {
+  margin-top: 16px;
+  margin-bottom: 10px;
+}
+
+.showcaseContainer .container .wrapper .blockContent p {
+  margin: 0;
+  text-align: left;
+}

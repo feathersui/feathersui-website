@@ -1,0 +1,22 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+# require https
+RewriteCond %{HTTPS} !=on
+RewriteRule ^/?(.*) https://%{SERVER_NAME}/$1 [R,L]
+
+# redirect /help to /learn/as3-starling
+RewriteRule ^/?help([A-Za-z\-/.]*)$ /learn/as3-starling$1 [R=301,L]
+
+# redirect /documentation to /api-reference
+RewriteRule ^/?documentation([A-Za-z\-/.]*)$ /api-reference$1 [R=301,L]
+RewriteRule ^/?beta/documentation([A-Za-z\-/.]*)$ /beta/api-reference$1 [R=301,L]
+
+# redirect /sdk/feathers-sdk-manager/ to /sdk/download/
+RewriteRule ^/?sdk/feathers-sdk-manager/$ /sdk/download/$1 [R=301,L]
+
+# redirect robotlegs-framework-starling API to new github.io site
+RewriteRule ^/?api-reference/robotlegs-starling([A-Za-z\-/.]*)$ http://joshtynjala.github.io/robotlegs-framework-starling/api-reference$1 [R=301,L]
+</IfModule>
+
+AddType application/vnd.adobe.air-application-installer-package+zip air
