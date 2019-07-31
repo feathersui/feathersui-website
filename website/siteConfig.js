@@ -108,9 +108,12 @@ const siteConfig = {
   disableHeaderTitle: true,
   docsSideNavCollapsible: true,
   separateCss: [
-    `${path.sep}static${path.sep}api-reference${path.sep}`,
-    `${path.sep}static${path.sep}openfl${path.sep}`,
-    `${path.sep}static${path.sep}examples${path.sep}`
+    `/static/api-reference/`,
+    `\\static\\api-reference\\`,
+    `/static/openfl/`,
+    `\\static\\openfl\\`,
+    `/static/examples/`,
+    `\\static\\examples\\`
   ],
   gaTrackingId: "UA-34854617-1"
 };
