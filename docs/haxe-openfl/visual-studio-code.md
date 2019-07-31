@@ -105,11 +105,13 @@ How to fix some issues that you may encounter.
 
 ### Error: Command failed: lime display html5
 
-This error indicates that [Lime](https://lime.software/) is not installed from [Haxelib](https://lib.haxe.org/). It should have been installed automatically when you [installed Feathers UI](installation.md). However, you can install it separately by running the following command in a terminal:
+This error may indicate that [Lime](https://lime.software/) is not installed from [Haxelib](https://lib.haxe.org/). It should have been installed automatically when you [installed Feathers UI](installation.md). However, you can install it manually by running the following command in a terminal:
 
 ```sh
 haxelib install lime
 ```
+
+This error may also indicate a problem in your _project.xml_ file.
 
 ### Error: Could not find haxelib _[library name]_, does it need to be installed?
 

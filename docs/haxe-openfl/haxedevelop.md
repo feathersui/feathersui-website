@@ -82,7 +82,7 @@ How to fix some issues that you may encounter.
 
 ### Error: Library lime is not installed
 
-This error indicates that [Lime](https://lime.software/) is not installed from [Haxelib](https://lib.haxe.org/). It should have been installed automatically when you [installed Feathers UI](installation.md). However, you can install it separately by running the following command in a terminal:
+This error indicates that [Lime](https://lime.software/) is not installed from [Haxelib](https://lib.haxe.org/). It should have been installed automatically when you [installed Feathers UI](installation.md). However, you can install it manually by running the following command in a terminal:
 
 ```sh
 haxelib install lime
