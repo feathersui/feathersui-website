@@ -19,7 +19,7 @@ In the following beginner-level tutorial, we'll use our first Feathers [`Button`
 
 ## Final Result
 
-[![feathers-hello-world.jpg](learn/as3-starling/images/feathers-hello-world.jpg)](https://feathersui.com/examples/hello-world/)
+[![feathers-hello-world.jpg](/learn/as3-starling/images/feathers-hello-world.jpg)](https://feathersui.com/examples/hello-world/)
 
 See the [Hello World example](https://feathersui.com/examples/hello-world/) running live in your browser. Requires [Adobe Flash Player](http://get.adobe.com/flash).
 
