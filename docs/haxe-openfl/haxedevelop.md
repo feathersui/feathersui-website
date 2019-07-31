@@ -22,10 +22,10 @@ sidebar_label: HaxeDevelop
 
 1. Open _project.xml_.
 
-1. Find the line where **openfl** is specified as a [Haxelib](https://lib.haxe.org/) dependency, and add the following dependencies after it:
+1. Find the line where **openfl** is specified as a [Haxelib](https://lib.haxe.org/) dependency, and add a new dependency for Feathers UI after it:
 
    ```xml
-   <haxelib name="actuate" />
+   <haxelib name="openfl" />
    <haxelib name="feathersui" />
    ```
 

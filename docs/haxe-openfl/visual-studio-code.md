@@ -37,8 +37,6 @@ With a few free extensions, [Visual Studio Code](https://code.visualstudio.com/)
        <window fps="60"/>
        <window fps="0" if="html5"/>
        <source path="src" />
-       <haxelib name="openfl" />
-       <haxelib name="actuate" />
        <haxelib name="feathersui" />
    </project>
    ```
