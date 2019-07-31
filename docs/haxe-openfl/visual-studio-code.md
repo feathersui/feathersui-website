@@ -8,10 +8,15 @@ With a few free extensions, [Visual Studio Code](https://code.visualstudio.com/)
 
 ## Prerequisites
 
-- You must [install Feathers UI](installation.md) before creating a new project.
+- [Install Feathers UI from Haxelib](installation.md)
+
 - Install the following extensions for Visual Studio Code:
-  _ [Haxe Support for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=nadako.vshaxe)
-  _ [Lime/OpenFL Support for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=openfl.lime-vscode-extension) \* [Debugger for Chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome)
+
+  - [Haxe Support for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=nadako.vshaxe)
+
+  - [Lime/OpenFL Support for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=openfl.lime-vscode-extension)
+
+  - [Debugger for Chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome)
 
 ## Create a project
 
@@ -26,15 +31,15 @@ With a few free extensions, [Visual Studio Code](https://code.visualstudio.com/)
    ```xml
    <?xml version="1.0" encoding="utf-8"?>
    <project>
-   	<meta title="MyProject" package="com.example" version="1.0.0" company="My Company" />
-   	<app main="Main" path="build" file="Main" />
-   	<window allow-high-dpi="true"/>
-   	<window fps="60"/>
-   	<window fps="0" if="html5"/>
-   	<source path="src" />
-   	<haxelib name="openfl" />
-   	<haxelib name="actuate" />
-   	<haxelib name="feathersui" />
+       <meta title="MyProject" package="com.example" version="1.0.0" company="My Company" />
+       <app main="Main" path="build" file="Main" />
+       <window allow-high-dpi="true"/>
+       <window fps="60"/>
+       <window fps="0" if="html5"/>
+       <source path="src" />
+       <haxelib name="openfl" />
+       <haxelib name="actuate" />
+       <haxelib name="feathersui" />
    </project>
    ```
 
@@ -44,9 +49,9 @@ With a few free extensions, [Visual Studio Code](https://code.visualstudio.com/)
    import openfl.display.Sprite;
 
    class Main extends Sprite {
-   	public function new() {
-   		super();
-   	}
+       public function new() {
+           super();
+       }
    }
    ```
 
@@ -63,12 +68,12 @@ With a few free extensions, [Visual Studio Code](https://code.visualstudio.com/)
 
    ```hx
    public function new() {
-   	super();
+       super();
 
-   	var button = new Button();
-   	button.text = "Click Me";
-   	button.addEventListener(MouseEvent.CLICK, onButtonClick);
-   	addChild(button);
+       var button = new Button();
+       button.text = "Click Me";
+       button.addEventListener(MouseEvent.CLICK, onButtonClick);
+       addChild(button);
    }
    ```
 
@@ -76,31 +81,46 @@ With a few free extensions, [Visual Studio Code](https://code.visualstudio.com/)
 
    ```hx
    private function onButtonClick(event:MouseEvent):Void {
-   	trace("Clicked the button");
+       trace("Clicked the button");
    }
    ```
 
 ## Run the project
 
 1. In Visual Studio Code's status bar, you should find a button that allows you to choose a target platform. Select **HTML5/Debug**.
+
 1. From the **Debug** menu, choose **Add Configuration…**.
+
 1. Select **Lime** from the list of available environments.
+
 1. From the **Debug** menu, choose **Start Debugging** (or use the <kbd>F5</kbd> keyboard shortcut).
+
 1. The project should launch in Chrome.
+
    > If your project does not launch in a browser, check the **Problems** panel or the **Terminal** panel for errors.
+
 1. If you click on the button, it will log a message to the **Debug Console** in Visual Studio Code.
 
 ## Troubleshooting
 
 How to fix some issues that you may encounter.
 
-### Error: Could not find haxelib "actuate", does it need to be installed?
+### Error: Command failed: lime display html5
 
-This error indicates that one or more of the Feathers UI dependencies is not installed. See [Install Feathers UI](installation.md) for instructions.
+This error indicates that [Lime](https://lime.software/) is not installed from [Haxelib](https://lib.haxe.org/). It should have been installed automatically when you [installed Feathers UI](installation.md). However, you can install it separately by running the following command in a terminal:
 
-You may need to close and re-open your workspace folder after installing a new dependency.
+```sh
+haxelib install lime
+```
+
+### Error: Could not find haxelib _[library name]_, does it need to be installed?
+
+This error indicates that one or more of the Feathers UI dependencies is not installed from [Haxelib](https://lib.haxe.org/). See [Install Feathers UI](installation.md) for complete instructions.
+
+> You may need to close and re-open your workspace folder after installing a new dependency.
 
 ## Further Reading
 
 - [Visual Studio Code documentation](https://code.visualstudio.com/docs)
+
 - [OpenFL/Lime project.xml format](https://lime.software/docs/project-files/xml-format/)

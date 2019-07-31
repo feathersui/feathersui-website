@@ -8,7 +8,7 @@ sidebar_label: HaxeDevelop
 
 ## Prerequisites
 
-You must [install Feathers UI](installation.md) before creating a new project.
+- [Install Feathers UI from Haxelib](installation.md)
 
 ## Create a project
 
@@ -45,12 +45,12 @@ You must [install Feathers UI](installation.md) before creating a new project.
    ```hx
    public function new()
    {
-   	super();
+       super();
 
-   	var button = new Button();
-   	button.text = "Click Me";
-   	button.addEventListener(MouseEvent.CLICK, onButtonClick);
-   	addChild(button);
+       var button = new Button();
+       button.text = "Click Me";
+       button.addEventListener(MouseEvent.CLICK, onButtonClick);
+       addChild(button);
    }
    ```
 
@@ -59,16 +59,20 @@ You must [install Feathers UI](installation.md) before creating a new project.
    ```hx
    private function onButtonClick(event:MouseEvent):Void
    {
-   	trace("Clicked the button");
+       trace("Clicked the button");
    }
    ```
 
 ## Run the project
 
 1. In HaxeDevelop's toolbar, you should see two drop-downs. One will have either _Debug_ or _Release_ selected, and the other will have the name of the target platform, such as _html5_, _windows_, or _android_. Select **Debug** and **html5**.
+
 1. From the **Project** menu, choose **Test Project** (or use the <kbd>F5</kbd> keyboard shortcut).
+
 1. The project should launch in your default web browser.
+
    > If your project does not launch in a browser, check the **Results** panel or **Output** panel for errors.
+
 1. If you click on the button, it will log a message to your web browser's debug console.
    > [Open your web browser's developer tools](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_are_browser_developer_tools) to find the debug console other other useful tools for web developers.
 
@@ -76,14 +80,24 @@ You must [install Feathers UI](installation.md) before creating a new project.
 
 How to fix some issues that you may encounter.
 
-### Error: Could not find haxelib "actuate", does it need to be installed?
+### Error: Library lime is not installed
 
-This error indicates that one or more of the Feathers UI dependencies is not installed. See [Install Feathers UI](installation.md) for instructions.
+This error indicates that [Lime](https://lime.software/) is not installed from [Haxelib](https://lib.haxe.org/). It should have been installed automatically when you [installed Feathers UI](installation.md). However, you can install it separately by running the following command in a terminal:
 
-You may need to close and re-open your project after installing a new dependency.
+```sh
+haxelib install lime
+```
+
+### Error: Could not find haxelib _[library name]_, does it need to be installed?
+
+This error indicates that one or more of the Feathers UI dependencies is not installed. See [Install Feathers UI](installation.md) for complete instructions.
+
+> You may need to close and re-open your project after installing a new dependency.
 
 ## Further Reading
 
 - [HaxeDevelop documentation](https://haxedevelop.org/system-requirements.html)
+
 - [OpenFL/Lime project.xml format](https://lime.software/docs/project-files/xml-format/)
+
 - [MDN: What are browser developer tools?](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_are_browser_developer_tools)
