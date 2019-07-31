@@ -13,7 +13,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="">
 	<meta name="author" content="Josh Tynjala">
-	<link rel="stylesheet" type="text/css" href="/styles/examples.css">
+	<link rel="stylesheet" type="text/css" href="../css/examples.css">
 	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
 	<script type="text/javascript">
 		swfobject.registerObject("example", "<?php echo $flash_version; ?>", "/examples/expressInstall.swf");
