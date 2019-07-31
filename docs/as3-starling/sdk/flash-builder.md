@@ -3,7 +3,7 @@ title: Set up the Feathers SDK in Adobe Flash Builder
 sidebar_label: Adobe Flash Builder
 ---
 
-Let's get your [Flash Builder](http://www.adobe.com/products/flash-builder.html) development environment setup to use the [Feathers SDK](http://feathersui.com/sdk/).
+Let's get your [Flash Builder](http://www.adobe.com/products/flash-builder.html) development environment setup to use the [Feathers SDK](https://feathersui.com/sdk/).
 
 > These instructions apply to both Flash Builder 4.6 and Flash Builder 4.7. Older versions of Flash Builder are not supported.
 

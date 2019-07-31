@@ -1,3 +1,3 @@
 <?php
-	header("Location: http://feathersui.com/examples/");
+	header("Location: https://feathersui.com/examples/");
 ?>

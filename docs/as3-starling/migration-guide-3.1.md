@@ -44,7 +44,7 @@ button.setFontStylesForState( ButtonState.HOVER, new TextFormat( "_sans", 20, 0x
 
 ## Style properties and themes
 
-In previous versions of Feathers, it was easy to run into conflicts with the theme when attempting to skin components. To avoid this issue, you could use the [`AddOnFunctionStyleProvider`](http://feathersui.com/api-reference/feathers/skins/AddOnFunctionStyleProvider.html) class, set the [`styleProvider`](/api-reference/feathers/core/FeathersControl.html#styleProvider) property to `null`, wait until a component initialized, or [extend the theme](extending-themes.md). However, each of these options could be somewhat cumbersome for minor tweaks to a single component's appearance.
+In previous versions of Feathers, it was easy to run into conflicts with the theme when attempting to skin components. To avoid this issue, you could use the [`AddOnFunctionStyleProvider`](/api-reference/feathers/skins/AddOnFunctionStyleProvider.html) class, set the [`styleProvider`](/api-reference/feathers/core/FeathersControl.html#styleProvider) property to `null`, wait until a component initialized, or [extend the theme](extending-themes.md). However, each of these options could be somewhat cumbersome for minor tweaks to a single component's appearance.
 
 Starting with Feathers 3.1, certain properties are now considered "styles". If you set a "style property" outside of the theme, you don't need to worry about the theme replacing it later. However, any other styles from the theme won't be affected. As an example, if you wanted to customize a button's font styles outside the theme, but keep the background skin from the theme, it's easy.
 

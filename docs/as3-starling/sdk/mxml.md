@@ -3,7 +3,7 @@ title: The complete guide to MXML in the Feathers SDK
 sidebar_label: MXML
 ---
 
-The [Feathers SDK](http://feathersui.com/sdk/) supports using MXML to declaratively layout user interfaces at compile time. MXML provides a number of features to reduce boilerplate ActionScript code and make user interface code more readable.
+The [Feathers SDK](https://feathersui.com/sdk/) supports using MXML to declaratively layout user interfaces at compile time. MXML provides a number of features to reduce boilerplate ActionScript code and make user interface code more readable.
 
 - [Add children to containers](#add-children-to-containers)
 - [Set properties on objects](#set-properties-on-objects)

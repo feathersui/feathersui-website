@@ -17,7 +17,7 @@ Whether you're using the latest unstable version of Feathers or you've made chan
 
 ## Build Instructions
 
-The main build script is `build.xml`, located in the root of the source tree. This file is only available if you download the full project source code for [Feathers on Github](https://github.com/joshtynjala/feathers). The build script is **not** included in the ZIP file that is downloadable from the [Feathers website](http://feathersui.com/).
+The main build script is `build.xml`, located in the root of the source tree. This file is only available if you download the full project source code for [Feathers on Github](https://github.com/joshtynjala/feathers). The build script is **not** included in the ZIP file that is downloadable from the [Feathers website](https://feathersui.com/).
 
 Two other files in the same directory, `build.properties` and `sdk.properties`, set up the environment for the build script. If you need to override any properties from these files, you can create new files named `build.local.properties` and `sdk.local.properties`. The build script will automatically detect if these files are present and use their values instead of the defaults.
 

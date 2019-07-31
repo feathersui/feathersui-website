@@ -3,7 +3,7 @@ title: Set up the Feathers SDK in Visual Studio Code
 sidebar_label: Visual Studio Code
 ---
 
-Let's get your [Visual Studio Code](https://code.visualstudio.com/) development environment setup to use the [Feathers SDK](http://feathersui.com/sdk/).
+Let's get your [Visual Studio Code](https://code.visualstudio.com/) development environment setup to use the [Feathers SDK](https://feathersui.com/sdk/).
 
 ## Prerequisites
 
