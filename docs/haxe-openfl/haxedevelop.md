@@ -37,7 +37,7 @@ sidebar_label: HaxeDevelop
 
    ```hx
    import feathers.controls.Button;
-   import feathers.events.MouseEvent;
+   import openfl.events.MouseEvent;
    ```
 
 1. Modify the constructor with the following code:
