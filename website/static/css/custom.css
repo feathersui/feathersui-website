@@ -145,6 +145,15 @@ figcaption {
   padding-left: 90px;
 }
 
+.nav-footer .sitemap {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.nav-footer .sitemap ul {
+  list-style: none;
+  padding-left: 0;
+}
+
 .nav-footer .sitemap h5 {
   margin: 16px 0 10px;
 }
@@ -155,6 +164,10 @@ figcaption {
 
 .nav-footer .sitemap .nav-home {
   opacity: 1;
+}
+
+.nav-footer .sitemap a {
+  display: inline;
 }
 
 .buttonWrapper {

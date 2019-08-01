@@ -28,104 +28,176 @@ class Footer extends React.Component {
           </a>
           <div>
             <h5>Site</h5>
-            <a
-              href={this.pageUrl(
-                "download",
-                this.props.language == "en" ? undefined : this.props.language
-              )}
-            >
-              Downloads
-            </a>
-            <a
-              href={this.pageUrl(
-                "showcase",
-                this.props.language == "en" ? undefined : this.props.language
-              )}
-            >
-              Showcase
-            </a>
-            <a
-              href={this.pageUrl(
-                "testimonials",
-                this.props.language == "en" ? undefined : this.props.language
-              )}
-            >
-              Testimonials
-            </a>
-            <a href={`${this.props.config.baseUrl}blog`}>Blog</a>
+            <ul>
+              <li>
+                <a
+                  href={this.pageUrl(
+                    "download",
+                    this.props.language == "en"
+                      ? undefined
+                      : this.props.language
+                  )}
+                >
+                  Downloads
+                </a>
+              </li>
+              <li>
+                <a
+                  href={this.pageUrl(
+                    "showcase",
+                    this.props.language == "en"
+                      ? undefined
+                      : this.props.language
+                  )}
+                >
+                  Showcase
+                </a>
+              </li>
+              <li>
+                <a
+                  href={this.pageUrl(
+                    "testimonials",
+                    this.props.language == "en"
+                      ? undefined
+                      : this.props.language
+                  )}
+                >
+                  Testimonials
+                </a>
+              </li>
+              <li>
+                <a href={`${this.props.config.baseUrl}blog`}>Blog</a> (
+                <a href={`${this.props.config.baseUrl}blog/feed.xml`}>RSS</a>,{" "}
+                <a href={`${this.props.config.baseUrl}blog/atom.xml`}>Atom</a>)
+              </li>
+            </ul>
           </div>
           <div>
             <h5>ActionScript / Starling</h5>
-            <a
-              href={this.docUrl(
-                "as3-starling/getting-started",
-                this.props.language == "en" ? undefined : this.props.language
-              )}
-            >
-              Documentation
-            </a>
-            <a href="/api-reference/">API Reference</a>
-            <a href="https://github.com/BowlerHatLLC/feathersui-starling">
-              GitHub
-            </a>
-            <a href="https://github.com/BowlerHatLLC/feathersui-starling/issues">
-              Issue Tracker
-            </a>
+            <ul>
+              <li>
+                <a
+                  href={this.docUrl(
+                    "as3-starling/getting-started",
+                    this.props.language == "en"
+                      ? undefined
+                      : this.props.language
+                  )}
+                >
+                  Documentation
+                </a>
+              </li>
+              <li>
+                <a href="/api-reference/">API Reference</a>
+              </li>
+              <li>
+                <a href="https://github.com/BowlerHatLLC/feathersui-starling">
+                  GitHub
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/BowlerHatLLC/feathersui-starling/issues">
+                  Issue Tracker
+                </a>
+              </li>
+            </ul>
             <h5>Feathers SDK (Starling)</h5>
-            <a
-              href={this.docUrl(
-                "as3-starling/sdk/getting-started-mxml",
-                this.props.language == "en" ? undefined : this.props.language
-              )}
-            >
-              Documentation
-            </a>
-            <a href="https://github.com/BowlerHatLLC/feathers-sdk">GitHub</a>
+            <ul>
+              <li>
+                <a
+                  href={this.docUrl(
+                    "as3-starling/sdk/getting-started-mxml",
+                    this.props.language == "en"
+                      ? undefined
+                      : this.props.language
+                  )}
+                >
+                  Documentation
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/BowlerHatLLC/feathers-sdk">
+                  GitHub
+                </a>
+              </li>
+            </ul>
           </div>
           <div>
             <h5>Haxe / OpenFL</h5>
-            <a
-              href={this.docUrl(
-                "haxe-openfl/installation",
-                this.props.language == "en" ? undefined : this.props.language
-              )}
-            >
-              Documentation
-            </a>
-            <a href="https://api.feathersui.com/">API Reference</a>
-            <a href="https://github.com/BowlerHatLLC/feathersui-openfl">
-              GitHub
-            </a>
-            <a href="https://github.com/BowlerHatLLC/feathersui-openfl/issues">
-              Issue Tracker
-            </a>
+            <ul>
+              <li>
+                <a
+                  href={this.docUrl(
+                    "haxe-openfl/installation",
+                    this.props.language == "en"
+                      ? undefined
+                      : this.props.language
+                  )}
+                >
+                  Documentation
+                </a>
+              </li>
+              <li>
+                <a href="https://api.feathersui.com/">API Reference</a>
+              </li>
+              <li>
+                <a href="https://github.com/BowlerHatLLC/feathersui-openfl">
+                  GitHub
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/BowlerHatLLC/feathersui-openfl/issues">
+                  Issue Tracker
+                </a>
+              </li>
+            </ul>
           </div>
           <div>
             <h5>Community</h5>
-            <a href="https://community.feathersui.com/">Forum</a>
-            <a
-              href="https://discord.feathersui.com/"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              Discord
-            </a>
-            <a
-              href="https://stackoverflow.com/questions/tagged/feathersui"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              Stack Overflow
-            </a>
+            <ul>
+              <li>
+                <a href="https://community.feathersui.com/">Forum</a>
+              </li>
+              <li>
+                <a
+                  href="https://discord.feathersui.com/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  Discord
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://stackoverflow.com/questions/tagged/feathersui"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  Stack Overflow
+                </a>
+              </li>
+            </ul>
           </div>
           <div>
             <h5>Social</h5>
-            <a href="https://twitter.com/feathersui" rel="noreferrer noopener">
-              Twitter
-            </a>
-            <a href="https://facebook.com/feathersui" rel="noreferrer noopener">
-              Facebook
-            </a>
+            <ul>
+              <li>
+                <a
+                  href="https://twitter.com/feathersui"
+                  rel="noreferrer noopener"
+                >
+                  Twitter
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://facebook.com/feathersui"
+                  rel="noreferrer noopener"
+                >
+                  Facebook
+                </a>
+              </li>
+            </ul>
           </div>
         </section>
 
