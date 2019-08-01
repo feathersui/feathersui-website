@@ -18,6 +18,13 @@ With a few free extensions, [Visual Studio Code](https://code.visualstudio.com/)
 
   - [Debugger for Chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome)
 
+- Install Lime from Haxelib by running the following commands in a terminal:
+
+  ```sh
+  haxelib install lime
+  haxelib run lime setup
+  ```
+
 ## Create a project
 
 1. From the **File** menu, choose **Open Folder…**.
@@ -37,6 +44,7 @@ With a few free extensions, [Visual Studio Code](https://code.visualstudio.com/)
        <window fps="60"/>
        <window fps="0" if="html5"/>
        <source path="src" />
+       <haxelib name="openfl" />
        <haxelib name="feathersui" />
    </project>
    ```
@@ -105,13 +113,14 @@ How to fix some issues that you may encounter.
 
 ### Error: Command failed: lime display html5
 
-This error may indicate that [Lime](https://lime.software/) is not installed from [Haxelib](https://lib.haxe.org/). It should have been installed automatically when you [installed Feathers UI](installation.md). However, you can install it manually by running the following command in a terminal:
+This error may also indicate a problem in your _project.xml_ file. Check for additional error messages after this one that provide more context.
+
+It may also indicate that [Lime](https://lime.software/) is not installed from [Haxelib](https://lib.haxe.org/). It should have been installed automatically when you [installed Feathers UI](installation.md). However, you can install it manually by running the following commands in a terminal:
 
 ```sh
 haxelib install lime
+haxelib run lime setup
 ```
-
-This error may also indicate a problem in your _project.xml_ file.
 
 ### Error: Could not find haxelib _[library name]_, does it need to be installed?
 

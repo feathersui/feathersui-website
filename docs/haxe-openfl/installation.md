@@ -24,6 +24,22 @@ haxelib git feathersui https://github.com/BowlerHatLLC/feathersui-openfl.git
 
 This command will automatically install any required dependencies too, including [OpenFL](https://openfl.org/).
 
+## Update
+
+When a new version of Feathers UI is released, you can update/upgrade by running the following command:
+
+```sh
+haxelib update feathersui
+```
+
+## Removal
+
+In the future, if you wish to uninstall/remove Feathers UI, run the following command:
+
+```sh
+haxelib remove feathersui
+```
+
 ## Next Steps
 
 Now that Feathers UI and its dependencies are installed, you can create a project in your favorite editor.

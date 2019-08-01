@@ -10,6 +10,13 @@ sidebar_label: HaxeDevelop
 
 - [Install Feathers UI from Haxelib](installation.md)
 
+- Install Lime from Haxelib by running the following commands in a terminal:
+
+  ```sh
+  haxelib install lime
+  haxelib run lime setup
+  ```
+
 ## Create a project
 
 1. From the **Project** menu, choose **New Project…**.
