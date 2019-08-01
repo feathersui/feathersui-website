@@ -10,7 +10,7 @@ sidebar_label: HaxeDevelop
 
 - [Install Feathers UI from Haxelib](installation.md)
 
-- Install Lime from Haxelib by running the following commands in a terminal:
+- [Install Lime from Haxelib](https://lime.software/docs/home/) by running the following commands in a terminal:
 
   ```sh
   haxelib install lime
@@ -93,6 +93,7 @@ This error indicates that [Lime](https://lime.software/) is not installed from [
 
 ```sh
 haxelib install lime
+haxelib run lime setup
 ```
 
 ### Error: Could not find haxelib _[library name]_, does it need to be installed?

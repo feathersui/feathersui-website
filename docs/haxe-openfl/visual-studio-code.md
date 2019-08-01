@@ -18,7 +18,7 @@ With a few free extensions, [Visual Studio Code](https://code.visualstudio.com/)
 
   - [Debugger for Chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome)
 
-- Install Lime from Haxelib by running the following commands in a terminal:
+- [Install Lime from Haxelib](https://lime.software/docs/home/) by running the following commands in a terminal:
 
   ```sh
   haxelib install lime

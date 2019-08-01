@@ -32,13 +32,7 @@ When a new version of Feathers UI is released, you can update/upgrade by running
 haxelib update feathersui
 ```
 
-## Removal
-
-In the future, if you wish to uninstall/remove Feathers UI, run the following command:
-
-```sh
-haxelib remove feathersui
-```
+> When Feathers UI is installed from Github, this command will pull the latest commits.
 
 ## Next Steps
 
