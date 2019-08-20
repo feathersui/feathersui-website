@@ -193,7 +193,9 @@ Luis Guajardo Diaz
               ]}
             </Block>
             <p className="alignCenter">
-              <a href={pageUrl("testimonials")}>Read more testimonials →</a>
+              <a className="button" href={pageUrl("testimonials")}>
+                More testimonials →
+              </a>
             </p>
           </Container>
         </div>
@@ -213,21 +215,17 @@ Luis Guajardo Diaz
           </a>
         ));
 
-      const pageUrl = page => baseUrl + (language ? `${language}/` : "") + page;
       return (
-        <div className="productShowcaseSection paddingBottom">
-          <h2>Kickstarter Sponsors</h2>
-          <p>
-            The following people generously sponsored Feathers UI on
+        <Container
+          padding={["bottom", "top"]}
+          className="productShowcaseSection"
+        >
+          <p className="alignCenter">
+            Many thanks to these generous sponsors who supported Feathers UI on
             Kickstarter:
           </p>
           <div className="logos">{users}</div>
-          <div className="more-users">
-            <a className="button" href={pageUrl("users")}>
-              More {siteConfig.title} Users
-            </a>
-          </div>
-        </div>
+        </Container>
       );
     };
 
@@ -240,7 +238,7 @@ Luis Guajardo Diaz
           <ThemesAndStyles />
           <OpenSource />
           <Testimonials />
-          {/*<KickstarterSponsors />*/}
+          <KickstarterSponsors />
         </div>
       </div>
     );
