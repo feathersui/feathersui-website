@@ -145,6 +145,10 @@ figcaption {
   padding-left: 90px;
 }
 
+.nav-footer .copyright a {
+  color: rgba(255, 255, 255, 0.6);
+}
+
 .nav-footer .sitemap {
   color: rgba(255, 255, 255, 0.6);
 }

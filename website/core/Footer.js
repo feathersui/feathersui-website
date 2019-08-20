@@ -201,7 +201,11 @@ class Footer extends React.Component {
           </div>
         </section>
 
-        <section className="copyright">{this.props.config.copyright}</section>
+        <section className="copyright">
+          Copyright © {new Date().getFullYear()}{" "}
+          <a href="https://bowlerhat.dev/">Bowler Hat LLC</a> — Illustrations by{" "}
+          <a href="https://undraw.co/">unDraw</a>.
+        </section>
 
         <script type="text/javascript" src="//use.typekit.net/tsu5tna.js" />
         <script type="text/javascript">
