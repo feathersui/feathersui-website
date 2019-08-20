@@ -7,15 +7,16 @@ This guide explains how to migrate an application created with a previous versio
 
 - [Skinning Changes](#skinning-changes)
 
-      	-   [Removal of `Scale9Image`, `Scale3Image`, and `TiledImage`](#removal-of-scale9image-scale3image-and-tiled-image)
+  - [Removal of `Scale9Image`, `Scale3Image`, and `TiledImage`](#removal-of-scale9image-scale3image-and-tiled-image)
 
-      	-   [The new `ImageSkin` class](#the-new-imageskin-class)
+  - [The new `ImageSkin` class](#the-new-imageskin-class)
 
-      	-   [Setting font styles on text renderers](#setting-font-styles-on-text-renderers)
+  - [Setting font styles on text renderers](#setting-font-styles-on-text-renderers)
 
-      	-   [Removal of `StandardIcons.listDrillDownAccessoryTexture`](#removal-of-standardicons.listdrilldownaccessorytexture)
+  - [Removal of `StandardIcons.listDrillDownAccessoryTexture`](#removal-of-standardicons.listdrilldownaccessorytexture)
 
 - [`saveMeasurements()` replaces `setSizeInternal()`](#savemeasurements-replaces-setsizeinternal)
+
 - [Return type API changes](#return-type-api-changes)
 
 - [Multi-Resolution Development with Feathers](#multi-resolution-development-with-feathers)
