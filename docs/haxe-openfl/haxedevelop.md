@@ -89,7 +89,7 @@ How to fix some issues that you may encounter.
 
 ### Error: Library lime is not installed
 
-This error indicates that [Lime](https://lime.software/) is not installed from [Haxelib](https://lib.haxe.org/). It should have been installed automatically when you [installed Feathers UI](installation.md). However, you can install it manually by running the following command in a terminal:
+This error indicates that [Lime](https://lime.software/) is not installed. You can install it from [Haxelib](https://lib.haxe.org/) by running the following commands in a terminal:
 
 ```sh
 haxelib install lime
@@ -98,7 +98,11 @@ haxelib run lime setup
 
 ### Error: Could not find haxelib _[library name]_, does it need to be installed?
 
-This error indicates that one or more of the Feathers UI dependencies is not installed. See [Install Feathers UI](installation.md) for complete instructions.
+This error indicates that one or more of your project's dependencies is not installed. In a terminal, run the [**haxelib install**](https://lib.haxe.org/documentation/using-haxelib/#install) command with the name of the missing library. In the following example, we install [OpenFL](https://openfl.org/):
+
+```
+haxelib install openfl
+```
 
 > You may need to close and re-open your project after installing a new dependency.
 
