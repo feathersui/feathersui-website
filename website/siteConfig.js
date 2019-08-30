@@ -6,18 +6,25 @@ const path = require("path");
 // List of projects/orgs using your project for the users page.
 const users = [
   {
+    caption: "InnoGames",
+    image: "/img/sponsors/innogames.png",
+    infoLink: "https://www.innogames.com/",
+    pinned: true,
+    kickstarter: true
+  },
+  {
+    caption: "Spellweaver TCG",
+    image: "/img/sponsors/spellweaver.png",
+    infoLink: "https://spellweaver-tcg.com",
+    pinned: true,
+    kickstarter: true
+  },
+  {
     caption: "Moonshine IDE",
     // You will need to prepend the image path with your baseUrl
     // if it is not "/", like: "/test-site/img/image.jpg".
     image: "/img/sponsors/moonshine-ide.png",
     infoLink: "https://moonshine-ide.com/",
-    pinned: true,
-    kickstarter: true
-  },
-  {
-    caption: "InnoGames",
-    image: "/img/sponsors/innogames.png",
-    infoLink: "https://www.innogames.com/",
     pinned: true,
     kickstarter: true
   }
