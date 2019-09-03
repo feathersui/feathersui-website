@@ -12,6 +12,9 @@ RewriteRule ^/?help([A-Za-z0-9\-/.]*)$ /learn/as3-starling$1 [R=301,L]
 RewriteRule ^/?documentation([A-Za-z0-9\-/.]*)$ /api-reference$1 [R=301,L]
 RewriteRule ^/?beta/documentation([A-Za-z0-9\-/.]*)$ /beta/api-reference$1 [R=301,L]
 
+# redirect /index/ and /index to / (docusaurus sitemap is broken)
+RewriteRule ^/?index/?$ / [R=301,L]
+
 # redirect /sdk/feathers-sdk-manager/ to /sdk/download/
 RewriteRule ^/?sdk/feathers-sdk-manager/$ /sdk/download/$1 [R=301,L]
 
