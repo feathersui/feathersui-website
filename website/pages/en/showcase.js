@@ -180,12 +180,17 @@ const Showcase = props => {
   return (
     <div className="mainContainer documentContainer showcaseContainer alignCenter">
       <Container>
-        <div className="prose">
-          <h1>Showcase</h1>
-          <p>
-            Check out some beautiful games and apps that talented developers and
-            designers have created using the open source Feathers UI framework.
-          </p>
+        <div className="prose alignCenter">
+          <div className="blockElement">
+            <div className="blockContent">
+              <h1>Showcase</h1>
+              <p>
+                Check out some beautiful games and apps that talented developers
+                and designers have created using the open source{" "}
+                <a href="/">Feathers UI</a> framework.
+              </p>
+            </div>
+          </div>
         </div>
         {showcaseItems.map(item => (
           <ShowcaseItem key={item.title} {...item} />

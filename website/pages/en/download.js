@@ -14,7 +14,10 @@ const Download = props => {
       <Container>
         <div className="prose">
           <h1>Downloads</h1>
-          <p>Get the latest version of all Feathers UI open source projects.</p>
+          <p>
+            Get the latest version of all <a href="/">Feathers UI</a> open
+            source projects.
+          </p>
         </div>
         <div className="prose">
           <h2>ActionScript / Starling</h2>

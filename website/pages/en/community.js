@@ -38,7 +38,6 @@ function Community(props) {
           <header className="postHeader">
             <h1>Join the Feathers UI community</h1>
           </header>
-          <p>This project is maintained by a dedicated group of people.</p>
           <GridBlock contents={supportLinks} layout="threeColumn" />
         </div>
       </Container>

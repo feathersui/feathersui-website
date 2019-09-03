@@ -88,8 +88,8 @@ const Testimonials = props => {
         <div className="prose">
           <h1>Testimonials</h1>
           <p>
-            What developers working with Feathers UI have said about the
-            framework.
+            What developers working with <a href="/">Feathers UI</a> have said
+            about the framework.
           </p>
         </div>
         <GridBlock contents={testimonials} layout="threeColumn" />

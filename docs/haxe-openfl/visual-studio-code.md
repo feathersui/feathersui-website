@@ -4,7 +4,7 @@ title: Create a Feathers UI project in Visual Studio Code
 sidebar_label: Visual Studio Code
 ---
 
-With a few free extensions, [Visual Studio Code](https://code.visualstudio.com/) may be configured as a fully-featured development environment for Feathers UI projects built with Haxe and OpenFL.
+With a few free extensions, [Visual Studio Code](https://code.visualstudio.com/) may be configured as a fully-featured development environment for [Feathers UI](/) projects built with [Haxe](https://haxe.org/) and [OpenFL](https://openfl.org/).
 
 ## Prerequisites
 

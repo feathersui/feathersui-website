@@ -3,7 +3,7 @@ title: Setting up Feathers in IntelliJ IDEA (Starling version)
 sidebar_label: IntelliJ IDEA
 ---
 
-Let's get your [IntelliJ IDEA](http://www.jetbrains.com/idea/) development environment ready to use Feathers (Starling version).
+Let's create a [Feathers](/) and [Starling](https://gamua.com/starling/) project in [IntelliJ IDEA](http://www.jetbrains.com/idea/).
 
 > These instructions apply to IntelliJ IDEA 12. Minor variations may exist between different versions of IntelliJ IDEA.
 

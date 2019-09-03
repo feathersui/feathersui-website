@@ -3,7 +3,7 @@ title: Setting up Feathers in Adobe Flash Builder (Starling version)
 sidebar_label: Adobe Flash Builder
 ---
 
-Let's get your [Flash Builder](http://www.adobe.com/products/flash-builder.html) development environment setup to use Feathers.
+Let's create a [Feathers](/) and [Starling](https://gamua.com/starling/) project in [Adobe Flash Builder](http://www.adobe.com/products/flash-builder.html).
 
 > These instructions apply to Flash Builder 4.7. Minor variations may exist between different versions of Flash Builder.
 

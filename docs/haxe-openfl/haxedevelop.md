@@ -4,7 +4,7 @@ title: Create a Feathers UI project in HaxeDevelop
 sidebar_label: HaxeDevelop
 ---
 
-[HaxeDevelop](https://haxedevelop.org/) (or [FlashDevelop](https://flashdevelop.org/)) supports an [OpenFL](https://openfl.org/) project template that we'll use to create a new Feathers UI project.
+[HaxeDevelop](https://haxedevelop.org/) (or [FlashDevelop](https://flashdevelop.org/)) supports an [OpenFL](https://openfl.org/) project template that we'll use to create a new [Feathers UI](/) project.
 
 ## Prerequisites
 

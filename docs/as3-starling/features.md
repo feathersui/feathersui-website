@@ -3,7 +3,7 @@ title: Feathers Features (Starling version)
 sidebar_label: Features
 ---
 
-Feathers is an open source library of user interface components for [Starling Framework](http://gamua.com/starling/). Let's take a look at some of what Feathers has to offer.
+[Feathers](/) is an open source library of user interface components for [Starling](http://gamua.com/starling/) and [Adobe AIR](http://www.adobe.com/products/air.html). Let's take a look at some of what Feathers has to offer.
 
 ## Overview
 

@@ -11,6 +11,7 @@ body {
 code {
   font-family: "source-code-pro", SFMono-Regular, Menlo, Monaco, Consolas,
     "Liberation Mono", "Courier New", monospace;
+  padding: 1.5px 4px;
 }
 
 a code {

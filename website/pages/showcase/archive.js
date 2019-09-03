@@ -163,12 +163,17 @@ const ShowcaseArchive = props => {
   return (
     <div className="mainContainer documentContainer showcaseContainer alignCenter">
       <Container>
-        <div className="prose">
-          <h1>Showcase Archive</h1>
-          <p>
-            Remembering a variety of classic projects built with Feathers UI and
-            Starling.
-          </p>
+        <div className="prose alignCenter">
+          <div className="blockElement">
+            <div className="blockContent">
+              <h1>Showcase Archive</h1>
+              <p>
+                Remembering a variety of classic projects built with{" "}
+                <a href="/">Feathers UI</a> and{" "}
+                <a href="https://gamua.com/starling/">Starling</a>.
+              </p>
+            </div>
+          </div>
         </div>
         {showcaseItems.map(item => (
           <ShowcaseItem key={item.title} {...item} />

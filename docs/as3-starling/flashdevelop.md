@@ -3,7 +3,7 @@ title: Setting up Feathers in FlashDevelop (Starling version)
 sidebar_label: FlashDevelop
 ---
 
-Let's get your [FlashDevelop](http://www.flashdevelop.org/) development environment ready to use Feathers.
+Let's create a [Feathers](/) and [Starling](https://gamua.com/starling/) project in [FlashDevelop](http://www.flashdevelop.org/).
 
 > These instructions apply to FlashDevelop 4.2. Minor variations may exist between different versions of FlashDevelop.
 

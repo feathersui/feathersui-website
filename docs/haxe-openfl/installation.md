@@ -8,7 +8,7 @@ sidebar_label: Installation
 >
 > For a more stable version of Feathers UI, try out the original [AS3/Starling version](../as3-starling/getting-started) instead.
 
-Feathers UI is not yet published on [Haxelib](https://lib.haxe.org). Instead, it must be installed from the [Github repository](https://github.com/BowlerHatLLC/feathersui-openfl). This is temporary. A future build will be published on Haxelib, once things are more stable.
+[Feathers UI](/) is not yet published on [Haxelib](https://lib.haxe.org). Instead, it must be installed from the [Github repository](https://github.com/BowlerHatLLC/feathersui-openfl). This is temporary. A future build will be published on Haxelib, once things are more stable.
 
 ## Prerequisites
 

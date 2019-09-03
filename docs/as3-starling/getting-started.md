@@ -3,11 +3,11 @@ title: Getting started with Feathers (Starling version)
 sidebar_label: Hello World
 ---
 
-In the following beginner-level tutorial, we'll use our first Feathers [`Button`](./button.md) component. This is a very simple demonstration that sets a label, adds an event listener, and creates a theme that will apply a skin.
+In the following beginner-level tutorial for [Feathers](/), we'll use our first [`Button`](./button.md) component. This is a very simple demonstration that sets a label, adds an event listener, and creates a theme that will apply some styles.
 
 ## Prerequisites
 
-- You should understand how to set up a regular Starling project. Please start with the [Starling guides and tutorials](http://gamua.com/starling/help/), if you're new to Starling.
+- You should understand how to set up a regular [Starling](https://gamua.com/starling/) project first. If you're new to Starling, please start with the [Starling guides and tutorials](http://gamua.com/starling/help/).
 
 - [Download Feathers](./installation.md).
 
