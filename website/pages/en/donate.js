@@ -17,7 +17,6 @@ Josh Tynjala, creator of Feathers UI`}
         </MarkdownBlock>
 
         <form
-          id="donate"
           action="https://www.paypal.com/cgi-bin/webscr"
           method="post"
           target="_top"
@@ -29,12 +28,13 @@ Josh Tynjala, creator of Feathers UI`}
             src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
             border="0"
             name="submit"
-            alt="PayPal - The safer, easier way to pay online!"
+            title="PayPal - The safer, easier way to pay online!"
+            alt="Donate with PayPal button"
           />
           <img
             alt=""
             border="0"
-            src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif"
+            src="https://www.paypal.com/en_US/i/scr/pixel.gif"
             width="1"
             height="1"
           />
