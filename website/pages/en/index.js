@@ -210,7 +210,7 @@ Luis Guajardo Diaz
       const users = siteConfig.users
         .filter(user => user.pinned && user.kickstarter)
         .map(user => (
-          <a href={user.infoLink} key={user.infoLink}>
+          <a href={user.infoLink} key={user.infoLink} rel="sponsored">
             <img src={user.image} alt={user.caption} title={user.caption} />
           </a>
         ));
