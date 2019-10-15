@@ -21,3 +21,7 @@ If you'd like to subscribe to this blog with your favorite feed reader, here are
 
 - RSS: https://feathersui.com/blog/feed.xml
 - Atom: https://feathersui.com/blog/atom.xml
+
+You may also want to subscribe the the [Atom](https://www.kickstarter.com/projects/feathersui/feathers-ui-cross-platform-components-for-haxe-and-openfl/posts.atom) feed of my [updates on Kickstarter](https://www.kickstarter.com/projects/feathersui/feathers-ui-cross-platform-components-for-haxe-and-openfl/posts):
+
+- Atom: https://www.kickstarter.com/projects/feathersui/feathers-ui-cross-platform-components-for-haxe-and-openfl/posts.atom
