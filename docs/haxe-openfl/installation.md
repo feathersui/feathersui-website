@@ -12,7 +12,7 @@ sidebar_label: Installation
 
 ## Prerequisites
 
-**Haxe 4.0.0-rc.3** or newer is required. Find the latest release candidate on the [Haxe Download List](https://haxe.org/download/list/).
+**Haxe 4.0.0-rc.5** or newer is required. Find the latest release candidate on the [Haxe Download List](https://haxe.org/download/list/).
 
 ## Installation
 
