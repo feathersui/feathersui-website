@@ -74,6 +74,17 @@ Preferans, the popular Eastern European card game, running smoothly on Feathers 
     imageLink: "https://www.youtube.com/watch?v=zW4tZJQ0b1o"
   },
   {
+    title: "Aether Story",
+    content: `
+Fight against the darkness as you explore the pixel world of Aether Story, a multi-player co-operative adventure built using Feathers UI.
+
+<div class="buttonWrapper">
+  <a class="button" href="https://www.aetherstory.com/">Visit Website</a>
+</div>`,
+    image: "/img/showcase/aether-story@2x.jpg",
+    imageLink: "https://www.aetherstory.com/"
+  },
+  {
     title: "Street Art Project",
     content: `
 In a matter of weeks, the Less Rain team created an augmented reality app with Feathers and Starling to enable members of the Behance community to showcase and share their artwork as "street art" — on top of real-world locations.`,
