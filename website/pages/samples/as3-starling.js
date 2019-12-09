@@ -3,7 +3,7 @@ const CompLibrary = require("../../core/CompLibrary.js");
 const Container = CompLibrary.Container;
 const GridBlock = CompLibrary.GridBlock;
 
-const exampleItems = [
+const sampleItems = [
   {
     title: "[Components Explorer](/examples/components-explorer/)",
     content: `Try out each of the user interface components included with Feathers, presented in a mobile application.
@@ -106,27 +106,28 @@ const exampleItems = [
   }
 ];
 
-const StarlingExamples = props => {
+const StarlingSamples = props => {
   return (
     <div className="docMainWrapper wrapper">
       <Container className="mainContainer documentContainer">
         <div className="post">
           <header className="postHeader">
-            <h1>Examples (Starling version)</h1>
+            <h1>Samples (Starling version)</h1>
             <p>
-              The online demo apps require the{" "}
+              Sample projects built with <a href="/">Feathers UI</a>. The online
+              demo apps require the{" "}
               <a href="https://www.adobe.com/go/getflashplayer">
                 Adobe Flash Player
               </a>{" "}
               plugin.
             </p>
           </header>
-          <GridBlock contents={exampleItems} layout="threeColumn" />
+          <GridBlock contents={sampleItems} layout="threeColumn" />
         </div>
       </Container>
     </div>
   );
 };
-StarlingExamples.title = "Starling examples";
+StarlingSamples.title = "Samples (Starling version)";
 
-module.exports = StarlingExamples;
+module.exports = StarlingSamples;
