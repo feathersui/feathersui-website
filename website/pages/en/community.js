@@ -9,21 +9,22 @@ function Community(props) {
 
   const supportLinks = [
     {
-      title: "Community Forum",
+      title: "[Community Forum](https://community.feathersui.com/)",
       content: `Get help, show off your projects, find jobs, and more on the [Feathers UI community forum](https://community.feathersui.com/).`,
       image: `${baseUrl}img/undraw_ideas_s70l.svg`,
       imageAlign: "top",
       imageLink: "https://community.feathersui.com/"
     },
     {
-      title: "Discord",
+      title: "[Discord](https://discord.feathersui.com/)",
       content: `Chat with fellow developers in real time on the [Feathers UI Discord server](https://discord.feathersui.com/).`,
       image: `${baseUrl}img/discord-logo-color.svg`,
       imageAlign: "top",
       imageLink: "https://discord.feathersui.com/"
     },
     {
-      title: "Stack Overflow",
+      title:
+        "[Stack Overflow](https://stackoverflow.com/questions/tagged/feathersui)",
       content: `Use the [\`feathersui\`](https://stackoverflow.com/questions/tagged/feathersui) tag when you ask questions on [Stack Overflow](https://stackoverflow.com/).`,
       image: `${baseUrl}img/stack-overflow-icon.svg`,
       imageAlign: "top",
