@@ -27,7 +27,9 @@ class Footer extends React.Component {
             )}
           </a>
           <div>
-            <h5>Site</h5>
+            <h5>
+              <a href={this.props.config.baseUrl}>Feathers UI</a>
+            </h5>
             <ul>
               <li>
                 <a
@@ -73,7 +75,16 @@ class Footer extends React.Component {
             </ul>
           </div>
           <div>
-            <h5>ActionScript / Starling</h5>
+            <h5>
+              <a
+                href={this.docUrl(
+                  "as3-starling",
+                  this.props.language == "en" ? undefined : this.props.language
+                )}
+              >
+                ActionScript / Starling
+              </a>
+            </h5>
             <ul>
               <li>
                 <a
@@ -104,7 +115,16 @@ class Footer extends React.Component {
                 </a>
               </li>
             </ul>
-            <h5>Feathers SDK (Starling)</h5>
+            <h5>
+              <a
+                href={this.docUrl(
+                  "as3-starling/sdk",
+                  this.props.language == "en" ? undefined : this.props.language
+                )}
+              >
+                Feathers SDK (Starling)
+              </a>
+            </h5>
             <ul>
               <li>
                 <a
@@ -126,7 +146,16 @@ class Footer extends React.Component {
             </ul>
           </div>
           <div>
-            <h5>Haxe / OpenFL</h5>
+            <h5>
+              <a
+                href={this.docUrl(
+                  "haxe-openfl",
+                  this.props.language == "en" ? undefined : this.props.language
+                )}
+              >
+                Haxe / OpenFL
+              </a>
+            </h5>
             <ul>
               <li>
                 <a
@@ -161,7 +190,16 @@ class Footer extends React.Component {
             </ul>
           </div>
           <div>
-            <h5>Community</h5>
+            <h5>
+              <a
+                href={this.pageUrl(
+                  "community",
+                  this.props.language == "en" ? undefined : this.props.language
+                )}
+              >
+                Community
+              </a>
+            </h5>
             <ul>
               <li>
                 <a href="https://community.feathersui.com/">Forum</a>
@@ -187,7 +225,16 @@ class Footer extends React.Component {
             </ul>
           </div>
           <div>
-            <h5>Social</h5>
+            <h5>
+              <a
+                href={this.pageUrl(
+                  "social-media",
+                  this.props.language == "en" ? undefined : this.props.language
+                )}
+              >
+                Social Media
+              </a>
+            </h5>
             <ul>
               <li>
                 <a
