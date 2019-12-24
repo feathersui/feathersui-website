@@ -7,7 +7,8 @@
         "label": "Create a new project in…",
         "ids": ["haxe-openfl/haxedevelop", "haxe-openfl/visual-studio-code"]
       }
-    ]
+    ],
+    "Components": ["haxe-openfl/button"]
   },
   "as3-starling": {
     "Getting started": [
