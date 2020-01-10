@@ -14,12 +14,9 @@ code {
   padding: 1.5px 4px;
 }
 
-a {
-  color: #ff9940;
-}
-
+a,
 a:hover {
-  text-decoration: underline;
+  color: #fa9725;
 }
 
 a code {
