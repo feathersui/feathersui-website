@@ -14,8 +14,20 @@ code {
   padding: 1.5px 4px;
 }
 
+a {
+  color: #ff9940;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 a code {
-  background-color: #ffefdf;
+  background-color: #fdf4ea;
+}
+
+blockquote a code {
+  background-color: #fcebc7;
 }
 
 figure {
