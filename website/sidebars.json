@@ -8,7 +8,8 @@
         "ids": ["haxe-openfl/haxedevelop", "haxe-openfl/visual-studio-code"]
       }
     ],
-    "Components": ["haxe-openfl/button"]
+    "Components": ["haxe-openfl/button"],
+    "Styles and Skins": ["haxe-openfl/graphics-api-skins"]
   },
   "as3-starling": {
     "Getting started": [
