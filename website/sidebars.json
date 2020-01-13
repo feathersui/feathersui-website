@@ -10,7 +10,9 @@
     ],
     "Components": [
       "haxe-openfl/button",
+      "haxe-openfl/check",
       "haxe-openfl/slider",
+      "haxe-openfl/radio",
       "haxe-openfl/toggle-button",
       "haxe-openfl/toggle-switch"
     ],
