@@ -7,7 +7,7 @@ The [`Button`](https://api.feathersui.com/current/feathers/controls/Button.html)
 
 ## The Basics
 
-Start by creating a [`Button`](https://api.feathersui.com/current/feathers/controls/Button.html) control, give it some text to display, and add it to the display list.
+Start by creating a [`Button`](https://api.feathersui.com/current/feathers/controls/Button.html) control, give it some text to display, and add it to [the display list](https://books.openfl.org/openfl-developers-guide/display-programming/basics-of-display-programming.html).
 
 ```hx
 var button = new Button();
@@ -39,7 +39,7 @@ The [`ButtonState`](https://api.feathersui.com/current/feathers/controls/ButtonS
 - [`UP`](https://api.feathersui.com/current/feathers/controls/ButtonState.html#UP) is the button's default state when the user is not interacting with it, and the button is enabled.
 - [`DOWN`](https://api.feathersui.com/current/feathers/controls/ButtonState.html#DOWN) is the state when the user presses the button with a mouse, touchscreen, or by pressing [`Keyboard.SPACE`](https://api.openfl.org/openfl/ui/Keyboard.html#SPACE) when the button is focused.
 - [`HOVER`](https://api.feathersui.com/current/feathers/controls/ButtonState.html#HOVER) is the state when the mouse is hovering over the button. This state is not used for touchscreens or keyboard interaction.
-- [`DISABLED`](https://api.feathersui.com/current/feathers/controls/ButtonState.html#DISABLED) is the button's state when the its [`enabled`](https://api.feathersui.com/current/feathers/core/FeathersControl.html#enabled) property has been set to `false`.
+- [`DISABLED`](https://api.feathersui.com/current/feathers/controls/ButtonState.html#DISABLED) is the button's state when its [`enabled`](https://api.feathersui.com/current/feathers/core/FeathersControl.html#enabled) property has been set to `false`.
 
 ## Styles
 

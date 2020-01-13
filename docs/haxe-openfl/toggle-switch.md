@@ -7,7 +7,7 @@ The [`ToggleSwitch`](https://api.feathersui.com/current/feathers/controls/Toggle
 
 ## The Basics
 
-First, let's create an [`ToggleSwitch`](https://api.feathersui.com/current/feathers/controls/ToggleSwitch.html) control, update its selection, and add it to the display list.
+First, let's create an [`ToggleSwitch`](https://api.feathersui.com/current/feathers/controls/ToggleSwitch.html) control, update its selection, and add it to the [the display list](https://books.openfl.org/openfl-developers-guide/display-programming/basics-of-display-programming.html).
 
 ```hx
 var toggle = new ToggleSwitch();
@@ -29,7 +29,7 @@ The listener might look something like this:
 function toggleSwitch_changeHandler(event:Event):void
 {
     var toggle = cast(event.currentTarget, ToggleSwitch);
-    trace("toggle.selected changed:", toggle.selected);
+    trace("toggle.selected changed: " + toggle.selected);
 }
 ```
 
@@ -93,4 +93,5 @@ The [`trackSkin`](https://api.feathersui.com/current/feathers/controls/ToggleSwi
 
 ## Related Links
 
-- [`feathers.controls.ToggleSwitch` API Documentation](/api-reference/feathers/controls/ToggleSwitch.html)
+- [`feathers.controls.ToggleSwitch` API Documentation](https://api.feathersui.com/current/feathers/controls/ToggleSwitch.html)
+- [How to use the `Check` component](./check.md)

@@ -9,7 +9,7 @@ The [`HSlider`](https://api.feathersui.com/current/feathers/controls/HSlider.htm
 
 > For simplicity, the example code on this page will always use [`HSlider`](https://api.feathersui.com/current/feathers/controls/HSlider.html), but the same APIs are available on [`VSlider`](https://api.feathersui.com/current/feathers/controls/VSlider.html) too.
 
-First, let's create an [`HSlider`](https://api.feathersui.com/current/feathers/controls/HSlider.html) control, set up its range of values, and add it to the display list.
+First, let's create an [`HSlider`](https://api.feathersui.com/current/feathers/controls/HSlider.html) control, set up its range of values, and add it to the [the display list](https://books.openfl.org/openfl-developers-guide/display-programming/basics-of-display-programming.html).
 
 ```hx
 var slider = new HSlider();
@@ -39,7 +39,7 @@ The listener might look something like this:
 function slider_changeHandler(event:Event):void
 {
     var slider = cast(event.currentTarget, HSlider);
-    trace("slider.value changed:", slider.value);
+    trace("slider.value changed: " + slider.value);
 }
 ```
 
@@ -103,5 +103,5 @@ On an [`HSlider`](https://api.feathersui.com/current/feathers/controls/HSlider.h
 
 ## Related Links
 
-- [`feathers.controls.HSlider` API Documentation](/api-reference/feathers/controls/HSlider.html)
-- [`feathers.controls.VSlider` API Documentation](/api-reference/feathers/controls/VSlider.html)
+- [`feathers.controls.HSlider` API Documentation](https://api.feathersui.com/current/feathers/controls/HSlider.html)
+- [`feathers.controls.VSlider` API Documentation](https://api.feathersui.com/current/feathers/controls/VSlider.html)

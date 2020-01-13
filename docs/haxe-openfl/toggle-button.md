@@ -7,7 +7,7 @@ The [`ToggleButton`](https://api.feathersui.com/current/feathers/controls/Toggle
 
 ## The Basics
 
-Start by creating a [`ToggleButton`](https://api.feathersui.com/current/feathers/controls/ToggleButton.html) control, give it some text to display, and add it to the display list.
+Start by creating a [`ToggleButton`](https://api.feathersui.com/current/feathers/controls/ToggleButton.html) control, give it some text to display, and add it to the [the display list](https://books.openfl.org/openfl-developers-guide/display-programming/basics-of-display-programming.html).
 
 ```hx
 var button = new ToggleButton();
@@ -21,7 +21,7 @@ A toggle button may be selected and deselected when it is triggered, or we can p
 button.selected = true;
 ```
 
-If we listen for `Event.CHANGE`, we can track whether the user has triggered the button to change the selection:
+If we listen for `Event.CHANGE`, we can track whether the user has triggered the toggle button to change its selection:
 
 ```hx
 button.addEventListener(Event.CHANGE, toggle_changeHandler);
@@ -33,7 +33,7 @@ Check for the new value of [`selected`](https://api.feathersui.com/current/feath
 function toggle_changeHandler(event:Event):Void
 {
     var button = cast(event.currentTarget, ToggleButton);
-    trace("toggle.selected has changed:", toggle.selected);
+    trace("toggle.selected has changed: " + toggle.selected);
 }
 ```
 
@@ -41,12 +41,12 @@ function toggle_changeHandler(event:Event):Void
 
 When the user interacts with a toggle button using the mouse, keyboard, or touchscreen, its state will change, which may affect its appearance. For instance, the toggle button's background skin, font styles, and icon may all be rendered differently in different states.
 
-The [`ToggleButtonState`](https://api.feathersui.com/current/feathers/controls/ToggleButtonState.html) enum defines the states available to all button components.
+The [`ToggleButtonState`](https://api.feathersui.com/current/feathers/controls/ToggleButtonState.html) enum defines the states available to all toggle button components.
 
 - [`UP(selected:Bool)`](https://api.feathersui.com/current/feathers/controls/ToggleButtonState.html#UP) is the toggle button's default state when the user is not interacting with it, and the toggle button is enabled.
 - [`DOWN(selected:Bool)`](https://api.feathersui.com/current/feathers/controls/ToggleButtonState.html#DOWN) is the state when the user presses the toggle button with a mouse, touchscreen, or by pressing [`Keyboard.SPACE`](https://api.openfl.org/openfl/ui/Keyboard.html#SPACE) when the toggle button is focused.
 - [`HOVER(selected:Bool)`](https://api.feathersui.com/current/feathers/controls/ToggleButtonState.html#HOVER) is the state when the mouse is hovering over the toggle button. This state is not used for touchscreens or keyboard interaction.
-- [`DISABLED(selected:Bool)`](https://api.feathersui.com/current/feathers/controls/ToggleButtonState.html#DISABLED) is the toggle button's state when the its [`enabled`](https://api.feathersui.com/current/feathers/core/FeathersControl.html#enabled) property has been set to `false`.
+- [`DISABLED(selected:Bool)`](https://api.feathersui.com/current/feathers/controls/ToggleButtonState.html#DISABLED) is the toggle button's state when its [`enabled`](https://api.feathersui.com/current/feathers/core/FeathersControl.html#enabled) property has been set to `false`.
 
 Notice that each state also defines a boolean value to indicate if the toggle button is selected or not. `DOWN(true)` and `DOWN(false)` both indicate that the toggle button is currently pressed down, but the value of `true` indicates that it is currently selected, while `false` means that it is not selected.
 
@@ -97,13 +97,13 @@ The button automatically calculates its preferred size based on the initial dime
 
 > See [Graphics API skins](./graphics-api-skins.md) for more details about how to use [`RectangleSkin`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html) with the [`LineStyle`](https://api.feathersui.com/current/feathers/graphics/LineStyle.html) and [`FillStyle`](https://api.feathersui.com/current/feathers/graphics/FillStyle.html) enums that change its border and fill appearance.
 
-The appearance of the toggle button's border or fill may change when the toggle button is selected. In the next example, the same [`RectangleSkin`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html) displays a different fill when selected by setting the [`selectedFill`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html#selectedFill) property.
+The appearance of the toggle button's border or fill may change when the toggle button is selected. In the next example, the same [`RectangleSkin`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html) displays a different fill when selected by setting the [`selectedFill`](https://api.feathersui.com/current/feathers/skins/BaseGraphicsPathSkin.html#selectedFill) property.
 
 ```hx
 skin.selectedFill = SolidColor(0xcc9999);
 ```
 
-Similarly, use the [`selectedBorder`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html#selectedFill) property to set the border when selected.
+Similarly, use the [`selectedBorder`](https://api.feathersui.com/current/feathers/skins/BaseGraphicsPathSkin.html#selectedBorder) property to set the border when selected.
 
 ```hx
 skin.selectedBorder = SolidColor(2.0, 0x999999);
@@ -132,7 +132,7 @@ var hoverSkin = new RectangleSkin();
 button.setSkinForState(HOVER(false), hoverSkin);
 ```
 
-In the example above, the toggle button will display a custom skin when it is not selected and the mouse is hovering over it, the selected states will share the [`selectedBackgroundSkin`](https://api.feathersui.com/current/feathers/controls/BasicButton.html#selectedBackgroundSkin), and all remaining states will share the default [`backgroundSkin`](https://api.feathersui.com/current/feathers/controls/BasicButton.html#backgroundSkin).
+In the example above, the toggle button will display a custom skin when it is not selected and the mouse is hovering over it, the selected states will share the [`selectedBackgroundSkin`](https://api.feathersui.com/current/feathers/controls/BasicToggleButton.html#selectedBackgroundSkin), and all remaining states will share the default [`backgroundSkin`](https://api.feathersui.com/current/feathers/controls/BasicToggleButton.html#backgroundSkin).
 
 ### Icon
 
