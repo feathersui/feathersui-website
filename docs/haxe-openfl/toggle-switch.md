@@ -1,0 +1,96 @@
+---
+title: How to use the Feathers UI ToggleSwitch component
+sidebar_label: ToggleSwitch
+---
+
+The [`ToggleSwitch`](https://api.feathersui.com/current/feathers/controls/ToggleSwitch.html) class appears somewhat like a light switch, and it may be toggled between selected and deselected states. The thumb may be dragged from side to side, or it may be tapped to change selection. A toggle switch is often used as an alternative to a [`Check`](./check.md) control — especially on devices with touchscreens.
+
+## The Basics
+
+First, let's create an [`ToggleSwitch`](https://api.feathersui.com/current/feathers/controls/ToggleSwitch.html) control, update its selection, and add it to the display list.
+
+```hx
+var toggle = new ToggleSwitch();
+toggle.selected = true;
+this.addChild(toggle);
+```
+
+The [`selected`](https://api.feathersui.com/current/feathers/controls/ToggleSwitch.html#selected) property indicates if the toggle switch is on (`true`) or off (`false`).
+
+Add a listener for `Event.CHANGE` to react to changes to the [`selected`](https://api.feathersui.com/current/feathers/controls/ToggleSwitch.html#selected) property:
+
+```hx
+toggle.addEventListener(Event.CHANGE, toggleSwitch_changeHandler);
+```
+
+The listener might look something like this:
+
+```hx
+function toggleSwitch_changeHandler(event:Event):void
+{
+    var toggle = cast(event.currentTarget, ToggleSwitch);
+    trace("toggle.selected changed:", toggle.selected);
+}
+```
+
+## Styles
+
+The skins for a [`ToggleSwitch`](https://api.feathersui.com/current/feathers/controls/ToggleSwitch.html) component are divided into two main parts: the thumb and the track. The track may either fill the full length of the toggle switch, or it may be optionally divided in half — meeting at the center of the toggle switch's thumb.
+
+### Thumb
+
+Style a toggle switch's thumb using the [`thumbSkin`](https://api.feathersui.com/current/feathers/controls/ToggleSwitch.html#thumbSkin) property. The following example sets it to a [`CircleSkin`](https://api.feathersui.com/current/feathers/skins/CircleSkin.html) instance.
+
+```hx
+var thumbSkin = new CircleSkin();
+thumbSkin.border = SolidColor(1.0, 0x999999);
+thumbSkin.fill = SolidColor(0xcccccc);
+thumbSkin.width = 32.0;
+thumbSkin.height = 32.0;
+toggle.thumbSkin = thumbSkin;
+```
+
+The [`border`](https://api.feathersui.com/current/feathers/skins/BaseGraphicsPathSkin.html#border) and [`fill`](https://api.feathersui.com/current/feathers/skins/BaseGraphicsPathSkin.html#fill) properties of the [`CircleSkin`](https://api.feathersui.com/current/feathers/skins/CircleSkin.html) are used to adjust its appearance. They support a variety of values — from solid colors to gradients to bitmaps.
+
+The toggle switch automatically calculates its preferred size based on the initial dimensions of its skins, so it's important to set a skin's `width` and `height` properties to appropriate values to use in this calculation.
+
+> See [Graphics API skins](./graphics-api-skins.md) for more details about how to use [`CircleSkin`](https://api.feathersui.com/current/feathers/skins/CircleSkin.html) (and [`RectangleSkin`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html), which we'll use for the track below) with the [`LineStyle`](https://api.feathersui.com/current/feathers/graphics/LineStyle.html) and [`FillStyle`](https://api.feathersui.com/current/feathers/graphics/FillStyle.html) enums that change its border and fill appearance.
+
+### Track
+
+Style a toggle switch's track using the [`trackSkin`](https://api.feathersui.com/current/feathers/controls/ToggleSwitch.html#trackSkin) property. The following example sets it to a [`RectangleSkin`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html) instance.
+
+```hx
+var trackSkin = new RectangleSkin();
+trackSkin.border = SolidColor(1.0, 0x999999);
+trackSkin.fill = SolidColor(0xcccccc);
+trackSkin.width = 64.0;
+trackSkin.height = 32.0;
+toggle.trackSkin = trackSkin;
+```
+
+By default, the [`trackSkin`](https://api.feathersui.com/current/feathers/controls/ToggleSwitch.html#trackSkin) will fill the entire width of the toggle switch.
+
+To give the track different a appearance on each side of the thumb, set the optional [`secondaryTrackSkin`](https://api.feathersui.com/current/feathers/controls/ToggleSwitch.html#secondaryTrackSkin).
+
+```hx
+var trackSkin = new RectangleSkin();
+trackSkin.border = SolidColor(1.0, 0x999999);
+trackSkin.fill = SolidColor(0xccccff);
+trackSkin.width = 48.0;
+trackSkin.height = 32.0;
+toggle.trackSkin = trackSkin;
+
+var secondaryTrackSkin = new RectangleSkin();
+secondaryTrackSkin.border = SolidColor(1.0, 0x999999);
+secondaryTrackSkin.fill = SolidColor(0xcccccc);
+secondaryTrackSkin.width = 48.0;
+secondaryTrackSkin.height = 32.0;
+toggle.secondaryTrackSkin = secondaryTrackSkin;
+```
+
+The [`trackSkin`](https://api.feathersui.com/current/feathers/controls/ToggleSwitch.html#trackSkin) appears on the left side of the thumb, and the [`secondaryTrackSkin`](https://api.feathersui.com/current/feathers/controls/ToggleSwitch.html#secondaryTrackSkin) appears on the right side.
+
+## Related Links
+
+- [`feathers.controls.ToggleSwitch` API Documentation](/api-reference/feathers/controls/ToggleSwitch.html)
