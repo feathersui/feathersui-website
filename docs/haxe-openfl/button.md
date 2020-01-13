@@ -30,7 +30,7 @@ function button_triggeredHandler(event:Event):Void
 }
 ```
 
-## Button states
+## States
 
 When the user interacts with a button using the mouse, keyboard, or touchscreen, its state will change, which may affect its appearance. For instance, the button's background skin, font styles, and icon may all be rendered differently in different states.
 
@@ -41,9 +41,9 @@ The [`ButtonState`](https://api.feathersui.com/current/feathers/controls/ButtonS
 - [`HOVER`](https://api.feathersui.com/current/feathers/controls/ButtonState.html#HOVER) is the state when the mouse is hovering over the button. This state is not used for touchscreens or keyboard interaction.
 - [`DISABLED`](https://api.feathersui.com/current/feathers/controls/ButtonState.html#DISABLED) is the button's state when the its [`enabled`](https://api.feathersui.com/current/feathers/core/FeathersControl.html#enabled) property has been set to `false`.
 
-## Styling a `Button` component
+## Styles
 
-A number of styles may be customized on a button, including the font styles, the background skin, and an optional icon. For full details about which properties are available, see the [`Button` API reference](https://api.feathersui.com/current/feathers/controls/Button.html). We'll look at a few of the most common ways of styling a button below.
+A number of styles may be customized on a [`Button`](https://api.feathersui.com/current/feathers/controls/Button.html) component, including the font styles, the background skin, and an optional icon. Several more styles may be used to adjust the layout of the button's children.
 
 ### Font styles
 
@@ -71,12 +71,16 @@ Give the button a background using the [`backgroundSkin`](https://api.feathersui
 var skin = new RectangleSkin();
 skin.border = SolidColor(1.0, 0x999999);
 skin.fill = SolidColor(0xcccccc);
+skin.width = 64.0;
+skin.height = 32.0;
 button.backgroundSkin = skin;
 ```
 
-The [`border`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html#border) and [`fill`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html#fill) properties of the [`RectangleSkin`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html) are used to adjust its appearance. They support a variety of values from solid colors to gradients to bitmaps.
+The [`border`](https://api.feathersui.com/current/feathers/skins/BaseGraphicsPathSkin.html#border) and [`fill`](https://api.feathersui.com/current/feathers/skins/BaseGraphicsPathSkin.html#fill) properties of the [`RectangleSkin`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html) are used to adjust its appearance. They support a variety of values — from solid colors to gradients to bitmaps.
 
-> See [Graphics API skins](./graphics-api-skins.md) for more details about how to use [`RectangleSkin`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html) — along with the [`LineStyle`](https://api.feathersui.com/current/feathers/graphics/LineStyle.html) and [`FillStyle`](https://api.feathersui.com/current/feathers/graphics/FillStyle.html) enums that change its border and fill appearance.
+The button automatically calculates its preferred size based on the initial dimensions of its background skin (accounting for some other factors too, like the dimensions of the text and icon), so it's important to set a skin's `width` and `height` properties to appropriate values to use in this calculation.
+
+> See [Graphics API skins](./graphics-api-skins.md) for more details about how to use [`RectangleSkin`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html) with the [`LineStyle`](https://api.feathersui.com/current/feathers/graphics/LineStyle.html) and [`FillStyle`](https://api.feathersui.com/current/feathers/graphics/FillStyle.html) enums that change its border and fill appearance.
 
 The appearance of the button's border or fill may be customized to change based on the button's current state, such as when the button is pressed down, the mouse is hovering over it, or the button is disabled. In the next example, a call to the skin's [`setFillForState()`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html#setFillForState) method makes it switch to a different fill when the button's [`DOWN`](https://api.feathersui.com/current/feathers/controls/ButtonState.html#DOWN) state is active.
 
@@ -94,11 +98,11 @@ In the examples above, the button uses the same [`RectangleSkin`](https://api.fe
 
 ```hx
 var defaultSkin = new RectangleSkin();
-// ... set border and fill
+// ... set border, fill, width, and height
 button.backgroundSkin = defaultSkin;
 
 var hoverSkin = new RectangleSkin();
-// ... set border and fill
+// ... set border, fill, width, and height
 button.setSkinForState(HOVER, hoverSkin);
 ```
 
@@ -133,7 +137,7 @@ button.paddingBottom = 5.0;
 button.paddingLeft = 8.0;
 ```
 
-The icon may be positioned on any side of the button's text. For instance, the following example moves the icon above the text so that they are stacked vertically.
+The icon may be positioned on any side of the button's text. For instance, the following example moves the icon above the text, so that the icon and text are stacked vertically.
 
 ```hx
 button.iconPosition = TOP;

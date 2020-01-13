@@ -37,7 +37,7 @@ function toggle_changeHandler(event:Event):Void
 }
 ```
 
-## Toggle button states
+## States
 
 When the user interacts with a toggle button using the mouse, keyboard, or touchscreen, its state will change, which may affect its appearance. For instance, the toggle button's background skin, font styles, and icon may all be rendered differently in different states.
 
@@ -50,9 +50,9 @@ The [`ToggleButtonState`](https://api.feathersui.com/current/feathers/controls/T
 
 Notice that each state also defines a boolean value to indicate if the toggle button is selected or not. `DOWN(true)` and `DOWN(false)` both indicate that the toggle button is currently pressed down, but the value of `true` indicates that it is currently selected, while `false` means that it is not selected.
 
-## Styling a `ToggleButton` component
+## Styles
 
-A number of styles may be customized on a toggle button, including the font styles, the background skin, and an optional icon. For full details about which properties are available, see the [`ToggleButton` API reference](https://api.feathersui.com/current/feathers/controls/ToggleButton.html). We'll look at a few of the most common ways of styling a toggle button below.
+A number of styles may be customized on a [`ToggleButton`](https://api.feathersui.com/current/feathers/controls/ToggleButton.html) component, including the font styles, the background skin, and an optional icon. Several more styles may be used to adjust the layout of the toggle button's children.
 
 ### Font styles
 
@@ -86,12 +86,16 @@ Give the toggle button a background using the [`backgroundSkin`](https://api.fea
 var skin = new RectangleSkin();
 skin.border = SolidColor(1.0, 0x999999);
 skin.fill = SolidColor(0xcccccc);
+skin.width = 64.0;
+skin.height = 32.0;
 button.backgroundSkin = skin;
 ```
 
-The [`border`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html#border) and [`fill`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html#fill) properties of the [`RectangleSkin`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html) are used to adjust its appearance. They support a variety of values from solid colors to gradients to bitmaps.
+The [`border`](https://api.feathersui.com/current/feathers/skins/BaseGraphicsPathSkin.html#border) and [`fill`](https://api.feathersui.com/current/feathers/skins/BaseGraphicsPathSkin.html#fill) properties of the [`RectangleSkin`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html) are used to adjust its appearance. They support a variety of values — from solid colors to gradients to bitmaps.
 
-> See [Graphics API skins](./graphics-api-skins.md) for more details about how to use [`RectangleSkin`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html) — along with the [`LineStyle`](https://api.feathersui.com/current/feathers/graphics/LineStyle.html) and [`FillStyle`](https://api.feathersui.com/current/feathers/graphics/FillStyle.html) enums that change its border and fill appearance.
+The button automatically calculates its preferred size based on the initial dimensions of its background skin (accounting for some other factors too, like the dimensions of the text and icon), so it's important to set a skin's `width` and `height` properties to appropriate values to use in this calculation.
+
+> See [Graphics API skins](./graphics-api-skins.md) for more details about how to use [`RectangleSkin`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html) with the [`LineStyle`](https://api.feathersui.com/current/feathers/graphics/LineStyle.html) and [`FillStyle`](https://api.feathersui.com/current/feathers/graphics/FillStyle.html) enums that change its border and fill appearance.
 
 The appearance of the toggle button's border or fill may change when the toggle button is selected. In the next example, the same [`RectangleSkin`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html) displays a different fill when selected by setting the [`selectedFill`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html#selectedFill) property.
 
@@ -116,15 +120,15 @@ In the examples above, the toggle button uses the same [`RectangleSkin`](https:/
 
 ```hx
 var defaultSkin = new RectangleSkin();
-// ... set border and fill
+// ... set border, fill, width, and height
 button.backgroundSkin = defaultSkin;
 
 var selectedSkin = new RectangleSkin();
-// ... set border and fill
+// ... set border, fill, width, and height
 button.selectedBackgroundSkin = selectedSkin;
 
 var hoverSkin = new RectangleSkin();
-// ... set border and fill
+// ... set border, fill, width, and height
 button.setSkinForState(HOVER(false), hoverSkin);
 ```
 
@@ -160,7 +164,7 @@ button.paddingBottom = 5.0;
 button.paddingLeft = 8.0;
 ```
 
-The icon may be positioned on any side of the toggle button's text. For instance, the following example moves the icon above the text so that they are stacked vertically.
+The icon may be positioned on any side of the toggle button's text. For instance, the following example moves the icon above the text, so that the icon and text are stacked vertically.
 
 ```hx
 button.iconPosition = TOP;
