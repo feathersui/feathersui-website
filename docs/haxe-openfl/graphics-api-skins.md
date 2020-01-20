@@ -10,10 +10,10 @@ Feathers UI offers a number of skin classes that are built on top of OpenFL's [`
 ## Skin Classes
 
 - [`RectangleSkin`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html)
-- [`EllipseSkin`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html)
-- [`CircleSkin`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html)
-- [`UnderlineSkin`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html)
-- [`OverAndUnderlineSkin`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html)
+- [`EllipseSkin`](https://api.feathersui.com/current/feathers/skins/EllipseSkin.html)
+- [`CircleSkin`](https://api.feathersui.com/current/feathers/skins/CircleSkin.html)
+- [`UnderlineSkin`](https://api.feathersui.com/current/feathers/skins/UnderlineSkin.html)
+- [`OverAndUnderlineSkin`](https://api.feathersui.com/current/feathers/skins/OverAndUnderlineSkin.html)
 
 ## Fill
 

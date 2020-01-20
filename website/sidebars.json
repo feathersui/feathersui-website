@@ -10,12 +10,34 @@
       "haxe-openfl/openfl-intro"
     ],
     "Components": [
+      "haxe-openfl/application",
+      "haxe-openfl/asset-loader",
       "haxe-openfl/button",
+      "haxe-openfl/callout",
       "haxe-openfl/check",
-      "haxe-openfl/slider",
+      "haxe-openfl/combo-box",
+      "haxe-openfl/label",
+      "haxe-openfl/layout-group",
+      "haxe-openfl/list-view",
+      "haxe-openfl/panel",
+      "haxe-openfl/pop-up-list",
+      "haxe-openfl/progress-bar",
       "haxe-openfl/radio",
+      "haxe-openfl/scroll-bar",
+      "haxe-openfl/scroll-container",
+      "haxe-openfl/slider",
+      "haxe-openfl/stack-navigator",
+      "haxe-openfl/tab-bar",
+      "haxe-openfl/text-callout",
+      "haxe-openfl/text-input",
       "haxe-openfl/toggle-button",
       "haxe-openfl/toggle-switch"
+    ],
+    "Layouts": [
+      "haxe-openfl/anchor-layout",
+      "haxe-openfl/horizontal-layout",
+      "haxe-openfl/vertical-layout",
+      "haxe-openfl/vertical-list-fixed-row-layout"
     ],
     "Styles and Skins": ["haxe-openfl/graphics-api-skins"]
   },
