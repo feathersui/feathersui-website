@@ -46,7 +46,7 @@ Similar to [`ToggleButton`](./toggle-button.md), the [`Check`](https://api.feath
 - [`UP(selected:Bool)`](https://api.feathersui.com/current/feathers/controls/ToggleButtonState.html#UP) is the check's default state when the user is not interacting with it, and the check is enabled.
 - [`DOWN(selected:Bool)`](https://api.feathersui.com/current/feathers/controls/ToggleButtonState.html#DOWN) is the state when the user presses the check with a mouse, touchscreen, or by pressing [`Keyboard.SPACE`](https://api.openfl.org/openfl/ui/Keyboard.html#SPACE) when the check is focused.
 - [`HOVER(selected:Bool)`](https://api.feathersui.com/current/feathers/controls/ToggleButtonState.html#HOVER) is the state when the mouse is hovering over the check. This state is not used for touchscreens or keyboard interaction.
-- [`DISABLED(selected:Bool)`](https://api.feathersui.com/current/feathers/controls/ToggleButtonState.html#DISABLED) is the check's state when its [`enabled`](https://api.feathersui.com/current/feathers/core/FeathersControl.html#enabled) property has been set to `false`.
+- [`DISABLED(selected:Bool)`](https://api.feathersui.com/current/feathers/controls/ToggleButtonState.html#DISABLED) is the check's state when its [`enabled`](https://api.feathersui.com/current/feathers/core/IUIControl.html#enabled) property has been set to `false`.
 
 Notice that each state also defines a boolean value to indicate if the check is selected or not. `DOWN(true)` and `DOWN(false)` both indicate that the check is currently pressed down, but the value of `true` indicates that it is currently selected, while `false` means that it is not selected.
 

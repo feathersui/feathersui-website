@@ -66,7 +66,7 @@ Similar to [`ToggleButton`](./toggle-button.md), the [`Radio`](https://api.feath
 - [`UP(selected:Bool)`](https://api.feathersui.com/current/feathers/controls/ToggleButtonState.html#UP) is the radio's default state when the user is not interacting with it, and the radio is enabled.
 - [`DOWN(selected:Bool)`](https://api.feathersui.com/current/feathers/controls/ToggleButtonState.html#DOWN) is the state when the user presses the radio with a mouse, touchscreen, or by pressing [`Keyboard.SPACE`](https://api.openfl.org/openfl/ui/Keyboard.html#SPACE) when the radio is focused.
 - [`HOVER(selected:Bool)`](https://api.feathersui.com/current/feathers/controls/ToggleButtonState.html#HOVER) is the state when the mouse is hovering over the radio. This state is not used for touchscreens or keyboard interaction.
-- [`DISABLED(selected:Bool)`](https://api.feathersui.com/current/feathers/controls/ToggleButtonState.html#DISABLED) is the radio's state when its [`enabled`](https://api.feathersui.com/current/feathers/core/FeathersControl.html#enabled) property has been set to `false`.
+- [`DISABLED(selected:Bool)`](https://api.feathersui.com/current/feathers/controls/ToggleButtonState.html#DISABLED) is the radio's state when its [`enabled`](https://api.feathersui.com/current/feathers/core/IUIControl.html#enabled) property has been set to `false`.
 
 Notice that each state also defines a boolean value to indicate if the radio is selected or not. `DOWN(true)` and `DOWN(false)` both indicate that the radio is currently pressed down, but the value of `true` indicates that it is currently selected, while `false` means that it is not selected.
 

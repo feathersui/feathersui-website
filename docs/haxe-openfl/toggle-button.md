@@ -46,7 +46,7 @@ The [`ToggleButtonState`](https://api.feathersui.com/current/feathers/controls/T
 - [`UP(selected:Bool)`](https://api.feathersui.com/current/feathers/controls/ToggleButtonState.html#UP) is the toggle button's default state when the user is not interacting with it, and the toggle button is enabled.
 - [`DOWN(selected:Bool)`](https://api.feathersui.com/current/feathers/controls/ToggleButtonState.html#DOWN) is the state when the user presses the toggle button with a mouse, touchscreen, or by pressing [`Keyboard.SPACE`](https://api.openfl.org/openfl/ui/Keyboard.html#SPACE) when the toggle button is focused.
 - [`HOVER(selected:Bool)`](https://api.feathersui.com/current/feathers/controls/ToggleButtonState.html#HOVER) is the state when the mouse is hovering over the toggle button. This state is not used for touchscreens or keyboard interaction.
-- [`DISABLED(selected:Bool)`](https://api.feathersui.com/current/feathers/controls/ToggleButtonState.html#DISABLED) is the toggle button's state when its [`enabled`](https://api.feathersui.com/current/feathers/core/FeathersControl.html#enabled) property has been set to `false`.
+- [`DISABLED(selected:Bool)`](https://api.feathersui.com/current/feathers/controls/ToggleButtonState.html#DISABLED) is the toggle button's state when its [`enabled`](https://api.feathersui.com/current/feathers/core/IUIControl.html#enabled) property has been set to `false`.
 
 Notice that each state also defines a boolean value to indicate if the toggle button is selected or not. `DOWN(true)` and `DOWN(false)` both indicate that the toggle button is currently pressed down, but the value of `true` indicates that it is currently selected, while `false` means that it is not selected.
 
