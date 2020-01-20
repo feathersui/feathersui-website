@@ -91,6 +91,10 @@ const siteConfig = {
     theme: "agate"
   },
 
+  enableUpdateTime: true,
+  editUrl:
+    "https://github.com/BowlerHatLLC/feathersui-website/edit/master/docs/",
+
   // Add custom scripts here that would be placed in <script> tags.
   scripts: ["https://buttons.github.io/buttons.js"],
 
