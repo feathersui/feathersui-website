@@ -68,7 +68,7 @@ stage.addEventListener(KeyboardEvent.KEY_DOWN, (event:KeyboardEvent) ->
 
 The event listener above determines if the up, down, left, or right arrow keys have been pressed.
 
-> The [`trace()`](https://haxe.org/manual/debugging-trace-log.html) function is built into [Haxe](https://haxe.org) programming language, and it allows us to print some text to the debug console.
+> The [`trace()`](https://haxe.org/manual/debugging-trace-log.html) function is built into [Haxe](https://haxe.org) programming language, and it prints some text to the debug console.
 
 In many cases, a listener is also added for [`openfl.events.KeyboardEvent.KEY_UP`](https://api.openfl.org/openfl/events/KeyboardEvent.html#KEY_UP) to determine when a key press ends.
 

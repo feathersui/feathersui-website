@@ -30,7 +30,7 @@ this.addChild(radio3);
 
 Simply pass the [`ToggleGroup`](https://api.feathersui.com/current/feathers/controls/ToggleGroup.html) instance to the [`toggleGroup`](https://api.feathersui.com/current/feathers/controls/Radio.html#toggleGroup) property of each [`Radio`](https://api.feathersui.com/current/feathers/controls/Radio.html) instance.
 
-If we listen for `Event.CHANGE`, we can track whether the user has changed the selected radio in the group.
+Listen for `Event.CHANGE` to perform an action when the user selects a different radio.
 
 ```hx
 group.addEventListener(Event.CHANGE, toggleGroup_changeHandler);

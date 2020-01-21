@@ -15,13 +15,13 @@ button.text = "Click Me";
 this.addChild(button);
 ```
 
-A toggle button may be selected and deselected when it is triggered, or we can programmatically change the toggle button's selection by setting the [`selected`](https://api.feathersui.com/current/feathers/controls/ToggleButton.html#selected) property:
+A toggle button may be selected and deselected when it is triggered, or it can be changed programmatically by setting the [`selected`](https://api.feathersui.com/current/feathers/controls/ToggleButton.html#selected) property:
 
 ```hx
 button.selected = true;
 ```
 
-If we listen for `Event.CHANGE`, we can track whether the user has triggered the toggle button to change its selection:
+Listen for `Event.CHANGE` to perform an action when the user changes the selection of the toggle button.
 
 ```hx
 button.addEventListener(Event.CHANGE, toggle_changeHandler);
@@ -151,7 +151,7 @@ button.selectedIcon = new Bitmap(Assets.getBitmapData("anotherAssetName");
 button.setIconForState(DOWN, new Bitmap(Assets.getBitmapData("yetAnotherAssetName")));
 ```
 
-> In this example, we use a [`Bitmap`](https://api.openfl.org/openfl/display/Bitmap.html) for the toggle button's icon, but any type of display object may be used. Additionally, while it can be convenient to load icons with the [`Assets`](https://api.openfl.org/openfl/utils/Assets.html) class, icons may come from anywhere — even by drawing them programatically.
+> This example uses a [`Bitmap`](https://api.openfl.org/openfl/display/Bitmap.html) for the toggle button's icon, but any type of display object may be used. Additionally, while it can be convenient to load icons with the [`Assets`](https://api.openfl.org/openfl/utils/Assets.html) class, icons may come from anywhere — even by drawing them programatically.
 
 ### Layout
 

@@ -3,7 +3,7 @@ title: How to use the Feathers UI StackNavigator component
 sidebar_label: StackNavigator
 ---
 
-The [`Callout`](https://api.feathersui.com/current/feathers/controls/navigators/StackNavigator.html) class
+The [`StackNavigator`](https://api.feathersui.com/current/feathers/controls/navigators/StackNavigator.html) class
 
 ---
 

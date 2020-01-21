@@ -98,7 +98,7 @@ haxelib run lime setup
 
 ### Error: Could not find haxelib _[library name]_, does it need to be installed?
 
-This error indicates that one or more of your project's dependencies is not installed. In a terminal, run the [**haxelib install**](https://lib.haxe.org/documentation/using-haxelib/#install) command with the name of the missing library. In the following example, we install [OpenFL](https://openfl.org/):
+This error indicates that one or more of your project's dependencies is not installed. In a terminal, run the [**haxelib install**](https://lib.haxe.org/documentation/using-haxelib/#install) command with the name of the missing library. Run the following command to install [OpenFL](https://openfl.org/):
 
 ```
 haxelib install openfl

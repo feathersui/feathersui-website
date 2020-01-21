@@ -117,7 +117,7 @@ container.addChild(child2);
 
 Children with percentage sizing may be combined with children using fixed pixel widths. In that case, [`percentWidth`](https://api.feathersui.com/current/feathers/layout/HorizontalLayoutData.html#percentWidth) will be based on the remaining space in the parent container after the fixed pixel width is subtracted from the container's width.
 
-In the following example, we have two children again, but this time, the first child is a fixed `150.0` pixels wide, and the second child uses [`percentWidth`](https://api.feathersui.com/current/feathers/layout/HorizontalLayoutData.html#percentWidth). In this situation, the percentage will be based on the width of the container _minus 150.0 pixels_.
+In the following example, there are two children again, but this time, the first child is a fixed `150.0` pixels wide, and the second child uses [`percentWidth`](https://api.feathersui.com/current/feathers/layout/HorizontalLayoutData.html#percentWidth). In this situation, the percentage will be based on the width of the container _minus 150.0 pixels_.
 
 ```hx
 var container = new LayoutGroup();
@@ -166,7 +166,7 @@ child2.layoutData = layoutData2;
 container.addChild(child2);
 ```
 
-Notice that we can mix and match fixed pixel values with percentage values on the same child. The width of the first child is `150.0` pixels, but the height is 100% of the container's total height.
+Notice that fixed pixel values may be mixed with percentage values on the same child. The width of the first child is `150.0` pixels, but the height is 100% of the container's total height.
 
 > **Tip:** If the height of every child in a [`HorizontalLayout`](https://api.feathersui.com/current/feathers/layout/HorizontalLayout.html) should be 100%, set [`verticalAlign`](https://api.feathersui.com/current/feathers/layout/HorizontalLayout.html#verticalAlign) to [`JUSTIFY`](https://api.feathersui.com/current/feathers/layout/VerticalAlign.html#JUSTIFY). You'll write less code, and performance will be better optimized.
 

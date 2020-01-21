@@ -124,7 +124,7 @@ Similar to the background skin, the button's icon may be optionally customized f
 button.setIconForState(DOWN, new Bitmap(Assets.getBitmapData("anotherAssetName")));
 ```
 
-> In this example, we use a [`Bitmap`](https://api.openfl.org/openfl/display/Bitmap.html) for the button's icon, but any type of display object may be used. Additionally, while it can be convenient to load icons with the [`Assets`](https://api.openfl.org/openfl/utils/Assets.html) class, icons may come from anywhere — even by drawing them programatically.
+> This example uses a [`Bitmap`](https://api.openfl.org/openfl/display/Bitmap.html) for the button's icon, but any type of display object may be used. Additionally, while it can be convenient to load icons with the [`Assets`](https://api.openfl.org/openfl/utils/Assets.html) class, icons may come from anywhere — even by drawing them programatically.
 
 ### Layout
 

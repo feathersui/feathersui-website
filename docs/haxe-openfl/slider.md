@@ -25,7 +25,7 @@ The [`value`](https://api.feathersui.com/current/feathers/controls/supportClasse
 slider.step = 1.0;
 ```
 
-The [`step`](https://api.feathersui.com/current/feathers/controls/supportClasses/BaseSlider.html#step) property controls how the slider's value is rounded as it is dragged. If we set the slider's [`step`](https://api.feathersui.com/current/feathers/controls/supportClasses/BaseSlider.html#step) to `1.0`, as we do above, the slider will be dragged along whole numbers only and it cannot have a value like `4.5`.
+The [`step`](https://api.feathersui.com/current/feathers/controls/supportClasses/BaseSlider.html#step) property controls how the slider's value is rounded as it is dragged. When the slider's [`step`](https://api.feathersui.com/current/feathers/controls/supportClasses/BaseSlider.html#step) is set to `1.0`, the slider will be dragged along whole numbers only and it cannot have a value like `4.5`.
 
 Add a listener for `Event.CHANGE` to react to changes to the [`value`](https://api.feathersui.com/current/feathers/controls/supportClasses/BaseSlider.html#value) property:
 
@@ -45,7 +45,7 @@ function slider_changeHandler(event:Event):void
 
 ## Styles
 
-The skins for a [`HSlider`](https://api.feathersui.com/current/feathers/controls/HSlider.html) and [`VSlider`](https://api.feathersui.com/current/feathers/controls/VSlider.html) components are divided into two main parts: the thumb and the track. The track may either fill the full length of the slider, or it may be optionally divided in half — meeting at the center of the slider's thumb.
+The skins for the [`HSlider`](https://api.feathersui.com/current/feathers/controls/HSlider.html) and [`VSlider`](https://api.feathersui.com/current/feathers/controls/VSlider.html) components are divided into two main parts: the thumb and the track. The track may either fill the full length of the slider, or it may be optionally divided in half — meeting at the center of the slider's thumb.
 
 ### Thumb
 

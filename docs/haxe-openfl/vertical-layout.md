@@ -116,7 +116,7 @@ child2.layoutData = layoutData2;
 container.addChild(child2);
 ```
 
-Notice that we can mix and match fixed pixel values with percentage values on the same child. The height of the first child is `150.0` pixels, but the width is 100% of the container's total width.
+Notice that fixed pixel values may be mixed with percentage values on the same child. The height of the first child is `150.0` pixels, but the width is 100% of the container's total width.
 
 > **Tip:** If the width of every child in a [`VerticalLayout`](https://api.feathersui.com/current/feathers/layout/VerticalLayout.html) should be 100%, set [`horizontalAlign`](https://api.feathersui.com/current/feathers/layout/VerticalLayout.html#horizontalAlign) to [`JUSTIFY`](https://api.feathersui.com/current/feathers/layout/HorizontalAlign.html#JUSTIFY). You'll write less code, and performance will be better optimized.
 
@@ -148,7 +148,7 @@ container.addChild(child2);
 
 Children with percentage sizing may be combined with children using fixed pixel heights. In that case, [`percentHeight`](https://api.feathersui.com/current/feathers/layout/VerticalLayoutData.html#percentHeight) will be based on the remaining space in the parent container after the fixed pixel height is subtracted from the container's height.
 
-In the following example, we have two children again, but this time, the first child is a fixed `150.0` pixels tall, and the second child uses [`percentHeight`](https://api.feathersui.com/current/feathers/layout/VerticalLayoutData.html#percentHeight). In this situation, the percentage will be based on the height of the container _minus 150.0 pixels_.
+In the following example, there are two children again, but this time, the first child is a fixed `150.0` pixels tall, and the second child uses [`percentHeight`](https://api.feathersui.com/current/feathers/layout/VerticalLayoutData.html#percentHeight). In this situation, the percentage will be based on the height of the container _minus 150.0 pixels_.
 
 ```hx
 var container = new LayoutGroup();

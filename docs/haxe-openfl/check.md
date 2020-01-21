@@ -15,13 +15,13 @@ check.text = "Click Me";
 this.addChild(check);
 ```
 
-A check may be selected and deselected when it is triggered, or we can programmatically change the check's selection by setting the [`selected`](https://api.feathersui.com/current/feathers/controls/ToggleButton.html#selected) property:
+A check may be selected and deselected when it is triggered, or it can be changed programmatically by setting the [`selected`](https://api.feathersui.com/current/feathers/controls/ToggleButton.html#selected) property:
 
 ```hx
 check.selected = true;
 ```
 
-If we listen for `Event.CHANGE`, we can track whether the user has triggered the check to change its selection:
+Listen for `Event.CHANGE` to perform an action when the user changes the selection of the check.
 
 ```hx
 check.addEventListener(Event.CHANGE, check_changeHandler);
