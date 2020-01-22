@@ -3,7 +3,7 @@ title: How to use the Feathers UI Application component
 sidebar_label: Application
 ---
 
-The [`Application`](https://api.feathersui.com/current/feathers/controls/Application.html) component is an _optional_ root class for Feathers UI projects. It may use a layout, similar to a [`LayoutGroup`](./layout-group.md), and it provides the ability to scale your project for different screen sizes, similar to the way native applications do it.
+The [`Application`](https://api.feathersui.com/current/feathers/controls/Application.html) component is an _optional_ root class for Feathers UI projects. It may use [layouts](https://api.feathersui.com/current/feathers/layout/), similar to a [`LayoutGroup`](./layout-group.md), and it provides the ability to scale your project for different screen sizes, similar to the way native applications do it.
 
 > If you prefer, you may use OpenFL's [`Sprite`](https://api.openfl.org/openfl/display/Sprite.html) as a root class for Feathers UI projects. The use of [`Application`](https://api.feathersui.com/current/feathers/controls/Application.html) is completely optional.
 

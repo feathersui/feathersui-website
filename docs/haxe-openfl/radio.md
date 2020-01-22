@@ -30,20 +30,20 @@ this.addChild(radio3);
 
 Simply pass the [`ToggleGroup`](https://api.feathersui.com/current/feathers/controls/ToggleGroup.html) instance to the [`toggleGroup`](https://api.feathersui.com/current/feathers/controls/Radio.html#toggleGroup) property of each [`Radio`](https://api.feathersui.com/current/feathers/controls/Radio.html) instance.
 
-Listen for `Event.CHANGE` to perform an action when the user selects a different radio.
+[Add an event listener](https://books.openfl.org/openfl-developers-guide/handling-events/basics-of-handling-events.html) for [`Event.CHANGE`](https://api.openfl.org/openfl/events/Event.html#CHANGE) to perform an action when the user selects a different radio.
 
 ```hx
 group.addEventListener(Event.CHANGE, toggleGroup_changeHandler);
 ```
 
-Check for the new value of [`selectedItem`](https://api.feathersui.com/current/feathers/core/ToggleGroup.html#selectedItem) in the listener.
+Check for the new value of the [`selectedItem`](https://api.feathersui.com/current/feathers/core/ToggleGroup.html#selectedItem) property in the listener.
 
 ```hx
 function toggleGroup_changeHandler(event:Event):Void
 {
     var group = cast(event.currentTarget, ToggleGroup);
     var radio = cast(group.selectedItem, Radio);
-    trace("group.selectedItem changed: " + radio.text);
+    trace("group.selectedItem change: " + radio.text);
 }
 ```
 
@@ -53,7 +53,7 @@ Alternatively, the value of the [`selectedIndex`](https://api.feathersui.com/cur
 function toggleGroup_changeHandler(event:Event):Void
 {
     var group = cast(event.currentTarget, ToggleGroup);
-    trace("group.selectedIndex changed: " + selectedIndex);
+    trace("group.selectedIndex change: " + selectedIndex);
 }
 ```
 

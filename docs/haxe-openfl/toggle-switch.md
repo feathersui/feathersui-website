@@ -17,19 +17,19 @@ this.addChild(toggle);
 
 The [`selected`](https://api.feathersui.com/current/feathers/controls/ToggleSwitch.html#selected) property indicates if the toggle switch is on (`true`) or off (`false`).
 
-Add a listener for `Event.CHANGE` to react to changes to the [`selected`](https://api.feathersui.com/current/feathers/controls/ToggleSwitch.html#selected) property:
+[Add an event listener](https://books.openfl.org/openfl-developers-guide/handling-events/basics-of-handling-events.html) for [`Event.CHANGE`](https://api.openfl.org/openfl/events/Event.html#CHANGE) to perform an action when the [`selected`](https://api.feathersui.com/current/feathers/controls/ToggleSwitch.html#selected) property changes.
 
 ```hx
 toggle.addEventListener(Event.CHANGE, toggleSwitch_changeHandler);
 ```
 
-The listener might look something like this:
+Listeners for [`Event.CHANGE`](https://api.openfl.org/openfl/events/Event.html#CHANGE) have the following function signature.
 
 ```hx
 function toggleSwitch_changeHandler(event:Event):void
 {
     var toggle = cast(event.currentTarget, ToggleSwitch);
-    trace("toggle.selected changed: " + toggle.selected);
+    trace("toggle.selected change: " + toggle.selected);
 }
 ```
 

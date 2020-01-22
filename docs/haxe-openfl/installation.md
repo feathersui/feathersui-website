@@ -16,7 +16,7 @@ sidebar_label: Installation
 
 ## Installation
 
-In a terminal, use the [**haxelib git**](https://lib.haxe.org/documentation/using-haxelib/#git) command to install Feathers UI from its Github repository:
+In a terminal, use the [**haxelib git**](https://lib.haxe.org/documentation/using-haxelib/#git) command to install Feathers UI from its Github repository.
 
 ```sh
 haxelib git feathersui https://github.com/BowlerHatLLC/feathersui-openfl.git
@@ -26,7 +26,7 @@ This command will automatically install any required dependencies too, including
 
 ## Update
 
-When a new version of Feathers UI is released, you can update/upgrade by running the following command:
+When a new version of Feathers UI is released, you can update/upgrade by running the following command.
 
 ```sh
 haxelib update feathersui

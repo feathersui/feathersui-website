@@ -7,26 +7,26 @@ The [`TextInput`](https://api.feathersui.com/current/feathers/controls/TextInput
 
 ## The Basics
 
-Create a [`TextInput`](https://api.feathersui.com/current/feathers/controls/TextInput.html) control and add it to the display list:
+Create a [`TextInput`](https://api.feathersui.com/current/feathers/controls/TextInput.html) control and add it to the [the display list](https://books.openfl.org/openfl-developers-guide/display-programming/basics-of-display-programming.html).
 
 ```hx
-var input:TextInput = new TextInput();
+var input = new TextInput();
 this.addChild(input);
 ```
 
-Text may be changed programatically by setting the [`text`](https://api.feathersui.com/current/feathers/controls/TextInput.html#text) property:
+Text may be changed programatically by setting the [`text`](https://api.feathersui.com/current/feathers/controls/TextInput.html#text) property.
 
 ```hx
 input.text = "Matt Murdock";
 ```
 
-To know when the user edits the text, listen for `Event.CHANGE`.
+[Add an event listener](https://books.openfl.org/openfl-developers-guide/handling-events/basics-of-handling-events.html) for [`Event.CHANGE`](https://api.openfl.org/openfl/events/Event.html#CHANGE) to perform an action when the user edits the text.
 
 ```hx
 input.addEventListener(Event.CHANGE, textInput_changeHandler);
 ```
 
-A listener for this event uses the following function signature.
+Check for the new value of the [`text`](https://api.feathersui.com/current/feathers/controls/TextInput.html#text) property in the listener function.
 
 ```hx
 function textInput_changeHandler(event:Event):Void

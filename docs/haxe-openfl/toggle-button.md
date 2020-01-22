@@ -15,25 +15,25 @@ button.text = "Click Me";
 this.addChild(button);
 ```
 
-A toggle button may be selected and deselected when it is triggered, or it can be changed programmatically by setting the [`selected`](https://api.feathersui.com/current/feathers/controls/ToggleButton.html#selected) property:
+A toggle button may be selected and deselected when it is triggered, or it can be changed programmatically by setting the [`selected`](https://api.feathersui.com/current/feathers/controls/ToggleButton.html#selected) property.
 
 ```hx
 button.selected = true;
 ```
 
-Listen for `Event.CHANGE` to perform an action when the user changes the selection of the toggle button.
+[Add an event listener](https://books.openfl.org/openfl-developers-guide/handling-events/basics-of-handling-events.html) for [`Event.CHANGE`](https://api.openfl.org/openfl/events/Event.html#CHANGE) to perform an action when the user changes the toggle button's selection.
 
 ```hx
 button.addEventListener(Event.CHANGE, toggle_changeHandler);
 ```
 
-Check for the new value of [`selected`](https://api.feathersui.com/current/feathers/controls/ToggleButton.html#selected) in the listener:
+Check for the new value of the [`selected`](https://api.feathersui.com/current/feathers/controls/ToggleButton.html#selected) property in the listener function.
 
 ```hx
 function toggle_changeHandler(event:Event):Void
 {
     var button = cast(event.currentTarget, ToggleButton);
-    trace("toggle.selected has changed: " + toggle.selected);
+    trace("toggle.selected change: " + toggle.selected);
 }
 ```
 

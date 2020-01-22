@@ -15,18 +15,19 @@ button.text = "Click Me";
 this.addChild(button);
 ```
 
-To know when the button is tapped or clicked, listen for `FeathersEvent.TRIGGERED`.
+[Add an event listener](https://books.openfl.org/openfl-developers-guide/handling-events/basics-of-handling-events.html) for [`FeathersEvent.TRIGGERED`](https://api.feathersui.com/current/feathers/events/FeathersEvent.html#TRIGGERED) to perform an action when the button is clicked or tapped.
 
 ```hx
-button.addEventListener(Event.TRIGGERED, button_triggeredHandler);
+button.addEventListener(FeathersEvent.TRIGGERED, button_triggeredHandler);
 ```
 
-A listener for this event uses the following function signature.
+Listeners for [`FeathersEvent.TRIGGERED`](https://api.feathersui.com/current/feathers/events/FeathersEvent.html#TRIGGERED) have the following function signature.
 
 ```hx
 function button_triggeredHandler(event:Event):Void
 {
-    trace("button triggered");
+    var button = cast(event.currentTarget, Button);
+    trace("button triggered: " + button.text);
 }
 ```
 
@@ -161,4 +162,4 @@ button.verticalAlign = MIDDLE;
 ## Related Links
 
 - [`feathers.controls.Button` API Reference](https://api.feathersui.com/current/feathers/controls/Button.html)
-- [How to use the `ToggleButton` component](./ToggleButton.html)
+- [How to use the `ToggleButton` component](./toggle-button.html)

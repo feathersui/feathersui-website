@@ -27,19 +27,19 @@ slider.step = 1.0;
 
 The [`step`](https://api.feathersui.com/current/feathers/controls/supportClasses/BaseSlider.html#step) property controls how the slider's value is rounded as it is dragged. When the slider's [`step`](https://api.feathersui.com/current/feathers/controls/supportClasses/BaseSlider.html#step) is set to `1.0`, the slider will be dragged along whole numbers only and it cannot have a value like `4.5`.
 
-Add a listener for `Event.CHANGE` to react to changes to the [`value`](https://api.feathersui.com/current/feathers/controls/supportClasses/BaseSlider.html#value) property:
+[Add an event listener](https://books.openfl.org/openfl-developers-guide/handling-events/basics-of-handling-events.html) for [`Event.CHANGE`](https://api.openfl.org/openfl/events/Event.html#CHANGE) to perform an action when the [`value`](https://api.feathersui.com/current/feathers/controls/supportClasses/BaseSlider.html#value) property changes.
 
 ```hx
 slider.addEventListener(Event.CHANGE, slider_changeHandler);
 ```
 
-The listener might look something like this:
+Check for the new [`value`](https://api.feathersui.com/current/feathers/controls/supportClasses/BaseSlider.html#value) in the listener.
 
 ```hx
 function slider_changeHandler(event:Event):void
 {
     var slider = cast(event.currentTarget, HSlider);
-    trace("slider.value changed: " + slider.value);
+    trace("slider.value change: " + slider.value);
 }
 ```
 

@@ -28,7 +28,7 @@ A number of styles may be customized on a [`Label`](https://api.feathersui.com/c
 
 ### Font styles
 
-The font styles of the button's text may be customized by passing an [`openfl.text.TextFormat`](https://api.openfl.org/openfl/text/TextFormat.html) object to the [`textFormat`](https://api.feathersui.com/current/feathers/controls/Label.html#textFormat) property.
+The font styles of the label's text may be customized by passing an [`openfl.text.TextFormat`](https://api.openfl.org/openfl/text/TextFormat.html) object to the [`textFormat`](https://api.feathersui.com/current/feathers/controls/Label.html#textFormat) property.
 
 ```hx
 label.textFormat = new TextFormat("Helvetica", 20, 0x3c3c3c);
@@ -55,7 +55,7 @@ The label automatically calculates its preferred size based on the initial dimen
 
 > See [Graphics API skins](./graphics-api-skins.md) for more details about how to use [`RectangleSkin`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html) with the [`LineStyle`](https://api.feathersui.com/current/feathers/graphics/LineStyle.html) and [`FillStyle`](https://api.feathersui.com/current/feathers/graphics/FillStyle.html) enums that change its border and fill appearance.
 
-The appearance of the label's border or fill may be customized to change when the label is [disabled](https://api.feathersui.com/current/feathers/core/IUIControl.html#enabled). In the next example, setting the skin's [`disabledFill`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html#disabledFill) method makes it switch to a different fill when the label is disabled
+The appearance of the label's border or fill may be customized to change when the label is [disabled](https://api.feathersui.com/current/feathers/core/IUIControl.html#enabled). In the next example, setting the skin's [`disabledFill`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html#disabledFill) method makes it switch to a different fill when the label is disabled.
 
 ```hx
 skin.disabledFill = SolidColor(0xffcccc);
@@ -72,11 +72,11 @@ In the examples above, the label uses the same [`RectangleSkin`](https://api.fea
 ```hx
 var defaultSkin = new RectangleSkin();
 // ... set border, fill, width, and height
-button.backgroundSkin = defaultSkin;
+label.backgroundSkin = defaultSkin;
 
 var disabledSkin = new RectangleSkin();
 // ... set border, fill, width, and height
-button.disabledBackgroundSkin = disabledSkin;
+label.disabledBackgroundSkin = disabledSkin;
 ```
 
 In the example above, the label will have a separate skins when enabled and disabled.

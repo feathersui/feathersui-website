@@ -15,25 +15,25 @@ check.text = "Click Me";
 this.addChild(check);
 ```
 
-A check may be selected and deselected when it is triggered, or it can be changed programmatically by setting the [`selected`](https://api.feathersui.com/current/feathers/controls/ToggleButton.html#selected) property:
+A check may be selected and deselected when it is triggered, or it can be changed programmatically by setting the [`selected`](https://api.feathersui.com/current/feathers/controls/ToggleButton.html#selected) property.
 
 ```hx
 check.selected = true;
 ```
 
-Listen for `Event.CHANGE` to perform an action when the user changes the selection of the check.
+[Add an event listener](https://books.openfl.org/openfl-developers-guide/handling-events/basics-of-handling-events.html) for [`Event.CHANGE`](https://api.openfl.org/openfl/events/Event.html#CHANGE) to perform an action when the user changes the check's selection.
 
 ```hx
 check.addEventListener(Event.CHANGE, check_changeHandler);
 ```
 
-Check for the new value of [`selected`](https://api.feathersui.com/current/feathers/controls/ToggleButton.html#selected) in the listener:
+Check for the new value of the [`selected`](https://api.feathersui.com/current/feathers/controls/ToggleButton.html#selected) property in the listener function.
 
 ```hx
 function check_changeHandler(event:Event):Void
 {
     var check = cast(event.currentTarget, Check);
-    trace("check.selected has changed:", check.selected);
+    trace("check.selected change: " + check.selected);
 }
 ```
 
