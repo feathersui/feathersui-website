@@ -3,16 +3,111 @@ title: How to use the Feathers UI ScrollContainer component
 sidebar_label: ScrollContainer
 ---
 
-The [`ScrollContainer`](https://api.feathersui.com/current/feathers/controls/ScrollContainer.html) class
+The [`ScrollContainer`](https://api.feathersui.com/current/feathers/controls/ScrollContainer.html) class is a generic container that can position its children using a [layout](https://api.feathersui.com/current/feathers/layout/). This type of container offers support for scrolling content that is too large to fit within its visible bounds. Scrolling is supported in a variety of ways — including touch and drag, mouse wheel and scroll bars, or by using a keyboard's arrow keys when the container has focus.
 
----
-
-🚧 Under construction
-
----
+> If you don't need scrolling, consider using the [`LayoutGroup`](./layout-group.md) component instead.
 
 ## The Basics
+
+Create a [`ScrollContainer`](https://api.feathersui.com/current/feathers/controls/ScrollContainer.html) component, add it to [the display list](https://books.openfl.org/openfl-developers-guide/display-programming/basics-of-display-programming.html), and add some children.
+
+```hx
+var container = new ScrollContainer();
+this.addChild(container);
+
+var child1 = new Label();
+child1.text = "Hello";
+container.addChild(child1);
+
+var child2 = new Sprite();
+child2.graphics.beginFill(0xcccccc);
+child2.graphics.drawRect(0.0, 0.0, 100.0, 100.0);
+child2.graphics.endFill();
+container.addChild(child2);
+```
+
+A mix of [OpenFL's core display objects](https://books.openfl.org/openfl-developers-guide/display-programming/core-display-classes.html) and other Feathers UI components may be added to the container.
+
+Set the container's [`layout`](https://api.feathersui.com/current/feathers/layout/feathers/controls/ScrollContainer.html#layout) property to automatically position its children.
+
+```hx
+container.layout = new HorizontalLayout();
+```
+
+The example above uses [`HorizontalLayout`](https://api.feathersui.com/current/feathers/layout/HorizontalLayout.html), but a number of [different layouts](https://api.feathersui.com/current/feathers/layout/) are available in Feathers UI, and it's possible to create custom layouts.
+
+## Styles
+
+A number of styles may be customized on a [`ScrollContainer`](https://api.feathersui.com/current/feathers/controls/ScrollContainer.html) component, including an optional background skin the appearance of the container's scroll bars.
+
+### Background skin
+
+Optionally give the container a background using the [`backgroundSkin`](https://api.feathersui.com/current/feathers/controls/ScrollContainer.html#backgroundSkin) property. The following example sets it to a [`RectangleSkin`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html) instance.
+
+```hx
+var skin = new RectangleSkin();
+skin.border = SolidColor(1.0, 0x999999);
+skin.fill = SolidColor(0xcccccc);
+skin.width = 16.0;
+skin.height = 16.0;
+container.backgroundSkin = skin;
+```
+
+The [`border`](https://api.feathersui.com/current/feathers/skins/BaseGraphicsPathSkin.html#border) and [`fill`](https://api.feathersui.com/current/feathers/skins/BaseGraphicsPathSkin.html#fill) properties of the [`RectangleSkin`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html) are used to adjust its appearance. They support a variety of values — from solid colors to gradients to bitmaps.
+
+The container automatically calculates its preferred size based on the initial dimensions of its background skin (accounting for some other factors too, like the size and position of children), so it's important to set a skin's `width` and `height` properties to appropriate values to use in this calculation.
+
+> See [Graphics API skins](./graphics-api-skins.md) for more details about how to use [`RectangleSkin`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html) with the [`LineStyle`](https://api.feathersui.com/current/feathers/graphics/LineStyle.html) and [`FillStyle`](https://api.feathersui.com/current/feathers/graphics/FillStyle.html) enums that change its border and fill appearance.
+
+The appearance of the container's border or fill may be customized to change when the container is [disabled](https://api.feathersui.com/current/feathers/core/IUIControl.html#enabled). In the next example, setting the skin's [`disabledFill`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html#disabledFill) method makes it switch to a different fill when the container is disabled.
+
+```hx
+skin.disabledFill = SolidColor(0xffcccc);
+```
+
+Similarly, use the skin's [`disabledBorder`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html#disabledBorder) property to change the border when disabled
+
+```hx
+skin.disabledBorder = SolidColor(2.0, 0x999999);
+```
+
+In the examples above, the container uses the same [`RectangleSkin`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html) for all states, and that skin listens for changes to the container's current state. Alternatively, the container's [`disabledBackgroundSkin`](https://api.feathersui.com/current/feathers/controls/ScrollContainer.html#disabledBackgroundSkin) method allows the container to display a completely different display object when it is disabled.
+
+```hx
+var defaultSkin = new RectangleSkin();
+// ... set border, fill, width, and height
+container.backgroundSkin = defaultSkin;
+
+var disabledSkin = new RectangleSkin();
+// ... set border, fill, width, and height
+container.disabledBackgroundSkin = disabledSkin;
+```
+
+In the example above, the container will have a separate skins when enabled and disabled.
+
+### Scroll bars
+
+The [`scrollBarXFactory`](https://api.feathersui.com/current/feathers/controls/supportClasses/BaseScrollContainer.html#scrollBarXFactory) and [`scrollBarYFactory`](https://api.feathersui.com/current/feathers/controls/supportClasses/BaseScrollContainer.html#scrollBarYFactory) properties may be used to customize the creation of an individual container's scroll bars.
+
+```hx
+container.scrollBarXFactory = () ->
+{
+    var scrollBar = new HScrollBar();
+    // ... set styles here
+    return scrollBar;
+};
+
+container.scrollBarYFactory = () ->
+{
+    var scrollBar = new VScrollBar();
+    // ... set styles here
+    return scrollBar;
+};
+```
+
+See [How to use the `HScrollBar` and `VScrollBar` components](./scroll-bars.html) for complete details about how to style the scroll bars.
 
 ## Related Links
 
 - [`feathers.controls.ScrollContainer` API Documentation](https://api.feathersui.com/current/feathers/controls/ScrollContainer.html)
+- [How to use the `LayoutGroup` component](./layout-group.html)
