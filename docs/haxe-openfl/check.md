@@ -30,8 +30,7 @@ check.addEventListener(Event.CHANGE, check_changeHandler);
 Check for the new value of the [`selected`](https://api.feathersui.com/current/feathers/controls/ToggleButton.html#selected) property in the listener function.
 
 ```hx
-function check_changeHandler(event:Event):Void
-{
+function check_changeHandler(event:Event):Void {
     var check = cast(event.currentTarget, Check);
     trace("check.selected change: " + check.selected);
 }

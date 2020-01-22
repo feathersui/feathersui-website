@@ -15,13 +15,13 @@ Create a new class that extends [`Application`](https://api.feathersui.com/curre
 import feathers.core.Application;
 
 class MyProject extends Application {
-  public function new() {
-    super();
+    public function new() {
+        super();
 
-    var label = new Label();
-    label.text = "Hello from Feathers UI and OpenFL";
-    this.addChild(label);
-  }
+        var label = new Label();
+        label.text = "Hello from Feathers UI and OpenFL";
+        this.addChild(label);
+    }
 }
 ```
 

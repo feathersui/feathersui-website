@@ -26,8 +26,7 @@ toggle.addEventListener(Event.CHANGE, toggleSwitch_changeHandler);
 Listeners for [`Event.CHANGE`](https://api.openfl.org/openfl/events/Event.html#CHANGE) have the following function signature.
 
 ```hx
-function toggleSwitch_changeHandler(event:Event):void
-{
+function toggleSwitch_changeHandler(event:Event):Void {
     var toggle = cast(event.currentTarget, ToggleSwitch);
     trace("toggle.selected change: " + toggle.selected);
 }

@@ -29,8 +29,7 @@ input.addEventListener(Event.CHANGE, textInput_changeHandler);
 Check for the new value of the [`text`](https://api.feathersui.com/current/feathers/controls/TextInput.html#text) property in the listener function.
 
 ```hx
-function textInput_changeHandler(event:Event):Void
-{
+function textInput_changeHandler(event:Event):Void {
     var input = cast(event.currentTarget, TextInput);
     trace("text input change: " + input.text);
 }

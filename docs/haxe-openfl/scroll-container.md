@@ -90,15 +90,13 @@ In the example above, the container will have a separate skins when enabled and 
 The [`scrollBarXFactory`](https://api.feathersui.com/current/feathers/controls/supportClasses/BaseScrollContainer.html#scrollBarXFactory) and [`scrollBarYFactory`](https://api.feathersui.com/current/feathers/controls/supportClasses/BaseScrollContainer.html#scrollBarYFactory) properties may be used to customize the creation of an individual container's scroll bars.
 
 ```hx
-container.scrollBarXFactory = () ->
-{
+container.scrollBarXFactory = () -> {
     var scrollBar = new HScrollBar();
     // ... set styles here
     return scrollBar;
 };
 
-container.scrollBarYFactory = () ->
-{
+container.scrollBarYFactory = () -> {
     var scrollBar = new VScrollBar();
     // ... set styles here
     return scrollBar;

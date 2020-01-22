@@ -30,8 +30,7 @@ button.addEventListener(Event.CHANGE, toggle_changeHandler);
 Check for the new value of the [`selected`](https://api.feathersui.com/current/feathers/controls/ToggleButton.html#selected) property in the listener function.
 
 ```hx
-function toggle_changeHandler(event:Event):Void
-{
+function toggle_changeHandler(event:Event):Void {
     var button = cast(event.currentTarget, ToggleButton);
     trace("toggle.selected change: " + toggle.selected);
 }

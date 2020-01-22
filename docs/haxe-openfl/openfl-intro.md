@@ -50,19 +50,17 @@ OpenFL dispatches events for user input from a variety of sources, including key
 To listen for keyboard events globally, [add an event listener](https://books.openfl.org/openfl-developers-guide/handling-events/basics-of-handling-events.html) for [`openfl.events.KeyboardEvent.KEY_DOWN`](https://api.openfl.org/openfl/events/KeyboardEvent.html#KEY_DOWN) to the OpenFL [`Stage`](https://api.openfl.org/openfl/display/Stage.html) object.
 
 ```hx
-stage.addEventListener(KeyboardEvent.KEY_DOWN, (event:KeyboardEvent) ->
-{
-  switch(event.keyCode)
-  {
-    case Keyboard.UP:
-      trace("key down: up arrow");
-    case Keyboard.DOWN:
-      trace("key down: down arrow");
-    case Keyboard.LEFT:
-      trace("key down: left arrow");
-    case Keyboard.RIGHT:
-      trace("key down: right arrow");
-  }
+stage.addEventListener(KeyboardEvent.KEY_DOWN, (event:KeyboardEvent) -> {
+    switch(event.keyCode) {
+        case Keyboard.UP:
+            trace("key down: up arrow");
+        case Keyboard.DOWN:
+            trace("key down: down arrow");
+        case Keyboard.LEFT:
+            trace("key down: left arrow");
+        case Keyboard.RIGHT:
+            trace("key down: right arrow");
+    }
 });
 ```
 
@@ -77,9 +75,8 @@ In many cases, a listener is also added for [`openfl.events.KeyboardEvent.KEY_UP
 To react when the user clicks a display object with the mouse, [add an event listener](https://books.openfl.org/openfl-developers-guide/handling-events/basics-of-handling-events.html) for [`openfl.events.MouseEvent.CLICK`](https://api.openfl.org/openfl/events/MouseEvent.html#CLICK).
 
 ```hx
-sprite.addEventListener(MouseEvent.CLICK, (event:MouseEvent) ->
-{
-  trace("clicked!");
+sprite.addEventListener(MouseEvent.CLICK, (event:MouseEvent) -> {
+    trace("clicked!");
 });
 ```
 
@@ -97,9 +94,8 @@ Several more commonly-used mouse events offer real-time access to the mouse posi
 To run some code when the user taps a display object on a mobile device's touchscreen, [add an event listener](https://books.openfl.org/openfl-developers-guide/handling-events/basics-of-handling-events.html) for [`openfl.events.TouchEvent.TOUCH_TAP`](https://api.openfl.org/openfl/events/TouchEvent.html#TOUCH_TAP).
 
 ```hx
-sprite.addEventListener(TouchEvent.TOUCH_TAP, (event:TouchEvent) ->
-{
-  trace("tapped! " + event.touchPointID);
+sprite.addEventListener(TouchEvent.TOUCH_TAP, (event:TouchEvent) -> {
+    trace("tapped! " + event.touchPointID);
 });
 ```
 
@@ -127,22 +123,20 @@ The example above loads text from an API server by passing a [`openfl.net.URLReq
 To determine when the data has completed loading successfully, [add an event listener](https://books.openfl.org/openfl-developers-guide/handling-events/basics-of-handling-events.html) for [`openfl.events.Event.COMPLETE`](https://api.openfl.org/openfl/events/Event.html#COMPLETE) to the [`URLLoader`](https://api.openfl.org/openfl/net/URLLoader.html).
 
 ```hx
-loader.addEventListener(Event.COMPLETE, (event:Event) ->
-{
-  var loader = cast(event.currentTarget, URLLoader);
-  var data = Std.string(loader.data);
-  trace("data loaded: " + data);
+loader.addEventListener(Event.COMPLETE, (event:Event) -> {
+    var loader = cast(event.currentTarget, URLLoader);
+    var data = Std.string(loader.data);
+    trace("data loaded: " + data);
 });
 ```
 
 Listen for [`openfl.events.ProgressEvent.PROGRESS`](https://api.openfl.org/openfl/events/ProgressEvent.html#PROGRESS) to track how much data has loaded, and how much is still not available.
 
 ```hx
-loader.addEventListener(ProgressEvent.PROGRESS, (event:ProgressEvent) ->
-{
-  var loader = cast(event.currentTarget, URLLoader);
-  var percent = 100.0 * loader.bytesLoaded / loader.bytesTotal;
-  trace("Loaded: " + Math.floor(percent) + "%");
+loader.addEventListener(ProgressEvent.PROGRESS, (event:ProgressEvent) -> {
+    var loader = cast(event.currentTarget, URLLoader);
+    var percent = 100.0 * loader.bytesLoaded / loader.bytesTotal;
+    trace("Loaded: " + Math.floor(percent) + "%");
 });
 ```
 

@@ -36,8 +36,7 @@ slider.addEventListener(Event.CHANGE, slider_changeHandler);
 Check for the new [`value`](https://api.feathersui.com/current/feathers/controls/supportClasses/BaseSlider.html#value) in the listener.
 
 ```hx
-function slider_changeHandler(event:Event):void
-{
+function slider_changeHandler(event:Event):Void {
     var slider = cast(event.currentTarget, HSlider);
     trace("slider.value change: " + slider.value);
 }

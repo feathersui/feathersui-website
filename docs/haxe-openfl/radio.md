@@ -39,8 +39,7 @@ group.addEventListener(Event.CHANGE, toggleGroup_changeHandler);
 Check for the new value of the [`selectedItem`](https://api.feathersui.com/current/feathers/core/ToggleGroup.html#selectedItem) property in the listener.
 
 ```hx
-function toggleGroup_changeHandler(event:Event):Void
-{
+function toggleGroup_changeHandler(event:Event):Void {
     var group = cast(event.currentTarget, ToggleGroup);
     var radio = cast(group.selectedItem, Radio);
     trace("group.selectedItem change: " + radio.text);
@@ -50,10 +49,9 @@ function toggleGroup_changeHandler(event:Event):Void
 Alternatively, the value of the [`selectedIndex`](https://api.feathersui.com/current/feathers/core/ToggleGroup.html#selectedIndex) property references the index of the items in the group, in the order that they were added.
 
 ```hx
-function toggleGroup_changeHandler(event:Event):Void
-{
+function toggleGroup_changeHandler(event:Event):Void {
     var group = cast(event.currentTarget, ToggleGroup);
-    trace("group.selectedIndex change: " + selectedIndex);
+    trace("group.selectedIndex change: " + group.selectedIndex);
 }
 ```
 

@@ -24,8 +24,7 @@ button.addEventListener(FeathersEvent.TRIGGERED, button_triggeredHandler);
 Listeners for [`FeathersEvent.TRIGGERED`](https://api.feathersui.com/current/feathers/events/FeathersEvent.html#TRIGGERED) have the following function signature.
 
 ```hx
-function button_triggeredHandler(event:Event):Void
-{
+function button_triggeredHandler(event:Event):Void {
     var button = cast(event.currentTarget, Button);
     trace("button triggered: " + button.text);
 }

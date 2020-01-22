@@ -42,8 +42,7 @@ loader.addEventListener(Event.COMPLETE, loader_completeHandler);
 Listeners for [`Event.COMPLETE`](https://api.openfl.org/openfl/events/Event.html#COMPLETE) have the following function signature.
 
 ```hx
-function loader_completeHandler(event:Event):void
-{
+function loader_completeHandler(event:Event):Void {
     var loader = cast(event.currentTarget, AssetLoader);
     trace("asset loaded: " + loader.source);
 }
@@ -59,14 +58,12 @@ loader.addEventListener(SecurityErrorEvent.SECURITY_ERROR, loader_securityErrorH
 These listeners should have the following function signatures.
 
 ```hx
-function loader_ioErrorHandler(event:IOErrorEvent):void
-{
+function loader_ioErrorHandler(event:IOErrorEvent):Void {
     var loader = cast(event.currentTarget, AssetLoader);
     trace("asset i/o error: " + loader.source + " => " + event.text);
 }
 
-function loader_securityErrorHandler(event:SecurityErrorEvent):void
-{
+function loader_securityErrorHandler(event:SecurityErrorEvent):Void {
     var loader = cast(event.currentTarget, AssetLoader);
     trace("asset security error: " + loader.source + " => " + event.text);
 }
