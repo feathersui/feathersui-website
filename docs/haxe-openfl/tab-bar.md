@@ -28,7 +28,7 @@ tabs.itemToText = function(item:Dynamic):String {
 };
 ```
 
-> Items in the collection are not required to be simple object literals, like in the example above. Instances of a class are allowed, for stricter typing.
+> Items in the collection are not required to be simple object literals, like in the example above. Instances of a class are allowed too.
 
 [Add an event listener](https://books.openfl.org/openfl-developers-guide/handling-events/basics-of-handling-events.html) for [`Event.CHANGE`](https://api.openfl.org/openfl/events/Event.html#CHANGE) to perform an action when the user selects a different tab.
 
@@ -84,9 +84,9 @@ The tabs in a [`TabBar`](https://api.feathersui.com/current/feathers/controls/Ta
 
 ### Tabs
 
-The tabs in a [`TabBar`](https://api.feathersui.com/current/feathers/controls/TabBar.html) component are of type [`ToggleButton`](./toggle-button.md). Their appearance may be customized directly on an specific, individual tab bar, or they may be customized globally in a theme.
+The tabs in a [`TabBar`](https://api.feathersui.com/current/feathers/controls/TabBar.html) component are of type [`ToggleButton`](./toggle-button.md). Their appearance may be customized globally in a theme, or they may be customized outside of a theme on an specific, individual tab bar.
 
-> See [How to use the `ToggleButton` component](./toggle-button.md#styles) for complete details about the individual styles available to tabs.
+> See [How to use the `ToggleButton` component](./toggle-button.md#styles) for complete details about which styles are available for the tabs.
 
 #### Style tabs globally
 
@@ -102,8 +102,7 @@ styleProvider.setStyleFunction(
 The function should use the following signature.
 
 ```hx
-function setTabStyles(tab:ToggleButton):Void
-{
+function setTabStyles(tab:ToggleButton):Void {
     // ... set styles here
 });
 ```
@@ -113,8 +112,7 @@ function setTabStyles(tab:ToggleButton):Void
 Customize the [`tabRecycler`](https://api.feathersui.com/current/feathers/controls/TabBar.html#tabRecycler) property to customize the styles of the tabs in a specific [`TabBar`](https://api.feathersui.com/current/feathers/controls/TabBar.html) component.
 
 ```hx
-tabs.tabRecycler = DisplayObjectRecycler.withFunction(() ->
-{
+tabs.tabRecycler = DisplayObjectRecycler.withFunction(() -> {
     var tab = new ToggleButton();
     // ... set styles here
     return tab;

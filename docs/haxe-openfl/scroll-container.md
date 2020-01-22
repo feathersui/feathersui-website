@@ -87,6 +87,33 @@ In the example above, the container will have a separate skins when enabled and 
 
 ### Scroll bars
 
+The scroll bars in a [`ScrollContainer`](https://api.feathersui.com/current/feathers/controls/ScrollContainer.html) component are of type [`HScrollBar` and `VScrollBar`](./scroll-bars.md). Their appearance may be customized globally in a theme, or they may be customized outside of a theme on an specific, individual scroll container.
+
+> See [How to use the `HScrollBar` and `VScrollBar` components](./scroll-bars.md#styles) for complete details about which styles are available for the scroll bars.
+
+#### Style scroll bars globally
+
+Use the [`HScrollBar`](https://api.feathersui.com/current/feathers/controls/HScrollBar.html) and [`VScrollBar`](https://api.feathersui.com/current/feathers/controls/VScrollBar.html) classes in a theme to provide a function that globally styles all scroll bars in your project.
+
+```hx
+styleProvider.setStyleFunction(HScrollBar, null, setHScrollBarStyles);
+styleProvider.setStyleFunction(VScrollBar, null, setVScrollBarStyles);
+```
+
+The functions should use the following signatures.
+
+```hx
+function setHScrollBarStyles(scrollBar:HScrollBar):Void {
+    // ... set styles here
+});
+
+function setVScrollBarStyles(scrollBar:VScrollBar):Void {
+    // ... set styles here
+});
+```
+
+#### Style scroll bars in a specific `ScrollContainer`
+
 The [`scrollBarXFactory`](https://api.feathersui.com/current/feathers/controls/supportClasses/BaseScrollContainer.html#scrollBarXFactory) and [`scrollBarYFactory`](https://api.feathersui.com/current/feathers/controls/supportClasses/BaseScrollContainer.html#scrollBarYFactory) properties may be used to customize the creation of an individual container's scroll bars.
 
 ```hx
@@ -103,9 +130,7 @@ container.scrollBarYFactory = () -> {
 };
 ```
 
-See [How to use the `HScrollBar` and `VScrollBar` components](./scroll-bars.html) for complete details about how to style the scroll bars.
-
 ## Related Links
 
 - [`feathers.controls.ScrollContainer` API Documentation](https://api.feathersui.com/current/feathers/controls/ScrollContainer.html)
-- [How to use the `LayoutGroup` component](./layout-group.html)
+- [How to use the `LayoutGroup` component](./layout-group.md)

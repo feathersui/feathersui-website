@@ -161,4 +161,4 @@ button.verticalAlign = MIDDLE;
 ## Related Links
 
 - [`feathers.controls.Button` API Reference](https://api.feathersui.com/current/feathers/controls/Button.html)
-- [How to use the `ToggleButton` component](./toggle-button.html)
+- [How to use the `ToggleButton` component](./toggle-button.md)

@@ -88,4 +88,4 @@ In the example above, the group will have a separate skins when enabled and disa
 ## Related Links
 
 - [`feathers.controls.LayoutGroup` API Documentation](https://api.feathersui.com/current/feathers/controls/LayoutGroup.html)
-- [How to use the `ScrollContainer` component](./scroll-container.html)
+- [How to use the `ScrollContainer` component](./scroll-container.md)
