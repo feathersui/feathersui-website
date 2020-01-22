@@ -87,9 +87,9 @@ In the example above, the container will have a separate skins when enabled and 
 
 ### Scroll bars
 
-The scroll bars in a [`ScrollContainer`](https://api.feathersui.com/current/feathers/controls/ScrollContainer.html) component are of type [`HScrollBar` and `VScrollBar`](./scroll-bars.md). Their appearance may be customized globally in a theme, or they may be customized outside of a theme on an specific, individual scroll container.
+The scroll bars in a [`ScrollContainer`](https://api.feathersui.com/current/feathers/controls/ScrollContainer.html) component are of type [`HScrollBar` and `VScrollBar`](./scroll-bar.md). Their appearance may be customized globally in a theme, or they may be customized outside of a theme on an specific, individual scroll container.
 
-> See [How to use the `HScrollBar` and `VScrollBar` components](./scroll-bars.md#styles) for complete details about which styles are available for the scroll bars.
+> See [How to use the `HScrollBar` and `VScrollBar` components](./scroll-bar.md#styles) for complete details about which styles are available for the scroll bars.
 
 #### Style scroll bars globally
 
