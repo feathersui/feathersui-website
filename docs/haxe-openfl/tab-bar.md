@@ -84,13 +84,13 @@ The tabs in a [`TabBar`](https://api.feathersui.com/current/feathers/controls/Ta
 
 ### Tabs
 
-The tabs in a [`TabBar`](https://api.feathersui.com/current/feathers/controls/TabBar.html) component are of type [`ToggleButton`](./toggle-button.md). Their appearance may be customized globally in a theme, or they may be customized outside of a theme on an specific, individual tab bar.
+The tabs in a [`TabBar`](https://api.feathersui.com/current/feathers/controls/TabBar.html) component are of type [`ToggleButton`](./toggle-button.md). Their appearance may be customized globally in a [theme](./themes.md), or they may be customized outside of a theme on an specific, individual tab bar.
 
 > See [How to use the `ToggleButton` component](./toggle-button.md#styles) for complete details about which styles are available for the tabs.
 
 #### Style tabs globally
 
-Use the [`CHILD_VARIANT_TAB`](https://api.feathersui.com/current/feathers/controls/TabBar.html#CHILD_VARIANT_TAB) constant in a theme to provide a function that globally styles the tabs in a [`TabBar`](https://api.feathersui.com/current/feathers/controls/TabBar.html) component.
+Use the [`CHILD_VARIANT_TAB`](https://api.feathersui.com/current/feathers/controls/TabBar.html#CHILD_VARIANT_TAB) constant in a [theme](./themes.md) to provide a function that globally styles the tabs in a [`TabBar`](https://api.feathersui.com/current/feathers/controls/TabBar.html) component.
 
 ```hx
 styleProvider.setStyleFunction(

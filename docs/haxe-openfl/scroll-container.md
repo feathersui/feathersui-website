@@ -87,13 +87,13 @@ In the example above, the container will have a separate skins when enabled and 
 
 ### Scroll bars
 
-The scroll bars in a [`ScrollContainer`](https://api.feathersui.com/current/feathers/controls/ScrollContainer.html) component are of type [`HScrollBar` and `VScrollBar`](./scroll-bar.md). Their appearance may be customized globally in a theme, or they may be customized outside of a theme on an specific, individual scroll container.
+The scroll bars in a [`ScrollContainer`](https://api.feathersui.com/current/feathers/controls/ScrollContainer.html) component are of type [`HScrollBar` and `VScrollBar`](./scroll-bar.md). Their appearance may be customized globally in a [theme](./themes.md), or they may be customized outside of a theme on an specific, individual scroll container.
 
 > See [How to use the `HScrollBar` and `VScrollBar` components](./scroll-bar.md#styles) for complete details about which styles are available for the scroll bars.
 
 #### Style scroll bars globally
 
-Use the [`HScrollBar`](https://api.feathersui.com/current/feathers/controls/HScrollBar.html) and [`VScrollBar`](https://api.feathersui.com/current/feathers/controls/VScrollBar.html) classes in a theme to provide a function that globally styles all scroll bars in your project.
+Use the [`HScrollBar`](https://api.feathersui.com/current/feathers/controls/HScrollBar.html) and [`VScrollBar`](https://api.feathersui.com/current/feathers/controls/VScrollBar.html) classes in a [theme](./themes.md) to provide a function that globally styles all scroll bars in your project.
 
 ```hx
 styleProvider.setStyleFunction(HScrollBar, null, setHScrollBarStyles);
