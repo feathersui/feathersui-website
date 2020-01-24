@@ -23,6 +23,7 @@
       "haxe-openfl/pop-up-list",
       "haxe-openfl/progress-bar",
       "haxe-openfl/radio",
+      "haxe-openfl/router-navigator",
       "haxe-openfl/scroll-bar",
       "haxe-openfl/scroll-container",
       "haxe-openfl/slider",
