@@ -39,7 +39,10 @@
       "haxe-openfl/vertical-layout",
       "haxe-openfl/vertical-list-fixed-row-layout"
     ],
-    "Styles and Skins": ["haxe-openfl/graphics-api-skins"],
+    "Styles and Skins": [
+      "haxe-openfl/graphics-api-skins",
+      "haxe-openfl/themes"
+    ],
     "Miscellaneous": ["haxe-openfl/data-collections"]
   },
   "as3-starling": {
