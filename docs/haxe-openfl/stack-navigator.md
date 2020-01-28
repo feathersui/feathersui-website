@@ -28,7 +28,7 @@ class HelloView extends LayoutGroup {
         super();
 
         var message = new Label();
-        message.text = "Click Me";
+        message.text = "Hello World";
         this.addChild(message);
     }
 }

@@ -24,7 +24,7 @@ class HelloView extends LayoutGroup {
         super();
 
         var message = new Label();
-        message.text = "Click Me";
+        message.text = "Hello World";
         this.addChild(message);
     }
 }
@@ -151,7 +151,7 @@ Similarly, when `ViewB` dispatches `Event.COMPLETE`, the navigator will create a
 >
 > Links in HTML don't go backwards. They always add a new history entry. For a Feathers UI app to feel native to the web, its navigation should feel similar to using links in HTML.
 >
-> Additionally, consider that your routes are accessible as public URLs, which allows another website to link directly to _any_ of your internal routes. If your view has a back button, and it should always go to a specific route in your app, that will only work if you use [`Push()`](https://api.feathersui.com/current/feathers/controls/navigators/RouterAction.html#Push) because [`GoBack()`](https://api.feathersui.com/current/feathers/controls/navigators/RouterAction.html#GoBack) could return to an external website instead.
+> Additionally, consider that your routes are accessible as public URLs, which allows another website to link directly to _any_ of your internal routes. If your view has a back button, and it should always go to a specific route in your app, that will only work if you use [`Push()`](https://api.feathersui.com/current/feathers/controls/navigators/RouterAction.html#Push) because [`GoBack()`](https://api.feathersui.com/current/feathers/controls/navigators/RouterAction.html#GoBack) could return anywhere, depending on how the user originally arrived at the route.
 >
 > Regardless, [`RouterNavigator`](https://api.feathersui.com/current/feathers/controls/navigators/RouterNavigator.html) is capable of using a [`GoBack()`](https://api.feathersui.com/current/feathers/controls/navigators/RouterAction.html#GoBack) action, if desired:
 >
