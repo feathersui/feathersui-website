@@ -7,6 +7,8 @@ The [`StackNavigator`](https://api.feathersui.com/current/feathers/controls/navi
 
 Navigation can be enhanced with animation, called a _transition_. Feathers UI provides a number of [transitions](https://api.feathersui.com/unstable/feathers/motion/transitions/) out of the box, and a simple API allows anyone to create custom transitions.
 
+> If your project will be deployed to the web, consider using [`RouterNavigator`](./router-navigator.md) instead. [`RouterNavigator`](./router-navigator.md) integrates with the browser's back button using the HTML history API, which will provide a better user experience for web users.
+
 ## The Basics
 
 Start by creating a [`StackNavigator`](https://api.feathersui.com/current/feathers/controls/navigators/StackNavigator.html), and add it to [the display list](https://books.openfl.org/openfl-developers-guide/display-programming/basics-of-display-programming.html).
@@ -41,7 +43,7 @@ var item = StackItem.withClass(HelloView.ID, HelloView);
 navigator.addItem(item);
 ```
 
-The first argument is a unique identifier for the view, which can be referenced later when defining [navigation](#navigation) actions.
+The first argument passed to [`StackItem.withClass()`](https://api.feathersui.com/current/feathers/controls/navigators/StackItem.html#withClass) is a unique identifier for the view, which can be referenced later when defining [navigation](#navigation) actions. The second argument is the `HelloView` class from earlier. The navigator will automatically create an instance of this class when the view needs to be shown.
 
 > The [`StackItem`](https://api.feathersui.com/current/feathers/controls/navigators/StackItem.html) class defines three static functions for creating items.
 >
@@ -75,6 +77,8 @@ Consider the following two views, `ViewA` and `ViewB`.
 
 ```hx
 class ViewA extends LayoutGroup {
+    public static final ID = "a";
+
     public function new() {
         super();
         this.layout = new VerticalLayout();
@@ -99,6 +103,8 @@ class ViewA extends LayoutGroup {
 
 ```hx
 class ViewB extends LayoutGroup {
+    public static final ID = "b";
+
     public function new() {
         super();
         this.layout = new VerticalLayout();
@@ -130,7 +136,7 @@ var itemA = StackItem.withClass(ViewA.ID, ViewA, [
 navigator.addItem(itemA);
 
 var itemB = StackItem.withClass(ViewB.ID, ViewB, [
-    Event.CHANGE => Pop()
+    Event.COMPLETE => Pop()
 ]);
 navigator.addItem(itemB);
 
