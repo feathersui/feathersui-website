@@ -1,5 +1,5 @@
 ---
-title: How to use the Feathers ScrollContainer component (Starling version)
+title: How to use the ScrollContainer component (Starling version)
 sidebar_label: ScrollContainer
 ---
 
@@ -105,7 +105,7 @@ container.padding = 20;
 
 ### Skinning the Scroll Bars
 
-This section only explains how to access the horizontal scroll bar and vertical scroll bar sub-components. Please read [How to use the Feathers `ScrollBar` component](./scroll-bar.md) (or [`SimpleScrollBar`](./simple-scroll-bar.md)) for full details about the skinning properties that are available on scroll bar components.
+This section only explains how to access the horizontal scroll bar and vertical scroll bar sub-components. Please read [How to use the `ScrollBar` component](./scroll-bar.md) (or [`SimpleScrollBar`](./simple-scroll-bar.md)) for full details about the skinning properties that are available on scroll bar components.
 
 #### With a Theme
 
@@ -211,4 +211,4 @@ Many developers try to use `ScrollContainer` any time that they need to scroll s
 
 - [`feathers.controls.ScrollContainer` API Documentation](/api-reference/feathers/controls/ScrollContainer.html)
 
-- [How to use the Feathers `LayoutGroup` component](./layout-group.md)
+- [How to use the `LayoutGroup` component](./layout-group.md)

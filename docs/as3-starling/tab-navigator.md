@@ -1,5 +1,5 @@
 ---
-title: How to use the Feathers TabNavigator component (Starling version)
+title: How to use the TabNavigator component (Starling version)
 sidebar_label: TabNavigator
 ---
 
@@ -95,7 +95,7 @@ Now, the animation will last a little longer while easing in and out.
 
 A `TabNavigator` dispatches [`FeathersEventType.TRANSITION_START`](/api-reference/feathers/controls/supportClasses/BaseScreenNavigator.html#event:transitionStart) when a new screen is being shown and the transition animation begins. Similarly, it dispatches [`FeathersEventType.TRANSITION_COMPLETE`](/api-reference/feathers/controls/supportClasses/BaseScreenNavigator.html#event:transitionComplete) when the transition animation has ended.
 
-> If a specific screen needs to know when its transition in (or out) starts or completes, we can listen for different events that provide a little more control. See [How to use the Feathers `Screen` component](./screen.md) (or [`ScrollScreen`](./scroll-screen.md) or [`PanelScreen`](./panel-screen.md)) for details.
+> If a specific screen needs to know when its transition in (or out) starts or completes, we can listen for different events that provide a little more control. See [How to use the `Screen` component](./screen.md) (or [`ScrollScreen`](./scroll-screen.md) or [`PanelScreen`](./panel-screen.md)) for details.
 
 Let's listen for `FeathersEventType.TRANSITION_COMPLETE`:
 
@@ -167,8 +167,8 @@ public function set options( value:OptionsData ):void
 
 - [Transitions for Feathers screen navigators](./transitions.md)
 
-- [How to use the Feathers `Screen` component](./screen.md)
+- [How to use the `Screen` component](./screen.md)
 
-- [How to use the Feathers `ScrollScreen` component](./panel-screen.md)
+- [How to use the `ScrollScreen` component](./panel-screen.md)
 
-- [How to use the Feathers `PanelScreen` component](./panel-screen.md)
+- [How to use the `PanelScreen` component](./panel-screen.md)

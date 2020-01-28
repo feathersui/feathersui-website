@@ -1,5 +1,5 @@
 ---
-title: How to use the Feathers ToggleSwitch component (Starling version)
+title: How to use the ToggleSwitch component (Starling version)
 sidebar_label: ToggleSwitch
 ---
 
@@ -74,7 +74,7 @@ When the value of `trackLayoutMode` is `TrackLayoutMode.SINGLE`, the toggle swit
 
 ### Skinning the Thumb
 
-This section only explains how to access the thumb sub-component. Please read [How to use the Feathers `Button` component](./button.md) for full details about the skinning properties that are available on `Button` components.
+This section only explains how to access the thumb sub-component. Please read [How to use the `Button` component](./button.md) for full details about the skinning properties that are available on `Button` components.
 
 #### With a Theme
 
@@ -129,7 +129,7 @@ toggle.thumbFactory = function():Button
 
 ### Skinning the On Track
 
-This section only explains how to access the on track sub-component. Please read [How to use the Feathers `Button` component](./button.md) for full details about the skinning properties that are available on `Button` components.
+This section only explains how to access the on track sub-component. Please read [How to use the `Button` component](./button.md) for full details about the skinning properties that are available on `Button` components.
 
 #### With a Theme
 
@@ -184,7 +184,7 @@ toggle.onTrackFactory = function():Button
 
 ### Skinning the Off Track
 
-This section only explains how to access the off track sub-component. Please read [How to use the Feathers `Button` component](./button.md) for full details about the skinning properties that are available on `Button` components.
+This section only explains how to access the off track sub-component. Please read [How to use the `Button` component](./button.md) for full details about the skinning properties that are available on `Button` components.
 
 The toggle switch's off track may be skinned similarly to the on track. The style name to use with [themes](./themes.md) is [`ToggleSwitch.DEFAULT_CHILD_STYLE_NAME_OFF_TRACK`](/api-reference/feathers/controls/ToggleSwitch.html#DEFAULT_CHILD_STYLE_NAME_OFF_TRACK) or you can customize the style name with [`customOffTrackStyleName`](/api-reference/feathers/controls/ToggleSwitch.html#customOffTrackStyleName). If you aren't using a theme, then you can use [`offTrackFactory`](/api-reference/feathers/controls/ToggleSwitch.html#offTrackFactory).
 

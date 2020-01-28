@@ -23,5 +23,5 @@ If we wanted to change the item renderer's font styles inside the theme, we coul
 ## Related Links
 
 - [Feathers Cookbook (Starling version)](./index.md)
-- [How to use the Feathers `List` component](../list.html)
-- [How to use the Feathers default item renderers](../default-item-renderers.html)
+- [How to use the `List` component](../list.html)
+- [How to use the default item renderers](../default-item-renderers.html)

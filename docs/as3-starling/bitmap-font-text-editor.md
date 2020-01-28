@@ -1,5 +1,5 @@
 ---
-title: How to use the Feathers BitmapFontTextEditor component (Starling version)
+title: How to use the BitmapFontTextEditor component (Starling version)
 sidebar_label: BitmapFontTextEditor
 ---
 

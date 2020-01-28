@@ -94,17 +94,17 @@ For desktop apps, the [`TextArea`](./text-area.md) component may be used. It wil
 
 ## Related Links
 
-- [How to use the Feathers `StageTextTextEditor` component](./stage-text-text-editor.md)
+- [How to use the `StageTextTextEditor` component](./stage-text-text-editor.md)
 
-- [How to use the Feathers `TextFieldTextEditor` component](./text-field-text-editor.md)
+- [How to use the `TextFieldTextEditor` component](./text-field-text-editor.md)
 
-- [How to use the Feathers `TextBlockTextEditor` component](./text-block-text-editor.md)
+- [How to use the `TextBlockTextEditor` component](./text-block-text-editor.md)
 
-- [How to use the Feathers `BitmapFontTextEditor` component](./bitmap-font-text-editor.md)
+- [How to use the `BitmapFontTextEditor` component](./bitmap-font-text-editor.md)
 
-- [How to use the Feathers `TextInput` component](./text-input.md)
+- [How to use the `TextInput` component](./text-input.md)
 
-- [How to use the Feathers `TextArea` component](./text-area.md)
+- [How to use the `TextArea` component](./text-area.md)
 
 - [`ITextEditor` API Documentation](/api-reference/feathers/core/ITextEditor.html)
 

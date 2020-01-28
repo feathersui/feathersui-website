@@ -1,5 +1,5 @@
 ---
-title: How to use the Feathers ScreenNavigator component (Starling version)
+title: How to use the ScreenNavigator component (Starling version)
 sidebar_label: ScreenNavigator
 ---
 
@@ -168,7 +168,7 @@ Now, the animation will last a little longer while easing in and out.
 
 A `ScreenNavigator` dispatches [`FeathersEventType.TRANSITION_START`](/api-reference/feathers/controls/supportClasses/BaseScreenNavigator.html#event:transitionStart) when a new screen is being shown and the transition animation begins. Similarly, it dispatches [`FeathersEventType.TRANSITION_COMPLETE`](/api-reference/feathers/controls/supportClasses/BaseScreenNavigator.html#event:transitionComplete) when the transition animation has ended.
 
-> If a specific screen needs to know when its transition in (or out) starts or completes, we can listen for different events that provide more control. See [How to use the Feathers `Screen` component](./screen.md) (or [`ScrollScreen`](./scroll-screen.md) or [`PanelScreen`](./panel-screen.md)) for details.
+> If a specific screen needs to know when its transition in (or out) starts or completes, we can listen for different events that provide more control. See [How to use the `Screen` component](./screen.md) (or [`ScrollScreen`](./scroll-screen.md) or [`PanelScreen`](./panel-screen.md)) for details.
 
 Let's listen for `FeathersEventType.TRANSITION_COMPLETE`:
 
@@ -305,10 +305,10 @@ Modifying `OptionsScreen` to use signals instead of events would be the same.
 
 - [Transitions for Feathers screen navigators](./transitions.md)
 
-- [How to use the Feathers `StackScreenNavigator` component](./stack-screen-navigator.md)
+- [How to use the `StackScreenNavigator` component](./stack-screen-navigator.md)
 
-- [How to use the Feathers `Screen` component](./screen.md)
+- [How to use the `Screen` component](./screen.md)
 
-- [How to use the Feathers `ScrollScreen` component](./panel-screen.md)
+- [How to use the `ScrollScreen` component](./panel-screen.md)
 
-- [How to use the Feathers `PanelScreen` component](./panel-screen.md)
+- [How to use the `PanelScreen` component](./panel-screen.md)

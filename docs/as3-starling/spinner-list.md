@@ -1,5 +1,5 @@
 ---
-title: How to use the Feathers SpinnerList component (Starling version)
+title: How to use the SpinnerList component (Starling version)
 sidebar_label: SpinnerList
 ---
 
@@ -66,7 +66,7 @@ One way that `SpinnerList` behaves differently is that selection may not be disa
 
 A spinner list provides a number of properties to customize its appearance. For full details about what skin and style properties are available, see the [`SpinnerList` API reference](/api-reference/feathers/controls/SpinnerList.html). We'll look at a few of the most common properties below.
 
-> As mentioned above, `SpinnerList` is a subclass of `List`. For more detailed information about the skinning options available to `SpinnerList`, see [How to use the Feathers `List` component](./list.md).
+> As mentioned above, `SpinnerList` is a subclass of `List`. For more detailed information about the skinning options available to `SpinnerList`, see [How to use the `List` component](./list.md).
 
 ### Highlight the selected item
 
@@ -82,4 +82,4 @@ This skin will be displayed in the center of the list, positioned either horizon
 
 - [`feathers.controls.SpinnerList` API Documentation](/api-reference/feathers/controls/SpinnerList.html)
 
-- [How to Use the Feathers `List` Component](./list.md)
+- [How to Use the `List` Component](./list.md)

@@ -1,5 +1,5 @@
 ---
-title: How to use the Feathers UI Graphics API skins
+title: How to use "Graphics API" skins
 sidebar_label: Graphics API Skins
 ---
 

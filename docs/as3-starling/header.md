@@ -1,5 +1,5 @@
 ---
-title: How to use the Feathers Header component (Starling version)
+title: How to use the Header component (Starling version)
 sidebar_label: Header
 ---
 

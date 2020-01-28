@@ -1,5 +1,5 @@
 ---
-title: How to use the Feathers TextInput component (Starling version)
+title: How to use the TextInput component (Starling version)
 sidebar_label: TextInput
 ---
 
@@ -233,6 +233,6 @@ By default, the text input does not use its text for measurement. Instead, it us
 
 - [`feathers.controls.TextInput` API Documentation](/api-reference/feathers/controls/TextInput.html)
 
-- [How to Use the Feathers `TextArea` Component](./text-area.md)
+- [How to use the `TextArea` Component](./text-area.md)
 
 - [Introduction to Feathers Text Editors](./text-editors.md)

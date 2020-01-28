@@ -1,5 +1,5 @@
 ---
-title: How to use the Feathers UI ComboBox component
+title: How to use the ComboBox component
 sidebar_label: ComboBox
 ---
 

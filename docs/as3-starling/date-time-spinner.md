@@ -1,5 +1,5 @@
 ---
-title: How to use the Feathers DateTimeSpinner component (Starling version)
+title: How to use the DateTimeSpinner component (Starling version)
 sidebar_label: DateTimeSpinner
 ---
 
@@ -57,7 +57,7 @@ The skins for a `DateTimeSpinner` control are divided into multiple [`SpinnerLis
 
 ### Skinning the `SpinnerList` sub-components
 
-This section only explains how to access the `SpinnerList` sub-components. Please read [How to use the Feathers `SpinnerList` component](./spinner-list.md) for full details about the skinning properties that are available on `SpinnerList` components.
+This section only explains how to access the `SpinnerList` sub-components. Please read [How to use the `SpinnerList` component](./spinner-list.md) for full details about the skinning properties that are available on `SpinnerList` components.
 
 #### With a Theme
 
@@ -114,4 +114,4 @@ spinner.listFactory = function():SpinnerList
 
 - [`feathers.controls.DateTimeSpinner` API Documentation](/api-reference/feathers/controls/DateTimeSpinner.html)
 
-- [How to use the Feathers `SpinnerList` component](./spinner-list.md)
+- [How to use the `SpinnerList` component](./spinner-list.md)

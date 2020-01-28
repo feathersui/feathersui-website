@@ -39,4 +39,4 @@ If we wanted to change the item renderer's font styles inside the theme, we coul
 ## Related Links
 
 - [Feathers Cookbook (Starling version)](./index.md)
-- [How to use the Feathers `PickerList` component](../picker-list.html)
+- [How to use the `PickerList` component](../picker-list.html)

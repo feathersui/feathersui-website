@@ -1,5 +1,5 @@
 ---
-title: How to use the Feathers ButtonGroup component (Starling version)
+title: How to use the ButtonGroup component (Starling version)
 sidebar_label: ButtonGroup
 ---
 
@@ -70,7 +70,7 @@ With a vertical layout, each button's width will match the width of the button g
 
 ### Skinning the Buttons
 
-This section only explains how to access the button sub-components. Please read [How to use the Feathers `Button` component](./button.md) for full details about the skinning properties that are available on `Button` components.
+This section only explains how to access the button sub-components. Please read [How to use the `Button` component](./button.md) for full details about the skinning properties that are available on `Button` components.
 
 #### With a Theme
 
@@ -127,7 +127,7 @@ group.buttonFactory = function():Button
 
 ### Skinning the First and Last Buttons
 
-This section only explains how to access the first and last button sub-components. Please read [How to use the Feathers `Button` component](./button.md) for full details about the skinning properties that are available on `Button` components.
+This section only explains how to access the first and last button sub-components. Please read [How to use the `Button` component](./button.md) for full details about the skinning properties that are available on `Button` components.
 
 The button group's first and last buttons will have the same skins as the other buttons by default. However, their skins may be customized separately, if desired.
 

@@ -1,5 +1,5 @@
 ---
-title: How to use the Feathers Screen component (Starling version)
+title: How to use the Screen component (Starling version)
 sidebar_label: Screen
 ---
 
@@ -87,7 +87,7 @@ The [`owner`](/api-reference/feathers/controls/Screen.html#owner) property provi
 
 For full details about what skin and style properties are available, see the [`Screen` API reference](/api-reference/feathers/controls/Screen.html).
 
-> As mentioned above, `Screen` is a subclass of `LayoutGroup`. For more detailed information about the skinning options available to `Screen`, see [How to use the Feathers `LayoutGroup` component](./layout-group.md).
+> As mentioned above, `Screen` is a subclass of `LayoutGroup`. For more detailed information about the skinning options available to `Screen`, see [How to use the `LayoutGroup` component](./layout-group.md).
 
 ## Related Links
 

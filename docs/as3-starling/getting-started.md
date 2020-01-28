@@ -109,6 +109,6 @@ this.button.y = (this.stage.stageHeight - this.button.height) / 2;
 
 ## Conclusion
 
-That should get you started with the very basics of working with Feathers. For more information about the capabilities of the `Button` class, read [How to use the Feathers `Button` component](./button.md). For the `TextCallout` class, read [How to use the Feathers `TextCallout` component](./text-callout.md).
+That should get you started with the very basics of working with Feathers. For more information about the capabilities of the `Button` class, read [How to use the `Button` component](./button.md). For the `TextCallout` class, read [How to use the `TextCallout` component](./text-callout.md).
 
 For more extensive sample code, check out the other Feathers examples included in the _examples_ directory when you [download Feathers](./installation.md). For example themes (including `MetalWorksMobileTheme`), check out the _themes_ directory.

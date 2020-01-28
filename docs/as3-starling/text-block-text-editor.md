@@ -1,5 +1,5 @@
 ---
-title: How to use the Feathers TextBlockTextEditor component (Starling version)
+title: How to use the TextBlockTextEditor component (Starling version)
 sidebar_label: TextBlockTextEditor
 ---
 

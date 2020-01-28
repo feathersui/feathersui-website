@@ -1,5 +1,5 @@
 ---
-title: How to use the Feathers TextCallout component (Starling version)
+title: How to use the TextCallout component (Starling version)
 sidebar_label: TextCallout
 ---
 
@@ -39,13 +39,13 @@ Two arguments are required. The first is the callout's text. This is a simple `S
 
 A text callout may be closed manually by calling the [`close()`](</api-reference/feathers/controls/Callout.html#close()>) function.
 
-Additional arguments are available for `TextCallout.show()`, including the direction, whether the callout is modal, and factories for the callout and the modal overlay. See [How to use the Feathers `Callout` component](./callout.md) for full details.
+Additional arguments are available for `TextCallout.show()`, including the direction, whether the callout is modal, and factories for the callout and the modal overlay. See [How to use the `Callout` component](./callout.md) for full details.
 
 ## Skinning a `TextCallout`
 
 Callouts have a number of skin and style properties to let you customize their appearance. For full details about what skin and style properties are available, see the [`TextCallout` API reference](/api-reference/feathers/controls/TextCallout.html). We'll look at a few of the most common ways of styling a text input below.
 
-> As mentioned above, `TextCallout` is a subclass of `Callout`. For more detailed information about the skinning options available to `TextCallout`, see [How to use the Feathers `Callout` component](./callout.md).
+> As mentioned above, `TextCallout` is a subclass of `Callout`. For more detailed information about the skinning options available to `TextCallout`, see [How to use the `Callout` component](./callout.md).
 
 ### Font Styles
 
@@ -97,4 +97,4 @@ You should generally always skin the callouts with a factory or with a theme ins
 ## Related Links
 
 - [`feathers.controls.TextCallout` API Documentation](/api-reference/feathers/controls/TextCallout.html)
-- [How to use the Feathers `Callout` component](./callout.md)
+- [How to use the `Callout` component](./callout.md)

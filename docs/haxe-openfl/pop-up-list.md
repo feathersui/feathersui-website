@@ -1,5 +1,5 @@
 ---
-title: How to use the Feathers UI PopUpList component
+title: How to use the PopUpList component
 sidebar_label: PopUpList
 ---
 

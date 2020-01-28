@@ -1,5 +1,5 @@
 ---
-title: How to use the Feathers TextArea component (Starling version)
+title: How to use the TextArea component (Starling version)
 sidebar_label: TextArea
 ---
 
@@ -180,7 +180,7 @@ textArea.padding = 6;
 
 ### Skinning the Scroll Bars
 
-This section only explains how to access the horizontal scroll bar and vertical scroll bar sub-components. Please read [How to use the Feathers `ScrollBar` component](./scroll-bar.md) (or [`SimpleScrollBar`](./simple-scroll-bar.md)) for full details about the skinning properties that are available on scroll bar components.
+This section only explains how to access the horizontal scroll bar and vertical scroll bar sub-components. Please read [How to use the `ScrollBar` component](./scroll-bar.md) (or [`SimpleScrollBar`](./simple-scroll-bar.md)) for full details about the skinning properties that are available on scroll bar components.
 
 #### With a Theme
 
@@ -274,6 +274,6 @@ Finally, you can ensure that scrolling is always enabled by setting the scroll p
 
 - [`feathers.controls.TextArea` API Documentation](/api-reference/feathers/controls/TextArea.html)
 
-- [How to Use the Feathers `TextInput` Component](./text-input.md)
+- [How to use the `TextInput` Component](./text-input.md)
 
 - [Introduction to Feathers Text Editors](./text-editors.md)

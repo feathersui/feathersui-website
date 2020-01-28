@@ -1,5 +1,5 @@
 ---
-title: How to use the Feathers Check component (Starling version)
+title: How to use the Check component (Starling version)
 sidebar_label: Check
 ---
 
@@ -25,18 +25,18 @@ check.isSelected = true;
 this.addChild( check );
 ```
 
-See [How to use the Feathers `ToggleButton` component](./toggle-button.md) for a more detailed look at this component's capabilities.
+See [How to use the `ToggleButton` component](./toggle-button.md) for a more detailed look at this component's capabilities.
 
 ## Skinning a `Check`
 
 A skinned `Check` component usually has no background (or a transparent one) and the touch states of the check are displayed through the icon skins. For full details about which properties are available, see the [`Check` API reference](/api-reference/feathers/controls/Check.html).
 
-> As mentioned above, `Check` is a subclass of `ToggleButton`. For more detailed information about the skinning options available to `Check`, see [How to use the Feathers `ToggleButton` component](./toggle-button.md).
+> As mentioned above, `Check` is a subclass of `ToggleButton`. For more detailed information about the skinning options available to `Check`, see [How to use the `ToggleButton` component](./toggle-button.md).
 
 ## Related Links
 
 - [`feathers.controls.Check` API Documentation](/api-reference/feathers/controls/Check.html)
 
-- [How to use the Feathers `ToggleButton` component](./toggle-button.md)
+- [How to use the `ToggleButton` component](./toggle-button.md)
 
-- [How to use the Feathers `ToggleSwitch` component](./toggle-switch.md)
+- [How to use the `ToggleSwitch` component](./toggle-switch.md)

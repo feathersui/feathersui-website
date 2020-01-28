@@ -23,4 +23,4 @@ If we wanted to change the tab's font styles inside the theme, we could set the 
 ## Related Links
 
 - [Feathers Cookbook (Starling version)](./index.md)
-- [How to use the Feathers `TabBar` component](../tab-bar.html)
+- [How to use the `TabBar` component](../tab-bar.html)

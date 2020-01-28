@@ -1,5 +1,5 @@
 ---
-title: How to use the Feathers StageTextTextEditor component (Starling version)
+title: How to use the StageTextTextEditor component (Starling version)
 sidebar_label: StageTextTextEditor
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: How to use the Feathers ScrollBar component (Starling version)
+title: How to use the ScrollBar component (Starling version)
 sidebar_label: ScrollBar
 ---
 
@@ -47,7 +47,7 @@ When the value of `trackLayoutMode` is `TrackLayoutMode.SINGLE`, the scroll bar 
 
 ### Skinning the Thumb
 
-This section only explains how to access the thumb sub-component. Please read [How to use the Feathers `Button` component](./button.md) for full details about the skinning properties that are available on `Button` components.
+This section only explains how to access the thumb sub-component. Please read [How to use the `Button` component](./button.md) for full details about the skinning properties that are available on `Button` components.
 
 #### With a Theme
 
@@ -102,7 +102,7 @@ scrollBar.thumbFactory = function():Button
 
 ### Skinning the Minimum Track
 
-This section only explains how to access the minimum track sub-component. Please read [How to use the Feathers `Button` component](./button.md) for full details about the skinning properties that are available on `Button` components.
+This section only explains how to access the minimum track sub-component. Please read [How to use the `Button` component](./button.md) for full details about the skinning properties that are available on `Button` components.
 
 #### With a Theme
 
@@ -157,13 +157,13 @@ scrollBar.minimumTrackFactory = function():Button
 
 ### Skinning the Maximum Track
 
-This section only explains how to access the maximum track sub-component. Please read [How to use the Feathers `Button` component](./button.md) for full details about the skinning properties that are available on `Button` components.
+This section only explains how to access the maximum track sub-component. Please read [How to use the `Button` component](./button.md) for full details about the skinning properties that are available on `Button` components.
 
 The scroll bar's maximum track may be skinned similarly to the minimum track. The style name to use with [themes](./themes.md) is [`ScrollBar.DEFAULT_CHILD_STYLE_NAME_MAXIMUM_TRACK`](/api-reference/feathers/controls/ScrollBar.html#DEFAULT_CHILD_STYLE_NAME_MAXIMUM_TRACK) or you can customize the style name with [`customMaximumTrackStyleName`](/api-reference/feathers/controls/ScrollBar.html#customMaximumTrackStyleName). If you aren't using a theme, then you can use [`maximumTrackFactory`](/api-reference/feathers/controls/ScrollBar.html#maximumTrackFactory).
 
 ### Skinning the Decrement Button
 
-This section only explains how to access the decrement button sub-component. Please read [How to use the Feathers Button component](./button.md) for full details about the skinning properties that are available on `Button` components.
+This section only explains how to access the decrement button sub-component. Please read [How to use the Button component](./button.md) for full details about the skinning properties that are available on `Button` components.
 
 #### With a Theme
 
@@ -218,7 +218,7 @@ scrollBar.decrementButtonFactory = function():Button
 
 ### Skinning the Increment Button
 
-This section only explains how to access the increment button sub-component. Please read [How to use the Feathers `Button` component](./button.md) for full details about the skinning properties that are available on `Button` components.
+This section only explains how to access the increment button sub-component. Please read [How to use the `Button` component](./button.md) for full details about the skinning properties that are available on `Button` components.
 
 The scroll bar's increment button may be skinned similarly to the decrement button. The style name to use with [themes](./themes.md) is [`ScrollBar.DEFAULT_CHILD_STYLE_NAME_INCREMENT_BUTTON`](/api-reference/feathers/controls/ScrollBar.html#DEFAULT_CHILD_STYLE_NAME_INCREMENT_BUTTON) or you can customize the style name with [`customIncrementButtonStyleName`](/api-reference/feathers/controls/ScrollBar.html#customIncrementButtonStyleName). If you aren't using a theme, then you can use [`incrementButtonFactory`](/api-reference/feathers/controls/ScrollBar.html#incrementButtonFactory).
 
@@ -226,4 +226,4 @@ The scroll bar's increment button may be skinned similarly to the decrement butt
 
 - [`feathers.controls.ScrollBar` API Documentation](/api-reference/feathers/controls/ScrollBar.html)
 
-- [How to use the Feathers `SimpleScrollBar` Component](./simple-scroll-bar.md)
+- [How to use the `SimpleScrollBar` Component](./simple-scroll-bar.md)

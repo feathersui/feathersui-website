@@ -1,5 +1,5 @@
 ---
-title: How to use the Feathers AutoComplete component (Starling version)
+title: How to use the AutoComplete component (Starling version)
 sidebar_label: AutoComplete
 ---
 
@@ -151,11 +151,11 @@ This value is measured in seconds, and the default value is `0.5`.
 
 ## Skinning an `AutoComplete`
 
-As mentioned above, `AutoComplete` is a subclass of `TextInput`. For more detailed information about skins and font styles available to `AutoComplete`, see [How to use the Feathers `TextInput` component](./text-input.md). All styling properties are inherited by the `AutoComplete` class.
+As mentioned above, `AutoComplete` is a subclass of `TextInput`. For more detailed information about skins and font styles available to `AutoComplete`, see [How to use the `TextInput` component](./text-input.md). All styling properties are inherited by the `AutoComplete` class.
 
 ### Skinning the pop-up list
 
-This section only explains how to access the pop-up list sub-component. Please read [How to use the Feathers `List` component](./list.md) for full details about the skinning properties that are available on `List` components.
+This section only explains how to access the pop-up list sub-component. Please read [How to use the `List` component](./list.md) for full details about the skinning properties that are available on `List` components.
 
 #### With a Theme
 
@@ -208,4 +208,4 @@ input.listFactory = function():List
 
 - [`feathers.controls.AutoComplete` API Documentation](/api-reference/feathers/controls/AutoComplete.html)
 
-- [How to Use the Feathers `TextInput` Component](./text-input.md)
+- [How to Use the `TextInput` Component](./text-input.md)

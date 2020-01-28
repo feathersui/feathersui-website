@@ -1,5 +1,5 @@
 ---
-title: How to use the Feathers Callout component (Starling version)
+title: How to use the Callout component (Starling version)
 sidebar_label: Callout
 ---
 
@@ -207,4 +207,4 @@ Finally, you may want to reuse the callout's content. By default, the callout wi
 
 - [`feathers.controls.Callout` API Documentation](/api-reference/feathers/controls/Callout.html)
 
-- [How to use the Feathers `TextCallout` component](./text-callout.md)
+- [How to use the `TextCallout` component](./text-callout.md)

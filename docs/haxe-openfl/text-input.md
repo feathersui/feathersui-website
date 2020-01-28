@@ -1,5 +1,5 @@
 ---
-title: How to use the Feathers UI TextInput component
+title: How to use the TextInput component
 sidebar_label: TextInput
 ---
 

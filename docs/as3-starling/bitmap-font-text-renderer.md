@@ -1,5 +1,5 @@
 ---
-title: How to use the Feathers BitmapFontTextRenderer component (Starling version)
+title: How to use the BitmapFontTextRenderer component (Starling version)
 sidebar_label: BitmapFontTextRenderer
 ---
 

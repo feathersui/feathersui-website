@@ -1,5 +1,5 @@
 ---
-title: How to use the Feathers TextBlockTextRenderer component (Starling version)
+title: How to use the TextBlockTextRenderer component (Starling version)
 sidebar_label: TextBlockTextRenderer
 ---
 

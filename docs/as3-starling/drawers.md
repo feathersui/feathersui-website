@@ -1,5 +1,5 @@
 ---
-title: How to use the Feathers Drawers component (Starling version)
+title: How to use the Drawers component (Starling version)
 sidebar_label: Drawers
 ---
 

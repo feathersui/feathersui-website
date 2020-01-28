@@ -1,5 +1,5 @@
 ---
-title: How to use the Feathers UI Panel component
+title: How to use the Panel component
 sidebar_label: Panel
 ---
 

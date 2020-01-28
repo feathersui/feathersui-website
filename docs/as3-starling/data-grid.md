@@ -1,5 +1,5 @@
 ---
-title: How to use the Feathers DataGrid component (Starling version)
+title: How to use the DataGrid component (Starling version)
 sidebar_label: DataGrid
 ---
 
@@ -199,7 +199,7 @@ grid.headerDividerFactory = function():DisplayObject
 
 ### Skinning the Scroll Bars
 
-This section only explains how to access the horizontal scroll bar and vertical scroll bar sub-components. Please read [How to use the Feathers `ScrollBar` component](./scroll-bar.md) (or [`SimpleScrollBar`](./simple-scroll-bar.md)) for full details about the skinning properties that are available on scroll bar components.
+This section only explains how to access the horizontal scroll bar and vertical scroll bar sub-components. Please read [How to use the `ScrollBar` component](./scroll-bar.md) (or [`SimpleScrollBar`](./simple-scroll-bar.md)) for full details about the skinning properties that are available on scroll bar components.
 
 #### With a Theme
 

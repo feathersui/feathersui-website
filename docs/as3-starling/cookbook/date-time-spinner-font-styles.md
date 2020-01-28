@@ -23,4 +23,4 @@ If we wanted to change the item renderer's font styles inside the theme, we coul
 ## Related Links
 
 - [Feathers Cookbook (Starling version)](./index.md)
-- [How to use the Feathers `DateTimeSpinner` component](../date-time-spinner.html)
+- [How to use the `DateTimeSpinner` component](../date-time-spinner.html)

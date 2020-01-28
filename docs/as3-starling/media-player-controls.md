@@ -62,6 +62,6 @@ mediaPlayer.addChild( slider );
 
 ## Related Links
 
-- [How to use the Feathers `SoundPlayer` component](./sound-player.md)
+- [How to use the `SoundPlayer` component](./sound-player.md)
 
-- [How to use the Feathers `VideoPlayer` component](./video-player.md)
+- [How to use the `VideoPlayer` component](./video-player.md)

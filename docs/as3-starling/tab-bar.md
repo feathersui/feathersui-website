@@ -1,5 +1,5 @@
 ---
-title: How to use the Feathers TabBar component (Starling version)
+title: How to use the TabBar component (Starling version)
 sidebar_label: TabBar
 ---
 
@@ -65,7 +65,7 @@ The [`distributeTabSizes`](/api-reference/feathers/controls/TabBar.html#distribu
 
 ### Skinning the Tabs
 
-This section only explains how to access the tab sub-components, which are simply toggle buttons. Please read [How to use the Feathers `ToggleButton` component](./toggle-button.md) for full details about the skinning properties that are available on `ToggleButton` components.
+This section only explains how to access the tab sub-components, which are simply toggle buttons. Please read [How to use the `ToggleButton` component](./toggle-button.md) for full details about the skinning properties that are available on `ToggleButton` components.
 
 #### With a Theme
 
@@ -122,7 +122,7 @@ tabBar.tabFactory = function():ToggleButton
 
 ### Skinning the First and Last Tabs
 
-This section only explains how to access the first and last tab sub-components. Please read [How to use the Feathers `ToggleButton` component](./toggle-button.md) for full details about the skinning properties that are available on `ToggleButton` components.
+This section only explains how to access the first and last tab sub-components. Please read [How to use the `ToggleButton` component](./toggle-button.md) for full details about the skinning properties that are available on `ToggleButton` components.
 
 The tab bar's first and last tabs will have the same skins as the other tabs by default. However, their skins may be customized separately, if desired.
 

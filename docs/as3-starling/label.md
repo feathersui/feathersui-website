@@ -1,5 +1,5 @@
 ---
-title: How to use the Feathers Label component (Starling version)
+title: How to use the Label component (Starling version)
 sidebar_label: Label
 ---
 

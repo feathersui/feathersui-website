@@ -39,4 +39,4 @@ If we wanted to change the item renderer's font styles inside the theme, we coul
 ## Related Links
 
 - [Feathers Cookbook (Starling version)](./index.md)
-- [How to use the Feathers `AutoComplete` component](../auto-complete.html)
+- [How to use the `AutoComplete` component](../auto-complete.html)

@@ -48,4 +48,4 @@ if( item.hasOwnProperty( "scaleWhenDown" ) )
 ## Related Links
 
 - [Feathers Cookbook (Starling version)](./index.md)
-- [How to use the Feathers `TabBar` component](../tab-bar.html)
+- [How to use the `TabBar` component](../tab-bar.html)

@@ -1,5 +1,5 @@
 ---
-title: How to use the Feathers WebView component (Starling version)
+title: How to use the WebView component (Starling version)
 sidebar_label: WebView
 ---
 

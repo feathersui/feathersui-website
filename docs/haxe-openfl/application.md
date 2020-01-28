@@ -1,5 +1,5 @@
 ---
-title: How to use the Feathers UI Application component
+title: How to use the Application component
 sidebar_label: Application
 ---
 

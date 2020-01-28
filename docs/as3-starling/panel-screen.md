@@ -1,5 +1,5 @@
 ---
-title: How to use the Feathers PanelScreen component (Starling version)
+title: How to use the PanelScreen component (Starling version)
 sidebar_label: PanelScreen
 ---
 
@@ -90,13 +90,13 @@ The [`owner`](/api-reference/feathers/controls/PanelScreen.html#owner) property 
 
 For full details about what skin and style properties are available, see the [`PanelScreen` API reference](/api-reference/feathers/controls/PanelScreen.html).
 
-> As mentioned above, `PanelScreen` is a subclass of `Panel`. For more detailed information about the skinning options available to `PanelScreen`, see [How to use the Feathers `Panel` component](./panel.md).
+> As mentioned above, `PanelScreen` is a subclass of `Panel`. For more detailed information about the skinning options available to `PanelScreen`, see [How to use the `Panel` component](./panel.md).
 
 ### Skinning the Header
 
 This section only explains how to access the header sub-component. The header may be any type of Feathers control. Please read the appropriate documentation for full details about the skinning properties that are available on the component that is used for the header.
 
-> For the default header, please read [How to use the Feathers `Header` component](./header.md) for full details about the skinning properties that are available on `Header` components.
+> For the default header, please read [How to use the `Header` component](./header.md) for full details about the skinning properties that are available on `Header` components.
 
 #### With a Theme
 
@@ -202,7 +202,7 @@ screen.footerFactory = function():ScrollContainer
 
 ### Skinning the Scroll Bars
 
-This section only explains how to access the horizontal scroll bar and vertical scroll bar sub-components. Please read [How to use the Feathers `ScrollBar` component](./scroll-bar.md) (or [`SimpleScrollBar`](./simple-scroll-bar.md)) for full details about the skinning properties that are available on scroll bar components.
+This section only explains how to access the horizontal scroll bar and vertical scroll bar sub-components. Please read [How to use the `ScrollBar` component](./scroll-bar.md) (or [`SimpleScrollBar`](./simple-scroll-bar.md)) for full details about the skinning properties that are available on scroll bar components.
 
 #### With a Theme
 
@@ -302,4 +302,4 @@ The [`pageWidth`](/api-reference/feathers/controls/Scroller.html#pageWidth) and 
 
 - [`feathers.controls.PanelScreen` API Documentation](/api-reference/feathers/controls/PanelScreen.html)
 
-- [How to use the Feathers `Panel` component](./panel.md)
+- [How to use the `Panel` component](./panel.md)

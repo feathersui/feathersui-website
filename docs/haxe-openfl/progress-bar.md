@@ -1,5 +1,5 @@
 ---
-title: How to use the Feathers UI HProgressBar and VProgressBar components
+title: How to use the HProgressBar and VProgressBar components
 sidebar_label: HProgressBar / VProgressBar
 ---
 

@@ -104,7 +104,7 @@ label.text = "Email Address:";
 this.addChild( label );
 ```
 
-The choice of a text renderer can be left to your theme instead of cluttering up the rest of the application, and text styles may be customized appropriately. For complete details about how to set properties on a `Label` component in your theme, see [How to use the Feathers `Label` component](./label.md).
+The choice of a text renderer can be left to your theme instead of cluttering up the rest of the application, and text styles may be customized appropriately. For complete details about how to set properties on a `Label` component in your theme, see [How to use the `Label` component](./label.md).
 
 ## Custom Text Renderers
 
@@ -126,15 +126,15 @@ There are some disadvantages, though. Because it is drawn entirely by the softwa
 
 ## Related Links
 
-- [How to use the Feathers `BitmapFontTextRenderer` component](./bitmap-font-text-renderer.md)
+- [How to use the `BitmapFontTextRenderer` component](./bitmap-font-text-renderer.md)
 
-- [How to use the Feathers `TextBlockTextRenderer` component](./text-block-text-renderer.md)
+- [How to use the `TextBlockTextRenderer` component](./text-block-text-renderer.md)
 
-- [How to use the Feathers `TextFieldTextRenderer` component](./text-field-text-renderer.md)
+- [How to use the `TextFieldTextRenderer` component](./text-field-text-renderer.md)
 
-- [How to use the Feathers `Label` component](./label.md)
+- [How to use the `Label` component](./label.md)
 
-- [How to use the Feathers `ScrollText` component](./scroll-text.md)
+- [How to use the `ScrollText` component](./scroll-text.md)
 
 - [`feathers.core.ITextRenderer` API Documentation](/api-reference/feathers/core/text/ITextRenderer.html)
 

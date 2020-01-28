@@ -1,5 +1,5 @@
 ---
-title: How to use the Feathers SoundPlayer component (Starling version)
+title: How to use the SoundPlayer component (Starling version)
 sidebar_label: SoundPlayer
 ---
 
@@ -125,7 +125,7 @@ player.soundTransform = new SoundTransform( 0.5 );
 
 ## Skinning a `SoundPlayer`
 
-As mentioned above, `SoundPlayer` is a subclass of `LayoutGroup`. For more detailed information about the skinning options available to `SoundPlayer`, see [How to use the Feathers `LayoutGroup` component](./layout-group.md).
+As mentioned above, `SoundPlayer` is a subclass of `LayoutGroup`. For more detailed information about the skinning options available to `SoundPlayer`, see [How to use the `LayoutGroup` component](./layout-group.md).
 
 ## Related Links
 

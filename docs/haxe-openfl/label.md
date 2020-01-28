@@ -1,5 +1,5 @@
 ---
-title: How to use the Feathers UI Label component
+title: How to use the Label component
 sidebar_label: Label
 ---
 

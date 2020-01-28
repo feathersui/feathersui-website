@@ -31,12 +31,12 @@ Custom item renderers are basically [custom Feathers components](./component-pro
 
 ## Related Links
 
-- [How to use the Feathers `List` component](./list.md)
+- [How to use the `List` component](./list.md)
 
-- [How to use the Feathers `DataGrid` component](./data-grid.md)
+- [How to use the `DataGrid` component](./data-grid.md)
 
-- [How to use the Feathers `Tree` component](./list.md)
+- [How to use the `Tree` component](./list.md)
 
-- [How to use the Feathers `GroupedList` component](./grouped-list.md)
+- [How to use the `GroupedList` component](./grouped-list.md)
 
-- [How to use the Feathers Default Item Renderers](./default-item-renderers.md)
+- [How to use the Default Item Renderers](./default-item-renderers.md)

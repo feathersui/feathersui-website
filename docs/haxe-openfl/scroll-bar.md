@@ -1,5 +1,5 @@
 ---
-title: How to use the Feathers UI HScrollBar and VScrollBar components
+title: How to use the HScrollBar and VScrollBar components
 sidebar_label: HScrollBar / VScrollBar
 ---
 

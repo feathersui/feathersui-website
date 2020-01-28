@@ -1,5 +1,5 @@
 ---
-title: How to use the Feathers UI LayoutGroup component
+title: How to use the LayoutGroup component
 sidebar_label: LayoutGroup
 ---
 

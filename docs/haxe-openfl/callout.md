@@ -1,5 +1,5 @@
 ---
-title: How to use the Feathers UI Callout component
+title: How to use the Callout component
 sidebar_label: Callout
 ---
 

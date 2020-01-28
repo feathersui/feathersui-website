@@ -1,5 +1,5 @@
 ---
-title: How to use the Feathers PickerList component (Starling version)
+title: How to use the PickerList component (Starling version)
 sidebar_label: PickerList
 ---
 
@@ -70,7 +70,7 @@ The skins for a `PickerList` control are divided into several parts, including t
 
 ### Skinning the button
 
-Please read [How to use the Feathers `Button` component](./button.md) for full details about how to skin this component.
+Please read [How to use the `Button` component](./button.md) for full details about how to skin this component.
 
 #### With a Theme
 
@@ -121,7 +121,7 @@ list.buttonFactory = function():Button
 
 ### Skinning the List
 
-Please read [How to use the Feathers `List` component](./list.md) for full details about how to skin this component.
+Please read [How to use the `List` component](./list.md) for full details about how to skin this component.
 
 #### With a Theme
 

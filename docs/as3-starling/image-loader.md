@@ -1,5 +1,5 @@
 ---
-title: How to use the Feathers ImageLoader component (Starling version)
+title: How to use the ImageLoader component (Starling version)
 sidebar_label: ImageLoader
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: How to use the Feathers Panel component (Starling version)
+title: How to use the Panel component (Starling version)
 sidebar_label: Panel
 ---
 
@@ -172,7 +172,7 @@ panel.padding = 20;
 
 This section only explains how to access the header sub-component. The header may be any type of Feathers control. Please read the appropriate documentation for full details about the skinning properties that are available on the component that is used for the header.
 
-> For the default header, please read [How to use the Feathers `Header` component](./header.md) for full details about the skinning properties that are available on `Header` components.
+> For the default header, please read [How to use the `Header` component](./header.md) for full details about the skinning properties that are available on `Header` components.
 
 #### With a Theme
 
@@ -278,7 +278,7 @@ panel.footerFactory = function():LayoutGroup
 
 ### Skinning the Scroll Bars
 
-This section only explains how to access the horizontal scroll bar and vertical scroll bar sub-components. Please read [How to use the Feathers `ScrollBar` component](./scroll-bar.md) (or [`SimpleScrollBar`](./simple-scroll-bar.md)) for full details about the skinning properties that are available on scroll bar components.
+This section only explains how to access the horizontal scroll bar and vertical scroll bar sub-components. Please read [How to use the `ScrollBar` component](./scroll-bar.md) (or [`SimpleScrollBar`](./simple-scroll-bar.md)) for full details about the skinning properties that are available on scroll bar components.
 
 #### With a Theme
 

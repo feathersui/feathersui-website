@@ -1,5 +1,5 @@
 ---
-title: How to use the Feathers TextFieldTextRenderer component (Starling version)
+title: How to use the TextFieldTextRenderer component (Starling version)
 sidebar_label: TextFieldTextRenderer
 ---
 

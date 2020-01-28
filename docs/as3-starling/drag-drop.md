@@ -3,7 +3,7 @@ title: Drag and drop between Feathers components (Starling version)
 sidebar_label: Drag and drop
 ---
 
-> The following description of how to use the Feathers [`DragDropManager`](/api-reference/feathers/dragDrop/DragDropManager.html) is taken from [this forum thread](http://forum.starling-framework.org/topic/would-you-please-give-us-an-examples-on-how-to-use-dragdropmanager). This text combines multiple posts into a single source, without much editing, so refer to the linked thread if some context is missing. More thorough documentation will be added in the future.
+> The following description of How to use the [`DragDropManager`](/api-reference/feathers/dragDrop/DragDropManager.html) is taken from [this forum thread](http://forum.starling-framework.org/topic/would-you-please-give-us-an-examples-on-how-to-use-dragdropmanager). This text combines multiple posts into a single source, without much editing, so refer to the linked thread if some context is missing. More thorough documentation will be added in the future.
 
 > In the `examples/DragDrop` directory that comes with Feathers, you can find a simple, working example of the `DragDropManager`.
 

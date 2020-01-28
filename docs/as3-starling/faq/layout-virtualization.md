@@ -18,8 +18,8 @@ Most layouts that support virtualization have a [`useVirtualLayout`](/api-refere
 
 - [Introduction to custom item renderers](../item-renderers.md)
 
-- [How to use the Feathers List component](../list.md)
+- [How to use the List component](../list.md)
 
-- [How to use the Feathers Grouped List component](../grouped-list.md)
+- [How to use the Grouped List component](../grouped-list.md)
 
 

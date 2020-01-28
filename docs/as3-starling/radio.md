@@ -1,5 +1,5 @@
 ---
-title: How to use the Feathers Radio component (Starling version)
+title: How to use the Radio component (Starling version)
 sidebar_label: Radio
 ---
 
@@ -68,7 +68,7 @@ trace( "radio.label:", radio.label );
 
 A skinned `Radio` component usually has no background (or a transparent one) and the touch states of the radio are displayed through the icon skins. For full details about what skin and style properties are available, see the [`Radio` API reference](/api-reference/feathers/controls/Radio.html).
 
-> As mentioned above, `Radio` is a subclass of `ToggleButton`. For more detailed information about the skinning options available to `Radio`, see [How to use the Feathers `ToggleButton` component](./toggle-button.md).
+> As mentioned above, `Radio` is a subclass of `ToggleButton`. For more detailed information about the skinning options available to `Radio`, see [How to use the `ToggleButton` component](./toggle-button.md).
 
 ## User Experience
 
@@ -80,4 +80,4 @@ In general, a set of `Radio` controls should be used only when there are three o
 
 - [`feathers.core.ToggleGroup` API Documentation](/api-reference/feathers/core/ToggleGroup.html)
 
-- [How to use the Feathers `ToggleButton` component](./toggle-button.md)
+- [How to use the `ToggleButton` component](./toggle-button.md)

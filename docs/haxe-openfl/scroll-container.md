@@ -1,5 +1,5 @@
 ---
-title: How to use the Feathers UI ScrollContainer component
+title: How to use the ScrollContainer component
 sidebar_label: ScrollContainer
 ---
 

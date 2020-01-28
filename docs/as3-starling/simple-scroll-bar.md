@@ -1,5 +1,5 @@
 ---
-title: How to use the Feathers SimpleScrollBar component (Starling version)
+title: How to use the SimpleScrollBar component (Starling version)
 sidebar_label: SimpleScrollBar
 ---
 
@@ -32,7 +32,7 @@ The `SimpleScrollBar` has one part that may be skinned, its thumb. A SimpleScrol
 
 ### Skinning the Thumb
 
-This section only explains how to access the thumb sub-component. Please read [How to use the Feathers `Button` component](./button.md) for full details about the skinning properties that are available on `Button` components.
+This section only explains how to access the thumb sub-component. Please read [How to use the `Button` component](./button.md) for full details about the skinning properties that are available on `Button` components.
 
 #### With a Theme
 

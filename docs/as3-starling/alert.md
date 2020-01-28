@@ -1,5 +1,5 @@
 ---
-title: How to use the Feathers Alert component (Starling version)
+title: How to use the Alert component (Starling version)
 sidebar_label: Alert
 ---
 
@@ -125,9 +125,9 @@ alert.disabledFontStyles = new TextFormat( "Helvetica", 20, 0x9a9a9a );
 
 Pass in a [`starling.text.TextFormat`](http://doc.starling-framework.org/current/starling/text/TextFormat.html) object, which will work with any type of [text renderer](./text-renderers.md).
 
-The font styles of the alert's title may be customized on the alert's `Header` component. See [How to use the Feathers `Header` component](./header.md) for details.
+The font styles of the alert's title may be customized on the alert's `Header` component. See [How to use the `Header` component](./header.md) for details.
 
-The font styles of the alert's buttons may be customized through the alert's `ButtonGroup` component. See [How to use the Feathers `ButtonGroup` component](./button-group.md) for details.
+The font styles of the alert's buttons may be customized through the alert's `ButtonGroup` component. See [How to use the `ButtonGroup` component](./button-group.md) for details.
 
 ### Background skin
 
@@ -176,7 +176,7 @@ alert.gap = 12;
 
 ### Skinning the header
 
-This section only explains how to access the header sub-component. Please read [How to use the Feathers `Header` component](./header.md) for full details about the skinning properties that are available on `Header` components.
+This section only explains how to access the header sub-component. Please read [How to use the `Header` component](./header.md) for full details about the skinning properties that are available on `Header` components.
 
 #### With a Theme
 
@@ -229,7 +229,7 @@ alert.headerFactory = function():Header
 
 ### Skinning the buttons
 
-This section only explains how to access the button group sub-component. Please read [How to use the Feathers `ButtonGroup` component](./button-group.md) for full details about the skinning properties that are available on `ButtonGroup` components.
+This section only explains how to access the button group sub-component. Please read [How to use the `ButtonGroup` component](./button-group.md) for full details about the skinning properties that are available on `ButtonGroup` components.
 
 #### With a Theme
 

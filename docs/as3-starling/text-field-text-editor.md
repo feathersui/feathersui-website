@@ -1,5 +1,5 @@
 ---
-title: How to use the Feathers TextFieldTextEditor component (Starling version)
+title: How to use the TextFieldTextEditor component (Starling version)
 sidebar_label: TextFieldTextEditor
 ---
 

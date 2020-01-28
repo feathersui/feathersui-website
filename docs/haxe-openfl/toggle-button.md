@@ -1,5 +1,5 @@
 ---
-title: How to use the Feathers UI ToggleButton component
+title: How to use the ToggleButton component
 sidebar_label: ToggleButton
 ---
 

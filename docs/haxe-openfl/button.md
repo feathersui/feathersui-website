@@ -1,5 +1,5 @@
 ---
-title: How to use the Feathers UI Button component
+title: How to use the Button component
 sidebar_label: Button
 ---
 

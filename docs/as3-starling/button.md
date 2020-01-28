@@ -1,5 +1,5 @@
 ---
-title: How to use the Feathers Button component (Starling version)
+title: How to use the Button component (Starling version)
 sidebar_label: Button
 ---
 

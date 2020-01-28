@@ -24,7 +24,7 @@ In the code above, we set the [`defaultSkin`](/api-reference/feathers/controls/B
 
 We set the [`fontStyles`](/api-reference/feathers/controls/Button.html#fontStyles) property to tell the button which font family to use for its text, along with the size and color. The [`starling.text.TextFormat`](http://doc.starling-framework.org/current/starling/text/TextFormat.html) class can be used to customize the font styles of any Feathers component, whether you are using bitmap fonts, embedded fonts, or system fonts.
 
-> The `Button` class has many more styling properties for things like layout, icons, and more, but that is outside the scope of this document. For more details about styling buttons specifically, take a look at [How to use the Feathers `Button` component](./button.md).
+> The `Button` class has many more styling properties for things like layout, icons, and more, but that is outside the scope of this document. For more details about styling buttons specifically, take a look at [How to use the `Button` component](./button.md).
 
 ## Skin components with multiple states
 

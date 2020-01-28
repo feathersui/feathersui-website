@@ -1,5 +1,5 @@
 ---
-title: How to use the Feathers VideoPlayer component (Starling version)
+title: How to use the VideoPlayer component (Starling version)
 sidebar_label: VideoPlayer
 ---
 
@@ -242,7 +242,7 @@ To play another video stream from the same server, set the `videoSource` propert
 
 ## Skinning a `VideoPlayer`
 
-As mentioned above, `VideoPlayer` is a subclass of `LayoutGroup`. For more detailed information about the skinning options available to `VideoPlayer`, see [How to use the Feathers `LayoutGroup` component](./layout-group.md).
+As mentioned above, `VideoPlayer` is a subclass of `LayoutGroup`. For more detailed information about the skinning options available to `VideoPlayer`, see [How to use the `LayoutGroup` component](./layout-group.md).
 
 ## Related Links
 

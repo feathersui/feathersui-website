@@ -1,5 +1,5 @@
 ---
-title: How to use the Feathers UI HSlider and VSlider components
+title: How to use the HSlider and VSlider components
 sidebar_label: HSlider / VSlider
 ---
 

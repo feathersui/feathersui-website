@@ -1,5 +1,5 @@
 ---
-title: How to use the Feathers ScrollScreen component (Starling version)
+title: How to use the ScrollScreen component (Starling version)
 sidebar_label: ScrollScreen
 ---
 
@@ -93,7 +93,7 @@ For full details about what skin and style properties are available, see the [`S
 
 ### Skinning the Scroll Bars
 
-This section only explains how to access the horizontal scroll bar and vertical scroll bar sub-components. Please read [How to use the Feathers `ScrollBar` component](./scroll-bar.md) (or [`SimpleScrollBar`](./simple-scroll-bar.md)) for full details about the skinning properties that are available on scroll bar components.
+This section only explains how to access the horizontal scroll bar and vertical scroll bar sub-components. Please read [How to use the `ScrollBar` component](./scroll-bar.md) (or [`SimpleScrollBar`](./simple-scroll-bar.md)) for full details about the skinning properties that are available on scroll bar components.
 
 #### With a Theme
 
@@ -193,4 +193,4 @@ The [`pageWidth`](/api-reference/feathers/controls/Scroller.html#pageWidth) and 
 
 - [`feathers.controls.ScrollScreen` API Documentation](/api-reference/feathers/controls/ScrollScreen.html)
 
-- [How to use the Feathers `ScrollContainer` component](./scroll-container.md)
+- [How to use the `ScrollContainer` component](./scroll-container.md)

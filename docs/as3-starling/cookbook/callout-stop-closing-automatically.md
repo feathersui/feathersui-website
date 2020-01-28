@@ -30,5 +30,5 @@ The [`closeOnKeys`](/api-reference/feathers/controls/Callout.html#closeOnKeys) p
 ## Related Links
 
 - [Feathers Cookbook (Starling version)](./index.md)
-- [How to use the Feathers `Callout` component](../callout.html)
+- [How to use the `Callout` component](../callout.html)
 - [Feathers Cookbook: How to close a `Callout` without disposing it (or without disposing its content)](./callout-restrict-disposal.md)

@@ -55,5 +55,5 @@ If we wanted to change the footer renderer's font styles inside the theme, we co
 ## Related Links
 
 - [Feathers Cookbook (Starling version)](./index.md)
-- [How to use the Feathers `GroupedList` component](../grouped-list.html)
-- [How to use the Feathers default item renderers](../default-item-renderers.html)
+- [How to use the `GroupedList` component](../grouped-list.html)
+- [How to use the default item renderers](../default-item-renderers.html)

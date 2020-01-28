@@ -32,4 +32,4 @@ override protected function initialize():void
 ## Related Links
 
 - [Feathers Cookbook (Starling version)](./index.md)
-- [How to use the Feathers `ScreenNavigator` component](../screen-navigator.html)
+- [How to use the `ScreenNavigator` component](../screen-navigator.html)

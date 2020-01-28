@@ -1,5 +1,5 @@
 ---
-title: How to use the Feathers GroupedList component (Starling version)
+title: How to use the GroupedList component (Starling version)
 sidebar_label: GroupedList
 ---
 
@@ -263,7 +263,7 @@ Generally, a grouped list will use something called _[layout virtualization](./f
 
 ### Skinning the Scroll Bars
 
-This section only explains how to access the horizontal scroll bar and vertical scroll bar sub-components. Please read [How to use the Feathers `ScrollBar` component](./scroll-bar.md) (or [`SimpleScrollBar`](./simple-scroll-bar.md)) for full details about the skinning properties that are available on scroll bar components.
+This section only explains how to access the horizontal scroll bar and vertical scroll bar sub-components. Please read [How to use the `ScrollBar` component](./scroll-bar.md) (or [`SimpleScrollBar`](./simple-scroll-bar.md)) for full details about the skinning properties that are available on scroll bar components.
 
 #### With a Theme
 

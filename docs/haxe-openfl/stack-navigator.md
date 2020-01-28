@@ -1,5 +1,5 @@
 ---
-title: How to use the Feathers UI StackNavigator component
+title: How to use the StackNavigator component
 sidebar_label: StackNavigator
 ---
 

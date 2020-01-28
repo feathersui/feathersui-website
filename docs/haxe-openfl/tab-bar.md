@@ -1,5 +1,5 @@
 ---
-title: How to use the Feathers UI TabBar component
+title: How to use the TabBar component
 sidebar_label: TabBar
 ---
 

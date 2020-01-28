@@ -1,5 +1,5 @@
 ---
-title: How to use the Feathers ProgressBar component (Starling version)
+title: How to use the ProgressBar component (Starling version)
 sidebar_label: ProgressBar
 ---
 

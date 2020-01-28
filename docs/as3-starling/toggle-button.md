@@ -1,5 +1,5 @@
 ---
-title: How to use the Feathers ToggleButton component (Starling version)
+title: How to use the ToggleButton component (Starling version)
 sidebar_label: ToggleButton
 ---
 
@@ -69,4 +69,4 @@ Likewise, a `ToggleButton` provides the [`defaultSelectedIcon`](/api-reference/f
 
 - [`feathers.controls.ToggleButton` API Documentation](/api-reference/feathers/controls/ToggleButton.html)
 
-- [How to use the Feathers `Button` component](./button.md)
+- [How to use the `Button` component](./button.md)

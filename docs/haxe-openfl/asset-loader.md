@@ -1,5 +1,5 @@
 ---
-title: How to use the Feathers UI AssetLoader component
+title: How to use the AssetLoader component
 sidebar_label: AssetLoader
 ---
 

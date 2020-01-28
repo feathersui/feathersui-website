@@ -48,4 +48,4 @@ if( item.hasOwnProperty( "scaleWhenDown" ) )
 ## Related Links
 
 - [Feathers Cookbook (Starling version)](./index.md)
-- [How to use the Feathers `ButtonGroup` component](../button-group.html)
+- [How to use the `ButtonGroup` component](../button-group.html)

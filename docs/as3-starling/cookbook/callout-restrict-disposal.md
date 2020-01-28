@@ -145,5 +145,5 @@ As long as the `disposeContent` property is set to the default value of `true`, 
 ## Related Links
 
 - [Feathers Cookbook (Starling version)](./index.md)
-- [How to use the Feathers `Callout` component](../callout.html)
+- [How to use the `Callout` component](../callout.html)
 - [How to stop a `Callout` from closing automatically after touch or keyboard input](./callout-stop-closing-automatically.md)

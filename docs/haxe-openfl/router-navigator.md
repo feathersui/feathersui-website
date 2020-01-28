@@ -1,5 +1,5 @@
 ---
-title: How to use the Feathers UI RouterNavigator component
+title: How to use the RouterNavigator component
 sidebar_label: RouterNavigator
 ---
 

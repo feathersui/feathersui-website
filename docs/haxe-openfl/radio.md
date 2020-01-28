@@ -1,5 +1,5 @@
 ---
-title: How to use the Feathers UI Radio component
+title: How to use the Radio component
 sidebar_label: Radio
 ---
 

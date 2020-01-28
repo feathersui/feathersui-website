@@ -1,5 +1,5 @@
 ---
-title: How to use the Feathers Toast component (Starling version)
+title: How to use the Toast component (Starling version)
 sidebar_label: Toast
 ---
 
@@ -98,7 +98,7 @@ toast.fontStyles = new TextFormat( "Helvetica", 20, 0x3c3c3c );
 
 Pass in a [`starling.text.TextFormat`](http://doc.starling-framework.org/current/starling/text/TextFormat.html) object, which will work with any type of [text renderer](./text-renderers.md).
 
-The font styles of the toast's action buttons may be customized through the toast's `ButtonGroup` component. See [How to use the Feathers `ButtonGroup` component](./button-group.md) for details.
+The font styles of the toast's action buttons may be customized through the toast's `ButtonGroup` component. See [How to use the `ButtonGroup` component](./button-group.md) for details.
 
 ### Background skin
 
@@ -137,7 +137,7 @@ toast.gap = 12;
 
 ### Skinning the action buttons
 
-This section only explains how to access the button group sub-component. Please read [How to use the Feathers `ButtonGroup` component](./button-group.md) for full details about the skinning properties that are available on `ButtonGroup` components.
+This section only explains how to access the button group sub-component. Please read [How to use the `ButtonGroup` component](./button-group.md) for full details about the skinning properties that are available on `ButtonGroup` components.
 
 #### With a Theme
 

@@ -120,7 +120,7 @@ Finally, similar to `itemHasIcon`, it's possible to skin the accessory without p
 
 ## Skinning a default item renderer
 
-The [`DefaultListItemRenderer`](/api-reference/feathers/controls/renderers/DefaultListItemRenderer.html) class is a subclass of the [`ToggleButton`](./toggle-button.md) component. Like a button, the default item renderer can change its background skin based on the touch state, and it supports different background skins when selected too. Similarly, an item renderer may have both a label and an icon, and all of the layout options used by buttons for alignment, gap, and padding apply to an item renderer too. For full details about these inherited properties, see [How to use the Feathers `Button` component](./button.md) and [How to use the Feathers `ToggleButton` component](./toggle-button.md). For full details about which properties are available to item renderers, see the [`DefaultListItemRenderer` API reference](/api-reference/feathers/controls/renderers/DefaultListItemRenderer.html). We'll look at a few of the most common ways of styling an item renderer below.
+The [`DefaultListItemRenderer`](/api-reference/feathers/controls/renderers/DefaultListItemRenderer.html) class is a subclass of the [`ToggleButton`](./toggle-button.md) component. Like a button, the default item renderer can change its background skin based on the touch state, and it supports different background skins when selected too. Similarly, an item renderer may have both a label and an icon, and all of the layout options used by buttons for alignment, gap, and padding apply to an item renderer too. For full details about these inherited properties, see [How to use the `Button` component](./button.md) and [How to use the `ToggleButton` component](./toggle-button.md). For full details about which properties are available to item renderers, see the [`DefaultListItemRenderer` API reference](/api-reference/feathers/controls/renderers/DefaultListItemRenderer.html). We'll look at a few of the most common ways of styling an item renderer below.
 
 ### Font styles
 
@@ -169,10 +169,10 @@ When displaying all three children that the default item renderer supports (the 
 
 - [`feathers.controls.renderers.DefaultGroupedListItemRenderer` API Documentation](/api-reference/feathers/controls/renderers/DefaultGroupedListItemRenderer.html)
 
-- [How to use the Feathers `List` component](./list.md)
+- [How to use the `List` component](./list.md)
 
-- [How to use the Feathers `Tree` component](./tree.md)
+- [How to use the `Tree` component](./tree.md)
 
-- [How to use the Feathers `GroupedList` component](./grouped-list.md)
+- [How to use the `GroupedList` component](./grouped-list.md)
 
 - [Creating custom item renderers for the Feathers `List`, `DataGrid`, `Tree` and `GroupedList` components](./item-renderers.md)

@@ -1,5 +1,5 @@
 ---
-title: How to use the Feathers NumericStepper component (Starling version) (Starling version)
+title: How to use the NumericStepper component (Starling version) (Starling version)
 sidebar_label: NumericStepper
 ---
 
@@ -83,7 +83,7 @@ If the buttons are on different sides of the text input, the [`buttonGap`](/api-
 
 ### Skinning the Decrement Button
 
-This section only explains how to access the decrement button sub-component. Please read [How to use the Feathers `Button` component](./button.md) for full details about the skinning properties that are available on `Button` components.
+This section only explains how to access the decrement button sub-component. Please read [How to use the `Button` component](./button.md) for full details about the skinning properties that are available on `Button` components.
 
 #### With a Theme
 
@@ -140,7 +140,7 @@ stepper.decrementButtonFactory = function():Button
 
 ### Skinning the Increment Button
 
-This section only explains how to access the increment button sub-component. Please read [How to use the Feathers `Button` component](./button.md) for full details about the skinning properties that are available on `Button` components.
+This section only explains how to access the increment button sub-component. Please read [How to use the `Button` component](./button.md) for full details about the skinning properties that are available on `Button` components.
 
 The numeric stepper's increment button may be skinned similarly to the decrement button. The style name to use with [themes](./themes.md) is [`NumericStepper.DEFAULT_CHILD_STYLE_NAME_INCREMENT_BUTTON`](/api-reference/feathers/controls/NumericStepper.html#DEFAULT_CHILD_STYLE_NAME_INCREMENT_BUTTON) or you can customize the style name with [`customIncrementButtonStyleName`](/api-reference/feathers/controls/NumericStepper.html#customIncrementButtonStyleName). If you aren't using a theme, then you can use [`incrementButtonFactory`](/api-reference/feathers/controls/NumericStepper.html#incrementButtonFactory).
 
@@ -153,7 +153,7 @@ The numeric stepper's increment button may be skinned similarly to the decrement
 
 ### Skinning the Text Input
 
-This section only explains how to access the text input sub-component. Please read [How to use the Feathers `TextInput` component](./text-input.md) for full details about the skinning properties that are available on `TextInput` components.
+This section only explains how to access the text input sub-component. Please read [How to use the `TextInput` component](./text-input.md) for full details about the skinning properties that are available on `TextInput` components.
 
 #### With a Theme
 
