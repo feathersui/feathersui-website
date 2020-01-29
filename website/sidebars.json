@@ -20,7 +20,7 @@
       "haxe-openfl/layout-group",
       "haxe-openfl/list-view",
       "haxe-openfl/panel",
-      "haxe-openfl/pop-up-list",
+      "haxe-openfl/pop-up-list-view",
       "haxe-openfl/progress-bar",
       "haxe-openfl/radio",
       "haxe-openfl/router-navigator",

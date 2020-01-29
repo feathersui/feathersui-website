@@ -11,7 +11,7 @@ A number of UI components may render a simple "flat" list of items.
 
 - [`ComboBox`](./combo-box.md)
 - [`ListView`](./list-view.md)
-- [`PopUpList`](./pop-up-list.md)
+- [`PopUpListView`](./pop-up-list-view.md)
 - [`TabBar`](./tab-bar.md)
 
 Feathers UI provides the following implementations of a flat collection type.
