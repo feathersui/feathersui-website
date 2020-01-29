@@ -76,7 +76,7 @@ panel.footer = footer;
 
 ## Styles
 
-A number of styles may be customized on a [`Panel`](https://api.feathersui.com/current/feathers/controls/Panel.html) component, including an optional background skin the appearance of the panel's scroll bars.
+A number of styles may be customized on a [`Panel`](https://api.feathersui.com/current/feathers/controls/Panel.html) component, including an optional background skin and the appearance of the panel's scroll bars.
 
 ### Background skin
 

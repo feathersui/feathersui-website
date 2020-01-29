@@ -49,21 +49,21 @@ Alternatively, the value of the [`selectedIndex`](https://api.feathersui.com/cur
 
 ```hx
 function tabBar_changeHandler(event:Event):Void {
-    var tabBar = cast(event.currentTarget, TabBar);
-    trace("group.selectedIndex change: " + tabBar.selectedIndex);
+    var tabs = cast(event.currentTarget, TabBar);
+    trace("TabBar selectedIndex change: " + tabs.selectedIndex);
 }
 ```
 
 ## Add or remove tabs
 
-To add a new tab at the end, pass an object to the data provider's [`add()`](https://api.feathersui.com/unstable/feathers/data/IFlatCollection.html#add) method.
+To add a new tab at the end, pass an object to the data provider's [`add()`](https://api.feathersui.com/current/feathers/data/IFlatCollection.html#add) method.
 
 ```hx
 var newItem = { text: "New Tab" };
 tabs.dataProvider.add(newItem);
 ```
 
-To add a new tab at a specific position, pass an object to the data provider's [`add()`](https://api.feathersui.com/unstable/feathers/data/IFlatCollection.html#addAt) method.
+To add a new tab at a specific position, pass an object to the data provider's [`addAt()`](https://api.feathersui.com/current/feathers/data/IFlatCollection.html#addAt) method.
 
 ```hx
 var newItem = { text: "First Tab" };
@@ -72,7 +72,7 @@ tabs.dataProvider.addAt(newItem, 0);
 
 In the example above, a new tab is added to the beginning.
 
-Similarly, to remove a tab, call [`remove()`](https://api.feathersui.com/unstable/feathers/data/IFlatCollection.html#remove) or [`removeAt()`](https://api.feathersui.com/unstable/feathers/data/IFlatCollection.html#removeAt) on the collection.
+Similarly, to remove a tab, call [`remove()`](https://api.feathersui.com/current/feathers/data/IFlatCollection.html#remove) or [`removeAt()`](https://api.feathersui.com/current/feathers/data/IFlatCollection.html#removeAt) on the collection.
 
 ```hx
 tabs.dataProvider.removeAt(0);

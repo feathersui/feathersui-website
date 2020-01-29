@@ -5,7 +5,7 @@ sidebar_label: StackNavigator
 
 The [`StackNavigator`](https://api.feathersui.com/current/feathers/controls/navigators/StackNavigator.html) class supports navigation between views, with a history stack that makes it simple to return to the previous screen. Events dispatched from the active screen can be used to push a new screen onto the stack, to pop the active screen, or even to call a function. When a new screen is pushed onto the stack, the previous screen may save its current state to be restored later.
 
-Navigation can be enhanced with animation, called a _transition_. Feathers UI provides a number of [transitions](https://api.feathersui.com/unstable/feathers/motion/transitions/) out of the box, and a simple API allows anyone to create custom transitions.
+Navigation can be enhanced with animation, called a _transition_. Feathers UI provides a number of [transitions](https://api.feathersui.com/current/feathers/motion/transitions/) out of the box, and a simple API allows anyone to create custom transitions.
 
 > If your project will be deployed to the web, consider using [`RouterNavigator`](./router-navigator.md) instead. [`RouterNavigator`](./router-navigator.md) integrates with the browser's back button using the HTML history API, which will provide a better user experience for web users.
 
