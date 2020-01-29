@@ -39,7 +39,7 @@ listView.addEventListener(Event.CHANGE, listView_changeHandler);
 Check for the new value of the [`selectedItem`](https://api.feathersui.com/current/feathers/controls/ListView.html#selectedItem) property in the listener.
 
 ```hx
-function liewView_changeHandler(event:Event):Void {
+function listView_changeHandler(event:Event):Void {
     var listView = cast(event.currentTarget, ListView);
     trace("ListView selectedItem change: " + listView.selectedItem.text);
 }
@@ -54,7 +54,7 @@ function listView_changeHandler(event:Event):Void {
 }
 ```
 
-## Add or remove item
+## Add or remove items
 
 To add a new item at the end, pass an object to the data provider's [`add()`](https://api.feathersui.com/current/feathers/data/IFlatCollection.html#add) method.
 

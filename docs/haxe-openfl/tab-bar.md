@@ -90,19 +90,19 @@ The tabs in a [`TabBar`](https://api.feathersui.com/current/feathers/controls/Ta
 
 #### Style tabs globally
 
-Use the [`CHILD_VARIANT_TAB`](https://api.feathersui.com/current/feathers/controls/TabBar.html#CHILD_VARIANT_TAB) constant in a [theme](./themes.md) to provide a function that globally styles the tabs in a [`TabBar`](https://api.feathersui.com/current/feathers/controls/TabBar.html) component.
+Use the [`CHILD_VARIANT_TAB`](https://api.feathersui.com/current/feathers/controls/TabBar.html#CHILD_VARIANT_TAB) constant in a [theme](./themes.md) to provide a function that globally styles the tabs in all [`TabBar`](https://api.feathersui.com/current/feathers/controls/TabBar.html) components.
 
 ```hx
 styleProvider.setStyleFunction(
     ToggleButton,
     TabBar.CHILD_VARIANT_TAB,
-    setTabStyles);
+    setTabBar_Tab_Styles);
 ```
 
 The function should use the following signature.
 
 ```hx
-function setTabStyles(tab:ToggleButton):Void {
+function setTabBar_Tab_Styles(tab:ToggleButton):Void {
     // ... set styles here
 });
 ```
