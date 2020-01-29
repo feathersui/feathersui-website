@@ -15,16 +15,16 @@ button.text = "Click Me";
 this.addChild(button);
 ```
 
-[Add an event listener](https://books.openfl.org/openfl-developers-guide/handling-events/basics-of-handling-events.html) for [`FeathersEvent.TRIGGERED`](https://api.feathersui.com/current/feathers/events/FeathersEvent.html#TRIGGERED) to perform an action when the button is clicked or tapped.
+[Add an event listener](https://books.openfl.org/openfl-developers-guide/handling-events/basics-of-handling-events.html) for [`TriggerEvent.TRIGGER`](https://api.feathersui.com/current/feathers/events/TriggerEvent.html#TRIGGER) to perform an action when the button is clicked or tapped.
 
 ```hx
-button.addEventListener(FeathersEvent.TRIGGERED, button_triggeredHandler);
+button.addEventListener(TriggerEvent.TRIGGER, button_triggerHandler);
 ```
 
-Listeners for [`FeathersEvent.TRIGGERED`](https://api.feathersui.com/current/feathers/events/FeathersEvent.html#TRIGGERED) have the following function signature.
+Listeners for [`TriggerEvent.TRIGGER`](https://api.feathersui.com/current/feathers/events/TriggerEvent.html#TRIGGER) have the following function signature.
 
 ```hx
-function button_triggeredHandler(event:Event):Void {
+function button_triggerHandler(event:TriggerEvent):Void {
     var button = cast(event.currentTarget, Button);
     trace("button triggered: " + button.text);
 }

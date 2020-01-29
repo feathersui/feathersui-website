@@ -87,11 +87,11 @@ class ViewA extends LayoutGroup {
 
         var button = new Button();
         button.label = "Push B";
-        button.addEventListener(FeathersEvent.TRIGGERED, button_triggeredHandler);
+        button.addEventListener(TriggerEvent.TRIGGER, button_triggerHandler);
         this.addChild(button);
     }
 
-    private function button_triggeredHandler(event:Event):Void {
+    private function button_triggerHandler(event:TriggerEvent):Void {
         this.dispatchEvent(new Event(Event.CHANGE));
     }
 }
@@ -113,11 +113,11 @@ class ViewB extends LayoutGroup {
 
         var button = new Button();
         button.label = "Go back to A";
-        button.addEventListener(FeathersEvent.TRIGGERED, button_triggeredHandler);
+        button.addEventListener(TriggerEvent.TRIGGER, button_triggerHandler);
         this.addChild(button);
     }
 
-    private function button_triggeredHandler(event:Event):Void {
+    private function button_triggerHandler(event:TriggerEvent):Void {
         this.dispatchEvent(new Event(Event.COMPLETE));
     }
 }
