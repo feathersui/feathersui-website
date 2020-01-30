@@ -153,7 +153,7 @@ button.gap = 10.0;
 
 The [`horizontalAlign`](https://api.feathersui.com/current/feathers/controls/Button.html#horizontalAlign) and [`verticalAlign`](https://api.feathersui.com/current/feathers/controls/Button.html#verticalAlign) properties will adjust the alignment of the icon and text inside the button, allowing you to anchor them at the edges or in the center.
 
-```actionscript
+```hx
 button.horizontalAlign = CENTER;
 button.verticalAlign = MIDDLE;
 ```

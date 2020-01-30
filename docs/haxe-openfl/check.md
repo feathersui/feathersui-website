@@ -143,7 +143,7 @@ check.gap = 10.0;
 
 The [`horizontalAlign`](https://api.feathersui.com/current/feathers/controls/ToggleButton.html#horizontalAlign) and [`verticalAlign`](https://api.feathersui.com/current/feathers/controls/ToggleButton.html#verticalAlign) properties will adjust the alignment of the icon and text inside the check, allowing you to anchor them at the edges or in the center.
 
-```actionscript
+```hx
 check.horizontalAlign = CENTER;
 check.verticalAlign = MIDDLE;
 ```
