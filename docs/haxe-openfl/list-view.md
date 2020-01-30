@@ -79,11 +79,91 @@ listView.dataProvider.removeAt(0);
 
 ## Item renderers
 
----
+An _item renderer_ is a Feathers UI component that renders a single item from a [data collection](./data-collections.md) inside a component like [`ListView`](https://api.feathersui.com/current/feathers/controls/ListView.html). In other words, a [`ListView`](https://api.feathersui.com/current/feathers/controls/ListView.html) typically contains multiple item renderers — with each one rendering a different item from the data provider.
 
-🚧 Under construction
+Feathers UI provides a default item renderer that simply displays text. However, components like [`ListView`](https://api.feathersui.com/current/feathers/controls/ListView.html) may also use custom item renderers, which allows developers to render the list view's data in infinite unique ways.
 
----
+The [`itemRendererRecycler`](https://api.feathersui.com/current/feathers/controls/ListView.html#itemRendererRecycler) property may be used to customize the item renderers in a [`ListView`](https://api.feathersui.com/current/feathers/controls/ListView.html).
+
+Consider a collection of items with the following format.
+
+```hx
+{ name: "Pizza", icon: "https://example.com/img/pizza.png" }
+```
+
+The examples above demonstrated how to use an [`itemToText()`](https://api.feathersui.com/current/feathers/controls/ListView.html#itemToText) method to interpret the text. In this case, the `name` field is used.
+
+```hx
+listView.itemToText = function(item:Dynamic):String {
+    return item.name;
+};
+```
+
+However, the default item renderer cannot display the image, so a custom item renderer is required.
+
+> Note: Future updates to Feathers UI will probably contain a more powerful default item renderer that _can_ display an image. For now, the best option is to create a custom item renderer.
+
+The following example creates a [`DisplayObjectRecycler`](https://api.feathersui.com/current/feathers/utils/DisplayObjectRecycler.html) which instantiates a [`LayoutGroup`](./layout-group.md) container. A custom item renderer may be created from any OpenFL display object. It is not strictly required to be a Feathers UI component.
+
+```hx
+var recyler = DisplayObjectRecycler.withFunction(() -> {
+    var itemRenderer = new LayoutGroup();
+
+    var layout = new HorizontalLayout();
+    layout.gap = 6.0;
+    layout.paddingTop = 4.0;
+    layout.paddingBottom = 4.0;
+    layout.paddingLeft = 6.0;
+    layout.paddingRight = 6.0;
+    itemRenderer.layout = layout;
+
+    var icon = new AssetLoader();
+    icon.name = "loader";
+    itemRenderer.addChild(icon);
+
+    var label = new Label();
+    label.name = "label";
+    itemRenderer.addChild(label);
+
+    return itemRenderer;
+});
+listView.itemRendererRecycler = recycler;
+```
+
+This creates the item renderer, but it doesn't interpret the data yet. A custom [`update()`](https://api.feathersui.com/current/feathers/utils/DisplayObjectRecycler.html) method on the [`DisplayObjectRecycler`](https://api.feathersui.com/current/feathers/utils/DisplayObjectRecycler.html) can do that.
+
+```hx
+recycler.update = (itemRenderer:LayoutGroup, state:ListViewItemState) -> {
+    var label = cast(itemRenderer.getChildByName("label"), Label);
+    var loader = cast(itemRenderer.getChildByName("loader"), AssetLoader);
+
+    label.text = state.text;
+    loader.source = state.data.icon;
+});
+```
+
+When the [`update()`](https://api.feathersui.com/current/feathers/utils/DisplayObjectRecycler.html) method is called, it receives the item renderer and an [`ListViewItemState`](https://api.feathersui.com/current/feathers/data/ListViewItemState.html) object. [`ListViewItemState`](https://api.feathersui.com/current/feathers/data/ListViewItemState.html) has a number of useful properties.
+
+- [`data`](https://api.feathersui.com/current/feathers/data/ListViewItemState.html#data) is the item from the collection.
+- [`index`](https://api.feathersui.com/current/feathers/data/ListViewItemState.html#index) is the position of the item within the collection.
+- [`text`](https://api.feathersui.com/current/feathers/data/ListViewItemState.html#text) is populated using [`itemToText()`](https://api.feathersui.com/current/feathers/controls/ListView.html#itemToText)
+- [`selected`](https://api.feathersui.com/current/feathers/data/ListViewItemState.html#selected) is populated by comparing to [`selectedItem`](https://api.feathersui.com/current/feathers/controls/ListView.html#selectedItem).
+
+In this case, the value of [`text`](https://api.feathersui.com/current/feathers/data/ListViewItemState.html#text) is displayed by the [`Label`](./label.md), and the `icon` field from [`data`](https://api.feathersui.com/current/feathers/data/ListViewItemState.html#data) (remember the example item from above, with `name` and `icon` fields) is displayed by the [`AssetLoader`](./asset-loader.md).
+
+It's always a good practice to provide a [`reset()`](https://api.feathersui.com/current/feathers/utils/DisplayObjectRecycler.html) method to the [`DisplayObjectRecycler`](https://api.feathersui.com/current/feathers/utils/DisplayObjectRecycler.html), which will clean up a custom item renderer when it is no longer used by the [`ListView`](https://api.feathersui.com/current/feathers/controls/ListView.html).
+
+```
+recycler.reset = (itemRenderer:LayoutGroup, state:ListViewItemState) -> {
+    var label = cast(itemRenderer.getChildByName("label"), Label);
+    var loader = cast(itemRenderer.getChildByName("loader"), AssetLoader);
+
+    label.text = "";
+    loader.source = null;
+});
+```
+
+> A [`DisplayObjectRecycler`](https://api.feathersui.com/current/feathers/utils/DisplayObjectRecycler.html) without a [`reset()`](https://api.feathersui.com/current/feathers/utils/DisplayObjectRecycler.html) method could potentially cause memory leaks or other unexpected behavior, if the same data needs to be used again later.
 
 ## Styles
 
