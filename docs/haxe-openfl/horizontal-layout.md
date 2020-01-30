@@ -101,14 +101,14 @@ container.layout = new HorizontalLayout();
 this.addChild(container);
 
 var child1 = new Button();
-child1.label = "One";
+child1.text = "One";
 var layoutData1 = new HorizontalLayoutData();
 layoutData1.percentWidth = 25.0;
 child1.layoutData = layoutData1;
 container.addChild(child1);
  
 var child2 = new Button();
-child2.label = "Two";
+child2.text = "Two";
 var layoutData2 = new HorizontalLayoutData();
 layoutData2.percentWidth = 75.0;
 child2.layoutData = layoutData2;
@@ -125,12 +125,12 @@ container.layout = new HorizontalLayout();
 this.addChild(container);
 
 var child1 = new Button();
-child1.label = "One";
+child1.text = "One";
 child1.width = 150.0; // pixels
 container.addChild(child1);
  
 var child2 = new Button();
-child2.label = "Two";
+child2.text = "Two";
 var layoutData2 = new HorizontalLayoutData();
 layoutData2.percentWidth = 100.0;
 child2.layoutData = layoutData2;
@@ -151,7 +151,7 @@ container.layout = new HorizontalLayout();
 this.addChild(container);
 
 var child1 = new Button();
-child1.label = "One";
+child1.text = "One";
 child1.width = 150.0;
 var layoutData1 = new HorizontalLayoutData();
 layoutData1.percentHeight = 100.0;
@@ -159,7 +159,7 @@ child1.layoutData = layoutData1;
 container.addChild(child1);
  
 var child2 = new Button();
-child2.label = "Two";
+child2.text = "Two";
 var layoutData2 = new HorizontalLayoutData();
 layoutData2.percentHeight = 50.0;
 child2.layoutData = layoutData2;

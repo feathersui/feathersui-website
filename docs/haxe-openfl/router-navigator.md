@@ -86,7 +86,7 @@ class ViewA extends LayoutGroup {
         this.addChild(label);
 
         var button = new Button();
-        button.label = "Push B";
+        button.text = "Push B";
         button.addEventListener(TriggerEvent.TRIGGER, button_triggerHandler);
         this.addChild(button);
     }
@@ -112,7 +112,7 @@ class ViewB extends LayoutGroup {
         this.addChild(label);
 
         var button = new Button();
-        button.label = "Go back to A";
+        button.text = "Go back to A";
         button.addEventListener(TriggerEvent.TRIGGER, button_triggerHandler);
         this.addChild(button);
     }
