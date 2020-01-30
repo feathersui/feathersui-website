@@ -11,8 +11,7 @@ Start by creating a [`ComboBox`](https://api.feathersui.com/current/feathers/con
 
 ```hx
 var comboBox = new ComboBox();
-comboBox.dataProvider = new ArrayCollection(
-[
+comboBox.dataProvider = new ArrayCollection([
     { text: "A" },
     { text: "B" },
     { text: "C" }

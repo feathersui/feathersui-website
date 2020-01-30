@@ -11,8 +11,7 @@ Start by creating a [`PopUpListView`](https://api.feathersui.com/current/feather
 
 ```hx
 var listView = new PopUpListView();
-listView.dataProvider = new ArrayCollection(
-[
+listView.dataProvider = new ArrayCollection([
     { text: "A" },
     { text: "B" },
     { text: "C" }

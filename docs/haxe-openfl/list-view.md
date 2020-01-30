@@ -11,8 +11,7 @@ Start by creating a [`ListView`](https://api.feathersui.com/current/feathers/con
 
 ```hx
 var listView = new ListView();
-listView.dataProvider = new ArrayCollection(
-[
+listView.dataProvider = new ArrayCollection([
     { text: "A" },
     { text: "B" },
     { text: "C" }

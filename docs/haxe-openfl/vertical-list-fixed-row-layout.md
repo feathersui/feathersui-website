@@ -12,9 +12,9 @@ Create a [`ListView`](./list-view.md) container, set its [data provider](./data-
 ```hx
 var container = new ListView();
 container.dataProvider = new ArrayCollection([
-  {text: "A"},
-  {text: "B"},
-  {text: "C"}
+    {text: "A"},
+    {text: "B"},
+    {text: "C"}
 ]);
 this.addChild(container);
 ```

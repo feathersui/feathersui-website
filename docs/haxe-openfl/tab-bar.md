@@ -11,8 +11,7 @@ Start by creating a [`TabBar`](https://api.feathersui.com/current/feathers/contr
 
 ```hx
 var tabs = new TabBar();
-tabs.dataProvider = new ArrayCollection(
-[
+tabs.dataProvider = new ArrayCollection([
     { text: "A" },
     { text: "B" },
     { text: "C" }
