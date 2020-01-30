@@ -163,6 +163,10 @@ Similarly, when `ViewB` dispatches `Event.COMPLETE`, the navigator will create a
 >
 > Just be careful how you use it.
 
+## Pass data between views
+
+> 🚧 Data passing will be supported, but it has not been completely implemented yet.
+
 ## Related Links
 
 - [`feathers.controls.navigators.RouterNavigator` API Documentation](https://api.feathersui.com/current/feathers/controls/navigators/RouterNavigator.html)
