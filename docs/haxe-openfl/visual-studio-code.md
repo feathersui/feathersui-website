@@ -9,15 +9,10 @@ With a few free extensions, [Visual Studio Code](https://code.visualstudio.com/)
 ## Prerequisites
 
 - [Install Feathers UI from Haxelib](installation.md)
-
 - Install the following extensions for Visual Studio Code:
-
   - [Haxe Support for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=nadako.vshaxe)
-
   - [Lime/OpenFL Support for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=openfl.lime-vscode-extension)
-
   - [Debugger for Chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome)
-
 - [Install Lime from Haxelib](https://lime.software/docs/home/) by running the following commands in a terminal:
 
   ```sh
@@ -28,11 +23,8 @@ With a few free extensions, [Visual Studio Code](https://code.visualstudio.com/)
 ## Create a project
 
 1. From the **File** menu, choose **Open Folder…**.
-
 1. Create a new, empty folder for your project somewhere on your computer.
-
 1. Open the folder that you created.
-
 1. Create a file named _project.xml_ and add the following content:
 
    ```xml
@@ -94,13 +86,9 @@ With a few free extensions, [Visual Studio Code](https://code.visualstudio.com/)
 ## Run the project
 
 1. In Visual Studio Code's status bar, you should find a button that allows you to choose a target platform. Select **HTML5/Debug**.
-
 1. From the **Debug** menu, choose **Add Configuration…**.
-
 1. Select **Lime** from the list of available environments.
-
 1. From the **Debug** menu, choose **Start Debugging** (or use the <kbd>F5</kbd> keyboard shortcut).
-
 1. The project should launch in Chrome.
 
    > If your project does not launch in a browser, check the **Problems** panel or the **Terminal** panel for errors.
@@ -135,5 +123,4 @@ haxelib install openfl
 ## Further Reading
 
 - [Visual Studio Code documentation](https://code.visualstudio.com/docs)
-
 - [OpenFL/Lime project.xml format](https://lime.software/docs/project-files/xml-format/)

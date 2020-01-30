@@ -9,7 +9,6 @@ sidebar_label: HaxeDevelop
 ## Prerequisites
 
 - [Install Feathers UI from Haxelib](installation.md)
-
 - [Install Lime from Haxelib](https://lime.software/docs/home/) by running the following commands in a terminal:
 
   ```sh
@@ -20,15 +19,10 @@ sidebar_label: HaxeDevelop
 ## Create a project
 
 1. From the **Project** menu, choose **New Project…**.
-
 1. Select **OpenFL Project** from the list of templates. It should be in the **Haxe** category.
-
 1. Give your project a **Name** and choose a **Location** to save it on your computer.
-
 1. Click **OK** to create your project.
-
 1. Open _project.xml_.
-
 1. Find the line where **openfl** is specified as a [Haxelib](https://lib.haxe.org/) dependency, and add a new dependency for Feathers UI after it:
 
    ```xml
@@ -39,7 +33,6 @@ sidebar_label: HaxeDevelop
 ### Add your first Feathers UI component
 
 1. Open _src/Main.hx_. This is the main entrypoint of your [OpenFL](https://openfl.org/) application.
-
 1. Add the following imports:
 
    ```hx
@@ -73,9 +66,7 @@ sidebar_label: HaxeDevelop
 ## Run the project
 
 1. In HaxeDevelop's toolbar, you should see two drop-downs. One will have either _Debug_ or _Release_ selected, and the other will have the name of the target platform, such as _html5_, _windows_, or _android_. Select **Debug** and **html5**.
-
 1. From the **Project** menu, choose **Test Project** (or use the <kbd>F5</kbd> keyboard shortcut).
-
 1. The project should launch in your default web browser.
 
    > If your project does not launch in a browser, check the **Results** panel or **Output** panel for errors.
@@ -109,7 +100,5 @@ haxelib install openfl
 ## Further Reading
 
 - [HaxeDevelop documentation](https://haxedevelop.org/system-requirements.html)
-
 - [OpenFL/Lime project.xml format](https://lime.software/docs/project-files/xml-format/)
-
 - [MDN: What are browser developer tools?](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_are_browser_developer_tools)
