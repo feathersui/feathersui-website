@@ -44,7 +44,7 @@
       "haxe-openfl/graphics-api-skins",
       "haxe-openfl/themes"
     ],
-    "Miscellaneous": ["haxe-openfl/data-collections"]
+    "Miscellaneous": ["haxe-openfl/data-collections", "haxe-openfl/prerelease"]
   },
   "as3-starling": {
     "Getting started": [
