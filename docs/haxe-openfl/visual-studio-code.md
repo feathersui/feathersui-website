@@ -8,7 +8,7 @@ With a few free extensions, [Visual Studio Code](https://code.visualstudio.com/)
 
 ## Prerequisites
 
-- [Install Feathers UI from Haxelib](installation.md)
+- [Install Feathers UI, OpenFL, and Actuate from Haxelib](installation.md)
 - Install the following extensions for Visual Studio Code:
   - [Haxe Support for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=nadako.vshaxe)
   - [Lime/OpenFL Support for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=openfl.lime-vscode-extension)
@@ -30,14 +30,15 @@ With a few free extensions, [Visual Studio Code](https://code.visualstudio.com/)
    ```xml
    <?xml version="1.0" encoding="utf-8"?>
    <project>
-       <meta title="MyProject" package="com.example" version="1.0.0" company="My Company" />
-       <app main="Main" path="build" file="Main" />
+       <meta title="My Project" package="com.example.MyProject" version="1.0.0" company="My Company"/>
+       <app main="Main" path="build" file="MyProject"/>
        <window allow-high-dpi="true"/>
        <window fps="60"/>
        <window fps="0" if="html5"/>
-       <source path="src" />
-       <haxelib name="openfl" />
-       <haxelib name="feathersui" />
+       <source path="src"/>
+       <haxelib name="openfl"/>
+       <haxelib name="actuate"/>
+       <haxelib name="feathersui"/>
    </project>
    ```
 
@@ -59,7 +60,7 @@ With a few free extensions, [Visual Studio Code](https://code.visualstudio.com/)
 
    ```hx
    import feathers.controls.Button;
-   import openfl.events.MouseEvent;
+   import feathers.events.TriggerEvent;
    ```
 
 1. Modify the constructor with the following code:
@@ -70,7 +71,7 @@ With a few free extensions, [Visual Studio Code](https://code.visualstudio.com/)
 
        var button = new Button();
        button.text = "Click Me";
-       button.addEventListener(MouseEvent.CLICK, onButtonClick);
+       button.addEventListener(TriggerEvent.TRIGGER, onButtonTrigger);
        addChild(button);
    }
    ```
@@ -78,8 +79,8 @@ With a few free extensions, [Visual Studio Code](https://code.visualstudio.com/)
 1. Add an event listener function that logs a message:
 
    ```hx
-   private function onButtonClick(event:MouseEvent):Void {
-       trace("Clicked the button");
+   private function onButtonTrigger(event:TriggerEvent):Void {
+       trace("Clicked or tapped the button");
    }
    ```
 

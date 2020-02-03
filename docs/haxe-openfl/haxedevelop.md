@@ -8,7 +8,7 @@ sidebar_label: HaxeDevelop
 
 ## Prerequisites
 
-- [Install Feathers UI from Haxelib](installation.md)
+- [Install Feathers UI, OpenFL, and Actuate from Haxelib](installation.md)
 - [Install Lime from Haxelib](https://lime.software/docs/home/) by running the following commands in a terminal:
 
   ```sh
@@ -23,10 +23,11 @@ sidebar_label: HaxeDevelop
 1. Give your project a **Name** and choose a **Location** to save it on your computer.
 1. Click **OK** to create your project.
 1. Open _project.xml_.
-1. Find the line where **openfl** is specified as a [Haxelib](https://lib.haxe.org/) dependency, and add a new dependency for Feathers UI after it:
+1. Find the line where [**openfl**](https://lib.haxe.org/p/openfl/) is specified as a [Haxelib](https://lib.haxe.org/) dependency, and add new dependencies for [**actuate**](https://lib.haxe.org/p/actuate/) and [**feathersui**](https://lib.haxe.org/p/feathersui/) after it:
 
    ```xml
    <haxelib name="openfl" />
+   <haxelib name="actuate" />
    <haxelib name="feathersui" />
    ```
 
@@ -37,19 +38,18 @@ sidebar_label: HaxeDevelop
 
    ```hx
    import feathers.controls.Button;
-   import openfl.events.MouseEvent;
+   import feathers.events.TriggerEvent;
    ```
 
 1. Modify the constructor with the following code:
 
    ```hx
-   public function new()
-   {
+   public function new() {
        super();
 
        var button = new Button();
        button.text = "Click Me";
-       button.addEventListener(MouseEvent.CLICK, onButtonClick);
+       button.addEventListener(TriggerEvent.TRIGGER, onButtonTrigger);
        addChild(button);
    }
    ```
@@ -57,9 +57,8 @@ sidebar_label: HaxeDevelop
 1. Add an event listener function that logs a message:
 
    ```hx
-   private function onButtonClick(event:MouseEvent):Void
-   {
-       trace("Clicked the button");
+   private function onButtonTrigger(event:TriggerEvent):Void {
+       trace("Clicked or tapped the button");
    }
    ```
 

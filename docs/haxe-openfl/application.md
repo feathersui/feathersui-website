@@ -28,7 +28,7 @@ class MyProject extends Application {
 To use this class as your project's entry point, you must reference it in your _project.xml_ file. The `<app>` element has a `main` attribute that should be set to the name of this class.
 
 ```xml
-<app main="MyProject" />
+<app main="MyProject"/>
 ```
 
 Here's a sample _project.xml_ file for context.
@@ -36,14 +36,15 @@ Here's a sample _project.xml_ file for context.
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <project>
-    <meta title="MyProject" package="com.example" version="1.0.0" company="My Company" />
-    <app main="MyProject" path="build" file="MyProject" />
+    <meta title="My Project" package="com.example.MyProject" version="1.0.0" company="My Company"/>
+    <app main="MyProject" path="build" file="MyProject"/>
     <window allow-high-dpi="true"/>
     <window fps="60"/>
     <window fps="0" if="html5"/>
-    <source path="src" />
-    <haxelib name="openfl" />
-    <haxelib name="feathersui" />
+    <source path="src"/>
+    <haxelib name="openfl"/>
+    <haxelib name="actuate"/>
+    <haxelib name="feathersui"/>
 </project>
 ```
 
