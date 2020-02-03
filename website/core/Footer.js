@@ -173,9 +173,7 @@ class Footer extends React.Component {
                 <a href="https://api.feathersui.com/">API Reference</a>
               </li>
               <li>
-                <a href="https://github.com/BowlerHatLLC/feathersui-openfl/tree/master/samples/">
-                  Samples
-                </a>
+                <a href="/samples/haxe-openfl/">Samples</a>
               </li>
               <li>
                 <a href="https://github.com/BowlerHatLLC/feathersui-openfl">
