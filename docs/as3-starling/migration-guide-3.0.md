@@ -5,6 +5,8 @@ sidebar_label: 3.0 Migration Guide
 
 This guide explains how to migrate an application created with a previous version of Feathers to Feathers 3.0. Some APIs have been removed and others have been deprecated. New classes like `ImageSkin` make it easier to skin components while optimizing memory and performance.
 
+- [Starling 2](#starling-2)
+
 - [Skinning Changes](#skinning-changes)
 
   - [Removal of `Scale9Image`, `Scale3Image`, and `TiledImage`](#removal-of-scale9image-scale3image-and-tiled-image)
@@ -30,6 +32,10 @@ This guide explains how to migrate an application created with a previous versio
 - [Appendix: List of Deprecated APIs](#appendix-list-of-deprecated-apis)
 
 - [Appendix: Find and Replace Regular Expressions](#appendix-find-and-replace-regular-expressions)
+
+## Starling 2
+
+Feathers 3.0 has upgraded to Starling 2. For complete details about Starling's changes, see the [Starling 2 migration guide](https://wiki.starling-framework.org/manual/starling%5C_2%5C_migration%5C_guide).
 
 ## Skinning Changes
 
