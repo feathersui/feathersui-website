@@ -10,7 +10,7 @@ const sampleItems = [
 
 <div class="buttonWrapper">
   <a class="button" href="/samples/haxe-openfl/calculator/">Online Demo</a>
-  <a class="button" href="https://github.com/BowlerHatLLC/feathersui-openfl/tree/master/examples/calculator/">Source Code</a>
+  <a class="button" href="https://github.com/BowlerHatLLC/feathersui-openfl/tree/master/samples/calculator/">Source Code</a>
 </div>`
   },
   {
@@ -19,7 +19,7 @@ const sampleItems = [
 
 <div class="buttonWrapper">
   <a class="button" href="/samples/haxe-openfl/components-explorer/">Online Demo</a>
-  <a class="button" href="https://github.com/BowlerHatLLC/feathersui-openfl/tree/master/examples/components-explorer/">Source Code</a>
+  <a class="button" href="https://github.com/BowlerHatLLC/feathersui-openfl/tree/master/samples/components-explorer/">Source Code</a>
 </div>`
   },
   {
@@ -28,7 +28,7 @@ const sampleItems = [
 
 <div class="buttonWrapper">
   <a class="button" href="/samples/haxe-openfl/custom-theme/">Online Demo</a>
-  <a class="button" href="https://github.com/BowlerHatLLC/feathersui-openfl/tree/master/examples/custom-theme/">Source Code</a>
+  <a class="button" href="https://github.com/BowlerHatLLC/feathersui-openfl/tree/master/samples/custom-theme/">Source Code</a>
 </div>`
   },
   {
@@ -38,7 +38,7 @@ const sampleItems = [
 
 <div class="buttonWrapper">
   <a class="button" href="/samples/haxe-openfl/horizontal-layout-percentage-sizing/">Online Demo</a>
-  <a class="button" href="https://github.com/BowlerHatLLC/feathersui-openfl/tree/master/examples/horizontal-layout-percentage-sizing/">Source Code</a>
+  <a class="button" href="https://github.com/BowlerHatLLC/feathersui-openfl/tree/master/samples/horizontal-layout-percentage-sizing/">Source Code</a>
 </div>`
   },
   {
@@ -48,7 +48,7 @@ const sampleItems = [
 
 <div class="buttonWrapper">
   <a class="button" href="/samples/haxe-openfl/list-view-data-provider-collection-sorting/">Online Demo</a>
-  <a class="button" href="https://github.com/BowlerHatLLC/feathersui-openfl/tree/master/examples/list-view-data-provider-collection-sorting/">Source Code</a>
+  <a class="button" href="https://github.com/BowlerHatLLC/feathersui-openfl/tree/master/samples/list-view-data-provider-collection-sorting/">Source Code</a>
 </div>`
   },
   {
@@ -58,7 +58,7 @@ const sampleItems = [
 
 <div class="buttonWrapper">
   <a class="button" href="/samples/haxe-openfl/stack-navigator-pass-data-between-views/">Online Demo</a>
-  <a class="button" href="https://github.com/BowlerHatLLC/feathersui-openfl/tree/master/examples/stack-navigator-pass-data-between-views/">Source Code</a>
+  <a class="button" href="https://github.com/BowlerHatLLC/feathersui-openfl/tree/master/samples/stack-navigator-pass-data-between-views/">Source Code</a>
 </div>`
   }
 ];
