@@ -1,5 +1,5 @@
 ---
-title: The complete guide to MXML in the Feathers SDK
+title: The complete guide to MXML in the Feathers SDK (Starling version)
 sidebar_label: MXML
 ---
 

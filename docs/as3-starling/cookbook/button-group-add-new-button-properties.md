@@ -1,5 +1,5 @@
 ---
-title: How to set additional properties on the buttons in a ButtonGroup
+title: How to set additional properties on the buttons in a ButtonGroup (Starling version)
 ---
 
 [`ButtonGroup`](../button-group.html) supports setting a number of properties on its buttons through its [`dataProvider`](/api-reference/feathers/controls/ButtonGroup.html#dataProvider) property, like [`label`](/api-reference/feathers/controls/Button.html#label) and [`isEnabled`](/api-reference/feathers/core/FeathersControl.html#isEnabled). Sometimes, we may need to set additional properties on the buttons. `ButtonGroup` makes it easy to customize how its `dataProvider` is interpreted with the [`buttonInitializer`](/api-reference/feathers/controls/ButtonGroup.html#dataProvider) property.

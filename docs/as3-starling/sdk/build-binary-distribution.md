@@ -1,5 +1,5 @@
 ---
-title: Build the Feathers SDK from a Binary Distribution
+title: Build the Feathers SDK from a Binary Distribution (Starling version)
 sidebar_label: Build SDK from Binary Distribution
 ---
 

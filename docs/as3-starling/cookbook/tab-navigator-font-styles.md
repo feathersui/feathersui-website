@@ -1,5 +1,5 @@
 ---
-title: How to change font styles in a TabNavigator component
+title: How to change font styles in a TabNavigator component (Starling version)
 ---
 
 A [`TabNavigator`](../tab-navigator.html) component displays text in its tabs, which are sub-components of the [`TabBar`](../tab-bar.html). Let's look at how to change the font styles of the tabs outside of the theme.

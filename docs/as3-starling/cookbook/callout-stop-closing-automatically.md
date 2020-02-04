@@ -1,5 +1,5 @@
 ---
-title: How to stop a Callout from closing automatically after touch or keyboard input
+title: How to stop a Callout from closing automatically after touch or keyboard input (Starling version)
 ---
 
 Normally, a [`Callout`](../callout.html) component will close itself when the user touches anywhere else on stage or when they press the back button on Android or the `Esc` key on desktop. You may modify this default behavior so that the `Callout` may only be closed programatically, if needed.

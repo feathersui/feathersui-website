@@ -1,5 +1,5 @@
 ---
-title: How to prevent a List from scrolling when a child of a custom item renderer is touched
+title: How to prevent a List from scrolling when a child of a custom item renderer is touched (Starling version)
 ---
 
 Sometimes, when you interact with the child of a custom item renderer, you want to ensure that the list won't start scrolling at the same time. For instance, if the child is a slider or another component that requires dragging, you don't want that drag to simultaneously scroll the list.

@@ -1,5 +1,5 @@
 ---
-title: How to support multiple touch states in a custom item renderer
+title: How to support multiple touch states in a custom item renderer (Starling version)
 ---
 
 We've already [added a background skin to an item renderer](./item-renderer-background-skin.md), but maybe we to display different background skins depending on if the user is touching the item renderer or not. We might also be interested in displaying different icons or changing the text styles on different touch phases.

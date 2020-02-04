@@ -1,5 +1,5 @@
 ---
-title: How to show or hide a header when scrolling a list or container
+title: How to show or hide a header when scrolling a list or container (Starling version)
 ---
 
 In order to show as much content as possible, some mobile UIs will only reveal a header when it is required, and the header will slide out of view when scrolling. Most commonly, you might recognize this behavior in a mobile web browser.

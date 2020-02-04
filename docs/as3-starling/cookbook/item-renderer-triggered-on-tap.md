@@ -1,5 +1,5 @@
 ---
-title: How to dispatch a triggered event from a custom item renderer
+title: How to dispatch a triggered event from a custom item renderer (Starling version)
 ---
 
 A [custom item renderer](../item-renderers.html) should dispatch [`Event.TRIGGERED`](http://doc.starling-framework.org/core/starling/events/Event.html#TRIGGERED) when it is tapped or clicked, similar to a [`Button`](../button.html).

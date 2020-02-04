@@ -1,5 +1,5 @@
 ---
-title: How to change font styles in a GroupedList component
+title: How to change font styles in a GroupedList component (Starling version)
 ---
 
 A [`GroupedList`](../grouped-list.html) component contains a number of [item renderers](../default-item-renderers.html) and header or footer renderers that display some text. Let's look at how to change the font styles in these renderers outside of the theme.

@@ -1,5 +1,5 @@
 ---
-title: How to select (or deselect) a custom item renderer on tap or click
+title: How to select (or deselect) a custom item renderer on tap or click (Starling version)
 ---
 
 [Custom item renderers](../item-renderers.html) should dispatch `Event.CHANGE` when their [`isSelected`](/api-reference/feathers/controls/renderers/IToggle.html#isSelected) property changes. The list does not select an item renderer on tap or click because some item renderers might be selected with a different interaction, like a long press or a swipe. The item renderer needs to implement this behavior.

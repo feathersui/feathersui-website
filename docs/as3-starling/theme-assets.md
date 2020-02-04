@@ -1,5 +1,6 @@
 ---
 title: Managing assets in Feathers themes (Starling version)
+sidebar_label: Managing assets in themes
 ---
 
 There are two primary approaches to managing assets (such as textures or bitmap fonts) in Feathers themes. You can embed assets in the SWF or you can load assets at runtime.

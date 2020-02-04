@@ -1,5 +1,5 @@
 ---
-title: How to change font styles in a PickerList component
+title: How to change font styles in a PickerList component (Starling version)
 ---
 
 A [`PickerList`](../picker-list.html) component contains two sub-components, a button and a pop-up list. The pop-up list contains item renderers that typically display some text. Both the button and the item renderers may have different font styles, and we'll look at how to change those outside of the theme.

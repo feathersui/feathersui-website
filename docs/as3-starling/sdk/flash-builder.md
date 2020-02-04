@@ -1,5 +1,5 @@
 ---
-title: Set up the Feathers SDK in Adobe Flash Builder
+title: Set up the Feathers SDK in Adobe Flash Builder (Starling version)
 sidebar_label: Adobe Flash Builder
 ---
 

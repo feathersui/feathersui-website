@@ -1,5 +1,6 @@
 ---
 title: Introduction to Feathers themes (Starling version)
+sidebar_label: Introduction to themes
 ---
 
 A Feathers _theme_ is class that packages up the styling code for multiple UI components in one location. Style providers are registered globally, and when any Feathers component is initialized, it will be styled automatically. It's easy to drop a theme into your new Feathers app, and have it skin every component in the same style. If you need a custom skin for any individual component (even one that looks wildly different than the default), you can easily exclude the component from the theme completely. If you like the default styles, but you want to make some tweaks, Feathers can do that too!

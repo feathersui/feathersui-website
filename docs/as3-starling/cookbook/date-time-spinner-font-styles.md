@@ -1,5 +1,5 @@
 ---
-title: How to change font styles in a DateTimeSpinner component
+title: How to change font styles in a DateTimeSpinner component (Starling version)
 ---
 
 A [`DateTimeSpinner`](../date-time-spinner.html) component contains two or more [`SpinnerList`](../spinner-list.html) sub-components, and each of those contains a number of [item renderers](../default-item-renderers.html) that display some text. Let's look at how to change the font styles in the item renderers outside of the theme.

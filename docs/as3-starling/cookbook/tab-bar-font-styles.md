@@ -1,5 +1,5 @@
 ---
-title: How to change font styles in a TabBar component
+title: How to change font styles in a TabBar component (Starling version)
 ---
 
 A [`TabBar`](../tab-bar.html) component contains one or more [`ToggleButton`](../toggle-button.html) sub-components that display some text. Let's look at how to change the font styles in the tabs outside of the theme.

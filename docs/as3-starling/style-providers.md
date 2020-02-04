@@ -1,5 +1,6 @@
 ---
 title: An in-depth look at Feathers style providers (Starling version)
+sidebar_label: Style providers in-depth
 ---
 
 Style providers are the basic building blocks of themes. They can be customized on each component individually, or they can be registered globally and automatically assigned to a new component when it is instantiated.

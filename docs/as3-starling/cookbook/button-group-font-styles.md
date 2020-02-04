@@ -1,5 +1,5 @@
 ---
-title: How to change font styles in a ButtonGroup component
+title: How to change font styles in a ButtonGroup component (Starling version)
 ---
 
 A [`ButtonGroup`](../button-group.html) component contains one or more [`Button`](../button.html) sub-components that display some text. Let's look at how to change the font styles in the buttons outside of the theme.

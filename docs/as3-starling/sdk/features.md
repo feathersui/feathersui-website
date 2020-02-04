@@ -1,5 +1,5 @@
 ---
-title: Feathers SDK Features
+title: Feathers SDK Features (Starling version)
 sidebar_label: SDK Features
 ---
 

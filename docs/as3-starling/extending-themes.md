@@ -1,5 +1,6 @@
 ---
 title: Extending Feathers example themes (Starling version)
+sidebar_label: Extending the example themes
 ---
 
 Using one of the example [themes](./themes.md) included with Feathers, we can quickly style every Feathers component in our apps with a set of pre-made skins. This is a great way to get started with a new game, or an app with heavy branding, when we plan to integrate the final, custom design later. The example themes can even be useful for skinning productivity apps and things that don't require custom-designed branding and skins.

@@ -1,5 +1,5 @@
 ---
-title: How to close a Callout without disposing it (or without disposing its content)
+title: How to close a Callout without disposing it (or without disposing its content) (Starling version)
 ---
 
 Normally, a [`Callout`](../callout.html) component will dispose itself (and its content) as soon as you close it. However, sometimes we might want to reuse it again, or we might want to reuse its content in another `Callout` (or elsewhere).

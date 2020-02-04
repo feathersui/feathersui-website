@@ -1,5 +1,5 @@
 ---
-title: Getting started with MXML in the Feathers SDK
+title: Getting started with MXML in the Feathers SDK (Starling version)
 sidebar_label: Hello World with MXML
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: How to disable some item renderers in a Feathers List component
+title: How to disable some item renderers in a Feathers List component (Starling version)
 ---
 
 In your data provider, add a new property to the items that will indicate whether the item renderer should be enabled or not. In this example, we call it `enabled`, but you can choose any name:

@@ -1,5 +1,6 @@
 ---
 title: Skinning Feathers components (Starling version)
+sidebar_label: Skinning Feathers components
 ---
 
 All core Feathers components are designed with many styling properties to support a variety of custom designs. Many components include properties to set background skins for different states, different layout options like padding and alignment, and font styles. Additionally, some components have different options that allow them to behave differently depending on whether you're building a mobile or desktop app.

@@ -1,5 +1,6 @@
 ---
 title: Creating custom Feathers themes (Starling version)
+sidebar_label: Creating custom themes
 ---
 
 Many apps, including games, require heavy branding that involves styling every Feathers component with custom skins and fonts. In these cases, the example themes included with Feathers won't offer enough customization options to match the designer's vision. We will need a custom theme, built from scratch.

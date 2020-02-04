@@ -1,5 +1,5 @@
 ---
-title: How to add a background skin to a custom item renderer based on FeathersControl and IListItemRenderer
+title: How to add a background skin to a custom item renderer based on FeathersControl and IListItemRenderer (Starling version)
 ---
 
 The example [custom item renderer with `FeathersControl` and `IListItemRenderer`](../feathers-control-item-renderers.html) offers an easy-to-understand foundation to build upon. It's pretty limited in features, though. For instance, you may want some kind of background skin.

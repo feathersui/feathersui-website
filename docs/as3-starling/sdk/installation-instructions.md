@@ -1,5 +1,5 @@
 ---
-title: Install the Feathers SDK
+title: Install the Feathers SDK (Starling version)
 sidebar_label: Installation
 ---
 

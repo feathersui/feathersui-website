@@ -1,5 +1,5 @@
 ---
-title: Build the Feathers SDK from Source Code
+title: Build the Feathers SDK from Source Code (Starling version)
 sidebar_label: Build SDK from Source
 ---
 

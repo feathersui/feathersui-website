@@ -1,5 +1,5 @@
 ---
-title: How to save the state of a screen in a ScreenNavigator and restore it later
+title: How to save the state of a screen in a ScreenNavigator and restore it later (Starling version)
 ---
 
 Many times, when a user navigates away from a screen, they may return to the same screen in the future. In these cases, it is often desirable to restore the state of the screen as it was when the user navigated away. For instance, you might restore the scroll position of a list that appears on the screen.

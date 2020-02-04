@@ -1,5 +1,5 @@
 ---
-title: How to change font styles in a List component
+title: How to change font styles in a List component (Starling version)
 ---
 
 A [`List`](../list.html) component contains a number of [item renderers](../default-item-renderers.html) that display some text. Let's look at how to change the font styles in the item renderers outside of the theme.

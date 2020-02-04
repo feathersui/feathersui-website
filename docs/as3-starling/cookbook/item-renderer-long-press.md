@@ -1,5 +1,5 @@
 ---
-title: How to dispatch a long press event from a custom item renderer
+title: How to dispatch a long press event from a custom item renderer (Starling version)
 ---
 
 A [custom item renderer](../item-renderers.html) may optionally dispatch [`FeathersEventType.LONG_PRESS`](/api-reference/feathers/events/FeathersEventType.html#LONG_PRESS), similar to a [`Button`](../button.html).
