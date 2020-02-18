@@ -7,7 +7,7 @@ sidebar_label: Installation
 
 ## Prerequisites
 
-- Requires [Starling 2.4 or newer](https://gamua.com/starling/download/).
+- Requires [Starling 2.6 or newer](https://gamua.com/starling/download/).
 
 ## Download Feathers
 
@@ -15,11 +15,11 @@ Click the button below to download the latest version of Feathers UI for ActionS
 
 <div class="alignCenter">
   <div class="buttonWrapper">
-    <a class="button" href="https://github.com/BowlerHatLLC/feathers/releases/download/v4.0.0/feathers-ui-4.0.0.zip" onClick="_gaq.push(['_trackEvent', 'Downloads', 'Build', '4.0.0']);">Download Feathers 4.0.0</a>
+    <a class="button" href="https://github.com/BowlerHatLLC/feathers/releases/download/v4.1.0/feathers-ui-4.1.0.zip" onClick="_gaq.push(['_trackEvent', 'Downloads', 'Build', '4.1.0']);">Download Feathers 4.1.0</a>
   </div>
 </div>
 
-Check out the <a href="https://github.com/BowlerHatLLC/feathers/blob/v4.0.0/RELEASENOTES.md">Feathers 4.0.0 release notes</a> to learn what's new in this release.
+Check out the <a href="https://github.com/BowlerHatLLC/feathers/blob/v4.1.0/RELEASENOTES.md">Feathers 4.1.0 release notes</a> to learn what's new in this release.
 
 ## Older versions
 

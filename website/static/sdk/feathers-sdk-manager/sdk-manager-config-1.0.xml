@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-Copyright 2015 Bowler Hat LLC
+Copyright 2020 Bowler Hat LLC
 Portions Copyright 2014 The Apache Software Foundation
 
 Licensed under the Apache License, Version 2.0 (the "License");
@@ -19,7 +19,7 @@ limitations under the License.
 	<SDKManager latestVersion="1.2.3"/>
 	<products>
 		<FeathersSDK name="Feathers SDK">
-			<versions default="4.0.0">
+			<versions default="4.1.0">
 				<versionA id="feathers.sdk.version.2.2.0" version="2.2.0" displayVersion="2.2.0">
 					<path>https://github.com/BowlerHatLLC/feathers-sdk/releases/download/v2.2.0/</path>
 					<file>feathers-sdk-2.2.0-bin</file>
@@ -88,6 +88,10 @@ limitations under the License.
 					<path>https://github.com/BowlerHatLLC/feathers-sdk/releases/download/v4.0.0/</path>
 					<file>feathers-sdk-4.0.0-bin</file>
 				</versionO>
+				<versionP id="feathers.sdk.version.4.1.0" version="4.1.0" displayVersion="4.1.0">
+					<path>https://github.com/BowlerHatLLC/feathers-sdk/releases/download/v4.1.0/</path>
+					<file>feathers-sdk-4.1.0-bin</file>
+				</versionP>
 			</versions>
 		</FeathersSDK>
 	</products>
