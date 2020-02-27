@@ -5,7 +5,11 @@
       {
         "type": "subcategory",
         "label": "Create a new project in…",
-        "ids": ["haxe-openfl/haxedevelop", "haxe-openfl/visual-studio-code"]
+        "ids": [
+          "haxe-openfl/haxedevelop",
+          "haxe-openfl/moonshine-ide",
+          "haxe-openfl/visual-studio-code"
+        ]
       },
       "haxe-openfl/openfl-intro"
     ],
