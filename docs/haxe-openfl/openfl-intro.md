@@ -31,7 +31,7 @@ Another primitive offered by OpenFL is the [`openfl.text.TextField`](https://api
 
 ```hx
 var textField = new TextField();
-textField.defaultTextFormat = new TextFormat("_sans", 20.0, 0xffffff);
+textField.defaultTextFormat = new TextFormat("_sans", 20, 0xffffff);
 textField.text = "Hello OpenFL";
 textField.autoSize = TextFieldAutoSize.LEFT;
 textField.x = (sprite.width - textField.width) / 2.0;
