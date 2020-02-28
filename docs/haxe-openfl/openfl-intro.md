@@ -11,7 +11,7 @@ These primitives in OpenFL are combined in Feathers UI to create a set of flexib
 >
 > - [OpenFL Developer's Guide](https://books.openfl.org/openfl-developers-guide/)
 > - [OpenFL Tutorials](https://www.openfl.org/learn/haxelib/tutorials/)
-> - [OpenFL API Reference](https://api.openfl.org/).
+> - [OpenFL API Reference](https://api.openfl.org/)
 
 ## The display list
 
