@@ -7,7 +7,11 @@ sidebar_label: Intro to OpenFL
 
 These primitives in OpenFL are combined in Feathers UI to create a set of flexible user interface components for creative projects — whether you are building rich applications, menu screens for games, interactive data visualizations, or immersive multimedia experiences.
 
-> This document is meant to provide a basic overview only. For more detailed OpenFL documentation, see the official [OpenFL Developer's Guide](https://books.openfl.org/openfl-developers-guide/) and the [OpenFL API Reference](https://api.openfl.org/).
+> This document is meant to provide a basic overview only. The following links provide more detailed documentation and learning materials for OpenFL.
+>
+> - [OpenFL Developer's Guide](https://books.openfl.org/openfl-developers-guide/)
+> - [OpenFL Tutorials](https://www.openfl.org/learn/haxelib/tutorials/)
+> - [OpenFL API Reference](https://api.openfl.org/).
 
 ## The display list
 
@@ -22,10 +26,10 @@ sprite.graphics.drawRoundRect(0.0, 0.0, 100.0, 25.0, 6.0);
 sprite.graphics.endFill();
 sprite.x = 20.0;
 sprite.y = 50.0;
-root.addChild(sprite);
+addChild(sprite);
 ```
 
-The code above [draws a red rectangle](https://books.openfl.org/openfl-developers-guide/using-the-drawing-api/drawing-shapes-using-built-in-methods.html), [changes its position](https://books.openfl.org/openfl-developers-guide/display-programming/manipulating-display-objects/changing-position.html), and [adds it as a child](https://books.openfl.org/openfl-developers-guide/display-programming/working-with-display-objects/working-with-display-object-containers.html) of OpenFL's _root_ container.
+The code above [draws a red rectangle](https://books.openfl.org/openfl-developers-guide/using-the-drawing-api/drawing-shapes-using-built-in-methods.html), [changes its position](https://books.openfl.org/openfl-developers-guide/display-programming/manipulating-display-objects/changing-position.html), and [adds it as a child](https://books.openfl.org/openfl-developers-guide/display-programming/working-with-display-objects/working-with-display-object-containers.html) on the display list.
 
 Another primitive offered by OpenFL is the [`openfl.text.TextField`](https://api.openfl.org/openfl/text/TextField.html) class, which is used for rendering text.
 
