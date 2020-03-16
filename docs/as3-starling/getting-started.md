@@ -35,7 +35,7 @@ package feathers.examples.helloWorld
     import feathers.themes.MetalWorksMobileTheme;
  
     import starling.display.Sprite;
-    import starling.event.Event;
+    import starling.events.Event;
  
     public class Main extends Sprite
     {
