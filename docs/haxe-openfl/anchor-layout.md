@@ -5,7 +5,7 @@ sidebar_label: AnchorLayout
 
 The [`AnchorLayout`](https://api.feathersui.com/current/feathers/layout/AnchorLayout.html) class may be used to _anchor_ the a container's children relative to the edges of the parent container. `AnchorLayout` is often used for _fluid_ layouts that can automatically adjust themselves when the parent container's width or height is resized.
 
-> This layout is designed to be used with basic containers like [`LayoutGroup`](./layout-group.md) and [`ScrollContainer`](./scroll-container.md), which are intended purely for visual layout and do not offer built-in capabilities for rendering data from a collection. If using [`ListView`](./list-view.md), or another container that renders data, consider using other layouts that are optimized for data containers by offering optimizations like layout virtualization.
+> This layout is designed to be used with basic containers like [`LayoutGroup`](./layout-group.md) and [`ScrollContainer`](./scroll-container.md), which are intended purely for visual layout and do not offer built-in capabilities for rendering data from a collection. If using a container that renders a [collection of data](./data-collections.md) — such as [`ListView`](./list-view.md), [`TreeView`](./tree-view.md), or [`GridView`](./grid-view.md) — consider using other layouts that are optimized for data containers by offering performance improvements like layout virtualization.
 
 ## The Basics
 

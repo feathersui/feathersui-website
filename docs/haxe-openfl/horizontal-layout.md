@@ -5,7 +5,7 @@ sidebar_label: HorizontalLayout
 
 The [`HorizontalLayout`](https://api.feathersui.com/current/feathers/layout/HorizontalLayout.html) class may be used to position the children of a container from left to right, in a single row. It supports a number of useful options for adjusting the spacing around the container's children and their alignment within the bounds of the container.
 
-> This layout is designed to be used with basic containers like [`LayoutGroup`](./layout-group.md) and [`ScrollContainer`](./scroll-container.md), which are intended purely for visual layout and do not offer built-in capabilities for rendering data from a collection. If using [`ListView`](./list-view.md), or another container that renders data, consider using other layouts that are optimized for data containers by offering optimizations like layout virtualization.
+> This layout is designed to be used with basic containers like [`LayoutGroup`](./layout-group.md) and [`ScrollContainer`](./scroll-container.md), which are intended purely for visual layout and do not offer built-in capabilities for rendering data from a collection. If using a container that renders a [collection of data](./data-collections.md) — such as [`ListView`](./list-view.md), [`TreeView`](./tree-view.md), or [`GridView`](./grid-view.md) — consider using [`HorizontalListLayout`](./horizontal-list-layout.md) instead because it is better optimized for data containers by offering performance improvements like layout virtualization.
 
 ## The Basics
 
