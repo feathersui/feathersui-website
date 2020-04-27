@@ -48,9 +48,11 @@
       "haxe-openfl/anchor-layout",
       "haxe-openfl/horizontal-layout",
       "haxe-openfl/horizontal-list-layout",
+      "haxe-openfl/horizontal-stretch-layout",
       "haxe-openfl/vertical-layout",
       "haxe-openfl/vertical-list-fixed-row-layout",
-      "haxe-openfl/vertical-list-layout"
+      "haxe-openfl/vertical-list-layout",
+      "haxe-openfl/vertical-stretch-layout"
     ],
     "Styles and Skins": [
       "haxe-openfl/graphics-api-skins",
