@@ -3,7 +3,9 @@ title: How to use the TextInput component
 sidebar_label: TextInput
 ---
 
-The [`TextInput`](https://api.feathersui.com/current/feathers/controls/TextInput.html) class displays editable text.
+The [`TextInput`](https://api.feathersui.com/current/feathers/controls/TextInput.html) class displays editable text in a single line.
+
+> For editable text with multiple wrapping lines and scrolling, see the [`TextArea`](./text-area.md) component.
 
 ## The Basics
 
@@ -116,3 +118,4 @@ In the example above, the text input will have a custom skin for the [`FOCUSED`]
 ## Related Links
 
 - [`feathers.controls.TextInput` API Documentation](https://api.feathersui.com/current/feathers/controls/TextInput.html)
+- [How to use the `TextArea` component](./text-area.md)
