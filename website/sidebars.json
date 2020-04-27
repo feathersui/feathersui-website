@@ -20,9 +20,12 @@
       "haxe-openfl/callout",
       "haxe-openfl/check",
       "haxe-openfl/combo-box",
+      "haxe-openfl/grid-view",
       "haxe-openfl/label",
       "haxe-openfl/layout-group",
       "haxe-openfl/list-view",
+      "haxe-openfl/page-indicator",
+      "haxe-openfl/page-navigator",
       "haxe-openfl/panel",
       "haxe-openfl/pop-up-list-view",
       "haxe-openfl/progress-bar",
@@ -33,16 +36,21 @@
       "haxe-openfl/slider",
       "haxe-openfl/stack-navigator",
       "haxe-openfl/tab-bar",
+      "haxe-openfl/tab-navigator",
+      "haxe-openfl/text-area",
       "haxe-openfl/text-callout",
       "haxe-openfl/text-input",
       "haxe-openfl/toggle-button",
-      "haxe-openfl/toggle-switch"
+      "haxe-openfl/toggle-switch",
+      "haxe-openfl/tree-view"
     ],
     "Layouts": [
       "haxe-openfl/anchor-layout",
       "haxe-openfl/horizontal-layout",
+      "haxe-openfl/horizontal-list-layout",
       "haxe-openfl/vertical-layout",
-      "haxe-openfl/vertical-list-fixed-row-layout"
+      "haxe-openfl/vertical-list-fixed-row-layout",
+      "haxe-openfl/vertical-list-layout"
     ],
     "Styles and Skins": [
       "haxe-openfl/graphics-api-skins",
