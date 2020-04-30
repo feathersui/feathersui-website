@@ -27,7 +27,7 @@ comboBox.itemToText = function(item:Dynamic):String {
 };
 ```
 
-> Items in the collection are not required to be simple object literals, like in the example above. Instances of a class are allowed too.
+> Items in the collection are not required to be simple object literals, like in the example above. Instances of a class are allowed too (and encouraged as a best practice).
 
 [Add an event listener](https://books.openfl.org/openfl-developers-guide/handling-events/basics-of-handling-events.html) for [`Event.CHANGE`](https://api.openfl.org/openfl/events/Event.html#CHANGE) to perform an action when the user selects a different item.
 

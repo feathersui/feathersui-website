@@ -27,7 +27,7 @@ listView.itemToText = function(item:Dynamic):String {
 };
 ```
 
-> Items in the collection are not required to be simple object literals, like in the example above. Instances of a class are allowed too.
+> Items in the collection are not required to be simple object literals, like `{ text: "A" }` in the example above. Instances of a class are allowed too (and encouraged as a best practice).
 
 ### Selection
 
