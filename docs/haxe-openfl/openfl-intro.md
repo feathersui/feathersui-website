@@ -106,7 +106,7 @@ sprite.addEventListener(TouchEvent.TOUCH_TAP, (event:TouchEvent) -> {
 Similar to the low-level mouse events, a number of commonly-used low-level touch events are available too.
 
 - [`TouchEvent.TOUCH_BEGIN`](https://api.openfl.org/openfl/events/TouchEvent.html#TOUCH_BEGIN)
-- [`TouchEvent.TOUCH_BEGIN`](https://api.openfl.org/openfl/events/TouchEvent.html#TOUCH_MOVE)
+- [`TouchEvent.TOUCH_MOVE`](https://api.openfl.org/openfl/events/TouchEvent.html#TOUCH_MOVE)
 - [`TouchEvent.TOUCH_END`](https://api.openfl.org/openfl/events/TouchEvent.html#TOUCH_END)
 
 These events might be used to drag objects around or to create multitouch gestures.
