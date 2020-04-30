@@ -20,4 +20,8 @@ Feathers UI provides the following implementations of a flat collection type.
 
 ## Hierarchical collections
 
-Feathers UI for Haxe/OpenFL does not currently provide any UI components that display hierarchical data (in other words, a tree of data). Stay tuned for a future update that adds these capabilities.
+The [`TreeView`](./tree-view.md) component may render a _hierarchical_ collection where items can be nested.
+
+Feathers UI provides the following implementations of a hierarchical collection type.
+
+- [`TreeCollection`](https://api.feathersui.com/current/feathers/data/TreeCollection.html)
