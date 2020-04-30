@@ -32,7 +32,7 @@ Set the panel's [`layout`](https://api.feathersui.com/current/feathers/layout/fe
 panel.layout = new HorizontalLayout();
 ```
 
-The example above uses [`HorizontalLayout`](https://api.feathersui.com/current/feathers/layout/HorizontalLayout.html), but a number of [different layouts](https://api.feathersui.com/current/feathers/layout/) are available in Feathers UI, and it's possible to create custom layouts.
+The example above uses [`HorizontalLayout`](./horizontal-layout.md), but a number of [different layouts](./layouts.md) are available in Feathers UI, and it's also possible to create custom layouts.
 
 ### Header
 
@@ -80,7 +80,7 @@ A number of styles may be customized on a [`Panel`](https://api.feathersui.com/c
 
 ### Background skin
 
-Optionally give the panel a background using the [`backgroundSkin`](https://api.feathersui.com/current/feathers/controls/ScrollContainer.html#backgroundSkin) property. The following example sets it to a [`RectangleSkin`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html) instance.
+Optionally give the panel a background using the [`backgroundSkin`](https://api.feathersui.com/current/feathers/controls/supportClasses/BaseScrollContainer.html#backgroundSkin) property. The following example sets it to a [`RectangleSkin`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html) instance.
 
 ```hx
 var skin = new RectangleSkin();
@@ -109,7 +109,7 @@ Similarly, use the skin's [`disabledBorder`](https://api.feathersui.com/current/
 skin.disabledBorder = SolidColor(2.0, 0x999999);
 ```
 
-In the examples above, the panel uses the same [`RectangleSkin`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html) for all states, and that skin listens for changes to the panel's current state. Alternatively, the panel's [`disabledBackgroundSkin`](https://api.feathersui.com/current/feathers/controls/ScrollContainer.html#disabledBackgroundSkin) method allows the panel to display a completely different display object when it is disabled.
+In the examples above, the panel uses the same [`RectangleSkin`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html) for all states, and that skin listens for changes to the panel's current state. Alternatively, the panel's [`disabledBackgroundSkin`](https://api.feathersui.com/current/feathers/controls/supportClasses/BaseScrollContainer.html#disabledBackgroundSkin) method allows the panel to display a completely different display object when it is disabled.
 
 ```hx
 var defaultSkin = new RectangleSkin();

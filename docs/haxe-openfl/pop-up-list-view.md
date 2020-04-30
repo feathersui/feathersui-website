@@ -7,7 +7,7 @@ The [`PopUpListView`](https://api.feathersui.com/current/feathers/controls/PopUp
 
 ## The Basics
 
-Start by creating a [`PopUpListView`](https://api.feathersui.com/current/feathers/controls/PopUpListView.html) control, pass in a [collection](./data-collections.md) that defines the items to display, and add it to [the display list](https://books.openfl.org/openfl-developers-guide/display-programming/basics-of-display-programming.html).
+Start by creating a [`PopUpListView`](https://api.feathersui.com/current/feathers/controls/PopUpListView.html) control, pass in a [collection](./data-collections.md) that defines the items to render, and add it to [the display list](https://books.openfl.org/openfl-developers-guide/display-programming/basics-of-display-programming.html).
 
 ```hx
 var listView = new PopUpListView();
@@ -44,7 +44,7 @@ function listView_changeHandler(event:Event):Void {
 }
 ```
 
-Alternatively, the value of the [`selectedIndex`](https://api.feathersui.com/current/feathers/controls/PopUpListView.html#selectedIndex) property references the index of the items in the list view, in the order that they were added.
+Alternatively, the value of the [`selectedIndex`](https://api.feathersui.com/current/feathers/controls/PopUpListView.html#selectedIndex) property references the index of the items in the list view's collection, in the order that they were added.
 
 ```hx
 function listView_changeHandler(event:Event):Void {
@@ -69,7 +69,7 @@ var newItem = { text: "First Item" };
 listView.dataProvider.addAt(newItem, 0);
 ```
 
-In the example above, a new tab is added to the beginning.
+In the example above, a new item is added to the beginning.
 
 Similarly, to remove an item, call [`remove()`](https://api.feathersui.com/current/feathers/data/IFlatCollection.html#remove) or [`removeAt()`](https://api.feathersui.com/current/feathers/data/IFlatCollection.html#removeAt) on the collection.
 

@@ -7,7 +7,7 @@ The [`ListView`](https://api.feathersui.com/current/feathers/controls/ListView.h
 
 ## The Basics
 
-Start by creating a [`ListView`](https://api.feathersui.com/current/feathers/controls/ListView.html) control, pass in a [collection](./data-collections.md) that defines the items to display, and add it to [the display list](https://books.openfl.org/openfl-developers-guide/display-programming/basics-of-display-programming.html).
+Start by creating a [`ListView`](https://api.feathersui.com/current/feathers/controls/ListView.html) control, pass in a [collection](./data-collections.md) that defines the items to render, and add it to [the display list](https://books.openfl.org/openfl-developers-guide/display-programming/basics-of-display-programming.html).
 
 ```hx
 var listView = new ListView();
@@ -29,6 +29,8 @@ listView.itemToText = function(item:Dynamic):String {
 
 > Items in the collection are not required to be simple object literals, like in the example above. Instances of a class are allowed too.
 
+### Selection
+
 [Add an event listener](https://books.openfl.org/openfl-developers-guide/handling-events/basics-of-handling-events.html) for [`Event.CHANGE`](https://api.openfl.org/openfl/events/Event.html#CHANGE) to perform an action when the user selects a different item.
 
 ```hx
@@ -44,7 +46,7 @@ function listView_changeHandler(event:Event):Void {
 }
 ```
 
-Alternatively, the value of the [`selectedIndex`](https://api.feathersui.com/current/feathers/controls/ListView.html#selectedIndex) property references the index of the items in the list view, in the order that they were added.
+Alternatively, the value of the [`selectedIndex`](https://api.feathersui.com/current/feathers/controls/ListView.html#selectedIndex) property references the index of the items in the list view's collection, in the order that they were added.
 
 ```hx
 function listView_changeHandler(event:Event):Void {
@@ -69,7 +71,7 @@ var newItem = { text: "First Item" };
 listView.dataProvider.addAt(newItem, 0);
 ```
 
-In the example above, a new tab is added to the beginning.
+In the example above, a new item is added to the beginning.
 
 Similarly, to remove an item, call [`remove()`](https://api.feathersui.com/current/feathers/data/IFlatCollection.html#remove) or [`removeAt()`](https://api.feathersui.com/current/feathers/data/IFlatCollection.html#removeAt) on the collection.
 
@@ -171,7 +173,7 @@ A number of styles may be customized on a [`ListView`](https://api.feathersui.co
 
 ### Background skin
 
-Optionally give the list view a background using the [`backgroundSkin`](https://api.feathersui.com/current/feathers/controls/ScrollContainer.html#backgroundSkin) property. The following example sets it to a [`RectangleSkin`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html) instance.
+Optionally give the list view a background using the [`backgroundSkin`](https://api.feathersui.com/current/feathers/controls/supportClasses/BaseScrollContainer.html#backgroundSkin) property. The following example sets it to a [`RectangleSkin`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html) instance.
 
 ```hx
 var skin = new RectangleSkin();
@@ -200,7 +202,7 @@ Similarly, use the skin's [`disabledBorder`](https://api.feathersui.com/current/
 skin.disabledBorder = SolidColor(2.0, 0x999999);
 ```
 
-In the examples above, the list view uses the same [`RectangleSkin`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html) for all states, and that skin listens for changes to the list view's current state. Alternatively, the list view's [`disabledBackgroundSkin`](https://api.feathersui.com/current/feathers/controls/ScrollContainer.html#disabledBackgroundSkin) method allows the list view to display a completely different display object when it is disabled.
+In the examples above, the list view uses the same [`RectangleSkin`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html) for all states, and that skin listens for changes to the list view's current state. Alternatively, the list view's [`disabledBackgroundSkin`](https://api.feathersui.com/current/feathers/controls/supportClasses/BaseScrollContainer.html#disabledBackgroundSkin) method allows the list view to display a completely different display object when it is disabled.
 
 ```hx
 var defaultSkin = new RectangleSkin();
@@ -213,6 +215,16 @@ listView.disabledBackgroundSkin = disabledSkin;
 ```
 
 In the example above, the list view will have a separate skins when enabled and disabled.
+
+### Layout
+
+Set the list view's [`layout`](https://api.feathersui.com/current/feathers/layout/feathers/controls/ListView.html#layout) property to change how its children are positioned and sized. By default, a list view uses [`VerticalListLayout`](./vertical-list-layout.md), but it may be changed to a different layout, if desired.
+
+```hx
+listView.layout = new HorizontalListLayout();
+```
+
+The example above uses [`HorizontalListLayout`](./horizontal-list-layout.md), but a number of [different layouts](https://api.feathersui.com/current/feathers/layout/) are available in Feathers UI, and it's also possible to create custom layouts.
 
 ### Scroll bars
 
