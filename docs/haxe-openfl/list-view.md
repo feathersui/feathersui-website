@@ -224,7 +224,7 @@ Set the list view's [`layout`](https://api.feathersui.com/current/feathers/layou
 listView.layout = new HorizontalListLayout();
 ```
 
-The example above uses [`HorizontalListLayout`](./horizontal-list-layout.md), but a number of [different layouts](https://api.feathersui.com/current/feathers/layout/) are available in Feathers UI, and it's also possible to create custom layouts.
+The example above uses [`HorizontalListLayout`](./horizontal-list-layout.md), but a number of [different layouts](./layouts-and-containers.md) are available in Feathers UI, and it's also possible to create custom layouts.
 
 ### Scroll bars
 

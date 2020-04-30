@@ -45,6 +45,7 @@
       "haxe-openfl/tree-view"
     ],
     "Layouts": [
+      "haxe-openfl/layouts-and-containers",
       "haxe-openfl/anchor-layout",
       "haxe-openfl/horizontal-layout",
       "haxe-openfl/horizontal-list-layout",

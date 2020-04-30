@@ -32,7 +32,7 @@ Set the panel's [`layout`](https://api.feathersui.com/current/feathers/layout/fe
 panel.layout = new HorizontalLayout();
 ```
 
-The example above uses [`HorizontalLayout`](./horizontal-layout.md), but a number of [different layouts](./layouts.md) are available in Feathers UI, and it's also possible to create custom layouts.
+The example above uses [`HorizontalLayout`](./horizontal-layout.md), but a number of [different layouts](./layouts-and-containers.md) are available in Feathers UI, and it's also possible to create custom layouts.
 
 ### Header
 
