@@ -15,11 +15,11 @@ Click the button below to download the latest version of Feathers UI for ActionS
 
 <div class="alignCenter">
   <div class="buttonWrapper">
-    <a class="button" href="https://github.com/BowlerHatLLC/feathers/releases/download/v4.1.0/feathers-ui-4.1.0.zip" onClick="_gaq.push(['_trackEvent', 'Downloads', 'Build', '4.1.0']);">Download Feathers 4.1.0</a>
+    <a class="button" href="https://github.com/BowlerHatLLC/feathers/releases/download/v4.1.1/feathers-ui-4.1.1.zip" onClick="_gaq.push(['_trackEvent', 'Downloads', 'Build', '4.1.1']);">Download Feathers 4.1.1</a>
   </div>
 </div>
 
-Check out the <a href="https://github.com/BowlerHatLLC/feathers/blob/v4.1.0/RELEASENOTES.md">Feathers 4.1.0 release notes</a> to learn what's new in this release.
+Check out the <a href="https://github.com/BowlerHatLLC/feathers/blob/v4.1.1/RELEASENOTES.md">Feathers 4.1.1 release notes</a> to learn what's new in this release.
 
 ## Older versions
 
