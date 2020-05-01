@@ -19,7 +19,7 @@ limitations under the License.
 	<SDKManager latestVersion="1.2.3"/>
 	<products>
 		<FeathersSDK name="Feathers SDK">
-			<versions default="4.1.0">
+			<versions default="4.1.1">
 				<versionA id="feathers.sdk.version.2.2.0" version="2.2.0" displayVersion="2.2.0">
 					<path>https://github.com/BowlerHatLLC/feathers-sdk/releases/download/v2.2.0/</path>
 					<file>feathers-sdk-2.2.0-bin</file>
@@ -92,6 +92,10 @@ limitations under the License.
 					<path>https://github.com/BowlerHatLLC/feathers-sdk/releases/download/v4.1.0/</path>
 					<file>feathers-sdk-4.1.0-bin</file>
 				</versionP>
+				<versionQ id="feathers.sdk.version.4.1.1" version="4.1.1" displayVersion="4.1.1">
+					<path>https://github.com/BowlerHatLLC/feathers-sdk/releases/download/v4.1.1/</path>
+					<file>feathers-sdk-4.1.1-bin</file>
+				</versionQ>
 			</versions>
 		</FeathersSDK>
 	</products>
