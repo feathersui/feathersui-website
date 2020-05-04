@@ -57,7 +57,8 @@
     ],
     "Styles and Skins": [
       "haxe-openfl/graphics-api-skins",
-      "haxe-openfl/themes"
+      "haxe-openfl/themes",
+      "haxe-openfl/custom-themes"
     ],
     "Miscellaneous": ["haxe-openfl/data-collections", "haxe-openfl/prerelease"]
   },
