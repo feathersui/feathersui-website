@@ -48,10 +48,16 @@ The first argument passed to [`PageItem.withClass()`](https://api.feathersui.com
 
 ## Navigation
 
-To show a specific page, set either the navigator's [`selectedIndex`](https://api.feathersui.com/current/feathers/controls/navigators/PageNavigator.html#selectedIndex) property or [`selectedItem`](https://api.feathersui.com/current/feathers/controls/navigators/PageNavigator.html#selectedItem) property.
+To show the view at a specific index in the data provider, set the navigator's [`selectedIndex`](https://api.feathersui.com/current/feathers/controls/navigators/PageNavigator.html#selectedIndex) property
 
 ```hx
 navigator.selectedIndex = 2;
+```
+
+Alternatively, pass one of the [`PageItem`](https://api.feathersui.com/current/feathers/controls/navigators/PageItem.html) instances from the collection to the [`selectedItem`](https://api.feathersui.com/current/feathers/controls/navigators/PageNavigator.html#selectedItem) property.
+
+```hx
+navigator.selectedItem = navigator.dataProvider.get(2);
 ```
 
 ## Related Links

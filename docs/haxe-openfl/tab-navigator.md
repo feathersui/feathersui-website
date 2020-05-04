@@ -48,10 +48,16 @@ The first argument passed to [`TabItem.withClass()`](https://api.feathersui.com/
 
 ## Navigation
 
-To show a specific tab, set either the navigator's [`selectedIndex`](https://api.feathersui.com/current/feathers/controls/navigators/TabNavigator.html#selectedIndex) property or [`selectedItem`](https://api.feathersui.com/current/feathers/controls/navigators/TabNavigator.html#selectedItem) property.
+To show the view at a specific index in the data provider, set the navigator's [`selectedIndex`](https://api.feathersui.com/current/feathers/controls/navigators/TabNavigator.html#selectedIndex) property
 
 ```hx
 navigator.selectedIndex = 2;
+```
+
+Alternatively, pass one of the [`TabItem`](https://api.feathersui.com/current/feathers/controls/navigators/TabItem.html) instances from the collection to the [`selectedItem`](https://api.feathersui.com/current/feathers/controls/navigators/TabNavigator.html#selectedItem) property.
+
+```hx
+navigator.selectedItem = navigator.dataProvider.get(2);
 ```
 
 ## Related Links
