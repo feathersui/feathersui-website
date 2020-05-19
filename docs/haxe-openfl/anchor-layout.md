@@ -38,10 +38,10 @@ child.layoutData = new AnchorLayoutData();
 
 To position a child in a container using [`AnchorLayout`](https://api.feathersui.com/current/feathers/layout/AnchorLayout.html), a number of _anchor_ properties are available on the [`AnchorLayoutData`](https://api.feathersui.com/current/feathers/layout/AnchorLayoutData.html) class.
 
-- [`top`](https://api.feathersui.com/current/feathers/layout/feathers/layout/AnchorLayoutData.html#top) positions the child relative to the parent container's top edge.
-- [`right`](https://api.feathersui.com/current/feathers/layout/feathers/layout/AnchorLayoutData.html#right) positions the child relative to the parent container's right edge.
-- [`bottom`](https://api.feathersui.com/current/feathers/layout/feathers/layout/AnchorLayoutData.html#bottom) positions the child relative to the parent container's bottom edge.
-- [`left`](https://api.feathersui.com/current/feathers/layout/feathers/layout/AnchorLayoutData.html#left) positions the child relative to the parent container's left edge.
+- [`top`](https://api.feathersui.com/current/feathers/layout/feathers/layout/AnchorLayoutData.html#top) positions the child's top edge relative to the parent container or another child.
+- [`right`](https://api.feathersui.com/current/feathers/layout/feathers/layout/AnchorLayoutData.html#right) positions the child's right edge relative to the parent container or another child.
+- [`bottom`](https://api.feathersui.com/current/feathers/layout/feathers/layout/AnchorLayoutData.html#bottom) positions the child's bottom edge relative to the parent container or another child.
+- [`left`](https://api.feathersui.com/current/feathers/layout/feathers/layout/AnchorLayoutData.html#left) positions the child's left edge relative to the parent container or another child.
 - [`horizontalCenter`](https://api.feathersui.com/current/feathers/layout/feathers/layout/AnchorLayoutData.html#horizontalCenter) positions the child relative to the center of the parent container's x-axis.
 - [`verticalCenter`](https://api.feathersui.com/current/feathers/layout/feathers/layout/AnchorLayoutData.html#verticalCenter) positions the child relative to the center of the parent container's y-axis.
 
