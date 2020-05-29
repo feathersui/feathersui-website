@@ -54,6 +54,8 @@ With a few free extensions, [Visual Studio Code](https://code.visualstudio.com/)
    }
    ```
 
+   > **Tip:** Some projects may benefit from using the [`Application`](./application.md) component as the base class, instead of [`Sprite`](https://api.openfl.org/openfl/display/Sprite.html).
+
 ### Add your first Feathers UI component
 
 1. Inside _src/Main.hx_, add the following imports:
