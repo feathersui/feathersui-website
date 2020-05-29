@@ -13,13 +13,6 @@ sidebar_label: Installation
 ## Prerequisites
 
 - [Haxe 4.0.0 or newer](https://haxe.org/download/)
-- Install [OpenFL](https://lib.haxe.org/p/openfl/) and [Actuate](https://lib.haxe.org/p/actuate/) from Haxelib by running the following commands in a terminal:
-
-  ```sh
-  haxelib install actuate
-  haxelib install openfl
-  haxelib run openfl setup
-  ```
 
 ## Install
 
@@ -29,7 +22,11 @@ In a terminal, use the [**haxelib install**](https://lib.haxe.org/documentation/
 haxelib install feathersui
 ```
 
-This command will automatically install any required dependencies too, including [OpenFL](https://openfl.org/).
+This command will automatically install any required dependencies, including [OpenFL](https://openfl.org/). If this is the first time OpenFL has been installed on your computer, you should also run its setup command.
+
+```sh
+haxelib run openfl setup
+```
 
 ## Update
 
