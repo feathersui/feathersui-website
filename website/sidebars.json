@@ -60,7 +60,11 @@
       "haxe-openfl/themes",
       "haxe-openfl/custom-themes"
     ],
-    "Miscellaneous": ["haxe-openfl/data-collections", "haxe-openfl/prerelease"]
+    "Miscellaneous": [
+      "haxe-openfl/cli",
+      "haxe-openfl/data-collections",
+      "haxe-openfl/prerelease"
+    ]
   },
   "as3-starling": {
     "Getting started": [
