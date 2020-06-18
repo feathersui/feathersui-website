@@ -1,6 +1,6 @@
 ---
 title: A quick introduction to OpenFL for Feathers UI
-sidebar_label: Intro to OpenFL
+sidebar_label: Introduction to OpenFL
 ---
 
 [Feathers UI](/) is powered by the [OpenFL](https://openfl.org/) library and the [Haxe](https://haxe.org/) programming language. OpenFL provides APIs for rendering, networking, user input, and more. At the core of OpenFL is [the display list](https://books.openfl.org/openfl-developers-guide/display-programming/basics-of-display-programming.html), its graphics system that can be used to draw vectors and bitmaps with the ability to intuitively group objects together in a parent-child hierarchy.
