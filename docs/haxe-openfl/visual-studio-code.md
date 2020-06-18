@@ -9,16 +9,14 @@ With a few free extensions, [Visual Studio Code](https://code.visualstudio.com/)
 ## Prerequisites
 
 - [Install Feathers UI, OpenFL, and Actuate from Haxelib](installation.md)
-- Install the following extensions for Visual Studio Code:
-  - [Haxe Support for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=nadako.vshaxe)
-  - [Lime/OpenFL Support for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=openfl.lime-vscode-extension)
-  - [Debugger for Chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome)
 - [Install Lime from Haxelib](https://lime.software/docs/home/) by running the following commands in a terminal:
 
   ```sh
   haxelib install lime
   haxelib run lime setup
   ```
+
+- [Install the Feathers UI Extension Pack for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=bowlerhatllc.vscode-feathersui-extension-pack)
 
 ## Create a project
 
