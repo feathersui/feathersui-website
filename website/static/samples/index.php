@@ -1,3 +1,3 @@
 <?php
-	header("Location: /samples/as3-starling/");
+	header("Location: /samples/haxe-openfl/");
 ?>
