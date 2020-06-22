@@ -24,6 +24,18 @@ const sampleItems = [
 </div>`,
   },
   {
+    title: `[Collection Sorting](${samplesBaseUrl}list-view-data-provider-collection-sorting/)`,
+    image: `${samplesBaseUrl}img/list-view-data-provider-collection-sorting.png`,
+    imageAlign: "top",
+    imageLink: `${samplesBaseUrl}list-view-data-provider-collection-sorting/`,
+    content: `Sort the items in a collection rendered by the Feathers UI \`ListView\` component.
+
+<div class="buttonWrapper">
+  <a class="button" href="${samplesBaseUrl}list-view-data-provider-collection-sorting/">Online Demo</a>
+  <a class="button" href="${githubSamplesBaseUrl}list-view-data-provider-collection-sorting/">Source Code</a>
+</div>`,
+  },
+  {
     title: `[Components Explorer](${samplesBaseUrl}components-explorer/)`,
     image: `${samplesBaseUrl}img/components-explorer.png`,
     imageAlign: "top",
@@ -48,6 +60,18 @@ const sampleItems = [
 </div>`,
   },
   {
+    title: `[Login Form](${samplesBaseUrl}login-form/)`,
+    image: `${samplesBaseUrl}img/login-form.png`,
+    imageAlign: "top",
+    imageLink: `${samplesBaseUrl}login-form/`,
+    content: `Creates a simple login form with the Feathers UI \`TextInput\` component.
+
+<div class="buttonWrapper">
+  <a class="button" href="${samplesBaseUrl}login-form/">Online Demo</a>
+  <a class="button" href="${githubSamplesBaseUrl}login-form/">Source Code</a>
+</div>`,
+  },
+  {
     title: `[Percentage Sizing](${samplesBaseUrl}horizontal-layout-percentage-sizing/)`,
     image: `${samplesBaseUrl}img/horizontal-layout-percentage-sizing.png`,
     imageAlign: "top",
@@ -60,19 +84,19 @@ const sampleItems = [
 </div>`,
   },
   {
-    title: `[Collection Sorting](${samplesBaseUrl}list-view-data-provider-collection-sorting/)`,
-    image: `${samplesBaseUrl}img/list-view-data-provider-collection-sorting.png`,
+    title: `[RouterNavigator Data Passing](${samplesBaseUrl}router-navigator-pass-data-between-views/)`,
+    image: `${samplesBaseUrl}img/router-navigator-pass-data-between-views.png`,
     imageAlign: "top",
-    imageLink: `${samplesBaseUrl}list-view-data-provider-collection-sorting/`,
-    content: `Sort the items in a collection rendered by the Feathers UI \`ListView\` component.
+    imageLink: `${samplesBaseUrl}router-navigator-pass-data-between-views/`,
+    content: `When navigating between views in a \`RouterNavigator\` component, data may be passed from view to view.
 
 <div class="buttonWrapper">
-  <a class="button" href="${samplesBaseUrl}list-view-data-provider-collection-sorting/">Online Demo</a>
-  <a class="button" href="${githubSamplesBaseUrl}list-view-data-provider-collection-sorting/">Source Code</a>
+  <a class="button" href="${samplesBaseUrl}router-navigator-pass-data-between-views/">Online Demo</a>
+  <a class="button" href="${githubSamplesBaseUrl}router-navigator-pass-data-between-views/">Source Code</a>
 </div>`,
   },
   {
-    title: `[Navigation Data Passing](${samplesBaseUrl}stack-navigator-pass-data-between-views/)`,
+    title: `[StackNavigator Data Passing](${samplesBaseUrl}stack-navigator-pass-data-between-views/)`,
     image: `${samplesBaseUrl}img/stack-navigator-pass-data-between-views.png`,
     imageAlign: "top",
     imageLink: `${samplesBaseUrl}stack-navigator-pass-data-between-views/`,
