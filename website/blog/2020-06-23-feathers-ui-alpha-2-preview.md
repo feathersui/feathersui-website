@@ -63,7 +63,7 @@ This will add [_.vscode/tasks.json_](https://code.visualstudio.com/docs/editor/t
 
 ### ListView optimizations
 
-A proper list view UI component needs to be able to display thousands or millions of items without requring a ridiculous amount of memory or maxing out the CPU.
+A proper list view UI component needs to be able to display thousands or millions of items without requiring a ridiculous amount of memory or maxing out the CPU.
 
 Typically, this means that a small subset of the items from its data provider are rendered at any given time, and as the list view scrolls, some items are no longer rendered and new ones take their place. This is known as _layout virtualization_.
 
@@ -83,7 +83,7 @@ The alpha.2 build includes a new focus manager that supports navigation with <kb
 
 Loading up the new [Login Form sample](https://feathersui.com/samples/haxe-openfl/login-form) is an easy way to try out using the tab key to navigate between UI components in a simple form.
 
-Additionally, it's worth mentioning that I also made several commits upstream to [OpenFL](https://openfl.org/) to improve keyboard focus management for all OpenFL projects — not just those that use the Feathers UI focus manager. Those enhancements are now available in [OpenFL 8.9.7](https://community.openfl.org/t/openfl-8-9-7-hotfix-release/12552).
+Additionally, it's worth mentioning that I also made several commits upstream to [OpenFL](https://openfl.org/) to improve keyboard focus management for all OpenFL projects — not just those that use the Feathers UI focus manager. Those enhancements will be available in an upcoming update to OpenFL.
 
 ## Install Feathers UI alpha.2
 
