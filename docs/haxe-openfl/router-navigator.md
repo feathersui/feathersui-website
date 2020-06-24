@@ -123,7 +123,7 @@ class ViewB extends LayoutGroup {
 }
 ```
 
-`ViewA` displays a label with the text "B" and a button with the text "Go back to A". When the button is triggered, `ViewB` dispatches `Event.COMPLETE`. The pathname of `ViewA` is `/b`.
+`ViewB` displays a label with the text "B" and a button with the text "Go back to A". When the button is triggered, `ViewB` dispatches `Event.COMPLETE`. The pathname of `ViewB` is `/b`.
 
 In the next example, the two views are added to the navigator using their pathnames.
 
