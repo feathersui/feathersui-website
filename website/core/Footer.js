@@ -72,6 +72,9 @@ class Footer extends React.Component {
                 <a href={`${this.props.config.baseUrl}blog/feed.xml`}>RSS</a>,{" "}
                 <a href={`${this.props.config.baseUrl}blog/atom.xml`}>Atom</a>)
               </li>
+              <li>
+                <a href="https://teespring.com/stores/feathers-ui">Store</a>
+              </li>
             </ul>
           </div>
           <div>
