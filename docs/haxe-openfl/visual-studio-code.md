@@ -13,81 +13,37 @@ With a few free extensions, [Visual Studio Code](https://code.visualstudio.com/)
 
 ## Create a project
 
-1. From the **File** menu, choose **Open Folder…**.
+1. From the **File** menu, choose **Open Folder…** (On macOS, choose **Open…**).
 1. Create a new, empty folder for your project somewhere on your computer.
-1. Open the folder that you created.
-1. Create a file named _project.xml_ and add the following content:
+1. Select the empty folder, and open it.
+1. Go to the **View** menu and choose **Command Palette…**. You may also use the <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> keyboard shortcut (<kbd>Command</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> on macOS).
+1. Run the **Feathers UI: Create new project** command.
 
-   ```xml
-   <?xml version="1.0" encoding="utf-8"?>
-   <project>
-       <meta title="My Project" package="com.example.MyProject" version="1.0.0" company="My Company"/>
-       <app main="Main" path="build" file="MyProject"/>
-       <window allow-high-dpi="true"/>
-       <window fps="60"/>
-       <window fps="0" if="html5"/>
-       <source path="src"/>
-       <haxelib name="openfl"/>
-       <haxelib name="actuate"/>
-       <haxelib name="feathersui"/>
-   </project>
-   ```
+This will run the [CLI `new-project` command](./cli.md#new-project) in Visual Studio Code's terminal. The newly created project will include the following defaults:
 
-1. Create a file named _src/Main.hx_, and add the following content:
-
-   ```hx
-   import openfl.display.Sprite;
-
-   class Main extends Sprite {
-       public function new() {
-           super();
-       }
-   }
-   ```
-
-   > **Tip:** Some projects may benefit from using the [`Application`](./application.md) component as the base class, instead of [`Sprite`](https://api.openfl.org/openfl/display/Sprite.html).
-
-### Add your first Feathers UI component
-
-1. Inside _src/Main.hx_, add the following imports:
-
-   ```hx
-   import feathers.controls.Button;
-   import feathers.events.TriggerEvent;
-   ```
-
-1. Modify the constructor with the following code:
-
-   ```hx
-   public function new() {
-       super();
-
-       var button = new Button();
-       button.text = "Click Me";
-       button.addEventListener(TriggerEvent.TRIGGER, onButtonTrigger);
-       addChild(button);
-   }
-   ```
-
-1. Add an event listener function that logs a message:
-
-   ```hx
-   private function onButtonTrigger(event:TriggerEvent):Void {
-       trace("Clicked or tapped the button");
-   }
-   ```
+- A standard [OpenFL _project.xml_ file](https://lime.software/docs/project-files/xml-format/)
+- A _src_ folder for Haxe source files
+- A default icon
+- A build [task](https://code.visualstudio.com/docs/editor/tasks) for compiling the project
+- A [launch configuration](https://code.visualstudio.com/docs/editor/debugging#_launch-configurations) for debugging
 
 ## Run the project
 
-1. In Visual Studio Code's status bar, you should find a button that allows you to choose a target platform. Select **HTML5/Debug**.
-1. From the **Debug** menu, choose **Add Configuration…**.
-1. Select **Lime** from the list of available environments.
+Visual Studio Code's debugger supports many of OpenFL's target platforms.
+
+1. In Visual Studio Code's status bar, choose a target platform. For instance, you might choose **HTML5/Debug**.
 1. From the **Debug** menu, choose **Start Debugging** (or use the <kbd>F5</kbd> keyboard shortcut).
-1. The project should launch in Chrome.
+1. For the **HTML5/Debug** target, the project should launch in the Chrome web browser. For other targets, a different runtime or executable will launch.
 
    > If your project does not launch in a browser, check the **Problems** panel or the **Terminal** panel for errors.
 
-1. If you click on the button, it will log a message to the **Debug Console** in Visual Studio Code.
+## Build the project
+
+You can build a project without launching it in a debugger.
+
+1. In Visual Studio Code's status bar, choose a target platform. For instance, you might choose **HTML5/Debug**.
+1. From the **Terminal** menu, choose **Run Build Task…**. You may also use the <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd> keyboard shortcut (<kbd>Command</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd> on macOS).
+1. The compiled project output may be found inside the _bin_ folder. For example, the **HTML5/Debug** target compiles to the _bin/html5/bin_ folder.
 
 ## Troubleshooting
 
@@ -120,6 +76,14 @@ haxelib install actuate
 ```
 
 > You may need to close and re-open your workspace folder after installing a new dependency.
+
+### Error: Failed to create project. New project folder is not empty.
+
+This error indicates that the **Feathers UI: Create new project** command was run in a folder that contains one or more files. If the folder appears empty, it may contain hidden files.
+
+### Error: Failed to create new Feathers UI project. Open an empty folder before running this command.
+
+This error indicates that the **Feathers UI: Create new project** command was run without a workspace folder open in Visual Studio Code. Go to the **File** menu and choose **Open Folder…** (or choose **Open…** on macOS) to open a folder.
 
 ## Further Reading
 
