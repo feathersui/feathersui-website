@@ -8,14 +8,7 @@ With a few free extensions, [Visual Studio Code](https://code.visualstudio.com/)
 
 ## Prerequisites
 
-- [Install Feathers UI, OpenFL, and Actuate from Haxelib](installation.md)
-- [Install Lime from Haxelib](https://lime.software/docs/home/) by running the following commands in a terminal:
-
-  ```sh
-  haxelib install lime
-  haxelib run lime setup
-  ```
-
+- [Install Feathers UI from Haxelib](installation.md)
 - [Install the Feathers UI Extension Pack for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=bowlerhatllc.vscode-feathersui-extension-pack)
 
 ## Create a project
@@ -100,15 +93,22 @@ With a few free extensions, [Visual Studio Code](https://code.visualstudio.com/)
 
 How to fix some issues that you may encounter.
 
+### Error: Lime completion setup failed. Is the lime command available? Try running "lime setup" or changing the "lime.executable" setting.
+
+This error indicates that OpenFL's setup process is not yet complete. Open a terminal and run the following command.
+
+```sh
+haxelib run openfl setup
+```
+
 ### Error: Command failed: lime display html5
 
 This error may indicate a problem in your _project.xml_ file. Check for additional error messages after this one that provide more context.
 
-It may also indicate that [Lime](https://lime.software/) is not installed. You can install it from [Haxelib](https://lib.haxe.org/) by running the following commands in a terminal.
+It may also indicate that OpenFL's setup process is not yet complete. Open a terminal and run the following command.
 
 ```sh
-haxelib install lime
-haxelib run lime setup
+haxelib run openfl setup
 ```
 
 ### Error: Could not find haxelib _[library name]_, does it need to be installed?

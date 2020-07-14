@@ -8,13 +8,7 @@ sidebar_label: HaxeDevelop
 
 ## Prerequisites
 
-- [Install Feathers UI, OpenFL, and Actuate from Haxelib](installation.md)
-- [Install Lime from Haxelib](https://lime.software/docs/home/) by running the following commands in a terminal:
-
-  ```sh
-  haxelib install lime
-  haxelib run lime setup
-  ```
+- [Install Feathers UI from Haxelib](installation.md)
 
 ## Create a project
 
@@ -79,11 +73,10 @@ How to fix some issues that you may encounter.
 
 ### Error: Library lime is not installed
 
-This error indicates that [Lime](https://lime.software/) is not installed. You can install it from [Haxelib](https://lib.haxe.org/) by running the following commands in a terminal.
+This error indicates that OpenFL's setup process is not yet complete. Open a terminal and run the following command.
 
 ```sh
-haxelib install lime
-haxelib run lime setup
+haxelib run openfl setup
 ```
 
 ### Error: Could not find haxelib _[library name]_, does it need to be installed?
