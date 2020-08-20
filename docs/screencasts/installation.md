@@ -1,6 +1,6 @@
 ---
 id: installation
-title: How to Install Feathers UI
+title: "Video: How to Install Feathers UI"
 sidebar_label: Install Feathers UI
 ---
 
@@ -63,4 +63,4 @@ Okay, great! We're ready to create our first Feathers UI project.
 
 Now that Feathers UI and its dependencies are installed, you can create a project in your favorite editor.
 
-- [Create a project in Visual Studio Code](visual-studio-code.md)
+- [📺 Create a project in Visual Studio Code](visual-studio-code.md)
