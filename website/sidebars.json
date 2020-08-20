@@ -79,6 +79,17 @@
       "haxe-openfl/prerelease"
     ]
   },
+  "screencasts": {
+    "Getting started": [
+      "screencasts/index",
+      "screencasts/installation",
+      {
+        "type": "subcategory",
+        "label": "Create a new project in…",
+        "ids": ["screencasts/visual-studio-code"]
+      }
+    ]
+  },
   "as3-starling": {
     "Getting started": [
       "as3-starling/installation",
