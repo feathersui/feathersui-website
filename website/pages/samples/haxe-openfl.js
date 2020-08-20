@@ -117,12 +117,24 @@ const Samples = (props) => {
           <header className="postHeader">
             <h1>Samples</h1>
             <p>
-              Sample projects built with <a href="/">Feathers UI</a>,{" "}
+              Official sample projects built with <a href="/">Feathers UI</a>,{" "}
               <a href="https://openfl.org/">OpenFL</a>, and the{" "}
               <a href="https://haxe.org/">Haxe</a> programming language.
             </p>
           </header>
           <GridBlock contents={sampleItems} layout="threeColumn" />
+          <h2>Additional Samples</h2>
+          <p>
+            The following sample projects have been shared by the Feathers UI
+            developer community.
+          </p>
+          <ul>
+            <li>
+              <a href="https://github.com/BowlerHatLLC/feathersui-7guis">
+                7GUIs for Feathers UI
+              </a>
+            </li>
+          </ul>
         </div>
       </Container>
     </div>
