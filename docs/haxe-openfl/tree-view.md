@@ -32,7 +32,7 @@ this.addChild(treeView);
 Set the [`itemToText()`](https://api.feathersui.com/current/feathers/controls/TreeView.html#itemToText) method to get the text from each [`TreeNode`](https://api.feathersui.com/current/feathers/data/TreeNode.html) item to display in an item renderer.
 
 ```hx
-treeView.itemToText = function(item:TreeNode):String {
+treeView.itemToText = function(item:TreeNode<Dynamic>):String {
     return item.data.text;
 };
 ```
@@ -101,7 +101,7 @@ new TreeNode({ name: "Pizza", icon: "https://example.com/img/pizza.png" })
 The examples above demonstrated how to use an [`itemToText()`](https://api.feathersui.com/current/feathers/controls/TreeView.html#itemToText) method to interpret the text. In this case, the `name` field is used.
 
 ```hx
-treeView.itemToText = function(item:TreeNode):String {
+treeView.itemToText = function(item:TreeNode<Dynamic>):String {
     return item.data.name;
 };
 ```
@@ -160,13 +160,13 @@ When the [`update()`](https://api.feathersui.com/current/feathers/utils/DisplayO
 
 - [`data`](https://api.feathersui.com/current/feathers/data/TreeViewItemState.html#data) is the item from the collection.
 - [`branch`](https://api.feathersui.com/current/feathers/data/TreeViewItemState.html#branch) indicates if the item is a branch or not.
-- [`opened`](https://api.feathersui.com/current/feathers/data/TreeViewItemState.html#branch) indicates if a branch is opened or not.
+- [`opened`](https://api.feathersui.com/current/feathers/data/TreeViewItemState.html#opened) indicates if a branch is opened or not.
 - [`location`](https://api.feathersui.com/current/feathers/data/TreeViewItemState.html#location) is the position of the item within the collection.
-- [`layoutIndex`](https://api.feathersui.com/current/feathers/data/TreeViewItemState.html#location) is the position of the item within the layout.
-- [`text`](https://api.feathersui.com/current/feathers/data/TreeViewItemState.html#text) is populated using [`itemToText()`](https://api.feathersui.com/current/feathers/controls/ListView.html#itemToText)
+- [`layoutIndex`](https://api.feathersui.com/current/feathers/data/TreeViewItemState.html#layoutIndex) is the position of the item within the layout.
+- [`text`](https://api.feathersui.com/current/feathers/data/TreeViewItemState.html#text) is populated using [`itemToText()`](https://api.feathersui.com/current/feathers/controls/TreeView.html#itemToText)
 - [`selected`](https://api.feathersui.com/current/feathers/data/TreeViewItemState.html#selected) is populated by comparing to [`selectedItem`](https://api.feathersui.com/current/feathers/controls/TreeView.html#selectedItem).
 
-In this case, the value of [`text`](https://api.feathersui.com/current/feathers/data/TreeViewItemState.html#text) is displayed by the [`Label`](./label.md), and the `icon` field from [`data`](https://api.feathersui.com/current/feathers/data/TreeViewItemState.html#data) (remember the example item from above, with `name` and `icon` fields) is displayed by the [`AssetLoader`](./asset-loader.md). The values of [`branch`](https://api.feathersui.com/current/feathers/data/TreeViewItemState.html#text) and [`opened`](https://api.feathersui.com/current/feathers/data/TreeViewItemState.html#text) are used with a [`ToggleButton`](./toggle-button.md) to display whether a branch is opened or not.
+In this case, the value of [`text`](https://api.feathersui.com/current/feathers/data/TreeViewItemState.html#text) is displayed by the [`Label`](./label.md), and the `icon` field from [`data`](https://api.feathersui.com/current/feathers/data/TreeViewItemState.html#data) (remember the example item from above, with `name` and `icon` fields) is displayed by the [`AssetLoader`](./asset-loader.md). The values of [`branch`](https://api.feathersui.com/current/feathers/data/TreeViewItemState.html#branch) and [`opened`](https://api.feathersui.com/current/feathers/data/TreeViewItemState.html#opened) are used with a [`ToggleButton`](./toggle-button.md) to display whether a branch is opened or not.
 
 It's always a good practice to provide a [`reset()`](https://api.feathersui.com/current/feathers/utils/DisplayObjectRecycler.html) method to the [`DisplayObjectRecycler`](https://api.feathersui.com/current/feathers/utils/DisplayObjectRecycler.html), which will clean up a custom item renderer when it is no longer used by the [`TreeView`](https://api.feathersui.com/current/feathers/controls/TreeView.html).
 
@@ -286,9 +286,6 @@ treeView.scrollBarYFactory = () -> {
 };
 ```
 
-```
-
 ## Related Links
 
 - [`feathers.controls.TreeView` API Documentation](https://api.feathersui.com/current/feathers/controls/TreeView.html)
-```
