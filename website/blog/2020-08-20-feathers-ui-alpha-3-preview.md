@@ -62,6 +62,4 @@ Be sure to take a look at the complete [installation instructions](https://feath
 
 Everyone, I just want to say thank you again for your support. I'm looking forward to hearing what you think of the new Feathers UI so far. If you create anything with this build — even a simple prototype — I'd love it if you could share your experiences (and maybe even a screenshot 🖼!).
 
-<!--
-I've created an [official alpha.3 discussion thread](https://community.feathersui.com/) in the forums. Head over there to leave a comment!
--->
+I've created an [official alpha.3 discussion thread](https://community.feathersui.com/d/37-feathers-ui-alpha3-preview-build-on-haxelib) in the community forums. Head over there to leave a comment!
