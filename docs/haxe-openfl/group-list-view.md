@@ -154,8 +154,8 @@ When the [`update()`](https://api.feathersui.com/current/feathers/utils/DisplayO
 
 - [`data`](https://api.feathersui.com/current/feathers/data/GroupListViewItemState.html#data) is the item from the collection.
 - [`enabled`](https://api.feathersui.com/current/feathers/data/GroupListViewItemState.html#enabled) indicates if the item renderer should be enabled or not.
-- [`location`](https://api.feathersui.com/current/feathers/data/GroupListViewItemState.html#location) is the position of the item within the collection.
 - [`layoutIndex`](https://api.feathersui.com/current/feathers/data/GroupListViewItemState.html#layoutIndex) is the position of the item within the layout.
+- [`location`](https://api.feathersui.com/current/feathers/data/GroupListViewItemState.html#location) is the position of the item within the collection.
 - [`owner`](https://api.feathersui.com/current/feathers/data/GroupListViewItemState.html#owner) is the [`GroupListView`](https://api.feathersui.com/current/feathers/controls/GroupListView.html) that contains the item.
 - [`selected`](https://api.feathersui.com/current/feathers/data/GroupListViewItemState.html#selected) is populated by comparing to [`selectedItem`](https://api.feathersui.com/current/feathers/controls/GroupListView.html#selectedItem).
 - [`text`](https://api.feathersui.com/current/feathers/data/GroupListViewItemState.html#text) is populated using [`itemToText()`](https://api.feathersui.com/current/feathers/controls/GroupListView.html#itemToText)

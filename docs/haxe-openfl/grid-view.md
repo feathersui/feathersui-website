@@ -165,11 +165,14 @@ recycler.update = (cellRenderer:LayoutGroup, state:GridViewCellState) -> {
 
 When the [`update()`](https://api.feathersui.com/current/feathers/utils/DisplayObjectRecycler.html) method is called, it receives the cell renderer and an [`GridViewCellState`](https://api.feathersui.com/current/feathers/data/GridViewCellState.html) object. [`GridViewCellState`](https://api.feathersui.com/current/feathers/data/GridViewCellState.html) has a number of useful properties.
 
-- [`data`](https://api.feathersui.com/current/feathers/data/GridViewCellState.html#data) is the row from the collection.
-- [`rowIndex`](https://api.feathersui.com/current/feathers/data/GridViewCellState.html#rowIndex) is the position of the row within the collection.
+- [`column`](https://api.feathersui.com/current/feathers/data/GridViewCellState.html#column) is the [`GridViewColumn`](https://api.feathersui.com/current/feathers/controls/GridViewColumn.html) that contains the item.
 - [`columnIndex`](https://api.feathersui.com/current/feathers/data/GridViewCellState.html#columnIndex) is the position of the column within the row.
-- [`text`](https://api.feathersui.com/current/feathers/data/GridViewCellState.html#text) is populated using [`itemToText()`](https://api.feathersui.com/current/feathers/controls/GridViewColumn.html#itemToText) from the column.
+- [`data`](https://api.feathersui.com/current/feathers/data/GridViewCellState.html#data) is the row from the collection.
+- [`enabled`](https://api.feathersui.com/current/feathers/data/GridViewCellState.html#enabled) indicates if the cell renderer should be enabled or not.
+- [`owner`](https://api.feathersui.com/current/feathers/data/GridViewCellState.html#owner) is the [`GridView`](https://api.feathersui.com/current/feathers/controls/GridView.html) that contains the item.
+- [`rowIndex`](https://api.feathersui.com/current/feathers/data/GridViewCellState.html#rowIndex) is the position of the row within the collection.
 - [`selected`](https://api.feathersui.com/current/feathers/data/GridViewCellState.html#selected) is populated by comparing to [`selectedItem`](https://api.feathersui.com/current/feathers/controls/GridView.html#selectedItem).
+- [`text`](https://api.feathersui.com/current/feathers/data/GridViewCellState.html#text) is populated using [`itemToText()`](https://api.feathersui.com/current/feathers/controls/GridViewColumn.html#itemToText) from the column.
 
 In this case, the value of [`text`](https://api.feathersui.com/current/feathers/data/GridViewCellState.html#text) is displayed by the [`Label`](./label.md), and the `icon` field from [`data`](https://api.feathersui.com/current/feathers/data/GridViewCellState.html#data) (remember the example row from above, with `item` and `icon` fields) is displayed by the [`AssetLoader`](./asset-loader.md).
 

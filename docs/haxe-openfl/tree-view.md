@@ -160,11 +160,13 @@ When the [`update()`](https://api.feathersui.com/current/feathers/utils/DisplayO
 
 - [`data`](https://api.feathersui.com/current/feathers/data/TreeViewItemState.html#data) is the item from the collection.
 - [`branch`](https://api.feathersui.com/current/feathers/data/TreeViewItemState.html#branch) indicates if the item is a branch or not.
-- [`opened`](https://api.feathersui.com/current/feathers/data/TreeViewItemState.html#opened) indicates if a branch is opened or not.
-- [`location`](https://api.feathersui.com/current/feathers/data/TreeViewItemState.html#location) is the position of the item within the collection.
+- [`enabled`](https://api.feathersui.com/current/feathers/data/TreeViewItemState.html#enabled) indicates if the item renderer should be enabled or not.
 - [`layoutIndex`](https://api.feathersui.com/current/feathers/data/TreeViewItemState.html#layoutIndex) is the position of the item within the layout.
-- [`text`](https://api.feathersui.com/current/feathers/data/TreeViewItemState.html#text) is populated using [`itemToText()`](https://api.feathersui.com/current/feathers/controls/TreeView.html#itemToText)
+- [`location`](https://api.feathersui.com/current/feathers/data/TreeViewItemState.html#location) is the position of the item within the collection.
+- [`opened`](https://api.feathersui.com/current/feathers/data/TreeViewItemState.html#opened) indicates if a branch is opened or not.
+- [`owner`](https://api.feathersui.com/current/feathers/data/TreeViewItemState.html#owner) is the [`TreeView`](https://api.feathersui.com/current/feathers/controls/TreeView.html) that contains the item.
 - [`selected`](https://api.feathersui.com/current/feathers/data/TreeViewItemState.html#selected) is populated by comparing to [`selectedItem`](https://api.feathersui.com/current/feathers/controls/TreeView.html#selectedItem).
+- [`text`](https://api.feathersui.com/current/feathers/data/TreeViewItemState.html#text) is populated using [`itemToText()`](https://api.feathersui.com/current/feathers/controls/TreeView.html#itemToText)
 
 In this case, the value of [`text`](https://api.feathersui.com/current/feathers/data/TreeViewItemState.html#text) is displayed by the [`Label`](./label.md), and the `icon` field from [`data`](https://api.feathersui.com/current/feathers/data/TreeViewItemState.html#data) (remember the example item from above, with `name` and `icon` fields) is displayed by the [`AssetLoader`](./asset-loader.md). The values of [`branch`](https://api.feathersui.com/current/feathers/data/TreeViewItemState.html#branch) and [`opened`](https://api.feathersui.com/current/feathers/data/TreeViewItemState.html#opened) are used with a [`ToggleButton`](./toggle-button.md) to display whether a branch is opened or not.
 

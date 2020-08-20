@@ -147,9 +147,11 @@ recycler.update = (itemRenderer:LayoutGroup, state:ListViewItemState) -> {
 When the [`update()`](https://api.feathersui.com/current/feathers/utils/DisplayObjectRecycler.html) method is called, it receives the item renderer and an [`ListViewItemState`](https://api.feathersui.com/current/feathers/data/ListViewItemState.html) object. [`ListViewItemState`](https://api.feathersui.com/current/feathers/data/ListViewItemState.html) has a number of useful properties.
 
 - [`data`](https://api.feathersui.com/current/feathers/data/ListViewItemState.html#data) is the item from the collection.
+- [`enabled`](https://api.feathersui.com/current/feathers/data/ListViewItemState.html#enabled) indicates if the item renderer should be enabled or not.
 - [`index`](https://api.feathersui.com/current/feathers/data/ListViewItemState.html#index) is the position of the item within the collection.
-- [`text`](https://api.feathersui.com/current/feathers/data/ListViewItemState.html#text) is populated using [`itemToText()`](https://api.feathersui.com/current/feathers/controls/ListView.html#itemToText)
+- [`owner`](https://api.feathersui.com/current/feathers/data/ListViewItemState.html#owner) is the [`ListView`](https://api.feathersui.com/current/feathers/controls/ListView.html) that contains the item.
 - [`selected`](https://api.feathersui.com/current/feathers/data/ListViewItemState.html#selected) is populated by comparing to [`selectedItem`](https://api.feathersui.com/current/feathers/controls/ListView.html#selectedItem).
+- [`text`](https://api.feathersui.com/current/feathers/data/ListViewItemState.html#text) is populated using [`itemToText()`](https://api.feathersui.com/current/feathers/controls/ListView.html#itemToText)
 
 In this case, the value of [`text`](https://api.feathersui.com/current/feathers/data/ListViewItemState.html#text) is displayed by the [`Label`](./label.md), and the `icon` field from [`data`](https://api.feathersui.com/current/feathers/data/ListViewItemState.html#data) (remember the example item from above, with `name` and `icon` fields) is displayed by the [`AssetLoader`](./asset-loader.md).
 
