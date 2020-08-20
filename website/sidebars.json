@@ -33,6 +33,7 @@
       "haxe-openfl/check",
       "haxe-openfl/combo-box",
       "haxe-openfl/grid-view",
+      "haxe-openfl/group-list-view",
       "haxe-openfl/label",
       "haxe-openfl/layout-group",
       "haxe-openfl/list-view",
