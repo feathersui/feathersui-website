@@ -126,7 +126,7 @@ However, the default item renderer cannot display the image, so a custom item re
 The following example creates a [`DisplayObjectRecycler`](https://api.feathersui.com/current/feathers/utils/DisplayObjectRecycler.html) which instantiates a [`LayoutGroup`](./layout-group.md) container. A custom item renderer may be created from any OpenFL display object. It is not strictly required to be a Feathers UI component.
 
 ```hx
-var recyler = DisplayObjectRecycler.withFunction(() -> {
+var recycler = DisplayObjectRecycler.withFunction(() -> {
     var cellRenderer = new LayoutGroup();
 
     var layout = new HorizontalLayout();
@@ -160,7 +160,7 @@ recycler.update = (cellRenderer:LayoutGroup, state:GridViewCellState) -> {
 
     label.text = state.text;
     loader.source = state.data.icon;
-});
+};
 ```
 
 When the [`update()`](https://api.feathersui.com/current/feathers/utils/DisplayObjectRecycler.html) method is called, it receives the cell renderer and an [`GridViewCellState`](https://api.feathersui.com/current/feathers/data/GridViewCellState.html) object. [`GridViewCellState`](https://api.feathersui.com/current/feathers/data/GridViewCellState.html) has a number of useful properties.
@@ -185,7 +185,7 @@ recycler.reset = (cellRenderer:LayoutGroup, state:GridViewCellState) -> {
 
     label.text = "";
     loader.source = null;
-});
+};
 ```
 
 > A [`DisplayObjectRecycler`](https://api.feathersui.com/current/feathers/utils/DisplayObjectRecycler.html) without a [`reset()`](https://api.feathersui.com/current/feathers/utils/DisplayObjectRecycler.html) method could potentially cause memory leaks or other unexpected behavior, if the same data needs to be used again later.

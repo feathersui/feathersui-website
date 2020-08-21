@@ -72,7 +72,7 @@ function setPageIndicator_ToggleButton_Styles(button:ToggleButton):Void {
 The [`toggleButtonRecycler`](https://api.feathersui.com/current/feathers/controls/PageIndicator.html#toggleButtonRecycler) property may be used to customize the creation of the toggle buttons.
 
 ```hx
-pages.toggleButtonRecycler = DisplayObjectRecyler.withFunction(() -> {
+pages.toggleButtonRecycler = DisplayObjectRecycler.withFunction(() -> {
     var button = new ToggleButton();
     // ... set styles here
     return button;
