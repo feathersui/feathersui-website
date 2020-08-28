@@ -103,9 +103,9 @@ limitations under the License.
 		<windows>
 			<versions default="32.0">
 				<versionA id="air.sdk.version.windows.32.0" version="32.0" displayVersion="32.0">
-					<server id="air.sdk.server.windows.32.0">http://airdownload.adobe.com</server>
+					<server id="air.sdk.server.windows.32.0">https://airdownload.adobe.com</server>
 					<folder id="air.sdk.folder.windows.32.0">air/win/download/32.0/</folder>
-					<path id="air.sdk.path.windows.32.0">http://airdownload.adobe.com/air/win/download/32.0/</path>
+					<path id="air.sdk.path.windows.32.0">https://airdownload.adobe.com/air/win/download/32.0/</path>
 					<file id="air.sdk.file.windows.32.0">AdobeAIRSDK.zip</file>
 				</versionA>
 			</versions>
@@ -113,9 +113,9 @@ limitations under the License.
 		<mac>
 			<versions default="32.0">
 				<versionA id="air.sdk.version.mac.32.0" version="32.0" displayVersion="32.0">
-					<server id="air.sdk.server.mac.32.0">http://airdownload.adobe.com</server>
+					<server id="air.sdk.server.mac.32.0">https://airdownload.adobe.com</server>
 					<folder id="air.sdk.folder.mac.32.0">air/mac/download/32.0/</folder>
-					<path id="air.sdk.path.mac.32.0">http://airdownload.adobe.com/air/mac/download/32.0/</path>
+					<path id="air.sdk.path.mac.32.0">https://airdownload.adobe.com/air/mac/download/32.0/</path>
 					<file id="air.sdk.file.mac.32.0">AdobeAIRSDK.dmg</file>
 				</versionA>
 			</versions>
