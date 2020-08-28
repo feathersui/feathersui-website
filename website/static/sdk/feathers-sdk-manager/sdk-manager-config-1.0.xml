@@ -122,6 +122,31 @@ limitations under the License.
 		</mac>
 	</airsdk>
 	<flashsdk>
+		<swfversion id="flash.sdk.swfversion.11.5">18</swfversion>
+		<swfversion id="flash.sdk.swfversion.11.6">19</swfversion>
+		<swfversion id="flash.sdk.swfversion.11.7">20</swfversion>
+		<swfversion id="flash.sdk.swfversion.11.8">21</swfversion>
+		<swfversion id="flash.sdk.swfversion.11.9">22</swfversion>
+		<swfversion id="flash.sdk.swfversion.12.0">23</swfversion>
+		<swfversion id="flash.sdk.swfversion.13.0">24</swfversion>
+		<swfversion id="flash.sdk.swfversion.14.0">25</swfversion>
+		<swfversion id="flash.sdk.swfversion.15.0">26</swfversion>
+		<swfversion id="flash.sdk.swfversion.16.0">27</swfversion>
+		<swfversion id="flash.sdk.swfversion.17.0">28</swfversion>
+		<swfversion id="flash.sdk.swfversion.18.0">29</swfversion>
+		<swfversion id="flash.sdk.swfversion.19.0">30</swfversion>
+		<swfversion id="flash.sdk.swfversion.20.0">31</swfversion>
+		<swfversion id="flash.sdk.swfversion.21.0">32</swfversion>
+		<swfversion id="flash.sdk.swfversion.22.0">33</swfversion>
+		<swfversion id="flash.sdk.swfversion.23.0">34</swfversion>
+		<swfversion id="flash.sdk.swfversion.24.0">35</swfversion>
+		<swfversion id="flash.sdk.swfversion.25.0">36</swfversion>
+		<swfversion id="flash.sdk.swfversion.26.0">37</swfversion>
+		<swfversion id="flash.sdk.swfversion.27.0">38</swfversion>
+		<swfversion id="flash.sdk.swfversion.28.0">39</swfversion>
+		<swfversion id="flash.sdk.swfversion.29.0">40</swfversion>
+		<swfversion id="flash.sdk.swfversion.30.0">41</swfversion>
+		<swfversion id="flash.sdk.swfversion.31.0">42</swfversion>
 		<versions default="32.0">
 			<versionA id="flash.sdk.version.32.0" version="32.0" displayVersion="32.0">
 				<server id="flash.sdk.server.32.0">https://fpdownload.macromedia.com</server>
