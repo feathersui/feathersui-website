@@ -3,7 +3,7 @@ const CompLibrary = require("../../core/CompLibrary.js");
 const Container = CompLibrary.Container;
 const MarkdownBlock = CompLibrary.MarkdownBlock;
 
-const Donate = props => (
+const Donate = (props) => (
   <div className="mainContainer documentContainer">
     <Container>
       <div className="prose">
@@ -22,7 +22,7 @@ Josh Tynjala, creator of Feathers UI`}
           target="_top"
         >
           <input type="hidden" name="cmd" value="_s-xclick" />
-          <input type="hidden" name="hosted_button_id" value="RKMKQKP678CWY" />
+          <input type="hidden" name="hosted_button_id" value="9A9EB6YEHRNBN" />
           <input
             type="image"
             src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
