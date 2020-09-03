@@ -64,7 +64,7 @@ check.textFormat = new TextFormat("Helvetica", 20, 0x3c3c3c);
 If the check's text should use different font styles when the check is selected, pass a [`TextFormat`](https://api.openfl.org/openfl/text/TextFormat.html) to the [`selectedTextFormat`](https://api.feathersui.com/current/feathers/controls/ToggleButton.html#selectedTextFormat) property.
 
 ```hx
-check.textFormat = new TextFormat("Helvetica", 20, 0x9a9a9a, true);
+check.selectedTextFormat = new TextFormat("Helvetica", 20, 0x9a9a9a, true);
 ```
 
 Finally, the check's text may use different font styles in a more fine-grained matter — by targeting an exact state. Use the [`setTextFormatForState()`](https://api.feathersui.com/current/feathers/controls/ToggleButton.html#setTextFormatForState) method to pass in a state value and a [`TextFormat`](https://api.openfl.org/openfl/text/TextFormat.html).
