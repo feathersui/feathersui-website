@@ -76,6 +76,7 @@
     "Miscellaneous": [
       "haxe-openfl/cli",
       "haxe-openfl/data-collections",
+      "haxe-openfl/haxedef-options",
       "haxe-openfl/prerelease"
     ]
   },
