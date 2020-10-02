@@ -1,4 +1,4 @@
-# feathersui-website
+# Feathersui-website
 
 Source code for the [Feathers UI website](https://feathersui.com/).
 
