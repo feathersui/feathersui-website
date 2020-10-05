@@ -20,7 +20,10 @@ Feathers UI provides the following implementations of a flat collection type.
 
 ## Hierarchical collections
 
-The [`TreeView`](./tree-view.md) component may render a _hierarchical_ collection where items can be nested.
+Some UI components may render a "hierarchical" tree of items.
+
+- [`GroupListView`](./group-list-view.md)
+- [`TreeView`](./tree-view.md)
 
 Feathers UI provides the following implementations of a hierarchical collection type.
 
