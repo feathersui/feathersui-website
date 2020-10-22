@@ -7,6 +7,8 @@ A _theme_ packages up styling code into a single unit that may be used to modify
 
 Feathers UI provides a default theme, named _Steel_, which provides basic styles to all of the core UI components. [A custom theme may be created](./custom-themes.md) to replace the styles from the default theme.
 
+> 🚧 **Under construction!** This documentation is still being written.
+
 ## Related Links
 
 - [Create a custom Feathers UI theme](./custom-themes.md)

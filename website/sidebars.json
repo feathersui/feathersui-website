@@ -71,7 +71,9 @@
       "haxe-openfl/vertical-distributed-layout"
     ],
     "Styles and Skins": [
-      "haxe-openfl/graphics-api-skins",
+      "haxe-openfl/intro-to-skins",
+      "haxe-openfl/shape-skins",
+      "haxe-openfl/custom-programmatic-skins",
       "haxe-openfl/themes",
       "haxe-openfl/custom-themes"
     ],
