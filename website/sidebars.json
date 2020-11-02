@@ -32,6 +32,7 @@
       "haxe-openfl/callout",
       "haxe-openfl/check",
       "haxe-openfl/combo-box",
+      "haxe-openfl/divided-box",
       "haxe-openfl/drawer",
       "haxe-openfl/grid-view",
       "haxe-openfl/group-list-view",
