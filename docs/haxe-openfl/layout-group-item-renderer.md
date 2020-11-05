@@ -9,5 +9,6 @@ The [`LayoutGroupItemRenderer`](https://api.feathersui.com/current/feathers/cont
 
 ## Related Links
 
-- [`feathers.controls.LayoutGroupItemRenderer` API Documentation](https://api.feathersui.com/current/feathers/controls/dataRenderers/LayoutGroupItemRenderer.html)
+- [`feathers.controls.dataRenderers.LayoutGroupItemRenderer` API Documentation](https://api.feathersui.com/current/feathers/controls/dataRenderers/LayoutGroupItemRenderer.html)
 - [How to use the `ItemRenderer` component](./item-renderer.md)
+- [Create custom item renderers for data containers](./custom-item-renderers.md)

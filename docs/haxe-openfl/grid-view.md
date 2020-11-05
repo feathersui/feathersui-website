@@ -284,3 +284,4 @@ gridView.scrollBarYFactory = () -> {
 ## Related Links
 
 - [`feathers.controls.GridView` API Documentation](https://api.feathersui.com/current/feathers/controls/GridView.html)
+- [Create custom item renderers for data containers](./custom-item-renderers.md)

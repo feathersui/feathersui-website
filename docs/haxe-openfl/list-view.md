@@ -277,7 +277,4 @@ listView.scrollBarYFactory = () -> {
 ## Related Links
 
 - [`feathers.controls.ListView` API Documentation](https://api.feathersui.com/current/feathers/controls/ListView.html)
-
-```
-
-```
+- [Create custom item renderers for data containers](./custom-item-renderers.md)

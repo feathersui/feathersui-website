@@ -292,3 +292,4 @@ treeView.scrollBarYFactory = () -> {
 ## Related Links
 
 - [`feathers.controls.TreeView` API Documentation](https://api.feathersui.com/current/feathers/controls/TreeView.html)
+- [Create custom item renderers for data containers](./custom-item-renderers.md)

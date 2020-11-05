@@ -285,3 +285,4 @@ groupListView.scrollBarYFactory = () -> {
 ## Related Links
 
 - [`feathers.controls.GroupListView` API Documentation](https://api.feathersui.com/current/feathers/controls/GroupListView.html)
+- [Create custom item renderers for data containers](./custom-item-renderers.md)
