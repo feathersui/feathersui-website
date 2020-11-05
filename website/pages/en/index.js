@@ -68,7 +68,10 @@ class HomeSplash extends React.Component {
 class Index extends React.Component {
   render() {
     const { config: siteConfig, language = "" } = this.props;
-    const { baseUrl } = siteConfig;
+    const { baseUrl, docsUrl } = siteConfig;
+    const docsPart = `${docsUrl ? `${docsUrl}/` : ""}`;
+    const langPart = `${language ? `${language}/` : ""}`;
+    const docUrl = (doc) => `${baseUrl}${docsPart}${langPart}${doc}`;
 
     const Block = (props) => (
       <Container
@@ -89,8 +92,10 @@ class Index extends React.Component {
         {[
           {
             title: "Dozens of UI controls",
-            content:
-              "Mix and match a variety of components, including buttons, scrolling lists, sliders, toggle switches, layout containers, navigators, and more.",
+            content: `
+Mix and match a variety of UI components, including buttons, scrolling lists, sliders, toggle switches, layout containers, navigators, and more.
+
+[List of UI components →](${docUrl("haxe-openfl/ui-components")})`,
             image: `${baseUrl}img/undraw_product_teardown_elol.svg`,
             imageAlign: "top",
           },
@@ -151,8 +156,10 @@ Creative multimedia experiences typically require a unique visual style to match
 The core Feathers UI library — with dozens of user interface controls — doesn't cost anything. Everyone has access to the complete source code to read, customize, share, and extend.
 
 - Full access to the framework internals and architecture
-- [MIT-licensed](https://github.com/BowlerHatLLC/feathersui-openfl/blob/master/LICENSE.md) — Use in both commercial and open source projects
-- [Fork on Github](https://github.com/BowlerHatLLC/feathersui-openfl) and submit pull requests`,
+- MIT-licensed — Use in both commercial and open source projects
+- Fork and submit pull requests on Github
+
+[Go to Github project →](https://github.com/BowlerHatLLC/feathersui-openfl)`,
             image: `${baseUrl}img/undraw_code_typing_7jnv.svg`,
             imageAlign: "left",
           },
