@@ -8,7 +8,7 @@ With a few free extensions, [Visual Studio Code](https://code.visualstudio.com/)
 
 ## Prerequisites
 
-- [Install Feathers UI from Haxelib](installation.md)
+- [Install Feathers UI from Haxelib](./installation.md)
 - [Install the Feathers UI Extension Pack for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=bowlerhatllc.vscode-feathersui-extension-pack)
 
 ## Create a project

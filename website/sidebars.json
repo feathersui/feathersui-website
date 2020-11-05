@@ -1,11 +1,13 @@
 {
   "haxe-openfl": {
-    "Getting started": [
+    "Introduction": [
+      "haxe-openfl/getting-started",
       "haxe-openfl/installation",
       {
         "type": "subcategory",
         "label": "Create a new project in…",
         "ids": [
+          "haxe-openfl/terminal-new-project",
           "haxe-openfl/haxedevelop",
           "haxe-openfl/moonshine-ide",
           "haxe-openfl/visual-studio-code"
@@ -25,7 +27,8 @@
       },
       "haxe-openfl/openfl-intro"
     ],
-    "All Components": [
+    "UI Components": [
+      "haxe-openfl/ui-components",
       "haxe-openfl/application",
       "haxe-openfl/asset-loader",
       "haxe-openfl/button",

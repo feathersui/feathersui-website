@@ -8,7 +8,7 @@ sidebar_label: HaxeDevelop
 
 ## Prerequisites
 
-- [Install Feathers UI from Haxelib](installation.md)
+- [Install Feathers UI from Haxelib](./installation.md)
 
 ## Create a project
 
