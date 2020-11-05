@@ -23,8 +23,6 @@ The newly created project will include the following defaults:
 - A standard [OpenFL _project.xml_ file](https://lime.software/docs/project-files/xml-format/)
 - A _src_ folder for Haxe source files
 - A default icon
-- A build [task](https://code.visualstudio.com/docs/editor/tasks) for compiling the project
-- A [launch configuration](https://code.visualstudio.com/docs/editor/debugging#_launch-configurations) for debugging
 
 ## Run the project
 
