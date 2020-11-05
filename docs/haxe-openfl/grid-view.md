@@ -101,11 +101,9 @@ gridView.dataProvider.removeAt(0);
 
 ## Cell renderers
 
-A _cell renderer_ is a Feathers UI component that renders one of the fields from a single row displayed in a [`GridView`](https://api.feathersui.com/current/feathers/controls/GridView.html) component. In other words, a [`GridView`](https://api.feathersui.com/current/feathers/controls/GridView.html) typically contains many cell renderers in a two-dimensional grid — with each one rendering a different field from each row in the data provider.
+A _cell renderer_ is a Feathers UI component that displays one of the fields from a single row displayed in a [`GridView`](https://api.feathersui.com/current/feathers/controls/GridView.html) component. In other words, a [`GridView`](https://api.feathersui.com/current/feathers/controls/GridView.html) typically contains many cell renderers in a two-dimensional grid — with each one rendering a different field from each row in the collection.
 
-Feathers UI provides a default cell renderer that simply displays text. However, components like [`GridView`](https://api.feathersui.com/current/feathers/controls/GridView.html) may also use custom cell renderers, which allows developers to render the grid view's data in infinite unique ways.
-
-Both [`GridView`](https://api.feathersui.com/current/feathers/controls/GridView.html) and [`GridViewColumn`](https://api.feathersui.com/current/feathers/controls/GridViewColumn.html) define `cellRendererRecycler` properties. On [`GridViewColumn`](https://api.feathersui.com/current/feathers/controls/GridViewColumn.html), the [`cellRendererRecycler`](https://api.feathersui.com/current/feathers/controls/GridViewColumn.html#cellRendererRecycler) property may be used to customize the cell renderers in that specific column. On [`GridView`](https://api.feathersui.com/current/feathers/controls/GridView.html), the [`cellRendererRecycler`](https://api.feathersui.com/current/feathers/controls/GridView.html#cellRendererRecycler) property may be used to customize the default cell renderers used when a particular column doesn't have a default cell renderer.
+Feathers UI provides a default [`ItemRenderer`](./item-renderer.md) class, which can display data in many different ways that cover a variety of common use-cases. However, components like [`GridView`](https://api.feathersui.com/current/feathers/controls/GridView.html) also support [custom cell renderers](./custom-item-renderers.md), which allow developers to render the grid view's data in infinite unique ways.
 
 Consider a collection of items with the following format.
 
@@ -113,21 +111,13 @@ Consider a collection of items with the following format.
 { item: "Gala Apple", dept: "Frozen", price: "3.99", icon: "https://example.com/img/pizza.png" }
 ```
 
-The examples above demonstrated how to define an [`itemToText()`](https://api.feathersui.com/current/feathers/controls/GridViewColumn.html#itemToText) method on [`GridViewColumn`](https://api.feathersui.com/current/feathers/controls/GridViewColumn.html) to interpret the text. In this case, the `item` field is used.
+While the default [`ItemRenderer`](./item-renderer.md) class can easily display some text and an image, creating a custom item renderer for this simple data will be a good learning exercise.
 
-```hx
-new GridViewColumn("Item", (data) -> data.item)
-```
-
-However, the default item renderer cannot display the image, so a custom item renderer is required if we want to display both the item name and an image in the same cell.
-
-> Note: Future updates to Feathers UI will probably contain a more powerful default item renderer that _can_ display an image. For now, the best option is to create a custom item renderer.
-
-The following example creates a [`DisplayObjectRecycler`](https://api.feathersui.com/current/feathers/utils/DisplayObjectRecycler.html) which instantiates a [`LayoutGroup`](./layout-group.md) container. A custom item renderer may be created from any OpenFL display object. It is not strictly required to be a Feathers UI component.
+A custom cell renderer designed to display this data might use a [`Label`](./label.md) to display one of the strings, and an [`AssetLoader`](./asset-loader.md) to display the image. The following example creates a [`DisplayObjectRecycler`](https://api.feathersui.com/current/feathers/utils/DisplayObjectRecycler.html) which instantiates these components and adds them to a [`LayoutGroupItemRenderer`](./layout-group-item-renderer.md) — a special base class for custom cell renderers.
 
 ```hx
 var recycler = DisplayObjectRecycler.withFunction(() -> {
-    var cellRenderer = new LayoutGroup();
+    var cellRenderer = new LayoutGroupItemRenderer();
 
     var layout = new HorizontalLayout();
     layout.gap = 6.0;
@@ -147,14 +137,21 @@ var recycler = DisplayObjectRecycler.withFunction(() -> {
 
     return cellRenderer;
 });
+```
+
+> Developers are not required to use the [`LayoutGroupItemRenderer`](./layout-group-item-renderer.md) class. In fact, a custom cell renderer may be created from any OpenFL display object, including primitives like [`openfl.display.Sprite`](https://api.openfl.org/openfl/display/Sprite.html) and all other Feathers UI components.
+
+Both [`GridView`](https://api.feathersui.com/current/feathers/controls/GridView.html) and [`GridViewColumn`](https://api.feathersui.com/current/feathers/controls/GridViewColumn.html) define `cellRendererRecycler` properties. On [`GridViewColumn`](https://api.feathersui.com/current/feathers/controls/GridViewColumn.html), the [`cellRendererRecycler`](https://api.feathersui.com/current/feathers/controls/GridViewColumn.html#cellRendererRecycler) property may be used to customize the cell renderers in that specific column. On [`GridView`](https://api.feathersui.com/current/feathers/controls/GridView.html), the [`cellRendererRecycler`](https://api.feathersui.com/current/feathers/controls/GridView.html#cellRendererRecycler) property may be used to customize the default cell renderers used when a particular column doesn't have a default cell renderer.
+
+```hx
 var column = new GridViewColumn("Item", (data) -> data.item);
 column.cellRendererRecycler = recycler;
 ```
 
-This creates the cell renderer, but it doesn't interpret the data yet. A custom [`update()`](https://api.feathersui.com/current/feathers/utils/DisplayObjectRecycler.html) method on the [`DisplayObjectRecycler`](https://api.feathersui.com/current/feathers/utils/DisplayObjectRecycler.html) can do that.
+So far, the [`DisplayObjectRecycler`](https://api.feathersui.com/current/feathers/utils/DisplayObjectRecycler.html) creates the cell renderer, but it doesn't understand how to interpret the data yet. A custom [`update()`](https://api.feathersui.com/current/feathers/utils/DisplayObjectRecycler.html) method on the recycler can do that.
 
 ```hx
-recycler.update = (cellRenderer:LayoutGroup, state:GridViewCellState) -> {
+recycler.update = (cellRenderer:LayoutGroupItemRenderer, state:GridViewCellState) -> {
     var label = cast(cellRenderer.getChildByName("label"), Label);
     var loader = cast(cellRenderer.getChildByName("loader"), AssetLoader);
 
@@ -179,7 +176,7 @@ In this case, the value of [`text`](https://api.feathersui.com/current/feathers/
 It's always a good practice to provide a [`reset()`](https://api.feathersui.com/current/feathers/utils/DisplayObjectRecycler.html) method to the [`DisplayObjectRecycler`](https://api.feathersui.com/current/feathers/utils/DisplayObjectRecycler.html), which will clean up a custom cell renderer when it is no longer used by the [`GridView`](https://api.feathersui.com/current/feathers/controls/GridView.html).
 
 ```
-recycler.reset = (cellRenderer:LayoutGroup, state:GridViewCellState) -> {
+recycler.reset = (cellRenderer:LayoutGroupItemRenderer, state:GridViewCellState) -> {
     var label = cast(cellRenderer.getChildByName("label"), Label);
     var loader = cast(cellRenderer.getChildByName("loader"), AssetLoader);
 
@@ -188,7 +185,7 @@ recycler.reset = (cellRenderer:LayoutGroup, state:GridViewCellState) -> {
 };
 ```
 
-> A [`DisplayObjectRecycler`](https://api.feathersui.com/current/feathers/utils/DisplayObjectRecycler.html) without a [`reset()`](https://api.feathersui.com/current/feathers/utils/DisplayObjectRecycler.html) method could potentially cause memory leaks or other unexpected behavior, if the same data needs to be used again later.
+> **Warning:** A [`DisplayObjectRecycler`](https://api.feathersui.com/current/feathers/utils/DisplayObjectRecycler.html) without a [`reset()`](https://api.feathersui.com/current/feathers/utils/DisplayObjectRecycler.html) method could potentially cause memory leaks or other unexpected behavior, if the same data needs to be used again later.
 
 ## Styles
 

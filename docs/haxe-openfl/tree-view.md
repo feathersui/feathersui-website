@@ -86,11 +86,9 @@ treeView.dataProvider.removeAt(locationToRemove);
 
 ## Item renderers
 
-An _item renderer_ is a Feathers UI component that renders a single item from a [data collection](./data-collections.md) inside a component like [`TreeView`](https://api.feathersui.com/current/feathers/controls/TreeView.html). In other words, a [`TreeView`](https://api.feathersui.com/current/feathers/controls/TreeView.html) typically contains multiple item renderers — with each one rendering a different item from the data provider.
+An _item renderer_ is a Feathers UI component that displays a single item from a [data collection](./data-collections.md) inside a component like [`TreeView`](https://api.feathersui.com/current/feathers/controls/TreeView.html) and [`ListView`](https://api.feathersui.com/current/feathers/controls/ListView.html). In other words, a [`TreeView`](https://api.feathersui.com/current/feathers/controls/TreeView.html) typically contains multiple item renderers — with each one rendering a different item from the collection.
 
-Feathers UI provides a default item renderer that simply displays text. However, components like [`TreeView`](https://api.feathersui.com/current/feathers/controls/TreeView.html) may also use custom item renderers, which allows developers to render the list view's data in infinite unique ways.
-
-The [`itemRendererRecycler`](https://api.feathersui.com/current/feathers/controls/TreeView.html#itemRendererRecycler) property may be used to customize the item renderers in a [`TreeView`](https://api.feathersui.com/current/feathers/controls/TreeView.html).
+Feathers UI provides a default [`ItemRenderer`](./item-renderer.md) class, which can display data in many different ways that cover a variety of common use-cases. However, components like [`TreeView`](https://api.feathersui.com/current/feathers/controls/TreeView.html) also support [custom item renderers](./custom-item-renderers.md), which allow developers to render the tree view's data in infinite unique ways.
 
 Consider a collection of items with the following format.
 
@@ -98,23 +96,13 @@ Consider a collection of items with the following format.
 new TreeNode({ name: "Pizza", icon: "https://example.com/img/pizza.png" })
 ```
 
-The examples above demonstrated how to use an [`itemToText()`](https://api.feathersui.com/current/feathers/controls/TreeView.html#itemToText) method to interpret the text. In this case, the `name` field is used.
+While the default [`ItemRenderer`](./item-renderer.md) class can easily display some text and an image, creating a custom item renderer for this simple data will be a good learning exercise.
 
-```hx
-treeView.itemToText = function(item:TreeNode<Dynamic>):String {
-    return item.data.name;
-};
-```
-
-However, the default item renderer cannot display the image, so a custom item renderer is required.
-
-> Note: Future updates to Feathers UI will probably contain a more powerful default item renderer that _can_ display an image. For now, the best option is to create a custom item renderer.
-
-The following example creates a [`DisplayObjectRecycler`](https://api.feathersui.com/current/feathers/utils/DisplayObjectRecycler.html) which instantiates a [`LayoutGroup`](./layout-group.md) container. A custom item renderer may be created from any OpenFL display object. It is not strictly required to be a Feathers UI component.
+A custom item renderer designed to display this data might use a [`Label`](./label.md) to display the text, and an [`AssetLoader`](./asset-loader.md) to display the image. The following example creates a [`DisplayObjectRecycler`](https://api.feathersui.com/current/feathers/utils/DisplayObjectRecycler.html) which instantiates these components and adds them to a [`LayoutGroupItemRenderer`](./layout-group-item-renderer.md) — a special base class for custom item renderers.
 
 ```hx
 var recycler = DisplayObjectRecycler.withFunction(() -> {
-    var itemRenderer = new LayoutGroup();
+    var itemRenderer = new LayoutGroupItemRenderer();
 
     var layout = new HorizontalLayout();
     layout.gap = 6.0;
@@ -138,13 +126,20 @@ var recycler = DisplayObjectRecycler.withFunction(() -> {
 
     return itemRenderer;
 });
+```
+
+> Developers are not required to use the [`LayoutGroupItemRenderer`](./layout-group-item-renderer.md) class. In fact, a custom item renderer may be created from any OpenFL display object, including primitives like [`openfl.display.Sprite`](https://api.openfl.org/openfl/display/Sprite.html) and all other Feathers UI components.
+
+Pass the [`DisplayObjectRecycler`](https://api.feathersui.com/current/feathers/utils/DisplayObjectRecycler.html) to the [`itemRendererRecycler`](https://api.feathersui.com/current/feathers/controls/TreeView.html#itemRendererRecycler) property.
+
+```hx
 treeView.itemRendererRecycler = recycler;
 ```
 
-This creates the item renderer, but it doesn't interpret the data yet. A custom [`update()`](https://api.feathersui.com/current/feathers/utils/DisplayObjectRecycler.html) method on the [`DisplayObjectRecycler`](https://api.feathersui.com/current/feathers/utils/DisplayObjectRecycler.html) can do that.
+So far, the [`DisplayObjectRecycler`](https://api.feathersui.com/current/feathers/utils/DisplayObjectRecycler.html) creates the item renderer, but it doesn't understand how to interpret the data yet. A custom [`update()`](https://api.feathersui.com/current/feathers/utils/DisplayObjectRecycler.html) method on the recycler can do that.
 
 ```hx
-recycler.update = (itemRenderer:LayoutGroup, state:TreeViewItemState) -> {
+recycler.update = (itemRenderer:LayoutGroupItemRenderer, state:TreeViewItemState) -> {
     var openedToggle = cast(itemRenderer.getChildByName("openedToggle"), ToggleButton);
     var label = cast(itemRenderer.getChildByName("label"), Label);
     var loader = cast(itemRenderer.getChildByName("loader"), AssetLoader);
@@ -168,12 +163,18 @@ When the [`update()`](https://api.feathersui.com/current/feathers/utils/DisplayO
 - [`selected`](https://api.feathersui.com/current/feathers/data/TreeViewItemState.html#selected) is populated by comparing to [`selectedItem`](https://api.feathersui.com/current/feathers/controls/TreeView.html#selectedItem).
 - [`text`](https://api.feathersui.com/current/feathers/data/TreeViewItemState.html#text) is populated using [`itemToText()`](https://api.feathersui.com/current/feathers/controls/TreeView.html#itemToText)
 
-In this case, the value of [`text`](https://api.feathersui.com/current/feathers/data/TreeViewItemState.html#text) is displayed by the [`Label`](./label.md), and the `icon` field from [`data`](https://api.feathersui.com/current/feathers/data/TreeViewItemState.html#data) (remember the example item from above, with `name` and `icon` fields) is displayed by the [`AssetLoader`](./asset-loader.md). The values of [`branch`](https://api.feathersui.com/current/feathers/data/TreeViewItemState.html#branch) and [`opened`](https://api.feathersui.com/current/feathers/data/TreeViewItemState.html#opened) are used with a [`ToggleButton`](./toggle-button.md) to display whether a branch is opened or not.
+In this case, the value of [`text`](https://api.feathersui.com/current/feathers/data/TreeViewItemState.html#text) is displayed by the [`Label`](./label.md), and the `icon` field from [`data`](https://api.feathersui.com/current/feathers/data/TreeViewItemState.html#data) (remember the example item from above, with `name` and `icon` fields) is displayed by the [`AssetLoader`](./asset-loader.md). The values of [`branch`](https://api.feathersui.com/current/feathers/data/TreeViewItemState.html#branch) and [`opened`](https://api.feathersui.com/current/feathers/data/TreeViewItemState.html#opened) are used with a [`ToggleButton`](./toggle-button.md) to display whether a branch is opened or not. Obviously, we'll need an [`itemToText()`](https://api.feathersui.com/current/feathers/controls/ListView.html#itemToText) function to populate the [`text`](https://api.feathersui.com/current/feathers/data/ListViewItemState.html#text) value from the `name` field.
+
+```hx
+treeView.itemToText = function(item:TreeNode<Dynamic>):String {
+    return item.data.name;
+};
+```
 
 It's always a good practice to provide a [`reset()`](https://api.feathersui.com/current/feathers/utils/DisplayObjectRecycler.html) method to the [`DisplayObjectRecycler`](https://api.feathersui.com/current/feathers/utils/DisplayObjectRecycler.html), which will clean up a custom item renderer when it is no longer used by the [`TreeView`](https://api.feathersui.com/current/feathers/controls/TreeView.html).
 
 ```
-recycler.reset = (itemRenderer:LayoutGroup, state:TreeViewItemState) -> {
+recycler.reset = (itemRenderer:LayoutGroupItemRenderer, state:TreeViewItemState) -> {
     var label = cast(itemRenderer.getChildByName("label"), Label);
     var loader = cast(itemRenderer.getChildByName("loader"), AssetLoader);
 
@@ -182,7 +183,7 @@ recycler.reset = (itemRenderer:LayoutGroup, state:TreeViewItemState) -> {
 };
 ```
 
-> A [`DisplayObjectRecycler`](https://api.feathersui.com/current/feathers/utils/DisplayObjectRecycler.html) without a [`reset()`](https://api.feathersui.com/current/feathers/utils/DisplayObjectRecycler.html) method could potentially cause memory leaks or other unexpected behavior, if the same data needs to be used again later.
+> **Warning:** A [`DisplayObjectRecycler`](https://api.feathersui.com/current/feathers/utils/DisplayObjectRecycler.html) without a [`reset()`](https://api.feathersui.com/current/feathers/utils/DisplayObjectRecycler.html) method could potentially cause memory leaks or other unexpected behavior, if the same data needs to be used again later.
 
 ## Styles
 
