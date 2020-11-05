@@ -21,11 +21,23 @@ If a class-based custom item renderers implements certain interfaces, the data c
 
 A few more interfaces are designed for a specific container only and will be ignored by other containers.
 
-- [`IGridViewCellRenderer`](https://api.feathersui.com/current/feathers/controls/dataRenderers/IGridViewCellRenderer.html) - automtically updates the `columnIndex`, `rowIndex`, `column`, and `gridViewOwner` properties.
-- [`IGridViewHeaderRenderer`](https://api.feathersui.com/current/feathers/controls/dataRenderers/IGridViewHeaderRenderer.html) - automtically updates the `columnIndex`, `column`, and `gridViewOwner` properties.
-- [`IGroupListViewItemRenderer`](https://api.feathersui.com/current/feathers/controls/dataRenderers/IGroupListViewItemRenderer.html) - automtically updates the `location` and `groupListViewOwner` properties.
-- [`IListViewItemRenderer`](https://api.feathersui.com/current/feathers/controls/dataRenderers/IListViewItemRenderer.html) - automtically updates the `index` and `listViewOwner` properties.
-- [`ITreeViewItemRenderer`](https://api.feathersui.com/current/feathers/controls/dataRenderers/ITreeViewItemRenderer.html) - automtically updates the `location`, `branch` and `treeViewOwner` properties.
+### GridView
+
+- [`IGridViewCellRenderer`](https://api.feathersui.com/current/feathers/controls/dataRenderers/IGridViewCellRenderer.html) - The [`GridView`](./grid-view) automatically updates the `columnIndex`, `rowIndex`, `column`, and `gridViewOwner` properties.
+- [`IGridViewHeaderRenderer`](https://api.feathersui.com/current/feathers/controls/dataRenderers/IGridViewHeaderRenderer.html) - The [`GridView`](./grid-view) automatically updates the `columnIndex`, `column`, and `gridViewOwner` properties.
+- [`IPointerDelegate`](https://api.feathersui.com/current/feathers/core/IPointerDelegate.html) - The [`GridView`](./grid-view) automatically updates the `pointerTarget` property so that all cell renderers in a row react to the same mouse and touch events.
+
+### `GroupListView`
+
+- [`IGroupListViewItemRenderer`](https://api.feathersui.com/current/feathers/controls/dataRenderers/IGroupListViewItemRenderer.html) - The [`GroupListView`](./group-list-view) automatically updates the `location` and `groupListViewOwner` properties.
+
+### `ListView`
+
+- [`IListViewItemRenderer`](https://api.feathersui.com/current/feathers/controls/dataRenderers/IListViewItemRenderer.html) - The [`ListView`](./list-view) automatically updates the `index` and `listViewOwner` properties.
+
+### `TreeView`
+
+- [`ITreeViewItemRenderer`](https://api.feathersui.com/current/feathers/controls/dataRenderers/ITreeViewItemRenderer.html) - The [`TreeView`](./tree-view) automatically updates the `location`, `branch` and `treeViewOwner` properties.
 
 ## Related Links
 
