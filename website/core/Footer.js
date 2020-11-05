@@ -81,6 +81,48 @@ class Footer extends React.Component {
             <h5>
               <a
                 href={this.docUrl(
+                  "haxe-openfl",
+                  this.props.language == "en" ? undefined : this.props.language
+                )}
+              >
+                Haxe / OpenFL
+              </a>
+            </h5>
+            <ul>
+              <li>
+                <a
+                  href={this.docUrl(
+                    "haxe-openfl/getting-started",
+                    this.props.language == "en"
+                      ? undefined
+                      : this.props.language
+                  )}
+                >
+                  Documentation
+                </a>
+              </li>
+              <li>
+                <a href="https://api.feathersui.com/">API Reference</a>
+              </li>
+              <li>
+                <a href="/samples/haxe-openfl/">Samples</a>
+              </li>
+              <li>
+                <a href="https://github.com/BowlerHatLLC/feathersui-openfl">
+                  GitHub
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/BowlerHatLLC/feathersui-openfl/issues">
+                  Issue Tracker
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h5>
+              <a
+                href={this.docUrl(
                   "as3-starling",
                   this.props.language == "en" ? undefined : this.props.language
                 )}
@@ -144,48 +186,6 @@ class Footer extends React.Component {
               <li>
                 <a href="https://github.com/BowlerHatLLC/feathers-sdk">
                   GitHub
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h5>
-              <a
-                href={this.docUrl(
-                  "haxe-openfl",
-                  this.props.language == "en" ? undefined : this.props.language
-                )}
-              >
-                Haxe / OpenFL
-              </a>
-            </h5>
-            <ul>
-              <li>
-                <a
-                  href={this.docUrl(
-                    "haxe-openfl/getting-started",
-                    this.props.language == "en"
-                      ? undefined
-                      : this.props.language
-                  )}
-                >
-                  Documentation
-                </a>
-              </li>
-              <li>
-                <a href="https://api.feathersui.com/">API Reference</a>
-              </li>
-              <li>
-                <a href="/samples/haxe-openfl/">Samples</a>
-              </li>
-              <li>
-                <a href="https://github.com/BowlerHatLLC/feathersui-openfl">
-                  GitHub
-                </a>
-              </li>
-              <li>
-                <a href="https://github.com/BowlerHatLLC/feathersui-openfl/issues">
-                  Issue Tracker
                 </a>
               </li>
             </ul>
