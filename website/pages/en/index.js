@@ -9,9 +9,9 @@ class HomeSplash extends React.Component {
     const { baseUrl, docsUrl } = siteConfig;
     const docsPart = `${docsUrl ? `${docsUrl}/` : ""}`;
     const langPart = `${language ? `${language}/` : ""}`;
-    const docUrl = doc => `${baseUrl}${docsPart}${langPart}${doc}`;
+    const docUrl = (doc) => `${baseUrl}${docsPart}${langPart}${doc}`;
 
-    const SplashContainer = props => (
+    const SplashContainer = (props) => (
       <div className="homeContainer">
         <div className="homeSplashFade">
           <div className="wrapper homeWrapper">{props.children}</div>
@@ -26,7 +26,7 @@ class HomeSplash extends React.Component {
       </h2>
     );
 
-    const PromoSection = props => (
+    const PromoSection = (props) => (
       <div className="section promoSection">
         <div className="promoRow">
           <div className="pluginRowBlock">{props.children}</div>
@@ -34,7 +34,7 @@ class HomeSplash extends React.Component {
       </div>
     );
 
-    const Button = props => (
+    const Button = (props) => (
       <div className="buttonWrapper">
         <a className="button" href={props.href} target={props.target}>
           {props.children}
@@ -47,12 +47,17 @@ class HomeSplash extends React.Component {
         <div className="inner">
           <ProjectTitle siteConfig={siteConfig} />
           <PromoSection>
-            <Button href={docUrl("as3-starling/getting-started")}>
-              Get Started AS3/Starling
+            <Button href={docUrl("haxe-openfl/getting-started")}>
+              Get Started
             </Button>
-            <Button href={docUrl("haxe-openfl/installation")}>
-              Get Started Haxe/OpenFL (Preview)
-            </Button>
+            <div className="buttonWrapper">
+              <a
+                className="button quietButton"
+                href={docUrl("haxe-openfl/installation")}
+              >
+                Installation →
+              </a>
+            </div>
           </PromoSection>
         </div>
       </SplashContainer>
@@ -65,7 +70,7 @@ class Index extends React.Component {
     const { config: siteConfig, language = "" } = this.props;
     const { baseUrl } = siteConfig;
 
-    const Block = props => (
+    const Block = (props) => (
       <Container
         padding={["bottom", "top"]}
         id={props.id}
@@ -87,15 +92,15 @@ class Index extends React.Component {
             content:
               "Mix and match a variety of components, including buttons, scrolling lists, sliders, toggle switches, layout containers, navigators, and more.",
             image: `${baseUrl}img/undraw_product_teardown_elol.svg`,
-            imageAlign: "top"
+            imageAlign: "top",
           },
           {
             title: "GPU-powered performance",
             content:
               "Feathers UI aims for buttery smooth 60 fps performance based on the philosophy that cross-platform UI kits shouldn't sacrifice one of the most important benefits of native development.",
             image: `${baseUrl}img/undraw_site_stats_l57q.svg`,
-            imageAlign: "top"
-          }
+            imageAlign: "top",
+          },
         ]}
       </Block>
     );
@@ -113,8 +118,8 @@ Build stunning, hardware-accelerated user interfaces on a variety of operating s
 - Supports mouse, touchscreen, and keyboard interaction.
 `,
             image: `${baseUrl}img/cross-platform.png`,
-            imageAlign: "left"
-          }
+            imageAlign: "left",
+          },
         ]}
       </Block>
     );
@@ -131,8 +136,8 @@ Creative multimedia experiences typically require a unique visual style to match
 - Create skins in your favorite design tool.
 - Package up related styles into reusable themes.`,
             image: `${baseUrl}img/theme-mockups.png`,
-            imageAlign: "right"
-          }
+            imageAlign: "right",
+          },
         ]}
       </Block>
     );
@@ -145,18 +150,19 @@ Creative multimedia experiences typically require a unique visual style to match
             content: `
 The core Feathers UI library — with dozens of user interface controls — doesn't cost anything. Everyone has access to the complete source code to read, customize, share, and extend.
 
-- Full access to the framework internals and architecture.
-- Use in both commercial and open source projects.
-- Fork and submit pull requests on Github.`,
+- Full access to the framework internals and architecture
+- [MIT-licensed](https://github.com/BowlerHatLLC/feathersui-openfl/blob/master/LICENSE.md) — Use in both commercial and open source projects
+- [Fork on Github](https://github.com/BowlerHatLLC/feathersui-openfl) and submit pull requests`,
             image: `${baseUrl}img/undraw_code_typing_7jnv.svg`,
-            imageAlign: "left"
-          }
+            imageAlign: "left",
+          },
         ]}
       </Block>
     );
 
     const Testimonials = () => {
-      const pageUrl = page => baseUrl + (language ? `${language}/` : "") + page;
+      const pageUrl = (page) =>
+        baseUrl + (language ? `${language}/` : "") + page;
       return (
         <div className="avatarsContainer">
           <Container>
@@ -169,7 +175,7 @@ We have a pretty significant app completely built with Feathers UI. Very happy w
 
 Darren Yuhar`,
                   image: `${baseUrl}img/testimonials/darren-testimonial@2x.jpg`,
-                  imageAlign: "top"
+                  imageAlign: "top",
                 },
                 {
                   title: "My client was really impressed",
@@ -178,7 +184,7 @@ I really like how and Feathers has proven to be a great platform for non-gaming 
 
 Olaf Wempe`,
                   image: `${baseUrl}img/testimonials/olaf-testimonial@2x.jpg`,
-                  imageAlign: "top"
+                  imageAlign: "top",
                 },
                 {
                   title: "Very short development times",
@@ -188,8 +194,8 @@ I do not trust in any other tool to do 2D fast development considering that the 
 Luis Guajardo Diaz
 `,
                   image: `${baseUrl}img/testimonials/luis-testimonial@2x.jpg`,
-                  imageAlign: "top"
-                }
+                  imageAlign: "top",
+                },
               ]}
             </Block>
             <p className="alignCenter">
@@ -208,8 +214,8 @@ Luis Guajardo Diaz
       }
 
       const users = siteConfig.users
-        .filter(user => user.pinned && user.kickstarter)
-        .map(user => (
+        .filter((user) => user.pinned && user.kickstarter)
+        .map((user) => (
           <a href={user.infoLink} key={user.infoLink} rel="sponsored">
             <img src={user.image} alt={user.caption} title={user.caption} />
           </a>

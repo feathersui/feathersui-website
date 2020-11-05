@@ -10,14 +10,14 @@ const users = [
     image: "/img/sponsors/innogames.png",
     infoLink: "https://www.innogames.com/",
     pinned: true,
-    kickstarter: true
+    kickstarter: true,
   },
   {
     caption: "Spellweaver TCG",
     image: "/img/sponsors/spellweaver.png",
     infoLink: "https://spellweaver-tcg.com",
     pinned: true,
-    kickstarter: true
+    kickstarter: true,
   },
   {
     caption: "Moonshine IDE",
@@ -26,8 +26,8 @@ const users = [
     image: "/img/sponsors/moonshine-ide.png",
     infoLink: "https://moonshine-ide.com/",
     pinned: true,
-    kickstarter: true
-  }
+    kickstarter: true,
+  },
 ];
 
 const siteConfig = {
@@ -49,10 +49,11 @@ const siteConfig = {
 
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
-    { doc: "index", label: "Documentation" },
-    { doc: "api", label: "API" },
+    { doc: "haxe-openfl/getting-started", label: "Docs" },
+    { href: "https://api.feathersui.com/", label: "API" },
+    { page: "showcase", label: "Showcase" },
+    { blog: true, label: "Blog" },
     { page: "community", label: "Community" },
-    { blog: true, label: "Blog" }
   ],
 
   // If you have users set above, you add it here:
@@ -66,7 +67,7 @@ const siteConfig = {
   /* Colors for website */
   colors: {
     primaryColor: "#ffa759",
-    secondaryColor: "#ffc28c"
+    secondaryColor: "#ffc28c",
   },
 
   /* Custom fonts for website */
@@ -88,7 +89,7 @@ const siteConfig = {
 
   highlight: {
     // Highlight.js theme to use for syntax highlighting in code blocks.
-    theme: "agate"
+    theme: "agate",
   },
 
   enableUpdateTime: true,
@@ -131,9 +132,9 @@ const siteConfig = {
     `/static/openfl/`,
     `\\static\\openfl\\`,
     `/static/examples/`,
-    `\\static\\examples\\`
+    `\\static\\examples\\`,
   ],
-  gaTrackingId: "UA-34854617-1"
+  gaTrackingId: "UA-34854617-1",
 };
 
 module.exports = siteConfig;

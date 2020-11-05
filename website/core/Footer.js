@@ -163,7 +163,7 @@ class Footer extends React.Component {
               <li>
                 <a
                   href={this.docUrl(
-                    "haxe-openfl/installation",
+                    "haxe-openfl/getting-started",
                     this.props.language == "en"
                       ? undefined
                       : this.props.language
