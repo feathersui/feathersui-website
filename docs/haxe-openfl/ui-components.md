@@ -39,6 +39,11 @@ Containers that display data from [collections](./data-collections.md), with lay
 - [`TabBar`](./tab-bar.md) displays a row of tabs, where only one may be selected.
 - [`TreeView`](./tree-view.md) displays hierarchical data in a list, and branches may be opened and closed.
 
+The following components are designed for rendering each individual item from the container's collection.
+
+- [`ItemRenderer`](./item-renderer.md) displays a background skin, up to two lines of text, and an icon.
+- [`LayoutGroupItemRenderer`](./item-renderer.md) allows the creation of new types of item renderers with custom content.
+
 ## Navigators
 
 Containers that support navigation between different views.
