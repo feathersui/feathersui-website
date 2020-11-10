@@ -192,6 +192,10 @@ li ul {
   display: inline;
 }
 
+.nav-footer .sitemap h5 > a {
+  margin-left: 0;
+}
+
 .buttonWrapper {
   margin-top: 0.5em;
 }
