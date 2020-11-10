@@ -39,6 +39,10 @@ figcaption {
   color: #292522;
 }
 
+li ul {
+  margin-top: 0.5em;
+}
+
 .fixedHeaderContainer a {
   color: #292522;
 }
