@@ -2,12 +2,12 @@ const React = require("react");
 const CompLibrary = require("../../core/CompLibrary.js");
 const Container = CompLibrary.Container;
 
-const Download = props => {
+const Download = (props) => {
   const { config: siteConfig, language = "" } = props;
   const { baseUrl, docsUrl } = siteConfig;
   const docsPart = `${docsUrl ? `${docsUrl}/` : ""}`;
   const langPart = `${language ? `${language}/` : ""}`;
-  const docUrl = doc => `${baseUrl}${docsPart}${langPart}${doc}`;
+  const docUrl = (doc) => `${baseUrl}${docsPart}${langPart}${doc}`;
 
   return (
     <div className="mainContainer documentContainer">
@@ -20,7 +20,15 @@ const Download = props => {
           </p>
         </div>
         <div className="prose">
-          <h2>ActionScript / Starling</h2>
+          <h2>Haxe / OpenFL (preview)</h2>
+          <ul>
+            <li>
+              <a href={docUrl("haxe-openfl/installation")}>
+                Feathers UI for Haxe and OpenFL
+              </a>
+            </li>
+          </ul>
+          <h2>ActionScript / Starling (legacy)</h2>
           <ul>
             <li>
               <a href={docUrl("as3-starling/installation")}>
@@ -30,14 +38,6 @@ const Download = props => {
             <li>
               <a href={docUrl("as3-starling/sdk/installation-instructions")}>
                 Feathers SDK Installation
-              </a>
-            </li>
-          </ul>
-          <h2>Haxe / OpenFL (preview)</h2>
-          <ul>
-            <li>
-              <a href={docUrl("haxe-openfl/installation")}>
-                Feathers UI for Haxe and OpenFL
               </a>
             </li>
           </ul>
