@@ -5,12 +5,24 @@ const GridBlock = CompLibrary.GridBlock;
 
 const samplesBaseUrl = "/samples/haxe-openfl/";
 const githubSamplesBaseUrl =
-  "https://github.com/BowlerHatLLC/feathersui-openfl/tree/master/samples/";
+  "https://github.com/BowlerHatLLC/feathersui-openfl/tree/v1.0.0-beta.1/samples/";
 
 //screenshots: 720x450
 //this.stage.nativeWindow.width = 720 + (this.stage.nativeWindow.width - this.stage.stageWidth);
 //this.stage.nativeWindow.height = 450 + (this.stage.nativeWindow.height - this.stage.stageHeight);
 const sampleItems = [
+  {
+    title: `[Animated Tween Skin](${samplesBaseUrl}animated-tween-skin/)`,
+    image: `${samplesBaseUrl}img/animated-tween-skin.png`,
+    imageAlign: "top",
+    imageLink: `${samplesBaseUrl}animated-tween-skin/`,
+    content: `Create a custom skin for a button that includes an animated effect.
+
+<div class="buttonWrapper">
+  <a class="button" href="${samplesBaseUrl}animated-tween-skin/">Online Demo</a>
+  <a class="button" href="${githubSamplesBaseUrl}animated-tween-skin/">Source Code</a>
+</div>`,
+  },
   {
     title: `[Calculator](${samplesBaseUrl}calculator/)`,
     image: `${samplesBaseUrl}img/calculator.png`,
@@ -48,6 +60,30 @@ const sampleItems = [
 </div>`,
   },
   {
+    title: `[Custom Programmatic Skin](${samplesBaseUrl}custom-programmatic-skin/)`,
+    image: `${samplesBaseUrl}img/custom-programmatic-skin.png`,
+    imageAlign: "top",
+    imageLink: `${samplesBaseUrl}custom-programmatic-skin/`,
+    content: `Use code to draw a custom background skin.
+
+<div class="buttonWrapper">
+  <a class="button" href="${samplesBaseUrl}custom-programmatic-skin/">Online Demo</a>
+  <a class="button" href="${githubSamplesBaseUrl}custom-programmatic-skin/">Source Code</a>
+</div>`,
+  },
+  {
+    title: `[Custom Programmatic Skin with States](${samplesBaseUrl}custom-programmatic-skin-with-states/)`,
+    image: `${samplesBaseUrl}img/custom-programmatic-skin-with-states.png`,
+    imageAlign: "top",
+    imageLink: `${samplesBaseUrl}custom-programmatic-skin-with-states/`,
+    content: `Create a custom button skin that changes appearance when the mouse is over or down.
+
+<div class="buttonWrapper">
+  <a class="button" href="${samplesBaseUrl}custom-programmatic-skin-with-states/">Online Demo</a>
+  <a class="button" href="${githubSamplesBaseUrl}custom-programmatic-skin-with-states/">Source Code</a>
+</div>`,
+  },
+  {
     title: `[Custom Theme](${samplesBaseUrl}custom-theme/)`,
     image: `${samplesBaseUrl}img/custom-theme.png`,
     imageAlign: "top",
@@ -57,6 +93,18 @@ const sampleItems = [
 <div class="buttonWrapper">
   <a class="button" href="${samplesBaseUrl}custom-theme/">Online Demo</a>
   <a class="button" href="${githubSamplesBaseUrl}custom-theme/">Source Code</a>
+</div>`,
+  },
+  {
+    title: `[Hello world](${samplesBaseUrl}hello-world/)`,
+    image: `${samplesBaseUrl}img/hello-world.png`,
+    imageAlign: "top",
+    imageLink: `${samplesBaseUrl}hello-world/`,
+    content: `Every project needs a "Hello World" to get you started!
+
+<div class="buttonWrapper">
+  <a class="button" href="${samplesBaseUrl}hello-world/">Online Demo</a>
+  <a class="button" href="${githubSamplesBaseUrl}hello-world/">Source Code</a>
 </div>`,
   },
   {
