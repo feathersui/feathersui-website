@@ -92,7 +92,20 @@ The callout automatically calculates its preferred size based on the initial dim
 
 ### Arrow skins
 
-> 🚧 The arrow skins have not been implemented yet.
+Callouts may include an arrow that points to the origin. Depending on the [position](#position) of the callout, the arrow may be on any of the callout's four sides.
+
+```hx
+var skin = new TriangleSkin();
+skin.border = SolidColor(1.0, 0x999999);
+skin.fill = SolidColor(0xcccccc);
+skin.drawBaseBorder = false;
+skin.pointPosition = TOP;
+skin.width = 12.0;
+skin.height = 12.0;
+callout.topArrowSkin = skin;
+```
+
+If you know that the callout will always open in one position, you can provide a single arrow skin. Otherwise, it's a good idea to provide all four. Each of the available arrow skin properties are [`topArrowSkin`](https://api.feathersui.com/current/feathers/controls/Callout.html#topArrowSkin), [`rightArrowSkin`](https://api.feathersui.com/current/feathers/controls/Callout.html#rightArrowSkin), [`bottomArrowSkin`](https://api.feathersui.com/current/feathers/controls/Callout.html#bottomArrowSkin), and [`leftArrowSkin`](https://api.feathersui.com/current/feathers/controls/Callout.html#leftArrowSkin).
 
 ### Layout
 
