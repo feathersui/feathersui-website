@@ -22,6 +22,7 @@ The following layouts are best suited for simple containers.
 
 - [`AnchorLayout`](./anchor-layout.md)
 - [`HorizontalLayout`](./horizontal-layout.md)
+- [`HorizontalLayout`](./responsive-grid-layout.md)
 - [`VerticalLayout`](./vertical-layout.md)
 
 ## Data containers

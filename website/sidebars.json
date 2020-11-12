@@ -70,6 +70,7 @@
       "haxe-openfl/horizontal-layout",
       "haxe-openfl/horizontal-list-layout",
       "haxe-openfl/horizontal-distributed-layout",
+      "haxe-openfl/responsive-grid-layout",
       "haxe-openfl/vertical-layout",
       "haxe-openfl/vertical-list-fixed-row-layout",
       "haxe-openfl/vertical-list-layout",
