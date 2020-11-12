@@ -55,7 +55,7 @@ class HomeSplash extends React.Component {
                 className="button quietButton"
                 href={docUrl("haxe-openfl/installation")}
               >
-                Installation →
+                Download →
               </a>
             </div>
           </PromoSection>
@@ -88,60 +88,36 @@ class Index extends React.Component {
     );
 
     const Features = () => (
-      <Block layout="twoColumn" align="left">
+      <Block layout="threeColumn" align="left">
         {[
           {
             title: "Dozens of UI controls",
             content: `
-Mix and match a variety of UI components, including buttons, scrolling lists, sliders, toggle switches, layout containers, navigators, and more.
+Mix and match a variety of UI components, including buttons, sliders, toggles, scrolling lists, layout containers, navigators, and more.
 
-[List of UI components →](${docUrl("haxe-openfl/ui-components")})`,
+[See all UI components →](${docUrl("haxe-openfl/ui-components")})
+`,
             image: `${baseUrl}img/undraw_product_teardown_elol.svg`,
             imageAlign: "top",
           },
           {
-            title: "GPU-powered performance",
-            content:
-              "Feathers UI aims for buttery smooth 60 fps performance based on the philosophy that cross-platform UI kits shouldn't sacrifice one of the most important benefits of native development.",
-            image: `${baseUrl}img/undraw_site_stats_l57q.svg`,
-            imageAlign: "top",
-          },
-        ]}
-      </Block>
-    );
-
-    const CrossPlatform = () => (
-      <Block background="light">
-        {[
-          {
-            title: "Cross-platform GUIs",
+            title: "Cross-platform",
             content: `
-Build stunning, hardware-accelerated user interfaces on a variety of operating systems, including iOS, Android, Windows, and macOS. Soon, you'll gain access to Linux, game consoles, and web browsers too.
-            
-- Target smartphones, tablets, and desktop computers.
-- Upload native apps to app stores and also deploy to the web.
-- Supports mouse, touchscreen, and keyboard interaction.
+Build stunning, GPU-accelerated user interfaces on a variety of platforms — including mobile devices, desktop computers, and web browsers.
+
+[Available platforms →](/cross-platform-guis/)
 `,
             image: `${baseUrl}img/cross-platform.png`,
-            imageAlign: "left",
+            imageAlign: "top",
           },
-        ]}
-      </Block>
-    );
-
-    const ThemesAndStyles = () => (
-      <Block>
-        {[
           {
-            title: "Customizable skins and styles",
+            title: "Styles and themes",
             content: `
-Creative multimedia experiences typically require a unique visual style to match the story that you're presenting to the audience. Feathers UI offers many skinning options on every component, and behavior may be customized to support both mobile and desktop apps.
+Match your designer's requirements with a flexible styling system that supports bitmap and vector graphics, filters, blend modes, and more.
 
-- Supports both vector and bitmap graphics.
-- Create skins in your favorite design tool.
-- Package up related styles into reusable themes.`,
-            image: `${baseUrl}img/theme-mockups.png`,
-            imageAlign: "right",
+[Get inspired by the app showcase →](/showcase/)`,
+            image: `${baseUrl}img/undraw_making_art_759c.svg`,
+            imageAlign: "top",
           },
         ]}
       </Block>
@@ -167,50 +143,115 @@ The core Feathers UI library — with dozens of user interface controls — does
       </Block>
     );
 
+    const Install = () => {
+      return (
+        <Block layout="twoColumn" align="left">
+          {[
+            {
+              title: "Quick Start",
+              content: `
+First, install [Haxe](https://haxe.org/download/). Then, run the following commands in a terminal.
+
+\`\`\`sh
+haxelib install feathersui
+haxelib run openfl setup
+\`\`\`
+
+To create your first project, run the next command.
+
+\`\`\`sh
+haxelib run feathersui new-project MyFirstProject
+\`\`\`
+
+To build and launch in a web browser, run the next command inside your project folder.
+
+\`\`\`sh
+openfl test html5
+\`\`\`
+
+If you prefer, create a project in [Visual Studio Code](${docUrl(
+                "haxe-openfl/visual-studio-code"
+              )}), [HaxeDevelop](${docUrl(
+                "haxe-openfl/haxedevelop"
+              )}), and [Moonshine IDE](${docUrl("haxe-openfl/moonshine-ide")}).
+`,
+            },
+            {
+              title: "Sample Code",
+              content: `
+Create your first project using the [\`Application\`](${docUrl(
+                "haxe-openfl/application"
+              )}) and [\`Button\`](${docUrl("haxe-openfl/button")}) components:
+
+\`\`\`hx
+import feathers.controls.Application;
+import feathers.controls.Button;
+import feathers.events.TriggerEvent;
+
+class ExampleProject extends Application {
+  public function new() {
+    super();
+
+    var button = new Button();
+    button.text = "Click Me";
+    button.addEventListener(TriggerEvent.TRIGGER, onTrigger);
+    addChild(button);
+  }
+
+  private function onTrigger(event:TriggerEvent):Void {
+    trace("Button was clicked or tapped");
+  }
+}
+\`\`\`
+`,
+            },
+          ]}
+        </Block>
+      );
+    };
+
     const Testimonials = () => {
       const pageUrl = (page) =>
         baseUrl + (language ? `${language}/` : "") + page;
       return (
         <div className="avatarsContainer">
-          <Container>
-            <Block layout="threeColumn" align="left">
-              {[
-                {
-                  title: "Absolute joy to develop with",
-                  content: `
+          <Block layout="threeColumn" background="light" align="left">
+            {[
+              {
+                title: "Absolute joy to develop with",
+                content: `
 We have a pretty significant app completely built with Feathers UI. Very happy with the results, and early feedback has been amazing. Absolute joy to develop with it. Thank you so much.
 
 Darren Yuhar`,
-                  image: `${baseUrl}img/testimonials/darren-testimonial@2x.jpg`,
-                  imageAlign: "top",
-                },
-                {
-                  title: "My client was really impressed",
-                  content: `
+                image: `${baseUrl}img/testimonials/darren-testimonial@2x.jpg`,
+                imageAlign: "top",
+              },
+              {
+                title: "My client was really impressed",
+                content: `
 I really like how and Feathers has proven to be a great platform for non-gaming applications. My client was really impressed with the multi-platform performance.
 
 Olaf Wempe`,
-                  image: `${baseUrl}img/testimonials/olaf-testimonial@2x.jpg`,
-                  imageAlign: "top",
-                },
-                {
-                  title: "Very short development times",
-                  content: `
+                image: `${baseUrl}img/testimonials/olaf-testimonial@2x.jpg`,
+                imageAlign: "top",
+              },
+              {
+                title: "Very short development times",
+                content: `
 I do not trust in any other tool to do 2D fast development considering that the UI has to be retina enabled, responsive and with transitions and animations to be programmed in very short development times.
 
 Luis Guajardo Diaz
 `,
-                  image: `${baseUrl}img/testimonials/luis-testimonial@2x.jpg`,
-                  imageAlign: "top",
-                },
-              ]}
-            </Block>
-            <p className="alignCenter">
-              <a className="button" href={pageUrl("testimonials")}>
-                More testimonials →
-              </a>
-            </p>
-          </Container>
+                image: `${baseUrl}img/testimonials/luis-testimonial@2x.jpg`,
+                imageAlign: "top",
+              },
+            ]}
+          </Block>
+          <p className="alignCenter lightBackground">
+            <a className="button" href={pageUrl("testimonials")}>
+              More testimonials →
+            </a>
+          </p>
         </div>
       );
     };
@@ -247,9 +288,8 @@ Luis Guajardo Diaz
         <HomeSplash siteConfig={siteConfig} language={language} />
         <div className="mainContainer">
           <Features />
-          <CrossPlatform />
-          <ThemesAndStyles />
           <OpenSource />
+          <Install />
           <Testimonials />
           <KickstarterSponsors />
         </div>

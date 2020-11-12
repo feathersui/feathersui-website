@@ -43,6 +43,17 @@ li ul {
   margin-top: 0.5em;
 }
 
+h2,
+h2 p,
+.container .wrapper .imageAlignSide h2 p {
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+.container .wrapper .imageAlignSide p {
+  margin-bottom: 1em;
+}
+
 .fixedHeaderContainer a {
   color: #292522;
 }
@@ -54,6 +65,10 @@ li ul {
 .avatarsContainer .blockImage img {
   border-radius: 1000px;
   max-width: 150px;
+}
+
+.avatarsContainer .gridBlock .threeByGridBlock.imageAlignTop .blockImage {
+  height: auto;
 }
 
 .lightBackground {
@@ -120,6 +135,12 @@ li ul {
 
 .container div.prose:last-child > p:last-child {
   margin-bottom: 0;
+}
+
+.gridBlock .twoByGridBlock.imageAlignTop .blockImage,
+.gridBlock .threeByGridBlock.imageAlignTop .blockImage,
+.gridBlock .fourByGridBlock.imageAlignTop .blockImage {
+  height: 230px;
 }
 
 .gridBlock .twoByGridBlock img,
@@ -198,6 +219,12 @@ li ul {
 
 .buttonWrapper {
   margin-top: 0.5em;
+}
+
+@media only screen and (max-width: 735px) {
+  .imageAlignSide .blockImage {
+    display: block;
+  }
 }
 
 @media only screen and (max-width: 736px) {
