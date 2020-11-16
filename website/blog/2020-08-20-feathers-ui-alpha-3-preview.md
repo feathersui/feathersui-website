@@ -6,7 +6,7 @@ authorTwitter: joshtynjala
 authorImageURL: /img/authors/josh.jpg
 ---
 
-Today, Feathers UI **alpha.3** is now official available [on Haxelib](https://lib.haxe.org/p/feathersui). This is the third of multiple preview builds that are planned for 2020. These preview builds are intended to give the community an opportunity to see how development of Feathers UI is progressing — and to give everyone a chance to start prototyping some cool, new projects!
+Today, Feathers UI **alpha.3** is now officially available [on Haxelib](https://lib.haxe.org/p/feathersui). This is the third of multiple preview builds that are planned for 2020. These preview builds are intended to give the community an opportunity to see how development of Feathers UI is progressing — and to give everyone a chance to start prototyping some cool, new projects!
 
 ![](/blog/img/feathersui-alpha-3.png)
 
