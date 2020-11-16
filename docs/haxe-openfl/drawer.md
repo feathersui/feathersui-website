@@ -3,7 +3,7 @@ title: How to use the Drawer component
 sidebar_label: Drawer
 ---
 
-The [`Drawer`](https://api.feathersui.com/current/feathers/controls/Drawer.html) class is a container that adds a special _drawer_ that may be opened or closed with a swipe gesture from one of the four edges of its primary content.
+The [`Drawer`](https://api.feathersui.com/current/feathers/controls/Drawer.html) class is container that adds a special _drawer_ that slides in and out, above all other content. It may be opened or closed with a swipe gesture from one of the four edges.
 
 ## The Basics
 
