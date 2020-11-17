@@ -22,11 +22,11 @@ Let's take a look at some of the new UI components and features that are include
 
 ### New UI Components
 
-- [`Drawer`](https://feathersui.com/learn/haxe-openfl/drawer) is a container that adds a special drawer that slides in and out, above all other content. It may be opened or closed with a swipe gesture from one of the four edges.
+- [`Drawer`](https://feathersui.com/learn/haxe-openfl/drawer) is a container that adds a special drawer that slides in and out, above all other content. It may be opened or closed with a swipe gesture from one of the four edges. ([Live Demo](https://feathersui.com/samples/haxe-openfl/components-explorer/drawer))
 
   <div style="text-align:center;"><a href="https://feathersui.com/learn/haxe-openfl/drawer"><img src="/blog/img/beta-1-feathersui-drawer.png" style="width:450px"></a></div>
 
-- [`HDividedBox` and `VDividedBox`](https://feathersui.com/learn/haxe-openfl/divided-box) are containers display dividers between each of their children, and the dividers may be dragged to resize the children.
+- [`HDividedBox` and `VDividedBox`](https://feathersui.com/learn/haxe-openfl/divided-box) are containers display dividers between each of their children, and the dividers may be dragged to resize the children. ([Live Demo 1](https://feathersui.com/samples/haxe-openfl/components-explorer/horizontal-divided-box) and [Live Demo 2](https://feathersui.com/samples/haxe-openfl/components-explorer/vertical-divided-box))
 
   <div style="text-align:center;"><a href="https://feathersui.com/learn/haxe-openfl/divided-box"><img src="/blog/img/beta-1-feathersui-horizontal-divided-box.png" style="width:450px"></a></div>
 

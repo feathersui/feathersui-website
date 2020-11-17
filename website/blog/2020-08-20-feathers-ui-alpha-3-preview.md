@@ -22,7 +22,7 @@ Let's take a look at some of the new UI components and features that are include
 
 ### New UI Components
 
-- [`GroupListView`](https://feathersui.com/learn/haxe-openfl/group-list-view) renders a collection of data, similar to a [`ListView`](https://feathersui.com/learn/haxe-openfl/list-view), but items are also divided into groups with headers.
+- [`GroupListView`](https://feathersui.com/learn/haxe-openfl/group-list-view) renders a collection of data, similar to a [`ListView`](https://feathersui.com/learn/haxe-openfl/list-view), but items are also divided into groups with headers. ([Live Demo](https://feathersui.com/samples/haxe-openfl/components-explorer/group-list-view))
 
   <div style="text-align:center;"><a href="https://feathersui.com/learn/haxe-openfl/group-list-view"><img src="/blog/img/alpha-3-feathersui-group-list-view.png" style="width:450px"></a></div>
 
