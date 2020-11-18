@@ -46,7 +46,7 @@ The [custom-programmatic-skin-with-states sample](https://feathersui.com/samples
 
 <div style="text-align:center;"><a href="https://feathersui.com/samples/haxe-openfl/animated-tween-skin"><img src="/blog/img/beta-1-feathersui-animated-tween-skin-sample.png" style="width:400px"></a></div>
 
-The [animated-tween-skin sample](https://feathersui.com/samples/haxe-openfl/aniamted-tween-skin) creates a custom skin that triggers animations based on mouse/touch events. [Source Code on Github](https://github.com/BowlerHatLLC/feathersui-openfl/tree/v1.0.0-beta.1/samples/animated-tween-skin/)
+The [animated-tween-skin sample](https://feathersui.com/samples/haxe-openfl/animated-tween-skin) creates a custom skin that triggers animations based on mouse/touch events. [Source Code on Github](https://github.com/BowlerHatLLC/feathersui-openfl/tree/v1.0.0-beta.1/samples/animated-tween-skin/)
 
 ## A big release
 
