@@ -6,7 +6,7 @@ sidebar_label: Installation
 
 > 🚨 Feathers UI for Haxe/OpenFL is currently in a **beta** state. Some components and features may still be missing, and occasional bugs should be expected.
 
-[Feathers UI](/) for Haxe and OpenFL is published on [Haxelib](https://lib.haxe.org).
+The current version of [Feathers UI](/) for Haxe and OpenFL is [**1.0.0-beta.2**](https://github.com/BowlerHatLLC/feathersui-openfl/blob/v1.0.0-beta.2/CHANGELOG.md). It may be installed [from Haxelib](https://lib.haxe.org/p/feathersui).
 
 ## Prerequisites
 
@@ -38,6 +38,7 @@ haxelib update feathersui
 
 Now that Feathers UI and its dependencies are installed, you can create a project in your favorite editor.
 
+- [Create a project in a command line terminal](terminal-new-project.md)
 - [Create a project in HaxeDevelop](haxedevelop.md)
 - [Create a project in Moonshine IDE](moonshine-ide.md)
 - [Create a project in Visual Studio Code](visual-studio-code.md)
