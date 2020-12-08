@@ -9,7 +9,7 @@
     "rename-version": "docusaurus-rename-version"
   },
   "devDependencies": {
-    "@types/node": "^10.17.42",
+    "@types/node": "^12.19.8",
     "docusaurus": "^1.14.6"
   }
 }
