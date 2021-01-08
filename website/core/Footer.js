@@ -68,12 +68,9 @@ class Footer extends React.Component {
                 </a>
               </li>
               <li>
-                <a href={`${this.props.config.baseUrl}blog`}>Blog</a> (
-                <a href={`${this.props.config.baseUrl}blog/feed.xml`}>RSS</a>,{" "}
-                <a href={`${this.props.config.baseUrl}blog/atom.xml`}>Atom</a>)
-              </li>
-              <li>
-                <a href="https://teespring.com/stores/feathers-ui">Store</a>
+                <a href="https://teespring.com/stores/feathers-ui">
+                  Buy a T-Shirt!
+                </a>
               </li>
             </ul>
           </div>
@@ -227,30 +224,22 @@ class Footer extends React.Component {
           </div>
           <div>
             <h5>
-              <a
-                href={this.pageUrl(
-                  "social-media",
-                  this.props.language == "en" ? undefined : this.props.language
-                )}
-              >
-                Social Media
+              <a href={`${this.props.config.baseUrl}blog`}>
+                News &amp; Updates
               </a>
             </h5>
             <ul>
+              <li>
+                <a href={`${this.props.config.baseUrl}blog`}>Blog</a> (
+                <a href={`${this.props.config.baseUrl}blog/feed.xml`}>RSS</a>,{" "}
+                <a href={`${this.props.config.baseUrl}blog/atom.xml`}>Atom</a>)
+              </li>
               <li>
                 <a
                   href="https://twitter.com/feathersui"
                   rel="noreferrer noopener"
                 >
                   Twitter
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://facebook.com/feathersui"
-                  rel="noreferrer noopener"
-                >
-                  Facebook
                 </a>
               </li>
             </ul>

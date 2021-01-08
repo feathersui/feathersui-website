@@ -16,18 +16,8 @@ function Community(props) {
 </div>`,
       image: `${baseUrl}img/twitter-logo.png`,
       imageAlign: "top",
-      imageLink: "https://twitter.com/feathersui"
+      imageLink: "https://twitter.com/feathersui",
     },
-    {
-      title: "[Facebook](https://facebook.com/feathersui)",
-      content: `Like [the Feathers UI page](https://facebook.com/feathersui) on Facebook to stay up to date — right in your news feed.
-<div class="buttonWrapper">
-  <a class="button" href="https://facebook.com/feathersui">Like on Facebook</a>
-</div>`,
-      image: `${baseUrl}img/facebook-logo.png`,
-      imageAlign: "top",
-      imageLink: "https://facebook.com/feathersui"
-    }
   ];
 
   return (
