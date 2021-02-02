@@ -1,5 +1,3 @@
 <?php
-	$example_name = "Tabs";
-	$swf_url = "TabsWeb.swf";
-	include("../example.php");
+	header("Location: /samples/haxe-openfl/tab-navigator/");
 ?>

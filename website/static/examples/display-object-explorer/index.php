@@ -1,3 +1,3 @@
 <?php
-	header("Location: https://feathersui.com/examples/");
+	header("Location: /samples/haxe-openfl/");
 ?>
