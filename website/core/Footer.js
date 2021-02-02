@@ -68,8 +68,20 @@ class Footer extends React.Component {
                 </a>
               </li>
               <li>
-                <a href="https://teespring.com/stores/feathers-ui">
-                  Buy a T-Shirt!
+                <a href="https://github.com/sponsors/joshtynjala">
+                  Join Github Sponsors
+                </a>
+              </li>
+              <li>
+                <a
+                  href={this.pageUrl(
+                    "donate",
+                    this.props.language == "en"
+                      ? undefined
+                      : this.props.language
+                  )}
+                >
+                  Make a Donation
                 </a>
               </li>
             </ul>
