@@ -50,7 +50,7 @@ function Donate(props) {
       title:
         "[PayPal Donation](https://www.paypal.com/donate?hosted_button_id=9A9EB6YEHRNBN&source=url)",
       content: (
-        <>
+        <div>
           <p>
             Choose between a monthly and one-time{" "}
             <a href="https://www.paypal.com/donate?hosted_button_id=9A9EB6YEHRNBN&amp;source=url">
@@ -59,7 +59,7 @@ function Donate(props) {
             .
           </p>
           {payPalForm}
-        </>
+        </div>
       ),
       image: `${baseUrl}img/paypal.png`,
       imageAlign: "top",
