@@ -12,9 +12,9 @@ To start building a new theme from scratch, create a subclass of [`ClassVariantT
 ```hx
 package com.example;
 
-import feathers.themes.
+import feathers.themes.ClassVariantTheme;
 
-public class CustomTheme extends ClassVariantTheme {
+class CustomTheme extends ClassVariantTheme {
     public function new() {
         super();
 
