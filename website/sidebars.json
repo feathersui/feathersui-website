@@ -29,6 +29,7 @@
     ],
     "UI Components": [
       "haxe-openfl/ui-components",
+      "haxe-openfl/alert",
       "haxe-openfl/application",
       "haxe-openfl/asset-loader",
       "haxe-openfl/button",
@@ -39,6 +40,7 @@
       "haxe-openfl/drawer",
       "haxe-openfl/grid-view",
       "haxe-openfl/group-list-view",
+      "haxe-openfl/header",
       "haxe-openfl/item-renderer",
       "haxe-openfl/label",
       "haxe-openfl/layout-group",
