@@ -56,7 +56,7 @@ button.textFormat = new TextFormat("Helvetica", 20, 0x3c3c3c);
 If the button's text should use different font styles when the button is in different states, pass a [`TextFormat`](https://api.openfl.org/openfl/text/TextFormat.html) and state value to the [`setTextFormatForState()`](https://api.feathersui.com/current/feathers/controls/Button.html#setTextFormatForState) method.
 
 ```hx
-button.setTextFormatForState(DOWN, new TextFormat("Helvetica", 20, 0xcc0000));
+button.setTextFormatForState(ButtonState.DOWN, new TextFormat("Helvetica", 20, 0xcc0000));
 ```
 
 Using the code above, the color of the button's text will change when the button is pressed, and the state changes to [`ButtonState.DOWN`](https://api.feathersui.com/current/feathers/controls/ButtonState.html#DOWN).
@@ -85,13 +85,13 @@ The button automatically calculates its preferred size based on the initial dime
 The appearance of the button's border or fill may be customized to change based on the button's current state, such as when the button is pressed down, the mouse is hovering over it, or the button is disabled. In the next example, a call to the skin's [`setFillForState()`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html#setFillForState) method makes it switch to a different fill when the button's [`DOWN`](https://api.feathersui.com/current/feathers/controls/ButtonState.html#DOWN) state is active.
 
 ```hx
-skin.setFillForState(DOWN, SolidColor(0xffcccc));
+skin.setFillForState(ButtonState.DOWN, SolidColor(0xffcccc));
 ```
 
 Similarly, use the skin's [`setBorderForState()`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html#setBorderForState) method to change the border for a specific state.
 
 ```hx
-skin.setBorderForState(DOWN, SolidColor(2.0, 0x999999));
+skin.setBorderForState(ButtonState.DOWN, SolidColor(2.0, 0x999999));
 ```
 
 In the examples above, the button uses the same [`RectangleSkin`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html) for all states, and that skin listens for changes to the button's current state. Alternatively, the button's [`setSkinForState()`](https://api.feathersui.com/current/feathers/controls/BasicButton.html#setSkinForState) method allows the button to display a completely different display object when its current state changes.
@@ -103,7 +103,7 @@ button.backgroundSkin = defaultSkin;
 
 var hoverSkin = new RectangleSkin();
 // ... set border, fill, width, and height
-button.setSkinForState(HOVER, hoverSkin);
+button.setSkinForState(ButtonState.HOVER, hoverSkin);
 ```
 
 In the example above, the button will have a custom skin for the [`HOVER`](https://api.feathersui.com/current/feathers/controls/ButtonState.html#HOVER) state, and all other states will share the default [`backgroundSkin`](https://api.feathersui.com/current/feathers/controls/BasicButton.html#backgroundSkin).
@@ -121,7 +121,7 @@ button.icon = new Bitmap(Assets.getBitmapData("myAssetName"));
 Similar to the background skin, the button's icon may be optionally customized for different states.
 
 ```hx
-button.setIconForState(DOWN, new Bitmap(Assets.getBitmapData("anotherAssetName")));
+button.setIconForState(ButtonState.DOWN, new Bitmap(Assets.getBitmapData("anotherAssetName")));
 ```
 
 > This example uses a [`Bitmap`](https://api.openfl.org/openfl/display/Bitmap.html) for the button's icon, but any type of display object may be used. Additionally, while it can be convenient to load icons with the [`Assets`](https://api.openfl.org/openfl/utils/Assets.html) class, icons may come from anywhere — even by drawing them programatically.

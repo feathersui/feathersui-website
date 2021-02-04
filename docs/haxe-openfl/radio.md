@@ -89,7 +89,7 @@ radio.selectedTextFormat = new TextFormat("Helvetica", 20, 0x9a9a9a, true);
 Finally, the radio's text may use different font styles in a more fine-grained matter — by targeting an exact state. Use the [`setTextFormatForState()`](https://api.feathersui.com/current/feathers/controls/ToggleButton.html#setTextFormatForState) method to pass in a state value and a [`TextFormat`](https://api.openfl.org/openfl/text/TextFormat.html).
 
 ```hx
-radio.setTextFormatForState(DISABLED(false), new TextFormat("Helvetica", 20, 0xcc0000));
+radio.setTextFormatForState(ToggleButtonState.DISABLED(false), new TextFormat("Helvetica", 20, 0xcc0000));
 ```
 
 Using the code above, the color of the radio's text will change when the radio is disabled and not selected.
@@ -132,7 +132,7 @@ downIcon.lineStyle(1.0, 0x999999);
 downIcon.beginFill(0xccccdd);
 downIcon.graphics.drawCircle(16.0, 16.0, 16.0);
 downIcon.graphics.endFill();
-radio.setIconForState(DOWN(false), downIcon);
+radio.setIconForState(ToggleButtonState.DOWN(false), downIcon);
 ```
 
 ### Layout

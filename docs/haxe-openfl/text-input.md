@@ -63,7 +63,7 @@ input.textFormat = new TextFormat("Helvetica", 20, 0x3c3c3c);
 If the text input's text should use different font styles when the text input is in different states, pass a [`TextFormat`](https://api.openfl.org/openfl/text/TextFormat.html) and state value to the [`setTextFormatForState()`](https://api.feathersui.com/current/feathers/controls/TextInput.html#setTextFormatForState) method.
 
 ```hx
-input.setTextFormatForState(FOCUSED, new TextFormat("Helvetica", 20, 0xcc0000));
+input.setTextFormatForState(TextInputState.FOCUSED, new TextFormat("Helvetica", 20, 0xcc0000));
 ```
 
 Using the code above, the color of the text input's text will change when the text input receives focus, and the state changes to [`TextInputState.FOCUSED`](https://api.feathersui.com/current/feathers/controls/TextInputState.html#FOCUSED).
@@ -92,13 +92,13 @@ The text input automatically calculates its preferred size based on the initial 
 The appearance of the text input's border or fill may be customized to change based on the text input's current state, such as when the text input receives focus, there is an error string, or the text input is disabled. In the next example, a call to the skin's [`setFillForState()`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html#setFillForState) method makes it switch to a different fill when the text input's [`FOCUSED`](https://api.feathersui.com/current/feathers/controls/TextInputState.html#FOCUSED) state is active.
 
 ```hx
-skin.setFillForState(FOCUSED, SolidColor(0xffcccc));
+skin.setFillForState(TextInputState.FOCUSED, SolidColor(0xffcccc));
 ```
 
 Similarly, use the skin's [`setBorderForState()`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html#setBorderForState) method to change the border for a specific state.
 
 ```hx
-skin.setBorderForState(FOCUSED, SolidColor(2.0, 0x999999));
+skin.setBorderForState(TextInputState.FOCUSED, SolidColor(2.0, 0x999999));
 ```
 
 In the examples above, the text input uses the same [`RectangleSkin`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html) for all states, and that skin listens for changes to the text input's current state. Alternatively, the text input's [`setSkinForState()`](https://api.feathersui.com/current/feathers/controls/TextInput.html#setSkinForState) method allows the text input to display a completely different display object when its current state changes.
@@ -110,7 +110,7 @@ input.backgroundSkin = defaultSkin;
 
 var hoverSkin = new RectangleSkin();
 // ... set border, fill, width, and height
-input.setSkinForState(FOCUSED, hoverSkin);
+input.setSkinForState(TextInputState.FOCUSED, hoverSkin);
 ```
 
 In the example above, the text input will have a custom skin for the [`FOCUSED`](https://api.feathersui.com/current/feathers/controls/TextInputState.html#FOCUSED) state, and all other states will share the default [`backgroundSkin`](https://api.feathersui.com/current/feathers/controls/TextInput.html#backgroundSkin).

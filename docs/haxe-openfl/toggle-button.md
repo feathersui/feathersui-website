@@ -70,7 +70,7 @@ button.selectedTextFormat = new TextFormat("Helvetica", 20, 0x9a9a9a, true);
 Finally, the toggle button's text may use different font styles in a more fine-grained matter — by targeting an exact state. Use the [`setTextFormatForState()`](https://api.feathersui.com/current/feathers/controls/ToggleButton.html#setTextFormatForState) method to pass in a state value and a [`TextFormat`](https://api.openfl.org/openfl/text/TextFormat.html).
 
 ```hx
-button.setTextFormatForState(DISABLED(false), new TextFormat("Helvetica", 20, 0xcc0000));
+button.setTextFormatForState(ToggleButtonState.DISABLED(false), new TextFormat("Helvetica", 20, 0xcc0000));
 ```
 
 Using the code above, the color of the toggle button's text will change when the toggle button is disabled and not selected.
@@ -111,8 +111,8 @@ skin.selectedBorder = SolidColor(2.0, 0x999999);
 The fill or border may be customized for an exact state too. In the next example, the same [`RectangleSkin`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html) displays a different border when the toggle button is down and not selected.
 
 ```hx
-skin.setFillForState(DOWN(false), SolidColor(0xaa9999));
-skin.setBorderForState(DOWN(false), SolidColor(1.0, 0x9999cc));
+skin.setFillForState(ToggleButtonState.DOWN(false), SolidColor(0xaa9999));
+skin.setBorderForState(ToggleButtonState.DOWN(false), SolidColor(1.0, 0x9999cc));
 ```
 
 In the examples above, the toggle button uses the same [`RectangleSkin`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html) for all states, and that skin listens for changes to the toggle button's current state. Alternatively, the toggle button's [`selectedBackgroundSkin`](https://api.feathersui.com/current/feathers/controls/BasicToggleButton.html#selectedBackgroundSkin) property and [`setSkinForState()`](https://api.feathersui.com/current/feathers/controls/BasicToggleButton.html#setSkinForState) method allow the toggle button to display a completely different display object when its current state changes.
@@ -128,7 +128,7 @@ button.selectedBackgroundSkin = selectedSkin;
 
 var hoverSkin = new RectangleSkin();
 // ... set border, fill, width, and height
-button.setSkinForState(HOVER(false), hoverSkin);
+button.setSkinForState(ToggleButtonState.HOVER(false), hoverSkin);
 ```
 
 In the example above, the toggle button will display a custom skin when it is not selected and the mouse is hovering over it, the selected states will share the [`selectedBackgroundSkin`](https://api.feathersui.com/current/feathers/controls/BasicToggleButton.html#selectedBackgroundSkin), and all remaining states will share the default [`backgroundSkin`](https://api.feathersui.com/current/feathers/controls/BasicToggleButton.html#backgroundSkin).
@@ -147,7 +147,7 @@ Similar to the background skin, the toggle button's icon may be optionally custo
 
 ```hx
 button.selectedIcon = new Bitmap(Assets.getBitmapData("anotherAssetName");
-button.setIconForState(DOWN, new Bitmap(Assets.getBitmapData("yetAnotherAssetName")));
+button.setIconForState(ToggleButtonState.DOWN(false), new Bitmap(Assets.getBitmapData("yetAnotherAssetName")));
 ```
 
 > This example uses a [`Bitmap`](https://api.openfl.org/openfl/display/Bitmap.html) for the toggle button's icon, but any type of display object may be used. Additionally, while it can be convenient to load icons with the [`Assets`](https://api.openfl.org/openfl/utils/Assets.html) class, icons may come from anywhere — even by drawing them programatically.

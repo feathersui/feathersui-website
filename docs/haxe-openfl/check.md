@@ -70,7 +70,7 @@ check.selectedTextFormat = new TextFormat("Helvetica", 20, 0x9a9a9a, true);
 Finally, the check's text may use different font styles in a more fine-grained matter — by targeting an exact state. Use the [`setTextFormatForState()`](https://api.feathersui.com/current/feathers/controls/ToggleButton.html#setTextFormatForState) method to pass in a state value and a [`TextFormat`](https://api.openfl.org/openfl/text/TextFormat.html).
 
 ```hx
-check.setTextFormatForState(DISABLED(false), new TextFormat("Helvetica", 20, 0xcc0000));
+check.setTextFormatForState(ToggleButtonState.DISABLED(false), new TextFormat("Helvetica", 20, 0xcc0000));
 ```
 
 Using the code above, the color of the check's text will change when the check is disabled and not selected.
@@ -113,7 +113,7 @@ downIcon.lineStyle(1.0, 0x999999);
 downIcon.beginFill(0xccccdd);
 downIcon.graphics.drawRect(0.0, 0.0, 32.0, 32.0);
 downIcon.graphics.endFill();
-check.setIconForState(DOWN(false), downIcon);
+check.setIconForState(ToggleButtonState.DOWN(false), downIcon);
 ```
 
 ### Layout

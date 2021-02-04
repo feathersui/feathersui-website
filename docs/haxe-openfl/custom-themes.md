@@ -43,13 +43,13 @@ private function setButtonStyles(button:Button):Void {
     downSkin.border = SolidColor(1.0, 0xcc0000);
     downSkin.fill = SolidColor(0xffeeee);
     downSkin.cornerRadius = 10.0;
-    button.setSkinForState(DOWN, downSkin);
+    button.setSkinForState(ButtonState.DOWN, downSkin);
 
     var format = new TextFormat("_sans", 16, 0xff0000);
     button.textFormat = format;
 
     var downFormat = new TextFormat("_sans", 16, 0xcc0000);
-    button.setTextFormatForState(DOWN, downFormat);
+    button.setTextFormatForState(ButtonState.DOWN, downFormat);
 
     button.paddingTop = 10.0;
     button.paddingBottom = 10.0;
@@ -88,7 +88,7 @@ private function setFancyButtonStyles(button:Button):Void {
     downSkin.cornerRadius = 10.0;
     downSkin.border = Gradient(2, GradientType.LINEAR, [0xff0000, 0xcc0000], [1.0, 1.0], [0, 255], 90 * Math.PI / 180);
     downSkin.fill = Gradient(GradientType.LINEAR, [0xff9999, 0xff0000], [1.0, 1.0], [0, 255], 270 * Math.PI / 180);
-    button.setSkinForState(DOWN, downSkin);
+    button.setSkinForState(ButtonState.DOWN, downSkin);
 
     var format = new TextFormat("_sans", 20, 0xffeeee, true, true);
     button.textFormat = format;
