@@ -38,6 +38,7 @@
       "haxe-openfl/combo-box",
       "haxe-openfl/divided-box",
       "haxe-openfl/drawer",
+      "haxe-openfl/form",
       "haxe-openfl/grid-view",
       "haxe-openfl/group-list-view",
       "haxe-openfl/header",
