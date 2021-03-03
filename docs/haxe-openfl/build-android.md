@@ -80,6 +80,26 @@ The build's output will be written to the _bin/android/bin_ folder. The _.apk_ f
 
 ## Troubleshooting
 
+### Error on macOS says executables from the Android NDK "cannot be opened because the developer cannot be verified"
+
+You will need to manually allow these executables through macOS Gatekeeper.
+
+1. In the error dialog, click **Cancel** and stop the current build in your terminal.
+
+1. Open the **System Preferences** app.
+
+1. Choose **Security & Privacy**.
+
+1. Go to the **General** tab.
+
+1. In the **Allow apps downloaded from:** section, click the **Allow Anyway** button.
+
+1. Start the build again.
+
+1. This time the pop-up will ask if you are sure that you want to open the executable. Click **Open**.
+
+You may need to repeat this process many times, so keep the **System Preferences** app open so that you can click the **Allow Anyway** button when it appears again. The same executable name may fail more than once. This is normal. Android supports many CPU architectures, and each has its own set of executables.
+
 ### Error: arm-linux-androideabi-g++: command not found
 
 There is more than one possible reason for seeing this error:
@@ -87,6 +107,14 @@ There is more than one possible reason for seeing this error:
 1. You may have downloaded the wrong version of the Android NDK. You must use **r15c** specifically. Newer versions will not work.
 
 1. You may have used the wrong path to the Android NDK on your file system. Check that the root folder of the SDK contains multiple sub-folders and files, including a README file.
+
+### Error: Failed to install the following Android SDK packages as some licences have not been accepted.
+
+YOu may need to install a specific version of the Android SDK platform tools in **Android Studio**. The error message will include the version that you need, in a format like this:
+
+> platforms;android-28 Android SDK Platform 28
+
+Open the **Android Studio** settings, and install the Android SDK platform tools with the specified API version. For the example above, API version _28_ refers to _Android 9.0 (Pie)_.
 
 > ### Did you get some other error message that you don't understand?
 >
