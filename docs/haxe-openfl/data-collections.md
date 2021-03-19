@@ -27,4 +27,5 @@ Some UI components may render a "hierarchical" tree of items.
 
 Feathers UI provides the following implementations of a hierarchical collection type.
 
+- [`ArrayHierarchicalCollection`](https://api.feathersui.com/current/feathers/data/ArrayHierarchicalCollection.html)
 - [`TreeCollection`](https://api.feathersui.com/current/feathers/data/TreeCollection.html)

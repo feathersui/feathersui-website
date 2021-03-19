@@ -7,38 +7,56 @@ The [`GroupListView`](https://api.feathersui.com/current/feathers/controls/Group
 
 ## The Basics
 
-Start by creating a [`GroupListView`](https://api.feathersui.com/current/feathers/controls/GroupListView.html) control, pass in a [collection](./data-collections.md) that defines the items to render, and add it to [the display list](https://books.openfl.org/openfl-developers-guide/display-programming/basics-of-display-programming.html).
+Start by creating a [`GroupListView`](https://api.feathersui.com/current/feathers/controls/GroupListView.html) control, and add it to [the display list](https://books.openfl.org/openfl-developers-guide/display-programming/basics-of-display-programming.html).
 
 ```hx
 var groupListView = new GroupListView();
-groupListView.dataProvider = new TreeCollection([
-    new TreeNode({text: "Group A"}, [
-        new TreeNode({text: "Node A1"}),
-        new TreeNode({text: "Node A2"}),
-        new TreeNode({text: "Node A3"}),
-        new TreeNode({text: "Node A4"})
-    ]),
-    new TreeNode({text: "Group B"}, [
-        new TreeNode({text: "Node B1"}),
-        new TreeNode({text: "Node B2"}),
-        new TreeNode({text: "Node B3"})
-    ]),
-    new TreeNode({text: "Group C"}, [
-        new TreeNode({text: "Node C1"})
-    ])
-]);
 this.addChild(groupListView);
 ```
 
-Set the [`itemToText()`](https://api.feathersui.com/current/feathers/controls/GroupListView.html#itemToText) method to get the text from each [`TreeNode`](https://api.feathersui.com/current/feathers/data/TreeNode.html) item to display in an item renderer.
+Next, pass in a [collection](./data-collections.md) that defines the items to render.
 
 ```hx
-groupListView.itemToText = function(item:TreeNode<Dynamic>):String {
-    return item.data.text;
-};
+var collection = new ArrayHierarchicalCollection( [
+    {
+        text: "Group A",
+        children: [
+            { text: "Node A1" },
+            { text: "Node A2" },
+            { text: "Node A3" },
+            { text: "Node A4" }
+        ]
+    },
+    {
+        text: "Group B",
+        children: [
+            { text: "Node B1" },
+            { text: "Node B2" },
+            { text: "Node B3" }
+        ]
+    },
+    {
+        text: "Group C",
+        children: [
+            {text: "Node C1"}
+        ]
+    }
+]);
 ```
 
-> Items in the collection are not required to be simple object literals, like `{text: "Node 1"}` in the example above. Instances of a class are allowed too (and encouraged as a best practice).
+Set the collection's [`itemToChildren()`](https://api.feathersui.com/current/feathers/controls/ArrayHierarchicalCollection.html#itemToChildren) method to get the children from each branch that need to be rendered by the tree view.
+
+```hx
+collection.itemToChildren = (item:Dynamic) -> item.children;
+```
+
+Set the [`itemToText()`](https://api.feathersui.com/current/feathers/controls/GroupListView.html#itemToText) method to get the text from each item from the collection.
+
+```hx
+groupListView.itemToText = (item:Dynamic) -> item.text;
+```
+
+> Items in the collection are not required to be simple object literals, like `{text: "Node A1"}` in the example above. Instances of a class are allowed too (and encouraged as a best practice). If you use a class, be sure to update the item parameter's type in the `itemToChildren` and `itemToText` functions so that the compiler can catch any errors.
 
 ### Selection
 
@@ -71,7 +89,7 @@ function groupListView_changeHandler(event:Event):Void {
 To add a new item at a specific location, pass an object to the data provider's [`addAt()`](https://api.feathersui.com/current/feathers/data/IHierarchicalCollection.html#addAt) method.
 
 ```hx
-var newItem = new TreeNode({ text: "First Item" });
+var newItem = { text: "New Item" };
 var newLocation = [2, 1];
 groupListView.dataProvider.addAt(newItem, newLocation);
 ```
@@ -94,7 +112,7 @@ Feathers UI provides a default [`ItemRenderer`](./item-renderer.md) class, which
 Consider a collection of items with the following format.
 
 ```hx
-new TreeNode({ name: "Pizza", icon: "https://example.com/img/pizza.png" })
+{ name: "Pizza", icon: "https://example.com/img/pizza.png" }
 ```
 
 While the default [`ItemRenderer`](./item-renderer.md) class can easily display some text and an image, creating a custom item renderer for this simple data will be a good learning exercise.
@@ -159,8 +177,8 @@ When the [`update()`](https://api.feathersui.com/current/feathers/utils/DisplayO
 In this case, the value of [`text`](https://api.feathersui.com/current/feathers/data/GroupListViewItemState.html#text) is displayed by the [`Label`](./label.md), and the `icon` field from [`data`](https://api.feathersui.com/current/feathers/data/GroupListViewItemState.html#data) (remember the example item from above, with `name` and `icon` fields) is displayed by the [`AssetLoader`](./asset-loader.md). Obviously, we'll need an [`itemToText()`](https://api.feathersui.com/current/feathers/controls/ListView.html#itemToText) function to populate the [`text`](https://api.feathersui.com/current/feathers/data/ListViewItemState.html#text) value from the `name` field.
 
 ```hx
-groupListView.itemToText = function(item:TreeNode<Dynamic>):String {
-    return item.data.name;
+groupListView.itemToText = function(item:Dynamic):String {
+    return item.name;
 };
 ```
 

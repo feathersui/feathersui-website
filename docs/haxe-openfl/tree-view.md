@@ -7,37 +7,56 @@ The [`TreeView`](https://api.feathersui.com/current/feathers/controls/TreeView.h
 
 ## The Basics
 
-Start by creating a [`TreeView`](https://api.feathersui.com/current/feathers/controls/TreeView.html) control, pass in a [collection](./data-collections.md) that defines the items to render, and add it to [the display list](https://books.openfl.org/openfl-developers-guide/display-programming/basics-of-display-programming.html).
+Start by creating a [`TreeView`](https://api.feathersui.com/current/feathers/controls/TreeView.html) control, and add it to [the display list](https://books.openfl.org/openfl-developers-guide/display-programming/basics-of-display-programming.html).
 
 ```hx
 var treeView = new TreeView();
-treeView.dataProvider = new TreeCollection([
-  new TreeNode({text: "Node 1"}, [
-    new TreeNode({text: "Node 1A"}, [
-      new TreeNode({text: "Node 1A-I"}),
-      new TreeNode({text: "Node 1A-II"})
-    ]),
-    new TreeNode({text: "Node 1B"})
-  ]),
-  new TreeNode({text: "Node 2"}),
-  new TreeNode({text: "Node 3"}, [
-    new TreeNode({text: "Node 3A"}),
-    new TreeNode({text: "Node 3B"}),
-    new TreeNode({text: "Node 3C"})
-  ]),
-]);
 this.addChild(treeView);
 ```
 
-Set the [`itemToText()`](https://api.feathersui.com/current/feathers/controls/TreeView.html#itemToText) method to get the text from each [`TreeNode`](https://api.feathersui.com/current/feathers/data/TreeNode.html) item to display in an item renderer.
+Next, pass in a [collection](./data-collections.md) that defines the items to render.
 
 ```hx
-treeView.itemToText = function(item:TreeNode<Dynamic>):String {
-    return item.data.text;
-};
+var collection = new ArrayHierarchicalCollection([
+    {
+        text: "Node 1",
+        children: [
+            {
+                text: "Node 1A",
+                children: [
+                    { text: "Node 1A-I" },
+                    { text: "Node 1A-II" }
+                ]
+            },
+            { text: "Node 1B" },
+        ]
+    },
+    { text: "Node 2" },
+    {
+        text: "Node 3",
+        children: [
+            { text: "Node 3A" },
+            { text: "Node 3B" },
+            { text: "Node 3C" }
+        ]
+    }
+]);
+treeView.dataProvider = collection;
 ```
 
-> Items in the collection are not required to be simple object literals, like `{text: "Node 1"}` in the example above. Instances of a class are allowed too (and encouraged as a best practice).
+Set the collection's [`itemToChildren()`](https://api.feathersui.com/current/feathers/controls/ArrayHierarchicalCollection.html#itemToChildren) method to get the children from each branch that need to be rendered by the tree view.
+
+```hx
+collection.itemToChildren = (item:Dynamic) -> item.children;
+```
+
+Set the [`itemToText()`](https://api.feathersui.com/current/feathers/controls/TreeView.html#itemToText) method to get the text from each item to display from the collection.
+
+```hx
+treeView.itemToText = (item:Dynamic) -> item.text;
+```
+
+> Items in the collection are not required to be simple object literals, like `{text: "Node 1"}` in the example above. Instances of a class are allowed too (and encouraged as a best practice). If you use a class, be sure to update the item parameter's type in the `itemToChildren` and `itemToText` functions so that the compiler can catch any errors.
 
 ### Selection
 
@@ -70,7 +89,7 @@ function treeView_changeHandler(event:Event):Void {
 To add a new item at a specific location, pass an object to the data provider's [`addAt()`](https://api.feathersui.com/current/feathers/data/IHierarchicalCollection.html#addAt) method.
 
 ```hx
-var newItem = new TreeNode({ text: "First Item" });
+var newItem = { text: "New Item" };
 var newLocation = [2, 1];
 treeView.dataProvider.addAt(newItem, newLocation);
 ```
@@ -93,7 +112,7 @@ Feathers UI provides a default [`ItemRenderer`](./item-renderer.md) class, which
 Consider a collection of items with the following format.
 
 ```hx
-new TreeNode({ name: "Pizza", icon: "https://example.com/img/pizza.png" })
+{ name: "Pizza", icon: "https://example.com/img/pizza.png" }
 ```
 
 While the default [`ItemRenderer`](./item-renderer.md) class can easily display some text and an image, creating a custom item renderer for this simple data will be a good learning exercise.
@@ -166,8 +185,8 @@ When the [`update()`](https://api.feathersui.com/current/feathers/utils/DisplayO
 In this case, the value of [`text`](https://api.feathersui.com/current/feathers/data/TreeViewItemState.html#text) is displayed by the [`Label`](./label.md), and the `icon` field from [`data`](https://api.feathersui.com/current/feathers/data/TreeViewItemState.html#data) (remember the example item from above, with `name` and `icon` fields) is displayed by the [`AssetLoader`](./asset-loader.md). The values of [`branch`](https://api.feathersui.com/current/feathers/data/TreeViewItemState.html#branch) and [`opened`](https://api.feathersui.com/current/feathers/data/TreeViewItemState.html#opened) are used with a [`ToggleButton`](./toggle-button.md) to display whether a branch is opened or not. Obviously, we'll need an [`itemToText()`](https://api.feathersui.com/current/feathers/controls/ListView.html#itemToText) function to populate the [`text`](https://api.feathersui.com/current/feathers/data/ListViewItemState.html#text) value from the `name` field.
 
 ```hx
-treeView.itemToText = function(item:TreeNode<Dynamic>):String {
-    return item.data.name;
+treeView.itemToText = function(item:Dynamic):String {
+    return item.name;
 };
 ```
 
