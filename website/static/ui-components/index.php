@@ -1,3 +1,3 @@
 <?php
-	header("Location: /");
+	header("Location: /learn/haxe-openfl/ui-components/");
 ?>
