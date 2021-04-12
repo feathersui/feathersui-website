@@ -33,6 +33,7 @@
       "haxe-openfl/application",
       "haxe-openfl/asset-loader",
       "haxe-openfl/button",
+      "haxe-openfl/button-bar",
       "haxe-openfl/callout",
       "haxe-openfl/check",
       "haxe-openfl/combo-box",
