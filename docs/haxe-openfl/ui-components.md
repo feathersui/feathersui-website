@@ -10,10 +10,10 @@ title: Intro to UI components
 - [`AssetLoader`](./asset-loader.md) displays images and other assets.
 - [`Button`](./button.md) is a standard push button that may be clicked or tapped.
 - [`Check`](./check.md) is a check box that may be selected and deselected with a click/tap.
-- [`Label`](./label.md) displays text in a single line or multiple lines.
 - [`Header`](./header.md) displays a title with optional views on the left and right sides.
-- [`HSlider` and `VSlider`](./slider.md) display a numeric value with a thumb that may be dragged along a track.
 - [`HProgressBar` and `VProgressBar`](./progress-bar.md) displays a numeric value with a simple linear fill.
+- [`HSlider` and `VSlider`](./slider.md) display a numeric value with a thumb that may be dragged along a track.
+- [`Label`](./label.md) displays text in a single line or multiple lines.
 - [`PageIndicator`](./page-indicator.md) selects a page index with a basic row of symbols.
 - [`Radio`](./radio.md) belongs to a group where only one may be selected.
 - [`TextArea`](./text-area.md) displays editable multiline text.
