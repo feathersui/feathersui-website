@@ -11,8 +11,10 @@ title: Intro to UI components
 - [`Button`](./button.md) is a standard push button that may be clicked or tapped.
 - [`Check`](./check.md) is a check box that may be selected and deselected with a click/tap.
 - [`Label`](./label.md) displays text in a single line or multiple lines.
+- [`Header`](./header.md) displays a title with optional views on the left and right sides.
 - [`HSlider` and `VSlider`](./slider.md) display a numeric value with a thumb that may be dragged along a track.
 - [`HProgressBar` and `VProgressBar`](./progress-bar.md) displays a numeric value with a simple linear fill.
+- [`PageIndicator`](./page-indicator.md) selects a page index with a basic row of symbols.
 - [`Radio`](./radio.md) belongs to a group where only one may be selected.
 - [`TextArea`](./text-area.md) displays editable multiline text.
 - [`TextInput`](./text-input.md) displays editable text on a single line.
@@ -26,11 +28,14 @@ Containers that support layout, with additional capabilities like scrolling and 
 - [`LayoutGroup`](./layout-group.md) is the most basic container that supports layout.
 - [`ScrollContainer`](./scroll-container.md) supports layout and scrolling.
 - [`Panel`](./panel.md) adds a header and footer to a scrolling container.
+- [`HDividedBox` and `VDividedBox`](./divided-box.md) displays views horizontally or vertically, with resizing handles between them.
+- [`Form`](./form.md) groups a set of input controls with labels.
 
 ## Data containers
 
 Containers that display data from [collections](./data-collections.md), with layout and scrolling.
 
+- [`ButtonBar`](./button-bar.md) displays a row of buttons.
 - [`ComboBox`](./combo-box.md) pops up a list of data, with a text input for filtering.
 - [`GridView`](./grid-view.md) displays a flat collection of data in multiple columns.
 - [`GroupListView`](./group-list-view.md) displays a hierarchical collection of data in a scrollable region.
@@ -57,8 +62,7 @@ Containers that support navigation between different views.
 
 Various other UI components that don't necessarily fit in one of the above categories.
 
+- [`Alert`](./callout.md) displays a pop-up message box, including a title and set of buttons.
 - [`Callout`](./callout.md) displays content as a pop-up with an arrow pointing at another component.
 - [`Drawer`](./drawer.md) slides in a view above other content.
-- [`HDividedBox` and `VDividedBox`](./divided-box.md) displays views horizontally or vertically, with resizing handles between them.
-- [`PageIndicator`](./page-indicator.md) selects a page index with a basic row of symbols.
 - [`TextCallout`](./text-callout.md) displays text as a pop-up with an arrow pointing at another component.
