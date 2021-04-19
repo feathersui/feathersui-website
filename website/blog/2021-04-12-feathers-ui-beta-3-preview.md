@@ -24,19 +24,19 @@ Let's take a look at some of the new UI components and features that are include
 
 - [`Alert`](https://api.feathersui.com/current/feathers/controls/Alert.html) displays a message in a modal pop-up dialog with a title and a set of buttons.
 
-    <div style="text-align:center;"><img src="/blog/img/beta-3-feathersui-alert.png" style="width:450px"></a></div>
+    <div style="text-align:center;"><a href="https://api.feathersui.com/current/feathers/controls/Alert.html"><img src="/blog/img/beta-3-feathersui-alert.png" style="width:450px"></a></div>
 
 - [`ButtonBar`](https://api.feathersui.com/current/feathers/controls/ButtonBar.html) displays a grouping of buttons based on a [data collection](https://feathersui.com/learn/haxe-openfl/data-collections).
 
-    <div style="text-align:center;"><img src="/blog/img/beta-3-feathersui-button-bar.png" style="width:450px"></a></div>
+    <div style="text-align:center;"><a href="https://api.feathersui.com/current/feathers/controls/ButtonBar.html"><img src="/blog/img/beta-3-feathersui-button-bar.png" style="width:450px"></a></div>
 
 - [`Form`](https://api.feathersui.com/current/feathers/controls/Form.html) and [`FormItem`](https://api.feathersui.com/current/feathers/controls/FormItem.html) display a set of form controls with labels, including the ability to assign a specific submit button.
 
-    <div style="text-align:center;"><img src="/blog/img/beta-3-feathersui-form.png" style="width:450px"></a></div>
+    <div style="text-align:center;"><a href="https://api.feathersui.com/current/feathers/controls/Form.html"><img src="/blog/img/beta-3-feathersui-form.png" style="width:450px"></a></div>
 
 - [`Header`](https://api.feathersui.com/current/feathers/controls/Header.html) display a title in the center and two optional views on the left and right sides.
 
-    <div style="text-align:center;"><img src="/blog/img/beta-3-feathersui-header.png" style="width:450px"></a></div>
+    <div style="text-align:center;"><a href="https://api.feathersui.com/current/feathers/controls/Header.html"><img src="/blog/img/beta-3-feathersui-header.png" style="width:450px"></a></div>
 
 ## A big release
 
