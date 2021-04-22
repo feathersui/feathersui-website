@@ -88,7 +88,7 @@ Now, the layout will always display three columns, even if the container can fit
 Pages can organize the content of the layout into more manageable pieces. We can enable [`paging`](/api-reference/feathers/layout/TiledRowsLayout.html#paging) in either the horizontal direction or the vertical direction. In the example below, we'll enable horizontal paging:
 
 ```actionscript
-layout.paging = TiledRowsLayout.PAGING_HORIZONTAL;
+layout.paging = Direction.HORIZONTAL;
 ```
 
 If we set padding values on a layout that has paging enabled, each page will use those padding values around its edges. Similarly, vertical alignment will apply to all pages because a page will never display more content than is visible before breaking to the next page.
