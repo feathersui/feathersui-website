@@ -5,6 +5,11 @@ sidebar_label: Label
 
 The [`Label`](https://api.feathersui.com/current/feathers/controls/Label.html) class is for displaying text.
 
+<figure>
+<iframe src="/learn/haxe-openfl/samples/label.html" width="100%" height="150"></iframe>
+<figcaption>Live preview of the <a href="https://api.feathersui.com/current/feathers/controls/Label.html"><code>Label</code></a> component</figcaption>
+</figure>
+
 ## The Basics
 
 First, let's create a [`Label`](https://api.feathersui.com/current/feathers/controls/Label.html) control, give it some text to display, and add it to [the display list](https://books.openfl.org/openfl-developers-guide/display-programming/basics-of-display-programming.html).

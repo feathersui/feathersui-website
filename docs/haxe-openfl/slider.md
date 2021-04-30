@@ -5,6 +5,11 @@ sidebar_label: HSlider / VSlider
 
 The [`HSlider`](https://api.feathersui.com/current/feathers/controls/HSlider.html) and [`VSlider`](https://api.feathersui.com/current/feathers/controls/VSlider.html) classes allow a user to select a numeric value in a specific range by dragging a _thumb_ along the length of a _track_.
 
+<figure>
+<iframe src="/learn/haxe-openfl/samples/slider.html" width="100%" height="220"></iframe>
+<figcaption>Live preview of the <a href="https://api.feathersui.com/current/feathers/controls/HSlider.html"><code>HSlider</code></a> and <a href="https://api.feathersui.com/current/feathers/controls/VSlider.html"><code>VSlider</code></a> components</figcaption>
+</figure>
+
 ## The Basics
 
 > For simplicity, the example code on this page will always use [`HSlider`](https://api.feathersui.com/current/feathers/controls/HSlider.html), but the same APIs are available on [`VSlider`](https://api.feathersui.com/current/feathers/controls/VSlider.html) too.

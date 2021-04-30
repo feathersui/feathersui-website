@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      id="viewport"
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Feathers UI Button preview</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <script src="https://unpkg.com/openfl@8.9.6/dist/openfl.min.js"></script>
+    <script src="https://unpkg.com/actuate@1.8.9-beta/dist/actuate.min.js"></script>
+    <script src="https://unpkg.com/feathersui-openfl@1.0.0-beta.3a/dist/feathersui-openfl.min.js"></script>
+    <script>
+      class HelloWorld extends feathers.controls.Application {
+        constructor() {
+          super();
+
+          this.layout = new feathers.layout.HorizontalLayout();
+          this.layout.horizontalAlign = feathers.layout.HorizontalAlign.CENTER;
+          this.layout.verticalAlign = feathers.layout.VerticalAlign.MIDDLE;
+          this.layout.gap = 40.0;
+
+          this.button1 = new feathers.controls.Button();
+          this.button1.text = "Regular Button";
+          this.addChild(this.button1);
+
+          this.button2 = new feathers.controls.Button();
+          this.button2.variant = feathers.controls.Button.VARIANT_PRIMARY;
+          this.button2.text = "Primary Button";
+          this.button2.selected = true;
+          this.addChild(this.button2);
+
+          this.button3 = new feathers.controls.Button();
+          this.button3.variant = feathers.controls.Button.VARIANT_DANGER;
+          this.button3.text = "Danger Button";
+          this.addChild(this.button3);
+        }
+      }
+
+      var stage = new openfl.display.Stage(0, 0, null, HelloWorld, {
+        allowHighDPI: true,
+      });
+      document.body.appendChild(stage.element);
+    </script>
+  </body>
+</html>

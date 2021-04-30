@@ -5,6 +5,11 @@ sidebar_label: ToggleSwitch
 
 The [`ToggleSwitch`](https://api.feathersui.com/current/feathers/controls/ToggleSwitch.html) class appears somewhat like a light switch, and it may be toggled between selected and deselected states. The thumb may be dragged from side to side, or it may be tapped to change selection. A toggle switch is often used as an alternative to a [`Check`](./check.md) control — especially on devices with touchscreens.
 
+<figure>
+<iframe src="/learn/haxe-openfl/samples/toggle-switch.html" width="100%" height="150"></iframe>
+<figcaption>Live preview of the <a href="https://api.feathersui.com/current/feathers/controls/ToggleSwitch.html"><code>ToggleSwitch</code></a> component</figcaption>
+</figure>
+
 ## The Basics
 
 First, let's create an [`ToggleSwitch`](https://api.feathersui.com/current/feathers/controls/ToggleSwitch.html) control, update its selection, and add it to the [the display list](https://books.openfl.org/openfl-developers-guide/display-programming/basics-of-display-programming.html).

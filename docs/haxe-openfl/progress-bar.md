@@ -5,6 +5,11 @@ sidebar_label: HProgressBar / VProgressBar
 
 The [`HProgressBar`](https://api.feathersui.com/current/feathers/controls/HProgressBar.html) and [`VProgressBar`](https://api.feathersui.com/current/feathers/controls/VProgressBar.html) classes display a visual indicator of the percentage of a task that has been completed.
 
+<figure>
+<iframe src="/learn/haxe-openfl/samples/progress-bar.html" width="100%" height="220"></iframe>
+<figcaption>Live preview of the <a href="https://api.feathersui.com/current/feathers/controls/HProgressBar.html"><code>HProgressBar</code></a> and <a href="https://api.feathersui.com/current/feathers/controls/VProgressBar.html"><code>VProgressBar</code></a> components</figcaption>
+</figure>
+
 ## The Basics
 
 > For simplicity, the example code on this page will always use [`HProgressBar`](https://api.feathersui.com/current/feathers/controls/HProgressBar.html), but the same APIs are available on [`VProgressBar`](https://api.feathersui.com/current/feathers/controls/VProgressBar.html) too.

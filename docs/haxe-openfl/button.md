@@ -5,6 +5,13 @@ sidebar_label: Button
 
 The [`Button`](https://api.feathersui.com/current/feathers/controls/Button.html) class displays a button that may be triggered by a mouse click or a tap on a touchscreen. It can optionally display text, an icon, or both — with a variety of layout options. Buttons have separate states for each of the different pointer phases. The skin and icon can be customized for each state, and the text may be rendered with different font styles for each state too.
 
+<!--
+<figure>
+<iframe src="/learn/haxe-openfl/samples/button.html" width="100%" height="150"></iframe>
+<figcaption>Live preview of the <a href="https://api.feathersui.com/current/feathers/controls/Button.html"><code>Button</code></a> component</figcaption>
+</figure>
+-->
+
 ## The Basics
 
 Start by creating a [`Button`](https://api.feathersui.com/current/feathers/controls/Button.html) control, give it some text to display, and add it to [the display list](https://books.openfl.org/openfl-developers-guide/display-programming/basics-of-display-programming.html).

@@ -5,6 +5,13 @@ sidebar_label: PopUpListView
 
 The [`PopUpListView`](https://api.feathersui.com/current/feathers/controls/PopUpListView.html) class displays a [button](./button.md), that when triggered, renders the items from a [data collection](./data-collections.md) in a pop-up [list view](./list-view.md).
 
+<!--
+<figure>
+<iframe src="/learn/haxe-openfl/samples/pop-up-list-view.html" width="100%" height="200"></iframe>
+<figcaption>Live preview of the <a href="https://api.feathersui.com/current/feathers/controls/PopUpListView.html"><code>PopUpListView</code></a> component</figcaption>
+</figure>
+-->
+
 ## The Basics
 
 Start by creating a [`PopUpListView`](https://api.feathersui.com/current/feathers/controls/PopUpListView.html) control, pass in a [collection](./data-collections.md) that defines the items to render, and add it to [the display list](https://books.openfl.org/openfl-developers-guide/display-programming/basics-of-display-programming.html).

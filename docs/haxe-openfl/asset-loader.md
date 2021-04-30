@@ -5,6 +5,11 @@ sidebar_label: AssetLoader
 
 The [`AssetLoader`](https://api.feathersui.com/current/feathers/controls/AssetLoader.html) class loads and displays visual assets, such as images or [SWF library symbols](https://www.openfl.org/learn/haxelib/tutorials/using-swf-assets/).
 
+<figure>
+<iframe src="/learn/haxe-openfl/samples/asset-loader.html" width="100%" height="180"></iframe>
+<figcaption>Live preview of the <a href="https://api.feathersui.com/current/feathers/controls/AssetLoader.html"><code>AssetLoader</code></a> component</figcaption>
+</figure>
+
 ## The Basics
 
 Create an [`AssetLoader`](https://api.feathersui.com/current/feathers/controls/AssetLoader.html) control and add it to [the display list](https://books.openfl.org/openfl-developers-guide/display-programming/basics-of-display-programming.html).

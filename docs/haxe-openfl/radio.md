@@ -5,6 +5,11 @@ sidebar_label: Radio
 
 The [`Radio`](https://api.feathersui.com/current/feathers/controls/Radio.html) class may be selected when clicked or tapped — similar to a [toggle button](toggle-button.md) — but it is included in a group containing multiple radios, and only one radio may be selected at a time.
 
+<figure>
+<iframe src="/learn/haxe-openfl/samples/radio.html" width="100%" height="150"></iframe>
+<figcaption>Live preview of the <a href="https://api.feathersui.com/current/feathers/controls/Radio.html"><code>Radio</code></a> component</figcaption>
+</figure>
+
 ## The Basics
 
 Start by creating some [`Radio`](https://api.feathersui.com/current/feathers/controls/Radio.html) controls, give them some text to display, add them to a [`ToggleGroup`](https://api.feathersui.com/current/feathers/controls/ToggleGroup.html), and add them to the [the display list](https://books.openfl.org/openfl-developers-guide/display-programming/basics-of-display-programming.html).

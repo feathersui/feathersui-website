@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      id="viewport"
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Feathers UI HSlider and VSlider preview</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <script src="https://unpkg.com/openfl@8.9.6/dist/openfl.min.js"></script>
+    <script src="https://unpkg.com/actuate@1.8.9-beta/dist/actuate.min.js"></script>
+    <script src="https://unpkg.com/feathersui-openfl@1.0.0-beta.3a/dist/feathersui-openfl.min.js"></script>
+    <script>
+      class HelloWorld extends feathers.controls.Application {
+        constructor() {
+          super();
+
+          this.layout = new feathers.layout.HorizontalLayout();
+          this.layout.horizontalAlign = feathers.layout.HorizontalAlign.CENTER;
+          this.layout.verticalAlign = feathers.layout.VerticalAlign.MIDDLE;
+          this.layout.gap = 80.0;
+
+          this.hSlider = new feathers.controls.HSlider();
+          this.hSlider.minimum = 0.0;
+          this.hSlider.maximum = 1.0;
+          this.hSlider.value = 0.5;
+          this.addChild(this.hSlider);
+
+          this.vSlider = new feathers.controls.VSlider();
+          this.vSlider.minimum = 0.0;
+          this.vSlider.maximum = 100.0;
+          this.vSlider.value = 25.0;
+          this.addChild(this.vSlider);
+        }
+      }
+
+      var stage = new openfl.display.Stage(0, 0, null, HelloWorld, {
+        allowHighDPI: true,
+      });
+      document.body.appendChild(stage.element);
+    </script>
+  </body>
+</html>

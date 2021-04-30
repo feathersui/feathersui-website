@@ -7,6 +7,11 @@ The [`TextInput`](https://api.feathersui.com/current/feathers/controls/TextInput
 
 > For editable text with multiple wrapping lines and scrolling, see the [`TextArea`](./text-area.md) component.
 
+<figure>
+<iframe src="/learn/haxe-openfl/samples/text-input.html" width="100%" height="150"></iframe>
+<figcaption>Live preview of the <a href="https://api.feathersui.com/current/feathers/controls/TextInput.html"><code>TextInput</code></a> component</figcaption>
+</figure>
+
 ## The Basics
 
 Create a [`TextInput`](https://api.feathersui.com/current/feathers/controls/TextInput.html) control and add it to the [the display list](https://books.openfl.org/openfl-developers-guide/display-programming/basics-of-display-programming.html).

@@ -5,6 +5,11 @@ sidebar_label: Check
 
 The [`Check`](https://api.feathersui.com/current/feathers/controls/Check.html) class may be selected and deselected when clicked or tapped — similar to a [toggle button](toggle-button.md). A check displays text and an icon that indicates the current selection — along with a variety of layout options. Checks have separate states for each of the different pointer phases — with additional variations when selected. The icon and font styles may be customized for each state.
 
+<figure>
+<iframe src="/learn/haxe-openfl/samples/check.html" width="100%" height="150"></iframe>
+<figcaption>Live preview of the <a href="https://api.feathersui.com/current/feathers/controls/Check.html"><code>Check</code></a> component</figcaption>
+</figure>
+
 ## The Basics
 
 Start by creating a [`Check`](https://api.feathersui.com/current/feathers/controls/Check.html) control, give it some text to display, and add it to the [the display list](https://books.openfl.org/openfl-developers-guide/display-programming/basics-of-display-programming.html).

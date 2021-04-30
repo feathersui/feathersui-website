@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      id="viewport"
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Feathers UI HProgressBar and VProgressBar preview</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <script src="https://unpkg.com/openfl@8.9.6/dist/openfl.min.js"></script>
+    <script src="https://unpkg.com/actuate@1.8.9-beta/dist/actuate.min.js"></script>
+    <script src="https://unpkg.com/feathersui-openfl@1.0.0-beta.3a/dist/feathersui-openfl.min.js"></script>
+    <script>
+      class HelloWorld extends feathers.controls.Application {
+        constructor() {
+          super();
+
+          this.layout = new feathers.layout.HorizontalLayout();
+          this.layout.horizontalAlign = feathers.layout.HorizontalAlign.CENTER;
+          this.layout.verticalAlign = feathers.layout.VerticalAlign.MIDDLE;
+          this.layout.gap = 80.0;
+
+          this.hProgress = new feathers.controls.HProgressBar();
+          this.hProgress.minimum = 0.0;
+          this.hProgress.maximum = 1.0;
+          this.hProgress.value = 0.5;
+          this.addChild(this.hProgress);
+
+          this.vProgress = new feathers.controls.VProgressBar();
+          this.vProgress.minimum = 0.0;
+          this.vProgress.maximum = 100.0;
+          this.vProgress.value = 25.0;
+          this.addChild(this.vProgress);
+        }
+      }
+
+      var stage = new openfl.display.Stage(0, 0, null, HelloWorld, {
+        allowHighDPI: true,
+      });
+      document.body.appendChild(stage.element);
+    </script>
+  </body>
+</html>

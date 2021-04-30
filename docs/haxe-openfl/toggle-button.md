@@ -5,6 +5,11 @@ sidebar_label: ToggleButton
 
 The [`ToggleButton`](https://api.feathersui.com/current/feathers/controls/ToggleButton.html) class is a special type of [button](./button.md) that may be selected and deselected when triggered. Similar to regular buttons, a toggle button can optionally display text, an icon, or both — with a variety of layout options. Toggle buttons have separate states for each of the different pointer phases — with additional variations when selected. The skin and icon can be customized for each state, and the text may be rendered with different font styles for each state too.
 
+<figure>
+<iframe src="/learn/haxe-openfl/samples/toggle-button.html" width="100%" height="150"></iframe>
+<figcaption>Live preview of the <a href="https://api.feathersui.com/current/feathers/controls/ToggleButton.html"><code>ToggleButton</code></a> component</figcaption>
+</figure>
+
 ## The Basics
 
 Start by creating a [`ToggleButton`](https://api.feathersui.com/current/feathers/controls/ToggleButton.html) control, give it some text to display, and add it to the [the display list](https://books.openfl.org/openfl-developers-guide/display-programming/basics-of-display-programming.html).
