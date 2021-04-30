@@ -39,7 +39,6 @@
           this.button2 = new feathers.controls.Button();
           this.button2.variant = feathers.controls.Button.VARIANT_PRIMARY;
           this.button2.text = "Primary Button";
-          this.button2.selected = true;
           this.addChild(this.button2);
 
           this.button3 = new feathers.controls.Button();
@@ -49,10 +48,11 @@
         }
       }
 
-      var stage = new openfl.display.Stage(0, 0, null, HelloWorld, {
+      var stage = new openfl.display.Stage(0, 0, null, null, {
         allowHighDPI: true,
       });
       document.body.appendChild(stage.element);
+      stage.addChild(new HelloWorld());
     </script>
   </body>
 </html>
