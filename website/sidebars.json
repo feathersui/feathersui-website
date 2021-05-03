@@ -48,6 +48,7 @@
       "haxe-openfl/layout-group",
       "haxe-openfl/layout-group-item-renderer",
       "haxe-openfl/list-view",
+      "haxe-openfl/numeric-stepper",
       "haxe-openfl/page-indicator",
       "haxe-openfl/page-navigator",
       "haxe-openfl/panel",
