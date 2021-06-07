@@ -16,9 +16,17 @@ In addition to the dependencies specified in the [Feathers UI installation instr
 
   - Launch Android Studio at least once to go through its setup wizard that downloads the Android SDK components.
 
-- [Download Android NDK **r15c**](https://developer.android.com/ndk/downloads/older_releases) (do not download a newer NDK version)
+- [Download Android NDK **r21e**](https://developer.android.com/ndk/downloads/older_releases)
+
+  - Note: The Android NDK is not the same as the Android SDK. You need both.
+
+  - Do **not** download versions that are newer than NDK r21. NDK r22 and newer are not currently compatible with Haxe. The version of the NDK that Android Studio offers to install will be too new for Haxe.
 
   - Extract the archive somewhere on your file system, and take note of the absolute path because it will be used in a later step.
+
+  > On macOS, be sure to download the _Mac App Bundle_ rather than the _.zip_ bundle. You will download a _.dmg_ file. By using the signed and notarized _Mac App Bundle_, you will ensure that Gatekeeper does not block the executables from the NDK from running.
+  >
+  > When you open the _.dmg_ file, it will contain an _.app_ file. Right click this _.app_ file, and choose **Show Package Contents**. Inside the _.app_ file, the NDK is located at _Contents/NDK_. Copy this folder somewhere on your hard drive.
 
 ### Configure OpenFL for Android
 
@@ -82,9 +90,11 @@ The build's output will be written to the _bin/android/bin_ folder. The _.apk_ f
 
 ### Error on macOS says executables from the Android NDK "cannot be opened because the developer cannot be verified"
 
-You will need to manually allow these executables through macOS Gatekeeper.
+You may have downloaded the _.zip_ version of the NDK, instead of the _Mac App Bundle_ version of the NDK. The _Mac App Bundle_ version of the NDK is signed and notarized, which means that macOS Gatekeeper trusts this version more, and you won't see these errors.
 
-1. In the error dialog, click **Cancel** and stop the current build in your terminal.
+If, for some reason, you must use the _.zip_ bundle, you can manually allow the executables through macOS Gatekeeper. However, be warned that it's a tedious process to get everything working correctly.
+
+1. In the "developer cannot be verified" error dialog, click **Cancel** and stop the current build in your terminal.
 
 1. Open the **System Preferences** app.
 
@@ -104,7 +114,7 @@ You may need to repeat this process many times, so keep the **System Preferences
 
 There is more than one possible reason for seeing this error:
 
-1. You may have downloaded the wrong version of the Android NDK. You must use **r15c** specifically. Newer versions will not work.
+1. You may have downloaded the wrong version of the Android NDK. You must not use NDK versions newer than **NDK r21** (and you probably shouldn't use versions older than **r15c**).
 
 1. You may have used the wrong path to the Android NDK on your file system. Check that the root folder of the SDK contains multiple sub-folders and files, including a README file.
 
