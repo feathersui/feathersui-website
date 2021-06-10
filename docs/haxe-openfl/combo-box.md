@@ -5,12 +5,10 @@ sidebar_label: ComboBox
 
 The [`ComboBox`](https://api.feathersui.com/current/feathers/controls/ComboBox.html) class displays an editable [text input](./text-input.md) and a [button](./button.md), that when triggered, renders the items from a [data collection](./data-collections.md) in a pop-up [list view](./list-view.md).
 
-<!--
 <figure>
 <iframe src="/learn/haxe-openfl/samples/combo-box.html" width="100%" height="200"></iframe>
 <figcaption>Live preview of the <a href="https://api.feathersui.com/current/feathers/controls/ComboBox.html"><code>ComboBox</code></a> component</figcaption>
 </figure>
--->
 
 ## The Basics
 

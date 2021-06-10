@@ -7,7 +7,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
-    <title>Feathers UI ButtonBar preview</title>
+    <title>Feathers UI HScrollBar and VScrollBar preview</title>
     <style>
       html,
       body {
@@ -27,17 +27,26 @@
         constructor() {
           super();
 
-          this.layout = new feathers.layout.AnchorLayout();
+          this.layout = new feathers.layout.HorizontalLayout();
+          this.layout.horizontalAlign = feathers.layout.HorizontalAlign.CENTER;
+          this.layout.verticalAlign = feathers.layout.VerticalAlign.MIDDLE;
+          this.layout.gap = 80.0;
 
-          this.buttonBar = new feathers.controls.ButtonBar();
-          this.buttonBar.dataProvider = new feathers.data.ArrayCollection([
-            { text: "One" },
-            { text: "Two" },
-            { text: "Three" },
-          ]);
-          this.buttonBar.itemToText = (item) => item.text;
-          this.buttonBar.layoutData = feathers.layout.AnchorLayoutData.center();
-          this.addChild(this.buttonBar);
+          this.hScrollBar = new feathers.controls.HScrollBar();
+          this.hScrollBar.minimum = 0.0;
+          this.hScrollBar.maximum = 1.0;
+          this.hScrollBar.value = 0.5;
+          this.hScrollBar.page = 0.25;
+          this.hScrollBar.width = 150.0;
+          this.addChild(this.hScrollBar);
+
+          this.vScrollBar = new feathers.controls.VScrollBar();
+          this.vScrollBar.minimum = 0.0;
+          this.vScrollBar.maximum = 100.0;
+          this.vScrollBar.value = 25.0;
+          this.vScrollBar.page = 25.0;
+          this.vScrollBar.height = 150.0;
+          this.addChild(this.vScrollBar);
         }
       }
 

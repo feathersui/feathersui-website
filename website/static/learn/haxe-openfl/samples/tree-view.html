@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      id="viewport"
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Feathers UI TreeView preview</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <script src="https://unpkg.com/openfl@8.9.6/dist/openfl.min.js"></script>
+    <script src="https://unpkg.com/actuate@1.8.9-beta/dist/actuate.min.js"></script>
+    <script src="https://unpkg.com/feathersui-openfl@1.0.0-beta.3b/dist/feathersui-openfl.min.js"></script>
+    <script>
+      class HelloWorld extends feathers.controls.Application {
+        constructor() {
+          super();
+
+          this.layout = new feathers.layout.AnchorLayout();
+
+          var data = [
+            new feathers.data.TreeNode({ text: "Node 1" }, [
+              new feathers.data.TreeNode({ text: "Node 1A" }, [
+                new feathers.data.TreeNode({ text: "Node 1A-I" }),
+                new feathers.data.TreeNode({ text: "Node 1A-II" }),
+                new feathers.data.TreeNode({ text: "Node 1A-III" }),
+                new feathers.data.TreeNode({ text: "Node 1A-IV" }),
+              ]),
+              new feathers.data.TreeNode({ text: "Node 1B" }),
+              new feathers.data.TreeNode({ text: "Node 1C" }),
+            ]),
+            new feathers.data.TreeNode({ text: "Node 2" }, [
+              new feathers.data.TreeNode({ text: "Node 2A" }),
+              new feathers.data.TreeNode({ text: "Node 2B" }),
+              new feathers.data.TreeNode({ text: "Node 2C" }),
+            ]),
+            new feathers.data.TreeNode({ text: "Node 3" }),
+            new feathers.data.TreeNode({ text: "Node 4" }, [
+              new feathers.data.TreeNode({ text: "Node 4A" }),
+              new feathers.data.TreeNode({ text: "Node 4B" }),
+              new feathers.data.TreeNode({ text: "Node 4C" }),
+              new feathers.data.TreeNode({ text: "Node 4D" }),
+              new feathers.data.TreeNode({ text: "Node 4E" }),
+            ]),
+          ];
+
+          this.treeView = new feathers.controls.TreeView();
+          this.treeView.dataProvider = new feathers.data.TreeCollection(data);
+          this.treeView.itemToText = (item) => item.data.text;
+          this.treeView.width = 180.0;
+          this.treeView.layoutData = feathers.layout.AnchorLayoutData.center();
+          this.addChild(this.treeView);
+        }
+      }
+
+      var stage = new openfl.display.Stage(0, 0, null, null, {
+        allowHighDPI: true,
+      });
+      document.body.appendChild(stage.element);
+      stage.addChild(new HelloWorld());
+    </script>
+  </body>
+</html>

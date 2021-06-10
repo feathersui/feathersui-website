@@ -7,7 +7,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
-    <title>Feathers UI ButtonBar preview</title>
+    <title>Feathers UI PageIndicator preview</title>
     <style>
       html,
       body {
@@ -29,15 +29,11 @@
 
           this.layout = new feathers.layout.AnchorLayout();
 
-          this.buttonBar = new feathers.controls.ButtonBar();
-          this.buttonBar.dataProvider = new feathers.data.ArrayCollection([
-            { text: "One" },
-            { text: "Two" },
-            { text: "Three" },
-          ]);
-          this.buttonBar.itemToText = (item) => item.text;
-          this.buttonBar.layoutData = feathers.layout.AnchorLayoutData.center();
-          this.addChild(this.buttonBar);
+          this.pageIndicator = new feathers.controls.PageIndicator();
+          this.pageIndicator.maxSelectedIndex = 4;
+          this.pageIndicator.layoutData =
+            feathers.layout.AnchorLayoutData.center();
+          this.addChild(this.pageIndicator);
         }
       }
 

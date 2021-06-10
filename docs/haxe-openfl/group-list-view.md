@@ -5,6 +5,11 @@ sidebar_label: GroupListView
 
 The [`GroupListView`](https://api.feathersui.com/current/feathers/controls/GroupListView.html) class renders the items from a [data collection](./data-collections.md) similarly to a [`ListView`](./list-view.md), except that the data is _hierarchical_ and items may be organized into groups. It includes support for selecting an item, scrolling, and custom layouts.
 
+<figure>
+<iframe src="/learn/haxe-openfl/samples/group-list-view.html" width="100%" height="200"></iframe>
+<figcaption>Live preview of the <a href="https://api.feathersui.com/current/feathers/controls/GroupListView.html"><code>GroupListView</code></a> component</figcaption>
+</figure>
+
 ## The Basics
 
 Start by creating a [`GroupListView`](https://api.feathersui.com/current/feathers/controls/GroupListView.html) control, and add it to [the display list](https://books.openfl.org/openfl-developers-guide/display-programming/basics-of-display-programming.html).

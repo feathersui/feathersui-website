@@ -5,6 +5,11 @@ sidebar_label: HScrollBar / VScrollBar
 
 The [`HScrollBar`](https://api.feathersui.com/current/feathers/controls/HScrollBar.html) and [`VScrollBar`](https://api.feathersui.com/current/feathers/controls/VScrollBar.html) classes allow a user to select a numeric value in a specific range by dragging a _thumb_ along the length of a _track_.
 
+<figure>
+<iframe src="/learn/haxe-openfl/samples/scroll-bar.html" width="100%" height="200"></iframe>
+<figcaption>Live preview of the <a href="https://api.feathersui.com/current/feathers/controls/HScrollBar.html"><code>HScrollBar</code></a> and <a href="https://api.feathersui.com/current/feathers/controls/VScrollBar.html"><code>VScrollBar</code></a> components</figcaption>
+</figure>
+
 ## The Basics
 
 > Generally, scroll bars are created automatically by any container that supports scrolling. When creating custom components that support scrolling, you should generally extend [`BaseScrollContainer`](https://api.feathersui.com/current/feathers/controls/supportClasses/BaseScrollContainer.html).

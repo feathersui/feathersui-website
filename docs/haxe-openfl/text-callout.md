@@ -5,6 +5,11 @@ sidebar_label: TextCallout
 
 The [`TextCallout`](https://api.feathersui.com/current/feathers/controls/TextCallout.html) class is a special type of [callout](./callout.md) that simply renders text as its content.
 
+<figure>
+<iframe src="/learn/haxe-openfl/samples/text-callout.html" width="100%" height="150"></iframe>
+<figcaption>Live preview of the <a href="https://api.feathersui.com/current/feathers/controls/TextCallout.html"><code>TextCallout</code></a> component</figcaption>
+</figure>
+
 ## The Basics
 
 To create a `TextCallout` component, call the static function [`TextCallout.show()`](https://api.feathersui.com/current/feathers/controls/TextCallout.html#show). In the following example, a text callout will be opened after triggering a [button](./button.md).

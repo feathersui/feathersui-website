@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      id="viewport"
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Feathers UI GroupListView preview</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <script src="https://unpkg.com/openfl@8.9.6/dist/openfl.min.js"></script>
+    <script src="https://unpkg.com/actuate@1.8.9-beta/dist/actuate.min.js"></script>
+    <script src="https://unpkg.com/feathersui-openfl@1.0.0-beta.3b/dist/feathersui-openfl.min.js"></script>
+    <script>
+      class HelloWorld extends feathers.controls.Application {
+        constructor() {
+          super();
+
+          this.layout = new feathers.layout.AnchorLayout();
+
+          var data = [
+            new feathers.data.TreeNode({ text: "A" }, [
+              new feathers.data.TreeNode({ text: "Aardvark" }),
+              new feathers.data.TreeNode({ text: "Alligator" }),
+              new feathers.data.TreeNode({ text: "Antelope" }),
+            ]),
+            new feathers.data.TreeNode({ text: "B" }, [
+              new feathers.data.TreeNode({ text: "Badger" }),
+              new feathers.data.TreeNode({ text: "Bear" }),
+              new feathers.data.TreeNode({ text: "Beaver" }),
+              new feathers.data.TreeNode({ text: "Buffalo" }),
+            ]),
+            new feathers.data.TreeNode({ text: "C" }, [
+              new feathers.data.TreeNode({ text: "Cheetah" }),
+              new feathers.data.TreeNode({ text: "Chimpanzee" }),
+            ]),
+            new feathers.data.TreeNode({ text: "D" }, [
+              new feathers.data.TreeNode({ text: "Dolphin" }),
+              new feathers.data.TreeNode({ text: "Donkey" }),
+              new feathers.data.TreeNode({ text: "Duck" }),
+            ]),
+            new feathers.data.TreeNode({ text: "E" }, [
+              new feathers.data.TreeNode({ text: "Eagle" }),
+              new feathers.data.TreeNode({ text: "Earthworm" }),
+              new feathers.data.TreeNode({ text: "Elephant" }),
+              new feathers.data.TreeNode({ text: "Elk" }),
+            ]),
+            new feathers.data.TreeNode({ text: "F" }, [
+              new feathers.data.TreeNode({ text: "Flamingo" }),
+              new feathers.data.TreeNode({ text: "Fox" }),
+            ]),
+            new feathers.data.TreeNode({ text: "G" }, [
+              new feathers.data.TreeNode({ text: "Gecko" }),
+              new feathers.data.TreeNode({ text: "Goat" }),
+              new feathers.data.TreeNode({ text: "Goose" }),
+            ]),
+            new feathers.data.TreeNode({ text: "H" }, [
+              new feathers.data.TreeNode({ text: "Hedgehog" }),
+              new feathers.data.TreeNode({ text: "Horse" }),
+            ]),
+            new feathers.data.TreeNode({ text: "I" }, [
+              new feathers.data.TreeNode({ text: "Igunana" }),
+            ]),
+            new feathers.data.TreeNode({ text: "J" }, [
+              new feathers.data.TreeNode({ text: "Jaguar" }),
+              new feathers.data.TreeNode({ text: "Jellyfish" }),
+            ]),
+            new feathers.data.TreeNode({ text: "K" }, [
+              new feathers.data.TreeNode({ text: "Kangaroo" }),
+            ]),
+            new feathers.data.TreeNode({ text: "L" }, [
+              new feathers.data.TreeNode({ text: "Lobster" }),
+              new feathers.data.TreeNode({ text: "Lynx" }),
+            ]),
+            new feathers.data.TreeNode({ text: "M" }, [
+              new feathers.data.TreeNode({ text: "Monkey" }),
+              new feathers.data.TreeNode({ text: "Moose" }),
+              new feathers.data.TreeNode({ text: "Mule" }),
+            ]),
+            new feathers.data.TreeNode({ text: "N" }, [
+              new feathers.data.TreeNode({ text: "Newt" }),
+            ]),
+            new feathers.data.TreeNode({ text: "O" }, [
+              new feathers.data.TreeNode({ text: "Ocelot" }),
+              new feathers.data.TreeNode({ text: "Octopus" }),
+              new feathers.data.TreeNode({ text: "Ostrich" }),
+            ]),
+            new feathers.data.TreeNode({ text: "P" }, [
+              new feathers.data.TreeNode({ text: "Panther" }),
+              new feathers.data.TreeNode({ text: "Penguin" }),
+              new feathers.data.TreeNode({ text: "Pig" }),
+              new feathers.data.TreeNode({ text: "Platypus" }),
+            ]),
+            new feathers.data.TreeNode({ text: "Q" }, [
+              new feathers.data.TreeNode({ text: "Quokka" }),
+            ]),
+            new feathers.data.TreeNode({ text: "R" }, [
+              new feathers.data.TreeNode({ text: "Rabbit" }),
+              new feathers.data.TreeNode({ text: "Raccoon" }),
+              new feathers.data.TreeNode({ text: "Rat" }),
+            ]),
+            new feathers.data.TreeNode({ text: "S" }, [
+              new feathers.data.TreeNode({ text: "Scorpion" }),
+              new feathers.data.TreeNode({ text: "Seal" }),
+              new feathers.data.TreeNode({ text: "Sloth" }),
+              new feathers.data.TreeNode({ text: "Snake" }),
+              new feathers.data.TreeNode({ text: "Squid" }),
+              new feathers.data.TreeNode({ text: "Squirrel" }),
+              new feathers.data.TreeNode({ text: "Starling" }),
+            ]),
+            new feathers.data.TreeNode({ text: "T" }, [
+              new feathers.data.TreeNode({ text: "Tiger" }),
+              new feathers.data.TreeNode({ text: "Toucan" }),
+              new feathers.data.TreeNode({ text: "Turkey" }),
+            ]),
+            new feathers.data.TreeNode({ text: "U" }, [
+              new feathers.data.TreeNode({ text: "Urchin" }),
+            ]),
+            new feathers.data.TreeNode({ text: "V" }, [
+              new feathers.data.TreeNode({ text: "Vulture" }),
+            ]),
+            new feathers.data.TreeNode({ text: "W" }, [
+              new feathers.data.TreeNode({ text: "Wallaby" }),
+              new feathers.data.TreeNode({ text: "Warthog" }),
+              new feathers.data.TreeNode({ text: "Wolf" }),
+              new feathers.data.TreeNode({ text: "Wombat" }),
+            ]),
+            new feathers.data.TreeNode({ text: "X" }, [
+              new feathers.data.TreeNode({ text: "X-Ray Tetra" }),
+            ]),
+            new feathers.data.TreeNode({ text: "Y" }, [
+              new feathers.data.TreeNode({ text: "Yak" }),
+            ]),
+            new feathers.data.TreeNode({ text: "Z" }, [
+              new feathers.data.TreeNode({ text: "Zebra" }),
+            ]),
+          ];
+
+          this.groupListView = new feathers.controls.GroupListView();
+          this.groupListView.dataProvider = new feathers.data.TreeCollection(
+            data
+          );
+          this.groupListView.itemToText = (item) => item.data.text;
+          this.groupListView.itemToHeaderText = (item) => item.data.text;
+          this.groupListView.width = 150.0;
+          this.groupListView.layoutData =
+            feathers.layout.AnchorLayoutData.center();
+          this.addChild(this.groupListView);
+        }
+      }
+
+      var stage = new openfl.display.Stage(0, 0, null, null, {
+        allowHighDPI: true,
+      });
+      document.body.appendChild(stage.element);
+      stage.addChild(new HelloWorld());
+    </script>
+  </body>
+</html>

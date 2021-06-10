@@ -5,6 +5,11 @@ sidebar_label: GridView
 
 The [`GridView`](https://api.feathersui.com/current/feathers/controls/GridView.html) class renders a table of data from a [data collection](./data-collections.md). Each item in the data provider is displayed as a row, divided into columns for the item's fields. Grid views support selecting a row, scrolling, and custom cell renderers for each column.
 
+<figure>
+<iframe src="/learn/haxe-openfl/samples/grid-view.html" width="100%" height="200"></iframe>
+<figcaption>Live preview of the <a href="https://api.feathersui.com/current/feathers/controls/GridView.html"><code>GridView</code></a> component</figcaption>
+</figure>
+
 ## The Basics
 
 Start by creating a [`GridView`](https://api.feathersui.com/current/feathers/controls/GridView.html) control, and add it to [the display list](https://books.openfl.org/openfl-developers-guide/display-programming/basics-of-display-programming.html).

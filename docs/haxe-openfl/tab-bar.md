@@ -5,12 +5,10 @@ sidebar_label: TabBar
 
 The [`TabBar`](https://api.feathersui.com/current/feathers/controls/TabBar.html) class displays a set of togglable buttons in a row, where only one button at a time may be selected.
 
-<!--
 <figure>
 <iframe src="/learn/haxe-openfl/samples/tab-bar.html" width="100%" height="150"></iframe>
 <figcaption>Live preview of the <a href="https://api.feathersui.com/current/feathers/controls/TabBar.html"><code>TabBar</code></a> component</figcaption>
 </figure>
--->
 
 ## The Basics
 

@@ -5,6 +5,11 @@ sidebar_label: ItemRenderer
 
 The [`ItemRenderer`](https://api.feathersui.com/current/feathers/controls/dataRenderers/ItemRenderer.html) class is designed to render items in a data container, such as [`ListView`](./list-view.md) or [`GridView`](./grid-view.md).
 
+<figure>
+<iframe src="/learn/haxe-openfl/samples/item-renderer.html" width="100%" height="150"></iframe>
+<figcaption>Live preview of the <a href="https://api.feathersui.com/current/feathers/controls/dataRenderers/ItemRenderer.html"><code>ItemRenderer</code></a> component</figcaption>
+</figure>
+
 > 🚧 **Under construction!** This documentation is still being written.
 
 ## Related Links

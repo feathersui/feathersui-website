@@ -5,6 +5,11 @@ sidebar_label: TreeView
 
 The [`TreeView`](https://api.feathersui.com/current/feathers/controls/TreeView.html) class renders the items from a [data collection](./data-collections.md) similarly to a [`ListView`](./list-view.md), except that the data is _hierarchical_ and branches may be opened and closed to reveal nested data. It includes support for selecting an item, scrolling, and custom layouts.
 
+<figure>
+<iframe src="/learn/haxe-openfl/samples/tree-view.html" width="100%" height="200"></iframe>
+<figcaption>Live preview of the <a href="https://api.feathersui.com/current/feathers/controls/TreeView.html"><code>TreeView</code></a> component</figcaption>
+</figure>
+
 ## The Basics
 
 Start by creating a [`TreeView`](https://api.feathersui.com/current/feathers/controls/TreeView.html) control, and add it to [the display list](https://books.openfl.org/openfl-developers-guide/display-programming/basics-of-display-programming.html).

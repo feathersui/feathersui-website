@@ -5,6 +5,11 @@ sidebar_label: PageIndicator
 
 The [`PageIndicator`](https://api.feathersui.com/current/feathers/controls/PageIndicator.html) class displays a series of buttons, with one being selected, to show the user which index among a limited set is selected. Typically, it is paired with a component like [`ListView`](./list-view.md) or [`PageNavigator`](./page-navigator.md) that supports scrolling or paging.
 
+<figure>
+<iframe src="/learn/haxe-openfl/samples/page-indicator.html" width="100%" height="150"></iframe>
+<figcaption>Live preview of the <a href="https://api.feathersui.com/current/feathers/controls/PageIndicator.html"><code>PageIndicator</code></a> component</figcaption>
+</figure>
+
 ## The Basics
 
 Start by creating a [`PageIndicator`](https://api.feathersui.com/current/feathers/controls/PageIndicator.html) control, give it the maximum number of pages, and add it to [the display list](https://books.openfl.org/openfl-developers-guide/display-programming/basics-of-display-programming.html).

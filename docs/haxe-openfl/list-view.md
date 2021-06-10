@@ -5,12 +5,10 @@ sidebar_label: ListView
 
 The [`ListView`](https://api.feathersui.com/current/feathers/controls/ListView.html) class renders the items from a [data collection](./data-collections.md). List views support selecting an item, scrolling, and custom layouts.
 
-<!--
 <figure>
 <iframe src="/learn/haxe-openfl/samples/list-view.html" width="100%" height="200"></iframe>
 <figcaption>Live preview of the <a href="https://api.feathersui.com/current/feathers/controls/ListView.html"><code>ListView</code></a> component</figcaption>
 </figure>
--->
 
 ## The Basics
 
