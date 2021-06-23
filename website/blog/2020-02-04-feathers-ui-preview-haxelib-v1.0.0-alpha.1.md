@@ -16,7 +16,7 @@ Feathers UI has reached this first big milestone thanks the very generous suppor
 
 Let's take a look at a few of the [samples](https://feathersui.com/samples/haxe-openfl/) that are included with Feathers UI. Each one includes a live web demo that you can try out in your browser.
 
-The [_calculator_ sample](https://github.com/BowlerHatLLC/feathersui-openfl/tree/v1.0.0-alpha.1/samples/calculator/) demonstrates how to build a simple app, which uses the [`Application`](https://feathersui.com/learn/haxe-openfl/application), [`LayoutGroup`](https://feathersui.com/learn/haxe-openfl/layout-group), [`Button`](https://feathersui.com/learn/haxe-openfl/button) and [`Label`](https://feathersui.com/learn/haxe-openfl/label) components. This sample also includes a simple custom _theme_ that changes the appearance of the app's components to look different from the default styles.
+The [_calculator_ sample](https://github.com/feathersui/feathersui-openfl/tree/v1.0.0-alpha.1/samples/calculator/) demonstrates how to build a simple app, which uses the [`Application`](https://feathersui.com/learn/haxe-openfl/application), [`LayoutGroup`](https://feathersui.com/learn/haxe-openfl/layout-group), [`Button`](https://feathersui.com/learn/haxe-openfl/button) and [`Label`](https://feathersui.com/learn/haxe-openfl/label) components. This sample also includes a simple custom _theme_ that changes the appearance of the app's components to look different from the default styles.
 
 [![Screenshot of "calculator" sample](/blog/img/alpha-1-calculator.png)](https://feathersui.com/samples/haxe-openfl/calculator/)
 
@@ -26,15 +26,15 @@ It also shows how Feathers UI may be used to build _single-page apps_ with deep 
 
 Finally, as you can see in the screenshot below, this sample shows how the default styles in Feathers UI support both light and dark modes.
 
-([Project on Github](https://github.com/BowlerHatLLC/feathersui-openfl/tree/v1.0.0-alpha.1/samples/components-explorer/))
+([Project on Github](https://github.com/feathersui/feathersui-openfl/tree/v1.0.0-alpha.1/samples/components-explorer/))
 
 [![Screenshot of "components-explorer" sample](/blog/img/alpha-1-light-and-dark-modes.png)](https://feathersui.com/samples/haxe-openfl/components-explorer/)
 
-The [_horizontal-layout-percentage-sizing_ sample](https://feathersui.com/samples/haxe-openfl/horizontal-layout-percentage-sizing/) demonstrates how layouts included with Feathers UI allow components to be sized using a percentage of their parent container's size. ([Project on Github](https://github.com/BowlerHatLLC/feathersui-openfl/tree/v1.0.0-alpha.1/samples/horizontal-layout-percentage-sizing/))
+The [_horizontal-layout-percentage-sizing_ sample](https://feathersui.com/samples/haxe-openfl/horizontal-layout-percentage-sizing/) demonstrates how layouts included with Feathers UI allow components to be sized using a percentage of their parent container's size. ([Project on Github](https://github.com/feathersui/feathersui-openfl/tree/v1.0.0-alpha.1/samples/horizontal-layout-percentage-sizing/))
 
 [![Screenshot of "horizontal-layout-percentage-sizing" sample](/blog/img/alpha-1-percents.png)](https://feathersui.com/samples/haxe-openfl/horizontal-layout-percentage-sizing/)
 
-The [_list-view-data-provider-collection-sorting_ sample](https://feathersui.com/samples/haxe-openfl/list-view-data-provider-collection-sorting/) demonstrates how data collections displayed by components like [`ListView`](https://feathersui.com/learn/haxe-openfl/list-view) support real-time changes to their sorting. ([Project on Github](https://github.com/BowlerHatLLC/feathersui-openfl/tree/v1.0.0-alpha.1/samples/list-view-data-provider-collection-sorting/))
+The [_list-view-data-provider-collection-sorting_ sample](https://feathersui.com/samples/haxe-openfl/list-view-data-provider-collection-sorting/) demonstrates how data collections displayed by components like [`ListView`](https://feathersui.com/learn/haxe-openfl/list-view) support real-time changes to their sorting. ([Project on Github](https://github.com/feathersui/feathersui-openfl/tree/v1.0.0-alpha.1/samples/list-view-data-provider-collection-sorting/))
 
 [![Screenshot of "list-view-data-provider-collection-sorting" sample](/blog/img/alpha-1-list-view-sorting.png)](https://feathersui.com/samples/haxe-openfl/list-view-data-provider-collection-sorting/)
 

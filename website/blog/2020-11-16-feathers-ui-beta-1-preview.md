@@ -38,15 +38,15 @@ This build includes three new samples that demonstrate how to create custom skin
 
 <div style="text-align:center;"><a href="https://feathersui.com/samples/haxe-openfl/custom-programmatic-skin"><img src="/blog/img/beta-1-feathersui-custom-programmatic-skin-sample.png" style="width:400px"></a></div>
 
-The [custom-programmatic-skin sample](https://feathersui.com/samples/haxe-openfl/custom-programmatic-skin) demonstrates how to create a custom skin with your own drawing commands. [Source Code on Github](https://github.com/BowlerHatLLC/feathersui-openfl/tree/v1.0.0-beta.1/samples/custom-programmatic-skin/)
+The [custom-programmatic-skin sample](https://feathersui.com/samples/haxe-openfl/custom-programmatic-skin) demonstrates how to create a custom skin with your own drawing commands. [Source Code on Github](https://github.com/feathersui/feathersui-openfl/tree/v1.0.0-beta.1/samples/custom-programmatic-skin/)
 
 <div style="text-align:center;"><a href="https://feathersui.com/samples/haxe-openfl/custom-programmatic-skin-with-states"><img src="/blog/img/beta-1-feathersui-custom-programmatic-skin-with-states-sample.png" style="width:400px"></a></div>
 
-The [custom-programmatic-skin-with-states sample](https://feathersui.com/samples/haxe-openfl/custom-programmatic-skin-with-states) creates a custom skin for a [`Button`](https://feathersui.com/learn/haxe-openfl/button) component that changes appearance when the button's state changes. [Source Code on Github](https://github.com/BowlerHatLLC/feathersui-openfl/tree/v1.0.0-beta.1/samples/custom-programmatic-skin-with-states/)
+The [custom-programmatic-skin-with-states sample](https://feathersui.com/samples/haxe-openfl/custom-programmatic-skin-with-states) creates a custom skin for a [`Button`](https://feathersui.com/learn/haxe-openfl/button) component that changes appearance when the button's state changes. [Source Code on Github](https://github.com/feathersui/feathersui-openfl/tree/v1.0.0-beta.1/samples/custom-programmatic-skin-with-states/)
 
 <div style="text-align:center;"><a href="https://feathersui.com/samples/haxe-openfl/animated-tween-skin"><img src="/blog/img/beta-1-feathersui-animated-tween-skin-sample.png" style="width:400px"></a></div>
 
-The [animated-tween-skin sample](https://feathersui.com/samples/haxe-openfl/animated-tween-skin) creates a custom skin that triggers animations based on mouse/touch events. [Source Code on Github](https://github.com/BowlerHatLLC/feathersui-openfl/tree/v1.0.0-beta.1/samples/animated-tween-skin/)
+The [animated-tween-skin sample](https://feathersui.com/samples/haxe-openfl/animated-tween-skin) creates a custom skin that triggers animations based on mouse/touch events. [Source Code on Github](https://github.com/feathersui/feathersui-openfl/tree/v1.0.0-beta.1/samples/animated-tween-skin/)
 
 ## A big release
 
@@ -61,7 +61,7 @@ This build also includes a ton of minor improvements. Here's a few worth highlig
 - Big improvements to the focus manager
 - Touch gestures for the navigator components
 
-For complete details, check out the [beta.1 CHANGELOG](https://github.com/BowlerHatLLC/feathersui-openfl/blob/v1.0.0-beta.1/CHANGELOG.md).
+For complete details, check out the [beta.1 CHANGELOG](https://github.com/feathersui/feathersui-openfl/blob/v1.0.0-beta.1/CHANGELOG.md).
 
 ## Install Feathers UI beta.1
 

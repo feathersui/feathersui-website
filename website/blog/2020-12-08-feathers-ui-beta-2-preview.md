@@ -69,7 +69,7 @@ listView.itemRendererRecyclerIDFunction = function(state:ListViewItemState):Stri
 };
 ```
 
-For complete details about what else is included in this build, check out the [beta.2 CHANGELOG](https://github.com/BowlerHatLLC/feathersui-openfl/blob/v1.0.0-beta.2/CHANGELOG.md).
+For complete details about what else is included in this build, check out the [beta.2 CHANGELOG](https://github.com/feathersui/feathersui-openfl/blob/v1.0.0-beta.2/CHANGELOG.md).
 
 ## Install Feathers UI beta.2
 

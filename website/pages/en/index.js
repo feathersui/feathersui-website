@@ -135,7 +135,7 @@ The core Feathers UI library — with dozens of user interface controls — does
 - MIT-licensed — Use in both commercial and open source projects
 - Fork and submit pull requests on Github
 
-[Go to Github project →](https://github.com/BowlerHatLLC/feathersui-openfl)`,
+[Go to Github project →](https://github.com/feathersui/feathersui-openfl)`,
             image: `${baseUrl}img/undraw_code_typing_7jnv.svg`,
             imageAlign: "left",
           },

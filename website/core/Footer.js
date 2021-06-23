@@ -117,12 +117,12 @@ class Footer extends React.Component {
                 <a href="/samples/haxe-openfl/">Samples</a>
               </li>
               <li>
-                <a href="https://github.com/BowlerHatLLC/feathersui-openfl">
+                <a href="https://github.com/feathersui/feathersui-openfl">
                   GitHub
                 </a>
               </li>
               <li>
-                <a href="https://github.com/BowlerHatLLC/feathersui-openfl/issues">
+                <a href="https://github.com/feathersui/feathersui-openfl/issues">
                   Issue Tracker
                 </a>
               </li>
@@ -156,17 +156,17 @@ class Footer extends React.Component {
                 <a href="/api-reference/">API Reference</a>
               </li>
               <li>
-                <a href="https://github.com/BowlerHatLLC/feathersui-starling/tree/master/examples">
+                <a href="https://github.com/feathersui/feathersui-starling/tree/master/examples">
                   Samples
                 </a>
               </li>
               <li>
-                <a href="https://github.com/BowlerHatLLC/feathersui-starling">
+                <a href="https://github.com/feathersui/feathersui-starling">
                   GitHub
                 </a>
               </li>
               <li>
-                <a href="https://github.com/BowlerHatLLC/feathersui-starling/issues">
+                <a href="https://github.com/feathersui/feathersui-starling/issues">
                   Issue Tracker
                 </a>
               </li>
@@ -195,7 +195,7 @@ class Footer extends React.Component {
                 </a>
               </li>
               <li>
-                <a href="https://github.com/BowlerHatLLC/feathers-sdk">
+                <a href="https://github.com/feathersui/feathersui-sdk">
                   GitHub
                 </a>
               </li>

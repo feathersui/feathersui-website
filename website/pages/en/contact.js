@@ -3,7 +3,7 @@ const CompLibrary = require("../../core/CompLibrary.js");
 const Container = CompLibrary.Container;
 const MarkdownBlock = CompLibrary.MarkdownBlock;
 
-const Contact = props => (
+const Contact = (props) => (
   <div className="mainContainer documentContainer">
     <Container>
       <div className="prose">
@@ -24,8 +24,8 @@ Do you need some help troubleshooting, do you have any questions about how to us
 
 Did you find a bug? Does it seem like a useful feature is missing? Create an issue on Github.
 
-- [feathersui-starling Issues](https://github.com/BowlerHatLLC/feathersui-starling/issues)
-- [feathersui-openfl Issues](https://github.com/BowlerHatLLC/feathersui-openfl/issues)`}
+- [feathersui-starling Issues](https://github.com/feathersui/feathersui-starling/issues)
+- [feathersui-openfl Issues](https://github.com/feathersui/feathersui-openfl/issues)`}
         </MarkdownBlock>
       </div>
     </Container>

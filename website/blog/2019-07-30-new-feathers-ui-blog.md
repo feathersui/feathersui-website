@@ -13,8 +13,8 @@ Today, I'm launching a new blog for the latest announcements about Feathers UI. 
 - [Work-in-progress Haxe/OpenFL documentation](/learn/haxe-openfl/installation) - Not much there yet, but expanding.
 - [Community forum](https://community.feathersui.com/) - Get help and connect with the community.
 - [Discord server](https://discord.feathersui.com/) - Chat in real time with your fellow developers.
-- [Github project](https://github.com/BowlerHatLLC/feathersui-openfl) - Get the code — it's open source.
-- [Issue Tracker](https://github.com/BowlerHatLLC/feathersui-openfl/issues) - Report bugs and request features.
+- [Github project](https://github.com/feathersui/feathersui-openfl) - Get the code — it's open source.
+- [Issue Tracker](https://github.com/feathersui/feathersui-openfl/issues) - Report bugs and request features.
 - [Online demo](https://feathersui.com/openfl/demo/) - See Feathers UI for Haxe and OpenFL in action.
 
 If you'd like to subscribe to this blog with your favorite feed reader, here are the [RSS](/blog/feed.xml) and [Atom](/blog/atom.xml) feeds:

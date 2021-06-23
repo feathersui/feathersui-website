@@ -52,7 +52,7 @@ This build also includes a ton of minor improvements. Here's a few worth highlig
 - [`ArrayHierarchicalCollection`](https://api.feathersui.com/current/feathers/data/ArrayHierarchicalCollection.html) is a new implementation of [`IHierarchicalCollection`](https://api.feathersui.com/current/feathers/data/IHierarchicalCollection.html) that's a bit more flexible than the existing [`TreeCollection`](https://api.feathersui.com/current/feathers/data/TreeCollection.html).
 - New [`filterFunction`](https://api.feathersui.com/current/feathers/data/IHierarchicalCollection.html#filterFunction) and [`sortCompareFunction`](https://api.feathersui.com/current/feathers/data/IHierarchicalCollection.html#sortCompareFunction) properties on [`IHierarchicalCollection`](https://api.feathersui.com/current/feathers/data/IHierarchicalCollection.html) to match the same properties on `IFlatCollection`.
 
-For complete details, check out the [beta.3 CHANGELOG](https://github.com/BowlerHatLLC/feathersui-openfl/blob/v1.0.0-beta.3/CHANGELOG.md).
+For complete details, check out the [beta.3 CHANGELOG](https://github.com/feathersui/feathersui-openfl/blob/v1.0.0-beta.3/CHANGELOG.md).
 
 ## Install Feathers UI beta.3
 

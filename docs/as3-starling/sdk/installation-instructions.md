@@ -11,8 +11,8 @@ The Feathers SDK may be installed using the **Feathers SDK Manager**, an app des
 
   <div class="alignCenter">
     <div class="pluginWrapper buttonWrapper">
-      <a class="button" href="https://github.com/BowlerHatLLC/feathers-sdk-manager/releases/download/v1.2.3/FeathersSDKManagerInstaller-1.2.3.exe" onClick="_gaq.push(['_trackEvent', 'Downloads', 'SDKManagerWin', '1.2.3']);">Download Windows</a>
-      <a class="button" href="https://github.com/BowlerHatLLC/feathers-sdk-manager/releases/download/v1.2.3/FeathersSDKManagerInstaller-1.2.3.pkg" onClick="_gaq.push(['_trackEvent', 'Downloads', 'SDKManagerMac', '1.2.3']);">Download macOS</a>
+      <a class="button" href="https://github.com/feathersui/feathersui-sdk-manager/releases/download/v1.2.3/FeathersSDKManagerInstaller-1.2.3.exe" onClick="_gaq.push(['_trackEvent', 'Downloads', 'SDKManagerWin', '1.2.3']);">Download Windows</a>
+      <a class="button" href="https://github.com/feathersui/feathersui-sdk-manager/releases/download/v1.2.3/FeathersSDKManagerInstaller-1.2.3.pkg" onClick="_gaq.push(['_trackEvent', 'Downloads', 'SDKManagerMac', '1.2.3']);">Download macOS</a>
     </div>
   </div>
 

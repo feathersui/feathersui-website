@@ -10,7 +10,7 @@ Every three to four weeks, I've been posting [updates on Kickstarter](https://ww
 
 <!-- truncate -->
 
-- [2019-08-16: Layouts, AssetLoader, and CI](https://www.kickstarter.com/projects/feathersui/feathers-ui-cross-platform-components-for-haxe-and-openfl/posts/2597300) talks about the first basic layouts for containers, introduces the `AssetLoader` component, and mentions the initial efforts to set up [continuous integration](https://travis-ci.org/BowlerHatLLC/feathersui-openfl) and [user documentation](https://feathersui.com/learn/haxe-openfl/).
+- [2019-08-16: Layouts, AssetLoader, and CI](https://www.kickstarter.com/projects/feathersui/feathers-ui-cross-platform-components-for-haxe-and-openfl/posts/2597300) talks about the first basic layouts for containers, introduces the `AssetLoader` component, and mentions the initial efforts to set up [continuous integration](https://travis-ci.org/feathersui/feathersui-openfl) and [user documentation](https://feathersui.com/learn/haxe-openfl/).
 
 - [2019-09-10: Style metadata, PopUpManager, and PopUpList](https://www.kickstarter.com/projects/feathersui/feathers-ui-cross-platform-components-for-haxe-and-openfl/posts/2618021) mentions new `@:style` and `@:styleContext` metadata used by some macros to generate code and reduce boilerplate in custom Feathers UI components. It also introduces a `PopUpManager` implementation and the first UI component based on it.
 

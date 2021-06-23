@@ -273,11 +273,11 @@ Additionally, take a look at [Appendix: Find and Replace Regular Expressions](#a
 
 ## Backwards compatibility with `feathers-compat`
 
-The [`feathers-compat`](https://github.com/BowlerHatLLC/feathers-compat) project is a backwards compatibility library that is designed to make migration to Feathers 3.0 easier. It includes a number classes that were removed from Feathers 3.0. If you relied on these classes with earlier versions of Feathers, use `feathers-compat` to get your project up and running more quickly when upgrading to Starling 2.0 and Feathers 3.0. Then, you can take a little extra time to migrate your existing code.
+The [`feathers-compat`](https://github.com/feathersui/feathersui-compat) project is a backwards compatibility library that is designed to make migration to Feathers 3.0 easier. It includes a number classes that were removed from Feathers 3.0. If you relied on these classes with earlier versions of Feathers, use `feathers-compat` to get your project up and running more quickly when upgrading to Starling 2.0 and Feathers 3.0. Then, you can take a little extra time to migrate your existing code.
 
 For example, if you used `SmartDisplayObjectValueSelector` for skinning, you are strongly encouraged to switch to the new, more intuitive `ImageSkin`. However, you can add `feathers-compat` to your project, and you'll be able to continue using `SmartDisplayObjectValueSelector` and save the migration to `ImageSkin` for a later time.
 
-[Download `feathers-compat` from Github](https://github.com/BowlerHatLLC/feathers-compat)
+[Download `feathers-compat` from Github](https://github.com/feathersui/feathersui-compat)
 
 ## Appendix: List of Removed APIs
 
@@ -1046,7 +1046,7 @@ Many IDEs and text editors offer the ability to use regular expressions to **Fin
 > These regular expressions are provided for convenience only, and they may not work perfectly in all cases. After making replacements, be sure to double-check the modified code to verify that no unexpected errors were introduced.
 
 | Find                                                                | Replace                           |
-| ------------------------------------------------------------------- | --------------------------------- |
+| ------------------------------------------------------------------- | --------------------------------- | ----------------------- | -------------------- | ---------------- |
 | `\w+\.HORIZONTAL_ALIGN_(\w+)`                                       | `HorizontalAlign.$1`              |
 | `\w+\.VERTICAL_ALIGN_(\w+)`                                         | `VerticalAlign.$1`                |
 | `\w+\.ICON_POSITION_(\w+)`                                          | `RelativePosition.$1`             |
@@ -1059,11 +1059,11 @@ Many IDEs and text editors offer the ability to use regular expressions to **Fin
 | `\w+\.VERTICAL_SCROLL_BAR_POSITION_(\w+)`                           | `RelativePosition.$1`             |
 | `\w+\.DECELERATION_RATE_(\w+)`                                      | `DecelerationRate.$1`             |
 | `(?:(?<=[\s\,\(])(?!PageIndicator)(?:\w+))\.INTERACTION_MODE_(\w+)` | `ScrollInteractionMode.$1`        |
-| `(?:TextInput|TextArea).STATE_(\w+)`                                | `TextInputState.$1`               |
-| `(?:Button|ToggleButton|Check|Radio).STATE_(\w+)`                   | `ButtonState.$1`                  |
+| `(?:TextInput                                                       | TextArea).STATE\_(\w+)`           | `TextInputState.$1`     |
+| `(?:Button                                                          | ToggleButton                      | Check                   | Radio).STATE\_(\w+)` | `ButtonState.$1` |
 | `\w+ItemRenderer.STATE_(\w+)`                                       | `ButtonState.$1`                  |
 | `\w+\.TRACK_LAYOUT_MODE_SINGLE`                                     | `TrackLayoutMode.SINGLE`          |
-| `\w+\.TRACK_LAYOUT_MODE_(MIN_MAX|ON_OFF)`                           | `TrackLayoutMode.SPLIT`           |
+| `\w+\.TRACK*LAYOUT_MODE*(MIN_MAX                                    | ON_OFF)`                          | `TrackLayoutMode.SPLIT` |
 | `\w+\.TRACK_SCALE_MODE_(\w+)`                                       | `TrackScaleMode.$1`               |
 | `\w+\.TRACK_INTERACTION_MODE_(\w+)`                                 | `TrackInteractionMode.$1`         |
 | `\w+\.EDITING_MODE_(\w+)`                                           | `DateTimeMode.$1`                 |

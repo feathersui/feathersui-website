@@ -10,8 +10,8 @@ const sampleItems = [
 
 <div class="buttonWrapper">
   <a class="button" href="/examples/components-explorer/">Online Demo</a>
-  <a class="button" href="https://github.com/BowlerHatLLC/feathersui-starling/tree/master/examples/ComponentsExplorer/">Source Code</a>
-</div>`
+  <a class="button" href="https://github.com/feathersui/feathersui-starling/tree/master/examples/ComponentsExplorer/">Source Code</a>
+</div>`,
   },
   {
     title: "[Transitions Explorer](/examples/transitions-explorer/)",
@@ -19,8 +19,8 @@ const sampleItems = [
 
 <div class="buttonWrapper">
   <a class="button" href="/examples/transitions-explorer/">Online Demo</a>
-  <a class="button" href="https://github.com/BowlerHatLLC/feathersui-starling/tree/master/examples/TransitionsExplorer/">Source Code</a>
-</div>`
+  <a class="button" href="https://github.com/feathersui/feathersui-starling/tree/master/examples/TransitionsExplorer/">Source Code</a>
+</div>`,
   },
   {
     title: "[Magic 8 Chat](/examples/magic-8-chat/)",
@@ -28,8 +28,8 @@ const sampleItems = [
 
 <div class="buttonWrapper">
   <a class="button" href="/examples/magic-8-chat/">Online Demo</a>
-  <a class="button" href="https://github.com/BowlerHatLLC/feathersui-starling/tree/master/examples/Magic8Chat/">Source Code</a>
-</div>`
+  <a class="button" href="https://github.com/feathersui/feathersui-starling/tree/master/examples/Magic8Chat/">Source Code</a>
+</div>`,
   },
   {
     title: "[Tabs](/examples/tabs/)",
@@ -37,8 +37,8 @@ const sampleItems = [
 
 <div class="buttonWrapper">
   <a class="button" href="/examples/tabs/">Online Demo</a>
-  <a class="button" href="https://github.com/BowlerHatLLC/feathersui-starling/tree/master/examples/Tabs/">Source Code</a>
-</div>`
+  <a class="button" href="https://github.com/feathersui/feathersui-starling/tree/master/examples/Tabs/">Source Code</a>
+</div>`,
   },
   {
     title: "[Hello World](/examples/hello-world/)",
@@ -46,8 +46,8 @@ const sampleItems = [
 
 <div class="buttonWrapper">
   <a class="button" href="/examples/hello-world/">Online Demo</a>
-  <a class="button" href="https://github.com/BowlerHatLLC/feathersui-starling/tree/master/examples/HelloWorld/">Source Code</a>
-</div>`
+  <a class="button" href="https://github.com/feathersui/feathersui-starling/tree/master/examples/HelloWorld/">Source Code</a>
+</div>`,
   },
   {
     title: "[To-Dos](/examples/todos/)",
@@ -55,8 +55,8 @@ const sampleItems = [
 
 <div class="buttonWrapper">
   <a class="button" href="/examples/todos/">Online Demo</a>
-  <a class="button" href="https://github.com/BowlerHatLLC/feathersui-starling/tree/master/examples/Todos/">Source Code</a>
-</div>`
+  <a class="button" href="https://github.com/feathersui/feathersui-starling/tree/master/examples/Todos/">Source Code</a>
+</div>`,
   },
   {
     title:
@@ -65,8 +65,8 @@ const sampleItems = [
 
 <div class="buttonWrapper">
   <a class="button" href="/examples/stack-screen-navigator-explorer/">Online Demo</a>
-  <a class="button" href="https://github.com/BowlerHatLLC/feathersui-starling/tree/master/examples/StackScreenNavigatorExplorer/">Source Code</a>
-</div>`
+  <a class="button" href="https://github.com/feathersui/feathersui-starling/tree/master/examples/StackScreenNavigatorExplorer/">Source Code</a>
+</div>`,
   },
   {
     title: "[Layout Explorer](/examples/layout-explorer/)",
@@ -74,8 +74,8 @@ const sampleItems = [
 
 <div class="buttonWrapper">
   <a class="button" href="/examples/layout-explorer/">Online Demo</a>
-  <a class="button" href="https://github.com/BowlerHatLLC/feathersui-starling/tree/master/examples/LayoutExplorer/">Source Code</a>
-</div>`
+  <a class="button" href="https://github.com/feathersui/feathersui-starling/tree/master/examples/LayoutExplorer/">Source Code</a>
+</div>`,
   },
   {
     title: "[Tile List](/examples/tile-list/)",
@@ -83,8 +83,8 @@ const sampleItems = [
 
 <div class="buttonWrapper">
   <a class="button" href="/examples/tile-list/">Online Demo</a>
-  <a class="button" href="https://github.com/BowlerHatLLC/feathersui-starling/tree/master/examples/TileList/">Source Code</a>
-</div>`
+  <a class="button" href="https://github.com/feathersui/feathersui-starling/tree/master/examples/TileList/">Source Code</a>
+</div>`,
   },
   {
     title: "[Drag and Drop](/examples/drag-and-drop/)",
@@ -92,8 +92,8 @@ const sampleItems = [
 
 <div class="buttonWrapper">
   <a class="button" href="/examples/drag-and-drop/">Online Demo</a>
-  <a class="button" href="https://github.com/BowlerHatLLC/feathersui-starling/tree/master/examples/DragAndDrop/">Source Code</a>
-</div>`
+  <a class="button" href="https://github.com/feathersui/feathersui-starling/tree/master/examples/DragAndDrop/">Source Code</a>
+</div>`,
   },
   {
     title: "[Drawers Explorer](/examples/drawers-explorer/)",
@@ -101,12 +101,12 @@ const sampleItems = [
 
 <div class="buttonWrapper">
   <a class="button" href="/examples/drawers-explorer/">Online Demo</a>
-  <a class="button" href="https://github.com/BowlerHatLLC/feathersui-starling/tree/master/examples/DrawersExplorer/">Source Code</a>
-</div>`
-  }
+  <a class="button" href="https://github.com/feathersui/feathersui-starling/tree/master/examples/DrawersExplorer/">Source Code</a>
+</div>`,
+  },
 ];
 
-const StarlingSamples = props => {
+const StarlingSamples = (props) => {
   return (
     <div className="docMainWrapper wrapper">
       <Container className="mainContainer documentContainer">

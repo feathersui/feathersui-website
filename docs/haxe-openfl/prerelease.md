@@ -8,7 +8,7 @@ sidebar_label: Install Prerelease Builds
 >
 > Most people should probably [install the newest official build from Haxelib](./installation.md).
 
-[Feathers UI](/) developers who want to live on the cutting edge may install the library directly from [its Github repository](https://github.com/BowlerHatLLC/feathersui-openfl). Installing from Github provides access to new components and features that may not have been released on Haxelib yet, but it also has a higher risk of bugs in code that hasn't been thoroughly tested yet.
+[Feathers UI](/) developers who want to live on the cutting edge may install the library directly from [its Github repository](https://github.com/feathersui/feathersui-openfl). Installing from Github provides access to new components and features that may not have been released on Haxelib yet, but it also has a higher risk of bugs in code that hasn't been thoroughly tested yet.
 
 ## Prerequisites
 
@@ -19,7 +19,7 @@ sidebar_label: Install Prerelease Builds
 To install Feathers UI from Github, use the [**haxelib git**](https://lib.haxe.org/documentation/using-haxelib/#git) command.
 
 ```sh
-haxelib git feathersui https://github.com/BowlerHatLLC/feathersui-openfl.git
+haxelib git feathersui https://github.com/feathersui/feathersui-openfl.git
 ```
 
 This command will automatically install any required dependencies, including [OpenFL](https://openfl.org/). If this is the first time OpenFL has been installed on your computer, you should also run its setup command.

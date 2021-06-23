@@ -5,7 +5,7 @@ const GridBlock = CompLibrary.GridBlock;
 
 const samplesBaseUrl = "/samples/haxe-openfl/";
 const githubSamplesBaseUrl =
-  "https://github.com/BowlerHatLLC/feathersui-openfl/tree/v1.0.0-beta.3/samples/";
+  "https://github.com/feathersui/feathersui-openfl/tree/v1.0.0-beta.3/samples/";
 
 //screenshots: 720x450
 //this.stage.nativeWindow.width = 720 + (this.stage.nativeWindow.width - this.stage.stageWidth);
@@ -178,7 +178,7 @@ const Samples = (props) => {
           </p>
           <ul>
             <li>
-              <a href="https://github.com/BowlerHatLLC/feathersui-7guis">
+              <a href="https://github.com/feathersui/feathersui-7guis">
                 7GUIs for Feathers UI
               </a>
             </li>

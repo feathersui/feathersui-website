@@ -93,8 +93,7 @@ const siteConfig = {
   },
 
   enableUpdateTime: true,
-  editUrl:
-    "https://github.com/BowlerHatLLC/feathersui-website/edit/master/docs/",
+  editUrl: "https://github.com/feathersui/feathersui-website/edit/master/docs/",
 
   // Add custom scripts here that would be placed in <script> tags.
   scripts: ["https://buttons.github.io/buttons.js"],
@@ -120,7 +119,7 @@ const siteConfig = {
 
   // You may provide arbitrary config keys to be used as needed by your
   // template. For example, if you need your repo's URL...
-  repoUrl: "https://github.com/BowlerHatLLC/feathersui-website",
+  repoUrl: "https://github.com/feathersui/feathersui-website",
 
   twitterUsername: "feathersui",
   docsUrl: "learn",

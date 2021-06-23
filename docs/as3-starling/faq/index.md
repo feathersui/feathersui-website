@@ -25,7 +25,7 @@ Visit the [Feathers website](https://feathersui.com/) for the most recent stable
 
 ### Where can I download the most recent unstable/development/beta version of Feathers?
 
-Visit the [Feathers project on Github](https://github.com/BowlerHatLLC/feathers) for the newest Feathers code that will eventually become a part of the next stable version. Watch out for bugs!
+Visit the [Feathers project on Github](https://github.com/feathersui/feathersui-starling) for the newest Feathers code that will eventually become a part of the next stable version. Watch out for bugs!
 
 ### How do I know that you won't abandon Feathers next week?
 
@@ -37,7 +37,7 @@ Please visit the [Feathers forum](http://forum.starling-framework.org/forum/feat
 
 ### How can I contribute?
 
-Feel free to [report bugs and request features](https://github.com/BowlerHatLLC/feathers/issues) on Github at any time.
+Feel free to [report bugs and request features](https://github.com/feathersui/feathersui-starling/issues) on Github at any time.
 
 Pull requests are welcome for bug fixes. Before submitting a pull request, be sure to take a look at the [Feathers Coding Conventions for Contributors](../coding-conventions.md). All code in Feathers is expected to match the coding style described in that document. Contributions that don't follow the coding conventions may be given a lower priority due to the extra effort required to reformat your code.
 
@@ -63,7 +63,7 @@ Typically, the most recent version of Adobe AIR or Adobe Flash Player is support
 
 Generally, the version of Feathers that is available from the [Feathers website](../installation.md) will work with the most recent version of Starling Framework that is available from the [official Starling download page](http://gamua.com/starling/download/). Older versions of Starling may remain compatible with the latest version of Feathers, but they are not officially supported.
 
-Use the latest, bleeding edge code from the [Feathers Github project](https://github.com/BowlerHatLLC/feathers) at your own risk. This code is in development, and it may be unstable at times. The newest code from the [Starling Github project](https://github.com/Gamua/Starling-Framework) may be required to use it if Feathers has begun using new features or if anything in the Starling APIs has changed. Check the [Feathers README file](https://github.com/BowlerHatLLC/feathers/blob/master/README.md) to see which version of Starling is currently required by the unstable version of Feathers.
+Use the latest, bleeding edge code from the [Feathers Github project](https://github.com/feathersui/feathersui-starling) at your own risk. This code is in development, and it may be unstable at times. The newest code from the [Starling Github project](https://github.com/Gamua/Starling-Framework) may be required to use it if Feathers has begun using new features or if anything in the Starling APIs has changed. Check the [Feathers README file](https://github.com/feathersui/feathersui-starling/blob/master/README.md) to see which version of Starling is currently required by the unstable version of Feathers.
 
 ### Does Feathers support visual debugging similar to "inspect element" in web browsers?
 
