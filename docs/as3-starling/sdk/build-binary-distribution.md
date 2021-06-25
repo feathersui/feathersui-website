@@ -9,7 +9,7 @@ The document explains how to build the Feathers SDK from a binary distribution. 
 
 ## Requirements
 
-- A _binary distribution_ of the Feathers SDK [(available from Github)](https://github.com/feathersui/feathersui-sdk/releases)
+- A _binary distribution_ of the Feathers SDK [(available from Github)](https://github.com/feathersui/feathersui-starling-sdk/releases)
 - [Apache Ant](http://ant.apache.org/)
 - Java 8 (update 101 or newer)
 

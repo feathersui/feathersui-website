@@ -21,79 +21,79 @@ limitations under the License.
 		<FeathersSDK name="Feathers SDK">
 			<versions default="4.1.1">
 				<versionA id="feathers.sdk.version.2.2.0" version="2.2.0" displayVersion="2.2.0">
-					<path>https://github.com/feathersui/feathersui-sdk/releases/download/v2.2.0/</path>
+					<path>https://github.com/feathersui/feathersui-starling-sdk/releases/download/v2.2.0/</path>
 					<file>feathers-sdk-2.2.0-bin</file>
 				</versionA>
 				<versionB id="feathers.sdk.version.2.3.0" version="2.3.0" displayVersion="2.3.0">
-					<path>https://github.com/feathersui/feathersui-sdk/releases/download/v2.3.0/</path>
+					<path>https://github.com/feathersui/feathersui-starling-sdk/releases/download/v2.3.0/</path>
 					<file>feathers-sdk-2.3.0-bin</file>
 				</versionB>
 				<versionC id="feathers.sdk.version.3.0.0" version="3.0.0" displayVersion="3.0.0">
-					<path>https://github.com/feathersui/feathersui-sdk/releases/download/v3.0.0/</path>
+					<path>https://github.com/feathersui/feathersui-starling-sdk/releases/download/v3.0.0/</path>
 					<file>feathers-sdk-3.0.0-bin</file>
 				</versionC>
 				<versionD id="feathers.sdk.version.3.0.1" version="3.0.1" displayVersion="3.0.1">
-					<path>https://github.com/feathersui/feathersui-sdk/releases/download/v3.0.1/</path>
+					<path>https://github.com/feathersui/feathersui-starling-sdk/releases/download/v3.0.1/</path>
 					<file>feathers-sdk-3.0.1-bin</file>
 				</versionD>
 				<versionE id="feathers.sdk.version.3.0.2" version="3.0.2" displayVersion="3.0.2">
-					<path>https://github.com/feathersui/feathersui-sdk/releases/download/v3.0.2/</path>
+					<path>https://github.com/feathersui/feathersui-starling-sdk/releases/download/v3.0.2/</path>
 					<file>feathers-sdk-3.0.2-bin</file>
 				</versionE>
 				<versionF id="feathers.sdk.version.3.0.3" version="3.0.3" displayVersion="3.0.3">
-					<path>https://github.com/feathersui/feathersui-sdk/releases/download/v3.0.3/</path>
+					<path>https://github.com/feathersui/feathersui-starling-sdk/releases/download/v3.0.3/</path>
 					<file>feathers-sdk-3.0.3-bin</file>
 				</versionF>
 				<versionG id="feathers.sdk.version.3.0.4" version="3.0.4" displayVersion="3.0.4">
-					<path>https://github.com/feathersui/feathersui-sdk/releases/download/v3.0.4/</path>
+					<path>https://github.com/feathersui/feathersui-starling-sdk/releases/download/v3.0.4/</path>
 					<file>feathers-sdk-3.0.4-bin</file>
 				</versionG>
 				<versionH id="feathers.sdk.version.3.1.0" version="3.1.0" displayVersion="3.1.0">
-					<path>https://github.com/feathersui/feathersui-sdk/releases/download/v3.1.0/</path>
+					<path>https://github.com/feathersui/feathersui-starling-sdk/releases/download/v3.1.0/</path>
 					<file>feathers-sdk-3.1.0-bin</file>
 				</versionH>
 				<versionI id="feathers.sdk.version.3.1.1" version="3.1.1" displayVersion="3.1.1">
-					<path>https://github.com/feathersui/feathersui-sdk/releases/download/v3.1.1/</path>
+					<path>https://github.com/feathersui/feathersui-starling-sdk/releases/download/v3.1.1/</path>
 					<file>feathers-sdk-3.1.1-bin</file>
 				</versionI>
 				<versionJ id="feathers.sdk.version.3.1.2" version="3.1.2" displayVersion="3.1.2">
-					<path>https://github.com/feathersui/feathersui-sdk/releases/download/v3.1.2/</path>
+					<path>https://github.com/feathersui/feathersui-starling-sdk/releases/download/v3.1.2/</path>
 					<file>feathers-sdk-3.1.2-bin</file>
 				</versionJ>
 				<versionK id="feathers.sdk.version.3.2.0" version="3.2.0" displayVersion="3.2.0">
-					<path>https://github.com/feathersui/feathersui-sdk/releases/download/v3.2.0/</path>
+					<path>https://github.com/feathersui/feathersui-starling-sdk/releases/download/v3.2.0/</path>
 					<file>feathers-sdk-3.2.0-bin</file>
 				</versionK>
 				<versionL id="feathers.sdk.version.3.3.0" version="3.3.0" displayVersion="3.3.0">
-					<path>https://github.com/feathersui/feathersui-sdk/releases/download/v3.3.0/</path>
+					<path>https://github.com/feathersui/feathersui-starling-sdk/releases/download/v3.3.0/</path>
 					<file>feathers-sdk-3.3.0-bin</file>
 				</versionL>
 				<versionL id="feathers.sdk.version.3.3.1" version="3.3.1" displayVersion="3.3.1">
-					<path>https://github.com/feathersui/feathersui-sdk/releases/download/v3.3.1/</path>
+					<path>https://github.com/feathersui/feathersui-starling-sdk/releases/download/v3.3.1/</path>
 					<file>feathers-sdk-3.3.1-bin</file>
 				</versionL>
 				<versionM id="feathers.sdk.version.3.4.0" version="3.4.0" displayVersion="3.4.0">
-					<path>https://github.com/feathersui/feathersui-sdk/releases/download/v3.4.0/</path>
+					<path>https://github.com/feathersui/feathersui-starling-sdk/releases/download/v3.4.0/</path>
 					<file>feathers-sdk-3.4.0-bin</file>
 				</versionM>
 				<versionN id="feathers.sdk.version.3.4.1" version="3.4.1" displayVersion="3.4.1">
-					<path>https://github.com/feathersui/feathersui-sdk/releases/download/v3.4.1/</path>
+					<path>https://github.com/feathersui/feathersui-starling-sdk/releases/download/v3.4.1/</path>
 					<file>feathers-sdk-3.4.1-bin</file>
 				</versionN>
 				<versionN id="feathers.sdk.version.3.5.0" version="3.5.0" displayVersion="3.5.0">
-					<path>https://github.com/feathersui/feathersui-sdk/releases/download/v3.5.0/</path>
+					<path>https://github.com/feathersui/feathersui-starling-sdk/releases/download/v3.5.0/</path>
 					<file>feathers-sdk-3.5.0-bin</file>
 				</versionN>
 				<versionO id="feathers.sdk.version.4.0.0" version="4.0.0" displayVersion="4.0.0">
-					<path>https://github.com/feathersui/feathersui-sdk/releases/download/v4.0.0/</path>
+					<path>https://github.com/feathersui/feathersui-starling-sdk/releases/download/v4.0.0/</path>
 					<file>feathers-sdk-4.0.0-bin</file>
 				</versionO>
 				<versionP id="feathers.sdk.version.4.1.0" version="4.1.0" displayVersion="4.1.0">
-					<path>https://github.com/feathersui/feathersui-sdk/releases/download/v4.1.0/</path>
+					<path>https://github.com/feathersui/feathersui-starling-sdk/releases/download/v4.1.0/</path>
 					<file>feathers-sdk-4.1.0-bin</file>
 				</versionP>
 				<versionQ id="feathers.sdk.version.4.1.1" version="4.1.1" displayVersion="4.1.1">
-					<path>https://github.com/feathersui/feathersui-sdk/releases/download/v4.1.1/</path>
+					<path>https://github.com/feathersui/feathersui-starling-sdk/releases/download/v4.1.1/</path>
 					<file>feathers-sdk-4.1.1-bin</file>
 				</versionQ>
 			</versions>

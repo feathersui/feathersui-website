@@ -195,7 +195,7 @@ class Footer extends React.Component {
                 </a>
               </li>
               <li>
-                <a href="https://github.com/feathersui/feathersui-sdk">
+                <a href="https://github.com/feathersui/feathersui-starling-sdk">
                   GitHub
                 </a>
               </li>
