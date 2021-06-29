@@ -177,6 +177,10 @@ h2 p,
   width: 200px;
 }
 
+.productShowcaseSection .logos .button {
+  margin: 1em;
+}
+
 .nav-footer .copyright {
   max-width: 1080px;
   text-align: left;

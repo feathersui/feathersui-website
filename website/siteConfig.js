@@ -6,6 +6,13 @@ const path = require("path");
 // List of projects/orgs using your project for the users page.
 const users = [
   {
+    caption: "Red Minnow",
+    image: "/img/sponsors/redminnow.png",
+    infoLink: "https://redminnow.com/",
+    pinned: true,
+    github: true,
+  },
+  {
     caption: "InnoGames",
     image: "/img/sponsors/innogames.png",
     infoLink: "https://www.innogames.com/",

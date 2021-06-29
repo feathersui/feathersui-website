@@ -256,6 +256,42 @@ Luis Guajardo Diaz
       );
     };
 
+    const GithubSponsors = () => {
+      if ((siteConfig.users || []).length === 0) {
+        return null;
+      }
+
+      const users = siteConfig.users
+        .filter((user) => user.pinned && user.github)
+        .map((user) => (
+          <a href={user.infoLink} key={user.infoLink} rel="sponsored">
+            <img src={user.image} alt={user.caption} title={user.caption} />
+          </a>
+        ));
+
+      return (
+        <Container padding={["top"]} className="productShowcaseSection">
+          <p className="alignCenter">
+            Many thanks to everyone on{" "}
+            <a href="https://github.com/sponsors/joshtynjala">
+              Github Sponsors
+            </a>{" "}
+            who <br />
+            generously supports the Feathers UI open source project:
+          </p>
+          <div className="logos">
+            {users}
+            <a
+              className="button"
+              href="https://github.com/sponsors/joshtynjala"
+            >
+              Support this project →
+            </a>
+          </div>
+        </Container>
+      );
+    };
+
     const KickstarterSponsors = () => {
       if ((siteConfig.users || []).length === 0) {
         return null;
@@ -270,13 +306,9 @@ Luis Guajardo Diaz
         ));
 
       return (
-        <Container
-          padding={["bottom", "top"]}
-          className="productShowcaseSection"
-        >
+        <Container padding={["bottom"]} className="productShowcaseSection">
           <p className="alignCenter">
-            Many thanks to these generous sponsors who supported Feathers UI on
-            Kickstarter:
+            An additional thank you to all of the Kickstarter backers!
           </p>
           <div className="logos">{users}</div>
         </Container>
@@ -291,6 +323,7 @@ Luis Guajardo Diaz
           <OpenSource />
           <Install />
           <Testimonials />
+          <GithubSponsors />
           <KickstarterSponsors />
         </div>
       </div>
