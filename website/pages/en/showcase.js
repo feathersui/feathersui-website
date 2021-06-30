@@ -14,7 +14,7 @@ Feathers UI and Starling power NCIS: Hidden Crimes, an episodic adventure where 
   <a class="button" href="https://www.ubisoft.com/nn-NO/game/ncis-hidden-crimes/">Visit Website</a>
 </div>`,
     image: "/img/showcase/ncis@2x.jpg",
-    imageLink: "https://www.ubisoft.com/nn-NO/game/ncis-hidden-crimes/"
+    imageLink: "https://www.ubisoft.com/nn-NO/game/ncis-hidden-crimes/",
   },
   {
     title: "Wake-Up Memovox",
@@ -25,7 +25,7 @@ Who wouldn't like to wake up to the pure sound of a Master Memovox, the first au
   <a class="button" href="https://vimeo.com/198098592">Watch Video</a>
 </div>`,
     image: "/img/showcase/memovox@2x.jpg",
-    imageLink: "https://vimeo.com/198098592"
+    imageLink: "https://vimeo.com/198098592",
   },
   {
     title: "Battleborn Tap",
@@ -37,7 +37,7 @@ Command your squad of heroes on the field of battle in this game powered by Star
   <a class="button" href="https://www.2k.com/games/battleborn-tap">Visit Website</a>
 </div>`,
     image: "/img/showcase/battleborn-tap@2x.jpg",
-    imageLink: "https://www.2k.com/games/battleborn-tap"
+    imageLink: "https://www.2k.com/games/battleborn-tap",
   },
   {
     title: "Drum Pad Beats",
@@ -49,7 +49,7 @@ Drum Pad Beats is a fun beat/composer – scene/remixer to capture those ideas w
   <a class="button" href="https://teotigraphix.com/drumpadbeats/">Visit Website</a>
 </div>`,
     image: "/img/showcase/drum-pad-beats@2x.jpg",
-    imageLink: "https://teotigraphix.com/drumpadbeats/"
+    imageLink: "https://teotigraphix.com/drumpadbeats/",
   },
   {
     title: "Snailboy: An Epic Adventure",
@@ -60,7 +60,19 @@ Snailboy is a physics based puzzle game, built with Starling and Feathers, that 
   <a class="button" href="http://snailboygame.com/">Visit Website</a>
 </div>`,
     image: "/img/showcase/snailboy@2x.jpg",
-    imageLink: "http://snailboygame.com/"
+    imageLink: "http://snailboygame.com/",
+  },
+  {
+    title: "American Cornhole Association",
+    content: `
+Create your own cornhole tournaments for parties, reunions, benefits, and other gatherings with this app created by [Red Minnow Interactive](https://redminnow.com/), and powered by Feathers and Starling.
+
+<div class="buttonWrapper">
+  <a class="button" href="https://www.youtube.com/watch?v=aYeAzBNLosw">Watch Video</a>
+  <a class="button" href="https://redminnow.com/work/american-cornhole-association-mobile-app/">Visit Website</a>
+</div>`,
+    image: "/img/showcase/american-cornhole-association@2x.jpg",
+    imageLink: "https://www.youtube.com/watch?v=aYeAzBNLosw",
   },
   {
     title: "SmartPref",
@@ -71,7 +83,7 @@ Preferans, the popular Eastern European card game, running smoothly on Feathers 
   <a class="button" href="https://www.youtube.com/watch?v=zW4tZJQ0b1o">Watch Video</a>
 </div>`,
     image: "/img/showcase/smartpref@2x.jpg",
-    imageLink: "https://www.youtube.com/watch?v=zW4tZJQ0b1o"
+    imageLink: "https://www.youtube.com/watch?v=zW4tZJQ0b1o",
   },
   {
     title: "Aether Story",
@@ -82,13 +94,13 @@ Fight against the darkness as you explore the pixel world of Aether Story, a mul
   <a class="button" href="https://www.aetherstory.com/">Visit Website</a>
 </div>`,
     image: "/img/showcase/aether-story@2x.jpg",
-    imageLink: "https://www.aetherstory.com/"
+    imageLink: "https://www.aetherstory.com/",
   },
   {
     title: "Street Art Project",
     content: `
 In a matter of weeks, the Less Rain team created an augmented reality app with Feathers and Starling to enable members of the Behance community to showcase and share their artwork as "street art" — on top of real-world locations.`,
-    image: "/img/showcase/street-art-project@2x.jpg"
+    image: "/img/showcase/street-art-project@2x.jpg",
   },
   {
     title: "Estee Lauder itCOLORS",
@@ -99,7 +111,7 @@ A Spanish language app built with Starling and Feathers that analyzes photos to 
   <a class="button" href="https://vimeo.com/111209138#t=28s">Watch Video</a>
 </div>`,
     image: "/img/showcase/estee-lauder.jpg",
-    imageLink: "https://vimeo.com/111209138#t=28s"
+    imageLink: "https://vimeo.com/111209138#t=28s",
   },
   {
     title: "Geophysic",
@@ -110,7 +122,7 @@ Explore the original Geophysic watch by Jaeger-LeCoultre, its modern reinterpret
   <a class="button" href="https://itunes.apple.com/us/app/geophysic/id928353438?mt=8">iOS App Store</a>
 </div>`,
     image: "/img/showcase/geophysic@2x.jpg",
-    imageLink: "https://itunes.apple.com/us/app/geophysic/id928353438?mt=8"
+    imageLink: "https://itunes.apple.com/us/app/geophysic/id928353438?mt=8",
   },
   {
     title: "Fantasy Rivals",
@@ -121,7 +133,7 @@ Collect heroes, build your army, and accomplish quests in this virtual trading c
   <a class="button" href="https://www.youtube.com/watch?v=TuL3VNjvJaQ">Watch Video</a>
 </div>`,
     image: "/img/showcase/fantasy-rivals.jpg",
-    imageLink: "https://www.youtube.com/watch?v=TuL3VNjvJaQ"
+    imageLink: "https://www.youtube.com/watch?v=TuL3VNjvJaQ",
   },
   {
     title: "Letter Quest: Grimm's Journey",
@@ -133,7 +145,18 @@ Spell words to fight your way through 40 stages in this addictive word game powe
   <a class="button" href="http://letterquestgame.com/">Visit Website</a>
 </div>`,
     image: "/img/showcase/letter-quest.jpg",
-    imageLink: "http://letterquestgame.com/"
+    imageLink: "http://letterquestgame.com/",
+  },
+  {
+    title: "Schumacher Gallery",
+    content: `
+Created by [Red Minnow Interactive](https://redminnow.com/), this Starling and Feathers mobile app highlights the gallery's collections of artwork — with audio tours, detailed images, author bios, and behind-the-scenes info.
+
+<div class="buttonWrapper">
+  <a class="button" href="https://redminnow.com/work/schumacher-gallery/">Visit Website</a>
+</div>`,
+    image: "/img/showcase/schumacher-gallery@2x.jpg",
+    imageLink: "https://redminnow.com/work/schumacher-gallery/",
   },
   {
     title: "Key Cards GCSE Maths",
@@ -145,7 +168,8 @@ Memorise everything you need to get the edge in GCSE Maths with Key Cards, power
   <a class="button" href="https://www.simplyeffectiveeducation.co.uk/key-cards/gcse-maths">Visit Website</a>
 </div>`,
     image: "/img/showcase/key-cards@2x.jpg",
-    imageLink: "https://www.simplyeffectiveeducation.co.uk/key-cards/gcse-maths"
+    imageLink:
+      "https://www.simplyeffectiveeducation.co.uk/key-cards/gcse-maths",
   },
   {
     title: "Spell Cubes",
@@ -157,11 +181,11 @@ Spell Cubes is the toddlers first playful meeting with the phonetic alphabet and
   <a class="button" href="http://bjeld.com/apps-i-did/spell-cubes/">Visit Website</a>
 </div>`,
     image: "/img/showcase/spell-cubes.jpg",
-    imageLink: "http://bjeld.com/apps-i-did/spell-cubes/"
-  }
+    imageLink: "http://bjeld.com/apps-i-did/spell-cubes/",
+  },
 ];
 
-const ShowcaseItem = props => (
+const ShowcaseItem = (props) => (
   <div className="blockElement" key={props.title}>
     <div className="blockImage">
       {props.imageLink ? (
@@ -183,10 +207,10 @@ const ShowcaseItem = props => (
   </div>
 );
 
-const Showcase = props => {
+const Showcase = (props) => {
   const { config: siteConfig, language = "" } = props;
   const { baseUrl } = siteConfig;
-  const pageUrl = page => baseUrl + (language ? `${language}/` : "") + page;
+  const pageUrl = (page) => baseUrl + (language ? `${language}/` : "") + page;
 
   return (
     <div className="mainContainer documentContainer showcaseContainer alignCenter">
@@ -203,7 +227,7 @@ const Showcase = props => {
             </div>
           </div>
         </div>
-        {showcaseItems.map(item => (
+        {showcaseItems.map((item) => (
           <ShowcaseItem key={item.title} {...item} />
         ))}
       </Container>
