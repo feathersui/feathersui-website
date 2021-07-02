@@ -3,7 +3,7 @@ title: How to use the TabBar component
 sidebar_label: TabBar
 ---
 
-The [`TabBar`](https://api.feathersui.com/current/feathers/controls/TabBar.html) class displays a set of togglable buttons in a row, where only one button at a time may be selected.
+The [`TabBar`](https://api.feathersui.com/current/feathers/controls/TabBar.html) class displays a set of togglable buttons in a row, where only one button at a time may be selected. The tabs are populated from a [data collection](./data-collections.md).
 
 <figure>
 <iframe src="/learn/haxe-openfl/samples/tab-bar.html" width="100%" height="150"></iframe>
