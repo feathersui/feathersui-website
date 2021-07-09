@@ -103,7 +103,7 @@ The appearance of the panel's border or fill may be customized to change when th
 skin.disabledFill = SolidColor(0xffcccc);
 ```
 
-Similarly, use the skin's [`disabledBorder`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html#disabledBorder) property to change the border when disabled
+Similarly, use the skin's [`disabledBorder`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html#disabledBorder) property to change the border when disabled.
 
 ```hx
 skin.disabledBorder = SolidColor(2.0, 0x999999);
