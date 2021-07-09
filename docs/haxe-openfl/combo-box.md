@@ -94,7 +94,7 @@ The button in a [`ComboBox`](https://api.feathersui.com/current/feathers/control
 
 #### Style button globally
 
-Use the [`CHILD_VARIANT_BUTTON`](https://api.feathersui.com/current/feathers/controls/ComboBox.html#CHILD_VARIANT_BUTTON) constant in a [theme](./themes.md) to provide a function that globally styles the buttons in all [`ComboBox`](https://api.feathersui.com/current/feathers/controls/ComboBox.html) components.
+Use the [`ComboBox.CHILD_VARIANT_BUTTON`](https://api.feathersui.com/current/feathers/controls/ComboBox.html#CHILD_VARIANT_BUTTON) constant in a [theme](./themes.md) to provide a function that globally styles the buttons in all [`ComboBox`](https://api.feathersui.com/current/feathers/controls/ComboBox.html) components.
 
 ```hx
 styleProvider.setStyleFunction(
@@ -131,7 +131,7 @@ The text input in a [`ComboBox`](https://api.feathersui.com/current/feathers/con
 
 #### Style text input globally
 
-Use the [`CHILD_VARIANT_TEXT_INPUT`](https://api.feathersui.com/current/feathers/controls/ComboBox.html#CHILD_VARIANT_TEXT_INPUT) constant in a [theme](./themes.md) to provide a function that globally styles the text inputs in all [`ComboBox`](https://api.feathersui.com/current/feathers/controls/ComboBox.html) components.
+Use the [`ComboBox.CHILD_VARIANT_TEXT_INPUT`](https://api.feathersui.com/current/feathers/controls/ComboBox.html#CHILD_VARIANT_TEXT_INPUT) constant in a [theme](./themes.md) to provide a function that globally styles the text inputs in all [`ComboBox`](https://api.feathersui.com/current/feathers/controls/ComboBox.html) components.
 
 ```hx
 styleProvider.setStyleFunction(
@@ -168,7 +168,7 @@ The list view in a [`ComboBox`](https://api.feathersui.com/current/feathers/cont
 
 #### Style list view globally
 
-Use the [`CHILD_VARIANT_LIST_VIEW`](https://api.feathersui.com/current/feathers/controls/ComboBox.html#CHILD_VARIANT_LIST_VIEW) constant in a [theme](./themes.md) to provide a function that globally styles the list views in all [`ComboBox`](https://api.feathersui.com/current/feathers/controls/ComboBox.html) components.
+Use the [`ComboBox.CHILD_VARIANT_LIST_VIEW`](https://api.feathersui.com/current/feathers/controls/ComboBox.html#CHILD_VARIANT_LIST_VIEW) constant in a [theme](./themes.md) to provide a function that globally styles the list views in all [`ComboBox`](https://api.feathersui.com/current/feathers/controls/ComboBox.html) components.
 
 ```hx
 styleProvider.setStyleFunction(

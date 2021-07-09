@@ -57,7 +57,7 @@ The decrement and increment buttons in a [`NumericStepper`](https://api.feathers
 
 #### Style the decement and increment buttons globally
 
-Use the [`CHILD_VARIANT_DECREMENT_BUTTON`](https://api.feathersui.com/current/feathers/controls/NumericStepper.html#CHILD_VARIANT_DECREMENT_BUTTON) and [`CHILD_VARIANT_INCREMENT_BUTTON`](https://api.feathersui.com/current/feathers/controls/NumericStepper.html#CHILD_VARIANT_INCREMENT_BUTTON) constants in a [theme](./themes.md) to provide a function that globally styles the buttons in all [`NumericStepper`](https://api.feathersui.com/current/feathers/controls/NumericStepper.html) components.
+Use the [`NumericStepper.CHILD_VARIANT_DECREMENT_BUTTON`](https://api.feathersui.com/current/feathers/controls/NumericStepper.html#CHILD_VARIANT_DECREMENT_BUTTON) and [`NumericStepper.CHILD_VARIANT_INCREMENT_BUTTON`](https://api.feathersui.com/current/feathers/controls/NumericStepper.html#CHILD_VARIANT_INCREMENT_BUTTON) constants in a [theme](./themes.md) to provide a function that globally styles the buttons in all [`NumericStepper`](https://api.feathersui.com/current/feathers/controls/NumericStepper.html) components.
 
 ```hx
 styleProvider.setStyleFunction(
@@ -109,7 +109,7 @@ The text input in a [`NumericStepper`](https://api.feathersui.com/current/feathe
 
 #### Style text input globally
 
-Use the [`CHILD_VARIANT_TEXT_INPUT`](https://api.feathersui.com/current/feathers/controls/NumericStepper.html#CHILD_VARIANT_TEXT_INPUT) constant in a [theme](./themes.md) to provide a function that globally styles the text inputs in all [`NumericStepper`](https://api.feathersui.com/current/feathers/controls/NumericStepper.html) components.
+Use the [`NumericStepper.CHILD_VARIANT_TEXT_INPUT`](https://api.feathersui.com/current/feathers/controls/NumericStepper.html#CHILD_VARIANT_TEXT_INPUT) constant in a [theme](./themes.md) to provide a function that globally styles the text inputs in all [`NumericStepper`](https://api.feathersui.com/current/feathers/controls/NumericStepper.html) components.
 
 ```hx
 styleProvider.setStyleFunction(

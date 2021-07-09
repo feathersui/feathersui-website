@@ -94,7 +94,7 @@ The tabs in a [`TabBar`](https://api.feathersui.com/current/feathers/controls/Ta
 
 #### Style tabs globally
 
-Use the [`CHILD_VARIANT_TAB`](https://api.feathersui.com/current/feathers/controls/TabBar.html#CHILD_VARIANT_TAB) constant in a [theme](./themes.md) to provide a function that globally styles the tabs in all [`TabBar`](https://api.feathersui.com/current/feathers/controls/TabBar.html) components.
+Use the [`TabBar.CHILD_VARIANT_TAB`](https://api.feathersui.com/current/feathers/controls/TabBar.html#CHILD_VARIANT_TAB) constant in a [theme](./themes.md) to provide a function that globally styles the tabs in all [`TabBar`](https://api.feathersui.com/current/feathers/controls/TabBar.html) components.
 
 ```hx
 styleProvider.setStyleFunction(

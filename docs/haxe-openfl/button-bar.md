@@ -86,7 +86,7 @@ The buttons in a [`ButtonBar`](https://api.feathersui.com/current/feathers/contr
 
 #### Style buttons globally
 
-Use the [`CHILD_VARIANT_BUTTON`](https://api.feathersui.com/current/feathers/controls/ButtonBar.html#CHILD_VARIANT_BUTTON) constant in a [theme](./themes.md) to provide a function that globally styles the buttons in all [`ButtonBar`](https://api.feathersui.com/current/feathers/controls/ButtonBar.html) components.
+Use the [`ButtonBar.CHILD_VARIANT_BUTTON`](https://api.feathersui.com/current/feathers/controls/ButtonBar.html#CHILD_VARIANT_BUTTON) constant in a [theme](./themes.md) to provide a function that globally styles the buttons in all [`ButtonBar`](https://api.feathersui.com/current/feathers/controls/ButtonBar.html) components.
 
 ```hx
 styleProvider.setStyleFunction(

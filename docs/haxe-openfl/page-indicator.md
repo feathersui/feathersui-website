@@ -55,7 +55,7 @@ The toggle buttons in a [`PageIndicator`](https://api.feathersui.com/current/fea
 
 #### Style toggle buttons globally
 
-Use the [`CHILD_VARIANT_TOGGLE_BUTTON`](https://api.feathersui.com/current/feathers/controls/PageIndicator.html#CHILD_VARIANT_TOGGLE_BUTTON) constant in a [theme](./themes.md) to provide a function that globally styles the toggle buttons in all [`PageIndicator`](https://api.feathersui.com/current/feathers/controls/PageIndicator.html) components.
+Use the [`PageIndicator.CHILD_VARIANT_TOGGLE_BUTTON`](https://api.feathersui.com/current/feathers/controls/PageIndicator.html#CHILD_VARIANT_TOGGLE_BUTTON) constant in a [theme](./themes.md) to provide a function that globally styles the toggle buttons in all [`PageIndicator`](https://api.feathersui.com/current/feathers/controls/PageIndicator.html) components.
 
 ```hx
 styleProvider.setStyleFunction(

@@ -94,7 +94,7 @@ The button in a [`PopUpListView`](https://api.feathersui.com/current/feathers/co
 
 #### Style button globally
 
-Use the [`CHILD_VARIANT_BUTTON`](https://api.feathersui.com/current/feathers/controls/PopUpListView.html#CHILD_VARIANT_BUTTON) constant in a [theme](./themes.md) to provide a function that globally styles the buttons in all [`PopUpListView`](https://api.feathersui.com/current/feathers/controls/PopUpListView.html) components.
+Use the [`PopUpListView.CHILD_VARIANT_BUTTON`](https://api.feathersui.com/current/feathers/controls/PopUpListView.html#CHILD_VARIANT_BUTTON) constant in a [theme](./themes.md) to provide a function that globally styles the buttons in all [`PopUpListView`](https://api.feathersui.com/current/feathers/controls/PopUpListView.html) components.
 
 ```hx
 styleProvider.setStyleFunction(
@@ -131,7 +131,7 @@ The list view in a [`PopUpListView`](https://api.feathersui.com/current/feathers
 
 #### Style list view globally
 
-Use the [`CHILD_VARIANT_LIST_VIEW`](https://api.feathersui.com/current/feathers/controls/PopUpListView.html#CHILD_VARIANT_LIST_VIEW) constant in a [theme](./themes.md) to provide a function that globally styles the list views in all [`PopUpListView`](https://api.feathersui.com/current/feathers/controls/PopUpListView.html) components.
+Use the [`PopUpListView.CHILD_VARIANT_LIST_VIEW`](https://api.feathersui.com/current/feathers/controls/PopUpListView.html#CHILD_VARIANT_LIST_VIEW) constant in a [theme](./themes.md) to provide a function that globally styles the list views in all [`PopUpListView`](https://api.feathersui.com/current/feathers/controls/PopUpListView.html) components.
 
 ```hx
 styleProvider.setStyleFunction(

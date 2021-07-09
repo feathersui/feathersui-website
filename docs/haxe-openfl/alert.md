@@ -95,7 +95,7 @@ The message label in an [`Alert`](https://api.feathersui.com/current/feathers/co
 
 #### Style message label globally
 
-Use the [`CHILD_VARIANT_MESSAGE_LABEL`](https://api.feathersui.com/current/feathers/controls/Alert.html#CHILD_VARIANT_MESSAGE_LABEL) constant in a [theme](./themes.md) to provide a function that globally styles the message labels in all [`Alert`](https://api.feathersui.com/current/feathers/controls/Alert.html) components.
+Use the [`Alert.CHILD_VARIANT_MESSAGE_LABEL`](https://api.feathersui.com/current/feathers/controls/Alert.html#CHILD_VARIANT_MESSAGE_LABEL) constant in a [theme](./themes.md) to provide a function that globally styles the message labels in all [`Alert`](https://api.feathersui.com/current/feathers/controls/Alert.html) components.
 
 ```hx
 styleProvider.setStyleFunction(
@@ -132,7 +132,7 @@ The header in an [`Alert`](https://api.feathersui.com/current/feathers/controls/
 
 #### Style header globally
 
-Use the [`CHILD_VARIANT_HEADER`](https://api.feathersui.com/current/feathers/controls/Alert.html#CHILD_VARIANT_HEADER) constant in a [theme](./themes.md) to provide a function that globally styles the headers in all [`Alert`](https://api.feathersui.com/current/feathers/controls/Alert.html) components.
+Use the [`Alert.CHILD_VARIANT_HEADER`](https://api.feathersui.com/current/feathers/controls/Alert.html#CHILD_VARIANT_HEADER) constant in a [theme](./themes.md) to provide a function that globally styles the headers in all [`Alert`](https://api.feathersui.com/current/feathers/controls/Alert.html) components.
 
 ```hx
 styleProvider.setStyleFunction(
@@ -169,7 +169,7 @@ The button bar in an [`Alert`](https://api.feathersui.com/current/feathers/contr
 
 #### Style button bar globally
 
-Use the [`CHILD_VARIANT_BUTTON_BAR`](https://api.feathersui.com/current/feathers/controls/Alert.html#CHILD_VARIANT_BUTTON_BAR) constant in a [theme](./themes.md) to provide a function that globally styles the buton bars in all [`Alert`](https://api.feathersui.com/current/feathers/controls/Alert.html) components.
+Use the [`Alert.CHILD_VARIANT_BUTTON_BAR`](https://api.feathersui.com/current/feathers/controls/Alert.html#CHILD_VARIANT_BUTTON_BAR) constant in a [theme](./themes.md) to provide a function that globally styles the buton bars in all [`Alert`](https://api.feathersui.com/current/feathers/controls/Alert.html) components.
 
 ```hx
 styleProvider.setStyleFunction(
