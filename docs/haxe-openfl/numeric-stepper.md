@@ -5,12 +5,10 @@ sidebar_label: NumericStepper
 
 The [`NumericStepper`](https://api.feathersui.com/current/feathers/controls/NumericStepper.html) component allow a user to select a numeric value in a specific range. The value may be changed by pressing the increment or decrement [buttons](./button.md), or by typing a value into a [text input](./text-input.md).
 
-<!--
 <figure>
 <iframe src="/learn/haxe-openfl/samples/numeric-stepper.html" width="100%" height="150"></iframe>
 <figcaption>Live preview of the <a href="https://api.feathersui.com/current/feathers/controls/NumericStepper.html"><code>NumericStepper</code></a> component</figcaption>
 </figure>
--->
 
 ## The Basics
 

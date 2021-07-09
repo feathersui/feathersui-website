@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      id="viewport"
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Feathers UI Drawer preview</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <script src="https://unpkg.com/openfl@8.9.6/dist/openfl.min.js"></script>
+    <script src="https://unpkg.com/actuate@1.8.9-beta/dist/actuate.min.js"></script>
+    <script src="https://unpkg.com/feathersui-openfl@1.0.0-beta.4/dist/feathersui-openfl.min.js"></script>
+    <script>
+      class HelloWorld extends feathers.controls.Application {
+        constructor() {
+          super();
+
+          this.layout = new feathers.layout.AnchorLayout();
+
+          this.mainView = new feathers.controls.Drawer();
+          this.mainView.layoutData = feathers.layout.AnchorLayoutData.fill();
+
+          var drawer = new feathers.controls.LayoutGroup();
+          drawer.backgroundSkin = new feathers.skins.RectangleSkin(
+            feathers.graphics.FillStyle.SolidColor(0xffffff)
+          );
+          var drawerLayout = new feathers.layout.VerticalLayout();
+          drawerLayout.horizontalAlign = feathers.layout.HorizontalAlign.CENTER;
+          drawerLayout.verticalAlign = feathers.layout.VerticalAlign.MIDDLE;
+          drawerLayout.setPadding(10.0);
+          drawer.layout = drawerLayout;
+          var closeButton = new feathers.controls.Button();
+          closeButton.text = "Close Drawer";
+          closeButton.addEventListener(
+            feathers.events.TriggerEvent.TRIGGER,
+            this.closeButton_triggerHandler
+          );
+          drawer.addChild(closeButton);
+          this.mainView.drawer = drawer;
+
+          var content = new feathers.controls.LayoutGroup();
+          content.layout = new feathers.layout.AnchorLayout();
+          var openButton = new feathers.controls.Button();
+          openButton.layoutData = feathers.layout.AnchorLayoutData.center();
+          openButton.text = "Open Drawer";
+          openButton.layoutData = feathers.layout.AnchorLayoutData.middleLeft(
+            0.0,
+            10.0
+          );
+          openButton.addEventListener(
+            feathers.events.TriggerEvent.TRIGGER,
+            this.openButton_triggerHandler
+          );
+          content.addChild(openButton);
+          this.mainView.content = content;
+
+          this.addChild(this.mainView);
+
+          this.mainView.opened = true;
+        }
+
+        openButton_triggerHandler = (event) => {
+          this.mainView.opened = true;
+        };
+
+        closeButton_triggerHandler = (event) => {
+          this.mainView.opened = false;
+        };
+      }
+
+      var stage = new openfl.display.Stage(0, 0, null, null, {
+        allowHighDPI: true,
+      });
+      document.body.appendChild(stage.element);
+      stage.addChild(new HelloWorld());
+    </script>
+  </body>
+</html>

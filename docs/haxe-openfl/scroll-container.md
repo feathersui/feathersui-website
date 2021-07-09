@@ -7,6 +7,11 @@ The [`ScrollContainer`](https://api.feathersui.com/current/feathers/controls/Scr
 
 > If you don't need scrolling, consider using the [`LayoutGroup`](./layout-group.md) component instead.
 
+<figure>
+<iframe src="/learn/haxe-openfl/samples/scroll-container.html" width="100%" height="150"></iframe>
+<figcaption>Live preview of the <a href="https://api.feathersui.com/current/feathers/controls/ScrollContainer.html"><code>ScrollContainer</code></a> component</figcaption>
+</figure>
+
 ## The Basics
 
 Create a [`ScrollContainer`](https://api.feathersui.com/current/feathers/controls/ScrollContainer.html) component, add it to [the display list](https://books.openfl.org/openfl-developers-guide/display-programming/basics-of-display-programming.html), and add some children.

@@ -7,6 +7,11 @@ The [`LayoutGroup`](https://api.feathersui.com/current/feathers/controls/LayoutG
 
 > If you need scrolling, you should use the [`ScrollContainer`](./scroll-container.md) component instead.
 
+<figure>
+<iframe src="/learn/haxe-openfl/samples/layout-group.html" width="100%" height="150"></iframe>
+<figcaption>Live preview of the <a href="https://api.feathersui.com/current/feathers/controls/LayoutGroup.html"><code>LayoutGroup</code></a> component</figcaption>
+</figure>
+
 ## The Basics
 
 Create a [`LayoutGroup`](https://api.feathersui.com/current/feathers/controls/LayoutGroup.html) container, add it to [the display list](https://books.openfl.org/openfl-developers-guide/display-programming/basics-of-display-programming.html), and add some children.

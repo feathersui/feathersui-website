@@ -7,7 +7,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
-    <title>Feathers UI HProgressBar and VProgressBar preview</title>
+    <title>Feathers UI LayoutGroup preview</title>
     <style>
       html,
       body {
@@ -27,22 +27,23 @@
         constructor() {
           super();
 
-          this.layout = new feathers.layout.HorizontalLayout();
-          this.layout.horizontalAlign = feathers.layout.HorizontalAlign.CENTER;
-          this.layout.verticalAlign = feathers.layout.VerticalAlign.MIDDLE;
-          this.layout.gap = 80.0;
+          this.layout = new feathers.layout.AnchorLayout();
 
-          this.hProgress = new feathers.controls.HProgressBar();
-          this.hProgress.minimum = 0.0;
-          this.hProgress.maximum = 1.0;
-          this.hProgress.value = 0.5;
-          this.addChild(this.hProgress);
-
-          this.vProgress = new feathers.controls.VProgressBar();
-          this.vProgress.minimum = 0.0;
-          this.vProgress.maximum = 100.0;
-          this.vProgress.value = 25.0;
-          this.addChild(this.vProgress);
+          this.layoutGroup = new feathers.controls.LayoutGroup();
+          var layout = new feathers.layout.HorizontalLayout();
+          layout.verticalAlign = feathers.layout.VerticalAlign.MIDDLE;
+          layout.gap = 10.0;
+          layout.setPadding(10.0);
+          this.layoutGroup.layout = layout;
+          for (var i = 0; i < 5; i++) {
+            var child = new openfl.display.Shape();
+            child.graphics.beginFill(0xff0000);
+            var size = 25.0 + Math.random() * 25.0;
+            child.graphics.drawRect(0.0, 0.0, size, size);
+            this.layoutGroup.addChild(child);
+          }
+          this.layoutGroup.layoutData = feathers.layout.AnchorLayoutData.fill();
+          this.addChild(this.layoutGroup);
         }
       }
 

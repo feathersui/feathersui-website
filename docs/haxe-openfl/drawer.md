@@ -5,6 +5,11 @@ sidebar_label: Drawer
 
 The [`Drawer`](https://api.feathersui.com/current/feathers/controls/Drawer.html) class is container that adds a special _drawer_ that slides in and out, above all other content. It may be opened or closed with a swipe gesture from one of the four edges.
 
+<figure>
+<iframe src="/learn/haxe-openfl/samples/drawer.html" width="100%" height="150"></iframe>
+<figcaption>Live preview of the <a href="https://api.feathersui.com/current/feathers/controls/Drawer.html"><code>Drawer</code></a> component</figcaption>
+</figure>
+
 ## The Basics
 
 Start by creating a [`Drawer`](https://api.feathersui.com/current/feathers/controls/Drawer.html) control, and add it to the [the display list](https://books.openfl.org/openfl-developers-guide/display-programming/basics-of-display-programming.html).

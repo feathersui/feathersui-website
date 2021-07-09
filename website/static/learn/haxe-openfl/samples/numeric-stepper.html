@@ -7,7 +7,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
-    <title>Feathers UI HProgressBar and VProgressBar preview</title>
+    <title>Feathers UI NumericStepper preview</title>
     <style>
       html,
       body {
@@ -27,22 +27,14 @@
         constructor() {
           super();
 
-          this.layout = new feathers.layout.HorizontalLayout();
-          this.layout.horizontalAlign = feathers.layout.HorizontalAlign.CENTER;
-          this.layout.verticalAlign = feathers.layout.VerticalAlign.MIDDLE;
-          this.layout.gap = 80.0;
+          this.layout = new feathers.layout.AnchorLayout();
 
-          this.hProgress = new feathers.controls.HProgressBar();
-          this.hProgress.minimum = 0.0;
-          this.hProgress.maximum = 1.0;
-          this.hProgress.value = 0.5;
-          this.addChild(this.hProgress);
-
-          this.vProgress = new feathers.controls.VProgressBar();
-          this.vProgress.minimum = 0.0;
-          this.vProgress.maximum = 100.0;
-          this.vProgress.value = 25.0;
-          this.addChild(this.vProgress);
+          this.stepper = new feathers.controls.NumericStepper();
+          this.stepper.minimum = 0.0;
+          this.stepper.maximum = 1.0;
+          this.stepper.value = 0.5;
+          this.stepper.layoutData = feathers.layout.AnchorLayoutData.center();
+          this.addChild(this.stepper);
         }
       }
 
