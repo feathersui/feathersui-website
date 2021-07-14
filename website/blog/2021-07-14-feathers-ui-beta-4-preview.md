@@ -22,9 +22,9 @@ Let's take a look at some of the new UI components and features that are include
 
 ### New UI Components
 
-- [`NumericStepper`](https://api.feathersui.com/current/feathers/controls/NumericStepper.html) displays editable numeric text with a set of buttons to increment and decrement the value.
+- [`NumericStepper`](https://feathersui.com/learn/haxe-openfl/numeric-stepper/) displays editable numeric text with a set of buttons to increment and decrement the value.
 
-    <div style="text-align:center;"><a href="https://api.feathersui.com/current/feathers/controls/NumericStepper.html"><img src="/blog/img/beta-4-feathersui-numeric-stepper.png" style="width:450px"></a></div>
+    <div style="text-align:center;"><a href="https://feathersui.com/learn/haxe-openfl/numeric-stepper/"><img src="/blog/img/beta-4-feathersui-numeric-stepper.png" style="width:450px"></a></div>
 
 ### New Features
 
