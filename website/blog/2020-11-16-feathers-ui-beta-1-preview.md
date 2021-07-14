@@ -71,7 +71,7 @@ Feathers UI may be [installed](https://feathersui.com/learn/haxe-openfl/installa
 haxelib install feathersui
 ```
 
-If you're up, run the [**haxelib update**](https://lib.haxe.org/documentation/using-haxelib/#update) command instead.
+If you already have the library installed, and you simply want the latest version, run the [**haxelib update**](https://lib.haxe.org/documentation/using-haxelib/#update) command instead.
 
 ```sh
 haxelib update feathersui

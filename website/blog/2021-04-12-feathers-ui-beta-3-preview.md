@@ -38,7 +38,7 @@ Let's take a look at some of the new UI components and features that are include
 
     <div style="text-align:center;"><a href="https://api.feathersui.com/current/feathers/controls/Header.html"><img src="/blog/img/beta-3-feathersui-header.png" style="width:450px"></a></div>
 
-## A big release
+### A big release
 
 This build also includes a ton of minor improvements. Here's a few worth highlighting:
 
@@ -62,7 +62,7 @@ Feathers UI may be [installed](https://feathersui.com/learn/haxe-openfl/installa
 haxelib install feathersui
 ```
 
-If you're up, run the [**haxelib update**](https://lib.haxe.org/documentation/using-haxelib/#update) command instead.
+If you already have the library installed, and you simply want the latest version, run the [**haxelib update**](https://lib.haxe.org/documentation/using-haxelib/#update) command instead.
 
 ```sh
 haxelib update feathersui
