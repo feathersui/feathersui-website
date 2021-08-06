@@ -167,11 +167,11 @@ loader.scaleFactor = 0.5;
 
 Using this value, the texture will be scaled to an appropriate size for Starling's current `contentScaleFactor`.
 
-Finally, just like `starling.display.Image`, `ImageLoader` allows you to customize the [`color`](/api-reference/feathers/controls/ImageLoader.html#color) and [`smoothing`](/api-reference/feathers/controls/ImageLoader.html#smoothing) properties:
+Finally, just like `starling.display.Image`, `ImageLoader` allows you to customize the [`color`](/api-reference/feathers/controls/ImageLoader.html#color) and [`textureSmoothing`](/api-reference/feathers/controls/ImageLoader.html#textureSmoothing) properties:
 
 ```actionscript
 loader.color = 0xff0000;
-loader.smoothing = TextureSmoothing.NONE;
+loader.textureSmoothing = TextureSmoothing.NONE;
 ```
 
 ## Related Links
