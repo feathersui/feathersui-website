@@ -68,6 +68,14 @@ One way to resolve this issue is to add your **Team ID** to your [_project.xml_ 
 <certificate team-id="XXXXXXXX" />
 ```
 
+### Error: xcode-select: error: tool 'xcodebuild' requires Xcode, but active developer directory '/Library/Developer/CommandLineTools' is a command line tools instance
+
+Run the following command in a terminal to resolve this issue.
+
+```sh
+sudo xcode-select -s /Applications/Xcode.app/Contents/Developer
+```
+
 > ### Did you get some other error message that you don't understand?
 >
 > Configuring OpenFL to build for native targets, like iOS or Android, can be a little tricky! Head over to either the [Feathers UI community forum](https://community.feathersui.com/) or the [Feathers UI Discord](https://discord.feathersui.com/). Explain which command you tried to run, be sure to mention that you are targeting **ios**, and post the error message (and any additional relevant output). Ideally, we can help you figure out a solution, and then we'll also add it to this troubleshooting section, so that everyone can benefit.
