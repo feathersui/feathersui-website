@@ -37,7 +37,7 @@ Check for the new value of the [`selected`](https://api.feathersui.com/current/f
 ```hx
 function toggle_changeHandler(event:Event):Void {
     var button = cast(event.currentTarget, ToggleButton);
-    trace("toggle.selected change: " + toggle.selected);
+    trace("button.selected change: " + button.selected);
 }
 ```
 
