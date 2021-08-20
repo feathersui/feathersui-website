@@ -21,7 +21,7 @@
   <body>
     <script src="https://unpkg.com/openfl@8.9.6/dist/openfl.min.js"></script>
     <script src="https://unpkg.com/actuate@1.8.9-beta/dist/actuate.min.js"></script>
-    <script src="https://unpkg.com/feathersui-openfl@1.0.0-beta.4/dist/feathersui-openfl.min.js"></script>
+    <script src="https://unpkg.com/feathersui-openfl@1.0.0-beta.5/dist/feathersui-openfl.min.js"></script>
     <script>
       class HelloWorld extends feathers.controls.Application {
         constructor() {
@@ -29,12 +29,36 @@
 
           this.layout = new feathers.layout.AnchorLayout();
 
-          this.textCallout = new feathers.controls.TextCallout();
-          this.textCallout.text = "A text callout displays some text";
-          this.textCallout.layoutData =
-            feathers.layout.AnchorLayoutData.center();
-          this.addChild(this.textCallout);
+          this.button = new feathers.controls.Button();
+          this.button.layoutData = feathers.layout.AnchorLayoutData.center();
+          this.button.text = "Click Me";
+          this.button.addEventListener(
+            feathers.events.TriggerEvent.TRIGGER,
+            this.button_triggerHandler
+          );
+          this.addChild(this.button);
+
+          this.addEventListener(
+            feathers.events.FeathersEvent.CREATION_COMPLETE,
+            this.onCreationComplete
+          );
         }
+
+        onCreationComplete = (event) => {
+          // wait to show the callout until the application is fully ready
+          this.showCallout();
+        };
+
+        showCallout() {
+          feathers.controls.TextCallout.show(
+            "A text callout displays some text",
+            this.button
+          );
+        }
+
+        button_triggerHandler = (event) => {
+          this.showCallout();
+        };
       }
 
       var stage = new openfl.display.Stage(0, 0, null, null, {

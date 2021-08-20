@@ -21,7 +21,7 @@
   <body>
     <script src="https://unpkg.com/openfl@8.9.6/dist/openfl.min.js"></script>
     <script src="https://unpkg.com/actuate@1.8.9-beta/dist/actuate.min.js"></script>
-    <script src="https://unpkg.com/feathersui-openfl@1.0.0-beta.4/dist/feathersui-openfl.min.js"></script>
+    <script src="https://unpkg.com/feathersui-openfl@1.0.0-beta.5/dist/feathersui-openfl.min.js"></script>
     <script>
       class HelloWorld extends feathers.controls.Application {
         constructor() {
@@ -38,8 +38,16 @@
           );
           this.addChild(this.button);
 
-          this.showAlert();
+          this.addEventListener(
+            feathers.events.FeathersEvent.CREATION_COMPLETE,
+            this.onCreationComplete
+          );
         }
+
+        onCreationComplete = (event) => {
+          // wait to show the alert until the application is fully ready
+          this.showAlert();
+        };
 
         showAlert() {
           feathers.controls.Alert.show(

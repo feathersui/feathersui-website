@@ -5,7 +5,7 @@ const GridBlock = CompLibrary.GridBlock;
 
 const samplesBaseUrl = "/samples/haxe-openfl/";
 const githubSamplesBaseUrl =
-  "https://github.com/feathersui/feathersui-openfl/tree/v1.0.0-beta.4/samples/";
+  "https://github.com/feathersui/feathersui-openfl/tree/v1.0.0-beta.5/samples/";
 
 //screenshots: 720x450
 //this.stage.nativeWindow.width = 720 + (this.stage.nativeWindow.width - this.stage.stageWidth);
