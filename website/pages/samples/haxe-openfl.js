@@ -182,6 +182,11 @@ const Samples = (props) => {
                 7GUIs for Feathers UI
               </a>
             </li>
+            <li>
+              <a href="https://github.com/teotigraphix/haxe-feathersui-webaudio">
+                Feathers UI Web Audio Samples
+              </a>
+            </li>
           </ul>
         </div>
       </Container>
