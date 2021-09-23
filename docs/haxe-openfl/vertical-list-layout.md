@@ -33,13 +33,20 @@ The following sections will introduce a number of properties that may be used to
 
 ### Spacing
 
-The _padding_ is the space around the edges of the container that will contain no children. Padding may be added on each side, including [top](https://api.feathersui.com/current/feathers/controls/VerticalListLayout.html#paddingTop), [right](https://api.feathersui.com/current/feathers/controls/VerticalListLayout.html#paddingRight), [bottom](https://api.feathersui.com/current/feathers/controls/VerticalListLayout.html#paddingBottom), and [left](https://api.feathersui.com/current/feathers/controls/VerticalListLayout.html#paddingLeft).
+The _padding_ is the space around the edges of the container that will contain no children. Padding may be added on each side, including [top](https://api.feathersui.com/current/feathers/layout/VerticalListLayout.html#paddingTop), [right](https://api.feathersui.com/current/feathers/layout/VerticalListLayout.html#paddingRight), [bottom](https://api.feathersui.com/current/feathers/layout/VerticalListLayout.html#paddingBottom), and [left](https://api.feathersui.com/current/feathers/layout/VerticalListLayout.html#paddingLeft).
 
 ```hx
 layout.paddingTop = 10.0;
 layout.paddingRight = 15.0;
 layout.paddingBottom = 10.0;
 layout.paddingLeft = 15.0;
+```
+
+If all four padding properties should be set to the same value, call the [`setPadding()`](https://api.feathersui.com/current/feathers/layout/VerticalListLayout.html#setPadding) method instead.
+
+```hx
+// sets top, right, bottom and left to the same value
+layout.setPadding(10.0);
 ```
 
 The [`gap`](https://api.feathersui.com/current/feathers/layout/VerticalListLayout.html#gap) refers to the space, measured in pixels, between each child in the container.
