@@ -23,6 +23,7 @@ The following layouts are best suited for simple containers.
 - [`AnchorLayout`](./anchor-layout.md)
 - [`HorizontalLayout`](./horizontal-layout.md)
 - [`ResponsiveGridLayout`](./responsive-grid-layout.md)
+- [`TiledRowsLayout`](./tiled-rows-layout.md)
 - [`VerticalLayout`](./vertical-layout.md)
 
 ## Data containers
@@ -31,10 +32,13 @@ Components that render [data collections](./data-collections.md) may take advant
 
 - [`ListView`](./list-view.md)
 - [`GridView`](./grid-view.md)
+- [`GroupListView`](./group-list-view.md)
 - [`TreeView`](./tree-view.md)
 
 The following layouts are optimized for data containers by providing _virtualization_ and item renderer _recycling_.
 
 - [`HorizontalListLayout`](./horizontal-list-layout.md)
+- [`TiledRowsListLayout`](./tiled-rows-list-layout.md)
+- [`PagedTiledRowsListLayout`](./paged-tiled-rows-list-layout.md)
 - [`VerticalListLayout`](./vertical-list-layout.md)
 - [`VerticalListFixedRowLayout`](./vertical-list-fixed-row-layout.md)
