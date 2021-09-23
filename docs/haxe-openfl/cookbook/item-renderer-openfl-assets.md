@@ -70,7 +70,7 @@ recycler.update = (itemRenderer:ItemRenderer, state:ListViewItemState) -> {
 
 To access the [`AssetLoader`](../asset-loader.md) that we created in [`DisplayObjectRecycler.withFunction()`](https://api.feathersui.com/current/feathers/utils/DisplayObjectRecycler.html#withFunction), cast the [`icon`](https://api.feathersui.com/current/feathers/controls/ToggleButton.html#icon) property. Then, use the [`data`](https://api.feathersui.com/current/feathers/data/ListViewItemState.html#data) property of the [`ListViewItemState`](https://api.feathersui.com/current/feathers/data/ListViewItemState.html) to get the item from the data provider, which has our `asset` property.
 
-> Be sure to set the item renderer's [`text`](https://api.feathersui.com/current/feathers/controls/dataRenderers/ItemRenderer.html#text) property too. When you provide a recycler with a custom [`update`](https://api.feathersui.com/current/feathers/utils/DisplayObjectRecycler.html#update) function, the text is no longer populated automatically.
+> Be sure to set the item renderer's [`text`](https://api.feathersui.com/current/feathers/controls/ToggleButton.html#text) property too. When you provide a recycler with a custom [`update`](https://api.feathersui.com/current/feathers/utils/DisplayObjectRecycler.html#update) function, the text is no longer populated automatically.
 
 ## Related Links
 
