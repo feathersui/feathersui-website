@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      id="viewport"
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Feathers UI LayoutGroup preview</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <script src="https://unpkg.com/openfl@8.9.6/dist/openfl.min.js"></script>
+    <script src="https://unpkg.com/actuate@1.8.9-beta/dist/actuate.min.js"></script>
+    <script src="https://unpkg.com/feathersui-openfl@1.0.0-beta.5/dist/feathersui-openfl.min.js"></script>
+    <script>
+      class HelloWorld extends feathers.controls.Application {
+        constructor() {
+          super();
+
+          this.layout = new feathers.layout.AnchorLayout();
+
+          this.dividedBox = new feathers.controls.HDividedBox();
+
+          var leftContainer = new feathers.controls.LayoutGroup();
+          leftContainer.layout = new feathers.layout.AnchorLayout();
+          leftContainer.backgroundSkin = new feathers.skins.RectangleSkin(
+            feathers.graphics.FillStyle.SolidColor(0x993333)
+          );
+          leftContainer.minWidth = 50.0;
+          var leftLabel = new feathers.controls.Label("Left");
+          leftLabel.textFormat = new feathers.text.TextFormat(
+            "_sans",
+            20,
+            0xffffff
+          );
+          leftLabel.layoutData = feathers.layout.AnchorLayoutData.center();
+          leftContainer.addChild(leftLabel);
+          this.dividedBox.addChild(leftContainer);
+
+          var rightContainer = new feathers.controls.LayoutGroup();
+          rightContainer.layout = new feathers.layout.AnchorLayout();
+          rightContainer.backgroundSkin = new feathers.skins.RectangleSkin(
+            feathers.graphics.FillStyle.SolidColor(0x333399)
+          );
+          rightContainer.minWidth = 50.0;
+          var rightLabel = new feathers.controls.Label("Right");
+          rightLabel.textFormat = new feathers.text.TextFormat(
+            "_sans",
+            20,
+            0xffffff
+          );
+          rightLabel.layoutData = feathers.layout.AnchorLayoutData.center();
+          rightContainer.addChild(rightLabel);
+          this.dividedBox.addChild(rightContainer);
+
+          this.dividedBox.layoutData = feathers.layout.AnchorLayoutData.fill();
+          this.addChild(this.dividedBox);
+        }
+      }
+
+      var stage = new openfl.display.Stage(0, 0, null, null, {
+        allowHighDPI: true,
+      });
+      document.body.appendChild(stage.element);
+      stage.addChild(new HelloWorld());
+    </script>
+  </body>
+</html>
