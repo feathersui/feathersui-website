@@ -153,7 +153,7 @@ var column = new GridViewColumn("Item", (data) -> data.item);
 column.cellRendererRecycler = recycler;
 ```
 
-So far, the [`DisplayObjectRecycler`](https://api.feathersui.com/current/feathers/utils/DisplayObjectRecycler.html) creates the cell renderer, but it doesn't understand how to interpret the data yet. A custom [`update()`](https://api.feathersui.com/current/feathers/utils/DisplayObjectRecycler.html) method on the recycler can do that.
+So far, the [`DisplayObjectRecycler`](https://api.feathersui.com/current/feathers/utils/DisplayObjectRecycler.html) creates the cell renderer, but it doesn't understand how to interpret the data yet. A custom [`update()`](https://api.feathersui.com/current/feathers/utils/DisplayObjectRecycler.html#update) method on the recycler can do that.
 
 ```hx
 recycler.update = (cellRenderer:LayoutGroupItemRenderer, state:GridViewCellState) -> {

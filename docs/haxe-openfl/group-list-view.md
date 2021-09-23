@@ -156,7 +156,7 @@ Pass the [`DisplayObjectRecycler`](https://api.feathersui.com/current/feathers/u
 groupListView.itemRendererRecycler = recycler;
 ```
 
-So far, the [`DisplayObjectRecycler`](https://api.feathersui.com/current/feathers/utils/DisplayObjectRecycler.html) creates the item renderer, but it doesn't understand how to interpret the data yet. A custom [`update()`](https://api.feathersui.com/current/feathers/utils/DisplayObjectRecycler.html) method on the recycler can do that.
+So far, the [`DisplayObjectRecycler`](https://api.feathersui.com/current/feathers/utils/DisplayObjectRecycler.html) creates the item renderer, but it doesn't understand how to interpret the data yet. A custom [`update()`](https://api.feathersui.com/current/feathers/utils/DisplayObjectRecycler.html#update) method on the recycler can do that.
 
 ```hx
 recycler.update = (itemRenderer:LayoutGroupItemRenderer, state:GroupListViewItemState) -> {
