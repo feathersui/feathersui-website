@@ -21,7 +21,7 @@ this.addChild(loader);
 
 Two different types of assets may be loaded.
 
-- Assets defined in the OpenFL [_project.xml_ file](https://lime.software/docs/project-files/xml-format/#assets-) of type [`IMAGE`](https://api.openfl.org/openfl/utils/AssetType.html#IMAGE) or [`MOVIE_CLIP`](https://api.openfl.org/openfl/utils/AssetType.html#MOVIE_CLIP).
+- Assets defined in the OpenFL [_project.xml_ file](https://lime.software/docs/project-files/xml-format/#assets) of type [`IMAGE`](https://api.openfl.org/openfl/utils/AssetType.html#IMAGE) or [`MOVIE_CLIP`](https://api.openfl.org/openfl/utils/AssetType.html#MOVIE_CLIP).
 - A URL loaded from the web in any format supported by [`openfl.display.Loader`](https://api.openfl.org/openfl/display/Loader.html).
 
 To load an asset defined in _project.xml_, set the [`source`](https://api.feathersui.com/current/feathers/controls/AssetLoader.html#source) property to the name of the asset.
