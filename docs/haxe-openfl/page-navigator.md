@@ -5,6 +5,8 @@ sidebar_label: PageNavigator
 
 The [`PageNavigator`](https://api.feathersui.com/current/feathers/controls/navigators/PageNavigator.html) class supports navigation between views using a [`PageIndicator`](./tab-bar.md) component to select the current view.
 
+Navigation can be enhanced with animation, called a _transition_. Feathers UI provides a number of [animated transitions](./navigator-transitions.md) out of the box, and a simple API allows anyone to create [custom transitions](./custom-navigator-transitions.md).
+
 ## The Basics
 
 Start by creating a [`PageNavigator`](https://api.feathersui.com/current/feathers/controls/navigators/PageNavigator.html), and add it to [the display list](https://books.openfl.org/openfl-developers-guide/display-programming/basics-of-display-programming.html).
@@ -63,3 +65,5 @@ navigator.selectedItem = navigator.dataProvider.get(2);
 ## Related Links
 
 - [`feathers.controls.navigators.PageNavigator` API Documentation](https://api.feathersui.com/current/feathers/controls/navigators/PageNavigator.html)
+- [Animated transitions for view navigators](./navigator-transitions.md)
+- [Custom transitions for view navigators](./custom-navigator-transitions.md)

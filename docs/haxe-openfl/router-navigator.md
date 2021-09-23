@@ -5,6 +5,8 @@ sidebar_label: RouterNavigator
 
 The [`RouterNavigator`](https://api.feathersui.com/current/feathers/controls/navigators/RouterNavigator.html) class supports navigation between views by integrating with the [HTML History API](https://developer.mozilla.org/en-US/docs/Web/API/History_API). On other targets, Feathers UI emulates the behavior of the HTML History API to provide a consistent experience across all platforms.
 
+Navigation can be enhanced with animation, called a _transition_. Feathers UI provides a number of [animated transitions](./navigator-transitions.md) out of the box, and a simple API allows anyone to create [custom transitions](./custom-navigator-transitions.md).
+
 > [`RouterNavigator`](https://api.feathersui.com/current/feathers/controls/navigators/RouterNavigator.html) is designed for use in web browsers, but it is supported on all platform targets. If your app is not intended for deployment to the web, you might consider using [`StackNavigator`](./stack-navigator.md) instead, which offers more powerful features that are not supported by the HTML History API.
 
 ## The Basics
@@ -171,3 +173,5 @@ Similarly, when `ViewB` dispatches `Event.COMPLETE`, the navigator will create a
 
 - [`feathers.controls.navigators.RouterNavigator` API Documentation](https://api.feathersui.com/current/feathers/controls/navigators/RouterNavigator.html)
 - [HTML History API](https://developer.mozilla.org/en-US/docs/Web/API/History_API)
+- [Animated transitions for view navigators](./navigator-transitions.md)
+- [Custom transitions for view navigators](./custom-navigator-transitions.md)

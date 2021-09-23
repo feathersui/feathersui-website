@@ -91,6 +91,10 @@
       "haxe-openfl/themes",
       "haxe-openfl/custom-themes"
     ],
+    "Animation": [
+      "haxe-openfl/navigator-transitions",
+      "haxe-openfl/custom-navigator-transitions"
+    ],
     "Custom UI Components": [
       "haxe-openfl/custom-ui-components",
       "haxe-openfl/ui-component-lifecycle",
