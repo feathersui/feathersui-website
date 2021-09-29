@@ -84,6 +84,18 @@ class Footer extends React.Component {
                   Make a Donation
                 </a>
               </li>
+              <li>
+                <a
+                  href={this.pageUrl(
+                    "commercial-support",
+                    this.props.language == "en"
+                      ? undefined
+                      : this.props.language
+                  )}
+                >
+                  Commercial Support
+                </a>
+              </li>
             </ul>
           </div>
           <div>
