@@ -12,8 +12,7 @@ const CommercialSupport = (props) => (
 # Commercial support for Feathers UI
 
 While [Feathers UI](/) is free and open source, businesses and enterprises can
-gain additional benefits and support the project by signing up a commercial
-support contract.
+gain additional benefits by signing up for a commercial support contract.
 
 - Priority email support (guaranteed response within two business days)
 - Access to private VIP forum and chat communities
