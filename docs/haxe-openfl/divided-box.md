@@ -5,12 +5,10 @@ sidebar_label: HDividedBox / VDividedBox
 
 The [`HDividedBox`](https://api.feathersui.com/current/feathers/controls/HDividedBox.html) and [`VDividedBox`](https://api.feathersui.com/current/feathers/controls/VDividedBox.html) containers display dividers between each of their children, and the dividers may be dragged to resize the children.
 
-<!--
 <figure>
 <iframe src="/learn/haxe-openfl/samples/divided-box.html" width="100%" height="150"></iframe>
 <figcaption>Live preview of the <a href="https://api.feathersui.com/current/feathers/controls/HDividedBox.html"><code>HDividedBox</code></a> component</figcaption>
 </figure>
--->
 
 ## The Basics
 
