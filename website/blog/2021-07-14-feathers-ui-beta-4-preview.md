@@ -6,7 +6,7 @@ authorTwitter: joshtynjala
 authorImageURL: /img/authors/josh.jpg
 ---
 
-Today, Feathers UI **beta.4** is now officially available [on Haxelib](https://lib.haxe.org/p/feathersui). This is the latest of multiple preview builds that are planned before the first stable release in 2021. Since we're in the _beta_ stage, the core framework architecture has settled down, and breaking changes are much less likely to happen going forward. Developers who don't mind a few rough edges here and there should consider Feathers UI ready for starting development on new projects!
+Today, Feathers UI **beta.4** is now officially available [on Haxelib](https://lib.haxe.org/p/feathersui). This is the latest of multiple preview builds that are planned before the first stable release in early 2022. Since we're in the _beta_ stage, the core framework architecture has settled down, and breaking changes are much less likely to happen going forward. Developers who don't mind a few rough edges here and there should consider Feathers UI ready for starting development on new projects!
 
 ![](/blog/img/feathersui-beta-4.png)
 
