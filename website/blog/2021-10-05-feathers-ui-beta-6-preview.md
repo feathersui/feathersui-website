@@ -8,7 +8,7 @@ authorImageURL: /img/authors/josh.jpg
 
 Today, Feathers UI **beta.6** is now officially available [on Haxelib](https://lib.haxe.org/p/feathersui). This is the latest of multiple preview builds that are planned before the first stable release in early 2022. Since we're in the _beta_ stage, the core framework architecture has settled down, and breaking changes are much less likely to happen going forward. Developers who don't mind a few rough edges here and there should consider Feathers UI ready for starting development on new projects!
 
-![](/blog/img/feathersui-beta-5.png)
+![](/blog/img/feathersui-beta-6.png)
 
 [Feathers UI](https://feathersui.com/) is an open source framework of [graphical user interface (GUI) components](https://feathersui.com/learn/haxe-openfl/ui-components) for creative, [cross-platform](https://feathersui.com/cross-platform-guis/) projects. Using the [Haxe](https://haxe.org/) programming language, Feathers UI is built on [OpenFL](https://openfl.org/), a user-friendly library for rendering, input, networking, and more. Deploy native apps to iOS, Android, Windows, macOS, Linux, and even publish your project to the web — all using the same Haxe codebase.
 
