@@ -10,7 +10,7 @@ sidebar_label: Windows
 
 In addition to the dependencies specified in the [Feathers UI installation instructions](./installation.md), building a Windows application with Feathers UI has some additional requirements.
 
-- A computer running Microsoft Windows. Windows apps cannot be built on macOS or Linux.
+- A computer running Microsoft Windows. Windows apps cannot be built on other operating systems, such as macOS or Linux.
 - Install [Visual Studio](https://visualstudio.microsoft.com/downloads/). The [Community edition](https://visualstudio.microsoft.com/vs/community/) is free.
 
 ## Build
@@ -36,6 +36,14 @@ The build's output will be written to the _bin/windows/bin_ folder.
 > ```
 >
 > In the example above, the output would be generated in _Export/windows/bin_ instead.
+
+## Run / Debug
+
+OpenFL provides the `test` command to compile and launch your project executable on Windows.
+
+```sh
+openfl test windows
+```
 
 ## Troubleshooting
 

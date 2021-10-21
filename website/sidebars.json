@@ -27,6 +27,7 @@
         "label": "Build a project targeting…",
         "ids": [
           "haxe-openfl/build-android",
+          "haxe-openfl/build-electron",
           "haxe-openfl/build-hashlink",
           "haxe-openfl/build-ios",
           "haxe-openfl/build-linux",

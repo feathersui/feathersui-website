@@ -10,7 +10,7 @@ sidebar_label: Linux
 
 In addition to the dependencies specified in the [Feathers UI installation instructions](./installation.md), building a Linux application with Feathers UI has some additional requirements.
 
-- A computer running a distribution of Linux. Linux apps cannot be built on Windows or macOS.
+- A computer running a distribution of Linux. Linux apps cannot be built on other operating systems, such as Windows or macOS.
 
 No additional software needs to be installed on most Linux computers. If you need to build 32-bit apps from a 64-bit distribution, see the official [Linux setup instructions for Lime/OpenFL](https://lime.software/docs/advanced-setup/linux/).
 
@@ -37,6 +37,14 @@ The build's output will be written to the _bin/linux/bin_ folder.
 > ```
 >
 > In the example above, the output would be generated in _Export/linux/bin_ instead.
+
+## Run / Debug
+
+OpenFL provides the `test` command to compile and launch your project executable on Linux.
+
+```sh
+openfl test linux
+```
 
 ## Troubleshooting
 

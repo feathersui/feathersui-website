@@ -86,6 +86,14 @@ The build's output will be written to the _bin/android/bin_ folder. The _.apk_ f
 >
 > In the example above, the output would be generated in _Export/android/bin_ instead.
 
+## Run / Debug
+
+OpenFL provides the `test` command to compile and launch your project executable on an Android device connected to your computer with USB.
+
+```sh
+openfl test android
+```
+
 ## Troubleshooting
 
 ### Error on macOS says executables from the Android NDK "cannot be opened because the developer cannot be verified"

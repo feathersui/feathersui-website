@@ -1,7 +1,7 @@
 ---
 id: build-neko
-title: Build a Feathers UI project as a Neko desktop app
-sidebar_label: Neko
+title: Build a Feathers UI project as a Neko VM desktop app
+sidebar_label: Neko VM
 ---
 
 [Feathers UI](/) may be used to build desktop applications targeting the [Neko](https://nekovm.org) virtual machine.
@@ -38,10 +38,18 @@ The build's output will be written to the _bin/neko/bin_ folder.
 >
 > In the example above, the output would be generated in _Export/neko/bin_ instead.
 
+## Run / Debug
+
+OpenFL provides the `test` command to launch your project using the Neko virtual machine.
+
+```sh
+openfl test neko
+```
+
 ## Troubleshooting
 
 In the future, common error messages and their solutions will appear in this section.
 
 > ### Did you get some other error message that you don't understand?
 >
-> Configuring OpenFL builds for various targets can be a little tricky! Head over to either the [Feathers UI community forum](https://community.feathersui.com/) or the [Feathers UI Discord](https://discord.feathersui.com/). Explain which command you tried to run, be sure to mention that you are targeting **windows**, and post the error message (and any additional relevant output). Ideally, we can help you figure out a solution, and then we'll also add it to this troubleshooting section, so that everyone can benefit.
+> Configuring OpenFL builds for various targets can be a little tricky! Head over to either the [Feathers UI community forum](https://community.feathersui.com/) or the [Feathers UI Discord](https://discord.feathersui.com/). Explain which command you tried to run, be sure to mention that you are targeting **neko**, and post the error message (and any additional relevant output). Ideally, we can help you figure out a solution, and then we'll also add it to this troubleshooting section, so that everyone can benefit.

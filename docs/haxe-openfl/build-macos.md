@@ -10,7 +10,7 @@ sidebar_label: macOS
 
 In addition to the dependencies specified in the [Feathers UI installation instructions](./installation.md), building a macOS application with Feathers UI has some additional requirements.
 
-- An Apple computer running macOS. macOS apps cannot be built on Windows or Linux.
+- An Apple computer running macOS. macOS apps cannot be built on other operating systems, such as Windows or Linux.
 
 - Install [Xcode](https://developer.apple.com/xcode/) from the macOS App Store.
 
@@ -39,6 +39,14 @@ The build's output will be written to the _bin/mac/bin_ folder.
 > ```
 >
 > In the example above, the output would be generated in _Export/mac/bin_ instead.
+
+## Run / Debug
+
+OpenFL provides the `test` command to compile and launch your project executable on macOS.
+
+```sh
+openfl test mac
+```
 
 ## Troubleshooting
 

@@ -6,6 +6,8 @@ sidebar_label: Electron
 
 [Feathers UI](/) may be used to build [Electron](https://www.electronjs.org) desktop applications with HTML/JS.
 
+> Note: Consider using a different target than Electron for creating desktop applications, such as native C++ (with the [Windows](./build-windows.md), [macOS](./build-macos.md), and [Linux](./build-linux.md) targets). While Electron is technically available for OpenFL, other targets are more mature and offer better performance.
+
 ## Prerequisites
 
 In addition to the dependencies specified in the [Feathers UI installation instructions](./installation.md), building a HashLink application with Feathers UI has some additional requirements.
@@ -58,4 +60,4 @@ In the future, common error messages and their solutions will appear in this sec
 
 > ### Did you get some other error message that you don't understand?
 >
-> Configuring OpenFL builds for various targets can be a little tricky! Head over to either the [Feathers UI community forum](https://community.feathersui.com/) or the [Feathers UI Discord](https://discord.feathersui.com/). Explain which command you tried to run, be sure to mention that you are targeting **windows**, and post the error message (and any additional relevant output). Ideally, we can help you figure out a solution, and then we'll also add it to this troubleshooting section, so that everyone can benefit.
+> Configuring OpenFL builds for various targets can be a little tricky! Head over to either the [Feathers UI community forum](https://community.feathersui.com/) or the [Feathers UI Discord](https://discord.feathersui.com/). Explain which command you tried to run, be sure to mention that you are targeting **electron**, and post the error message (and any additional relevant output). Ideally, we can help you figure out a solution, and then we'll also add it to this troubleshooting section, so that everyone can benefit.
