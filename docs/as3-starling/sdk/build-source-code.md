@@ -9,25 +9,30 @@ The document explains how to build the Feathers SDK from source code.
 
 ## Requirements
 
-- [Apache Ant](http://ant.apache.org)
-- Java 8 (update 101 or newer)
-- playerglobal.swc for Flash Player 19.0 (Download from [Archived Flash Player versions](https://helpx.adobe.com/flash-player/kb/archived-flash-player-versions.html))
-- Adobe AIR SDK 19.0 _without_ the ASC 2.0 compiler (Download from [Archived Adobe AIR SDK versions](https://helpx.adobe.com/air/kb/archived-air-sdk-version.html))
-- Adobe Flash Player projector content debugger (Download from [Adobe Flash Player Downloads](https://www.adobe.com/support/flashplayer/downloads.html))
-
-Note: When you prepare the Feathers SDK for use in an IDE as the final step, you will be allowed to target newer versions of Flash Player and AIR. These older versions of Flash Player and AIR are only required when building the source code.
+- [Apache Ant](http://ant.apache.org) 1.9.1 or newer
+- Java 8 update 101 or newer
+- _playerglobal.swc_ for Flash Player 32.0 (Download from [Adobe Flash Player Downloads](https://www.adobe.com/support/flashplayer/downloads.html))
+- Adobe AIR SDK 32.0 _without_ the ASC 2.0 compiler (Download from [Archived Adobe AIR SDK versions](https://helpx.adobe.com/air/kb/archived-air-sdk-version.html))
 
 ## Build Steps
 
-1.  Clone the repository from Github:
+1.  Clone the Feathers SDK repository from Github:
 
-        git clone --recursive git@github.com:joshtynjala/flex-sdk.git ./feathers-sdk
+        git clone --recursive git@github.com:feathersui/feathersui-starling-sdk.git ./feathersui-starling-sdk
 
     You must include the `--recursive` flag to load the required sub-modules for Starling Framework and Feathers.
 
-1.  Copy `env-template.properties` to a new file named `env.properties`. In this file, define the `env.PLAYERGLOBAL_HOME`, `env.AIR_HOME`, and `env.FLASHPLAYER_DEBUGGER` properties. These are required by the build script.
+1.  Copy the _playerglobal.swc_ file to _frameworks/libs/player/32.0/playerglobal.swc_.
 
-1.  Run the following command:
+1.  In the root of the cloned repository, create a file named _env.properties_ and set `env.AIR_HOME` to the path of the Adobe AIR SDK.
+
+    Example:
+
+    ```txt
+    env.AIR_HOME = /path/to/AIR_SDK
+    ```
+
+1.  Run the following command in the root of the cloned repository:
 
         ant main
 
