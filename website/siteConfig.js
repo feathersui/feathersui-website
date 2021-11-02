@@ -100,7 +100,7 @@ const siteConfig = {
   },
 
   enableUpdateTime: true,
-  editUrl: "https://github.com/feathersui/feathersui-website/edit/master/docs/",
+  editUrl: "https://github.com/feathersui/feathersui-website/edit/master/website/docs/",
 
   // Add custom scripts here that would be placed in <script> tags.
   scripts: ["https://buttons.github.io/buttons.js"],
