@@ -6,3 +6,5 @@ Feathers UI was originally developed for [Starling](https://gamua.com/starling/)
 
 - [Feathers documentation (Starling version)](./getting-started.md)
 - [Feathers SDK documentation (Starling version)](./sdk/getting-started-mxml.md)
+
+> 🔎 Looking for the [Haxe/OpenFL documentation](../haxe-openfl/) instead? [Click here.](../haxe-openfl/)
