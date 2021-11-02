@@ -87,13 +87,13 @@ class Footer extends React.Component {
               <li>
                 <a
                   href={this.pageUrl(
-                    "commercial-support",
+                    "premium-support",
                     this.props.language == "en"
                       ? undefined
                       : this.props.language
                   )}
                 >
-                  Commercial Support
+                  Premium Support
                 </a>
               </li>
             </ul>

@@ -58,6 +58,10 @@ You can also follow [@feathersui](https://twitter.com/feathersui) on Twitter for
 
 Not every feature or bug fix in Feathers UI updates deserves its own blog post, but you can find a detailed changelog for every release in the [CHANGELOG.md file in the Feathers UI repository](https://github.com/feathersui/feathersui-openfl/blob/master/CHANGELOG.md).
 
-## Something missing?
+## Need extra, in-depth help?
 
-If something is missing in the documentation or if you found some part confusing, please [open an issue on the feathersui-website repository](https://github.com/feathersui/feathersui-website/issues/new), or send a tweet to [@feathersui](https://twitter.com/feathersui) on Twitter.
+Gain full access to the core Feathers UI framework developers — including priority email access and VIP forum/chat sections — by purchasing a [Premium Support](/premium-support/) contract. As a bonus, you may be able to add your logo as an official sponsor on the [Feathers UI](/) website.
+
+## Anything missing?
+
+If something is missing in the documentation, or if you found some part particularly confusing, please [open an issue on the feathersui-website repository](https://github.com/feathersui/feathersui-website/issues/new), or send a tweet to [@feathersui](https://twitter.com/feathersui) on Twitter.

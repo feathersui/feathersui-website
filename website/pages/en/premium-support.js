@@ -9,13 +9,14 @@ const CommercialSupport = (props) => (
       <div className="prose">
         <MarkdownBlock>
           {`
-# Commercial support for Feathers UI
+# Premium support for Feathers UI
 
-While [Feathers UI](/) is free and open source, businesses and enterprises can
-gain additional benefits by signing up for a commercial support contract.
+While the core [Feathers UI](/) framework is free and open source, businesses and enterprises can
+gain additional benefits by signing up for a premium commercial support contract.
 
+- Access to core framework developers
 - Priority email support (guaranteed response within two business days)
-- Access to private VIP forum and chat communities
+- Exclusive VIP forum and chat communities
 - Sponsor logo on the feathersui.com website
         
 For more details, contact **sales@feathersui.com**.
@@ -25,6 +26,6 @@ For more details, contact **sales@feathersui.com**.
     </Container>
   </div>
 );
-CommercialSupport.title = "Commercial support";
+CommercialSupport.title = "Premium support";
 
 module.exports = CommercialSupport;
