@@ -1,0 +1,7 @@
+RewriteEngine on
+RewriteBase /samples/haxe-openfl/router-navigator-save-and-restore/
+RewriteCond %{HTTPS} off
+RewriteRule ^/?(.*) https://%{SERVER_NAME}/samples/haxe-openfl/router-navigator-save-and-restore/$1 [R,L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /samples/haxe-openfl/router-navigator-save-and-restore/ [L]
