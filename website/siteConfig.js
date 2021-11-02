@@ -130,6 +130,7 @@ const siteConfig = {
 
   twitterUsername: "feathersui",
   docsUrl: "learn",
+  customDocsPath: "website/docs",
   disableHeaderTitle: true,
   docsSideNavCollapsible: true,
   separateCss: [
