@@ -1,5 +1,4 @@
 ---
-id: build-neko
 title: Build a Feathers UI project as a Neko VM desktop app
 sidebar_label: Neko VM
 ---

@@ -1,5 +1,4 @@
 ---
-id: cli
 title: Feathers UI CLI command reference
 sidebar_label: CLI commands
 ---

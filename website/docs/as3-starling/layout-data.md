@@ -1,6 +1,5 @@
 ---
 title: ILayoutDisplayObject and ILayoutData (Starling version)
-id: ILayoutData
 ---
 
 Some layouts may allow developers to customize individual display objects by adding optional _layout data_. All Feathers components have a [`layoutData`](/api-reference/feathers/layout/ILayoutDisplayObject.html#layoutData) property that can be used to specify additional information about the component that the parent container's layout can use for measurement and positioning.

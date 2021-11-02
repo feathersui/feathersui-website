@@ -1,5 +1,4 @@
 ---
-id: visual-studio-code
 title: "Video: Create a Feathers UI project in Visual Studio Code"
 sidebar_label: Visual Studio Code
 ---

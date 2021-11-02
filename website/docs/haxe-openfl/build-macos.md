@@ -1,5 +1,4 @@
 ---
-id: build-macos
 title: Build a Feathers UI project as a macOS app
 sidebar_label: macOS
 ---

@@ -1,5 +1,4 @@
 ---
-id: installation
 title: "Video: How to Install Feathers UI"
 sidebar_label: Install Feathers UI
 ---

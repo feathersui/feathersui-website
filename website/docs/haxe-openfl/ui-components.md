@@ -1,5 +1,4 @@
 ---
-id: ui-components
 title: Intro to UI components
 ---
 

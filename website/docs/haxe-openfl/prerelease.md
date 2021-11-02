@@ -1,5 +1,4 @@
 ---
-id: prerelease
 title: Install Feathers UI prerelease from Github
 sidebar_label: Install Prerelease Builds
 ---

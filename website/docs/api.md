@@ -1,5 +1,4 @@
 ---
-id: api
 title: Feathers UI API Reference
 ---
 

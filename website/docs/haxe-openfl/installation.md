@@ -1,5 +1,4 @@
 ---
-id: installation
 title: Install Feathers UI for Haxe and OpenFL
 sidebar_label: Installation
 ---

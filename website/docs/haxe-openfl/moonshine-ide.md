@@ -1,5 +1,4 @@
 ---
-id: moonshine-ide
 title: Create a Feathers UI project in Moonshine IDE
 sidebar_label: Moonshine IDE
 ---

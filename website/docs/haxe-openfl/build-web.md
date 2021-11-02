@@ -1,5 +1,4 @@
 ---
-id: build-web
 title: Build a Feathers UI project as an HTML/JS web app
 sidebar_label: Web
 ---

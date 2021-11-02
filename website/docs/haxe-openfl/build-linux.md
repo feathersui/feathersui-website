@@ -1,5 +1,4 @@
 ---
-id: build-linux
 title: Build a Feathers UI project as a Linux app
 sidebar_label: Linux
 ---

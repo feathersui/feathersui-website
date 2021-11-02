@@ -1,5 +1,4 @@
 ---
-id: build-android
 title: Build a Feathers UI project as an Android app
 sidebar_label: Android
 ---

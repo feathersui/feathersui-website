@@ -1,5 +1,4 @@
 ---
-id: build-electron
 title: Build a Feathers UI project as an Electron desktop app
 sidebar_label: Electron
 ---

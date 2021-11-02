@@ -1,5 +1,4 @@
 ---
-id: terminal-new-project
 title: Create a Feathers UI project in a command line terminal
 sidebar_label: Command line terminal
 ---

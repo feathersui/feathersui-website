@@ -1,5 +1,4 @@
 ---
-id: haxedef-options
 title: Feathers UI haxedef option reference
 sidebar_label: haxedef options
 ---

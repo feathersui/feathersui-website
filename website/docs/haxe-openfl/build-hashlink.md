@@ -1,5 +1,4 @@
 ---
-id: build-hashlink
 title: Build a Feathers UI project as a HashLink VM desktop app
 sidebar_label: HashLink VM
 ---

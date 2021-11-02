@@ -1,5 +1,4 @@
 ---
-id: haxedevelop
 title: Create a Feathers UI project in HaxeDevelop
 sidebar_label: HaxeDevelop
 ---

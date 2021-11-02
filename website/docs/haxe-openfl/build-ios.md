@@ -1,5 +1,4 @@
 ---
-id: build-ios
 title: Build a Feathers UI project as an iOS app
 sidebar_label: iOS
 ---

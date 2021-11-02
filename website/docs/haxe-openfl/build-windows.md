@@ -1,5 +1,4 @@
 ---
-id: build-windows
 title: Build a Feathers UI project as a Windows app
 sidebar_label: Windows
 ---
