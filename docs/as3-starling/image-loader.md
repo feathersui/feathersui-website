@@ -67,7 +67,7 @@ By default, the `ImageLoader` will always create a new texture every time that i
 
 If enough memory is available, it's possible to store the loaded textures without disposing them. An instance of the [`feathers.utils.textures.TextureCache`](/api-reference/feathers/utils/textures/TextureCache.html) class can be shared by multiple `ImageLoader` components, and if a URL has already been loaded, the texture will be taken from the cache instead of reloading the image file and creating a new texture.
 
-To use, simply pass the same `TextureCache` instance to the [`textureCache`]() property of multiple `ImageLoader` components:
+To use, simply pass the same `TextureCache` instance to the [`textureCache`](/api-reference/feathers/controls/ImageLoader.html#textureCache) property of multiple `ImageLoader` components:
 
 ```actionscript
 var cache:TextureCache = new TextureCache( 30 );

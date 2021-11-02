@@ -24,7 +24,7 @@ Let's take a look at some of the new UI components and features that are include
 
 - [`NumericStepper`](https://feathersui.com/learn/haxe-openfl/numeric-stepper/) displays editable numeric text with a set of buttons to increment and decrement the value.
 
-    <div style="text-align:center;"><a href="https://feathersui.com/learn/haxe-openfl/numeric-stepper/"><img src="/blog/img/beta-4-feathersui-numeric-stepper.png" style="width:450px"></a></div>
+    <div style="text-align:center;"><a href="https://feathersui.com/learn/haxe-openfl/numeric-stepper/"><img src="/blog/img/beta-4-feathersui-numeric-stepper.png" style="width:450px"/></a></div>
 
 ### New Features
 
@@ -36,19 +36,19 @@ This build also fixes a ton of bugs, and it includes many new features too. Here
   popUpListView.prompt = "Select an item";
   ```
 
-    <div style="text-align:center;"><a href="https://api.feathersui.com/current/feathers/controls/PopUpListView.html#prompt"><img src="/blog/img/beta-4-feathersui-pop-up-list-view-prompt.png" style="width:450px"></a></div>
+    <div style="text-align:center;"><a href="https://api.feathersui.com/current/feathers/controls/PopUpListView.html#prompt"><img src="/blog/img/beta-4-feathersui-pop-up-list-view-prompt.png" style="width:450px"/></a></div>
 
 - [`GridView`](https://api.feathersui.com/current/feathers/controls/GridView.html) adds a new [`sortableColumns`](https://api.feathersui.com/current/feathers/controls/GridView.html#sortableColumns) property, which updates the sort order when the user clicks a column header. Alternatively, developers may set new [`sortedColumn`](https://api.feathersui.com/current/feathers/controls/GridView.html#sortedColumn) and [`sortOrder`](https://api.feathersui.com/current/feathers/controls/GridView.html#sortOrder) properties to change the sort order programatically. When a column is sorted, a visual indicator may be displayed to the user in the column header to indicate the order (ascending or descending).
 
-    <div style="text-align:center;"><a href="https://api.feathersui.com/current/feathers/controls/GridView.html#sortableColumns"><img src="/blog/img/beta-4-feathersui-grid-view-sortable-columns.png" style="width:450px"></a></div>
+    <div style="text-align:center;"><a href="https://api.feathersui.com/current/feathers/controls/GridView.html#sortableColumns"><img src="/blog/img/beta-4-feathersui-grid-view-sortable-columns.png" style="width:450px"/></a></div>
 
 - [`GridView`](https://api.feathersui.com/current/feathers/controls/GridView.html) also adds optional new divider skins between columns and between column headers.
 
-    <div style="text-align:center;"><a href="https://api.feathersui.com/current/feathers/controls/GridView.html#columnDividerFactory"><img src="/blog/img/beta-4-feathersui-grid-view-column-dividers.png" style="width:450px"></a></div>
+    <div style="text-align:center;"><a href="https://api.feathersui.com/current/feathers/controls/GridView.html#columnDividerFactory"><img src="/blog/img/beta-4-feathersui-grid-view-column-dividers.png" style="width:450px"/></a></div>
 
 - [`ItemRenderer`](https://api.feathersui.com/current/feathers/controls/dataRenderers/ItemRenderer.html) can display an optional [`accessoryView`](https://api.feathersui.com/current/feathers/controls/dataRenderers/ItemRenderer.html#accessoryView) on the far right side.
 
-    <div style="text-align:center;"><a href="https://api.feathersui.com/current/feathers/controls/dataRenderers/ItemRenderer.html#accessoryView"><img src="/blog/img/beta-4-feathersui-item-renderer-accessory-view.png" style="width:450px"></a></div>
+    <div style="text-align:center;"><a href="https://api.feathersui.com/current/feathers/controls/dataRenderers/ItemRenderer.html#accessoryView"><img src="/blog/img/beta-4-feathersui-item-renderer-accessory-view.png" style="width:450px"/></a></div>
 
 - [`HorizontalLayoutData`](https://api.feathersui.com/current/feathers/layout/HorizontalLayoutData.html) and [`VerticalLayoutData`](https://api.feathersui.com/current/feathers/layout/VerticalLayoutData.html) have new static helper functions named [`fill()`](https://api.feathersui.com/current/feathers/layout/HorizontalLayoutData.html#fill), [`fillHorizontal()`](https://api.feathersui.com/current/feathers/layout/HorizontalLayoutData.html#fillHorizontal), and [`fillVertical()`](https://api.feathersui.com/current/feathers/layout/HorizontalLayoutData.html#fillVertical). These make it quick and easy to create layout data object with [`percentWidth`](https://api.feathersui.com/current/feathers/layout/HorizontalLayoutData.html#percentWidth) and [`percentHeight`](https://api.feathersui.com/current/feathers/layout/HorizontalLayoutData.html#percentHeight) values set to `100.0`.
 
@@ -62,7 +62,7 @@ This build also fixes a ton of bugs, and it includes many new features too. Here
   textInput.errorString = "Something is wrong";
   ```
 
-    <div style="text-align:center;"><a href="https://api.feathersui.com/current/feathers/controls/TextInput.html#errorString"><img src="/blog/img/beta-4-feathersui-text-input-error-string.png" style="width:450px"></a></div>
+    <div style="text-align:center;"><a href="https://api.feathersui.com/current/feathers/controls/TextInput.html#errorString"><img src="/blog/img/beta-4-feathersui-text-input-error-string.png" style="width:450px"/></a></div>
 
 This list would be far too long if it included all of the bug fixes related focus management, scrolling, item renderer recycling, themes and styles, and more. For complete details, check out the [beta.4 CHANGELOG](https://github.com/feathersui/feathersui-openfl/blob/v1.0.0-beta.4/CHANGELOG.md).
 

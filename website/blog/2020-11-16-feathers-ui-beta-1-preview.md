@@ -24,11 +24,11 @@ Let's take a look at some of the new UI components and features that are include
 
 - [`Drawer`](https://feathersui.com/learn/haxe-openfl/drawer) is a container that adds a special drawer that slides in and out, above all other content. It may be opened or closed with a swipe gesture from one of the four edges. ([Live Demo](https://feathersui.com/samples/haxe-openfl/components-explorer/drawer))
 
-  <div style="text-align:center;"><a href="https://feathersui.com/learn/haxe-openfl/drawer"><img src="/blog/img/beta-1-feathersui-drawer.png" style="width:450px"></a></div>
+  <div style="text-align:center;"><a href="https://feathersui.com/learn/haxe-openfl/drawer"><img src="/blog/img/beta-1-feathersui-drawer.png" style="width:450px"/></a></div>
 
 - [`HDividedBox` and `VDividedBox`](https://feathersui.com/learn/haxe-openfl/divided-box) are containers display dividers between each of their children, and the dividers may be dragged to resize the children. ([Live Demo 1](https://feathersui.com/samples/haxe-openfl/components-explorer/horizontal-divided-box) and [Live Demo 2](https://feathersui.com/samples/haxe-openfl/components-explorer/vertical-divided-box))
 
-  <div style="text-align:center;"><a href="https://feathersui.com/learn/haxe-openfl/divided-box"><img src="/blog/img/beta-1-feathersui-horizontal-divided-box.png" style="width:450px"></a></div>
+  <div style="text-align:center;"><a href="https://feathersui.com/learn/haxe-openfl/divided-box"><img src="/blog/img/beta-1-feathersui-horizontal-divided-box.png" style="width:450px"/></a></div>
 
 - [`LayoutGroupItemRenderer`](https://feathersui.com/learn/haxe-openfl/layout-group-item-renderer) is a base class for creating custom item renderers to display in data containers, such as [`ListView`](https://feathersui.com/learn/haxe-openfl/list-view) and [`GridView`](https://feathersui.com/learn/haxe-openfl/grid-view). This class allows item renderers with any number of children added to a layout (like [`LayoutGroup`](https://feathersui.com/learn/haxe-openfl/layout-group)), and it also supports skinning based on mouse/touch states (like [`ItemRenderer`](https://feathersui.com/learn/haxe-openfl/item-renderer)).
 
@@ -36,15 +36,15 @@ Let's take a look at some of the new UI components and features that are include
 
 This build includes three new samples that demonstrate how to create custom skins for Feathers UI components.
 
-<div style="text-align:center;"><a href="https://feathersui.com/samples/haxe-openfl/custom-programmatic-skin"><img src="/blog/img/beta-1-feathersui-custom-programmatic-skin-sample.png" style="width:400px"></a></div>
+<div style="text-align:center;"><a href="https://feathersui.com/samples/haxe-openfl/custom-programmatic-skin"><img src="/blog/img/beta-1-feathersui-custom-programmatic-skin-sample.png" style="width:400px"/></a></div>
 
 The [custom-programmatic-skin sample](https://feathersui.com/samples/haxe-openfl/custom-programmatic-skin) demonstrates how to create a custom skin with your own drawing commands. [Source Code on Github](https://github.com/feathersui/feathersui-openfl/tree/v1.0.0-beta.1/samples/custom-programmatic-skin/)
 
-<div style="text-align:center;"><a href="https://feathersui.com/samples/haxe-openfl/custom-programmatic-skin-with-states"><img src="/blog/img/beta-1-feathersui-custom-programmatic-skin-with-states-sample.png" style="width:400px"></a></div>
+<div style="text-align:center;"><a href="https://feathersui.com/samples/haxe-openfl/custom-programmatic-skin-with-states"><img src="/blog/img/beta-1-feathersui-custom-programmatic-skin-with-states-sample.png" style="width:400px"/></a></div>
 
 The [custom-programmatic-skin-with-states sample](https://feathersui.com/samples/haxe-openfl/custom-programmatic-skin-with-states) creates a custom skin for a [`Button`](https://feathersui.com/learn/haxe-openfl/button) component that changes appearance when the button's state changes. [Source Code on Github](https://github.com/feathersui/feathersui-openfl/tree/v1.0.0-beta.1/samples/custom-programmatic-skin-with-states/)
 
-<div style="text-align:center;"><a href="https://feathersui.com/samples/haxe-openfl/animated-tween-skin"><img src="/blog/img/beta-1-feathersui-animated-tween-skin-sample.png" style="width:400px"></a></div>
+<div style="text-align:center;"><a href="https://feathersui.com/samples/haxe-openfl/animated-tween-skin"><img src="/blog/img/beta-1-feathersui-animated-tween-skin-sample.png" style="width:400px"/></a></div>
 
 The [animated-tween-skin sample](https://feathersui.com/samples/haxe-openfl/animated-tween-skin) creates a custom skin that triggers animations based on mouse/touch events. [Source Code on Github](https://github.com/feathersui/feathersui-openfl/tree/v1.0.0-beta.1/samples/animated-tween-skin/)
 
@@ -52,7 +52,7 @@ The [animated-tween-skin sample](https://feathersui.com/samples/haxe-openfl/anim
 
 This build also includes a ton of minor improvements. Here's a few worth highlighting:
 
-<div style="text-align:center;"><img src="/blog/img/beta-1-feathersui-grid-view-resizable-columns.png" style="width:450px"></a></div>
+<div style="text-align:center;"><img src="/blog/img/beta-1-feathersui-grid-view-resizable-columns.png" style="width:450px"/></div>
 
 - Drag-and-drop column resizing in the [`GridView`](https://feathersui.com/learn/haxe-openfl/grid-view) component
 - Multiple selection in the [`ListView`](https://feathersui.com/learn/haxe-openfl/list-view) and [`GridView`](https://feathersui.com/learn/haxe-openfl/grid-view) components

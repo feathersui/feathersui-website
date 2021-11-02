@@ -35,7 +35,7 @@ Next, go to the **View** menu, and choose **Command Palette…**.
 
 Then, search for the **Feathers UI: Create new project** command. Make sure that the command is selected in results the list, and then run it by pressing <kbd>Enter</kbd>.
 
-This will open a terminal and run the new-project command using the [Feathers UI command line interface]().
+This will open a terminal and run the new-project command using the [Feathers UI command line interface](../haxe-openfl/cli.md).
 
 Let close that and look at the **Explorer** view where we can see the new project's files. These include:
 

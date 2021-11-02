@@ -24,23 +24,23 @@ Let's take a look at some of the new UI components and features that are include
 
 - [`GridView`](https://feathersui.com/learn/haxe-openfl/grid-view) renders a table of data that may be scrolled. ([Live Demo](https://feathersui.com/samples/haxe-openfl/components-explorer/grid-view))
 
-  <div style="text-align:center;"><a href="https://feathersui.com/learn/haxe-openfl/grid-view"><img src="/blog/img/alpha-2-feathersui-grid-view.png" style="width:450px"></a></div>
+  <div style="text-align:center;"><a href="https://feathersui.com/learn/haxe-openfl/grid-view"><img src="/blog/img/alpha-2-feathersui-grid-view.png" style="width:450px"/></a></div>
 
 - [`TreeView`](https://feathersui.com/learn/haxe-openfl/tree-view) displays hierarchical data in a list with branches that may be opened and closed. ([Live Demo](https://feathersui.com/samples/haxe-openfl/components-explorer/tree-view))
 
-  <div style="text-align:center;"><a href="https://feathersui.com/learn/haxe-openfl/tree-view"><img src="/blog/img/alpha-2-feathersui-tree-view.png" style="width:450px"></a></div>
+  <div style="text-align:center;"><a href="https://feathersui.com/learn/haxe-openfl/tree-view"><img src="/blog/img/alpha-2-feathersui-tree-view.png" style="width:450px"/></a></div>
 
 - [`PageNavigator`](https://feathersui.com/learn/haxe-openfl/page-navigator) supports navigation between views using a [`PageIndicator`](https://feathersui.com/learn/haxe-openfl/page-indicator) component. ([Live Demo](https://feathersui.com/samples/haxe-openfl/components-explorer/page-navigator))
 
-  <div style="text-align:center;"><a href="https://feathersui.com/learn/haxe-openfl/page-navigator"><img src="/blog/img/alpha-2-feathersui-page-navigator.png" style="width:450px"></a></div>
+  <div style="text-align:center;"><a href="https://feathersui.com/learn/haxe-openfl/page-navigator"><img src="/blog/img/alpha-2-feathersui-page-navigator.png" style="width:450px"/></a></div>
 
 - [`TabNavigator`](https://feathersui.com/learn/haxe-openfl/tab-navigator) supports navigation between views using a [`TabBar`](https://feathersui.com/learn/haxe-openfl/tab-bar) component. ([Live Demo](https://feathersui.com/samples/haxe-openfl/components-explorer/tab-navigator))
 
-  <div style="text-align:center;"><a href="https://feathersui.com/learn/haxe-openfl/tab-navigator"><img src="/blog/img/alpha-2-feathersui-tab-navigator.png" style="width:450px"></a></div>
+  <div style="text-align:center;"><a href="https://feathersui.com/learn/haxe-openfl/tab-navigator"><img src="/blog/img/alpha-2-feathersui-tab-navigator.png" style="width:450px"/></a></div>
 
 - [`TextArea`](https://feathersui.com/learn/haxe-openfl/text-area) displays editable text wrapped over multiple lines — and it supports scrolling vertically. ([Live Demo](https://feathersui.com/samples/haxe-openfl/components-explorer/text-area))
 
-  <div style="text-align:center;"><a href="https://feathersui.com/learn/haxe-openfl/tab-navigator"><img src="/blog/img/alpha-2-feathersui-text-area.png" style="width:450px"></a></div>
+  <div style="text-align:center;"><a href="https://feathersui.com/learn/haxe-openfl/tab-navigator"><img src="/blog/img/alpha-2-feathersui-text-area.png" style="width:450px"/></a></div>
 
 ### CLI new-project
 
@@ -79,7 +79,7 @@ Many people navigate through user interfaces without a mouse or touchscreen. The
 
 The alpha.2 build includes a new focus manager that supports navigation with <kbd>Tab</kbd> and <kbd>Shift</kbd>+<kbd>Tab</kbd>. In a future update, the default focus manager will also support directional pads (D-pads) on game controllers and TV remote controls.
 
-<div style="text-align:center;"><a href="https://feathersui.com/samples/haxe-openfl/login-form"><img src="/blog/img/alpha-2-login-form-sample.png" style="width:450px"></a></div>
+<div style="text-align:center;"><a href="https://feathersui.com/samples/haxe-openfl/login-form"><img src="/blog/img/alpha-2-login-form-sample.png" style="width:450px"/></a></div>
 
 Loading up the new [Login Form sample](https://feathersui.com/samples/haxe-openfl/login-form) is an easy way to try out using the tab key to navigate between UI components in a simple form.
 

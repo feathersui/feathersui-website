@@ -18,7 +18,7 @@ When you install the official [Feathers UI extension for Visual Studio Code](htt
 
 ![](/blog/img/vscode-feathers-ui-create-new-project.png)
 
-This will create an OpenFL _project.xml_ file, a main class file that extends the [`Application`]() class, and VSCode's editor configuration files to create a default build task and a Lime/OpenFL launch configuration.
+This will create an OpenFL _project.xml_ file, a main class file that extends the [`Application`](https://feathersui.com/learn/haxe-openfl/application/) class, and VSCode's editor configuration files to create a default build task and a Lime/OpenFL launch configuration.
 
 <div style="text-align:center;"><img src="/blog/img/vscode-feathers-ui-create-new-project-explorer.png" style="width:320px"></div>
 
