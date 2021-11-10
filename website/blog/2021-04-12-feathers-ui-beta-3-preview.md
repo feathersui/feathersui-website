@@ -24,19 +24,19 @@ Let's take a look at some of the new UI components and features that are include
 
 - [`Alert`](https://feathersui.com/learn/haxe-openfl/alert/) displays a message in a modal pop-up dialog with a title and a set of buttons.
 
-    <div style="text-align:center;"><a href="https://api.feathersui.com/current/feathers/controls/Alert.html"><img src="/blog/img/beta-3-feathersui-alert.png" style="width:450px"/></a></div>
+    <div style="text-align:center;"><a href="https://feathersui.com/learn/haxe-openfl/alert/"><img src="/blog/img/beta-3-feathersui-alert.png" style="width:450px"/></a></div>
 
 - [`ButtonBar`](https://feathersui.com/learn/haxe-openfl/button-bar/) displays a grouping of buttons based on a [data collection](https://feathersui.com/learn/haxe-openfl/data-collections).
 
-    <div style="text-align:center;"><a href="https://api.feathersui.com/current/feathers/controls/ButtonBar.html"><img src="/blog/img/beta-3-feathersui-button-bar.png" style="width:450px"/></a></div>
+    <div style="text-align:center;"><a href="https://feathersui.com/learn/haxe-openfl/button-bar/"><img src="/blog/img/beta-3-feathersui-button-bar.png" style="width:450px"/></a></div>
 
 - [`Form`](https://feathersui.com/learn/haxe-openfl/form/) and [`FormItem`](https://api.feathersui.com/current/feathers/controls/FormItem.html) display a set of form controls with labels, including the ability to assign a specific submit button.
 
-    <div style="text-align:center;"><a href="https://api.feathersui.com/current/feathers/controls/Form.html"><img src="/blog/img/beta-3-feathersui-form.png" style="width:450px"/></a></div>
+    <div style="text-align:center;"><a href="https://feathersui.com/learn/haxe-openfl/form/)"><img src="/blog/img/beta-3-feathersui-form.png" style="width:450px"/></a></div>
 
 - [`Header`](https://feathersui.com/learn/haxe-openfl/header/) display a title in the center and two optional views on the left and right sides.
 
-    <div style="text-align:center;"><a href="https://api.feathersui.com/current/feathers/controls/Header.html"><img src="/blog/img/beta-3-feathersui-header.png" style="width:450px"/></a></div>
+    <div style="text-align:center;"><a href="https://feathersui.com/learn/haxe-openfl/header/"><img src="/blog/img/beta-3-feathersui-header.png" style="width:450px"/></a></div>
 
 ### A big release
 
@@ -44,9 +44,9 @@ This build also includes a ton of minor improvements. Here's a few worth highlig
 
 <div style="text-align:center;"><img src="/blog/img/beta-3-feathersui-grid-view-horizontal-scrolling.png" style="width:450px"/></div>
 
-- Support for horizontal scrolling in the [`GridView`](https://api.feathersui.com/current/feathers/controls/GridView.html) component when the content width exceeds the container width.
+- Support for horizontal scrolling in the [`GridView`](https://feathersui.com/learn/haxe-openfl/grid-view/) component when the content width exceeds the container width.
 - Separate [`branchIcon`](https://api.feathersui.com/current/feathers/controls/dataRenderers/TreeViewItemRenderer.html#branchIcon), [`branchOpenIcon`](https://api.feathersui.com/current/feathers/controls/dataRenderers/TreeViewItemRenderer.html#branchOpenIcon), [`branchClosedIcon`](https://api.feathersui.com/current/feathers/controls/dataRenderers/TreeViewItemRenderer.html#branchClosedIcon), and [`leafIcon`](https://api.feathersui.com/current/feathers/controls/dataRenderers/TreeViewItemRenderer.html#leafIcon) styles on the [`TreeViewItemRenderer`](https://api.feathersui.com/current/feathers/controls/renderers/TreeViewItemRenderer.html) component.
-- A [`maxChars`](https://api.feathersui.com/current/feathers/controls/TextInput.html#maxChars) property for [`TextInput`](https://api.feathersui.com/current/feathers/controls/TextInput.html) and [`TextArea`](https://api.feathersui.com/current/feathers/controls/TextArea.html).
+- A [`maxChars`](https://api.feathersui.com/current/feathers/controls/TextInput.html#maxChars) property for [`TextInput`](https://feathersui.com/learn/haxe-openfl/text-input/) and [`TextArea`](https://feathersui.com/learn/haxe-openfl/text-area/).
 - A new `setPadding()` convenience method was added to all classes with `paddingTop`, `paddingRight`, `paddingBottom` and `paddingLeft` properties. It sets all four value at once.
 - A new [`Application.topLevelApplication`](https://api.feathersui.com/current/feathers/controls/Application.html#topLevelApplication) static property that makes it easy to access the root Feathers UI application object.
 - [`ArrayHierarchicalCollection`](https://api.feathersui.com/current/feathers/data/ArrayHierarchicalCollection.html) is a new implementation of [`IHierarchicalCollection`](https://api.feathersui.com/current/feathers/data/IHierarchicalCollection.html) that's a bit more flexible than the existing [`TreeCollection`](https://api.feathersui.com/current/feathers/data/TreeCollection.html).

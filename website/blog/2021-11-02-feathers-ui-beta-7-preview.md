@@ -24,13 +24,13 @@ Let's take a look at some of the new components and features that are included w
 
 A couple of new [UI components](https://feathersui.com/learn/haxe-openfl/ui-components/) are included in this update.
 
-<div style="text-align:center;"><a href="https://api.feathersui.com/current/feathers/controls/DatePicker.html"><img src="/blog/img/beta-7-feathersui-date-picker.png" width="200"></a></div>
+<div style="text-align:center;"><a href="https://feathersui.com/learn/haxe-openfl/date-picker/"><img src="/blog/img/beta-7-feathersui-date-picker.png" width="200"></a></div>
 
-[`DatePicker`](https://api.feathersui.com/current/feathers/controls/DatePicker.html) allows the user to select a date from a month view. The month or year may be changed by clicking a button in the header (you may configure which buttons get displayed, including hiding all of them to display only one month). This component uses the new `openfl.globalization.DateTimeFormatter` class coming in the next OpenFL update to localize month and weekday names in HTML/JS (or in Adobe AIR, of course). For older versions of OpenFL, it always defaults to the _en-US_ locale.
+[`DatePicker`](https://feathersui.com/learn/haxe-openfl/date-picker/) allows the user to select a date from a month view. The month or year may be changed by clicking a button in the header (you may configure which buttons get displayed, including hiding all of them to display only one month). This component uses the new `openfl.globalization.DateTimeFormatter` class coming in the next OpenFL update to localize month and weekday names in HTML/JS (or in Adobe AIR, of course). For older versions of OpenFL, it always defaults to the _en-US_ locale.
 
-<div style="text-align:center;"><a href="https://api.feathersui.com/current/feathers/controls/PopUpDatePicker.html"><img src="/blog/img/beta-7-feathersui-pop-up-date-picker.png" width="200"></a></div>
+<div style="text-align:center;"><a href="https://feathersui.com/learn/haxe-openfl/pop-up-date-picker/"><img src="/blog/img/beta-7-feathersui-pop-up-date-picker.png" width="200"></a></div>
 
-[`PopUpDatePicker`](https://api.feathersui.com/current/feathers/controls/PopUpDatePicker.html) includes an input field to display the selected date, and a button to toggle the display of a [`DatePicker`](https://api.feathersui.com/current/feathers/controls/DatePicker.html) as a pop-up. It's sort of like a [`ComboBox`](https://feathersui.com/learn/haxe-openfl/combo-box/) component for dates.
+[`PopUpDatePicker`](https://feathersui.com/learn/haxe-openfl/pop-up-date-picker/) includes an input field to display the selected date, and a button to toggle the display of a [`DatePicker`](https://feathersui.com/learn/haxe-openfl/date-picker/) as a pop-up. It's sort of like a [`ComboBox`](https://feathersui.com/learn/haxe-openfl/combo-box/) component for dates.
 
 ### New Features
 

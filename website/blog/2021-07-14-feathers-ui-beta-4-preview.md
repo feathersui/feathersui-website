@@ -30,7 +30,7 @@ Let's take a look at some of the new UI components and features that are include
 
 This build also fixes a ton of bugs, and it includes many new features too. Here's a few worth highlighting:
 
-- [`ComboBox`](https://api.feathersui.com/current/feathers/controls/ComboBox.html) and [`PopUpListView`](https://api.feathersui.com/current/feathers/controls/PopUpListView.html) both have a new [`prompt`](https://api.feathersui.com/current/feathers/controls/PopUpListView.html#prompt) property to display some placeholder text when no item is currently selected.
+- [`ComboBox`](https://feathersui.com/learn/haxe-openfl/combo-box/) and [`PopUpListView`](https://feathersui.com/learn/haxe-openfl/pop-up-list-view/) both have a new [`prompt`](https://api.feathersui.com/current/feathers/controls/PopUpListView.html#prompt) property to display some placeholder text when no item is currently selected.
 
   ```hx
   popUpListView.prompt = "Select an item";
@@ -38,15 +38,15 @@ This build also fixes a ton of bugs, and it includes many new features too. Here
 
     <div style="text-align:center;"><a href="https://api.feathersui.com/current/feathers/controls/PopUpListView.html#prompt"><img src="/blog/img/beta-4-feathersui-pop-up-list-view-prompt.png" style="width:450px"/></a></div>
 
-- [`GridView`](https://api.feathersui.com/current/feathers/controls/GridView.html) adds a new [`sortableColumns`](https://api.feathersui.com/current/feathers/controls/GridView.html#sortableColumns) property, which updates the sort order when the user clicks a column header. Alternatively, developers may set new [`sortedColumn`](https://api.feathersui.com/current/feathers/controls/GridView.html#sortedColumn) and [`sortOrder`](https://api.feathersui.com/current/feathers/controls/GridView.html#sortOrder) properties to change the sort order programatically. When a column is sorted, a visual indicator may be displayed to the user in the column header to indicate the order (ascending or descending).
+- [`GridView`](https://feathersui.com/learn/haxe-openfl/grid-view/) adds a new [`sortableColumns`](https://api.feathersui.com/current/feathers/controls/GridView.html#sortableColumns) property, which updates the sort order when the user clicks a column header. Alternatively, developers may set new [`sortedColumn`](https://api.feathersui.com/current/feathers/controls/GridView.html#sortedColumn) and [`sortOrder`](https://api.feathersui.com/current/feathers/controls/GridView.html#sortOrder) properties to change the sort order programatically. When a column is sorted, a visual indicator may be displayed to the user in the column header to indicate the order (ascending or descending).
 
     <div style="text-align:center;"><a href="https://api.feathersui.com/current/feathers/controls/GridView.html#sortableColumns"><img src="/blog/img/beta-4-feathersui-grid-view-sortable-columns.png" style="width:450px"/></a></div>
 
-- [`GridView`](https://api.feathersui.com/current/feathers/controls/GridView.html) also adds optional new divider skins between columns and between column headers.
+- [`GridView`](https://feathersui.com/learn/haxe-openfl/grid-view/) also adds optional new divider skins between columns and between column headers.
 
     <div style="text-align:center;"><a href="https://api.feathersui.com/current/feathers/controls/GridView.html#columnDividerFactory"><img src="/blog/img/beta-4-feathersui-grid-view-column-dividers.png" style="width:450px"/></a></div>
 
-- [`ItemRenderer`](https://api.feathersui.com/current/feathers/controls/dataRenderers/ItemRenderer.html) can display an optional [`accessoryView`](https://api.feathersui.com/current/feathers/controls/dataRenderers/ItemRenderer.html#accessoryView) on the far right side.
+- [`ItemRenderer`](https://feathersui.com/learn/haxe-openfl/item-renderer/) can display an optional [`accessoryView`](https://api.feathersui.com/current/feathers/controls/dataRenderers/ItemRenderer.html#accessoryView) on the far right side.
 
     <div style="text-align:center;"><a href="https://api.feathersui.com/current/feathers/controls/dataRenderers/ItemRenderer.html#accessoryView"><img src="/blog/img/beta-4-feathersui-item-renderer-accessory-view.png" style="width:450px"/></a></div>
 
@@ -56,7 +56,7 @@ This build also fixes a ton of bugs, and it includes many new features too. Here
   component.layoutData = VerticalLayoutData.fillVertical();
   ```
 
-- [`TextInput`](https://api.feathersui.com/current/feathers/controls/TextInput.html) and [`TextArea`](https://api.feathersui.com/current/feathers/controls/TextArea.html) both have a new [`errorString`](https://api.feathersui.com/current/feathers/controls/TextInput.html#errorString) property that displays a callout with the error message when focused, and displays a special border.
+- [`TextInput`](https://feathersui.com/learn/haxe-openfl/text-input/) and [`TextArea`](https://feathersui.com/learn/haxe-openfl/text-area/) both have a new [`errorString`](https://api.feathersui.com/current/feathers/controls/TextInput.html#errorString) property that displays a callout with the error message when focused, and displays a special border.
 
   ```hx
   textInput.errorString = "Something is wrong";
