@@ -81,6 +81,7 @@
       "haxe-openfl/text-input",
       "haxe-openfl/toggle-button",
       "haxe-openfl/toggle-switch",
+      "haxe-openfl/tree-grid-view",
       "haxe-openfl/tree-view"
     ],
     "Layouts": [
