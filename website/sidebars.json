@@ -56,6 +56,7 @@
       "haxe-openfl/grid-view",
       "haxe-openfl/group-list-view",
       "haxe-openfl/header",
+      "haxe-openfl/hierarchical-item-renderer",
       "haxe-openfl/item-renderer",
       "haxe-openfl/label",
       "haxe-openfl/layout-group",
@@ -87,6 +88,7 @@
     "Layouts": [
       "haxe-openfl/layouts-and-containers",
       "haxe-openfl/anchor-layout",
+      "haxe-openfl/flow-rows-layout",
       "haxe-openfl/horizontal-layout",
       "haxe-openfl/horizontal-list-layout",
       "haxe-openfl/horizontal-distributed-layout",

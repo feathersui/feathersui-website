@@ -7,7 +7,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
-    <title>Feathers UI Radio preview</title>
+    <title>Feathers UI Form and FormItem preview</title>
     <style>
       html,
       body {
@@ -27,19 +27,16 @@
         constructor() {
           super();
 
-          this.layout = new feathers.layout.HorizontalLayout();
-          this.layout.horizontalAlign = feathers.layout.HorizontalAlign.CENTER;
-          this.layout.verticalAlign = feathers.layout.VerticalAlign.MIDDLE;
-          this.layout.gap = 40.0;
+          this.layout = new feathers.layout.AnchorLayout();
 
-          this.radio1 = new feathers.controls.Radio();
-          this.radio1.text = "Radio 1";
-          this.addChild(this.radio1);
-
-          this.radio2 = new feathers.controls.Radio();
-          this.radio2.text = "Radio 2";
-          this.radio2.selected = true;
-          this.addChild(this.radio2);
+          this.form = new feathers.controls.Form();
+          this.form.layoutData = feathers.layout.AnchorLayoutData.center();
+          this.formItem = new feathers.controls.FormItem();
+          this.formItem.text = "Form Item";
+          this.formItem.content = new feathers.controls.TextInput();
+          this.formItem.required = true;
+          this.form.addChild(this.formItem);
+          this.addChild(this.form);
         }
       }
 

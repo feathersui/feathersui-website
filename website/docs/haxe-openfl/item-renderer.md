@@ -12,7 +12,7 @@ The [`ItemRenderer`](https://api.feathersui.com/current/feathers/controls/dataRe
 
 ## The Basics
 
-Item renderers are managed by data containers, like [`ListView`](./list-view.md), [`GridView`](./grid-view.md), and [`TreeView`](./tree-view.md). Unlike other components, item renderers generally aren't added to [the display list](https://books.openfl.org/openfl-developers-guide/display-programming/basics-of-display-programming.html) directly. Instead, the data container will use a [`DisplayObjectRecycler`](https://api.feathersui.com/current/feathers/utils/DisplayObjectRecycler.html) to manage its item renderers. For instance, [`ListView`](./list-view.md) has a [`itemRendererRecycler`](https://api.feathersui.com/current/feathers/controls/ListView.html#itemRendererRecycler) property.
+Item renderers are managed by data containers, like [`ListView`](./list-view.md), [`GridView`](./grid-view.md), and [`GroupListView`](./group-list-view.md). Unlike other components, item renderers generally aren't added to [the display list](https://books.openfl.org/openfl-developers-guide/display-programming/basics-of-display-programming.html) directly. Instead, the data container will use a [`DisplayObjectRecycler`](https://api.feathersui.com/current/feathers/utils/DisplayObjectRecycler.html) to manage its item renderers. For instance, [`ListView`](./list-view.md) has a [`itemRendererRecycler`](https://api.feathersui.com/current/feathers/controls/ListView.html#itemRendererRecycler) property.
 
 ```hx
 var recycler = DisplayObjectRecycler.withFunction(() -> {
@@ -224,4 +224,3 @@ itemRenderer.verticalAlign = MIDDLE;
 - [How to use the `GridView` component](./grid-view.md)
 - [How to use the `GroupListView` component](./group-list-view.md)
 - [How to use the `ListView` component](./list-view.md)
-- [How to use the `TreeView` component](./tree-view.md)

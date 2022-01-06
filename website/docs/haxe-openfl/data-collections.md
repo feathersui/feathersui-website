@@ -24,6 +24,7 @@ Some UI components may render a "hierarchical" tree of items.
 
 - [`GroupListView`](./group-list-view.md)
 - [`TreeView`](./tree-view.md)
+- [`TreeGridView`](./tree-grid-view.md)
 
 Feathers UI provides the following implementations of a hierarchical collection type.
 

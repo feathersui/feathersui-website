@@ -112,7 +112,7 @@ treeView.dataProvider.removeAt(locationToRemove);
 
 An _item renderer_ is a Feathers UI component that displays a single item from a [data collection](./data-collections.md) inside a component like [`TreeView`](https://api.feathersui.com/current/feathers/controls/TreeView.html) and [`ListView`](https://api.feathersui.com/current/feathers/controls/ListView.html). In other words, a [`TreeView`](https://api.feathersui.com/current/feathers/controls/TreeView.html) typically contains multiple item renderers — with each one rendering a different item from the collection.
 
-Feathers UI provides a default [`ItemRenderer`](./item-renderer.md) class, which can display data in many different ways that cover a variety of common use-cases. However, components like [`TreeView`](https://api.feathersui.com/current/feathers/controls/TreeView.html) also support [custom item renderers](./custom-item-renderers.md), which allow developers to render the tree view's data in infinite unique ways.
+Feathers UI provides a default [`HierarchicalItemRenderer`](./hierarchical-item-renderer.md) class, which can display data in many different ways that cover a variety of common use-cases. However, components like [`TreeView`](https://api.feathersui.com/current/feathers/controls/TreeView.html) also support [custom item renderers](./custom-item-renderers.md), which allow developers to render the tree view's data in infinite unique ways.
 
 Consider a collection of items with the following format.
 
@@ -120,7 +120,7 @@ Consider a collection of items with the following format.
 { name: "Pizza", icon: "https://example.com/img/pizza.png" }
 ```
 
-While the default [`ItemRenderer`](./item-renderer.md) class can easily display some text and an image, creating a custom item renderer for this simple data will be a good learning exercise.
+While the default [`HierarchicalItemRenderer`](./hierarchical-item-renderer.md) class can easily display some text and an image, creating a custom item renderer for this simple data will be a good learning exercise.
 
 A custom item renderer designed to display this data might use a [`Label`](./label.md) to display the text, and an [`AssetLoader`](./asset-loader.md) to display the image. The following example creates a [`DisplayObjectRecycler`](https://api.feathersui.com/current/feathers/utils/DisplayObjectRecycler.html) which instantiates these components and adds them to a [`LayoutGroupItemRenderer`](./layout-group-item-renderer.md) — a special base class for custom item renderers.
 

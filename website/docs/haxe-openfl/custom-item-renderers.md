@@ -19,3 +19,4 @@ Developers that need lower-level customization may create a [class-based custom 
 - [How to use the `GroupListView` component](./group-list-view.md)
 - [How to use the `ListView` component](./list-view.md)
 - [How to use the `TreeView` component](./tree-view.md)
+- [How to use the `TreeGridView` component](./tree-grid-view.md)

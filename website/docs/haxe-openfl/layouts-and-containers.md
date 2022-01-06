@@ -21,6 +21,7 @@ Use the standard [display list](https://books.openfl.org/openfl-developers-guide
 The following layouts are best suited for simple containers.
 
 - [`AnchorLayout`](./anchor-layout.md)
+- [`FlowRowsLayout`](./flow-rows-layout.md)
 - [`HorizontalLayout`](./horizontal-layout.md)
 - [`ResponsiveGridLayout`](./responsive-grid-layout.md)
 - [`TiledRowsLayout`](./tiled-rows-layout.md)
@@ -34,6 +35,7 @@ Components that render [data collections](./data-collections.md) may take advant
 - [`GridView`](./grid-view.md)
 - [`GroupListView`](./group-list-view.md)
 - [`TreeView`](./tree-view.md)
+- [`TreeGrudView`](./tree-grid-view.md)
 
 The following layouts are optimized for data containers by providing _virtualization_ and item renderer _recycling_.
 
@@ -42,3 +44,9 @@ The following layouts are optimized for data containers by providing _virtualiza
 - [`PagedTiledRowsListLayout`](./paged-tiled-rows-list-layout.md)
 - [`VerticalListLayout`](./vertical-list-layout.md)
 - [`VerticalListFixedRowLayout`](./vertical-list-fixed-row-layout.md)
+
+## Other containers
+
+Some containers work similarly to simple containers, where one can use the standard [display list](https://books.openfl.org/openfl-developers-guide/display-programming/basics-of-display-programming.html) APIs to add and remove children, but these containers have their own built-in layout and don't support custom layouts.
+
+- [`HDividedBox` and `VDividedBox`](./divided-box.md)
