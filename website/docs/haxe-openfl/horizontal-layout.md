@@ -7,6 +7,11 @@ The [`HorizontalLayout`](https://api.feathersui.com/current/feathers/layout/Hori
 
 > This layout is designed to be used with basic containers like [`LayoutGroup`](./layout-group.md) and [`ScrollContainer`](./scroll-container.md), which are intended purely for visual layout and do not offer built-in capabilities for rendering data from a collection. If using a container that renders a [collection of data](./data-collections.md) — such as [`ListView`](./list-view.md), [`TreeView`](./tree-view.md), or [`GridView`](./grid-view.md) — consider using [`HorizontalListLayout`](./horizontal-list-layout.md) instead because it is better optimized for data containers by offering performance improvements like layout virtualization.
 
+<figure>
+<iframe src="/learn/haxe-openfl/samples/horizontal-layout.html" width="100%" height="100"></iframe>
+<figcaption>Live preview of <a href="https://api.feathersui.com/current/feathers/layout/HorizontalLayout.html"><code>HorizontalLayout</code></a></figcaption>
+</figure>
+
 ## The Basics
 
 Create a [`LayoutGroup`](./layout-group.md) container, add it to [the display list](https://books.openfl.org/openfl-developers-guide/display-programming/basics-of-display-programming.html), and then add a few children to the container.

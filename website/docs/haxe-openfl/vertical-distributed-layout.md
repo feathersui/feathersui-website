@@ -5,6 +5,13 @@ sidebar_label: VerticalDistributedLayout
 
 The [`VerticalDistributedLayout`](https://api.feathersui.com/current/feathers/layout/VerticalDistributedLayout.html) class may be used to position the children of a container from top to bottom, in a single column — where the total height of the container is distributed equally to the heights of each child. In other words, each child will have the same height, and their sum is equal to the total height of the container.
 
+> This layout is designed to be used with basic containers like [`LayoutGroup`](./layout-group.md) and [`ScrollContainer`](./scroll-container.md), which are intended purely for visual layout and do not offer built-in capabilities for rendering data from a collection. If using a container that renders a [collection of data](./data-collections.md) — such as [`ListView`](./list-view.md), [`TreeView`](./tree-view.md), or [`GridView`](./grid-view.md) — consider using other layouts that are optimized for data containers by offering performance improvements like layout virtualization.
+
+<figure>
+<iframe src="/learn/haxe-openfl/samples/vertical-distributed-layout.html" width="100%" height="200"></iframe>
+<figcaption>Live preview of <a href="https://api.feathersui.com/current/feathers/layout/VerticalDistributedLayout.html"><code>VerticalDistributedLayout</code></a></figcaption>
+</figure>
+
 ## The Basics
 
 Create a [`LayoutGroup`](./layout-group.md) container, add it to [the display list](https://books.openfl.org/openfl-developers-guide/display-programming/basics-of-display-programming.html), and then add a few children to the container.

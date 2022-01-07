@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      id="viewport"
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Feathers UI AnchorLayout preview</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <script src="https://unpkg.com/openfl@8.9.6/dist/openfl.min.js"></script>
+    <script src="https://unpkg.com/actuate@1.8.9-beta/dist/actuate.min.js"></script>
+    <script src="https://unpkg.com/feathersui-openfl@1.0.0-beta.8/dist/feathersui-openfl.min.js"></script>
+    <script>
+      class HelloWorld extends feathers.controls.Application {
+        constructor() {
+          super();
+
+          this.layout = new feathers.layout.AnchorLayout();
+
+          this.layoutGroup = new feathers.controls.ScrollContainer();
+          var layout = new feathers.layout.AnchorLayout();
+          this.layoutGroup.layout = layout;
+          this.layoutGroup.layoutData = feathers.layout.AnchorLayoutData.fill();
+
+          var tl = new feathers.controls.Button("Top Left");
+          tl.layoutData = feathers.layout.AnchorLayoutData.topLeft(10.0, 10.0);
+          this.layoutGroup.addChild(tl);
+
+          var tc = new feathers.controls.Button("Top Center");
+          tc.layoutData = feathers.layout.AnchorLayoutData.topCenter(10.0);
+          this.layoutGroup.addChild(tc);
+
+          var tr = new feathers.controls.Button("Top Right");
+          tr.layoutData = feathers.layout.AnchorLayoutData.topRight(10.0, 10.0);
+          this.layoutGroup.addChild(tr);
+
+          var ml = new feathers.controls.Button("Middle Left");
+          ml.layoutData = feathers.layout.AnchorLayoutData.middleLeft(
+            0.0,
+            10.0
+          );
+          this.layoutGroup.addChild(ml);
+
+          var mc = new feathers.controls.Button("Middle Center");
+          mc.layoutData = feathers.layout.AnchorLayoutData.center();
+          this.layoutGroup.addChild(mc);
+
+          var mr = new feathers.controls.Button("Middle Right");
+          mr.layoutData = feathers.layout.AnchorLayoutData.middleRight(
+            0.0,
+            10.0
+          );
+          this.layoutGroup.addChild(mr);
+
+          var bl = new feathers.controls.Button("Bottom Left");
+          bl.layoutData = feathers.layout.AnchorLayoutData.bottomLeft(
+            10.0,
+            10.0
+          );
+          this.layoutGroup.addChild(bl);
+
+          var bc = new feathers.controls.Button("Bottom Center");
+          bc.layoutData = feathers.layout.AnchorLayoutData.bottomCenter(10.0);
+          this.layoutGroup.addChild(bc);
+
+          var br = new feathers.controls.Button("Bottom Right");
+          br.layoutData = feathers.layout.AnchorLayoutData.bottomRight(
+            10.0,
+            10.0
+          );
+          this.layoutGroup.addChild(br);
+
+          this.addChild(this.layoutGroup);
+        }
+      }
+
+      var stage = new openfl.display.Stage(0, 0, null, null, {
+        allowHighDPI: true,
+      });
+      document.body.appendChild(stage.element);
+      stage.addChild(new HelloWorld());
+    </script>
+  </body>
+</html>

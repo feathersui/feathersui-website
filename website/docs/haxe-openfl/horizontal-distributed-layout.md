@@ -5,6 +5,13 @@ sidebar_label: HorizontalDistributedLayout
 
 The [`HorizontalDistributedLayout`](https://api.feathersui.com/current/feathers/layout/HorizontalDistributedLayout.html) class may be used to position the children of a container from left to right, in a single row — where the total width of the container is distributed equally to the widths of each child. In other words, each child will have the same width, and their sum is equal to the total width of the container.
 
+> This layout is designed to be used with basic containers like [`LayoutGroup`](./layout-group.md) and [`ScrollContainer`](./scroll-container.md), which are intended purely for visual layout and do not offer built-in capabilities for rendering data from a collection. If using a container that renders a [collection of data](./data-collections.md) — such as [`ListView`](./list-view.md), [`TreeView`](./tree-view.md), or [`GridView`](./grid-view.md) — consider using other layouts that are optimized for data containers by offering performance improvements like layout virtualization.
+
+<figure>
+<iframe src="/learn/haxe-openfl/samples/horizontal-distributed-layout.html" width="100%" height="100"></iframe>
+<figcaption>Live preview of <a href="https://api.feathersui.com/current/feathers/layout/HorizontalDistributedLayout.html"><code>HorizontalDistributedLayout</code></a></figcaption>
+</figure>
+
 ## The Basics
 
 Create a [`LayoutGroup`](./layout-group.md) container, add it to [the display list](https://books.openfl.org/openfl-developers-guide/display-programming/basics-of-display-programming.html), and then add a few children to the container.

@@ -7,6 +7,11 @@ The [`AnchorLayout`](https://api.feathersui.com/current/feathers/layout/AnchorLa
 
 > This layout is designed to be used with basic containers like [`LayoutGroup`](./layout-group.md) and [`ScrollContainer`](./scroll-container.md), which are intended purely for visual layout and do not offer built-in capabilities for rendering data from a collection. If using a container that renders a [collection of data](./data-collections.md) — such as [`ListView`](./list-view.md), [`TreeView`](./tree-view.md), or [`GridView`](./grid-view.md) — consider using other layouts that are optimized for data containers by offering performance improvements like layout virtualization.
 
+<figure>
+<iframe src="/learn/haxe-openfl/samples/anchor-layout.html" width="100%" height="200"></iframe>
+<figcaption>Live preview of <a href="https://api.feathersui.com/current/feathers/layout/FlowRowsLayout.html"><code>AnchorLayout</code></a></figcaption>
+</figure>
+
 ## The Basics
 
 Create a [`LayoutGroup`](./layout-group.md) container, and add one or more children.
