@@ -8,6 +8,10 @@
   max-width: 100%;
 }
 
+.showcaseContainer .blockImage img {
+  max-width: 100%;
+}
+
 .showcastContainer .imageAlignTop .blockImage {
   max-width: 100%;
 }
