@@ -1,0 +1,7 @@
+RewriteEngine on
+RewriteBase /samples/haxe-openfl/hn-reader/
+RewriteCond %{HTTPS} off
+RewriteRule ^/?(.*) https://%{SERVER_NAME}/samples/haxe-openfl/hn-reader/$1 [R,L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /samples/haxe-openfl/hn-reader/ [L]
