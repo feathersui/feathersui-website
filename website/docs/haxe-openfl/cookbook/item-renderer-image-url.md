@@ -20,7 +20,9 @@ listView.itemToText = item -> item.name;
 addChild(listView);
 ```
 
-> The techniques used in this tutorial apply to item renderers in any data containers, not only [`ListView`](../list-view.md). The code is nearly the same for other data containers, such as [`GridView`](../grid-view.md) or [`TreeView`](../tree-view.md).
+> The techniques used in this tutorial apply to an [`ItemRenderer`](../item-renderer.md) used in any data container — not just [`ListView`](../list-view.md). The code shouldn't require more than trivial tweaks for other containers, such as [`GridView`](../grid-view.md) or [`GroupListView`](../group-list-view.md).
+>
+> Similarly, you should be able to use the same capabilities with [`HierarchicalItemRenderer`](../hierarchical-item-renderer.md) in containers like [`TreeView`](../tree-view.md) or [`TreeGridView`](../tree-grid-view.md).
 
 The [`itemToText`](https://api.feathersui.com/current/feathers/controls/ListView.html#itemToText) function makes it easy to populate the item renderer's text, but how to display the URLs stored by the `iconURL` property?
 
