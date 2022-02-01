@@ -17,7 +17,7 @@ To use one of the options below, add a [`<haxedef>`](https://lime.software/docs/
 
 ### `disable_default_theme`
 
-If you project uses a [custom theme](./custom-themes.md), and the custom theme fully style all UI components in your project, you can disable the default fallback theme to reduce the file size of your build.
+If your project uses a [custom theme](./custom-themes.md), and the custom theme fully style all UI components in your project, you can disable the default fallback theme to reduce the file size of your build.
 
 ```xml
 <haxedef name="disable_default_theme"/>
