@@ -7,7 +7,7 @@ The [`RouterNavigator`](https://api.feathersui.com/current/feathers/controls/nav
 
 Navigation can be enhanced with animation, called a _transition_. Feathers UI provides a number of [animated transitions](./navigator-transitions.md) out of the box, and a simple API allows anyone to create [custom transitions](./custom-navigator-transitions.md).
 
-> [`RouterNavigator`](https://api.feathersui.com/current/feathers/controls/navigators/RouterNavigator.html) is designed for use in web browsers, but it is supported on all platform targets. If your app is not intended for deployment to the web, you might consider using [`StackNavigator`](./stack-navigator.md) instead, which offers more powerful features that are not supported by the HTML History API.
+> [`RouterNavigator`](https://api.feathersui.com/current/feathers/controls/navigators/RouterNavigator.html) is designed for use with URLs and the HTML history API in web browsers. However, these features are emulated on all platforms, and it is suitable for deployment anywhere.
 
 > ⚠️ **Beta Notice**: This component is still quite new to Feathers UI. It was included in the latest release because it should be stable enough for production use. However, some APIs may go through minor changes in upcoming releases — based on feedback from developers like you.
 
@@ -169,7 +169,105 @@ Similarly, when `ViewB` dispatches `Event.COMPLETE`, the navigator will create a
 
 ## Pass data between views
 
-> 🚧 Data passing will be supported, but it has not been completely implemented yet.
+Sometimes, when pushing a new view onto the history stack, the old view needs to pass additional data to the new view. For instance, consider an app for managing contacts. It might have an `AllContactsView` that contains a list of contacts and a `ContactDetailsView` that lists more information about a single contact. When a contact is selected by the user in `AllContactsView`, the app should navigate to `ContactDetailsView` and pass in the selected contact.
+
+The example below contains simplified versions of `AllContactsView` and `ContactDetailsView`. Most of the necessary code has been omitted to focus specifically on passing data between these views.
+
+```haxe
+class AllContactsView extends LayoutGroup {
+    public static final PATHNAME = "/contacts";
+}
+
+class ContactDetailsView extends LayoutGroup {
+    public static final PATHNAME = "/contact-details";
+
+    public var contact:Contact;
+}
+```
+
+The `ContactDetailsView` has a public property named `contact` that is used to specify which contact's details should be displayed. The `Contact` type might contain the contact's name, their email address, and any other relevant details that are necessary.
+
+```haxe
+typedef Contact = {
+    var id:Int;
+    var name:String;
+    var email:String;
+}
+```
+
+> Why `Contact` is defined as a [`typedef`](https://haxe.org/manual/type-system-typedef.html) for an [anonymous structure](https://haxe.org/manual/types-anonymous-structure.html) instead of [`class`](https://haxe.org/manual/types-class-instance.html) will be explained in a moment.
+
+Somewhere inside `AllContactsView`, it dispatches `ContactEvent.VIEW_CONTACT`. Perhaps, the event is dispatched when the [`selectedItem`](https://api.feathersui.com/current/feathers/controls/ListView.html#selectedItem) property of a [`ListView`](./list-view.md) changes.
+
+```haxe
+// somewhere in AllContactsView
+var contact = cast(listView.selectedItem, Contact);
+dispatchEvent(new ContactEvent(ContactEvent.VIEW_CONTACT, contact));
+```
+
+`ContactEvent` is a custom event that might be implemented like this:
+
+```haxe
+import openfl.events.Event;
+
+class ContactEvent extends Event {
+    public static final VIEW_CONTACT:String = "viewContact";
+
+    public function new(type:String, contact:Contact) {
+        super(type, false, false);
+        this.contact = contact;
+    }
+
+    public var contact:Contact;
+}
+```
+
+To simply push a new view, and do nothing else, it's easy to create a [`Push()`](https://api.feathersui.com/current/feathers/controls/navigators/Route.html#Push) action for `ContactEvent.VIEW_CONTACT`.
+
+```haxe
+var allContactsRoute = Route.withClass(AllContactsView.PATHNAME, AllContactsView, [
+    // this pushes without data. something more powerful is needed.
+    ContactEvent.VIEW_CONTACT => Push(ContactDetailsView.PATHNAME)
+]);
+```
+
+However, [`Push()`](https://api.feathersui.com/current/feathers/controls/navigators/Route.html#Push) doesn't automatically know how to pass information about the `Contact` to the `ContactDetailsView`.
+
+Instead, use [`NewAction()`](https://api.feathersui.com/current/feathers/controls/navigators/Route.html#NewAction) to dynamically create a [`Push()`](https://api.feathersui.com/current/feathers/controls/navigators/Route.html#Push) action that includes a new history state for `ContactDetailsView`.
+
+```haxe
+var allContactsRoute = Route.withClass(AllContactsView.PATHNAME, AllContactsView, [
+    ContactEvent.VIEW_CONTACT => NewAction((event:ContactEvent) -> {
+        // this is the contact from AllContactsView
+        var contact = event.contact;
+
+        // return a Push() action with the Contact as the new history state
+        return Push(ContactDetailsView.PATHNAME, contact);
+    }
+]);
+```
+
+> Remember how `Contact` is defined with a [`typedef`](https://haxe.org/manual/type-system-typedef.html) referencing an [anonymous structure](https://haxe.org/manual/types-anonymous-structure.html) instead of declaring a [`class`](https://haxe.org/manual/types-class-instance.html)? The reason for this is because [`RouterNavigator`](https://api.feathersui.com/current/feathers/controls/navigators/RouterNavigator.html) uses the [HTML History API](https://developer.mozilla.org/en-US/docs/Web/API/History_API), which is not aware of Haxe classes and interfaces.
+>
+> If you were to pass a class instance as the state data in a [`Push()`](https://api.feathersui.com/current/feathers/controls/navigators/Route.html#Push) or [`Replace()`](https://api.feathersui.com/current/feathers/controls/navigators/Route.html#Replace) action, the browser's JavaScript engine would serialize it into a simpler object. There's no way to deserialize that new, simpler object back into a Haxe class instance again.
+>
+> By using a [`typedef`](https://haxe.org/manual/type-system-typedef.html) to define value objects (VOs), developers can still treat [anonymous structures](https://haxe.org/manual/types-anonymous-structure.html) as belonging to a type. This means that the compiler will still provide some validation that we're writing correct code, and editors or IDEs can still give helpful code intelligence about the type definition.
+
+To access the history state in the new view, define an [`updateState()`](https://api.feathersui.com/current/feathers/controls/navigators/Route.html#updateState) method on the [`Route`](https://api.feathersui.com/current/feathers/controls/navigators/Route.html) object, and use that to pass the data to a property on the view.
+
+```haxe
+var contactDetailsRoute = Route.withClass(ContactDetailsView.PATHNAME, ContactDetailsView);
+contactDetailsRoute.updateState = (view:ContactDetailsView, state:RouteState) -> {
+    if (state.historyState == null) {
+        // nothing to pass to the view
+        return;
+    }
+    var contact = (state.historyState : Contact);
+    view.contact = contact;
+};
+```
+
+The [`updateState()`](https://api.feathersui.com/current/feathers/controls/navigators/Route.html#updateState) method will receive an instance of the view, along with a [`RouteState`](https://api.feathersui.com/current/feathers/data/RouteState.html) object, as arguments. The [`RouteState`](https://api.feathersui.com/current/feathers/data/RouteState.html) has several properties, but it's the [`historyState`](https://api.feathersui.com/current/feathers/data/RouteState.html#historyState) property that holds the data passed from the previous view with the [`Push()`](https://api.feathersui.com/current/feathers/controls/navigators/Route.html#Push) action. Cast it to the `Contact` type definition and pass it to the `contact` property defined on `ContactDetailsView`.
 
 ## Related Links
 
