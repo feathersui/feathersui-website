@@ -16,7 +16,7 @@ Start by creating a [`Drawer`](https://api.feathersui.com/current/feathers/contr
 
 ```hx
 var container = new Drawer();
-this.addChild(container);
+addChild(container);
 ```
 
 The container's width and height may be set, but it will automatically resize itself to fill the entire stage if no explicit dimensions are provided.

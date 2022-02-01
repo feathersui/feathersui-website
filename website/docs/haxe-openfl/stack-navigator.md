@@ -15,7 +15,7 @@ Start by creating a [`StackNavigator`](https://api.feathersui.com/current/feathe
 
 ```hx
 var navigator = new StackNavigator();
-this.addChild(navigator);
+addChild(navigator);
 ```
 
 A view can be a Feathers UI component or any OpenFL display object. The following example creates a simple view with a [label](./label.md).
@@ -29,7 +29,7 @@ class HelloView extends LayoutGroup {
 
         var message = new Label();
         message.text = "Hello World";
-        this.addChild(message);
+        addChild(message);
     }
 }
 ```
@@ -81,20 +81,20 @@ class ViewA extends LayoutGroup {
 
     public function new() {
         super();
-        this.layout = new VerticalLayout();
+        layout = new VerticalLayout();
 
         var label = new Label();
         label.text = "A";
-        this.addChild(label);
+        addChild(label);
 
         var button = new Button();
         button.text = "Push B";
         button.addEventListener(TriggerEvent.TRIGGER, button_triggerHandler);
-        this.addChild(button);
+        addChild(button);
     }
 
     private function button_triggerHandler(event:TriggerEvent):Void {
-        this.dispatchEvent(new Event(Event.CHANGE));
+        dispatchEvent(new Event(Event.CHANGE));
     }
 }
 ```
@@ -107,20 +107,20 @@ class ViewB extends LayoutGroup {
 
     public function new() {
         super();
-        this.layout = new VerticalLayout();
+        layout = new VerticalLayout();
 
         var label = new Label();
         label.text = "B";
-        this.addChild(label);
+        addChild(label);
 
         var button = new Button();
         button.text = "Pop to A";
         button.addEventListener(TriggerEvent.TRIGGER, button_triggerHandler);
-        this.addChild(button);
+        addChild(button);
     }
 
     private function button_triggerHandler(event:TriggerEvent):Void {
-        this.dispatchEvent(new Event(Event.COMPLETE));
+        dispatchEvent(new Event(Event.COMPLETE));
     }
 }
 ```
@@ -183,7 +183,7 @@ Somewhere inside `AllContactsView`, it dispatches `ContactEvent.VIEW_CONTACT`. P
 ```hx
 // somewhere in AllContactsView
 var contact = cast(listView.selectedItem, Contact);
-this.dispatchEvent(new ContactEvent(ContactEvent.VIEW_CONTACT, contact));
+dispatchEvent(new ContactEvent(ContactEvent.VIEW_CONTACT, contact));
 ```
 
 `ContactEvent` is a custom event that might be implemented like this:
@@ -268,7 +268,7 @@ Somewhere inside `ChooseContactView`, it dispatches `ContactEvent.CHOOSE_CONTACT
 ```hx
 // somewhere in ChooseContactView
 var contact = cast(listView.selectedItem, Contact);
-this.dispatchEvent(new ContactEvent(ContactEvent.CHOOSE_CONTACT, contact));
+dispatchEvent(new ContactEvent(ContactEvent.CHOOSE_CONTACT, contact));
 ```
 
 `ContactEvent` is a custom event that might be implemented like this:
@@ -318,7 +318,7 @@ Somewhere inside `ComposeMessageView`, it dispatches `ContactEvent.REQUEST_CONTA
 
 ```hx
 // somewhere in ComposeMessageView
-this.dispatchEvent(new ContactEvent(ContactEvent.REQUEST_CONTACT));
+dispatchEvent(new ContactEvent(ContactEvent.REQUEST_CONTACT));
 ```
 
 Create a [`Push()`](https://api.feathersui.com/current/feathers/controls/navigators/StackAction.html#Push) action for `ContactEvent.REQUEST_CONTACT` that navigates to `ChooseContactView`. This mapping contains no special handling of the returned object from `ChooseContactView`.

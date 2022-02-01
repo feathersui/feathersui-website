@@ -16,7 +16,7 @@ Create an [`AssetLoader`](https://api.feathersui.com/current/feathers/controls/A
 
 ```hx
 var loader = new AssetLoader();
-this.addChild(loader);
+addChild(loader);
 ```
 
 Two different types of assets may be loaded.

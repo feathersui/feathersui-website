@@ -16,7 +16,7 @@ Start by creating a [`GroupListView`](https://api.feathersui.com/current/feather
 
 ```hx
 var groupListView = new GroupListView();
-this.addChild(groupListView);
+addChild(groupListView);
 ```
 
 ### Data provider

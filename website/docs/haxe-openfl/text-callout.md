@@ -17,7 +17,7 @@ To create a `TextCallout` component, call the static function [`TextCallout.show
 ```hx
 var button = new Button();
 button.text = "Click Me";
-this.addChild(button);
+addChild(button);
 
 button.addEventListener(TriggerEvent.TRIGGER, (event:TriggerEvent) -> {
     var button = cast(event.currentTarget, Button);

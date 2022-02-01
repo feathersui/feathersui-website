@@ -18,7 +18,7 @@ Create a [`TextArea`](https://api.feathersui.com/current/feathers/controls/TextA
 
 ```hx
 var textArea = new TextArea();
-this.addChild(textArea);
+addChild(textArea);
 ```
 
 Text may be changed programatically by setting the [`text`](https://api.feathersui.com/current/feathers/controls/TextArea.html#text) property.

@@ -18,7 +18,7 @@ class CustomTheme extends ClassVariantTheme {
     public function new() {
         super();
 
-        this.initialize();
+        initialize();
     }
 
     private function initialize():Void {
@@ -61,7 +61,7 @@ private function setButtonStyles(button:Button):Void {
 Inside the `initialize()` method of the theme class, register this function with the theme by adding the following call to [`setStyleFunction()`](https://api.feathersui.com/current/feathers/style/ClassVariantStyleProvider.html#setStyleFunction).
 
 ```hx
-this.styleProvider.setStyleFunction(Button, null, setButtonStyles);
+styleProvider.setStyleFunction(Button, null, setButtonStyles);
 ```
 
 [`setStyleFunction()`](https://api.feathersui.com/current/feathers/style/ClassVariantStyleProvider.html#setStyleFunction) accepts three arguments.
@@ -103,7 +103,7 @@ private function setFancyButtonStyles(button:Button):Void {
 The call to [`setStyleFunction()`](https://api.feathersui.com/current/feathers/style/ClassVariantStyleProvider.html#setStyleFunction) will look similar, but this time, it should include a variant string.
 
 ```hx
-this.styleProvider.setStyleFunction(Button, "fancy-button", setFancyButtonStyles);
+styleProvider.setStyleFunction(Button, "fancy-button", setFancyButtonStyles);
 ```
 
 This same string may be passed to the [`variant`](https://api.feathersui.com/current/feathers/core/FeathersControl.html#variant) property of an individual UI component.

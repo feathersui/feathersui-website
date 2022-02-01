@@ -17,7 +17,7 @@ Start by creating a [`Header`](https://api.feathersui.com/current/feathers/contr
 ```hx
 var header = new Header();
 header.text = "Settings";
-this.addChild(header);
+addChild(header);
 ```
 
 Next, we'll create a back button and pass it to the [`leftView`](https://api.feathersui.com/current/feathers/controls/Header.html#leftView) property, which will position it to the left of the title.

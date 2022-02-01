@@ -17,7 +17,7 @@ Start by creating a [`Button`](https://api.feathersui.com/current/feathers/contr
 ```hx
 var button = new Button();
 button.text = "Click Me";
-this.addChild(button);
+addChild(button);
 ```
 
 [Add an event listener](https://books.openfl.org/openfl-developers-guide/handling-events/basics-of-handling-events.html) for [`TriggerEvent.TRIGGER`](https://api.feathersui.com/current/feathers/events/TriggerEvent.html#TRIGGER) to perform an action when the button is clicked or tapped.

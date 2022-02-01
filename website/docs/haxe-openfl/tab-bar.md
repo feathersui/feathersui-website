@@ -16,7 +16,7 @@ Start by creating a [`TabBar`](https://api.feathersui.com/current/feathers/contr
 
 ```hx
 var tabs = new TabBar();
-this.addChild(tabs);
+addChild(tabs);
 ```
 
 ### Data provider

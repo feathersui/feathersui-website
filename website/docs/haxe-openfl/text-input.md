@@ -18,7 +18,7 @@ Create a [`TextInput`](https://api.feathersui.com/current/feathers/controls/Text
 
 ```hx
 var input = new TextInput();
-this.addChild(input);
+addChild(input);
 ```
 
 Text may be changed programatically by setting the [`text`](https://api.feathersui.com/current/feathers/controls/TextInput.html#text) property.

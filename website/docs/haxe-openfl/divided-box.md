@@ -18,7 +18,7 @@ Create a [`HDividedBox`](https://api.feathersui.com/current/feathers/controls/HD
 
 ```hx
 var container = new HDividedBox();
-this.addChild(container);
+addChild(container);
 
 var leftContainer = new LayoutGroup();
 leftContainer.backgroundSkin = new RectangleSkin(SolidColor(0x993333));

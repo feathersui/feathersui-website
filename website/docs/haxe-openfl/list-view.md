@@ -16,7 +16,7 @@ Start by creating a [`ListView`](https://api.feathersui.com/current/feathers/con
 
 ```hx
 var listView = new ListView();
-this.addChild(listView);
+addChild(listView);
 ```
 
 ### Data provider

@@ -20,7 +20,7 @@ Start by creating a [`DatePicker`](https://api.feathersui.com/current/feathers/c
 
 ```hx
 var datePicker = new DatePicker();
-this.addChild(datePicker);
+addChild(datePicker);
 ```
 
 [Add an event listener](https://books.openfl.org/openfl-developers-guide/handling-events/basics-of-handling-events.html) for [`Event.CHANGE`](https://api.openfl.org/openfl/events/Event.html#CHANGE) to perform an action when the user selects a different tab.

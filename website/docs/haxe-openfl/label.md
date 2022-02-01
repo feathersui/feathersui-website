@@ -17,7 +17,7 @@ First, let's create a [`Label`](https://api.feathersui.com/current/feathers/cont
 ```hx
 var label = new Label();
 label.text = "Hello from Feathers UI";
-this.addChild(label);
+addChild(label);
 ```
 
 The text may be wrapped if it is too long to fit on one line using the [`wordWrap`](https://api.feathersui.com/current/feathers/controls/Label.html#wordWrap) property.

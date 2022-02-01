@@ -16,7 +16,7 @@ Start by creating a [`TreeView`](https://api.feathersui.com/current/feathers/con
 
 ```hx
 var treeView = new TreeView();
-this.addChild(treeView);
+addChild(treeView);
 ```
 
 ### Data provider

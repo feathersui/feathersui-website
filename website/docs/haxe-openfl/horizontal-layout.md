@@ -18,7 +18,7 @@ Create a [`LayoutGroup`](./layout-group.md) container, add it to [the display li
 
 ```hx
 var container = new LayoutGroup();
-this.addChild(container);
+addChild(container);
 
 var child1 = new Button();
 child1.text = "One";
@@ -110,7 +110,7 @@ In the following example, two children are added to a container. The first child
 ```hx
 var container = new LayoutGroup();
 container.layout = new HorizontalLayout();
-this.addChild(container);
+addChild(container);
 
 var child1 = new Button();
 child1.text = "One";
@@ -118,7 +118,7 @@ var layoutData1 = new HorizontalLayoutData();
 layoutData1.percentWidth = 25.0;
 child1.layoutData = layoutData1;
 container.addChild(child1);
- 
+
 var child2 = new Button();
 child2.text = "Two";
 var layoutData2 = new HorizontalLayoutData();
@@ -134,13 +134,13 @@ In the following example, there are two children again, but this time, the first
 ```hx
 var container = new LayoutGroup();
 container.layout = new HorizontalLayout();
-this.addChild(container);
+addChild(container);
 
 var child1 = new Button();
 child1.text = "One";
 child1.width = 150.0; // pixels
 container.addChild(child1);
- 
+
 var child2 = new Button();
 child2.text = "Two";
 var layoutData2 = new HorizontalLayoutData();
@@ -160,7 +160,7 @@ In the following example, two children are added to a container. The first child
 ```hx
 var container = new LayoutGroup();
 container.layout = new HorizontalLayout();
-this.addChild(container);
+addChild(container);
 
 var child1 = new Button();
 child1.text = "One";
@@ -169,7 +169,7 @@ var layoutData1 = new HorizontalLayoutData();
 layoutData1.percentHeight = 100.0;
 child1.layoutData = layoutData1;
 container.addChild(child1);
- 
+
 var child2 = new Button();
 child2.text = "Two";
 var layoutData2 = new HorizontalLayoutData();

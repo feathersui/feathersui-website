@@ -21,7 +21,7 @@ var progressBar = new HProgressBar();
 progressBar.minimum = 0.0;
 progressBar.maximum = 100.0;
 progressBar.value = 50.0;
-this.addChild(progressBar);
+addChild(progressBar);
 ```
 
 The [`value`](https://api.feathersui.com/current/feathers/controls/supportClasses/BaseProgressBar.html#value) property indicates the current value of the progress bar, while the [`minimum`](https://api.feathersui.com/current/feathers/controls/supportClasses/BaseProgressBar.html#minimum) and [`maximum`](https://api.feathersui.com/current/feathers/controls/supportClasses/BaseProgressBar.html#maximum) properties establish a range of possible values.

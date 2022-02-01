@@ -18,7 +18,7 @@ container.dataProvider = new ArrayCollection([
     {text: "B"},
     {text: "C"}
 ]);
-this.addChild(container);
+addChild(container);
 ```
 
 Set the container's [`layout`](https://api.feathersui.com/current/feathers/layout/feathers/controls/ListView.html#layout) property to a new [`VerticalListLayout`](https://api.feathersui.com/current/feathers/layout/VerticalListLayout.html) instance.

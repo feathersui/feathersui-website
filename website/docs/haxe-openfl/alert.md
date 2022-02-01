@@ -18,7 +18,7 @@ Creating an [`Alert`](https://api.feathersui.com/current/feathers/controls/Alert
 var button = new Button();
 button.text = "Click Me";
 button.addEventListener(TriggerEvent.TRIGGER, button_triggerHandler);
-this.addChild(button);
+addChild(button);
 ```
 
 The alert will be shown when the button is clicked or tapped. In the listener, rather than calling the [`Alert`](https://api.feathersui.com/current/feathers/controls/Alert.html) constructor, call the static function [`Alert.show()`](https://api.feathersui.com/current/feathers/controls/Alert.html#show) instead.

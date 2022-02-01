@@ -17,7 +17,7 @@ Start by creating a [`Check`](https://api.feathersui.com/current/feathers/contro
 ```hx
 var check = new Check();
 check.text = "Click Me";
-this.addChild(check);
+addChild(check);
 ```
 
 A check may be selected and deselected when it is triggered, or it can be changed programmatically by setting the [`selected`](https://api.feathersui.com/current/feathers/controls/ToggleButton.html#selected) property.

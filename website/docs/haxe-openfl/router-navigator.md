@@ -17,7 +17,7 @@ Start by creating a [`RouterNavigator`](https://api.feathersui.com/current/feath
 
 ```hx
 var navigator = new RouterNavigator();
-this.addChild(navigator);
+addChild(navigator);
 ```
 
 A view can be a Feathers UI component or any OpenFL display object. The following example creates a simple view with a [label](./label.md).
@@ -29,7 +29,7 @@ class HelloView extends LayoutGroup {
 
         var message = new Label();
         message.text = "Hello World";
-        this.addChild(message);
+        addChild(message);
     }
 }
 ```
@@ -83,20 +83,20 @@ class ViewA extends LayoutGroup {
 
     public function new() {
         super();
-        this.layout = new VerticalLayout();
+        layout = new VerticalLayout();
 
         var label = new Label();
         label.text = "A";
-        this.addChild(label);
+        addChild(label);
 
         var button = new Button();
         button.text = "Push B";
         button.addEventListener(TriggerEvent.TRIGGER, button_triggerHandler);
-        this.addChild(button);
+        addChild(button);
     }
 
     private function button_triggerHandler(event:TriggerEvent):Void {
-        this.dispatchEvent(new Event(Event.CHANGE));
+        dispatchEvent(new Event(Event.CHANGE));
     }
 }
 ```
@@ -109,20 +109,20 @@ class ViewB extends LayoutGroup {
 
     public function new() {
         super();
-        this.layout = new VerticalLayout();
+        layout = new VerticalLayout();
 
         var label = new Label();
         label.text = "B";
-        this.addChild(label);
+        addChild(label);
 
         var button = new Button();
         button.text = "Go back to A";
         button.addEventListener(TriggerEvent.TRIGGER, button_triggerHandler);
-        this.addChild(button);
+        addChild(button);
     }
 
     private function button_triggerHandler(event:TriggerEvent):Void {
-        this.dispatchEvent(new Event(Event.COMPLETE));
+        dispatchEvent(new Event(Event.COMPLETE));
     }
 }
 ```

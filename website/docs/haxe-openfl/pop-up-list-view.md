@@ -16,7 +16,7 @@ Start by creating a [`PopUpListView`](https://api.feathersui.com/current/feather
 
 ```hx
 var listView = new PopUpListView();
-this.addChild(listView);
+addChild(listView);
 ```
 
 ### Data provider

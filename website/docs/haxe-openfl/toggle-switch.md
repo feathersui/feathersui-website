@@ -17,7 +17,7 @@ First, let's create an [`ToggleSwitch`](https://api.feathersui.com/current/feath
 ```hx
 var toggle = new ToggleSwitch();
 toggle.selected = true;
-this.addChild(toggle);
+addChild(toggle);
 ```
 
 The [`selected`](https://api.feathersui.com/current/feathers/controls/ToggleSwitch.html#selected) property indicates if the toggle switch is on (`true`) or off (`false`).

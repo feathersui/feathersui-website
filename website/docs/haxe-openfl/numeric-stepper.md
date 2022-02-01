@@ -19,7 +19,7 @@ var stepper = new NumericStepper();
 stepper.minimum = 0.0;
 stepper.maximum = 100.0;
 stepper.value = 50.0;
-this.addChild(stepper);
+addChild(stepper);
 ```
 
 The [`value`](https://api.feathersui.com/current/feathers/controls/NumericStepper.html#value) property indicates the current value of the stepper, while the [`minimum`](https://api.feathersui.com/current/feathers/controls/NumericStepper.html#minimum) and [`maximum`](https://api.feathersui.com/current/feathers/controls/NumericStepper.html#maximum) properties establish a range of possible values. We can further control the stepper's behavior with the [`step`](https://api.feathersui.com/current/feathers/controls/NumericStepper.html#step) property:

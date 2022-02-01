@@ -18,7 +18,7 @@ Start by creating a [`PopUpDatePicker`](https://api.feathersui.com/current/feath
 
 ```hx
 var popUpDatePicker = new PopUpDatePicker();
-this.addChild(popUpDatePicker);
+addChild(popUpDatePicker);
 ```
 
 [Add an event listener](https://books.openfl.org/openfl-developers-guide/handling-events/basics-of-handling-events.html) for [`Event.CHANGE`](https://api.openfl.org/openfl/events/Event.html#CHANGE) to perform an action when the user selects a different tab.

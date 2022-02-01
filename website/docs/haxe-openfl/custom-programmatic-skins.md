@@ -25,18 +25,18 @@ Inside the `update()` method, draw vector graphics or add/update children to ach
 
 ```hx
 override private function update():Void {
-    this.graphics.clear();
-    this.graphics.lineStyle(10.0, 0xff6666);
-    this.graphics.beginFill(0xffcccc);
-    this.graphics.moveTo(20.0, 5.0);
-    this.graphics.lineTo(this.actualWidth - 20.0, 5.0);
-    this.graphics.curveTo(this.actualWidth - 20.0, 20.0, this.actualWidth - 5.0, 20.0);
-    this.graphics.lineTo(this.actualWidth - 5.0, this.actualHeight - 20.0);
-    this.graphics.curveTo(this.actualWidth - 20.0, this.actualHeight - 20.0, this.actualWidth - 20.0, this.actualHeight - 5.0);
-    this.graphics.lineTo(20.0, this.actualHeight - 5.0);
-    this.graphics.curveTo(20.0, this.actualHeight - 20.0, 5.0, this.actualHeight - 20.0);
-    this.graphics.lineTo(5.0, 20.0);
-    this.graphics.curveTo(20.0, 20.0, 20.0, 5.0);
+    graphics.clear();
+    graphics.lineStyle(10.0, 0xff6666);
+    graphics.beginFill(0xffcccc);
+    graphics.moveTo(20.0, 5.0);
+    graphics.lineTo(actualWidth - 20.0, 5.0);
+    graphics.curveTo(actualWidth - 20.0, 20.0, actualWidth - 5.0, 20.0);
+    graphics.lineTo(actualWidth - 5.0, actualHeight - 20.0);
+    graphics.curveTo(actualWidth - 20.0, actualHeight - 20.0, actualWidth - 20.0, actualHeight - 5.0);
+    graphics.lineTo(20.0, actualHeight - 5.0);
+    graphics.curveTo(20.0, actualHeight - 20.0, 5.0, actualHeight - 20.0);
+    graphics.lineTo(5.0, 20.0);
+    graphics.curveTo(20.0, 20.0, 20.0, 5.0);
 }
 ```
 

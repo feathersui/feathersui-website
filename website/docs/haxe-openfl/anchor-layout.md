@@ -20,8 +20,8 @@ Create a [`LayoutGroup`](./layout-group.md) container, and add one or more child
 var container = new LayoutGroup();
 container.width = 300.0;
 container.height = 300.0;
-this.addChild(container);
- 
+addChild(container);
+
 var child = new Button();
 child.text = "Anchored Button";
 container.addChild(child);

@@ -20,7 +20,7 @@ class MyProject extends Application {
 
         var label = new Label();
         label.text = "Hello from Feathers UI and OpenFL";
-        this.addChild(label);
+        addChild(label);
     }
 }
 ```

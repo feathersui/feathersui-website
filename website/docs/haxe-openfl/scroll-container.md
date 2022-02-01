@@ -18,7 +18,7 @@ Create a [`ScrollContainer`](https://api.feathersui.com/current/feathers/control
 
 ```hx
 var container = new ScrollContainer();
-this.addChild(container);
+addChild(container);
 
 var child1 = new Label();
 child1.text = "Hello";

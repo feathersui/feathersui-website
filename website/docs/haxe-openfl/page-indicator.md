@@ -17,7 +17,7 @@ Start by creating a [`PageIndicator`](https://api.feathersui.com/current/feather
 ```hx
 var pages = new PageIndicator();
 pages.maxSelectedIndex = 5;
-this.addChild(pages);
+addChild(pages);
 ```
 
 The number of buttons that a page indicator displays is controlled by the [`maxSelectedIndex`](https://api.feathersui.com/current/feathers/controls/PageIndicator.html#maxSelectedIndex) property. You'll see that the first symbol is automatically selected. If you tap the page indicator on the right side, it will advance to the next index.

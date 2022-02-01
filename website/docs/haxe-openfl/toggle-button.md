@@ -17,7 +17,7 @@ Start by creating a [`ToggleButton`](https://api.feathersui.com/current/feathers
 ```hx
 var button = new ToggleButton();
 button.text = "Click Me";
-this.addChild(button);
+addChild(button);
 ```
 
 A toggle button may be selected and deselected when it is triggered, or it can be changed programmatically by setting the [`selected`](https://api.feathersui.com/current/feathers/controls/ToggleButton.html#selected) property.

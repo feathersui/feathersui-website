@@ -15,7 +15,7 @@ Start by creating a [`PageNavigator`](https://api.feathersui.com/current/feather
 
 ```hx
 var navigator = new PageNavigator();
-this.addChild(navigator);
+addChild(navigator);
 ```
 
 ### Data provider
@@ -29,7 +29,7 @@ class Page1 extends LayoutGroup {
 
         var message = new Label();
         message.text = "Hello World";
-        this.addChild(message);
+        addChild(message);
     }
 }
 ```

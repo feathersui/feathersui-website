@@ -18,7 +18,7 @@ Start by creating a [`ComboBox`](https://api.feathersui.com/current/feathers/con
 
 ```hx
 var comboBox = new ComboBox();
-this.addChild(comboBox);
+addChild(comboBox);
 ```
 
 ### Data provider

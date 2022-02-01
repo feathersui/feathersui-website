@@ -18,7 +18,7 @@ Create a [`LayoutGroup`](./layout-group.md) container, add it to [the display li
 
 ```hx
 var container = new LayoutGroup();
-this.addChild(container);
+addChild(container);
 
 var child1 = new Button();
 child1.text = "One";

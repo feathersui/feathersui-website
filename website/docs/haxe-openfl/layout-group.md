@@ -18,7 +18,7 @@ Create a [`LayoutGroup`](https://api.feathersui.com/current/feathers/controls/La
 
 ```hx
 var container = new LayoutGroup();
-this.addChild(container);
+addChild(container);
 
 var child1 = new Label();
 child1.text = "Hello";

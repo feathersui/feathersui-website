@@ -18,7 +18,7 @@ Start by creating a [`TreeGridView`](https://api.feathersui.com/current/feathers
 
 ```hx
 var treeGridView = new TreeGridView();
-this.addChild(treeGridView);
+addChild(treeGridView);
 ```
 
 ### Data provider and columns

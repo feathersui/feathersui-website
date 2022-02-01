@@ -16,7 +16,7 @@ Start by creating a [`GridView`](https://api.feathersui.com/current/feathers/con
 
 ```hx
 var gridView = new GridView();
-this.addChild(gridView);
+addChild(gridView);
 ```
 
 ### Data provider and columns

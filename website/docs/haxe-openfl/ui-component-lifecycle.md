@@ -17,8 +17,8 @@ Generally, code in a UI component's constructor should be kept to a minimum. It'
 
 ```hx
 public function new() {
-  super();
-  addEventListener(Event.ADDED_TO_STAGE, onAddedToStage);
+    super();
+    addEventListener(Event.ADDED_TO_STAGE, onAddedToStage);
 }
 ```
 

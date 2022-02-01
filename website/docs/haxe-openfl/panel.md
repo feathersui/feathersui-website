@@ -11,7 +11,7 @@ Create a [`Panel`](https://api.feathersui.com/current/feathers/controls/Panel.ht
 
 ```hx
 var panel = new Panel();
-this.addChild(panel);
+addChild(panel);
 
 var child1 = new Label();
 child1.text = "Hello";

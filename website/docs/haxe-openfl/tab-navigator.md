@@ -13,7 +13,7 @@ Start by creating a [`TabNavigator`](https://api.feathersui.com/current/feathers
 
 ```hx
 var navigator = new TabNavigator();
-this.addChild(navigator);
+addChild(navigator);
 ```
 
 ### Data provider
@@ -27,7 +27,7 @@ class HomeView extends LayoutGroup {
 
         var message = new Label();
         message.text = "Hello World";
-        this.addChild(message);
+        addChild(message);
     }
 }
 ```

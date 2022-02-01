@@ -16,7 +16,7 @@ Start by creating a [`ButtonBar`](https://api.feathersui.com/current/feathers/co
 
 ```hx
 var buttons = new ButtonBar();
-this.addChild(buttons);
+addChild(buttons);
 ```
 
 ### Data provider
