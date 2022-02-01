@@ -18,7 +18,9 @@ var navigator = new PageNavigator();
 this.addChild(navigator);
 ```
 
-A view can be a Feathers UI component or any OpenFL display object. The following example creates a simple view with a [label](./label.md).
+### Data provider
+
+A page can be a Feathers UI component or any OpenFL display object. The following example creates a simple page view with a [label](./label.md).
 
 ```hx
 class Page1 extends LayoutGroup {

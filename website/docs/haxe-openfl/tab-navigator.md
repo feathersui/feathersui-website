@@ -16,6 +16,8 @@ var navigator = new TabNavigator();
 this.addChild(navigator);
 ```
 
+### Data provider
+
 A view can be a Feathers UI component or any OpenFL display object. The following example creates a simple view with a [label](./label.md).
 
 ```hx

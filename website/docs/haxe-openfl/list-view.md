@@ -12,16 +12,23 @@ The [`ListView`](https://api.feathersui.com/current/feathers/controls/ListView.h
 
 ## The Basics
 
-Start by creating a [`ListView`](https://api.feathersui.com/current/feathers/controls/ListView.html) control, pass in a [collection](./data-collections.md) that defines the items to render, and add it to [the display list](https://books.openfl.org/openfl-developers-guide/display-programming/basics-of-display-programming.html).
+Start by creating a [`ListView`](https://api.feathersui.com/current/feathers/controls/ListView.html) control, and add it to [the display list](https://books.openfl.org/openfl-developers-guide/display-programming/basics-of-display-programming.html).
 
 ```hx
 var listView = new ListView();
+this.addChild(listView);
+```
+
+### Data provider
+
+To render some data in the list view, pass in a [collection](./data-collections.md) that contains an object for each row.
+
+```hx
 listView.dataProvider = new ArrayCollection([
     { text: "A" },
     { text: "B" },
     { text: "C" }
 ]);
-this.addChild(listView);
 ```
 
 Set the [`itemToText()`](https://api.feathersui.com/current/feathers/controls/ListView.html#itemToText) method to get the text from each item to display in an item renderer.

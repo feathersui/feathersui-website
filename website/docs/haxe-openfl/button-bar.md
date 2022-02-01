@@ -12,16 +12,23 @@ The [`ButtonBar`](https://api.feathersui.com/current/feathers/controls/ButtonBar
 
 ## The Basics
 
-Start by creating a [`ButtonBar`](https://api.feathersui.com/current/feathers/controls/ButtonBar.html) control, pass in a [collection](./data-collections.md) that defines the buttons to display, and add it to [the display list](https://books.openfl.org/openfl-developers-guide/display-programming/basics-of-display-programming.html).
+Start by creating a [`ButtonBar`](https://api.feathersui.com/current/feathers/controls/ButtonBar.html) control, and add it to [the display list](https://books.openfl.org/openfl-developers-guide/display-programming/basics-of-display-programming.html).
 
 ```hx
 var buttons = new ButtonBar();
+this.addChild(buttons);
+```
+
+### Data provider
+
+To render some data in the button bar, pass in a [collection](./data-collections.md) that contains an object for each button.
+
+```hx
 buttons.dataProvider = new ArrayCollection([
     { text: "A" },
     { text: "B" },
     { text: "C" }
 ]);
-this.addChild(buttons);
 ```
 
 Set the [`itemToText()`](https://api.feathersui.com/current/feathers/controls/Button.html#itemToText) method to get the text from each item to display in a button.

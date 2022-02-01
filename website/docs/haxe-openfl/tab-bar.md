@@ -12,16 +12,23 @@ The [`TabBar`](https://api.feathersui.com/current/feathers/controls/TabBar.html)
 
 ## The Basics
 
-Start by creating a [`TabBar`](https://api.feathersui.com/current/feathers/controls/TabBar.html) control, pass in a [collection](./data-collections.md) that defines the tabs to display, and add it to [the display list](https://books.openfl.org/openfl-developers-guide/display-programming/basics-of-display-programming.html).
+Start by creating a [`TabBar`](https://api.feathersui.com/current/feathers/controls/TabBar.html) control, and add it to [the display list](https://books.openfl.org/openfl-developers-guide/display-programming/basics-of-display-programming.html).
 
 ```hx
 var tabs = new TabBar();
+this.addChild(tabs);
+```
+
+### Data provider
+
+To render some data in the tab bar, pass in a [collection](./data-collections.md) that contains an object for each tab.
+
+```hx
 tabs.dataProvider = new ArrayCollection([
     { text: "A" },
     { text: "B" },
     { text: "C" }
 ]);
-this.addChild(tabs);
 ```
 
 Set the [`itemToText()`](https://api.feathersui.com/current/feathers/controls/TabBar.html#itemToText) method to get the text from each item to display in a tab.

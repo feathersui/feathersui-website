@@ -16,12 +16,19 @@ Start by creating a [`PopUpListView`](https://api.feathersui.com/current/feather
 
 ```hx
 var listView = new PopUpListView();
+this.addChild(listView);
+```
+
+### Data provider
+
+To render some data in the list view, pass in a [collection](./data-collections.md) that contains an object for each row.
+
+```hx
 listView.dataProvider = new ArrayCollection([
     { text: "A" },
     { text: "B" },
     { text: "C" }
 ]);
-this.addChild(listView);
 ```
 
 Set the [`itemToText()`](https://api.feathersui.com/current/feathers/controls/PopUpListView.html#itemToText) method to get the text from each item to display in an item renderer.

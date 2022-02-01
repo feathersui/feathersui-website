@@ -3,7 +3,7 @@ title: How to use the TreeView component
 sidebar_label: TreeView
 ---
 
-The [`TreeView`](https://api.feathersui.com/current/feathers/controls/TreeView.html) class renders the items from a [data collection](./data-collections.md) similarly to a [`ListView`](./list-view.md), except that the data is _hierarchical_ and branches may be opened and closed to reveal nested data. It includes support for selecting an item, scrolling, and custom layouts.
+The [`TreeView`](https://api.feathersui.com/current/feathers/controls/TreeView.html) class renders the items from a [data collection](./data-collections.md) similarly to a [`ListView`](./list-view.md), except that the data is _hierarchical_, and branches may be opened and closed to reveal nested data. It includes support for selecting an item, scrolling, and custom layouts.
 
 <figure>
 <iframe src="/learn/haxe-openfl/samples/tree-view.html" width="100%" height="200"></iframe>
@@ -19,7 +19,9 @@ var treeView = new TreeView();
 this.addChild(treeView);
 ```
 
-Next, pass in a [collection](./data-collections.md) that defines the items to render.
+### Data provider
+
+To render some data in the tree view, pass in a [hierarchical collection](./data-collections.md#hierarchical-collections) that contains an object for each row.
 
 ```hx
 var collection = new ArrayHierarchicalCollection([
@@ -187,7 +189,7 @@ When the [`update()`](https://api.feathersui.com/current/feathers/utils/DisplayO
 - [`selected`](https://api.feathersui.com/current/feathers/data/TreeViewItemState.html#selected) is populated by comparing to [`selectedItem`](https://api.feathersui.com/current/feathers/controls/TreeView.html#selectedItem).
 - [`text`](https://api.feathersui.com/current/feathers/data/TreeViewItemState.html#text) is populated using [`itemToText()`](https://api.feathersui.com/current/feathers/controls/TreeView.html#itemToText)
 
-In this case, the value of [`text`](https://api.feathersui.com/current/feathers/data/TreeViewItemState.html#text) is displayed by the [`Label`](./label.md), and the `icon` field from [`data`](https://api.feathersui.com/current/feathers/data/TreeViewItemState.html#data) (remember the example item from above, with `name` and `icon` fields) is displayed by the [`AssetLoader`](./asset-loader.md). The values of [`branch`](https://api.feathersui.com/current/feathers/data/TreeViewItemState.html#branch) and [`opened`](https://api.feathersui.com/current/feathers/data/TreeViewItemState.html#opened) are used with a [`ToggleButton`](./toggle-button.md) to display whether a branch is opened or not. Obviously, we'll need an [`itemToText()`](https://api.feathersui.com/current/feathers/controls/ListView.html#itemToText) function to populate the [`text`](https://api.feathersui.com/current/feathers/data/ListViewItemState.html#text) value from the `name` field.
+In this case, the value of [`text`](https://api.feathersui.com/current/feathers/data/TreeViewItemState.html#text) is displayed by the [`Label`](./label.md), and the `icon` field from [`data`](https://api.feathersui.com/current/feathers/data/TreeViewItemState.html#data) (remember the example item from above, with `name` and `icon` fields) is displayed by the [`AssetLoader`](./asset-loader.md). The values of [`branch`](https://api.feathersui.com/current/feathers/data/TreeViewItemState.html#branch) and [`opened`](https://api.feathersui.com/current/feathers/data/TreeViewItemState.html#opened) are used with a [`ToggleButton`](./toggle-button.md) to display whether a branch is opened or not. Obviously, we'll need an [`itemToText()`](https://api.feathersui.com/current/feathers/controls/TreeView.html#itemToText) function to populate the [`text`](https://api.feathersui.com/current/feathers/data/TreeViewItemState.html#text) value from the `name` field.
 
 ```hx
 treeView.itemToText = function(item:Dynamic):String {

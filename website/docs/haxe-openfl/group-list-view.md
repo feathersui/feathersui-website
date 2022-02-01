@@ -19,7 +19,9 @@ var groupListView = new GroupListView();
 this.addChild(groupListView);
 ```
 
-Next, pass in a [collection](./data-collections.md) that defines the items to render.
+### Data provider
+
+To render some data in the group list view, pass in a [collection](./data-collections.md) that contains an object for each row.
 
 ```hx
 var collection = new ArrayHierarchicalCollection( [
@@ -179,7 +181,7 @@ When the [`update()`](https://api.feathersui.com/current/feathers/utils/DisplayO
 - [`text`](https://api.feathersui.com/current/feathers/data/GroupListViewItemState.html#text) is populated using [`itemToText()`](https://api.feathersui.com/current/feathers/controls/GroupListView.html#itemToText)
 - [`type`](https://api.feathersui.com/current/feathers/data/GroupListViewItemState.html#type) indicates if the item is a header or a standard item.
 
-In this case, the value of [`text`](https://api.feathersui.com/current/feathers/data/GroupListViewItemState.html#text) is displayed by the [`Label`](./label.md), and the `icon` field from [`data`](https://api.feathersui.com/current/feathers/data/GroupListViewItemState.html#data) (remember the example item from above, with `name` and `icon` fields) is displayed by the [`AssetLoader`](./asset-loader.md). Obviously, we'll need an [`itemToText()`](https://api.feathersui.com/current/feathers/controls/ListView.html#itemToText) function to populate the [`text`](https://api.feathersui.com/current/feathers/data/ListViewItemState.html#text) value from the `name` field.
+In this case, the value of [`text`](https://api.feathersui.com/current/feathers/data/GroupListViewItemState.html#text) is displayed by the [`Label`](./label.md), and the `icon` field from [`data`](https://api.feathersui.com/current/feathers/data/GroupListViewItemState.html#data) (remember the example item from above, with `name` and `icon` fields) is displayed by the [`AssetLoader`](./asset-loader.md). Obviously, we'll need an [`itemToText()`](https://api.feathersui.com/current/feathers/controls/GroupListView.html#itemToText) function to populate the [`text`](https://api.feathersui.com/current/feathers/data/GroupListViewItemState.html#text) value from the `name` field.
 
 ```hx
 groupListView.itemToText = function(item:Dynamic):String {

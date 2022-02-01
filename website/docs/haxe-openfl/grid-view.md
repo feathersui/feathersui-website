@@ -19,6 +19,8 @@ var gridView = new GridView();
 this.addChild(gridView);
 ```
 
+### Data provider and columns
+
 To render some data in the grid view, pass in a [collection](./data-collections.md) that contains an object for each row.
 
 ```hx
@@ -40,7 +42,7 @@ Next, define the columns in the grid view, so that it knows which fields from th
 { item: "Broccoli", dept: "Produce", price: "2.99" },
 ```
 
-The item has three fields, `item`, `dept`, and `price`. Create a [`GridViewColumn`](https://api.feathersui.com/current/feathers/controls/GridViewColumn.html) for each of the fields in a [collection](./data-collections.md), and pass them to the `columns` property.
+The item has three fields, `item`, `dept`, and `price`. Create a separate [`GridViewColumn`](https://api.feathersui.com/current/feathers/controls/GridViewColumn.html) for each of the fields in the item, and pass them to the [`columns`](https://api.feathersui.com/current/feathers/controls/GridView.html#columns) property.
 
 ```hx
 gridView.columns = new ArrayCollection([
@@ -106,7 +108,7 @@ gridView.dataProvider.removeAt(0);
 
 ## Cell renderers
 
-A _cell renderer_ is a Feathers UI component that displays one of the fields from a single row displayed in a [`GridView`](https://api.feathersui.com/current/feathers/controls/GridView.html) component. In other words, a [`GridView`](https://api.feathersui.com/current/feathers/controls/GridView.html) typically contains many cell renderers in a two-dimensional grid — with each one rendering a different field from each row in the collection.
+A _cell renderer_ is a Feathers UI component that displays one of the fields from a single row displayed in a [`GridView`](https://api.feathersui.com/current/feathers/controls/GridView.html) or [`TreeGridView`](https://api.feathersui.com/current/feathers/controls/TreeGridView.html) component. In other words, a [`GridView`](https://api.feathersui.com/current/feathers/controls/GridView.html) typically contains many cell renderers in a two-dimensional grid — with each one rendering a different field from each row in the collection.
 
 Feathers UI provides a default [`ItemRenderer`](./item-renderer.md) class, which can display data in many different ways that cover a variety of common use-cases. However, components like [`GridView`](https://api.feathersui.com/current/feathers/controls/GridView.html) also support [custom cell renderers](./custom-item-renderers.md), which allow developers to render the grid view's data in infinite unique ways.
 
@@ -116,7 +118,7 @@ Consider a collection of items with the following format.
 { item: "Gala Apple", dept: "Frozen", price: "3.99", icon: "https://example.com/img/pizza.png" }
 ```
 
-While the default [`ItemRenderer`](./item-renderer.md) class can easily display some text and an image, creating a custom item renderer for this simple data will be a good learning exercise.
+While the default [`ItemRenderer`](./item-renderer.md) class can easily display some text and an image, creating a custom cell renderer for this simple data will be a good learning exercise.
 
 A custom cell renderer designed to display this data might use a [`Label`](./label.md) to display one of the strings, and an [`AssetLoader`](./asset-loader.md) to display the image. The following example creates a [`DisplayObjectRecycler`](https://api.feathersui.com/current/feathers/utils/DisplayObjectRecycler.html) which instantiates these components and adds them to a [`LayoutGroupItemRenderer`](./layout-group-item-renderer.md) — a special base class for custom cell renderers.
 
@@ -146,7 +148,7 @@ var recycler = DisplayObjectRecycler.withFunction(() -> {
 
 > Developers are not required to use the [`LayoutGroupItemRenderer`](./layout-group-item-renderer.md) class. In fact, a custom cell renderer may be created from any OpenFL display object, including primitives like [`openfl.display.Sprite`](https://api.openfl.org/openfl/display/Sprite.html) and all other Feathers UI components.
 
-Both [`GridView`](https://api.feathersui.com/current/feathers/controls/GridView.html) and [`GridViewColumn`](https://api.feathersui.com/current/feathers/controls/GridViewColumn.html) define `cellRendererRecycler` properties. On [`GridViewColumn`](https://api.feathersui.com/current/feathers/controls/GridViewColumn.html), the [`cellRendererRecycler`](https://api.feathersui.com/current/feathers/controls/GridViewColumn.html#cellRendererRecycler) property may be used to customize the cell renderers in that specific column. On [`GridView`](https://api.feathersui.com/current/feathers/controls/GridView.html), the [`cellRendererRecycler`](https://api.feathersui.com/current/feathers/controls/GridView.html#cellRendererRecycler) property may be used to customize the default cell renderers used when a particular column doesn't have a default cell renderer.
+Both [`GridView`](https://api.feathersui.com/current/feathers/controls/GridView.html) and [`GridViewColumn`](https://api.feathersui.com/current/feathers/controls/GridViewColumn.html) define `cellRendererRecycler` properties. On [`GridViewColumn`](https://api.feathersui.com/current/feathers/controls/GridViewColumn.html), the [`cellRendererRecycler`](https://api.feathersui.com/current/feathers/controls/GridViewColumn.html#cellRendererRecycler) property may be used to customize the cell renderers in that specific column. On [`GridView`](https://api.feathersui.com/current/feathers/controls/GridView.html), the [`cellRendererRecycler`](https://api.feathersui.com/current/feathers/controls/GridView.html#cellRendererRecycler) property may be used to customize the default cell renderers used when a particular column doesn't have a specific cell renderer.
 
 ```hx
 var column = new GridViewColumn("Item", (data) -> data.item);
