@@ -10,6 +10,8 @@ The [`ComboBox`](https://api.feathersui.com/current/feathers/controls/ComboBox.h
 <figcaption>Live preview of the <a href="https://api.feathersui.com/current/feathers/controls/ComboBox.html"><code>ComboBox</code></a> component</figcaption>
 </figure>
 
+> ⚠️ **Beta Notice**: This component is still quite new to Feathers UI. It was included in the latest release because it should be stable enough for production use. However, some APIs may go through minor changes in upcoming releases — based on feedback from developers like you.
+
 ## The Basics
 
 Start by creating a [`ComboBox`](https://api.feathersui.com/current/feathers/controls/ComboBox.html) control, pass in a [collection](./data-collections.md) that defines the items to render, and add it to [the display list](https://books.openfl.org/openfl-developers-guide/display-programming/basics-of-display-programming.html).

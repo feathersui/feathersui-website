@@ -12,6 +12,8 @@ The [`DatePicker`](https://api.feathersui.com/current/feathers/controls/DatePick
 <figcaption>Live preview of the <a href="https://api.feathersui.com/current/feathers/controls/DatePicker.html"><code>DatePicker</code></a> component</figcaption>
 </figure>
 
+> ⚠️ **Beta Notice**: This component is still quite new to Feathers UI. It was included in the latest release because it should be stable enough for production use. However, some APIs may go through minor changes in upcoming releases — based on feedback from developers like you.
+
 ## The Basics
 
 Start by creating a [`DatePicker`](https://api.feathersui.com/current/feathers/controls/DatePicker.html) control, and add it to [the display list](https://books.openfl.org/openfl-developers-guide/display-programming/basics-of-display-programming.html).

@@ -9,6 +9,8 @@ Navigation can be enhanced with animation, called a _transition_. Feathers UI pr
 
 > [`RouterNavigator`](https://api.feathersui.com/current/feathers/controls/navigators/RouterNavigator.html) is designed for use in web browsers, but it is supported on all platform targets. If your app is not intended for deployment to the web, you might consider using [`StackNavigator`](./stack-navigator.md) instead, which offers more powerful features that are not supported by the HTML History API.
 
+> ⚠️ **Beta Notice**: This component is still quite new to Feathers UI. It was included in the latest release because it should be stable enough for production use. However, some APIs may go through minor changes in upcoming releases — based on feedback from developers like you.
+
 ## The Basics
 
 Start by creating a [`RouterNavigator`](https://api.feathersui.com/current/feathers/controls/navigators/RouterNavigator.html), and add it to [the display list](https://books.openfl.org/openfl-developers-guide/display-programming/basics-of-display-programming.html).

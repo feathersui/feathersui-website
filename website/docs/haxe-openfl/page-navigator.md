@@ -7,6 +7,8 @@ The [`PageNavigator`](https://api.feathersui.com/current/feathers/controls/navig
 
 Navigation can be enhanced with animation, called a _transition_. Feathers UI provides a number of [animated transitions](./navigator-transitions.md) out of the box, and a simple API allows anyone to create [custom transitions](./custom-navigator-transitions.md).
 
+> ⚠️ **Beta Notice**: This component is still quite new to Feathers UI. It was included in the latest release because it should be stable enough for production use. However, some APIs may go through minor changes in upcoming releases — based on feedback from developers like you.
+
 ## The Basics
 
 Start by creating a [`PageNavigator`](https://api.feathersui.com/current/feathers/controls/navigators/PageNavigator.html), and add it to [the display list](https://books.openfl.org/openfl-developers-guide/display-programming/basics-of-display-programming.html).
