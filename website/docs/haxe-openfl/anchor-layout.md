@@ -16,7 +16,7 @@ The [`AnchorLayout`](https://api.feathersui.com/current/feathers/layout/AnchorLa
 
 Create a [`LayoutGroup`](./layout-group.md) container, and add one or more children.
 
-```hx
+```haxe
 var container = new LayoutGroup();
 container.width = 300.0;
 container.height = 300.0;
@@ -29,13 +29,13 @@ container.addChild(child);
 
 Set the container's [`layout`](https://api.feathersui.com/current/feathers/layout/feathers/controls/LayoutGroup.html#layout) property to a new [`AnchorLayout`](https://api.feathersui.com/current/feathers/layout/AnchorLayout.html) instance.
 
-```hx
+```haxe
 container.layout = new AnchorLayout();
 ```
 
 Then, set the button's [`layoutData`](https://api.feathersui.com/current/feathers/core/ILayoutDisplayObject.html#layoutData) property to an [`AnchorLayoutData`](https://api.feathersui.com/current/feathers/layout/AnchorLayoutData.html) instance.
 
-```hx
+```haxe
 child.layoutData = new AnchorLayoutData();
 ```
 
@@ -52,7 +52,7 @@ To position a child in a container using [`AnchorLayout`](https://api.feathersui
 
 The following example positions a child `10.0` pixels from the top edge and `15.0` pixels from the left edge of the parent container.
 
-```hx
+```haxe
 var anchors = new AnchorLayoutData();
 anchors.top = 10.0;
 anchors.left = 15.0;
@@ -63,7 +63,7 @@ The example above is essentially no different than setting the child's `x` and `
 
 The next example positions the child from the bottom-right corner of the parent container instead.
 
-```hx
+```haxe
 var anchors = new AnchorLayoutData();
 anchors.bottom = 20.0;
 anchors.right = 10.0;
@@ -74,7 +74,7 @@ If the parent container resizes, the child will be repositioned so that it alway
 
 The next example anchors the child to both the left and right edges of the parent container.
 
-```hx
+```haxe
 var anchors = new AnchorLayoutData();
 anchors.left = 15.0;
 anchors.right = 15.0;
@@ -85,7 +85,7 @@ This sets both the `x` position and the `width` of the child. If the parent cont
 
 The next example positions the child in the center the parent container, with equal space on both the left and right sides.
 
-```hx
+```haxe
 var anchors = new AnchorLayoutData();
 anchors.horizontalCenter = 0.0;
 child.layoutData = anchors;
@@ -95,13 +95,13 @@ child.layoutData = anchors;
 
 Call [`AnchorLayoutData.center()`](https://api.feathersui.com/current/feathers/layout/AnchorLayoutData.html#center) to quickly center a child inside its parent container, both horizontally and vertically.
 
-```hx
+```haxe
 child.layoutData = AnchorLayoutData.center();
 ```
 
 This is equivalent to creating an [`AnchorLayoutData`](https://api.feathersui.com/current/feathers/layout/AnchorLayoutData.html) instance and setting the both [`horizontalCenter`](https://api.feathersui.com/current/feathers/layout/AnchorLayoutData.html#horizontalCenter) and [`verticalCenter`](https://api.feathersui.com/current/feathers/layout/AnchorLayoutData.html#verticalCenter) properties to `0.0`.
 
-```hx
+```haxe
 var layoutData = new AnchorLayoutData();
 layoutData.horizontalCenter = 0.0;
 layoutData.verticalCenter = 0.0;
@@ -112,13 +112,13 @@ child.layoutData = layoutData;
 
 Call [`AnchorLayoutData.fill()`](https://api.feathersui.com/current/feathers/layout/AnchorLayoutData.html#fill) to resize a child to fill the entire width and height of the parent container.
 
-```hx
+```haxe
 child.layoutData = AnchorLayoutData.fill();
 ```
 
 This is equivalent to creating an [`AnchorLayoutData`](https://api.feathersui.com/current/feathers/layout/AnchorLayoutData.html) instance and setting the [`top`](https://api.feathersui.com/current/feathers/layout/AnchorLayoutData.html#top), [`right`](https://api.feathersui.com/current/feathers/layout/AnchorLayoutData.html#right), [`bottom`](https://api.feathersui.com/current/feathers/layout/AnchorLayoutData.html#bottom), and [`left`](https://api.feathersui.com/current/feathers/layout/AnchorLayoutData.html#left) properties all to `0.0`.
 
-```hx
+```haxe
 var layoutData = new AnchorLayoutData();
 layoutData.top = 0.0;
 layoutData.right = 0.0;
@@ -129,7 +129,7 @@ child.layoutData = layoutData;
 
 To add some padding around the edges of the child, call [`AnchorLayoutData.fill()`](https://api.feathersui.com/current/feathers/layout/AnchorLayoutData.html#fill) with a numeric value, representing the number of pixels between the parent container and its child.
 
-```hx
+```haxe
 child.layoutData = AnchorLayoutData.fill(10.0);
 ```
 

@@ -14,7 +14,7 @@ The [`ToggleSwitch`](https://api.feathersui.com/current/feathers/controls/Toggle
 
 First, let's create an [`ToggleSwitch`](https://api.feathersui.com/current/feathers/controls/ToggleSwitch.html) control, update its selection, and add it to the [the display list](https://books.openfl.org/openfl-developers-guide/display-programming/basics-of-display-programming.html).
 
-```hx
+```haxe
 var toggle = new ToggleSwitch();
 toggle.selected = true;
 addChild(toggle);
@@ -24,13 +24,13 @@ The [`selected`](https://api.feathersui.com/current/feathers/controls/ToggleSwit
 
 [Add an event listener](https://books.openfl.org/openfl-developers-guide/handling-events/basics-of-handling-events.html) for [`Event.CHANGE`](https://api.openfl.org/openfl/events/Event.html#CHANGE) to perform an action when the [`selected`](https://api.feathersui.com/current/feathers/controls/ToggleSwitch.html#selected) property changes.
 
-```hx
+```haxe
 toggle.addEventListener(Event.CHANGE, toggleSwitch_changeHandler);
 ```
 
 Listeners for [`Event.CHANGE`](https://api.openfl.org/openfl/events/Event.html#CHANGE) have the following function signature.
 
-```hx
+```haxe
 function toggleSwitch_changeHandler(event:Event):Void {
     var toggle = cast(event.currentTarget, ToggleSwitch);
     trace("toggle.selected change: " + toggle.selected);
@@ -45,7 +45,7 @@ The skins for a [`ToggleSwitch`](https://api.feathersui.com/current/feathers/con
 
 Style a toggle switch's thumb using the [`thumbSkin`](https://api.feathersui.com/current/feathers/controls/ToggleSwitch.html#thumbSkin) property. The following example sets it to a [`CircleSkin`](https://api.feathersui.com/current/feathers/skins/CircleSkin.html) instance.
 
-```hx
+```haxe
 var thumbSkin = new CircleSkin();
 thumbSkin.border = SolidColor(1.0, 0x999999);
 thumbSkin.fill = SolidColor(0xcccccc);
@@ -64,7 +64,7 @@ The toggle switch automatically calculates its preferred size based on the initi
 
 Style a toggle switch's track using the [`trackSkin`](https://api.feathersui.com/current/feathers/controls/ToggleSwitch.html#trackSkin) property. The following example sets it to a [`RectangleSkin`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html) instance.
 
-```hx
+```haxe
 var trackSkin = new RectangleSkin();
 trackSkin.border = SolidColor(1.0, 0x999999);
 trackSkin.fill = SolidColor(0xcccccc);
@@ -77,7 +77,7 @@ By default, the [`trackSkin`](https://api.feathersui.com/current/feathers/contro
 
 To give the track different a appearance on each side of the thumb, set the optional [`secondaryTrackSkin`](https://api.feathersui.com/current/feathers/controls/ToggleSwitch.html#secondaryTrackSkin).
 
-```hx
+```haxe
 var trackSkin = new RectangleSkin();
 trackSkin.border = SolidColor(1.0, 0x999999);
 trackSkin.fill = SolidColor(0xccccff);

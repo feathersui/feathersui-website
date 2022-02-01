@@ -9,7 +9,7 @@ sidebar_label: Create a custom theme
 
 To start building a new theme from scratch, create a subclass of [`ClassVariantTheme`](https://api.feathersui.com/current/feathers/themes/ClassVariantTheme.html). This base class makes it easy to register a function that sets styles on a particular type of UI component.
 
-```hx
+```haxe
 package com.example;
 
 import feathers.themes.ClassVariantTheme;
@@ -31,7 +31,7 @@ class CustomTheme extends ClassVariantTheme {
 
 Typically, a theme will define a number of functions to style different types of UI components. For example, the following function might be used to set the default styles for all [`Button`](./button.md) components.
 
-```hx
+```haxe
 private function setButtonStyles(button:Button):Void {
     var backgroundSkin = new RectangleSkin();
     backgroundSkin.border = SolidColor(1.0, 0xff0000);
@@ -60,7 +60,7 @@ private function setButtonStyles(button:Button):Void {
 
 Inside the `initialize()` method of the theme class, register this function with the theme by adding the following call to [`setStyleFunction()`](https://api.feathersui.com/current/feathers/style/ClassVariantStyleProvider.html#setStyleFunction).
 
-```hx
+```haxe
 styleProvider.setStyleFunction(Button, null, setButtonStyles);
 ```
 
@@ -76,7 +76,7 @@ If a project uses the same type of UI component in multiple places, but differen
 
 Similar to above, here's another function that styles a [`Button`](./button.md) with fancier styles.
 
-```hx
+```haxe
 private function setFancyButtonStyles(button:Button):Void {
     var backgroundSkin = new RectangleSkin();
     backgroundSkin.cornerRadius = 10.0;
@@ -102,26 +102,26 @@ private function setFancyButtonStyles(button:Button):Void {
 
 The call to [`setStyleFunction()`](https://api.feathersui.com/current/feathers/style/ClassVariantStyleProvider.html#setStyleFunction) will look similar, but this time, it should include a variant string.
 
-```hx
+```haxe
 styleProvider.setStyleFunction(Button, "fancy-button", setFancyButtonStyles);
 ```
 
 This same string may be passed to the [`variant`](https://api.feathersui.com/current/feathers/core/FeathersControl.html#variant) property of an individual UI component.
 
-```hx
+```haxe
 var button = new Button();
 button.variant = "fancy-button";
 ```
 
 As a best practice, it's a good idea to define custom variants as constants in the theme class.
 
-```hx
+```haxe
 public static final VARIANT_FANCY_BUTTON:String = "fancy-button";
 ```
 
 Then, use the constant instead of the string value, for better compiler checking.
 
-```hx
+```haxe
 button.variant = CustomTheme.VARIANT_FANCY_BUTTON;
 ```
 

@@ -19,7 +19,7 @@ These primitives in OpenFL are combined in Feathers UI to create a set of flexib
 
 One of these core primitives is the [`openfl.display.Sprite`](https://api.openfl.org/openfl/display/Sprite.html) class, which provides vector drawing capabilities — plus the ability to behave as a container where you may add other display objects as children.
 
-```hx
+```haxe
 var sprite = new Sprite();
 sprite.graphics.beginFill(0xff0000);
 sprite.graphics.drawRoundRect(0.0, 0.0, 100.0, 25.0, 6.0);
@@ -33,7 +33,7 @@ The code above [draws a red rectangle](https://books.openfl.org/openfl-developer
 
 Another primitive offered by OpenFL is the [`openfl.text.TextField`](https://api.openfl.org/openfl/text/TextField.html) class, which is used for rendering text.
 
-```hx
+```haxe
 var textField = new TextField();
 textField.defaultTextFormat = new TextFormat("_sans", 20, 0xffffff);
 textField.text = "Hello OpenFL";
@@ -53,7 +53,7 @@ OpenFL dispatches events for user input from a variety of sources, including key
 
 To listen for keyboard events globally, [add an event listener](https://books.openfl.org/openfl-developers-guide/handling-events/basics-of-handling-events.html) for [`openfl.events.KeyboardEvent.KEY_DOWN`](https://api.openfl.org/openfl/events/KeyboardEvent.html#KEY_DOWN) to the OpenFL [`Stage`](https://api.openfl.org/openfl/display/Stage.html) object.
 
-```hx
+```haxe
 stage.addEventListener(KeyboardEvent.KEY_DOWN, (event:KeyboardEvent) -> {
     switch(event.keyCode) {
         case Keyboard.UP:
@@ -78,7 +78,7 @@ In many cases, a listener is also added for [`openfl.events.KeyboardEvent.KEY_UP
 
 To react when the user clicks a display object with the mouse, [add an event listener](https://books.openfl.org/openfl-developers-guide/handling-events/basics-of-handling-events.html) for [`openfl.events.MouseEvent.CLICK`](https://api.openfl.org/openfl/events/MouseEvent.html#CLICK).
 
-```hx
+```haxe
 sprite.addEventListener(MouseEvent.CLICK, (event:MouseEvent) -> {
     trace("clicked!");
 });
@@ -97,7 +97,7 @@ Several more commonly-used mouse events offer real-time access to the mouse posi
 
 To run some code when the user taps a display object on a mobile device's touchscreen, [add an event listener](https://books.openfl.org/openfl-developers-guide/handling-events/basics-of-handling-events.html) for [`openfl.events.TouchEvent.TOUCH_TAP`](https://api.openfl.org/openfl/events/TouchEvent.html#TOUCH_TAP).
 
-```hx
+```haxe
 sprite.addEventListener(TouchEvent.TOUCH_TAP, (event:TouchEvent) -> {
     trace("tapped! " + event.touchPointID);
 });
@@ -115,7 +115,7 @@ These events might be used to drag objects around or to create multitouch gestur
 
 One way that OpenFL provides to load data over the network is the [`openfl.net.URLLoader`](https://api.openfl.org/openfl/net/URLLoader.html) class, which can parse the returned data in multiple formats — including plaintext or binary.
 
-```hx
+```haxe
 var loader = new URLLoader();
 loader.load(new URLRequest("http://api.example.com/list"));
 ```
@@ -126,7 +126,7 @@ The example above loads text from an API server by passing a [`openfl.net.URLReq
 
 To determine when the data has completed loading successfully, [add an event listener](https://books.openfl.org/openfl-developers-guide/handling-events/basics-of-handling-events.html) for [`openfl.events.Event.COMPLETE`](https://api.openfl.org/openfl/events/Event.html#COMPLETE) to the [`URLLoader`](https://api.openfl.org/openfl/net/URLLoader.html).
 
-```hx
+```haxe
 loader.addEventListener(Event.COMPLETE, (event:Event) -> {
     var loader = cast(event.currentTarget, URLLoader);
     var data = Std.string(loader.data);
@@ -136,7 +136,7 @@ loader.addEventListener(Event.COMPLETE, (event:Event) -> {
 
 Listen for [`openfl.events.ProgressEvent.PROGRESS`](https://api.openfl.org/openfl/events/ProgressEvent.html#PROGRESS) to track how much data has loaded, and how much is still not available.
 
-```hx
+```haxe
 loader.addEventListener(ProgressEvent.PROGRESS, (event:ProgressEvent) -> {
     var loader = cast(event.currentTarget, URLLoader);
     var percent = 100.0 * loader.bytesLoaded / loader.bytesTotal;

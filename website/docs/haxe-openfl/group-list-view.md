@@ -14,7 +14,7 @@ The [`GroupListView`](https://api.feathersui.com/current/feathers/controls/Group
 
 Start by creating a [`GroupListView`](https://api.feathersui.com/current/feathers/controls/GroupListView.html) control, and add it to [the display list](https://books.openfl.org/openfl-developers-guide/display-programming/basics-of-display-programming.html).
 
-```hx
+```haxe
 var groupListView = new GroupListView();
 addChild(groupListView);
 ```
@@ -23,7 +23,7 @@ addChild(groupListView);
 
 To render some data in the group list view, pass in a [collection](./data-collections.md) that contains an object for each row.
 
-```hx
+```haxe
 var collection = new ArrayHierarchicalCollection( [
     {
         text: "Group A",
@@ -53,13 +53,13 @@ var collection = new ArrayHierarchicalCollection( [
 
 Set the collection's [`itemToChildren()`](https://api.feathersui.com/current/feathers/controls/ArrayHierarchicalCollection.html#itemToChildren) method to get the children from each branch that need to be rendered by the tree view.
 
-```hx
+```haxe
 collection.itemToChildren = (item:Dynamic) -> item.children;
 ```
 
 Set the [`itemToText()`](https://api.feathersui.com/current/feathers/controls/GroupListView.html#itemToText) method to get the text from each item from the collection.
 
-```hx
+```haxe
 groupListView.itemToText = (item:Dynamic) -> item.text;
 ```
 
@@ -69,13 +69,13 @@ groupListView.itemToText = (item:Dynamic) -> item.text;
 
 [Add an event listener](https://books.openfl.org/openfl-developers-guide/handling-events/basics-of-handling-events.html) for [`Event.CHANGE`](https://api.openfl.org/openfl/events/Event.html#CHANGE) to perform an action when the user selects a different item.
 
-```hx
+```haxe
 groupListView.addEventListener(Event.CHANGE, groupListView_changeHandler);
 ```
 
 Check for the new value of the [`selectedItem`](https://api.feathersui.com/current/feathers/controls/GroupListView.html#selectedItem) property in the listener.
 
-```hx
+```haxe
 function groupListView_changeHandler(event:Event):Void {
     var groupListView = cast(event.currentTarget, GroupListView);
     trace("GroupListView selectedItem change: " + groupListView.selectedItem.data.text);
@@ -84,7 +84,7 @@ function groupListView_changeHandler(event:Event):Void {
 
 Alternatively, the value of the [`selectedLocation`](https://api.feathersui.com/current/feathers/controls/GroupListView.html#selectedLocation) property references the location of the items in the group list view's collection as an `Array` of integers.
 
-```hx
+```haxe
 function groupListView_changeHandler(event:Event):Void {
     var groupListView = cast(event.currentTarget, GroupListView);
     trace("GroupListView selectedLocation change: " + groupListView.selectedLocation);
@@ -95,7 +95,7 @@ function groupListView_changeHandler(event:Event):Void {
 
 To add a new item at a specific location, pass an object to the data provider's [`addAt()`](https://api.feathersui.com/current/feathers/data/IHierarchicalCollection.html#addAt) method.
 
-```hx
+```haxe
 var newItem = { text: "New Item" };
 var newLocation = [2, 1];
 groupListView.dataProvider.addAt(newItem, newLocation);
@@ -105,7 +105,7 @@ In the example above, a new tab is added to the beginning.
 
 Similarly, to remove an item, call [`remove()`](https://api.feathersui.com/current/feathers/data/IHierarchicalCollection.html#remove) or [`removeAt()`](https://api.feathersui.com/current/feathers/data/IHierarchicalCollection.html#removeAt) on the collection.
 
-```hx
+```haxe
 var locationToRemove = [2, 1];
 groupListView.dataProvider.removeAt(locationToRemove);
 ```
@@ -118,7 +118,7 @@ Feathers UI provides a default [`ItemRenderer`](./item-renderer.md) class, which
 
 Consider a collection of items with the following format.
 
-```hx
+```haxe
 { name: "Pizza", icon: "https://example.com/img/pizza.png" }
 ```
 
@@ -126,7 +126,7 @@ While the default [`ItemRenderer`](./item-renderer.md) class can easily display 
 
 A custom item renderer designed to display this data might use a [`Label`](./label.md) to display the text, and an [`AssetLoader`](./asset-loader.md) to display the image. The following example creates a [`DisplayObjectRecycler`](https://api.feathersui.com/current/feathers/utils/DisplayObjectRecycler.html) which instantiates these components and adds them to a [`LayoutGroupItemRenderer`](./layout-group-item-renderer.md) — a special base class for custom item renderers.
 
-```hx
+```haxe
 var recycler = DisplayObjectRecycler.withFunction(() -> {
     var itemRenderer = new LayoutGroupItemRenderer();
 
@@ -154,13 +154,13 @@ var recycler = DisplayObjectRecycler.withFunction(() -> {
 
 Pass the [`DisplayObjectRecycler`](https://api.feathersui.com/current/feathers/utils/DisplayObjectRecycler.html) to the [`itemRendererRecycler`](https://api.feathersui.com/current/feathers/controls/GroupListView.html#itemRendererRecycler) property.
 
-```hx
+```haxe
 groupListView.itemRendererRecycler = recycler;
 ```
 
 So far, the [`DisplayObjectRecycler`](https://api.feathersui.com/current/feathers/utils/DisplayObjectRecycler.html) creates the item renderer, but it doesn't understand how to interpret the data yet. A custom [`update()`](https://api.feathersui.com/current/feathers/utils/DisplayObjectRecycler.html#update) method on the recycler can do that.
 
-```hx
+```haxe
 recycler.update = (itemRenderer:LayoutGroupItemRenderer, state:GroupListViewItemState) -> {
     var label = cast(itemRenderer.getChildByName("label"), Label);
     var loader = cast(itemRenderer.getChildByName("loader"), AssetLoader);
@@ -183,7 +183,7 @@ When the [`update()`](https://api.feathersui.com/current/feathers/utils/DisplayO
 
 In this case, the value of [`text`](https://api.feathersui.com/current/feathers/data/GroupListViewItemState.html#text) is displayed by the [`Label`](./label.md), and the `icon` field from [`data`](https://api.feathersui.com/current/feathers/data/GroupListViewItemState.html#data) (remember the example item from above, with `name` and `icon` fields) is displayed by the [`AssetLoader`](./asset-loader.md). Obviously, we'll need an [`itemToText()`](https://api.feathersui.com/current/feathers/controls/GroupListView.html#itemToText) function to populate the [`text`](https://api.feathersui.com/current/feathers/data/GroupListViewItemState.html#text) value from the `name` field.
 
-```hx
+```haxe
 groupListView.itemToText = function(item:Dynamic):String {
     return item.name;
 };
@@ -191,7 +191,7 @@ groupListView.itemToText = function(item:Dynamic):String {
 
 It's always a good practice to provide a [`reset()`](https://api.feathersui.com/current/feathers/utils/DisplayObjectRecycler.html) method to the [`DisplayObjectRecycler`](https://api.feathersui.com/current/feathers/utils/DisplayObjectRecycler.html), which will clean up a custom item renderer when it is no longer used by the [`GroupListView`](https://api.feathersui.com/current/feathers/controls/GroupListView.html).
 
-```hx
+```haxe
 recycler.reset = (itemRenderer:LayoutGroupItemRenderer, state:GroupListViewItemState) -> {
     var label = cast(itemRenderer.getChildByName("label"), Label);
     var loader = cast(itemRenderer.getChildByName("loader"), AssetLoader);
@@ -211,7 +211,7 @@ A number of styles may be customized on a [`GroupListView`](https://api.feathers
 
 Optionally give the group list view a background using the [`backgroundSkin`](https://api.feathersui.com/current/feathers/controls/supportClasses/BaseScrollContainer.html#backgroundSkin) property. The following example sets it to a [`RectangleSkin`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html) instance.
 
-```hx
+```haxe
 var skin = new RectangleSkin();
 skin.border = SolidColor(1.0, 0x999999);
 skin.fill = SolidColor(0xcccccc);
@@ -228,19 +228,19 @@ The group list view automatically calculates its preferred size based on the ini
 
 The appearance of the group list view's border or fill may be customized to change when the group list view is [disabled](https://api.feathersui.com/current/feathers/core/IUIControl.html#enabled). In the next example, setting the skin's [`disabledFill`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html#disabledFill) method makes it switch to a different fill when the group list view is disabled.
 
-```hx
+```haxe
 skin.disabledFill = SolidColor(0xffcccc);
 ```
 
 Similarly, use the skin's [`disabledBorder`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html#disabledBorder) property to change the border when disabled.
 
-```hx
+```haxe
 skin.disabledBorder = SolidColor(2.0, 0x999999);
 ```
 
 In the examples above, the group list view uses the same [`RectangleSkin`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html) for all states, and that skin listens for changes to the group list view's current state. Alternatively, the group list view's [`disabledBackgroundSkin`](https://api.feathersui.com/current/feathers/controls/supportClasses/BaseScrollContainer.html#disabledBackgroundSkin) method allows the group list view to display a completely different display object when it is disabled.
 
-```hx
+```haxe
 var defaultSkin = new RectangleSkin();
 // ... set border, fill, width, and height
 groupListView.backgroundSkin = defaultSkin;
@@ -256,7 +256,7 @@ In the example above, the group list view will have a separate skins when enable
 
 Set the group list view's [`layout`](https://api.feathersui.com/current/feathers/layout/feathers/controls/GroupListView.html#layout) property to change how its children are positioned and sized. By default, a list view uses [`VerticalListLayout`](./vertical-list-layout.md), but it may be changed to a different layout, if desired.
 
-```hx
+```haxe
 groupListView.layout = new HorizontalListLayout();
 ```
 
@@ -272,14 +272,14 @@ The scroll bars in a [`GroupListView`](https://api.feathersui.com/current/feathe
 
 Use the [`HScrollBar`](https://api.feathersui.com/current/feathers/controls/HScrollBar.html) and [`VScrollBar`](https://api.feathersui.com/current/feathers/controls/VScrollBar.html) classes in a [theme](./themes.md) to provide a function that globally styles all scroll bars in your project.
 
-```hx
+```haxe
 styleProvider.setStyleFunction(HScrollBar, null, setHScrollBarStyles);
 styleProvider.setStyleFunction(VScrollBar, null, setVScrollBarStyles);
 ```
 
 The functions should use the following signatures.
 
-```hx
+```haxe
 function setHScrollBarStyles(scrollBar:HScrollBar):Void {
     // ... set styles here
 });
@@ -293,7 +293,7 @@ function setVScrollBarStyles(scrollBar:VScrollBar):Void {
 
 The [`scrollBarXFactory`](https://api.feathersui.com/current/feathers/controls/supportClasses/BaseScrollContainer.html#scrollBarXFactory) and [`scrollBarYFactory`](https://api.feathersui.com/current/feathers/controls/supportClasses/BaseScrollContainer.html#scrollBarYFactory) properties may be used to customize the creation of an individual group list view's scroll bars.
 
-```hx
+```haxe
 groupListView.scrollBarXFactory = () -> {
     var scrollBar = new HScrollBar();
     // ... set styles here

@@ -31,7 +31,7 @@ In addition to the dependencies specified in the [Feathers UI installation instr
 
 To set the locations of various tools required to build Android apps, you need to run the following command:
 
-```hx
+```haxe
 openfl setup android
 ```
 

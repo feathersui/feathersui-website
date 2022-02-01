@@ -9,7 +9,7 @@ The [`PagedTiledRowsListLayout`](https://api.feathersui.com/current/feathers/lay
 
 Create a [`ListView`](./list-view.md) container, set its [data provider](./data-collections.md), and add it to [the display list](https://books.openfl.org/openfl-developers-guide/display-programming/basics-of-display-programming.html).
 
-```hx
+```haxe
 var container = new ListView();
 container.dataProvider = new ArrayCollection([
     {text: "A"},
@@ -29,7 +29,7 @@ The following sections will introduce a number of properties that may be used to
 
 When the number of rows exceeds the bounds of the parent container, a new page will be created, with rows again starting from the top-left corner of the page. Pages may be displayed either horizontally or vertically. Set the [`pageDirection`](https://api.feathersui.com/current/feathers/layout/PagedTiledRowsListLayout.html#pageDirection) property to change the direction where new pages are created.
 
-```hx
+```haxe
 layout.pageDirection = VERTICAL;
 ```
 
@@ -37,7 +37,7 @@ layout.pageDirection = VERTICAL;
 
 The _padding_ is the space around the edges of the container that will contain no children. Padding may be added on each side of a page, including [top](https://api.feathersui.com/current/feathers/layout/PagedTiledRowsListLayout.html#paddingTop), [right](https://api.feathersui.com/current/feathers/layout/PagedTiledRowsListLayout.html#paddingRight), [bottom](https://api.feathersui.com/current/feathers/layout/PagedTiledRowsListLayout.html#paddingBottom), and [left](https://api.feathersui.com/current/feathers/layout/PagedTiledRowsListLayout.html#paddingLeft).
 
-```hx
+```haxe
 layout.paddingTop = 10.0;
 layout.paddingRight = 15.0;
 layout.paddingBottom = 10.0;
@@ -46,21 +46,21 @@ layout.paddingLeft = 15.0;
 
 If all four padding properties should be set to the same value, call the [`setPadding()`](https://api.feathersui.com/current/feathers/layout/PagedTiledRowsListLayout.html#setPadding) method instead.
 
-```hx
+```haxe
 // sets top, right, bottom and left to the same value
 layout.setPadding(10.0);
 ```
 
 The _gap_ is the space between items, either horizontally or vertically. The [`horizontalGap`](https://api.feathersui.com/current/feathers/layout/PagedTiledRowsListLayout.html#horizontalGap) and [`verticalGap`](https://api.feathersui.com/current/feathers/layout/PagedTiledRowsListLayout.html#verticalGap) properties are measured in pixels.
 
-```hx
+```haxe
 layout.horizontalGap = 10.0;
 layout.verticalGap = 6.0;
 ```
 
 If both gap properties should be set to the same value, call the [`setGap()`](https://api.feathersui.com/current/feathers/layout/PagedTiledRowsListLayout.html#setGap) method instead.
 
-```hx
+```haxe
 // sets horizontal and vertical gaps to the same value
 layout.setGap(10.0);
 ```
@@ -71,7 +71,7 @@ The children of the container may be _aligned_ within each page's bounds.
 
 To align the children along the x-axis, set the [`horizontalAlign`](https://api.feathersui.com/current/feathers/layout/PagedTiledRowsListLayout.html#horizontalAlign) property.
 
-```hx
+```haxe
 layout.horizontalAlign = CENTER;
 ```
 
@@ -79,7 +79,7 @@ In the example above, the children are aligned to the [center](https://api.feath
 
 To align the children along the y-axis, set the [`verticalAlign`](https://api.feathersui.com/current/feathers/layout/PagedTiledRowsListLayout.html#verticalAlign) property.
 
-```hx
+```haxe
 layout.verticalAlign = MIDDLE;
 ```
 
@@ -89,7 +89,7 @@ In the example above, the children are aligned to the [middle](https://api.feath
 
 If the parent container does not have an explicit height value, the layout will calculate its ideal height automatically. To display a specific number of rows, regardless of the height of each row, set the [`requestedRowCount`](https://api.feathersui.com/current/feathers/layout/PagedTiledRowsListLayout.html#requestedRowCount) property.
 
-```hx
+```haxe
 layout.requestedRowCount = 4;
 ```
 
@@ -97,7 +97,7 @@ Additionally, the [`requestedMinRowCount`](https://api.feathersui.com/current/fe
 
 Similarly, it's possible to request a specific number of columns for the layout to display. Tell the layout to use three columns by setting the [`requestedColumnCount`](https://api.feathersui.com/current/feathers/layout/PagedTiledRowsListLayout.html#requestedColumnCount) property.
 
-```hx
+```haxe
 layout.requestedColumnCount = 3;
 ```
 

@@ -16,7 +16,7 @@ The [`ComboBox`](https://api.feathersui.com/current/feathers/controls/ComboBox.h
 
 Start by creating a [`ComboBox`](https://api.feathersui.com/current/feathers/controls/ComboBox.html) control, and add it to [the display list](https://books.openfl.org/openfl-developers-guide/display-programming/basics-of-display-programming.html).
 
-```hx
+```haxe
 var comboBox = new ComboBox();
 addChild(comboBox);
 ```
@@ -25,7 +25,7 @@ addChild(comboBox);
 
 To render some data in the combo box, pass in a [collection](./data-collections.md) that contains an object for each row.
 
-```hx
+```haxe
 comboBox.dataProvider = new ArrayCollection([
     { text: "A" },
     { text: "B" },
@@ -35,7 +35,7 @@ comboBox.dataProvider = new ArrayCollection([
 
 Set the [`itemToText()`](https://api.feathersui.com/current/feathers/controls/ComboBox.html#itemToText) method to get the text from each item to display in an item renderer.
 
-```hx
+```haxe
 comboBox.itemToText = function(item:Dynamic):String {
     return item.text;
 };
@@ -45,13 +45,13 @@ comboBox.itemToText = function(item:Dynamic):String {
 
 [Add an event listener](https://books.openfl.org/openfl-developers-guide/handling-events/basics-of-handling-events.html) for [`Event.CHANGE`](https://api.openfl.org/openfl/events/Event.html#CHANGE) to perform an action when the user selects a different item.
 
-```hx
+```haxe
 comboBox.addEventListener(Event.CHANGE, comboBox_changeHandler);
 ```
 
 Check for the new value of the [`selectedItem`](https://api.feathersui.com/current/feathers/controls/ComboBox.html#selectedItem) property in the listener.
 
-```hx
+```haxe
 function comboBox_changeHandler(event:Event):Void {
     var comboBox = cast(event.currentTarget, ComboBox);
     trace("ComboBox selectedItem change: " + comboBox.selectedItem.text);
@@ -60,7 +60,7 @@ function comboBox_changeHandler(event:Event):Void {
 
 Alternatively, the value of the [`selectedIndex`](https://api.feathersui.com/current/feathers/controls/ComboBox.html#selectedIndex) property references the index of the items in the combo box's collection, in the order that they were added.
 
-```hx
+```haxe
 function comboBox_changeHandler(event:Event):Void {
     var comboBox = cast(event.currentTarget, ComboBox);
     trace("ComboBox selectedIndex change: " + comboBox.selectedIndex);
@@ -71,14 +71,14 @@ function comboBox_changeHandler(event:Event):Void {
 
 To add a new item at the end, pass an object to the data provider's [`add()`](https://api.feathersui.com/current/feathers/data/IFlatCollection.html#add) method.
 
-```hx
+```haxe
 var newItem = { text: "New Item" };
 comboBox.dataProvider.add(newItem);
 ```
 
 To add a new item at a specific position, pass an object to the data provider's [`addAt()`](https://api.feathersui.com/current/feathers/data/IFlatCollection.html#addAt) method.
 
-```hx
+```haxe
 var newItem = { text: "First Item" };
 comboBox.dataProvider.addAt(newItem, 0);
 ```
@@ -87,7 +87,7 @@ In the example above, a new item is added to the beginning.
 
 Similarly, to remove an item, call [`remove()`](https://api.feathersui.com/current/feathers/data/IFlatCollection.html#remove) or [`removeAt()`](https://api.feathersui.com/current/feathers/data/IFlatCollection.html#removeAt) on the collection.
 
-```hx
+```haxe
 comboBox.dataProvider.removeAt(0);
 ```
 
@@ -105,7 +105,7 @@ The button in a [`ComboBox`](https://api.feathersui.com/current/feathers/control
 
 Use the [`ComboBox.CHILD_VARIANT_BUTTON`](https://api.feathersui.com/current/feathers/controls/ComboBox.html#CHILD_VARIANT_BUTTON) constant in a [theme](./themes.md) to provide a function that globally styles the buttons in all [`ComboBox`](https://api.feathersui.com/current/feathers/controls/ComboBox.html) components.
 
-```hx
+```haxe
 styleProvider.setStyleFunction(
     Button,
     ComboBox.CHILD_VARIANT_BUTTON,
@@ -114,7 +114,7 @@ styleProvider.setStyleFunction(
 
 The function should use the following signature.
 
-```hx
+```haxe
 function setComboBox_Button_Styles(button:Button):Void {
     // ... set styles here
 });
@@ -124,7 +124,7 @@ function setComboBox_Button_Styles(button:Button):Void {
 
 The [`buttonFactory`](https://api.feathersui.com/current/feathers/controls/ComboBox.html#buttonFactory) property may be used to customize the creation of an individual button.
 
-```hx
+```haxe
 comboBox.buttonFactory = () -> {
     var button = new Button();
     // ... set styles here
@@ -142,7 +142,7 @@ The text input in a [`ComboBox`](https://api.feathersui.com/current/feathers/con
 
 Use the [`ComboBox.CHILD_VARIANT_TEXT_INPUT`](https://api.feathersui.com/current/feathers/controls/ComboBox.html#CHILD_VARIANT_TEXT_INPUT) constant in a [theme](./themes.md) to provide a function that globally styles the text inputs in all [`ComboBox`](https://api.feathersui.com/current/feathers/controls/ComboBox.html) components.
 
-```hx
+```haxe
 styleProvider.setStyleFunction(
     TextInput,
     ComboBox.CHILD_VARIANT_TEXT_INPUT,
@@ -151,7 +151,7 @@ styleProvider.setStyleFunction(
 
 The function should use the following signature.
 
-```hx
+```haxe
 function setComboBox_TextInput_Styles(button:TextInput):Void {
     // ... set styles here
 });
@@ -161,7 +161,7 @@ function setComboBox_TextInput_Styles(button:TextInput):Void {
 
 The [`textInputFactory`](https://api.feathersui.com/current/feathers/controls/ComboBox.html#textInputFactory) property may be used to customize the creation of an individual text input.
 
-```hx
+```haxe
 comboBox.textInputFactory = () -> {
     var input = new TextInput();
     // ... set styles here
@@ -179,7 +179,7 @@ The list view in a [`ComboBox`](https://api.feathersui.com/current/feathers/cont
 
 Use the [`ComboBox.CHILD_VARIANT_LIST_VIEW`](https://api.feathersui.com/current/feathers/controls/ComboBox.html#CHILD_VARIANT_LIST_VIEW) constant in a [theme](./themes.md) to provide a function that globally styles the list views in all [`ComboBox`](https://api.feathersui.com/current/feathers/controls/ComboBox.html) components.
 
-```hx
+```haxe
 styleProvider.setStyleFunction(
     ListView,
     ComboBox.CHILD_VARIANT_LIST_VIEW,
@@ -188,7 +188,7 @@ styleProvider.setStyleFunction(
 
 The function should use the following signature.
 
-```hx
+```haxe
 function setComboBox_ListView_Styles(button:ListView):Void {
     // ... set styles here
 });
@@ -198,7 +198,7 @@ function setComboBox_ListView_Styles(button:ListView):Void {
 
 The [`listViewFactory`](https://api.feathersui.com/current/feathers/controls/ComboBox.html#listViewFactory) property may be used to customize the creation of an individual list view.
 
-```hx
+```haxe
 comboBox.listViewFactory = () -> {
     var listView = new ListView();
     // ... set styles here

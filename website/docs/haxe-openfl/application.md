@@ -11,7 +11,7 @@ The [`Application`](https://api.feathersui.com/current/feathers/controls/Applica
 
 Create a new class that extends [`Application`](https://api.feathersui.com/current/feathers/controls/Application.html).
 
-```hx
+```haxe
 import feathers.core.Application;
 
 class MyProject extends Application {

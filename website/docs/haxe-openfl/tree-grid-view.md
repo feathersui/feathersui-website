@@ -16,7 +16,7 @@ The [`TreeGridView`](https://api.feathersui.com/current/feathers/controls/TreeGr
 
 Start by creating a [`TreeGridView`](https://api.feathersui.com/current/feathers/controls/TreeGridView.html) control, and add it to [the display list](https://books.openfl.org/openfl-developers-guide/display-programming/basics-of-display-programming.html).
 
-```hx
+```haxe
 var treeGridView = new TreeGridView();
 addChild(treeGridView);
 ```
@@ -25,7 +25,7 @@ addChild(treeGridView);
 
 To render some data in the tree view, pass in a [hierarchical collection](./data-collections.md#hierarchical-collections) that contains an object for each row.
 
-```hx
+```haxe
 var collection = new ArrayHierarchicalCollection([
 {
   dept: "Bakery",
@@ -61,19 +61,19 @@ treeGridView.dataProvider = collection;
 
 Set the collection's [`itemToChildren()`](https://api.feathersui.com/current/feathers/controls/ArrayHierarchicalCollection.html#itemToChildren) method to get the children from each branch that need to be rendered by the tree grid view.
 
-```hx
+```haxe
 collection.itemToChildren = (item:Dynamic) -> item.children;
 ```
 
 Next, define the columns in the tree grid view, so that it knows which fields from the data provider's items to display. One of the items from the data provider appears below.
 
-```hx
+```haxe
 { item: "Broccoli", dept: "Produce", price: "2.99" }
 ```
 
 The item has three fields, `item`, `dept`, and `price`. Create a separate [`TreeGridViewColumn`](https://api.feathersui.com/current/feathers/controls/TreeGridViewColumn.html) for each of the fields in the item, and pass them to the [`columns`](https://api.feathersui.com/current/feathers/controls/TreeGridView.html#columns) property.
 
-```hx
+```haxe
 treeGridView.columns = new ArrayCollection([
     new TreeGridViewColumn("Item", (data) -> data.item),
     new TreeGridViewColumn("Department", (data) -> data.dept),
@@ -89,13 +89,13 @@ The first parameter of the [`TreeGridViewColumn`](https://api.feathersui.com/cur
 
 [Add an event listener](https://books.openfl.org/openfl-developers-guide/handling-events/basics-of-handling-events.html) for [`Event.CHANGE`](https://api.openfl.org/openfl/events/Event.html#CHANGE) to perform an action when the user selects a different item.
 
-```hx
+```haxe
 treeGridView.addEventListener(Event.CHANGE, treeGridView_changeHandler);
 ```
 
 Check for the new value of the [`selectedItem`](https://api.feathersui.com/current/feathers/controls/TreeGridView.html#selectedItem) property in the listener.
 
-```hx
+```haxe
 function treeGridView_changeHandler(event:Event):Void {
     var treeGridView = cast(event.currentTarget, TreeGridView);
     trace("TreeGridView selectedItem change: " + treeGridView.selectedItem.data.text);
@@ -104,7 +104,7 @@ function treeGridView_changeHandler(event:Event):Void {
 
 Alternatively, the value of the [`selectedLocation`](https://api.feathersui.com/current/feathers/controls/TreeGridView.html#selectedLocation) property references the location of the items in the tree view's collection as an `Array` of integers.
 
-```hx
+```haxe
 function treeGridView_changeHandler(event:Event):Void {
     var treeGridView = cast(event.currentTarget, TreeGridView);
     trace("TreeGridView selectedLocation change: " + treeGridView.selectedLocation);
@@ -115,7 +115,7 @@ function treeGridView_changeHandler(event:Event):Void {
 
 To add a new item at a specific location, pass an object to the data provider's [`addAt()`](https://api.feathersui.com/current/feathers/data/IHierarchicalCollection.html#addAt) method.
 
-```hx
+```haxe
 var newRow = { item: "Gala Apple", dept: "Produce", price: "1.00" };
 var newLocation = [3, 1];
 treeGridView.dataProvider.addAt(newRow, newLocation);
@@ -125,7 +125,7 @@ In the example above, a new tab is added to the beginning.
 
 Similarly, to remove an item, call [`remove()`](https://api.feathersui.com/current/feathers/data/IHierarchicalCollection.html#remove) or [`removeAt()`](https://api.feathersui.com/current/feathers/data/IHierarchicalCollection.html#removeAt) on the collection.
 
-```hx
+```haxe
 var locationToRemove = [3, 1];
 treeGridView.dataProvider.removeAt(locationToRemove);
 ```
@@ -138,7 +138,7 @@ Feathers UI provides a default [`HierarchicalItemRenderer`](./hierarchical-item-
 
 Consider a collection of items with the following format.
 
-```hx
+```haxe
 { item: "Gala Apple", dept: "Frozen", price: "3.99", icon: "https://example.com/img/pizza.png" }
 ```
 
@@ -146,7 +146,7 @@ While the default [`HierarchicalItemRenderer`](./hierarchical-item-renderer.md) 
 
 A custom cell renderer designed to display this data might use a [`Label`](./label.md) to display one of the strings, and an [`AssetLoader`](./asset-loader.md) to display the image. The following example creates a [`DisplayObjectRecycler`](https://api.feathersui.com/current/feathers/utils/DisplayObjectRecycler.html) which instantiates these components and adds them to a [`LayoutGroupItemRenderer`](./layout-group-item-renderer.md) — a special base class for custom cell renderers.
 
-```hx
+```haxe
 var recycler = DisplayObjectRecycler.withFunction(() -> {
     var cellRenderer = new LayoutGroupItemRenderer();
 
@@ -178,14 +178,14 @@ var recycler = DisplayObjectRecycler.withFunction(() -> {
 
 Both [`TreeGridView`](https://api.feathersui.com/current/feathers/controls/TreeGridView.html) and [`TreeGridViewColumn`](https://api.feathersui.com/current/feathers/controls/TreeGridViewColumn.html) define `cellRendererRecycler` properties. On [`TreeGridViewColumn`](https://api.feathersui.com/current/feathers/controls/TreeGridViewColumn.html), the [`cellRendererRecycler`](https://api.feathersui.com/current/feathers/controls/TreeGridViewColumn.html#cellRendererRecycler) property may be used to customize the cell renderers in that specific column. On [`TreeGridView`](https://api.feathersui.com/current/feathers/controls/TreeGridView.html), the [`cellRendererRecycler`](https://api.feathersui.com/current/feathers/controls/TreeGridView.html#cellRendererRecycler) property may be used to customize the default cell renderers used when a particular column doesn't have a specific cell renderer.
 
-```hx
+```haxe
 var column = new TreeGridViewColumn("Item", (data) -> data.item);
 column.cellRendererRecycler = recycler;
 ```
 
 So far, the [`DisplayObjectRecycler`](https://api.feathersui.com/current/feathers/utils/DisplayObjectRecycler.html) creates the cell renderer, but it doesn't understand how to interpret the data yet. A custom [`update()`](https://api.feathersui.com/current/feathers/utils/DisplayObjectRecycler.html#update) method on the recycler can do that.
 
-```hx
+```haxe
 recycler.update = (cellRenderer:LayoutGroupItemRenderer, state:TreeGridViewCellState) -> {
     var openedToggle = cast(cellRenderer.getChildByName("openedToggle"), ToggleButton);
     var label = cast(cellRenderer.getChildByName("label"), Label);
@@ -239,7 +239,7 @@ A number of styles may be customized on a [`TreeGridView`](https://api.feathersu
 
 Optionally give the tree grid view a background using the [`backgroundSkin`](https://api.feathersui.com/current/feathers/controls/supportClasses/BaseScrollContainer.html#backgroundSkin) property. The following example sets it to a [`RectangleSkin`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html) instance.
 
-```hx
+```haxe
 var skin = new RectangleSkin();
 skin.border = SolidColor(1.0, 0x999999);
 skin.fill = SolidColor(0xcccccc);
@@ -256,19 +256,19 @@ The grid view automatically calculates its preferred size based on the initial d
 
 The appearance of the grid view's border or fill may be customized to change when the tree grid view is [disabled](https://api.feathersui.com/current/feathers/core/IUIControl.html#enabled). In the next example, setting the skin's [`disabledFill`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html#disabledFill) method makes it switch to a different fill when the tree grid view is disabled.
 
-```hx
+```haxe
 skin.disabledFill = SolidColor(0xffcccc);
 ```
 
 Similarly, use the skin's [`disabledBorder`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html#disabledBorder) property to change the border when disabled.
 
-```hx
+```haxe
 skin.disabledBorder = SolidColor(2.0, 0x999999);
 ```
 
 In the examples above, the tree grid view uses the same [`RectangleSkin`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html) for all states, and that skin listens for changes to the grid view's current state. Alternatively, the tree grid view's [`disabledBackgroundSkin`](https://api.feathersui.com/current/feathers/controls/supportClasses/BaseScrollContainer.html#disabledBackgroundSkin) method allows the tree grid view to display a completely different display object when it is disabled.
 
-```hx
+```haxe
 var defaultSkin = new RectangleSkin();
 // ... set border, fill, width, and height
 treeGridView.backgroundSkin = defaultSkin;
@@ -290,14 +290,14 @@ The scroll bars in a [`TreeGridView`](https://api.feathersui.com/current/feather
 
 Use the [`HScrollBar`](https://api.feathersui.com/current/feathers/controls/HScrollBar.html) and [`VScrollBar`](https://api.feathersui.com/current/feathers/controls/VScrollBar.html) classes in a [theme](./themes.md) to provide a function that globally styles all scroll bars in your project.
 
-```hx
+```haxe
 styleProvider.setStyleFunction(HScrollBar, null, setHScrollBarStyles);
 styleProvider.setStyleFunction(VScrollBar, null, setVScrollBarStyles);
 ```
 
 The functions should use the following signatures.
 
-```hx
+```haxe
 function setHScrollBarStyles(scrollBar:HScrollBar):Void {
     // ... set styles here
 });
@@ -311,7 +311,7 @@ function setVScrollBarStyles(scrollBar:VScrollBar):Void {
 
 The [`scrollBarXFactory`](https://api.feathersui.com/current/feathers/controls/supportClasses/BaseScrollContainer.html#scrollBarXFactory) and [`scrollBarYFactory`](https://api.feathersui.com/current/feathers/controls/supportClasses/BaseScrollContainer.html#scrollBarYFactory) properties may be used to customize the creation of an individual tree grid view's scroll bars.
 
-```hx
+```haxe
 treeGridView.scrollBarXFactory = () -> {
     var scrollBar = new HScrollBar();
     // ... set styles here

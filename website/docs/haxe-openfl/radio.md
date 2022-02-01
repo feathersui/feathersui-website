@@ -14,36 +14,36 @@ The [`Radio`](https://api.feathersui.com/current/feathers/controls/Radio.html) c
 
 Start by creating some [`Radio`](https://api.feathersui.com/current/feathers/controls/Radio.html) controls, give them some text to display, add them to a [`ToggleGroup`](https://api.feathersui.com/current/feathers/controls/ToggleGroup.html), and add them to the [the display list](https://books.openfl.org/openfl-developers-guide/display-programming/basics-of-display-programming.html).
 
-```hx
+```haxe
 var group = new ToggleGroup();
 
 var radio1 = new Radio();
 radio1.text = "One";
 radio1.toggleGroup = group;
-this.addChild(radio1);
+addChild(radio1);
 
 var radio2 = new Radio();
 radio2.text = "Two";
 radio2.toggleGroup = group;
-this.addChild(radio2);
+addChild(radio2);
 
 var radio3 = new Radio();
 radio3.text = "Three";
 radio3.toggleGroup = group;
-this.addChild(radio3);
+addChild(radio3);
 ```
 
 Simply pass the [`ToggleGroup`](https://api.feathersui.com/current/feathers/controls/ToggleGroup.html) instance to the [`toggleGroup`](https://api.feathersui.com/current/feathers/controls/Radio.html#toggleGroup) property of each [`Radio`](https://api.feathersui.com/current/feathers/controls/Radio.html) instance.
 
 [Add an event listener](https://books.openfl.org/openfl-developers-guide/handling-events/basics-of-handling-events.html) for [`Event.CHANGE`](https://api.openfl.org/openfl/events/Event.html#CHANGE) to perform an action when the user selects a different radio.
 
-```hx
+```haxe
 group.addEventListener(Event.CHANGE, toggleGroup_changeHandler);
 ```
 
 Check for the new value of the [`selectedItem`](https://api.feathersui.com/current/feathers/core/ToggleGroup.html#selectedItem) property in the listener.
 
-```hx
+```haxe
 function toggleGroup_changeHandler(event:Event):Void {
     var group = cast(event.currentTarget, ToggleGroup);
     var radio = cast(group.selectedItem, Radio);
@@ -53,7 +53,7 @@ function toggleGroup_changeHandler(event:Event):Void {
 
 Alternatively, the value of the [`selectedIndex`](https://api.feathersui.com/current/feathers/core/ToggleGroup.html#selectedIndex) property references the index of the items in the group, in the order that they were added.
 
-```hx
+```haxe
 function toggleGroup_changeHandler(event:Event):Void {
     var group = cast(event.currentTarget, ToggleGroup);
     trace("group.selectedIndex change: " + group.selectedIndex);
@@ -81,19 +81,19 @@ A number of styles may be customized on a [`Radio`](https://api.feathersui.com/c
 
 The font styles of the radio's text may be customized by passing an [`openfl.text.TextFormat`](https://api.openfl.org/openfl/text/TextFormat.html) object to the [`textFormat`](https://api.feathersui.com/current/feathers/controls/ToggleButton.html#textFormat) property.
 
-```hx
+```haxe
 radio.textFormat = new TextFormat("Helvetica", 20, 0x3c3c3c);
 ```
 
 If the radio's text should use different font styles when the radio is selected, pass a [`TextFormat`](https://api.openfl.org/openfl/text/TextFormat.html) to the [`selectedTextFormat`](https://api.feathersui.com/current/feathers/controls/ToggleButton.html#selectedTextFormat) property.
 
-```hx
+```haxe
 radio.selectedTextFormat = new TextFormat("Helvetica", 20, 0x9a9a9a, true);
 ```
 
 Finally, the radio's text may use different font styles in a more fine-grained matter — by targeting an exact state. Use the [`setTextFormatForState()`](https://api.feathersui.com/current/feathers/controls/ToggleButton.html#setTextFormatForState) method to pass in a state value and a [`TextFormat`](https://api.openfl.org/openfl/text/TextFormat.html).
 
-```hx
+```haxe
 radio.setTextFormatForState(ToggleButtonState.DISABLED(false), new TextFormat("Helvetica", 20, 0xcc0000));
 ```
 
@@ -105,7 +105,7 @@ When font styles aren't available for a specific state, the radio will use the d
 
 Give the radio an icon using the [`icon`](https://api.feathersui.com/current/feathers/controls/ToggleButton.html#icon) property. The following example sets it to an OpenFL [`Shape`](https://api.openfl.org/openfl/display/Shape.html) instance.
 
-```hx
+```haxe
 var icon = new Shape();
 icon.lineStyle(1.0, 0x999999);
 icon.beginFill(0xcccccc);
@@ -116,7 +116,7 @@ radio.icon = icon;
 
 The appearance of the radio's icon may change when the radio is selected. In the next example, the another OpenFL [`Shape`](https://api.openfl.org/openfl/display/Shape.html) is passed to the radio's [`selectedIcon`](https://api.feathersui.com/current/feathers/controls/ToggleButton.html#selectedIcon) property.
 
-```hx
+```haxe
 var selectedIcon = new Shape();
 selectedIcon.lineStyle(1.0, 0x999999);
 selectedIcon.beginFill(0xcccccc);
@@ -131,7 +131,7 @@ radio.selectedIcon = selectedIcon;
 
 The icon may be customized for an exact state too. In the next example, the [`setIconForState()`](https://api.feathersui.com/current/feathers/controls/ToggleButton.html#setIconForState) method is called to pass in a custom icon for the [`DOWN(false)`](https://api.feathersui.com/current/feathers/controls/ToggleButtonState.html#DOWN) state.
 
-```hx
+```haxe
 var downIcon = new Shape();
 downIcon.lineStyle(1.0, 0x999999);
 downIcon.beginFill(0xccccdd);
@@ -144,7 +144,7 @@ radio.setIconForState(ToggleButtonState.DOWN(false), downIcon);
 
 Padding may be added on each side of the radio, including [top](https://api.feathersui.com/current/feathers/controls/ToggleButton.html#paddingTop), [right](https://api.feathersui.com/current/feathers/controls/ToggleButton.html#paddingRight), [bottom](https://api.feathersui.com/current/feathers/controls/ToggleButton.html#paddingBottom), and [left](https://api.feathersui.com/current/feathers/controls/ToggleButton.html#paddingLeft).
 
-```hx
+```haxe
 radio.paddingTop = 5.0;
 radio.paddingRight = 8.0;
 radio.paddingBottom = 5.0;
@@ -153,7 +153,7 @@ radio.paddingLeft = 8.0;
 
 The icon may be positioned on any side of the radio's text. For instance, the following example moves the icon above the text, so that the icon and text are stacked vertically.
 
-```hx
+```haxe
 radio.iconPosition = TOP;
 ```
 
@@ -161,13 +161,13 @@ Set the [`iconPosition`](https://api.feathersui.com/current/feathers/controls/To
 
 The [`gap`](https://api.feathersui.com/current/feathers/controls/ToggleButton.html#gap) refers to the space, measured in pixels, between the icon and the text.
 
-```hx
+```haxe
 radio.gap = 10.0;
 ```
 
 The [`horizontalAlign`](https://api.feathersui.com/current/feathers/controls/ToggleButton.html#horizontalAlign) and [`verticalAlign`](https://api.feathersui.com/current/feathers/controls/ToggleButton.html#verticalAlign) properties will adjust the alignment of the icon and text inside the radio, allowing you to anchor them at the edges or in the center.
 
-```hx
+```haxe
 radio.horizontalAlign = CENTER;
 radio.verticalAlign = MIDDLE;
 ```

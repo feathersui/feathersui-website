@@ -9,7 +9,7 @@ sidebar_label: Custom programmatic skins
 
 To create a custom programmatic skin, subclass [`ProgrammaticSkin`](https://api.feathersui.com/current/feathers/skins/ProgrammaticSkin.html) and override its `update()` method.
 
-```hx
+```haxe
 class CustomSkin extends ProgrammaticSkin {
     public function new() {
         super();
@@ -23,7 +23,7 @@ class CustomSkin extends ProgrammaticSkin {
 
 Inside the `update()` method, draw vector graphics or add/update children to achieve the requirements of the design.
 
-```hx
+```haxe
 override private function update():Void {
     graphics.clear();
     graphics.lineStyle(10.0, 0xff6666);

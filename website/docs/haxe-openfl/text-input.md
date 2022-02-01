@@ -16,26 +16,26 @@ The [`TextInput`](https://api.feathersui.com/current/feathers/controls/TextInput
 
 Create a [`TextInput`](https://api.feathersui.com/current/feathers/controls/TextInput.html) control and add it to the [the display list](https://books.openfl.org/openfl-developers-guide/display-programming/basics-of-display-programming.html).
 
-```hx
+```haxe
 var input = new TextInput();
 addChild(input);
 ```
 
 Text may be changed programatically by setting the [`text`](https://api.feathersui.com/current/feathers/controls/TextInput.html#text) property.
 
-```hx
+```haxe
 input.text = "Matt Murdock";
 ```
 
 [Add an event listener](https://books.openfl.org/openfl-developers-guide/handling-events/basics-of-handling-events.html) for [`Event.CHANGE`](https://api.openfl.org/openfl/events/Event.html#CHANGE) to perform an action when the user edits the text.
 
-```hx
+```haxe
 input.addEventListener(Event.CHANGE, textInput_changeHandler);
 ```
 
 Check for the new value of the [`text`](https://api.feathersui.com/current/feathers/controls/TextInput.html#text) property in the listener function.
 
-```hx
+```haxe
 function textInput_changeHandler(event:Event):Void {
     var input = cast(event.currentTarget, TextInput);
     trace("text input change: " + input.text);
@@ -61,13 +61,13 @@ A number of styles may be customized on a [`TextInput`](https://api.feathersui.c
 
 The font styles of the text input's text may be customized by passing an [`openfl.text.TextFormat`](https://api.openfl.org/openfl/text/TextFormat.html) object to the [`textFormat`](https://api.feathersui.com/current/feathers/controls/TextInput.html#textFormat) property.
 
-```hx
+```haxe
 input.textFormat = new TextFormat("Helvetica", 20, 0x3c3c3c);
 ```
 
 If the text input's text should use different font styles when the text input is in different states, pass a [`TextFormat`](https://api.openfl.org/openfl/text/TextFormat.html) and state value to the [`setTextFormatForState()`](https://api.feathersui.com/current/feathers/controls/TextInput.html#setTextFormatForState) method.
 
-```hx
+```haxe
 input.setTextFormatForState(TextInputState.FOCUSED, new TextFormat("Helvetica", 20, 0xcc0000));
 ```
 
@@ -79,7 +79,7 @@ When font styles aren't available for a specific state, the text input will use 
 
 Give the text input a background using the [`backgroundSkin`](https://api.feathersui.com/current/feathers/controls/TextInput.html#backgroundSkin) property. The following example sets it to a [`RectangleSkin`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html) instance.
 
-```hx
+```haxe
 var skin = new RectangleSkin();
 skin.border = SolidColor(1.0, 0x999999);
 skin.fill = SolidColor(0xcccccc);
@@ -96,19 +96,19 @@ The text input automatically calculates its preferred size based on the initial 
 
 The appearance of the text input's border or fill may be customized to change based on the text input's current state, such as when the text input receives focus, there is an error string, or the text input is disabled. In the next example, a call to the skin's [`setFillForState()`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html#setFillForState) method makes it switch to a different fill when the text input's [`FOCUSED`](https://api.feathersui.com/current/feathers/controls/TextInputState.html#FOCUSED) state is active.
 
-```hx
+```haxe
 skin.setFillForState(TextInputState.FOCUSED, SolidColor(0xffcccc));
 ```
 
 Similarly, use the skin's [`setBorderForState()`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html#setBorderForState) method to change the border for a specific state.
 
-```hx
+```haxe
 skin.setBorderForState(TextInputState.FOCUSED, SolidColor(2.0, 0x999999));
 ```
 
 In the examples above, the text input uses the same [`RectangleSkin`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html) for all states, and that skin listens for changes to the text input's current state. Alternatively, the text input's [`setSkinForState()`](https://api.feathersui.com/current/feathers/controls/TextInput.html#setSkinForState) method allows the text input to display a completely different display object when its current state changes.
 
-```hx
+```haxe
 var defaultSkin = new RectangleSkin();
 // ... set border, fill, width, and height
 input.backgroundSkin = defaultSkin;

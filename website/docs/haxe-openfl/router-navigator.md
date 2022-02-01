@@ -15,14 +15,14 @@ Navigation can be enhanced with animation, called a _transition_. Feathers UI pr
 
 Start by creating a [`RouterNavigator`](https://api.feathersui.com/current/feathers/controls/navigators/RouterNavigator.html), and add it to [the display list](https://books.openfl.org/openfl-developers-guide/display-programming/basics-of-display-programming.html).
 
-```hx
+```haxe
 var navigator = new RouterNavigator();
 addChild(navigator);
 ```
 
 A view can be a Feathers UI component or any OpenFL display object. The following example creates a simple view with a [label](./label.md).
 
-```hx
+```haxe
 class HelloView extends LayoutGroup {
     public function new() {
         super();
@@ -36,7 +36,7 @@ class HelloView extends LayoutGroup {
 
 To add a new view that the navigator can show, create a [`Route`](https://api.feathersui.com/current/feathers/controls/navigators/Route.html) and pass it to the navigator's [`addRoute()`](https://api.feathersui.com/current/feathers/controls/navigators/RouterNavigator.html#addRoute) method.
 
-```hx
+```haxe
 var route = Route.withClass("/", HelloView);
 navigator.addRoute(route);
 ```
@@ -65,7 +65,7 @@ In a [`RouterNavigator`](https://api.feathersui.com/current/feathers/controls/na
 
 Navigation may be triggered progammatically by calling functions like [`push()`](https://api.feathersui.com/current/feathers/controls/navigators/RouterNavigator.html#push) and [`goBack()`](https://api.feathersui.com/current/feathers/controls/navigators/RouterNavigator.html#goBack) on the navigator.
 
-```hx
+```haxe
 navigator.push("/users/list");
 ```
 
@@ -77,7 +77,7 @@ The navigator can [listen for events](https://books.openfl.org/openfl-developers
 
 Consider the following two views, `ViewA` and `ViewB`.
 
-```hx
+```haxe
 class ViewA extends LayoutGroup {
     public static final PATHNAME = "/";
 
@@ -103,7 +103,7 @@ class ViewA extends LayoutGroup {
 
 `ViewA` displays a label with the text "A" and a button with the text "Push B". When the button is triggered, `ViewA` dispatches `Event.CHANGE`. The pathname of `ViewA` is `/`.
 
-```hx
+```haxe
 class ViewB extends LayoutGroup {
     public static final PATHNAME = "/b";
 
@@ -131,7 +131,7 @@ class ViewB extends LayoutGroup {
 
 In the next example, the two views are added to the navigator using their pathnames.
 
-```hx
+```haxe
 var routeA = Route.withClass(ViewA.PATHNAME, ViewA, [
     Event.CHANGE => Push(ViewB.PATHNAME)
 ]);
@@ -159,7 +159,7 @@ Similarly, when `ViewB` dispatches `Event.COMPLETE`, the navigator will create a
 >
 > Regardless, [`RouterNavigator`](https://api.feathersui.com/current/feathers/controls/navigators/RouterNavigator.html) is capable of using a [`GoBack()`](https://api.feathersui.com/current/feathers/controls/navigators/RouterAction.html#GoBack) action, if desired:
 >
-> ```hx
+> ```haxe
 > Route.withClass(ViewB.PATHNAME, ViewB, [
 >     Event.COMPLETE => GoBack()
 > ]);

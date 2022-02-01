@@ -14,7 +14,7 @@ The [`TextCallout`](https://api.feathersui.com/current/feathers/controls/TextCal
 
 To create a `TextCallout` component, call the static function [`TextCallout.show()`](https://api.feathersui.com/current/feathers/controls/TextCallout.html#show). In the following example, a text callout will be opened after triggering a [button](./button.md).
 
-```hx
+```haxe
 var button = new Button();
 button.text = "Click Me";
 addChild(button);
@@ -41,19 +41,19 @@ The [`RelativePosition`](https://api.feathersui.com/current/feathers/layout/Rela
 
 To always position the callout on the same side of its origin, pass that position to [`TextCallout.show()`](https://api.feathersui.com/current/feathers/controls/TextCallout.html#show).
 
-```hx
+```haxe
 TextCallout.show("Hello", origin, BOTTOM);
 ```
 
 To allow a callout to be positioned on more than one side of its origin, pass in an array of positions to [`TextCallout.show()`](https://api.feathersui.com/current/feathers/controls/TextCallout.html#show).
 
-```hx
+```haxe
 TextCallout.show("Hello", origin, [BOTTOM, TOP]);
 ```
 
 To use the default set of positions, omit the argument or pass in `null`.
 
-```hx
+```haxe
 TextCallout.show("Hello", origin, null);
 ```
 
@@ -63,7 +63,7 @@ The fourth argument passed to [`TextCallout.show()`](https://api.feathersui.com/
 
 Callouts are modal by default. To open a callout that is not modal, pass in a value of `false`.
 
-```hx
+```haxe
 TextCallout.show("Hello", origin, null, false);
 ```
 
@@ -75,7 +75,7 @@ A number of styles may be customized on a [`Callout`](https://api.feathersui.com
 
 Optionally give the callout a background using the [`backgroundSkin`](https://api.feathersui.com/current/feathers/controls/Callout.html#backgroundSkin) property. The following example sets it to a [`RectangleSkin`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html) instance.
 
-```hx
+```haxe
 var skin = new RectangleSkin();
 skin.border = SolidColor(1.0, 0x999999);
 skin.fill = SolidColor(0xcccccc);
@@ -94,7 +94,7 @@ The callout automatically calculates its preferred size based on the initial dim
 
 Callouts may include an arrow that points to the origin. Depending on the [position](#position) of the callout, the arrow may be on any of the callout's four sides.
 
-```hx
+```haxe
 var skin = new TriangleSkin();
 skin.border = SolidColor(1.0, 0x999999);
 skin.fill = SolidColor(0xcccccc);
@@ -111,7 +111,7 @@ If you know that the callout will always open in one position, you can provide a
 
 Padding may be added on each side of the callout's text, including [top](https://api.feathersui.com/current/feathers/controls/Callout.html#paddingTop), [right](https://api.feathersui.com/current/feathers/controls/Callout.html#paddingRight), [bottom](https://api.feathersui.com/current/feathers/controls/Callout.html#paddingBottom), and [left](https://api.feathersui.com/current/feathers/controls/Callout.html#paddingLeft).
 
-```hx
+```haxe
 callout.paddingTop = 6.0;
 callout.paddingRight = 6.0;
 callout.paddingBottom = 6.0;
@@ -120,7 +120,7 @@ callout.paddingLeft = 6.0;
 
 Margins may be added on each side of the callout, which will prevent the callout from being positioned too closely near the edge of the OpenFL stage. Margins are available on all sides, including [top](https://api.feathersui.com/current/feathers/controls/Callout.html#marginTop), [right](https://api.feathersui.com/current/feathers/controls/Callout.html#marginRight), [bottom](https://api.feathersui.com/current/feathers/controls/Callout.html#marginBottom), and [left](https://api.feathersui.com/current/feathers/controls/Callout.html#marginLeft).
 
-```hx
+```haxe
 callout.marginTop = 20.0;
 callout.marginRight = 20.0;
 callout.marginBottom = 20.0;

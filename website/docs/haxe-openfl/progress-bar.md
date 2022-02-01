@@ -16,7 +16,7 @@ The [`HProgressBar`](https://api.feathersui.com/current/feathers/controls/HProgr
 
 First, let's create an [`HProgressBar`](https://api.feathersui.com/current/feathers/controls/HProgressBar.html) control, set up its range of values, and add it to the [the display list](https://books.openfl.org/openfl-developers-guide/display-programming/basics-of-display-programming.html).
 
-```hx
+```haxe
 var progressBar = new HProgressBar();
 progressBar.minimum = 0.0;
 progressBar.maximum = 100.0;
@@ -34,7 +34,7 @@ The skins for the [`HProgressBar`](https://api.feathersui.com/current/feathers/c
 
 Give the progress bar a background using the [`backgroundSkin`](https://api.feathersui.com/current/feathers/controls/supportClasses/BaseProgressBar.html#backgroundSkin) property. The following example sets it to a [`RectangleSkin`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html) instance.
 
-```hx
+```haxe
 var skin = new RectangleSkin();
 skin.border = SolidColor(1.0, 0x999999);
 skin.fill = SolidColor(0xcccccc);
@@ -53,7 +53,7 @@ The progress bar automatically calculates its preferred size based on the initia
 
 Style the progress bar's fill using the [`fillSkin`](https://api.feathersui.com/current/feathers/controls/supportClasses/BaseProgressBar.html#fillSkin) property. The following example sets it to a [`RectangleSkin`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html) instance.
 
-```hx
+```haxe
 var skin = new RectangleSkin();
 skin.border = SolidColor(1.0, 0x9999cc);
 skin.fill = SolidColor(0xcccccc);

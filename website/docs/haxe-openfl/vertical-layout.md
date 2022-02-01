@@ -16,7 +16,7 @@ The [`VerticalLayout`](https://api.feathersui.com/current/feathers/layout/Vertic
 
 Create a [`LayoutGroup`](./layout-group.md) container, add it to [the display list](https://books.openfl.org/openfl-developers-guide/display-programming/basics-of-display-programming.html), and then add a few children to the container.
 
-```hx
+```haxe
 var container = new LayoutGroup();
 addChild(container);
 
@@ -35,7 +35,7 @@ container.addChild(child3);
 
 Set the container's [`layout`](https://api.feathersui.com/current/feathers/layout/feathers/controls/LayoutGroup.html#layout) property to a new [`VerticalLayout`](https://api.feathersui.com/current/feathers/layout/VerticalLayout.html) instance.
 
-```hx
+```haxe
 container.layout = new VerticalLayout();
 ```
 
@@ -47,7 +47,7 @@ The following sections will introduce a number of properties that may be used to
 
 The _padding_ is the space around the edges of the container that will contain no children. Padding may be added on each side, including [top](https://api.feathersui.com/current/feathers/layout/VerticalLayout.html#paddingTop), [right](https://api.feathersui.com/current/feathers/layout/VerticalLayout.html#paddingRight), [bottom](https://api.feathersui.com/current/feathers/layout/VerticalLayout.html#paddingBottom), and [left](https://api.feathersui.com/current/feathers/layout/VerticalLayout.html#paddingLeft).
 
-```hx
+```haxe
 layout.paddingTop = 10.0;
 layout.paddingRight = 15.0;
 layout.paddingBottom = 10.0;
@@ -56,14 +56,14 @@ layout.paddingLeft = 15.0;
 
 If all four padding properties should be set to the same value, call the [`setPadding()`](https://api.feathersui.com/current/feathers/layout/VerticalLayout.html#setPadding) method instead.
 
-```hx
+```haxe
 // sets top, right, bottom and left to the same value
 layout.setPadding(10.0);
 ```
 
 The [`gap`](https://api.feathersui.com/current/feathers/layout/VerticalLayout.html#gap) refers to the space, measured in pixels, between each child in the container.
 
-```hx
+```haxe
 layout.gap = 5.0;
 ```
 
@@ -73,7 +73,7 @@ The children of the container may be _aligned_ within the container's bounds.
 
 To align the children along the x-axis, set the [`horizontalAlign`](https://api.feathersui.com/current/feathers/layout/VerticalLayout.html#horizontalAlign) property.
 
-```hx
+```haxe
 layout.horizontalAlign = CENTER;
 ```
 
@@ -81,13 +81,13 @@ In the example above, the children are aligned to the [center](https://api.feath
 
 The [`horizontalAlign`](https://api.feathersui.com/current/feathers/layout/VerticalLayout.html#horizontalAlign) property also supports a special value, named [`JUSTIFY`](https://api.feathersui.com/current/feathers/layout/HorizontalAlign.html#JUSTIFY). When horizontal justification is specified, the width of all items in the layout is adjusted to fill the full width of the container.
 
-```hx
+```haxe
 layout.horizontalAlign = JUSTIFY;
 ```
 
 To align the children along the y-axis, set the [`verticalAlign`](https://api.feathersui.com/current/feathers/layout/VerticalLayout.html#verticalAlign) property.
 
-```hx
+```haxe
 layout.verticalAlign = MIDDLE;
 ```
 
@@ -107,7 +107,7 @@ When the parent container is using [`VerticalLayout`](https://api.feathersui.com
 
 In the following example, two children are added to a container. The first child fills 100% of the container's total width, and the second child fills 50% of the container's total width.
 
-```hx
+```haxe
 var container = new LayoutGroup();
 container.layout = new VerticalLayout();
 addChild(container);
@@ -138,7 +138,7 @@ When the parent container is using [`VerticalLayout`](https://api.feathersui.com
 
 In the following example, two children are added to a container. The first child fills 25% of the container's total height, and the second child fills 75% of the container's total height.
 
-```hx
+```haxe
 var container = new LayoutGroup();
 container.layout = new VerticalLayout();
 addChild(container);
@@ -162,7 +162,7 @@ Children with percentage sizing may be combined with children using fixed pixel 
 
 In the following example, there are two children again, but this time, the first child is a fixed `150.0` pixels tall, and the second child uses [`percentHeight`](https://api.feathersui.com/current/feathers/layout/VerticalLayoutData.html#percentHeight). In this situation, the percentage will be based on the height of the container _minus 150.0 pixels_.
 
-```hx
+```haxe
 var container = new LayoutGroup();
 container.layout = new VerticalLayout();
 addChild(container);

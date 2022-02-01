@@ -14,7 +14,7 @@ The [`ListView`](https://api.feathersui.com/current/feathers/controls/ListView.h
 
 Start by creating a [`ListView`](https://api.feathersui.com/current/feathers/controls/ListView.html) control, and add it to [the display list](https://books.openfl.org/openfl-developers-guide/display-programming/basics-of-display-programming.html).
 
-```hx
+```haxe
 var listView = new ListView();
 addChild(listView);
 ```
@@ -23,7 +23,7 @@ addChild(listView);
 
 To render some data in the list view, pass in a [collection](./data-collections.md) that contains an object for each row.
 
-```hx
+```haxe
 listView.dataProvider = new ArrayCollection([
     { text: "A" },
     { text: "B" },
@@ -33,7 +33,7 @@ listView.dataProvider = new ArrayCollection([
 
 Set the [`itemToText()`](https://api.feathersui.com/current/feathers/controls/ListView.html#itemToText) method to get the text from each item to display in an item renderer.
 
-```hx
+```haxe
 listView.itemToText = function(item:Dynamic):String {
     return item.text;
 };
@@ -45,13 +45,13 @@ listView.itemToText = function(item:Dynamic):String {
 
 [Add an event listener](https://books.openfl.org/openfl-developers-guide/handling-events/basics-of-handling-events.html) for [`Event.CHANGE`](https://api.openfl.org/openfl/events/Event.html#CHANGE) to perform an action when the user selects a different item.
 
-```hx
+```haxe
 listView.addEventListener(Event.CHANGE, listView_changeHandler);
 ```
 
 Check for the new value of the [`selectedItem`](https://api.feathersui.com/current/feathers/controls/ListView.html#selectedItem) property in the listener.
 
-```hx
+```haxe
 function listView_changeHandler(event:Event):Void {
     var listView = cast(event.currentTarget, ListView);
     trace("ListView selectedItem change: " + listView.selectedItem.text);
@@ -60,7 +60,7 @@ function listView_changeHandler(event:Event):Void {
 
 Alternatively, the value of the [`selectedIndex`](https://api.feathersui.com/current/feathers/controls/ListView.html#selectedIndex) property references the index of the items in the list view's collection, in the order that they were added.
 
-```hx
+```haxe
 function listView_changeHandler(event:Event):Void {
     var listView = cast(event.currentTarget, ListView);
     trace("ListView selectedIndex change: " + listView.selectedIndex);
@@ -71,14 +71,14 @@ function listView_changeHandler(event:Event):Void {
 
 To add a new item at the end, pass an object to the data provider's [`add()`](https://api.feathersui.com/current/feathers/data/IFlatCollection.html#add) method.
 
-```hx
+```haxe
 var newItem = { text: "New Item" };
 listView.dataProvider.add(newItem);
 ```
 
 To add a new item at a specific position, pass an object to the data provider's [`addAt()`](https://api.feathersui.com/current/feathers/data/IFlatCollection.html#addAt) method.
 
-```hx
+```haxe
 var newItem = { text: "First Item" };
 listView.dataProvider.addAt(newItem, 0);
 ```
@@ -87,7 +87,7 @@ In the example above, a new item is added to the beginning.
 
 Similarly, to remove an item, call [`remove()`](https://api.feathersui.com/current/feathers/data/IFlatCollection.html#remove) or [`removeAt()`](https://api.feathersui.com/current/feathers/data/IFlatCollection.html#removeAt) on the collection.
 
-```hx
+```haxe
 listView.dataProvider.removeAt(0);
 ```
 
@@ -99,7 +99,7 @@ Feathers UI provides a default [`ItemRenderer`](./item-renderer.md) class, which
 
 Consider a collection of items with the following format.
 
-```hx
+```haxe
 { name: "Pizza", icon: "https://example.com/img/pizza.png" }
 ```
 
@@ -107,7 +107,7 @@ While the default [`ItemRenderer`](./item-renderer.md) class can easily display 
 
 A custom item renderer designed to display this data might use a [`Label`](./label.md) to display the text, and an [`AssetLoader`](./asset-loader.md) to display the image. The following example creates a [`DisplayObjectRecycler`](https://api.feathersui.com/current/feathers/utils/DisplayObjectRecycler.html) which instantiates these components and adds them to a [`LayoutGroupItemRenderer`](./layout-group-item-renderer.md) — a special base class for custom item renderers.
 
-```hx
+```haxe
 var recycler = DisplayObjectRecycler.withFunction(() -> {
     var itemRenderer = new LayoutGroupItemRenderer();
 
@@ -135,13 +135,13 @@ var recycler = DisplayObjectRecycler.withFunction(() -> {
 
 Pass the [`DisplayObjectRecycler`](https://api.feathersui.com/current/feathers/utils/DisplayObjectRecycler.html) to the [`itemRendererRecycler`](https://api.feathersui.com/current/feathers/controls/ListView.html#itemRendererRecycler) property.
 
-```hx
+```haxe
 listView.itemRendererRecycler = recycler;
 ```
 
 So far, the [`DisplayObjectRecycler`](https://api.feathersui.com/current/feathers/utils/DisplayObjectRecycler.html) creates the item renderer, but it doesn't understand how to interpret the data yet. A custom [`update()`](https://api.feathersui.com/current/feathers/utils/DisplayObjectRecycler.html#update) method on the recycler can do that.
 
-```hx
+```haxe
 recycler.update = (itemRenderer:LayoutGroupItemRenderer, state:ListViewItemState) -> {
     var label = cast(itemRenderer.getChildByName("label"), Label);
     var loader = cast(itemRenderer.getChildByName("loader"), AssetLoader);
@@ -162,7 +162,7 @@ When the [`update()`](https://api.feathersui.com/current/feathers/utils/DisplayO
 
 In this case, the value of [`text`](https://api.feathersui.com/current/feathers/data/ListViewItemState.html#text) is displayed by the [`Label`](./label.md), and the `icon` field from [`data`](https://api.feathersui.com/current/feathers/data/ListViewItemState.html#data) (remember the example item from above, with `name` and `icon` fields) is displayed by the [`AssetLoader`](./asset-loader.md). Obviously, we'll need an [`itemToText()`](https://api.feathersui.com/current/feathers/controls/ListView.html#itemToText) function to populate the [`text`](https://api.feathersui.com/current/feathers/data/ListViewItemState.html#text) value from the `name` field.
 
-```hx
+```haxe
 listView.itemToText = function(item:Dynamic):String {
     return item.name;
 };
@@ -170,7 +170,7 @@ listView.itemToText = function(item:Dynamic):String {
 
 It's always a good practice to provide a [`reset()`](https://api.feathersui.com/current/feathers/utils/DisplayObjectRecycler.html) method to the [`DisplayObjectRecycler`](https://api.feathersui.com/current/feathers/utils/DisplayObjectRecycler.html), which will clean up a custom item renderer when it is no longer used by the [`ListView`](https://api.feathersui.com/current/feathers/controls/ListView.html).
 
-```hx
+```haxe
 recycler.reset = (itemRenderer:LayoutGroupItemRenderer, state:ListViewItemState) -> {
     var label = cast(itemRenderer.getChildByName("label"), Label);
     var loader = cast(itemRenderer.getChildByName("loader"), AssetLoader);
@@ -190,7 +190,7 @@ A number of styles may be customized on a [`ListView`](https://api.feathersui.co
 
 Optionally give the list view a background using the [`backgroundSkin`](https://api.feathersui.com/current/feathers/controls/supportClasses/BaseScrollContainer.html#backgroundSkin) property. The following example sets it to a [`RectangleSkin`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html) instance.
 
-```hx
+```haxe
 var skin = new RectangleSkin();
 skin.border = SolidColor(1.0, 0x999999);
 skin.fill = SolidColor(0xcccccc);
@@ -207,19 +207,19 @@ The list view automatically calculates its preferred size based on the initial d
 
 The appearance of the list view's border or fill may be customized to change when the list view is [disabled](https://api.feathersui.com/current/feathers/core/IUIControl.html#enabled). In the next example, setting the skin's [`disabledFill`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html#disabledFill) method makes it switch to a different fill when the list view is disabled.
 
-```hx
+```haxe
 skin.disabledFill = SolidColor(0xffcccc);
 ```
 
 Similarly, use the skin's [`disabledBorder`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html#disabledBorder) property to change the border when disabled.
 
-```hx
+```haxe
 skin.disabledBorder = SolidColor(2.0, 0x999999);
 ```
 
 In the examples above, the list view uses the same [`RectangleSkin`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html) for all states, and that skin listens for changes to the list view's current state. Alternatively, the list view's [`disabledBackgroundSkin`](https://api.feathersui.com/current/feathers/controls/supportClasses/BaseScrollContainer.html#disabledBackgroundSkin) method allows the list view to display a completely different display object when it is disabled.
 
-```hx
+```haxe
 var defaultSkin = new RectangleSkin();
 // ... set border, fill, width, and height
 listView.backgroundSkin = defaultSkin;
@@ -235,7 +235,7 @@ In the example above, the list view will have a separate skins when enabled and 
 
 Set the list view's [`layout`](https://api.feathersui.com/current/feathers/layout/feathers/controls/ListView.html#layout) property to change how its children are positioned and sized. By default, a list view uses [`VerticalListLayout`](./vertical-list-layout.md), but it may be changed to a different layout, if desired.
 
-```hx
+```haxe
 listView.layout = new HorizontalListLayout();
 ```
 
@@ -251,14 +251,14 @@ The scroll bars in a [`ListView`](https://api.feathersui.com/current/feathers/co
 
 Use the [`HScrollBar`](https://api.feathersui.com/current/feathers/controls/HScrollBar.html) and [`VScrollBar`](https://api.feathersui.com/current/feathers/controls/VScrollBar.html) classes in a [theme](./themes.md) to provide a function that globally styles all scroll bars in your project.
 
-```hx
+```haxe
 styleProvider.setStyleFunction(HScrollBar, null, setHScrollBarStyles);
 styleProvider.setStyleFunction(VScrollBar, null, setVScrollBarStyles);
 ```
 
 The functions should use the following signatures.
 
-```hx
+```haxe
 function setHScrollBarStyles(scrollBar:HScrollBar):Void {
     // ... set styles here
 });
@@ -272,7 +272,7 @@ function setVScrollBarStyles(scrollBar:VScrollBar):Void {
 
 The [`scrollBarXFactory`](https://api.feathersui.com/current/feathers/controls/supportClasses/BaseScrollContainer.html#scrollBarXFactory) and [`scrollBarYFactory`](https://api.feathersui.com/current/feathers/controls/supportClasses/BaseScrollContainer.html#scrollBarYFactory) properties may be used to customize the creation of an individual list view's scroll bars.
 
-```hx
+```haxe
 listView.scrollBarXFactory = () -> {
     var scrollBar = new HScrollBar();
     // ... set styles here

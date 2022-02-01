@@ -22,7 +22,7 @@ The skins for the [`HScrollBar`](https://api.feathersui.com/current/feathers/con
 
 Style a scroll bar's thumb using the [`thumbSkin`](https://api.feathersui.com/current/feathers/controls/supportClasses/BaseScrollBar.html#thumbSkin) property. The following example sets it to a [`RectangleSkin`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html) instance.
 
-```hx
+```haxe
 var thumbSkin = new RectangleSkin();
 thumbSkin.border = SolidColor(1.0, 0x999999);
 thumbSkin.fill = SolidColor(0xcccccc);
@@ -41,7 +41,7 @@ The scroll bar automatically calculates its preferred size based on the initial 
 
 Style a scroll bar's track using the [`trackSkin`](https://api.feathersui.com/current/feathers/controls/supportClasses/BaseScrollBar.html#trackSkin) property. The following example sets it to a [`RectangleSkin`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html) instance.
 
-```hx
+```haxe
 var trackSkin = new RectangleSkin();
 trackSkin.border = SolidColor(1.0, 0x999999);
 trackSkin.fill = SolidColor(0xcccccc);
@@ -54,7 +54,7 @@ By default, the [`trackSkin`](https://api.feathersui.com/current/feathers/contro
 
 To give the track different a appearance on each side of the thumb, set the optional [`secondaryTrackSkin`](https://api.feathersui.com/current/feathers/controls/supportClasses/BaseScrollBar.html#secondaryTrackSkin).
 
-```hx
+```haxe
 var trackSkin = new RectangleSkin();
 trackSkin.border = SolidColor(1.0, 0x999999);
 trackSkin.fill = SolidColor(0xccccff);

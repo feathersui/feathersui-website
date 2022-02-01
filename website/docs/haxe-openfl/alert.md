@@ -14,7 +14,7 @@ The [`Alert`](https://api.feathersui.com/current/feathers/controls/Alert.html) c
 
 Creating an [`Alert`](https://api.feathersui.com/current/feathers/controls/Alert.html) works a bit differently than other components. Start by creating a [button](./button.md) and listen for when it is triggered.
 
-```hx
+```haxe
 var button = new Button();
 button.text = "Click Me";
 button.addEventListener(TriggerEvent.TRIGGER, button_triggerHandler);
@@ -23,7 +23,7 @@ addChild(button);
 
 The alert will be shown when the button is clicked or tapped. In the listener, rather than calling the [`Alert`](https://api.feathersui.com/current/feathers/controls/Alert.html) constructor, call the static function [`Alert.show()`](https://api.feathersui.com/current/feathers/controls/Alert.html#show) instead.
 
-```hx
+```haxe
 function button_triggerHandler(event:TriggerEvent):Void
 {
     Alert.show("I have something important to say",
@@ -46,7 +46,7 @@ A number of styles may be customized on the sub-components of an [`Alert`](https
 
 Optionally give the alert a background using the [`backgroundSkin`](https://api.feathersui.com/current/feathers/controls/supportClasses/BaseScrollContainer.html#backgroundSkin) property. The following example sets it to a [`RectangleSkin`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html) instance.
 
-```hx
+```haxe
 var skin = new RectangleSkin();
 skin.border = SolidColor(1.0, 0x999999);
 skin.fill = SolidColor(0xcccccc);
@@ -63,19 +63,19 @@ The alert automatically calculates its preferred size based on the initial dimen
 
 The appearance of the alert's border or fill may be customized to change when the alert is [disabled](https://api.feathersui.com/current/feathers/core/IUIControl.html#enabled). In the next example, setting the skin's [`disabledFill`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html#disabledFill) method makes it switch to a different fill when the alert is disabled.
 
-```hx
+```haxe
 skin.disabledFill = SolidColor(0xffcccc);
 ```
 
 Similarly, use the skin's [`disabledBorder`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html#disabledBorder) property to change the border when disabled.
 
-```hx
+```haxe
 skin.disabledBorder = SolidColor(2.0, 0x999999);
 ```
 
 In the examples above, the alert uses the same [`RectangleSkin`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html) for all states, and that skin listens for changes to the alert's current state. Alternatively, the alert's [`disabledBackgroundSkin`](https://api.feathersui.com/current/feathers/controls/supportClasses/BaseScrollContainer.html#disabledBackgroundSkin) method allows the alert to display a completely different display object when it is disabled.
 
-```hx
+```haxe
 var defaultSkin = new RectangleSkin();
 // ... set border, fill, width, and height
 alert.backgroundSkin = defaultSkin;
@@ -97,7 +97,7 @@ The message label in an [`Alert`](https://api.feathersui.com/current/feathers/co
 
 Use the [`Alert.CHILD_VARIANT_MESSAGE_LABEL`](https://api.feathersui.com/current/feathers/controls/Alert.html#CHILD_VARIANT_MESSAGE_LABEL) constant in a [theme](./themes.md) to provide a function that globally styles the message labels in all [`Alert`](https://api.feathersui.com/current/feathers/controls/Alert.html) components.
 
-```hx
+```haxe
 styleProvider.setStyleFunction(
     Label,
     Alert.CHILD_VARIANT_MESSAGE_LABEL,
@@ -106,7 +106,7 @@ styleProvider.setStyleFunction(
 
 The function should use the following signature.
 
-```hx
+```haxe
 function setAlert_MessageLabel_Styles(label:Label):Void {
     // ... set styles here
 });
@@ -116,7 +116,7 @@ function setAlert_MessageLabel_Styles(label:Label):Void {
 
 The [`messageLabelFactory`](https://api.feathersui.com/current/feathers/controls/Alert.html#messageLabelFactory) property may be used to customize the creation of an individual message label.
 
-```hx
+```haxe
 alert.messageLabelFactory = () -> {
     var message = new Label();
     // ... set styles here
@@ -134,7 +134,7 @@ The header in an [`Alert`](https://api.feathersui.com/current/feathers/controls/
 
 Use the [`Alert.CHILD_VARIANT_HEADER`](https://api.feathersui.com/current/feathers/controls/Alert.html#CHILD_VARIANT_HEADER) constant in a [theme](./themes.md) to provide a function that globally styles the headers in all [`Alert`](https://api.feathersui.com/current/feathers/controls/Alert.html) components.
 
-```hx
+```haxe
 styleProvider.setStyleFunction(
     Header,
     Alert.CHILD_VARIANT_HEADER,
@@ -143,7 +143,7 @@ styleProvider.setStyleFunction(
 
 The function should use the following signature.
 
-```hx
+```haxe
 function setAlert_Header_Styles(header:Header):Void {
     // ... set styles here
 });
@@ -153,7 +153,7 @@ function setAlert_Header_Styles(header:Header):Void {
 
 The [`headerFactory`](https://api.feathersui.com/current/feathers/controls/Alert.html#headerFactory) property may be used to customize the creation of an individual header.
 
-```hx
+```haxe
 alert.headerFactory = () -> {
     var header = new Header();
     // ... set styles here
@@ -171,7 +171,7 @@ The button bar in an [`Alert`](https://api.feathersui.com/current/feathers/contr
 
 Use the [`Alert.CHILD_VARIANT_BUTTON_BAR`](https://api.feathersui.com/current/feathers/controls/Alert.html#CHILD_VARIANT_BUTTON_BAR) constant in a [theme](./themes.md) to provide a function that globally styles the buton bars in all [`Alert`](https://api.feathersui.com/current/feathers/controls/Alert.html) components.
 
-```hx
+```haxe
 styleProvider.setStyleFunction(
     ButtonBar,
     Alert.CHILD_VARIANT_BUTTON_BAR,
@@ -180,7 +180,7 @@ styleProvider.setStyleFunction(
 
 The function should use the following signature.
 
-```hx
+```haxe
 function setAlert_ButtonBar_Styles(buttonBar:ButtonBar):Void {
     // ... set styles here
 });
@@ -190,7 +190,7 @@ function setAlert_ButtonBar_Styles(buttonBar:ButtonBar):Void {
 
 The [`buttonBarFactory`](https://api.feathersui.com/current/feathers/controls/Alert.html#buttonBarFactory) property may be used to customize the creation of an individual button bar.
 
-```hx
+```haxe
 alert.buttonBarFactory = () -> {
     var buttonBar = new ButtonBar();
     // ... set styles here
@@ -208,14 +208,14 @@ The scroll bars in an [`Alert`](https://api.feathersui.com/current/feathers/cont
 
 Use the [`HScrollBar`](https://api.feathersui.com/current/feathers/controls/HScrollBar.html) and [`VScrollBar`](https://api.feathersui.com/current/feathers/controls/VScrollBar.html) classes in a [theme](./themes.md) to provide a function that globally styles all scroll bars in your project.
 
-```hx
+```haxe
 styleProvider.setStyleFunction(HScrollBar, null, setHScrollBarStyles);
 styleProvider.setStyleFunction(VScrollBar, null, setVScrollBarStyles);
 ```
 
 The functions should use the following signatures.
 
-```hx
+```haxe
 function setHScrollBarStyles(scrollBar:HScrollBar):Void {
     // ... set styles here
 });
@@ -229,7 +229,7 @@ function setVScrollBarStyles(scrollBar:VScrollBar):Void {
 
 The [`scrollBarXFactory`](https://api.feathersui.com/current/feathers/controls/supportClasses/BaseScrollContainer.html#scrollBarXFactory) and [`scrollBarYFactory`](https://api.feathersui.com/current/feathers/controls/supportClasses/BaseScrollContainer.html#scrollBarYFactory) properties may be used to customize the creation of an individual alert's scroll bars.
 
-```hx
+```haxe
 alert.scrollBarXFactory = () -> {
     var scrollBar = new HScrollBar();
     // ... set styles here

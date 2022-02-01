@@ -9,13 +9,13 @@ To develop [custom UI components](./custom-ui-components.md) for Feathers UI, yo
 
 A UI component instance is created with the [`new`](https://haxe.org/manual/expression-new.html) keyword, and its [constructor](https://haxe.org/manual/types-class-constructor.html) will be called.
 
-```hx
+```haxe
 var instance = new MyComponent();
 ```
 
 Generally, code in a UI component's constructor should be kept to a minimum. It's okay to add event listeners and set some properties, but save more expensive things (such as the creation of children) until _initialization_.
 
-```hx
+```haxe
 public function new() {
     super();
     addEventListener(Event.ADDED_TO_STAGE, onAddedToStage);
@@ -32,7 +32,7 @@ When a UI component is added to the display list for the first time, its [`initi
 
 The [`initialize()`](https://api.feathersui.com/current/feathers/core/FeathersControl.html#initialize) method is intended for any code that should run only one time before a UI component is rendered. Most often, [`initialize()`](https://api.feathersui.com/current/feathers/core/FeathersControl.html#initialize) is used to create the UI component's children.
 
-```hx
+```haxe
 private var myChild:Button;
 
 override private function initialize() {
@@ -49,7 +49,7 @@ After [`initialize()`](https://api.feathersui.com/current/feathers/core/Feathers
 
 Any time one of a UI component's properties is changed, it should call the [`setInvalid()`](https://api.feathersui.com/current/feathers/core/ValidatingSprite.html#setInvalid) method.
 
-```hx
+```haxe
 public var someProperty(default, set):Bool = false;
 
 private function set_someProperty(value:Bool):Bool {
@@ -76,7 +76,7 @@ Before a UI component is rendered to the screen, it will update its layout and a
 
 When a component validates, its [`update()`](https://api.feathersui.com/current/feathers/core/FeathersControl.html#update) method is called. In [`update()`](https://api.feathersui.com/current/feathers/core/FeathersControl.html#update), a UI component will generally handle any changes that have been made to its properties, calculate its ideal width and height, and update its internal layout.
 
-```hx
+```haxe
 override private function update():Void {
   super.update();
 

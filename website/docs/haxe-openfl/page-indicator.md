@@ -14,7 +14,7 @@ The [`PageIndicator`](https://api.feathersui.com/current/feathers/controls/PageI
 
 Start by creating a [`PageIndicator`](https://api.feathersui.com/current/feathers/controls/PageIndicator.html) control, give it the maximum number of pages, and add it to [the display list](https://books.openfl.org/openfl-developers-guide/display-programming/basics-of-display-programming.html).
 
-```hx
+```haxe
 var pages = new PageIndicator();
 pages.maxSelectedIndex = 5;
 addChild(pages);
@@ -24,19 +24,19 @@ The number of buttons that a page indicator displays is controlled by the [`maxS
 
 The currently selected page may be changed programmatically by setting the [`selectedIndex`](https://api.feathersui.com/current/feathers/controls/PageIndicator.html#selectedIndex) property.
 
-```hx
+```haxe
 pages.selectedIndex = 2;
 ```
 
 [Add an event listener](https://books.openfl.org/openfl-developers-guide/handling-events/basics-of-handling-events.html) for [`Event.CHANGE`](https://api.openfl.org/openfl/events/Event.html#CHANGE) to perform an action when the selected index changes.
 
-```hx
+```haxe
 pages.addEventListener(Event.CHANGE, pageIndicator_changeHandler);
 ```
 
 Listeners for [`Event.CHANGE`](https://api.openfl.org/openfl/events/Event.html#CHANGE) have the following function signature.
 
-```hx
+```haxe
 function pageIndicator_changeHandler(event:Event):Void {
     var pages = cast(event.currentTarget, PageIndicator);
     trace("pages.selectedIndex change: " + pages.selectedIndex);
@@ -57,7 +57,7 @@ The toggle buttons in a [`PageIndicator`](https://api.feathersui.com/current/fea
 
 Use the [`PageIndicator.CHILD_VARIANT_TOGGLE_BUTTON`](https://api.feathersui.com/current/feathers/controls/PageIndicator.html#CHILD_VARIANT_TOGGLE_BUTTON) constant in a [theme](./themes.md) to provide a function that globally styles the toggle buttons in all [`PageIndicator`](https://api.feathersui.com/current/feathers/controls/PageIndicator.html) components.
 
-```hx
+```haxe
 styleProvider.setStyleFunction(
     ToggleButton,
     PageIndicator.CHILD_VARIANT_TOGGLE_BUTTON,
@@ -66,7 +66,7 @@ styleProvider.setStyleFunction(
 
 The function should use the following signature.
 
-```hx
+```haxe
 function setPageIndicator_ToggleButton_Styles(button:ToggleButton):Void {
     // ... set styles here
 });
@@ -76,7 +76,7 @@ function setPageIndicator_ToggleButton_Styles(button:ToggleButton):Void {
 
 The [`toggleButtonRecycler`](https://api.feathersui.com/current/feathers/controls/PageIndicator.html#toggleButtonRecycler) property may be used to customize the creation of the toggle buttons.
 
-```hx
+```haxe
 pages.toggleButtonRecycler = DisplayObjectRecycler.withFunction(() -> {
     var button = new ToggleButton();
     // ... set styles here

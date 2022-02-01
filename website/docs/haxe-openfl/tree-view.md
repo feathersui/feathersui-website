@@ -14,7 +14,7 @@ The [`TreeView`](https://api.feathersui.com/current/feathers/controls/TreeView.h
 
 Start by creating a [`TreeView`](https://api.feathersui.com/current/feathers/controls/TreeView.html) control, and add it to [the display list](https://books.openfl.org/openfl-developers-guide/display-programming/basics-of-display-programming.html).
 
-```hx
+```haxe
 var treeView = new TreeView();
 addChild(treeView);
 ```
@@ -23,7 +23,7 @@ addChild(treeView);
 
 To render some data in the tree view, pass in a [hierarchical collection](./data-collections.md#hierarchical-collections) that contains an object for each row.
 
-```hx
+```haxe
 var collection = new ArrayHierarchicalCollection([
     {
         text: "Node 1",
@@ -53,13 +53,13 @@ treeView.dataProvider = collection;
 
 Set the collection's [`itemToChildren()`](https://api.feathersui.com/current/feathers/controls/ArrayHierarchicalCollection.html#itemToChildren) method to get the children from each branch that need to be rendered by the tree view.
 
-```hx
+```haxe
 collection.itemToChildren = (item:Dynamic) -> item.children;
 ```
 
 Set the [`itemToText()`](https://api.feathersui.com/current/feathers/controls/TreeView.html#itemToText) method to get the text from each item to display from the collection.
 
-```hx
+```haxe
 treeView.itemToText = (item:Dynamic) -> item.text;
 ```
 
@@ -69,13 +69,13 @@ treeView.itemToText = (item:Dynamic) -> item.text;
 
 [Add an event listener](https://books.openfl.org/openfl-developers-guide/handling-events/basics-of-handling-events.html) for [`Event.CHANGE`](https://api.openfl.org/openfl/events/Event.html#CHANGE) to perform an action when the user selects a different item.
 
-```hx
+```haxe
 treeView.addEventListener(Event.CHANGE, treeView_changeHandler);
 ```
 
 Check for the new value of the [`selectedItem`](https://api.feathersui.com/current/feathers/controls/TreeView.html#selectedItem) property in the listener.
 
-```hx
+```haxe
 function treeView_changeHandler(event:Event):Void {
     var treeView = cast(event.currentTarget, TreeView);
     trace("TreeView selectedItem change: " + treeView.selectedItem.data.text);
@@ -84,7 +84,7 @@ function treeView_changeHandler(event:Event):Void {
 
 Alternatively, the value of the [`selectedLocation`](https://api.feathersui.com/current/feathers/controls/TreeView.html#selectedLocation) property references the location of the items in the tree view's collection as an `Array` of integers.
 
-```hx
+```haxe
 function treeView_changeHandler(event:Event):Void {
     var treeView = cast(event.currentTarget, TreeView);
     trace("TreeView selectedLocation change: " + treeView.selectedLocation);
@@ -95,7 +95,7 @@ function treeView_changeHandler(event:Event):Void {
 
 To add a new item at a specific location, pass an object to the data provider's [`addAt()`](https://api.feathersui.com/current/feathers/data/IHierarchicalCollection.html#addAt) method.
 
-```hx
+```haxe
 var newItem = { text: "New Item" };
 var newLocation = [2, 1];
 treeView.dataProvider.addAt(newItem, newLocation);
@@ -105,7 +105,7 @@ In the example above, a new tab is added to the beginning.
 
 Similarly, to remove an item, call [`remove()`](https://api.feathersui.com/current/feathers/data/IHierarchicalCollection.html#remove) or [`removeAt()`](https://api.feathersui.com/current/feathers/data/IHierarchicalCollection.html#removeAt) on the collection.
 
-```hx
+```haxe
 var locationToRemove = [2, 1];
 treeView.dataProvider.removeAt(locationToRemove);
 ```
@@ -118,7 +118,7 @@ Feathers UI provides a default [`HierarchicalItemRenderer`](./hierarchical-item-
 
 Consider a collection of items with the following format.
 
-```hx
+```haxe
 { name: "Pizza", icon: "https://example.com/img/pizza.png" }
 ```
 
@@ -126,7 +126,7 @@ While the default [`HierarchicalItemRenderer`](./hierarchical-item-renderer.md) 
 
 A custom item renderer designed to display this data might use a [`Label`](./label.md) to display the text, and an [`AssetLoader`](./asset-loader.md) to display the image. The following example creates a [`DisplayObjectRecycler`](https://api.feathersui.com/current/feathers/utils/DisplayObjectRecycler.html) which instantiates these components and adds them to a [`LayoutGroupItemRenderer`](./layout-group-item-renderer.md) — a special base class for custom item renderers.
 
-```hx
+```haxe
 var recycler = DisplayObjectRecycler.withFunction(() -> {
     var itemRenderer = new LayoutGroupItemRenderer();
 
@@ -158,13 +158,13 @@ var recycler = DisplayObjectRecycler.withFunction(() -> {
 
 Pass the [`DisplayObjectRecycler`](https://api.feathersui.com/current/feathers/utils/DisplayObjectRecycler.html) to the [`itemRendererRecycler`](https://api.feathersui.com/current/feathers/controls/TreeView.html#itemRendererRecycler) property.
 
-```hx
+```haxe
 treeView.itemRendererRecycler = recycler;
 ```
 
 So far, the [`DisplayObjectRecycler`](https://api.feathersui.com/current/feathers/utils/DisplayObjectRecycler.html) creates the item renderer, but it doesn't understand how to interpret the data yet. A custom [`update()`](https://api.feathersui.com/current/feathers/utils/DisplayObjectRecycler.html#update) method on the recycler can do that.
 
-```hx
+```haxe
 recycler.update = (itemRenderer:LayoutGroupItemRenderer, state:TreeViewItemState) -> {
     var openedToggle = cast(itemRenderer.getChildByName("openedToggle"), ToggleButton);
     var label = cast(itemRenderer.getChildByName("label"), Label);
@@ -191,7 +191,7 @@ When the [`update()`](https://api.feathersui.com/current/feathers/utils/DisplayO
 
 In this case, the value of [`text`](https://api.feathersui.com/current/feathers/data/TreeViewItemState.html#text) is displayed by the [`Label`](./label.md), and the `icon` field from [`data`](https://api.feathersui.com/current/feathers/data/TreeViewItemState.html#data) (remember the example item from above, with `name` and `icon` fields) is displayed by the [`AssetLoader`](./asset-loader.md). The values of [`branch`](https://api.feathersui.com/current/feathers/data/TreeViewItemState.html#branch) and [`opened`](https://api.feathersui.com/current/feathers/data/TreeViewItemState.html#opened) are used with a [`ToggleButton`](./toggle-button.md) to display whether a branch is opened or not. Obviously, we'll need an [`itemToText()`](https://api.feathersui.com/current/feathers/controls/TreeView.html#itemToText) function to populate the [`text`](https://api.feathersui.com/current/feathers/data/TreeViewItemState.html#text) value from the `name` field.
 
-```hx
+```haxe
 treeView.itemToText = function(item:Dynamic):String {
     return item.name;
 };
@@ -219,7 +219,7 @@ A number of styles may be customized on a [`TreeView`](https://api.feathersui.co
 
 Optionally give the tree view a background using the [`backgroundSkin`](https://api.feathersui.com/current/feathers/controls/supportClasses/BaseScrollContainer.html#backgroundSkin) property. The following example sets it to a [`RectangleSkin`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html) instance.
 
-```hx
+```haxe
 var skin = new RectangleSkin();
 skin.border = SolidColor(1.0, 0x999999);
 skin.fill = SolidColor(0xcccccc);
@@ -236,19 +236,19 @@ The tree view automatically calculates its preferred size based on the initial d
 
 The appearance of the tree view's border or fill may be customized to change when the tree view is [disabled](https://api.feathersui.com/current/feathers/core/IUIControl.html#enabled). In the next example, setting the skin's [`disabledFill`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html#disabledFill) method makes it switch to a different fill when the tree view is disabled.
 
-```hx
+```haxe
 skin.disabledFill = SolidColor(0xffcccc);
 ```
 
 Similarly, use the skin's [`disabledBorder`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html#disabledBorder) property to change the border when disabled.
 
-```hx
+```haxe
 skin.disabledBorder = SolidColor(2.0, 0x999999);
 ```
 
 In the examples above, the tree view uses the same [`RectangleSkin`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html) for all states, and that skin listens for changes to the tree view's current state. Alternatively, the tree view's [`disabledBackgroundSkin`](https://api.feathersui.com/current/feathers/controls/supportClasses/BaseScrollContainer.html#disabledBackgroundSkin) method allows the tree view to display a completely different display object when it is disabled.
 
-```hx
+```haxe
 var defaultSkin = new RectangleSkin();
 // ... set border, fill, width, and height
 treeView.backgroundSkin = defaultSkin;
@@ -264,7 +264,7 @@ In the example above, the tree view will have a separate skins when enabled and 
 
 Set the tree view's [`layout`](https://api.feathersui.com/current/feathers/layout/feathers/controls/TreeView.html#layout) property to change how its children are positioned and sized. By default, a list view uses [`VerticalListLayout`](./vertical-list-layout.md), but it may be changed to a different layout, if desired.
 
-```hx
+```haxe
 treeView.layout = new HorizontalListLayout();
 ```
 
@@ -280,14 +280,14 @@ The scroll bars in a [`TreeView`](https://api.feathersui.com/current/feathers/co
 
 Use the [`HScrollBar`](https://api.feathersui.com/current/feathers/controls/HScrollBar.html) and [`VScrollBar`](https://api.feathersui.com/current/feathers/controls/VScrollBar.html) classes in a [theme](./themes.md) to provide a function that globally styles all scroll bars in your project.
 
-```hx
+```haxe
 styleProvider.setStyleFunction(HScrollBar, null, setHScrollBarStyles);
 styleProvider.setStyleFunction(VScrollBar, null, setVScrollBarStyles);
 ```
 
 The functions should use the following signatures.
 
-```hx
+```haxe
 function setHScrollBarStyles(scrollBar:HScrollBar):Void {
     // ... set styles here
 });
@@ -301,7 +301,7 @@ function setVScrollBarStyles(scrollBar:VScrollBar):Void {
 
 The [`scrollBarXFactory`](https://api.feathersui.com/current/feathers/controls/supportClasses/BaseScrollContainer.html#scrollBarXFactory) and [`scrollBarYFactory`](https://api.feathersui.com/current/feathers/controls/supportClasses/BaseScrollContainer.html#scrollBarYFactory) properties may be used to customize the creation of an individual tree view's scroll bars.
 
-```hx
+```haxe
 treeView.scrollBarXFactory = () -> {
     var scrollBar = new HScrollBar();
     // ... set styles here

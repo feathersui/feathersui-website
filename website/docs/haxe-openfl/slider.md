@@ -16,7 +16,7 @@ The [`HSlider`](https://api.feathersui.com/current/feathers/controls/HSlider.htm
 
 First, let's create an [`HSlider`](https://api.feathersui.com/current/feathers/controls/HSlider.html) control, set up its range of values, and add it to the [the display list](https://books.openfl.org/openfl-developers-guide/display-programming/basics-of-display-programming.html).
 
-```hx
+```haxe
 var slider = new HSlider();
 slider.minimum = 0.0;
 slider.maximum = 100.0;
@@ -26,7 +26,7 @@ addChild(slider);
 
 The [`value`](https://api.feathersui.com/current/feathers/controls/supportClasses/BaseSlider.html#value) property indicates the current value of the slider, while the [`minimum`](https://api.feathersui.com/current/feathers/controls/supportClasses/BaseSlider.html#minimum) and [`maximum`](https://api.feathersui.com/current/feathers/controls/supportClasses/BaseSlider.html#maximum) properties establish a range of possible values.
 
-```hx
+```haxe
 slider.step = 1.0;
 ```
 
@@ -34,13 +34,13 @@ The [`step`](https://api.feathersui.com/current/feathers/controls/supportClasses
 
 [Add an event listener](https://books.openfl.org/openfl-developers-guide/handling-events/basics-of-handling-events.html) for [`Event.CHANGE`](https://api.openfl.org/openfl/events/Event.html#CHANGE) to perform an action when the [`value`](https://api.feathersui.com/current/feathers/controls/supportClasses/BaseSlider.html#value) property changes.
 
-```hx
+```haxe
 slider.addEventListener(Event.CHANGE, slider_changeHandler);
 ```
 
 Check for the new [`value`](https://api.feathersui.com/current/feathers/controls/supportClasses/BaseSlider.html#value) in the listener.
 
-```hx
+```haxe
 function slider_changeHandler(event:Event):Void {
     var slider = cast(event.currentTarget, HSlider);
     trace("slider.value change: " + slider.value);
@@ -55,7 +55,7 @@ The skins for the [`HSlider`](https://api.feathersui.com/current/feathers/contro
 
 Style a slider's thumb using the [`thumbSkin`](https://api.feathersui.com/current/feathers/controls/supportClasses/BaseSlider.html#thumbSkin) property. The following example sets it to a [`RectangleSkin`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html) instance.
 
-```hx
+```haxe
 var thumbSkin = new RectangleSkin();
 thumbSkin.border = SolidColor(1.0, 0x999999);
 thumbSkin.fill = SolidColor(0xcccccc);
@@ -74,7 +74,7 @@ The slider automatically calculates its preferred size based on the initial dime
 
 Style a slider's track using the [`trackSkin`](https://api.feathersui.com/current/feathers/controls/supportClasses/BaseSlider.html#trackSkin) property. The following example sets it to a [`RectangleSkin`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html) instance.
 
-```hx
+```haxe
 var trackSkin = new RectangleSkin();
 trackSkin.border = SolidColor(1.0, 0x999999);
 trackSkin.fill = SolidColor(0xcccccc);
@@ -87,7 +87,7 @@ By default, the [`trackSkin`](https://api.feathersui.com/current/feathers/contro
 
 To give the track different a appearance on each side of the thumb, set the optional [`secondaryTrackSkin`](https://api.feathersui.com/current/feathers/controls/supportClasses/BaseSlider.html#secondaryTrackSkin).
 
-```hx
+```haxe
 var trackSkin = new RectangleSkin();
 trackSkin.border = SolidColor(1.0, 0x999999);
 trackSkin.fill = SolidColor(0xccccff);

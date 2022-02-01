@@ -14,7 +14,7 @@ The [`Button`](https://api.feathersui.com/current/feathers/controls/Button.html)
 
 Start by creating a [`Button`](https://api.feathersui.com/current/feathers/controls/Button.html) control, give it some text to display, and add it to [the display list](https://books.openfl.org/openfl-developers-guide/display-programming/basics-of-display-programming.html).
 
-```hx
+```haxe
 var button = new Button();
 button.text = "Click Me";
 addChild(button);
@@ -22,13 +22,13 @@ addChild(button);
 
 [Add an event listener](https://books.openfl.org/openfl-developers-guide/handling-events/basics-of-handling-events.html) for [`TriggerEvent.TRIGGER`](https://api.feathersui.com/current/feathers/events/TriggerEvent.html#TRIGGER) to perform an action when the button is clicked or tapped.
 
-```hx
+```haxe
 button.addEventListener(TriggerEvent.TRIGGER, button_triggerHandler);
 ```
 
 Listeners for [`TriggerEvent.TRIGGER`](https://api.feathersui.com/current/feathers/events/TriggerEvent.html#TRIGGER) have the following function signature.
 
-```hx
+```haxe
 function button_triggerHandler(event:TriggerEvent):Void {
     var button = cast(event.currentTarget, Button);
     trace("button triggered: " + button.text);
@@ -54,13 +54,13 @@ A number of styles may be customized on a [`Button`](https://api.feathersui.com/
 
 The font styles of the button's text may be customized by passing an [`openfl.text.TextFormat`](https://api.openfl.org/openfl/text/TextFormat.html) object to the [`textFormat`](https://api.feathersui.com/current/feathers/controls/Button.html#textFormat) property.
 
-```hx
+```haxe
 button.textFormat = new TextFormat("Helvetica", 20, 0x3c3c3c);
 ```
 
 If the button's text should use different font styles when the button is in different states, pass a [`TextFormat`](https://api.openfl.org/openfl/text/TextFormat.html) and state value to the [`setTextFormatForState()`](https://api.feathersui.com/current/feathers/controls/Button.html#setTextFormatForState) method.
 
-```hx
+```haxe
 button.setTextFormatForState(ButtonState.DOWN, new TextFormat("Helvetica", 20, 0xcc0000));
 ```
 
@@ -72,7 +72,7 @@ When font styles aren't available for a specific state, the button will use the 
 
 Give the button a background using the [`backgroundSkin`](https://api.feathersui.com/current/feathers/controls/BasicButton.html#backgroundSkin) property. The following example sets it to a [`RectangleSkin`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html) instance.
 
-```hx
+```haxe
 var skin = new RectangleSkin();
 skin.border = SolidColor(1.0, 0x999999);
 skin.fill = SolidColor(0xcccccc);
@@ -89,19 +89,19 @@ The button automatically calculates its preferred size based on the initial dime
 
 The appearance of the button's border or fill may be customized to change based on the button's current state, such as when the button is pressed down, the mouse is hovering over it, or the button is disabled. In the next example, a call to the skin's [`setFillForState()`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html#setFillForState) method makes it switch to a different fill when the button's [`DOWN`](https://api.feathersui.com/current/feathers/controls/ButtonState.html#DOWN) state is active.
 
-```hx
+```haxe
 skin.setFillForState(ButtonState.DOWN, SolidColor(0xffcccc));
 ```
 
 Similarly, use the skin's [`setBorderForState()`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html#setBorderForState) method to change the border for a specific state.
 
-```hx
+```haxe
 skin.setBorderForState(ButtonState.DOWN, SolidColor(2.0, 0x999999));
 ```
 
 In the examples above, the button uses the same [`RectangleSkin`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html) for all states, and that skin listens for changes to the button's current state. Alternatively, the button's [`setSkinForState()`](https://api.feathersui.com/current/feathers/controls/BasicButton.html#setSkinForState) method allows the button to display a completely different display object when its current state changes.
 
-```hx
+```haxe
 var defaultSkin = new RectangleSkin();
 // ... set border, fill, width, and height
 button.backgroundSkin = defaultSkin;
@@ -119,13 +119,13 @@ A button may optionally display an [`icon`](https://api.feathersui.com/current/f
 
 The following example loads an icon using its name registered with OpenFL's [asset manager](https://api.openfl.org/openfl/utils/Assets.html).
 
-```hx
+```haxe
 button.icon = new Bitmap(Assets.getBitmapData("myAssetName"));
 ```
 
 Similar to the background skin, the button's icon may be optionally customized for different states.
 
-```hx
+```haxe
 button.setIconForState(ButtonState.DOWN, new Bitmap(Assets.getBitmapData("anotherAssetName")));
 ```
 
@@ -135,7 +135,7 @@ button.setIconForState(ButtonState.DOWN, new Bitmap(Assets.getBitmapData("anothe
 
 Padding may be added on each side of the button, including [top](https://api.feathersui.com/current/feathers/controls/Button.html#paddingTop), [right](https://api.feathersui.com/current/feathers/controls/Button.html#paddingRight), [bottom](https://api.feathersui.com/current/feathers/controls/Button.html#paddingBottom), and [left](https://api.feathersui.com/current/feathers/controls/Button.html#paddingLeft).
 
-```hx
+```haxe
 button.paddingTop = 5.0;
 button.paddingRight = 8.0;
 button.paddingBottom = 5.0;
@@ -144,7 +144,7 @@ button.paddingLeft = 8.0;
 
 The icon may be positioned on any side of the button's text. For instance, the following example moves the icon above the text, so that the icon and text are stacked vertically.
 
-```hx
+```haxe
 button.iconPosition = TOP;
 ```
 
@@ -152,13 +152,13 @@ Set the [`iconPosition`](https://api.feathersui.com/current/feathers/controls/Bu
 
 The [`gap`](https://api.feathersui.com/current/feathers/controls/Button.html#gap) refers to the space, measured in pixels, between the icon and the text.
 
-```hx
+```haxe
 button.gap = 10.0;
 ```
 
 The [`horizontalAlign`](https://api.feathersui.com/current/feathers/controls/Button.html#horizontalAlign) and [`verticalAlign`](https://api.feathersui.com/current/feathers/controls/Button.html#verticalAlign) properties will adjust the alignment of the icon and text inside the button, allowing you to anchor them at the edges or in the center.
 
-```hx
+```haxe
 button.horizontalAlign = CENTER;
 button.verticalAlign = MIDDLE;
 ```

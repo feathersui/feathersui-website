@@ -14,7 +14,7 @@ The [`Drawer`](https://api.feathersui.com/current/feathers/controls/Drawer.html)
 
 Start by creating a [`Drawer`](https://api.feathersui.com/current/feathers/controls/Drawer.html) control, and add it to the [the display list](https://books.openfl.org/openfl-developers-guide/display-programming/basics-of-display-programming.html).
 
-```hx
+```haxe
 var container = new Drawer();
 addChild(container);
 ```
@@ -23,7 +23,7 @@ The container's width and height may be set, but it will automatically resize it
 
 The container's [`content`](https://api.feathersui.com/current/feathers/controls/Drawer.html#content) property is used to add a child to the container:
 
-```hx
+```haxe
 var content = new LayoutGroup();
 var contentLayout = new VerticalLayout();
 contentLayout.horizontalAlign = CENTER;
@@ -38,7 +38,7 @@ container.content = content;
 
 The container's [`drawer`](https://api.feathersui.com/current/feathers/controls/Drawer.html#drawer) property is used to specify the display object that is displayed when the drawer opens.
 
-```hx
+```haxe
 var drawer = new LayoutGroup();
 var drawerLayout = new VerticalLayout();
 drawerLayout.horizontalAlign = CENTER;
@@ -55,7 +55,7 @@ container.drawer = content;
 
 If you want to programmatically open or close the drawer, set the [`opened`](https://api.feathersui.com/current/feathers/controls/Drawer.html#opened) property.
 
-```hx
+```haxe
 openDrawerButton.addEventListener(TriggerEvent.TRIGGER, (event) -> {
   container.opened = true;
 });

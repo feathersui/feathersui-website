@@ -13,7 +13,7 @@ Navigation can be enhanced with animation, called a _transition_. Feathers UI pr
 
 Start by creating a [`PageNavigator`](https://api.feathersui.com/current/feathers/controls/navigators/PageNavigator.html), and add it to [the display list](https://books.openfl.org/openfl-developers-guide/display-programming/basics-of-display-programming.html).
 
-```hx
+```haxe
 var navigator = new PageNavigator();
 addChild(navigator);
 ```
@@ -22,7 +22,7 @@ addChild(navigator);
 
 A page can be a Feathers UI component or any OpenFL display object. The following example creates a simple page view with a [label](./label.md).
 
-```hx
+```haxe
 class Page1 extends LayoutGroup {
     public function new() {
         super();
@@ -36,7 +36,7 @@ class Page1 extends LayoutGroup {
 
 To add a new view that the navigator can show, create one or more [`PageItem`](https://api.feathersui.com/current/feathers/controls/navigators/PageItem.html) objects and add them to a [collection](./data-collections.md):
 
-```hx
+```haxe
 navigator.dataProvider = new ArrayCollection([
     PageItem.withClass(Page1),
     PageItem.withClass(Page2),
@@ -56,13 +56,13 @@ The first argument passed to [`PageItem.withClass()`](https://api.feathersui.com
 
 To show the view at a specific index in the data provider, set the navigator's [`selectedIndex`](https://api.feathersui.com/current/feathers/controls/navigators/PageNavigator.html#selectedIndex) property
 
-```hx
+```haxe
 navigator.selectedIndex = 2;
 ```
 
 Alternatively, pass one of the [`PageItem`](https://api.feathersui.com/current/feathers/controls/navigators/PageItem.html) instances from the collection to the [`selectedItem`](https://api.feathersui.com/current/feathers/controls/navigators/PageNavigator.html#selectedItem) property.
 
-```hx
+```haxe
 navigator.selectedItem = navigator.dataProvider.get(2);
 ```
 

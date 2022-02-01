@@ -14,7 +14,7 @@ The [`ToggleButton`](https://api.feathersui.com/current/feathers/controls/Toggle
 
 Start by creating a [`ToggleButton`](https://api.feathersui.com/current/feathers/controls/ToggleButton.html) control, give it some text to display, and add it to the [the display list](https://books.openfl.org/openfl-developers-guide/display-programming/basics-of-display-programming.html).
 
-```hx
+```haxe
 var button = new ToggleButton();
 button.text = "Click Me";
 addChild(button);
@@ -22,19 +22,19 @@ addChild(button);
 
 A toggle button may be selected and deselected when it is triggered, or it can be changed programmatically by setting the [`selected`](https://api.feathersui.com/current/feathers/controls/ToggleButton.html#selected) property.
 
-```hx
+```haxe
 button.selected = true;
 ```
 
 [Add an event listener](https://books.openfl.org/openfl-developers-guide/handling-events/basics-of-handling-events.html) for [`Event.CHANGE`](https://api.openfl.org/openfl/events/Event.html#CHANGE) to perform an action when the user changes the toggle button's selection.
 
-```hx
+```haxe
 button.addEventListener(Event.CHANGE, toggle_changeHandler);
 ```
 
 Check for the new value of the [`selected`](https://api.feathersui.com/current/feathers/controls/ToggleButton.html#selected) property in the listener function.
 
-```hx
+```haxe
 function toggle_changeHandler(event:Event):Void {
     var button = cast(event.currentTarget, ToggleButton);
     trace("button.selected change: " + button.selected);
@@ -62,19 +62,19 @@ A number of styles may be customized on a [`ToggleButton`](https://api.feathersu
 
 The font styles of the toggle button's text may be customized by passing an [`openfl.text.TextFormat`](https://api.openfl.org/openfl/text/TextFormat.html) object to the [`textFormat`](https://api.feathersui.com/current/feathers/controls/ToggleButton.html#textFormat) property.
 
-```hx
+```haxe
 button.textFormat = new TextFormat("Helvetica", 20, 0x3c3c3c);
 ```
 
 If the toggle button's text should use different font styles when the toggle button is selected, pass a [`TextFormat`](https://api.openfl.org/openfl/text/TextFormat.html) to the [`selectedTextFormat`](https://api.feathersui.com/current/feathers/controls/ToggleButton.html#selectedTextFormat) property.
 
-```hx
+```haxe
 button.selectedTextFormat = new TextFormat("Helvetica", 20, 0x9a9a9a, true);
 ```
 
 Finally, the toggle button's text may use different font styles in a more fine-grained matter — by targeting an exact state. Use the [`setTextFormatForState()`](https://api.feathersui.com/current/feathers/controls/ToggleButton.html#setTextFormatForState) method to pass in a state value and a [`TextFormat`](https://api.openfl.org/openfl/text/TextFormat.html).
 
-```hx
+```haxe
 button.setTextFormatForState(ToggleButtonState.DISABLED(false), new TextFormat("Helvetica", 20, 0xcc0000));
 ```
 
@@ -86,7 +86,7 @@ When font styles aren't available for a specific state, the toggle button will u
 
 Give the toggle button a background using the [`backgroundSkin`](https://api.feathersui.com/current/feathers/controls/BasicToggleButton.html#backgroundSkin) property. The following example sets it to a [`RectangleSkin`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html) instance.
 
-```hx
+```haxe
 var skin = new RectangleSkin();
 skin.border = SolidColor(1.0, 0x999999);
 skin.fill = SolidColor(0xcccccc);
@@ -103,26 +103,26 @@ The button automatically calculates its preferred size based on the initial dime
 
 The appearance of the toggle button's border or fill may change when the toggle button is selected. In the next example, the same [`RectangleSkin`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html) displays a different fill when selected by setting the [`selectedFill`](https://api.feathersui.com/current/feathers/skins/BaseGraphicsPathSkin.html#selectedFill) property.
 
-```hx
+```haxe
 skin.selectedFill = SolidColor(0xcc9999);
 ```
 
 Similarly, use the [`selectedBorder`](https://api.feathersui.com/current/feathers/skins/BaseGraphicsPathSkin.html#selectedBorder) property to set the border when selected.
 
-```hx
+```haxe
 skin.selectedBorder = SolidColor(2.0, 0x999999);
 ```
 
 The fill or border may be customized for an exact state too. In the next example, the same [`RectangleSkin`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html) displays a different border when the toggle button is down and not selected.
 
-```hx
+```haxe
 skin.setFillForState(ToggleButtonState.DOWN(false), SolidColor(0xaa9999));
 skin.setBorderForState(ToggleButtonState.DOWN(false), SolidColor(1.0, 0x9999cc));
 ```
 
 In the examples above, the toggle button uses the same [`RectangleSkin`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html) for all states, and that skin listens for changes to the toggle button's current state. Alternatively, the toggle button's [`selectedBackgroundSkin`](https://api.feathersui.com/current/feathers/controls/BasicToggleButton.html#selectedBackgroundSkin) property and [`setSkinForState()`](https://api.feathersui.com/current/feathers/controls/BasicToggleButton.html#setSkinForState) method allow the toggle button to display a completely different display object when its current state changes.
 
-```hx
+```haxe
 var defaultSkin = new RectangleSkin();
 // ... set border, fill, width, and height
 button.backgroundSkin = defaultSkin;
@@ -144,13 +144,13 @@ A toggle button may display an [`icon`](https://api.feathersui.com/current/feath
 
 The following example loads an icon using its name registered with OpenFL's [asset manager](https://api.openfl.org/openfl/utils/Assets.html).
 
-```hx
+```haxe
 button.icon = new Bitmap(Assets.getBitmapData("myAssetName"));
 ```
 
 Similar to the background skin, the toggle button's icon may be optionally customized for different states.
 
-```hx
+```haxe
 button.selectedIcon = new Bitmap(Assets.getBitmapData("anotherAssetName");
 button.setIconForState(ToggleButtonState.DOWN(false), new Bitmap(Assets.getBitmapData("yetAnotherAssetName")));
 ```
@@ -161,7 +161,7 @@ button.setIconForState(ToggleButtonState.DOWN(false), new Bitmap(Assets.getBitma
 
 Padding may be added on each side of the toggle button, including [top](https://api.feathersui.com/current/feathers/controls/ToggleButton.html#paddingTop), [right](https://api.feathersui.com/current/feathers/controls/ToggleButton.html#paddingRight), [bottom](https://api.feathersui.com/current/feathers/controls/ToggleButton.html#paddingBottom), and [left](https://api.feathersui.com/current/feathers/controls/ToggleButton.html#paddingLeft).
 
-```hx
+```haxe
 button.paddingTop = 5.0;
 button.paddingRight = 8.0;
 button.paddingBottom = 5.0;
@@ -170,7 +170,7 @@ button.paddingLeft = 8.0;
 
 The icon may be positioned on any side of the toggle button's text. For instance, the following example moves the icon above the text, so that the icon and text are stacked vertically.
 
-```hx
+```haxe
 button.iconPosition = TOP;
 ```
 
@@ -178,13 +178,13 @@ Set the [`iconPosition`](https://api.feathersui.com/current/feathers/controls/To
 
 The [`gap`](https://api.feathersui.com/current/feathers/controls/ToggleButton.html#gap) refers to the space, measured in pixels, between the icon and the text.
 
-```hx
+```haxe
 button.gap = 10.0;
 ```
 
 The [`horizontalAlign`](https://api.feathersui.com/current/feathers/controls/ToggleButton.html#horizontalAlign) and [`verticalAlign`](https://api.feathersui.com/current/feathers/controls/ToggleButton.html#verticalAlign) properties will adjust the alignment of the icon and text inside the toggle button, allowing you to anchor them at the edges or in the center.
 
-```hx
+```haxe
 button.horizontalAlign = CENTER;
 button.verticalAlign = MIDDLE;
 ```

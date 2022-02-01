@@ -13,7 +13,7 @@ Feathers UI offers a number of classes to quickly create common transition anima
 
 Creates animated transitions for view navigators that fade a display object to a solid color.
 
-```hx
+```haxe
 var transition = new ColorFadeTransitionBuilder()
     .setColor(0x000000) // range: 0x000000 to 0xFFFFFF
     .setDuration(1.5) // in seconds
@@ -27,7 +27,7 @@ See [API Reference: `ColorFadeTransitionBuilder`](https://api.feathersui.com/cur
 
 Creates animated transitions for view navigators that slide a new display object into view by animating the `x` and `y` properties, while covering an existing display object that remains stationary below. The display object may slide up, right, down, or left (or at an arbitrary angle).
 
-```hx
+```haxe
 var transition = new CoverTransitionBuilder()
     .setAngle(180.0) // range: 0.0 to 360.0
     .setDuration(1.5) // in seconds
@@ -43,7 +43,7 @@ See [API Reference: `CoverTransitionBuilder`](https://api.feathersui.com/current
 
 Creates animated transitions for view navigators that modify the opacity of one or both views in transition. Animates the `alpha` property of a display object to make it fade in or out.
 
-```hx
+```haxe
 var transition = new FadeTransitionBuilder()
     .setFadeIn()
     .setDuration(1.5) // in seconds
@@ -59,7 +59,7 @@ See [API Reference: `FadeTransitionBuilder`](https://api.feathersui.com/current/
 
 Creates transitions for view navigators that show or hide a display object masked by a growing or shrinking circle. Both display objects remain stationary while a mask is animated.
 
-```hx
+```haxe
 var transition = new IrisTransitionBuilder()
     .setOpen(true) // or false to close
     .setDuration(1.5) // in seconds
@@ -73,7 +73,7 @@ See [API Reference: `IrisTransitionBuilder`](https://api.feathersui.com/current/
 
 Creates animated transitions for view navigators that slide a display object out of view, by animating the `x` or `y` property, while revealing an existing display object that remains stationary below. The display object may slide up, right, down, or left (or at an arbitrary angle).
 
-```hx
+```haxe
 var transition = new RevealTransitionBuilder()
     .setAngle(180.0) // range: 0.0 to 360.0
     .setDuration(1.5) // in seconds
@@ -89,7 +89,7 @@ See [API Reference: `RevealTransitionBuilder`](https://api.feathersui.com/curren
 
 Creates animated transitions for view navigators that moves two adjacent views in the same direction (replacing one with the other), as if one view is pushing the other out of the way. Looks similar to a classic slide carousel. Animates the `x` or `y` property of the views. The views may move up, down, right, or left (or at an arbitrary angle).
 
-```hx
+```haxe
 var transition = new SlideTransitionBuilder()
     .setAngle(180.0) // range: 0.0 to 360.0
     .setDuration(1.5) // in seconds
@@ -105,7 +105,7 @@ See [API Reference: `SlideTransitionBuilder`](https://api.feathersui.com/current
 
 Creates transitions for view navigators that wipe a display object out of view, revealing another display object under the first. Both display objects remain stationary while the effect animates a mask. The mask may be animated up, right, down, or left (or at an arbitrary angle).
 
-```hx
+```haxe
 var transition = new WipeTransitionBuilder()
     .setAngle(180.0) // range: 0.0 to 360.0
     .setDuration(1.5) // in seconds

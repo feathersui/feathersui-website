@@ -14,7 +14,7 @@ The [`ItemRenderer`](https://api.feathersui.com/current/feathers/controls/dataRe
 
 Item renderers are managed by data containers, like [`ListView`](./list-view.md), [`GridView`](./grid-view.md), and [`GroupListView`](./group-list-view.md). Unlike other components, item renderers generally aren't added to [the display list](https://books.openfl.org/openfl-developers-guide/display-programming/basics-of-display-programming.html) directly. Instead, the data container will use a [`DisplayObjectRecycler`](https://api.feathersui.com/current/feathers/utils/DisplayObjectRecycler.html) to manage its item renderers. For instance, [`ListView`](./list-view.md) has a [`itemRendererRecycler`](https://api.feathersui.com/current/feathers/controls/ListView.html#itemRendererRecycler) property.
 
-```hx
+```haxe
 var recycler = DisplayObjectRecycler.withFunction(() -> {
     var itemRenderer = new ItemRenderer();
     // set common properties for all renderers in the same container here
@@ -25,7 +25,7 @@ listView.itemRendererRecycler = recycler;
 
 A custom [`update()`](https://api.feathersui.com/current/feathers/utils/DisplayObjectRecycler.html#update) method on the recycler can be used to set properties for a specific item from the container's data provider.
 
-```hx
+```haxe
 recycler.update = (itemRenderer:ItemRenderer, state:ListViewItemState) -> {
     // set properties for a specific item here
     itemRenderer.text = state.text;
@@ -38,7 +38,7 @@ The second parameter contains the current state of the item being displayed, inc
 
 An item renderer may display some text. Generally, it's a good idea to make the data container aware of the text too. For [`ListView`](./list-view.md), be sure to set the [`itemToText()`](https://api.feathersui.com/current/feathers/controls/ListView.html#itemToText) function.
 
-```hx
+```haxe
 listView.itemToText = item -> {
     return item.name;
 }
@@ -46,7 +46,7 @@ listView.itemToText = item -> {
 
 The [`itemToText()`](https://api.feathersui.com/current/feathers/controls/ListView.html#itemToText) function would be appropriate for the following data provider, where each item has a `name` property.
 
-```hx
+```haxe
 listView.dataProvider = new ArrayCollection([
     { name: "Pizza" },
     { name: "Cheeseburger" },
@@ -56,7 +56,7 @@ listView.dataProvider = new ArrayCollection([
 
 Inside the recycler's [`update()`](https://api.feathersui.com/current/feathers/utils/DisplayObjectRecycler.html#update) function, set the item renderer's [`text`](https://api.feathersui.com/current/feathers/controls/ToggleButton.html#text) property.
 
-```hx
+```haxe
 recycler.update = (itemRenderer:ItemRenderer, state:ListViewItemState) -> {
     itemRenderer.text = state.text;
 }
@@ -66,7 +66,7 @@ recycler.update = (itemRenderer:ItemRenderer, state:ListViewItemState) -> {
 
 An item renderer may display a second line of text below the primary text.
 
-```hx
+```haxe
 recycler.update = (itemRenderer:ItemRenderer, state:ListViewItemState) -> {
     var item = state.data;
     itemRenderer.secondaryText = item.detail;
@@ -109,19 +109,19 @@ A number of styles may be customized on an [`ItemRenderer`](https://api.feathers
 
 The font styles of the item renderer's text may be customized by passing an [`openfl.text.TextFormat`](https://api.openfl.org/openfl/text/TextFormat.html) object to the [`textFormat`](https://api.feathersui.com/current/feathers/controls/ToggleButton.html#textFormat) property.
 
-```hx
+```haxe
 itemRenderer.textFormat = new TextFormat("Helvetica", 20, 0x3c3c3c);
 ```
 
 If the item renderer's text should use different font styles when the item renderer is selected, pass a [`TextFormat`](https://api.openfl.org/openfl/text/TextFormat.html) to the [`selectedTextFormat`](https://api.feathersui.com/current/feathers/controls/ToggleButton.html#selectedTextFormat) property.
 
-```hx
+```haxe
 itemRenderer.selectedTextFormat = new TextFormat("Helvetica", 20, 0x9a9a9a, true);
 ```
 
 Finally, the item renderer's text may use different font styles in a more fine-grained matter — by targeting an exact state. Use the [`setTextFormatForState()`](https://api.feathersui.com/current/feathers/controls/ToggleButton.html#setTextFormatForState) method to pass in a state value and a [`TextFormat`](https://api.openfl.org/openfl/text/TextFormat.html).
 
-```hx
+```haxe
 itemRenderer.setTextFormatForState(ToggleButtonState.DISABLED(false), new TextFormat("Helvetica", 20, 0xcc0000));
 ```
 
@@ -133,7 +133,7 @@ When font styles aren't available for a specific state, the item renderer will u
 
 Give the item renderer a background using the [`backgroundSkin`](https://api.feathersui.com/current/feathers/controls/BasicToggleButton.html#backgroundSkin) property. The following example sets it to a [`RectangleSkin`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html) instance.
 
-```hx
+```haxe
 var skin = new RectangleSkin();
 skin.border = SolidColor(1.0, 0x999999);
 skin.fill = SolidColor(0xcccccc);
@@ -150,26 +150,26 @@ The button automatically calculates its preferred size based on the initial dime
 
 The appearance of the item renderer's border or fill may change when the item renderer is selected. In the next example, the same [`RectangleSkin`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html) displays a different fill when selected by setting the [`selectedFill`](https://api.feathersui.com/current/feathers/skins/BaseGraphicsPathSkin.html#selectedFill) property.
 
-```hx
+```haxe
 skin.selectedFill = SolidColor(0xcc9999);
 ```
 
 Similarly, use the [`selectedBorder`](https://api.feathersui.com/current/feathers/skins/BaseGraphicsPathSkin.html#selectedBorder) property to set the border when selected.
 
-```hx
+```haxe
 skin.selectedBorder = SolidColor(2.0, 0x999999);
 ```
 
 The fill or border may be customized for an exact state too. In the next example, the same [`RectangleSkin`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html) displays a different border when the item renderer is down and not selected.
 
-```hx
+```haxe
 skin.setFillForState(ToggleButtonState.DOWN(false), SolidColor(0xaa9999));
 skin.setBorderForState(ToggleButtonState.DOWN(false), SolidColor(1.0, 0x9999cc));
 ```
 
 In the examples above, the item renderer uses the same [`RectangleSkin`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html) for all states, and that skin listens for changes to the item renderer's current state. Alternatively, the item renderer's [`selectedBackgroundSkin`](https://api.feathersui.com/current/feathers/controls/BasicToggleButton.html#selectedBackgroundSkin) property and [`setSkinForState()`](https://api.feathersui.com/current/feathers/controls/BasicToggleButton.html#setSkinForState) method allow the item renderer to display a completely different display object when its current state changes.
 
-```hx
+```haxe
 var defaultSkin = new RectangleSkin();
 // ... set border, fill, width, and height
 itemRenderer.backgroundSkin = defaultSkin;
@@ -189,7 +189,7 @@ In the example above, the item renderer will display a custom skin when it is no
 
 Padding may be added on each side of the item renderer, including [top](https://api.feathersui.com/current/feathers/controls/ToggleButton.html#paddingTop), [right](https://api.feathersui.com/current/feathers/controls/ToggleButton.html#paddingRight), [bottom](https://api.feathersui.com/current/feathers/controls/ToggleButton.html#paddingBottom), and [left](https://api.feathersui.com/current/feathers/controls/ToggleButton.html#paddingLeft).
 
-```hx
+```haxe
 itemRenderer.paddingTop = 5.0;
 itemRenderer.paddingRight = 8.0;
 itemRenderer.paddingBottom = 5.0;
@@ -198,7 +198,7 @@ itemRenderer.paddingLeft = 8.0;
 
 The icon may be positioned on any side of the item renderer's text. For instance, the following example moves the icon above the text, so that the icon and text are stacked vertically.
 
-```hx
+```haxe
 itemRenderer.iconPosition = TOP;
 ```
 
@@ -206,13 +206,13 @@ Set the [`iconPosition`](https://api.feathersui.com/current/feathers/controls/To
 
 The [`gap`](https://api.feathersui.com/current/feathers/controls/ToggleButton.html#gap) refers to the space, measured in pixels, between the icon and the text.
 
-```hx
+```haxe
 itemRenderer.gap = 10.0;
 ```
 
 The [`horizontalAlign`](https://api.feathersui.com/current/feathers/controls/ToggleButton.html#horizontalAlign) and [`verticalAlign`](https://api.feathersui.com/current/feathers/controls/ToggleButton.html#verticalAlign) properties will adjust the alignment of the icon and text inside the item renderer, allowing you to anchor them at the edges or in the center.
 
-```hx
+```haxe
 itemRenderer.horizontalAlign = CENTER;
 itemRenderer.verticalAlign = MIDDLE;
 ```

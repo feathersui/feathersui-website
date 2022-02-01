@@ -16,26 +16,26 @@ The [`TextArea`](https://api.feathersui.com/current/feathers/controls/TextArea.h
 
 Create a [`TextArea`](https://api.feathersui.com/current/feathers/controls/TextArea.html) control and add it to the [the display list](https://books.openfl.org/openfl-developers-guide/display-programming/basics-of-display-programming.html).
 
-```hx
+```haxe
 var textArea = new TextArea();
 addChild(textArea);
 ```
 
 Text may be changed programatically by setting the [`text`](https://api.feathersui.com/current/feathers/controls/TextArea.html#text) property.
 
-```hx
+```haxe
 textArea.text = "Jessica Jones";
 ```
 
 [Add an event listener](https://books.openfl.org/openfl-developers-guide/handling-events/basics-of-handling-events.html) for [`Event.CHANGE`](https://api.openfl.org/openfl/events/Event.html#CHANGE) to perform an action when the user edits the text.
 
-```hx
+```haxe
 textArea.addEventListener(Event.CHANGE, textArea_changeHandler);
 ```
 
 Check for the new value of the [`text`](https://api.feathersui.com/current/feathers/controls/TextArea.html#text) property in the listener function.
 
-```hx
+```haxe
 function textArea_changeHandler(event:Event):Void {
     var textArea = cast(event.currentTarget, TextArea);
     trace("text area change: " + textArea.text);
@@ -61,13 +61,13 @@ A number of styles may be customized on a [`TextArea`](https://api.feathersui.co
 
 The font styles of the text area's text may be customized by passing an [`openfl.text.TextFormat`](https://api.openfl.org/openfl/text/TextFormat.html) object to the [`textFormat`](https://api.feathersui.com/current/feathers/controls/TextArea.html#textFormat) property.
 
-```hx
+```haxe
 textArea.textFormat = new TextFormat("Helvetica", 20, 0x3c3c3c);
 ```
 
 If the text area's text should use different font styles when the text area is in different states, pass a [`TextFormat`](https://api.openfl.org/openfl/text/TextFormat.html) and state value to the [`setTextFormatForState()`](https://api.feathersui.com/current/feathers/controls/TextArea.html#setTextFormatForState) method.
 
-```hx
+```haxe
 textArea.setTextFormatForState(TextInputState.FOCUSED, new TextFormat("Helvetica", 20, 0xcc0000));
 ```
 
@@ -79,7 +79,7 @@ When font styles aren't available for a specific state, the text area will use t
 
 Give the text area a background using the [`backgroundSkin`](https://api.feathersui.com/current/feathers/controls/TextArea.html#backgroundSkin) property. The following example sets it to a [`RectangleSkin`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html) instance.
 
-```hx
+```haxe
 var skin = new RectangleSkin();
 skin.border = SolidColor(1.0, 0x999999);
 skin.fill = SolidColor(0xcccccc);
@@ -96,19 +96,19 @@ The text area automatically calculates its preferred size based on the initial d
 
 The appearance of the text area's border or fill may be customized to change based on the text area's current state, such as when the text area receives focus, there is an error string, or the text area is disabled. In the next example, a call to the skin's [`setFillForState()`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html#setFillForState) method makes it switch to a different fill when the text area's [`FOCUSED`](https://api.feathersui.com/current/feathers/controls/TextInputState.html#FOCUSED) state is active.
 
-```hx
+```haxe
 skin.setFillForState(TextInputState.FOCUSED, SolidColor(0xffcccc));
 ```
 
 Similarly, use the skin's [`setBorderForState()`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html#setBorderForState) method to change the border for a specific state.
 
-```hx
+```haxe
 skin.setBorderForState(TextInputState.FOCUSED, SolidColor(2.0, 0x999999));
 ```
 
 In the examples above, the text area uses the same [`RectangleSkin`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html) for all states, and that skin listens for changes to the text area's current state. Alternatively, the text area's [`setSkinForState()`](https://api.feathersui.com/current/feathers/controls/TextArea.html#setSkinForState) method allows the text area to display a completely different display object when its current state changes.
 
-```hx
+```haxe
 var defaultSkin = new RectangleSkin();
 // ... set border, fill, width, and height
 textArea.backgroundSkin = defaultSkin;

@@ -14,7 +14,7 @@ The [`AssetLoader`](https://api.feathersui.com/current/feathers/controls/AssetLo
 
 Create an [`AssetLoader`](https://api.feathersui.com/current/feathers/controls/AssetLoader.html) control and add it to [the display list](https://books.openfl.org/openfl-developers-guide/display-programming/basics-of-display-programming.html).
 
-```hx
+```haxe
 var loader = new AssetLoader();
 addChild(loader);
 ```
@@ -26,13 +26,13 @@ Two different types of assets may be loaded.
 
 To load an asset defined in _project.xml_, set the [`source`](https://api.feathersui.com/current/feathers/controls/AssetLoader.html#source) property to the name of the asset.
 
-```hx
+```haxe
 loader.source = "my-asset-id";
 ```
 
 Alternatively, to load an asset from the web, set the [`source`](https://api.feathersui.com/current/feathers/controls/AssetLoader.html#source) property to the asset's URL.
 
-```hx
+```haxe
 loader.source = "https://example.com/img/asset.png";
 ```
 
@@ -40,13 +40,13 @@ loader.source = "https://example.com/img/asset.png";
 
 [Add an event listener](https://books.openfl.org/openfl-developers-guide/handling-events/basics-of-handling-events.html) for [`Event.COMPLETE`](https://api.openfl.org/openfl/events/Event.html#COMPLETE) to perform an action when the image finishes loading.
 
-```hx
+```haxe
 loader.addEventListener(Event.COMPLETE, loader_completeHandler);
 ```
 
 Listeners for [`Event.COMPLETE`](https://api.openfl.org/openfl/events/Event.html#COMPLETE) have the following function signature.
 
-```hx
+```haxe
 function loader_completeHandler(event:Event):Void {
     var loader = cast(event.currentTarget, AssetLoader);
     trace("asset loaded: " + loader.source);
@@ -55,14 +55,14 @@ function loader_completeHandler(event:Event):Void {
 
 [Add an event listener](https://books.openfl.org/openfl-developers-guide/handling-events/basics-of-handling-events.html) for [`IOErrorEvent.IO_ERROR`](https://api.openfl.org/openfl/events/IOErrorEvent.html#IO_ERROR) and [`SecurityErrorEvent.SECURITY_ERROR`](https://api.openfl.org/openfl/events/SecurityErrorEvent.html#SECURITY_ERROR) to perform an action if the asset fails to load.
 
-```hx
+```haxe
 loader.addEventListener(IOErrorEvent.IO_ERROR, loader_ioErrorHandler);
 loader.addEventListener(SecurityErrorEvent.SECURITY_ERROR, loader_securityErrorHandler);
 ```
 
 These listeners should have the following function signatures.
 
-```hx
+```haxe
 function loader_ioErrorHandler(event:IOErrorEvent):Void {
     var loader = cast(event.currentTarget, AssetLoader);
     trace("asset i/o error: " + loader.source + " => " + event.text);

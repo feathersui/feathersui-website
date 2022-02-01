@@ -11,7 +11,7 @@ Navigation can be enhanced with animation, called a _transition_. Feathers UI pr
 
 Start by creating a [`TabNavigator`](https://api.feathersui.com/current/feathers/controls/navigators/TabNavigator.html), and add it to [the display list](https://books.openfl.org/openfl-developers-guide/display-programming/basics-of-display-programming.html).
 
-```hx
+```haxe
 var navigator = new TabNavigator();
 addChild(navigator);
 ```
@@ -20,7 +20,7 @@ addChild(navigator);
 
 A view can be a Feathers UI component or any OpenFL display object. The following example creates a simple view with a [label](./label.md).
 
-```hx
+```haxe
 class HomeView extends LayoutGroup {
     public function new() {
         super();
@@ -34,7 +34,7 @@ class HomeView extends LayoutGroup {
 
 To add a new view that the navigator can show, create one or more [`TabItem`](https://api.feathersui.com/current/feathers/controls/navigators/TabItem.html) objects and add them to a [collection](./data-collections.md):
 
-```hx
+```haxe
 navigator.dataProvider = new ArrayCollection([
     TabItem.withClass("Home", HomeView),
     TabItem.withClass("Profile", ProfileView),
@@ -54,13 +54,13 @@ The first argument passed to [`TabItem.withClass()`](https://api.feathersui.com/
 
 To show the view at a specific index in the data provider, set the navigator's [`selectedIndex`](https://api.feathersui.com/current/feathers/controls/navigators/TabNavigator.html#selectedIndex) property
 
-```hx
+```haxe
 navigator.selectedIndex = 2;
 ```
 
 Alternatively, pass one of the [`TabItem`](https://api.feathersui.com/current/feathers/controls/navigators/TabItem.html) instances from the collection to the [`selectedItem`](https://api.feathersui.com/current/feathers/controls/navigators/TabNavigator.html#selectedItem) property.
 
-```hx
+```haxe
 navigator.selectedItem = navigator.dataProvider.get(2);
 ```
 

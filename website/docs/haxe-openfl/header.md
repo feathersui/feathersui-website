@@ -14,7 +14,7 @@ The [`Header`](https://api.feathersui.com/current/feathers/controls/Header.html)
 
 Start by creating a [`Header`](https://api.feathersui.com/current/feathers/controls/Header.html) control, give it some text to display, and add it to [the display list](https://books.openfl.org/openfl-developers-guide/display-programming/basics-of-display-programming.html).
 
-```hx
+```haxe
 var header = new Header();
 header.text = "Settings";
 addChild(header);
@@ -22,7 +22,7 @@ addChild(header);
 
 Next, we'll create a back button and pass it to the [`leftView`](https://api.feathersui.com/current/feathers/controls/Header.html#leftView) property, which will position it to the left of the title.
 
-```hx
+```haxe
 var backButton = new Button();
 backButton.text = "Back";
 header.leftView = backButton;
@@ -38,7 +38,7 @@ A number of styles may be customized on a [`Header`](https://api.feathersui.com/
 
 The font styles of the header's text may be customized by passing an [`openfl.text.TextFormat`](https://api.openfl.org/openfl/text/TextFormat.html) object to the [`textFormat`](https://api.feathersui.com/current/feathers/controls/Header.html#textFormat) property.
 
-```hx
+```haxe
 header.textFormat = new TextFormat("Helvetica", 20, 0x3c3c3c);
 ```
 
@@ -48,7 +48,7 @@ If the header's text should use different font styles when the header is disable
 
 Optionally give the header a background using the [`backgroundSkin`](https://api.feathersui.com/current/feathers/controls/Header.html#backgroundSkin) property. The following example sets it to a [`RectangleSkin`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html) instance.
 
-```hx
+```haxe
 var skin = new RectangleSkin();
 skin.border = SolidColor(1.0, 0x999999);
 skin.fill = SolidColor(0xcccccc);
@@ -65,19 +65,19 @@ The header automatically calculates its preferred size based on the initial dime
 
 The appearance of the header's border or fill may be customized to change when the header is [disabled](https://api.feathersui.com/current/feathers/core/IUIControl.html#enabled). In the next example, setting the skin's [`disabledFill`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html#disabledFill) method makes it switch to a different fill when the header is disabled.
 
-```hx
+```haxe
 skin.disabledFill = SolidColor(0xffcccc);
 ```
 
 Similarly, use the skin's [`disabledBorder`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html#disabledBorder) property to change the border when disabled.
 
-```hx
+```haxe
 skin.disabledBorder = SolidColor(2.0, 0x999999);
 ```
 
 In the examples above, the header uses the same [`RectangleSkin`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html) for all states, and that skin listens for changes to the header's current state. Alternatively, the header's [`disabledBackgroundSkin`](https://api.feathersui.com/current/feathers/controls/Header.html#disabledBackgroundSkin) method allows the header to display a completely different display object when it is disabled.
 
-```hx
+```haxe
 var defaultSkin = new RectangleSkin();
 // ... set border, fill, width, and height
 header.backgroundSkin = defaultSkin;
@@ -93,7 +93,7 @@ In the example above, the header will have a separate skins when enabled and dis
 
 Padding may be added on each side of the header, including [top](https://api.feathersui.com/current/feathers/controls/Header.html#paddingTop), [right](https://api.feathersui.com/current/feathers/controls/Header.html#paddingRight), [bottom](https://api.feathersui.com/current/feathers/controls/Header.html#paddingBottom), and [left](https://api.feathersui.com/current/feathers/controls/Header.html#paddingLeft).
 
-```hx
+```haxe
 header.paddingTop = 5.0;
 header.paddingRight = 8.0;
 header.paddingBottom = 5.0;
@@ -102,13 +102,13 @@ header.paddingLeft = 8.0;
 
 The left and right views are positioned as far to the sides of the title text as possible. The [`minGap`](https://api.feathersui.com/current/feathers/controls/Header.html#minGap) makes it possible to require a minimum number of pixels to separate the title from the left and right views.
 
-```hx
+```haxe
 header.minGap = 10.0;
 ```
 
 The [`verticalAlign`](https://api.feathersui.com/current/feathers/controls/Button.html#verticalAlign) property will adjust the vertical alignment of the title and side views inside the header, allowing you to anchor them at the top, bottom, or middle.
 
-```hx
+```haxe
 header.verticalAlign = BOTTOM;
 ```
 

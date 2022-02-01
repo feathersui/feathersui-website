@@ -13,14 +13,14 @@ Navigation can be enhanced with animation, called a _transition_. Feathers UI pr
 
 Start by creating a [`StackNavigator`](https://api.feathersui.com/current/feathers/controls/navigators/StackNavigator.html), and add it to [the display list](https://books.openfl.org/openfl-developers-guide/display-programming/basics-of-display-programming.html).
 
-```hx
+```haxe
 var navigator = new StackNavigator();
 addChild(navigator);
 ```
 
 A view can be a Feathers UI component or any OpenFL display object. The following example creates a simple view with a [label](./label.md).
 
-```hx
+```haxe
 class HelloView extends LayoutGroup {
     public static final ID = "hello-view";
 
@@ -38,7 +38,7 @@ The static `ID` constant will be used later when the view is added to the naviga
 
 To add a new view that the navigator can show, create a [`StackItem`](https://api.feathersui.com/current/feathers/controls/navigators/StackItem.html) and pass it to the navigator's [`addItem()`](https://api.feathersui.com/current/feathers/controls/navigators/StackNavigator.html#addItem) method.
 
-```hx
+```haxe
 var item = StackItem.withClass(HelloView.ID, HelloView);
 navigator.addItem(item);
 ```
@@ -53,7 +53,7 @@ The first argument passed to [`StackItem.withClass()`](https://api.feathersui.co
 
 To show the new view, set the navigator's [`rootItemID`](https://api.feathersui.com/current/feathers/controls/navigators/StackNavigator.html#rootItemID) property to the view's identifier.
 
-```hx
+```haxe
 navigator.rootItemID = HelloView.ID;
 ```
 
@@ -63,7 +63,7 @@ In a [`StackNavigator`](https://api.feathersui.com/current/feathers/controls/nav
 
 Navigation may be triggered progammatically by calling functions like [`pushItem()`](https://api.feathersui.com/current/feathers/controls/navigators/StackNavigator.html#pushItem) and [`popItem()`](https://api.feathersui.com/current/feathers/controls/navigators/StackNavigator.html#pushItem) on the navigator.
 
-```hx
+```haxe
 navigator.pushItem(HelloView.ID);
 ```
 
@@ -75,7 +75,7 @@ The navigator can [listen for events](https://books.openfl.org/openfl-developers
 
 Consider the following two views, `ViewA` and `ViewB`.
 
-```hx
+```haxe
 class ViewA extends LayoutGroup {
     public static final ID = "a";
 
@@ -101,7 +101,7 @@ class ViewA extends LayoutGroup {
 
 `ViewA` displays a label with the text "A" and a button with the text "Push B". When the button is triggered, `ViewA` dispatches `Event.CHANGE`.
 
-```hx
+```haxe
 class ViewB extends LayoutGroup {
     public static final ID = "b";
 
@@ -129,7 +129,7 @@ class ViewB extends LayoutGroup {
 
 In the next example, the two views are added to the navigator and the [`rootItemID`](https://api.feathersui.com/current/feathers/controls/navigators/StackNavigator.html#rootItemID) displays the initial view.
 
-```hx
+```haxe
 var itemA = StackItem.withClass(ViewA.ID, ViewA, [
     Event.CHANGE => Push(ViewB.ID)
 ]);
@@ -157,7 +157,7 @@ Sometimes, when pushing a new view onto the stack, the old view needs to pass ad
 
 The example below contains simplified versions of `AllContactsView` and `ContactDetailsView`. Most of the necessary code has been omitted to focus specifically on passing data between these views.
 
-```hx
+```haxe
 class AllContactsView extends FeathersControl {
     public static final ID = "all-contacts";
 }
@@ -171,7 +171,7 @@ class ContactDetailsView extends FeathersControl {
 
 The `ContactDetailsView` has a public property named `contact` that is used to specify which contact's details should be displayed. The `Contact` class might contain the contact's name, their email address, and any other relevant details that are necessary.
 
-```hx
+```haxe
 class Contact {
     public var name:String;
     public var email:String;
@@ -180,7 +180,7 @@ class Contact {
 
 Somewhere inside `AllContactsView`, it dispatches `ContactEvent.VIEW_CONTACT`. Perhaps, the event is dispatched when the [`selectedItem`](https://api.feathersui.com/current/feathers/controls/ListView.html#selectedItem) property of a [`ListView`](./list-view.md) changes.
 
-```hx
+```haxe
 // somewhere in AllContactsView
 var contact = cast(listView.selectedItem, Contact);
 dispatchEvent(new ContactEvent(ContactEvent.VIEW_CONTACT, contact));
@@ -188,7 +188,7 @@ dispatchEvent(new ContactEvent(ContactEvent.VIEW_CONTACT, contact));
 
 `ContactEvent` is a custom event that might be implemented like this:
 
-```hx
+```haxe
 import openfl.events.Event;
 
 class ContactEvent extends Event {
@@ -205,7 +205,7 @@ class ContactEvent extends Event {
 
 To simply push a new view, and do nothing else, it's easy to create a [`Push()`](https://api.feathersui.com/current/feathers/controls/navigators/StackAction.html#Push) action for `ContactEvent.VIEW_CONTACT`.
 
-```hx
+```haxe
 StackItem.withClass(AllContactsView.ID, AllContactsView, [
     // this pushes without data. something more powerful is needed.
     ContactEvent.VIEW_CONTACT => Push(ContactDetailsView.ID)
@@ -216,7 +216,7 @@ However, [`Push()`](https://api.feathersui.com/current/feathers/controls/navigat
 
 Instead, use [`NewAction()`](https://api.feathersui.com/current/feathers/controls/navigators/StackAction.html#NewAction) to dynamically create a [`Push()`](https://api.feathersui.com/current/feathers/controls/navigators/StackAction.html#Push) action that includes an _inject_ function for `ContactDetailsView`. Inside that function, the `contact` property of the `ContactDetailsView` can be set.
 
-```hx
+```haxe
 StackItem.withClass(AllContactsView.ID, AllContactsView, [
     ContactEvent.VIEW_CONTACT => NewAction((event:ContactEvent) -> {
         // this is the contact from AllContactsView
@@ -240,7 +240,7 @@ Sometimes, when popping a view from the stack, it needs to pass additional data 
 
 The example below contains simplified versions of `ComposeMessageView` and `ChooseContactView`. Most of the necessary code has been omitted to focus specifically on passing data between these views.
 
-```hx
+```haxe
 class ChooseContactView extends FeathersControl {
     public static final ID = "choose-contact";
 }
@@ -254,7 +254,7 @@ class ComposeMessageView extends FeathersControl {
 
 The `ComposeMessageView` has a public property named `contact` that is used to reference the message recipient. The `Contact` class might contain the contact's name, their email address, and any other relevant details that are necessary.
 
-```hx
+```haxe
 class Contact {
     public var name:String;
     public var email:String;
@@ -265,7 +265,7 @@ To understand how data is passed on pop, it's better to start with `ChooseContac
 
 Somewhere inside `ChooseContactView`, it dispatches `ContactEvent.CHOOSE_CONTACT` with the selected `Contact` from a [`ListView`](./list-view.md).
 
-```hx
+```haxe
 // somewhere in ChooseContactView
 var contact = cast(listView.selectedItem, Contact);
 dispatchEvent(new ContactEvent(ContactEvent.CHOOSE_CONTACT, contact));
@@ -273,7 +273,7 @@ dispatchEvent(new ContactEvent(ContactEvent.CHOOSE_CONTACT, contact));
 
 `ContactEvent` is a custom event that might be implemented like this:
 
-```hx
+```haxe
 import openfl.events.Event;
 
 class ContactEvent extends Event {
@@ -291,7 +291,7 @@ class ContactEvent extends Event {
 
 To simply pop to the previous view, and do nothing else, it's easy to create a [`Pop()`](https://api.feathersui.com/current/feathers/controls/navigators/StackAction.html#Pop) action for `ContactEvent.CHOOSE_CONTACT`.
 
-```hx
+```haxe
 StackItem.withClass(ChooseContactView.ID, ChooseContactView, [
     // this pops without data. something more powerful is needed.
     ContactEvent.CHOOSE_CONTACT => Pop()
@@ -302,7 +302,7 @@ However, [`Pop()`](https://api.feathersui.com/current/feathers/controls/navigato
 
 Instead, use [`NewAction()`](https://api.feathersui.com/current/feathers/controls/navigators/StackAction.html#NewAction) to dynamically create a [`Pop()`](https://api.feathersui.com/current/feathers/controls/navigators/StackAction.html#Push) action that includes a _returned object_. Later, that returned object can be passed to the `contact` property of the `ComposeMessageView`.
 
-```hx
+```haxe
 StackItem.withClass(ChooseContactView.ID, ChooseContactView, [
     ContactEvent.CHOOSE_CONTACT => NewAction((event:ContactEvent) -> {
         // this is the contact from ChooseContactView
@@ -316,14 +316,14 @@ StackItem.withClass(ChooseContactView.ID, ChooseContactView, [
 
 Somewhere inside `ComposeMessageView`, it dispatches `ContactEvent.REQUEST_CONTACT`. Perhaps, the event is dispatched when a [`Button`](./button.md) is triggered.
 
-```hx
+```haxe
 // somewhere in ComposeMessageView
 dispatchEvent(new ContactEvent(ContactEvent.REQUEST_CONTACT));
 ```
 
 Create a [`Push()`](https://api.feathersui.com/current/feathers/controls/navigators/StackAction.html#Push) action for `ContactEvent.REQUEST_CONTACT` that navigates to `ChooseContactView`. This mapping contains no special handling of the returned object from `ChooseContactView`.
 
-```hx
+```haxe
 StackItem.withClass(ComposeMessageView.ID, ComposeMessageView, [
     ContactEvent.REQUEST_CONTACT => Push(ChooseContactView.ID)
 ]);
@@ -331,7 +331,7 @@ StackItem.withClass(ComposeMessageView.ID, ComposeMessageView, [
 
 To handled the returned object from `ChooseContactView`, another, optional argument can be used to set up mappings that parse returned objects from different views that are popped. In this case, the returned object from `ChooseContactView` is passed to `ComposeMessageView`.
 
-```hx
+```haxe
 StackItem.withClass(ComposeMessageView.ID, ComposeMessageView, [
     ContactEvent.REQUEST_CONTACT => Push(ChooseContactView.ID)
 ], [

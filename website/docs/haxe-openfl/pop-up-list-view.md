@@ -14,7 +14,7 @@ The [`PopUpListView`](https://api.feathersui.com/current/feathers/controls/PopUp
 
 Start by creating a [`PopUpListView`](https://api.feathersui.com/current/feathers/controls/PopUpListView.html) control, pass in a [collection](./data-collections.md) that defines the items to render, and add it to [the display list](https://books.openfl.org/openfl-developers-guide/display-programming/basics-of-display-programming.html).
 
-```hx
+```haxe
 var listView = new PopUpListView();
 addChild(listView);
 ```
@@ -23,7 +23,7 @@ addChild(listView);
 
 To render some data in the list view, pass in a [collection](./data-collections.md) that contains an object for each row.
 
-```hx
+```haxe
 listView.dataProvider = new ArrayCollection([
     { text: "A" },
     { text: "B" },
@@ -33,7 +33,7 @@ listView.dataProvider = new ArrayCollection([
 
 Set the [`itemToText()`](https://api.feathersui.com/current/feathers/controls/PopUpListView.html#itemToText) method to get the text from each item to display in an item renderer.
 
-```hx
+```haxe
 listView.itemToText = function(item:Dynamic):String {
     return item.text;
 };
@@ -43,13 +43,13 @@ listView.itemToText = function(item:Dynamic):String {
 
 [Add an event listener](https://books.openfl.org/openfl-developers-guide/handling-events/basics-of-handling-events.html) for [`Event.CHANGE`](https://api.openfl.org/openfl/events/Event.html#CHANGE) to perform an action when the user selects a different item.
 
-```hx
+```haxe
 listView.addEventListener(Event.CHANGE, listView_changeHandler);
 ```
 
 Check for the new value of the [`selectedItem`](https://api.feathersui.com/current/feathers/controls/PopUpListView.html#selectedItem) property in the listener.
 
-```hx
+```haxe
 function listView_changeHandler(event:Event):Void {
     var listView = cast(event.currentTarget, PopUpListView);
     trace("PopUpListView selectedItem change: " + listView.selectedItem.text);
@@ -58,7 +58,7 @@ function listView_changeHandler(event:Event):Void {
 
 Alternatively, the value of the [`selectedIndex`](https://api.feathersui.com/current/feathers/controls/PopUpListView.html#selectedIndex) property references the index of the items in the list view's collection, in the order that they were added.
 
-```hx
+```haxe
 function listView_changeHandler(event:Event):Void {
     var listView = cast(event.currentTarget, PopUpListView);
     trace("PopUpListView selectedIndex change: " + listView.selectedIndex);
@@ -69,14 +69,14 @@ function listView_changeHandler(event:Event):Void {
 
 To add a new item at the end, pass an object to the data provider's [`add()`](https://api.feathersui.com/current/feathers/data/IFlatCollection.html#add) method.
 
-```hx
+```haxe
 var newItem = { text: "New Item" };
 listView.dataProvider.add(newItem);
 ```
 
 To add a new item at a specific position, pass an object to the data provider's [`addAt()`](https://api.feathersui.com/current/feathers/data/IFlatCollection.html#addAt) method.
 
-```hx
+```haxe
 var newItem = { text: "First Item" };
 listView.dataProvider.addAt(newItem, 0);
 ```
@@ -85,7 +85,7 @@ In the example above, a new item is added to the beginning.
 
 Similarly, to remove an item, call [`remove()`](https://api.feathersui.com/current/feathers/data/IFlatCollection.html#remove) or [`removeAt()`](https://api.feathersui.com/current/feathers/data/IFlatCollection.html#removeAt) on the collection.
 
-```hx
+```haxe
 listView.dataProvider.removeAt(0);
 ```
 
@@ -103,7 +103,7 @@ The button in a [`PopUpListView`](https://api.feathersui.com/current/feathers/co
 
 Use the [`PopUpListView.CHILD_VARIANT_BUTTON`](https://api.feathersui.com/current/feathers/controls/PopUpListView.html#CHILD_VARIANT_BUTTON) constant in a [theme](./themes.md) to provide a function that globally styles the buttons in all [`PopUpListView`](https://api.feathersui.com/current/feathers/controls/PopUpListView.html) components.
 
-```hx
+```haxe
 styleProvider.setStyleFunction(
     Button,
     PopUpListView.CHILD_VARIANT_BUTTON,
@@ -112,7 +112,7 @@ styleProvider.setStyleFunction(
 
 The function should use the following signature.
 
-```hx
+```haxe
 function setPopUpListView_Button_Styles(button:Button):Void {
     // ... set styles here
 });
@@ -122,7 +122,7 @@ function setPopUpListView_Button_Styles(button:Button):Void {
 
 The [`buttonFactory`](https://api.feathersui.com/current/feathers/controls/PopUpListView.html#buttonFactory) property may be used to customize the creation of an individual button.
 
-```hx
+```haxe
 listView.buttonFactory = () -> {
     var button = new Button();
     // ... set styles here
@@ -140,7 +140,7 @@ The list view in a [`PopUpListView`](https://api.feathersui.com/current/feathers
 
 Use the [`PopUpListView.CHILD_VARIANT_LIST_VIEW`](https://api.feathersui.com/current/feathers/controls/PopUpListView.html#CHILD_VARIANT_LIST_VIEW) constant in a [theme](./themes.md) to provide a function that globally styles the list views in all [`PopUpListView`](https://api.feathersui.com/current/feathers/controls/PopUpListView.html) components.
 
-```hx
+```haxe
 styleProvider.setStyleFunction(
     ListView,
     PopUpListView.CHILD_VARIANT_LIST_VIEW,
@@ -149,7 +149,7 @@ styleProvider.setStyleFunction(
 
 The function should use the following signature.
 
-```hx
+```haxe
 function setPopUpListView_ListView_Styles(button:ListView):Void {
     // ... set styles here
 });
@@ -159,7 +159,7 @@ function setPopUpListView_ListView_Styles(button:ListView):Void {
 
 The [`listViewFactory`](https://api.feathersui.com/current/feathers/controls/PopUpListView.html#listViewFactory) property may be used to customize the creation of an individual list view.
 
-```hx
+```haxe
 listView.listViewFactory = () -> {
     var listView = new ListView();
     // ... set styles here

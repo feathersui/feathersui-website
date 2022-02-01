@@ -14,7 +14,7 @@ The [`NumericStepper`](https://api.feathersui.com/current/feathers/controls/Nume
 
 First, let's create a [`NumericStepper`](https://api.feathersui.com/current/feathers/controls/NumericStepper.html) control, set up its range of values, and add it to the [the display list](https://books.openfl.org/openfl-developers-guide/display-programming/basics-of-display-programming.html).
 
-```hx
+```haxe
 var stepper = new NumericStepper();
 stepper.minimum = 0.0;
 stepper.maximum = 100.0;
@@ -24,7 +24,7 @@ addChild(stepper);
 
 The [`value`](https://api.feathersui.com/current/feathers/controls/NumericStepper.html#value) property indicates the current value of the stepper, while the [`minimum`](https://api.feathersui.com/current/feathers/controls/NumericStepper.html#minimum) and [`maximum`](https://api.feathersui.com/current/feathers/controls/NumericStepper.html#maximum) properties establish a range of possible values. We can further control the stepper's behavior with the [`step`](https://api.feathersui.com/current/feathers/controls/NumericStepper.html#step) property:
 
-```hx
+```haxe
 stepper.step = 1;
 ```
 
@@ -32,13 +32,13 @@ The [`step`](https://api.feathersui.com/current/feathers/controls/NumericStepper
 
 Add a listener to the [`Event.CHANGE`](/api-reference/feathers/controls/NumericStepper.html#event:change) event to know when the [`value`](https://api.feathersui.com/current/feathers/controls/NumericStepper.html#value) property changes:
 
-```hx
+```haxe
 stepper.addEventListener(Event.CHANGE, stepper_changeHandler);
 ```
 
 The listener might look something like this:
 
-```hx
+```haxe
 function stepper_changeHandler(event:Event):Void {
     var stepper = cast(event.currentTarget, NumericStepper);
     trace("stepper.value change: " + stepper.value);
@@ -59,7 +59,7 @@ The decrement and increment buttons in a [`NumericStepper`](https://api.feathers
 
 Use the [`NumericStepper.CHILD_VARIANT_DECREMENT_BUTTON`](https://api.feathersui.com/current/feathers/controls/NumericStepper.html#CHILD_VARIANT_DECREMENT_BUTTON) and [`NumericStepper.CHILD_VARIANT_INCREMENT_BUTTON`](https://api.feathersui.com/current/feathers/controls/NumericStepper.html#CHILD_VARIANT_INCREMENT_BUTTON) constants in a [theme](./themes.md) to provide a function that globally styles the buttons in all [`NumericStepper`](https://api.feathersui.com/current/feathers/controls/NumericStepper.html) components.
 
-```hx
+```haxe
 styleProvider.setStyleFunction(
     Button,
     NumericStepper.CHILD_VARIANT_DECREMENT_BUTTON,
@@ -73,7 +73,7 @@ styleProvider.setStyleFunction(
 
 The functions should use the following signature.
 
-```hx
+```haxe
 function setNumericStepper_DecrementButton_Styles(button:Button):Void {
     // ... set styles here
 });
@@ -87,7 +87,7 @@ function setNumericStepper_IncrementButton_Styles(button:Button):Void {
 
 The [`decrementButtonFactory`](https://api.feathersui.com/current/feathers/controls/NumericStepper.html#decrementButtonFactory) and [`incrementButtonFactory`](https://api.feathersui.com/current/feathers/controls/NumericStepper.html#incrementButtonFactory) properties may be used to customize the creation of an individual button.
 
-```hx
+```haxe
 stepper.decrementButtonFactory = () -> {
     var button = new Button();
     // ... set styles here
@@ -111,7 +111,7 @@ The text input in a [`NumericStepper`](https://api.feathersui.com/current/feathe
 
 Use the [`NumericStepper.CHILD_VARIANT_TEXT_INPUT`](https://api.feathersui.com/current/feathers/controls/NumericStepper.html#CHILD_VARIANT_TEXT_INPUT) constant in a [theme](./themes.md) to provide a function that globally styles the text inputs in all [`NumericStepper`](https://api.feathersui.com/current/feathers/controls/NumericStepper.html) components.
 
-```hx
+```haxe
 styleProvider.setStyleFunction(
     TextInput,
     NumericStepper.CHILD_VARIANT_TEXT_INPUT,
@@ -120,7 +120,7 @@ styleProvider.setStyleFunction(
 
 The function should use the following signature.
 
-```hx
+```haxe
 function setNumericStepper_TextInput_Styles(textInput:TextInput):Void {
     // ... set styles here
 });
@@ -130,7 +130,7 @@ function setNumericStepper_TextInput_Styles(textInput:TextInput):Void {
 
 The [`textInputFactory`](https://api.feathersui.com/current/feathers/controls/NumericStepper.html#textInputFactory) property may be used to customize the creation of an individual text input.
 
-```hx
+```haxe
 stepper.textInputFactory = () -> {
     var textInput = new TextInput();
     // ... set styles here

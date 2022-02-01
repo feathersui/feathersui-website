@@ -21,7 +21,7 @@ The [`openfl.utils.Assets`](https://api.openfl.org/openfl/utils/Assets.html) cla
 
 To start, create a [`ListView`](../list-view.md) component and pass it a [data collection](../data-collections.md) that references the asset IDs from the OpenFL [_project.xml_ file](https://lime.software/docs/project-files/xml-format/#assets).
 
-```hx
+```haxe
 var listView = new ListView();
 listView.dataProvider = new ArrayCollection([
     { name: "Pizza", asset: "pizza" },
@@ -42,7 +42,7 @@ By using a [`DisplayObjectRecycler`](https://api.feathersui.com/current/feathers
 
 Call [`DisplayObjectRecycler.withFunction()`](https://api.feathersui.com/current/feathers/utils/DisplayObjectRecycler.html#withFunction) to create an item renderer and pass an [`AssetLoader`](../asset-loader.md) to the item renderer's [`icon`](https://api.feathersui.com/current/feathers/controls/ToggleButton.html#icon) property.
 
-```hx
+```haxe
 var recycler = DisplayObjectRecycler.withFunction(() -> {
     var itemRenderer = new ItemRenderer();
 
@@ -59,7 +59,7 @@ We don't populate the [`source`](https://api.feathersui.com/current/feathers/con
 
 In the recycler's [`update`](https://api.feathersui.com/current/feathers/utils/DisplayObjectRecycler.html#update) function, we have access to a [`ListViewItemState`](https://api.feathersui.com/current/feathers/data/ListViewItemState.html) object that contains all of the data that we need to populate the item renderer, including the item from the data provider that is storing the asset ID.
 
-```hx
+```haxe
 recycler.update = (itemRenderer:ItemRenderer, state:ListViewItemState) -> {
     itemRenderer.text = state.text;
 

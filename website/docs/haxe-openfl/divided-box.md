@@ -16,7 +16,7 @@ The [`HDividedBox`](https://api.feathersui.com/current/feathers/controls/HDivide
 
 Create a [`HDividedBox`](https://api.feathersui.com/current/feathers/controls/HDividedBox.html) container, add it to [the display list](https://books.openfl.org/openfl-developers-guide/display-programming/basics-of-display-programming.html), and add some children.
 
-```hx
+```haxe
 var container = new HDividedBox();
 addChild(container);
 
@@ -39,7 +39,7 @@ Any Feathers UI component may be added as a child of a divided box.
 
 Optionally give the container a background using the [`backgroundSkin`](https://api.feathersui.com/current/feathers/controls/supportClasses/BaseDividedBox.html#backgroundSkin) property. The following example sets it to a [`RectangleSkin`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html) instance.
 
-```hx
+```haxe
 var skin = new RectangleSkin();
 skin.border = SolidColor(1.0, 0x999999);
 skin.fill = SolidColor(0xcccccc);
@@ -56,19 +56,19 @@ The group automatically calculates its preferred size based on the initial dimen
 
 The appearance of the group's border or fill may be customized to change when the group is [disabled](https://api.feathersui.com/current/feathers/core/IUIControl.html#enabled). In the next example, setting the skin's [`disabledFill`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html#disabledFill) method makes it switch to a different fill when the group is disabled.
 
-```hx
+```haxe
 skin.disabledFill = SolidColor(0xffcccc);
 ```
 
 Similarly, use the skin's [`disabledBorder`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html#disabledBorder) property to change the border when disabled.
 
-```hx
+```haxe
 skin.disabledBorder = SolidColor(2.0, 0x999999);
 ```
 
 In the examples above, the group uses the same [`RectangleSkin`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html) for all states, and that skin listens for changes to the group's current state. Alternatively, the group's [`disabledBackgroundSkin`](https://api.feathersui.com/current/feathers/controls/supportClasses/BaseDividedBox.html#disabledBackgroundSkin) method allows the group to display a completely different display object when it is disabled.
 
-```hx
+```haxe
 var defaultSkin = new RectangleSkin();
 // ... set border, fill, width, and height
 dividedBox.backgroundSkin = defaultSkin;
@@ -86,7 +86,7 @@ The dividers the [`HDividedBox`](https://api.feathersui.com/current/feathers/con
 
 The [`dividerFactory`](https://api.feathersui.com/current/feathers/controls/supportClasses/BaseDividedBox.html#dividerFactory) property may be used to customize the creation of the divider resize handles.
 
-```hx
+```haxe
 dividedBox.dividerFactory = DisplayObjectRecycler.withFunction(() -> {
     var button = new Button();
     // ... set styles here

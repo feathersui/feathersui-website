@@ -29,14 +29,14 @@ sidebar_label: HaxeDevelop
 1. Open _src/Main.hx_. This is the main entrypoint of your [OpenFL](https://openfl.org/) application.
 1. Add the following imports:
 
-   ```hx
+   ```haxe
    import feathers.controls.Button;
    import feathers.events.TriggerEvent;
    ```
 
 1. Modify the constructor with the following code:
 
-   ```hx
+   ```haxe
    public function new() {
        super();
 
@@ -49,7 +49,7 @@ sidebar_label: HaxeDevelop
 
 1. Add an event listener function that logs a message:
 
-   ```hx
+   ```haxe
    private function onButtonTrigger(event:TriggerEvent):Void {
        trace("Clicked or tapped the button");
    }

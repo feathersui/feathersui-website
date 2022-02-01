@@ -18,20 +18,20 @@ The [`DatePicker`](https://api.feathersui.com/current/feathers/controls/DatePick
 
 Start by creating a [`DatePicker`](https://api.feathersui.com/current/feathers/controls/DatePicker.html) control, and add it to [the display list](https://books.openfl.org/openfl-developers-guide/display-programming/basics-of-display-programming.html).
 
-```hx
+```haxe
 var datePicker = new DatePicker();
 addChild(datePicker);
 ```
 
 [Add an event listener](https://books.openfl.org/openfl-developers-guide/handling-events/basics-of-handling-events.html) for [`Event.CHANGE`](https://api.openfl.org/openfl/events/Event.html#CHANGE) to perform an action when the user selects a different tab.
 
-```hx
+```haxe
 datePicker.addEventListener(Event.CHANGE, datePicker_changeHandler);
 ```
 
 Check for the new value of the [`selectedDate`](https://api.feathersui.com/current/feathers/controls/DatePicker.html#selectedDate) property in the listener.
 
-```hx
+```haxe
 function datePicker_changeHandler(event:Event):Void {
     var datePicker = cast(event.currentTarget, DatePicker);
     trace("DatePicker selectedDate change: " + datePicker.selectedDate);

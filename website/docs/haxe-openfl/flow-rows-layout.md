@@ -16,7 +16,7 @@ The [`FlowRowsLayout`](https://api.feathersui.com/current/feathers/layout/FlowRo
 
 Create a [`LayoutGroup`](./layout-group.md) container, add it to [the display list](https://books.openfl.org/openfl-developers-guide/display-programming/basics-of-display-programming.html), and then add a few children to the container.
 
-```hx
+```haxe
 var container = new LayoutGroup();
 addChild(container);
 
@@ -35,7 +35,7 @@ container.addChild(child3);
 
 Set the container's [`layout`](https://api.feathersui.com/current/feathers/layout/feathers/controls/LayoutGroup.html#layout) property to a new [`FlowRowsLayout`](https://api.feathersui.com/current/feathers/layout/FlowRowsLayout.html) instance.
 
-```hx
+```haxe
 container.layout = new FlowRowsLayout();
 ```
 
@@ -47,7 +47,7 @@ The following sections will introduce a number of properties that may be used to
 
 The _padding_ is the space around the edges of the container that will contain no children. Padding may be added on each side, including [top](https://api.feathersui.com/current/feathers/layout/FlowRowsLayout.html#paddingTop), [right](https://api.feathersui.com/current/feathers/layout/FlowRowsLayout.html#paddingRight), [bottom](https://api.feathersui.com/current/feathers/layout/FlowRowsLayout.html#paddingBottom), and [left](https://api.feathersui.com/current/feathers/layout/FlowRowsLayout.html#paddingLeft).
 
-```hx
+```haxe
 layout.paddingTop = 10.0;
 layout.paddingRight = 15.0;
 layout.paddingBottom = 10.0;
@@ -56,21 +56,21 @@ layout.paddingLeft = 15.0;
 
 If all four padding properties should be set to the same value, call the [`setPadding()`](https://api.feathersui.com/current/feathers/layout/FlowRowsLayout.html#setPadding) method instead.
 
-```hx
+```haxe
 // sets top, right, bottom and left to the same value
 layout.setPadding(10.0);
 ```
 
 The _gap_ is the space between items, either horizontally or vertically. The [`horizontalGap`](https://api.feathersui.com/current/feathers/layout/FlowRowsLayout.html#horizontalGap) and [`verticalGap`](https://api.feathersui.com/current/feathers/layout/FlowRowsLayout.html#verticalGap) properties are measured in pixels.
 
-```hx
+```haxe
 layout.horizontalGap = 10.0;
 layout.verticalGap = 6.0;
 ```
 
 If both gap properties should be set to the same value, call the [`setGap()`](https://api.feathersui.com/current/feathers/layout/FlowRowsLayout.html#setGap) method instead.
 
-```hx
+```haxe
 // sets horizontal and vertical gaps to the same value
 layout.setGap(10.0);
 ```
@@ -81,7 +81,7 @@ The children of the container may be _aligned_ within the container's bounds.
 
 To align the children along the x-axis, set the [`horizontalAlign`](https://api.feathersui.com/current/feathers/layout/FlowRowsLayout.html#horizontalAlign) property.
 
-```hx
+```haxe
 layout.horizontalAlign = CENTER;
 ```
 
@@ -89,7 +89,7 @@ In the example above, the children are aligned to the [center](https://api.feath
 
 To align the children along the y-axis, set the [`verticalAlign`](https://api.feathersui.com/current/feathers/layout/FlowRowsLayout.html#verticalAlign) property.
 
-```hx
+```haxe
 layout.verticalAlign = MIDDLE;
 ```
 
@@ -99,7 +99,7 @@ In the example above, the children are aligned to the [middle](https://api.feath
 
 Since children may be smaller than the height of a row, it is possible to align them within their rows, separately from the alignment of all content within the container. To align the children within their rows, set the [`rowVerticalAlign`](https://api.feathersui.com/current/feathers/layout/FlowRowsLayout.html#rowVerticalAlign) property.
 
-```hx
+```haxe
 layout.rowVerticalAlign = MIDDLE;
 ```
 

@@ -16,20 +16,20 @@ The [`PopUpDatePicker`](https://api.feathersui.com/current/feathers/controls/Pop
 
 Start by creating a [`PopUpDatePicker`](https://api.feathersui.com/current/feathers/controls/PopUpDatePicker.html) control, and add it to [the display list](https://books.openfl.org/openfl-developers-guide/display-programming/basics-of-display-programming.html).
 
-```hx
+```haxe
 var popUpDatePicker = new PopUpDatePicker();
 addChild(popUpDatePicker);
 ```
 
 [Add an event listener](https://books.openfl.org/openfl-developers-guide/handling-events/basics-of-handling-events.html) for [`Event.CHANGE`](https://api.openfl.org/openfl/events/Event.html#CHANGE) to perform an action when the user selects a different tab.
 
-```hx
+```haxe
 popUpDatePicker.addEventListener(Event.CHANGE, popUpDatePicker_changeHandler);
 ```
 
 Check for the new value of the [`selectedDate`](https://api.feathersui.com/current/feathers/controls/PopUpDatePicker.html#selectedDate) property in the listener.
 
-```hx
+```haxe
 function popUpDatePicker_changeHandler(event:Event):Void {
     var popUpDatePicker = cast(event.currentTarget, PopUpDatePicker);
     trace("PopUpDatePicker selectedDate change: " + popUpDatePicker.selectedDate);
@@ -50,7 +50,7 @@ The button in a [`PopUpDatePicker`](https://api.feathersui.com/current/feathers/
 
 Use the [`PopUpDatePicker.CHILD_VARIANT_BUTTON`](https://api.feathersui.com/current/feathers/controls/PopUpDatePicker.html#CHILD_VARIANT_BUTTON) constant in a [theme](./themes.md) to provide a function that globally styles the buttons in all [`PopUpDatePicker`](https://api.feathersui.com/current/feathers/controls/PopUpDatePicker.html) components.
 
-```hx
+```haxe
 styleProvider.setStyleFunction(
     Button,
     PopUpDatePicker.CHILD_VARIANT_BUTTON,
@@ -59,7 +59,7 @@ styleProvider.setStyleFunction(
 
 The function should use the following signature.
 
-```hx
+```haxe
 function setPopUpDatePicker_Button_Styles(button:Button):Void {
     // ... set styles here
 });
@@ -69,7 +69,7 @@ function setPopUpDatePicker_Button_Styles(button:Button):Void {
 
 The [`buttonFactory`](https://api.feathersui.com/current/feathers/controls/PopUpDatePicker.html#buttonFactory) property may be used to customize the creation of an individual button.
 
-```hx
+```haxe
 popUpDatePicker.buttonFactory = () -> {
     var button = new Button();
     // ... set styles here
@@ -87,7 +87,7 @@ The date picker in a [`PopUpDatePicker`](https://api.feathersui.com/current/feat
 
 Use the [`PopUpDatePicker.CHILD_VARIANT_DATE_PICKER`](https://api.feathersui.com/current/feathers/controls/PopUpDatePicker.html#CHILD_VARIANT_DATE_PICKER) constant in a [theme](./themes.md) to provide a function that globally styles the date pickers in all [`PopUpDatePicker`](https://api.feathersui.com/current/feathers/controls/PopUpDatePicker.html) components.
 
-```hx
+```haxe
 styleProvider.setStyleFunction(
     DatePicker,
     PopUpDatePicker.CHILD_VARIANT_DATE_PICKER,
@@ -96,7 +96,7 @@ styleProvider.setStyleFunction(
 
 The function should use the following signature.
 
-```hx
+```haxe
 function setPopUpDatePicker_DatePicker_Styles(datePicker:DatePicker):Void {
     // ... set styles here
 });
@@ -106,7 +106,7 @@ function setPopUpDatePicker_DatePicker_Styles(datePicker:DatePicker):Void {
 
 The [`datePickerFactory`](https://api.feathersui.com/current/feathers/controls/PopUpDatePicker.html#datePickerFactory) property may be used to customize the creation of an individual [`DatePicker`](./date-picker.md).
 
-```hx
+```haxe
 popUpDatePicker.datePickerFactory = () -> {
     var datePicker = new DatePicker();
     // ... set styles here

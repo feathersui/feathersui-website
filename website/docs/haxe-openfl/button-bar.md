@@ -14,7 +14,7 @@ The [`ButtonBar`](https://api.feathersui.com/current/feathers/controls/ButtonBar
 
 Start by creating a [`ButtonBar`](https://api.feathersui.com/current/feathers/controls/ButtonBar.html) control, and add it to [the display list](https://books.openfl.org/openfl-developers-guide/display-programming/basics-of-display-programming.html).
 
-```hx
+```haxe
 var buttons = new ButtonBar();
 addChild(buttons);
 ```
@@ -23,7 +23,7 @@ addChild(buttons);
 
 To render some data in the button bar, pass in a [collection](./data-collections.md) that contains an object for each button.
 
-```hx
+```haxe
 buttons.dataProvider = new ArrayCollection([
     { text: "A" },
     { text: "B" },
@@ -33,7 +33,7 @@ buttons.dataProvider = new ArrayCollection([
 
 Set the [`itemToText()`](https://api.feathersui.com/current/feathers/controls/Button.html#itemToText) method to get the text from each item to display in a button.
 
-```hx
+```haxe
 buttons.itemToText = function(item:Dynamic):String {
     return item.text;
 };
@@ -43,13 +43,13 @@ buttons.itemToText = function(item:Dynamic):String {
 
 [Add an event listener](https://books.openfl.org/openfl-developers-guide/handling-events/basics-of-handling-events.html) for [`ButtonBarEvent.ITEM_TRIGGER`](https://api.feathersui.com/current/feathers/events/ButtonBarEvent.html#ITEM_TRIGGER) to perform an action when the user clicks or taps a button.
 
-```hx
+```haxe
 buttons.addEventListener(ButtonBarEvent.ITEM_TRIGGER, buttonBar_itemTriggerHandler);
 ```
 
 Check the event's [`state`](https://api.feathersui.com/current/feathers/events/ButtonBarEvent.html#state) property in the listener to determine which button was triggered.
 
-```hx
+```haxe
 function buttonBar_itemTriggerHandler(event:ButtonBarEvent):Void {
     trace("ButtonBar item trigger: " + event.state.text);
 }
@@ -61,14 +61,14 @@ The [`state`](https://api.feathersui.com/current/feathers/events/ButtonBarEvent.
 
 To add a new button at the end, pass an object to the data provider's [`add()`](https://api.feathersui.com/current/feathers/data/IFlatCollection.html#add) method.
 
-```hx
+```haxe
 var newItem = { text: "New Button" };
 buttons.dataProvider.add(newItem);
 ```
 
 To add a new button at a specific position, pass an object to the data provider's [`addAt()`](https://api.feathersui.com/current/feathers/data/IFlatCollection.html#addAt) method.
 
-```hx
+```haxe
 var newItem = { text: "First Button" };
 buttons.dataProvider.addAt(newItem, 0);
 ```
@@ -77,7 +77,7 @@ In the example above, a new button is added to the beginning.
 
 Similarly, to remove a button, call [`remove()`](https://api.feathersui.com/current/feathers/data/IFlatCollection.html#remove) or [`removeAt()`](https://api.feathersui.com/current/feathers/data/IFlatCollection.html#removeAt) on the collection.
 
-```hx
+```haxe
 buttons.dataProvider.removeAt(0);
 ```
 
@@ -95,7 +95,7 @@ The buttons in a [`ButtonBar`](https://api.feathersui.com/current/feathers/contr
 
 Use the [`ButtonBar.CHILD_VARIANT_BUTTON`](https://api.feathersui.com/current/feathers/controls/ButtonBar.html#CHILD_VARIANT_BUTTON) constant in a [theme](./themes.md) to provide a function that globally styles the buttons in all [`ButtonBar`](https://api.feathersui.com/current/feathers/controls/ButtonBar.html) components.
 
-```hx
+```haxe
 styleProvider.setStyleFunction(
     Button,
     ButtonBar.CHILD_VARIANT_BUTTON,
@@ -104,7 +104,7 @@ styleProvider.setStyleFunction(
 
 The function should use the following signature.
 
-```hx
+```haxe
 function setButtonBar_Button_Styles(button:Button):Void {
     // ... set styles here
 });
@@ -114,7 +114,7 @@ function setButtonBar_Button_Styles(button:Button):Void {
 
 Customize the [`buttonRecycler`](https://api.feathersui.com/current/feathers/controls/ButtonBar.html#buttonRecycler) property to customize the styles of the buttons in a specific [`ButtonBar`](https://api.feathersui.com/current/feathers/controls/ButtonBar.html) component.
 
-```hx
+```haxe
 buttons.buttonRecycler = DisplayObjectRecycler.withFunction(() -> {
     var button = new Button();
     // ... set styles here

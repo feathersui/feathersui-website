@@ -9,7 +9,7 @@ Using a [`DisplayObjectRecycler`](https://api.feathersui.com/current/feathers/ut
 
 To start, create a [`ListView`](../list-view.md) component and pass it a [data collection](../data-collections.md) containing some items.
 
-```hx
+```haxe
 var listView = new ListView();
 listView.dataProvider = new ArrayCollection([
     { name: "Volume", accessory: new HSlider() },
@@ -29,7 +29,7 @@ By using a [`DisplayObjectRecycler`](https://api.feathersui.com/current/feathers
 
 Call [`DisplayObjectRecycler.withClass()`](https://api.feathersui.com/current/feathers/utils/DisplayObjectRecycler.html#withClass) to create an item renderer.
 
-```hx
+```haxe
 var recycler = DisplayObjectRecycler.withClass(ItemRenderer);
 listView.itemRendererRecycler = recycler;
 ```
@@ -40,7 +40,7 @@ We don't add the accessory view yet because the creation function doesn't have a
 
 In the recycler's [`update`](https://api.feathersui.com/current/feathers/utils/DisplayObjectRecycler.html#update) function, we have access to a [`ListViewItemState`](https://api.feathersui.com/current/feathers/data/ListViewItemState.html) object that contains all of the data that we need to populate the item renderer, including the item from the data provider that is storing the UI control.
 
-```hx
+```haxe
 recycler.update = (itemRenderer:ItemRenderer, state:ListViewItemState) -> {
     itemRenderer.text = state.text;
 
