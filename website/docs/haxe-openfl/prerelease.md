@@ -3,7 +3,7 @@ title: Install Feathers UI prerelease from Github
 sidebar_label: Install Prerelease Builds
 ---
 
-> ⚠ Be careful! The newest [Feathers UI](/) source code from Github is more likely to contain bugs and incomplete features. It is not recommended for production use.
+> ⚠️ Be careful! The newest [Feathers UI](/) source code from Github is more likely to contain bugs and incomplete features. It is not recommended for production use.
 >
 > Most people should probably [install the newest official build from Haxelib](./installation.md).
 
