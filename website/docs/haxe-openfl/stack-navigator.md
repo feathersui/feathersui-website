@@ -7,7 +7,7 @@ The [`StackNavigator`](https://api.feathersui.com/current/feathers/controls/navi
 
 Navigation can be enhanced with animation, called a _transition_. Feathers UI provides a number of [animated transitions](./navigator-transitions.md) out of the box, and a simple API allows anyone to create [custom transitions](./custom-navigator-transitions.md).
 
-> If your project will be deployed to the web, consider using [`RouterNavigator`](./router-navigator.md) instead. [`RouterNavigator`](./router-navigator.md) integrates with the browser's back button using the HTML history API, which will provide a better user experience for web users.
+> If your project will be deployed to the web, consider using [`RouterNavigator`](./router-navigator.md) instead. [`RouterNavigator`](./router-navigator.md) integrates with URLs and the HTML history API, with full support for the browser's back button.
 
 ## The Basics
 
@@ -158,11 +158,11 @@ Sometimes, when pushing a new view onto the stack, the old view needs to pass ad
 The example below contains simplified versions of `AllContactsView` and `ContactDetailsView`. Most of the necessary code has been omitted to focus specifically on passing data between these views.
 
 ```haxe
-class AllContactsView extends FeathersControl {
+class AllContactsView extends LayoutGroup {
     public static final ID = "all-contacts";
 }
 
-class ContactDetailsView extends FeathersControl {
+class ContactDetailsView extends LayoutGroup {
     public static final ID = "contact-details";
 
     public var contact:Contact;
@@ -212,7 +212,7 @@ StackItem.withClass(AllContactsView.ID, AllContactsView, [
 ]);
 ```
 
-However, [`Push()`](https://api.feathersui.com/current/feathers/controls/navigators/StackAction.html#Push) doesn't know how to pass the `Contact` to the `ContactDetailsView`.
+However, [`Push()`](https://api.feathersui.com/current/feathers/controls/navigators/StackAction.html#Push) doesn't automatically know how to pass the `Contact` to the `ContactDetailsView`.
 
 Instead, use [`NewAction()`](https://api.feathersui.com/current/feathers/controls/navigators/StackAction.html#NewAction) to dynamically create a [`Push()`](https://api.feathersui.com/current/feathers/controls/navigators/StackAction.html#Push) action that includes an _inject_ function for `ContactDetailsView`. Inside that function, the `contact` property of the `ContactDetailsView` can be set.
 
@@ -241,11 +241,11 @@ Sometimes, when popping a view from the stack, it needs to pass additional data 
 The example below contains simplified versions of `ComposeMessageView` and `ChooseContactView`. Most of the necessary code has been omitted to focus specifically on passing data between these views.
 
 ```haxe
-class ChooseContactView extends FeathersControl {
+class ChooseContactView extends LayoutGroup {
     public static final ID = "choose-contact";
 }
 
-class ComposeMessageView extends FeathersControl {
+class ComposeMessageView extends LayoutGroup {
     public static final ID = "compose-message";
 
     public var contact:Contact;
@@ -298,9 +298,9 @@ StackItem.withClass(ChooseContactView.ID, ChooseContactView, [
 ]);
 ```
 
-However, [`Pop()`](https://api.feathersui.com/current/feathers/controls/navigators/StackAction.html#Push) doesn't know how to pass the `Contact` back to the `ComposeMessageView`.
+However, [`Pop()`](https://api.feathersui.com/current/feathers/controls/navigators/StackAction.html#Pop) doesn't automatically know how to pass the `Contact` back to the `ComposeMessageView`.
 
-Instead, use [`NewAction()`](https://api.feathersui.com/current/feathers/controls/navigators/StackAction.html#NewAction) to dynamically create a [`Pop()`](https://api.feathersui.com/current/feathers/controls/navigators/StackAction.html#Push) action that includes a _returned object_. Later, that returned object can be passed to the `contact` property of the `ComposeMessageView`.
+Instead, use [`NewAction()`](https://api.feathersui.com/current/feathers/controls/navigators/StackAction.html#NewAction) to dynamically create a [`Pop()`](https://api.feathersui.com/current/feathers/controls/navigators/StackAction.html#Pop) action that includes a _returned object_. Later, that returned object can be passed to the `contact` property of the `ComposeMessageView`.
 
 ```haxe
 StackItem.withClass(ChooseContactView.ID, ChooseContactView, [
