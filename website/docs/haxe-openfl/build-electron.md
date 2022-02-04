@@ -9,7 +9,7 @@ sidebar_label: Electron
 
 ## Prerequisites
 
-In addition to the dependencies specified in the [Feathers UI installation instructions](./installation.md), building a HashLink application with Feathers UI has some additional requirements.
+In addition to the dependencies specified in the [Feathers UI installation instructions](./installation.md), building a Electron application with Feathers UI has some additional requirements.
 
 - [Node.js](https://nodejs.org/en/) is required to install Electron.
 
