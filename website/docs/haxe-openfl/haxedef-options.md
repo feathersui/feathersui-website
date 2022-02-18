@@ -15,26 +15,40 @@ To use one of the options below, add a [`<haxedef>`](https://lime.software/docs/
 
 ## Haxedefs
 
-### `disable_default_theme`
+### `feathersui_disable_default_theme`
 
 If your project uses a [custom theme](./custom-themes.md), and the custom theme fully style all UI components in your project, you can disable the default fallback theme to reduce the file size of your build.
 
 ```xml
-<haxedef name="disable_default_theme"/>
+<haxedef name="feathersui_disable_default_theme"/>
 ```
 
-### `disable_focus_manager`
+### `feathersui_disable_application_focus_manager`
 
 May be used to disable the default focus manager initialized by the [`Application`](./application.md) component.
 
 ```xml
-<haxedef name="disable_focus_manager"/>
+<haxedef name="feathersui_disable_application_focus_manager"/>
 ```
 
-### `disable_tool_tip_manager`
+A focus manager may be enabled manually, if desired. Otherwise, the default focus behavior of OpenFL will be used.
+
+### `feathersui_disable_application_pop_up_manager`
+
+May be used to disable the default pop-up manager initialized by the [`Application`](./application.md) component.
+
+```xml
+<haxedef name="feathersui_disable_application_pop_up_manager"/>
+```
+
+If the `PopUpManager` is accessed, pop-ups will be added directly to the stage, instead of to a container maintained by the application.
+
+### `feathersui_disable_application_tool_tip_manager`
 
 May be used to disable the default tool tip manager initialized by the [`Application`](./application.md) component.
 
 ```xml
-<haxedef name="disable_tool_tip_manager"/>
+<haxedef name="feathersui_disable_application_tool_tip_manager"/>
 ```
+
+A tool tip manager may be enabled manually, if desired. Otherwise, the `toolTip` property will be ignored.
