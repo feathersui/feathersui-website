@@ -79,8 +79,8 @@ function Donate(props) {
   ];
 
   return (
-    <div className="docMainWrapper wrapper">
-      <Container className="mainContainer documentContainer">
+    <div className="mainContainer documentContainer">
+      <Container>
         <div className="post">
           <header className="postHeader">
             <h1>How can I support Feathers UI?</h1>
@@ -90,6 +90,13 @@ function Donate(props) {
             </p>
           </header>
           <GridBlock contents={donateLinks} layout="threeColumn" />
+        </div>
+      </Container>
+      <Container background="light" padding={["top", "bottom"]}>
+        <div className="prose alignCenter">
+          <p>
+            💡 <strong>Hey!</strong> Another great way to support Feathers UI financially is to purchase a <a href="/premium-support">premium support contract</a>.
+          </p>
         </div>
       </Container>
     </div>
