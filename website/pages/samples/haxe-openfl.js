@@ -5,24 +5,12 @@ const GridBlock = CompLibrary.GridBlock;
 
 const samplesBaseUrl = "/samples/haxe-openfl/";
 const githubSamplesBaseUrl =
-  "https://github.com/feathersui/feathersui-openfl/tree/v1.0.0-beta.8/samples/";
+  "https://github.com/feathersui/feathersui-openfl/tree/v1.0.0-beta.9/samples/";
 
 //screenshots: 720x450
 //this.stage.nativeWindow.width = 720 + (this.stage.nativeWindow.width - this.stage.stageWidth);
 //this.stage.nativeWindow.height = 450 + (this.stage.nativeWindow.height - this.stage.stageHeight);
-const sampleItems = [
-  {
-    title: `[Animated Tween Skin](${samplesBaseUrl}animated-tween-skin/)`,
-    image: `${samplesBaseUrl}img/animated-tween-skin.png`,
-    imageAlign: "top",
-    imageLink: `${samplesBaseUrl}animated-tween-skin/`,
-    content: `Create a custom skin for a button that includes an animated effect.
-
-<div class="buttonWrapper">
-  <a class="button" href="${samplesBaseUrl}animated-tween-skin/">Online Demo</a>
-  <a class="button" href="${githubSamplesBaseUrl}animated-tween-skin/">Source Code</a>
-</div>`,
-  },
+const applicationSampleItems = [
   {
     title: `[Calculator](${samplesBaseUrl}calculator/)`,
     image: `${samplesBaseUrl}img/calculator.png`,
@@ -33,6 +21,44 @@ const sampleItems = [
 <div class="buttonWrapper">
   <a class="button" href="${samplesBaseUrl}calculator/">Online Demo</a>
   <a class="button" href="${githubSamplesBaseUrl}calculator/">Source Code</a>
+</div>`,
+  },
+  {
+    title: `[HN Reader](${samplesBaseUrl}hn-reader/)`,
+    image: `${samplesBaseUrl}img/hn-reader.png`,
+    imageAlign: "top",
+    imageLink: `${samplesBaseUrl}hn-reader/`,
+    content: `A sample application that demonstrates the <code>RouterNavigator</code> component by displaying Hacker News feeds.
+
+<div class="buttonWrapper">
+  <a class="button" href="${samplesBaseUrl}hn-reader/">Online Demo</a>
+  <a class="button" href="${githubSamplesBaseUrl}hn-reader/">Source Code</a>
+</div>`,
+  },
+  {
+    title: `[TodoMVC](${samplesBaseUrl}todomvc/)`,
+    image: `${samplesBaseUrl}img/todomvc.png`,
+    imageAlign: "top",
+    imageLink: `${samplesBaseUrl}todomvc/`,
+    content: `A sample application that recreates the iconic <a href="https://todomvc.com/"/>TodoMVC</a> project.
+
+<div class="buttonWrapper">
+  <a class="button" href="${samplesBaseUrl}todomvc/">Online Demo</a>
+  <a class="button" href="${githubSamplesBaseUrl}todomvc/">Source Code</a>
+</div>`,
+  },
+];
+const featureSampleItems = [
+  {
+    title: `[Animated Tween Skin](${samplesBaseUrl}animated-tween-skin/)`,
+    image: `${samplesBaseUrl}img/animated-tween-skin.png`,
+    imageAlign: "top",
+    imageLink: `${samplesBaseUrl}animated-tween-skin/`,
+    content: `Create a custom skin for a button that includes an animated effect.
+
+<div class="buttonWrapper">
+  <a class="button" href="${samplesBaseUrl}animated-tween-skin/">Online Demo</a>
+  <a class="button" href="${githubSamplesBaseUrl}animated-tween-skin/">Source Code</a>
 </div>`,
   },
   {
@@ -170,7 +196,12 @@ const Samples = (props) => {
               <a href="https://haxe.org/">Haxe</a> programming language.
             </p>
           </header>
-          <GridBlock contents={sampleItems} layout="threeColumn" />
+          <h2>Application Samples</h2>
+          <p>Full sample application projects built using Feathers UI.</p>
+          <GridBlock contents={applicationSampleItems} layout="threeColumn" />
+          <h2>Feature Samples</h2>
+          <p>Demonstrations of specific features offered by Feathers UI components.</p>
+          <GridBlock contents={featureSampleItems} layout="threeColumn" />
           <h2>Additional Samples</h2>
           <p>
             The following sample projects have been shared by the Feathers UI
