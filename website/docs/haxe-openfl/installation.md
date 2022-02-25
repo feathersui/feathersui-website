@@ -5,7 +5,7 @@ sidebar_label: Installation
 
 > 🚨 Feathers UI for Haxe/OpenFL is currently in a **beta** state. Some components and features may still be missing, and occasional bugs should be expected.
 
-The current version of [Feathers UI](/) for Haxe and OpenFL is [**1.0.0-beta.8**](https://github.com/feathersui/feathersui-openfl/blob/v1.0.0-beta.8/CHANGELOG.md). It may be installed [from Haxelib](https://lib.haxe.org/p/feathersui).
+The current version of [Feathers UI](/) for Haxe and OpenFL is [**1.0.0-beta.9**](https://github.com/feathersui/feathersui-openfl/blob/v1.0.0-beta.9/CHANGELOG.md). It may be installed [from Haxelib](https://lib.haxe.org/p/feathersui).
 
 ## Prerequisites
 
