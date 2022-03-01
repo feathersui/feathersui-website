@@ -1,0 +1,7 @@
+RewriteEngine on
+RewriteBase /samples/haxe-openfl/cairngorm/cafe-townsend/
+RewriteCond %{HTTPS} off
+RewriteRule ^/?(.*) https://%{SERVER_NAME}/samples/haxe-openfl/cairngorm/cafe-townsend/$1 [R,L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /samples/haxe-openfl/cairngorm/cafe-townsend/ [L]
