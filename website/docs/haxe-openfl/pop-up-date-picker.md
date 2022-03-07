@@ -6,7 +6,8 @@ sidebar_label: PopUpDatePicker
 The [`PopUpDatePicker`](https://api.feathersui.com/current/feathers/controls/PopUpDatePicker.html) class displays a [text input](./text-input.md) and a [button](./button.md), that when triggered, renders calendar view in a pop-up [date picker](./date-picker.md).
 
 <figure>
-<iframe src="/learn/haxe-openfl/samples/pop-up-date-picker.html" width="100%" height="250"></iframe>
+<!-- needs to be a bit taller to accomodate larger touch hit areas on mobile -->
+<iframe src="/learn/haxe-openfl/samples/pop-up-date-picker.html" width="100%" height="270"></iframe>
 <figcaption>Live preview of the <a href="https://api.feathersui.com/current/feathers/controls/PopUpDatePicker.html"><code>PopUpDatePicker</code></a> component</figcaption>
 </figure>
 

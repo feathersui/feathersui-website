@@ -6,7 +6,8 @@ sidebar_label: DatePicker
 The [`DatePicker`](https://api.feathersui.com/current/feathers/controls/DatePicker.html) class displays a month calendar view, with buttons to change the current month and year, and a specific date may be selected by the user.
 
 <figure>
-<iframe src="/learn/haxe-openfl/samples/date-picker.html" width="100%" height="220"></iframe>
+<!-- needs to be a bit taller to accomodate larger touch hit areas on mobile -->
+<iframe src="/learn/haxe-openfl/samples/date-picker.html" width="100%" height="260"></iframe>
 <figcaption>Live preview of the <a href="https://api.feathersui.com/current/feathers/controls/DatePicker.html"><code>DatePicker</code></a> component</figcaption>
 </figure>
 
