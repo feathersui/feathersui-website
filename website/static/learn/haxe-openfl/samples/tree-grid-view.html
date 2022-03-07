@@ -82,9 +82,14 @@
               (data) => data.price
             ),
           ]);
-          this.treeGridView.width = 450.0;
-          this.treeGridView.layoutData =
-            feathers.layout.AnchorLayoutData.center();
+          if (window.innerWidth < 450.0) {
+            this.treeGridView.layoutData =
+              feathers.layout.AnchorLayoutData.fill();
+          } else {
+            this.treeGridView.width = 450.0;
+            this.treeGridView.layoutData =
+              feathers.layout.AnchorLayoutData.center();
+          }
           this.addChild(this.treeGridView);
         }
       }

@@ -52,8 +52,13 @@
             ),
           ]);
           this.gridView.itemToText = (item) => item.text;
-          this.gridView.width = 450.0;
-          this.gridView.layoutData = feathers.layout.AnchorLayoutData.center();
+          if (window.innerWidth < 450.0) {
+            this.gridView.layoutData = feathers.layout.AnchorLayoutData.fill();
+          } else {
+            this.gridView.width = 450.0;
+            this.gridView.layoutData =
+              feathers.layout.AnchorLayoutData.center();
+          }
           this.addChild(this.gridView);
         }
       }
