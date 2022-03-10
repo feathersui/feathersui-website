@@ -122,6 +122,7 @@
       "haxe-openfl/cli",
       "haxe-openfl/data-collections",
       "haxe-openfl/haxedef-options",
+      "haxe-openfl/tool-tips",
       "haxe-openfl/cookbook/index",
       "haxe-openfl/prerelease"
     ]
