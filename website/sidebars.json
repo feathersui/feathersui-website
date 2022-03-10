@@ -121,6 +121,7 @@
     "Miscellaneous": [
       "haxe-openfl/cli",
       "haxe-openfl/data-collections",
+      "haxe-openfl/focus",
       "haxe-openfl/haxedef-options",
       "haxe-openfl/tool-tips",
       "haxe-openfl/cookbook/index",
