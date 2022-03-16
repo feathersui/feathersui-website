@@ -9,7 +9,7 @@ sidebar_label: Android
 
 In addition to the dependencies specified in the [Feathers UI installation instructions](./installation.md), building an Android application with Feathers UI has some additional requirements.
 
-- [Install the Java OpenJDK](https://adoptopenjdk.net/) (version 8 or newer)
+- [Install the Java OpenJDK](https://adoptium.net/) (version 8 or newer)
 
 - [Download Android Studio](https://developer.android.com/studio)
 
@@ -57,7 +57,7 @@ Pass in the absolute path where you extracted the Android NDK.
 
 The Java JDK may be installed in a variety of locations, depending on which operating system you are using:
 
-- Windows: Typically, Java is installed to _C:\Program Files\AdoptOpenJDK_ or _C:\Program Files\Java_
+- Windows: Typically, Java is installed to _C:\Program Files\Temurin_ or _C:\Program Files\Java_
 - macOS: Run the **/usr/libexec/java_home** command in the Terminal app to find the JDK location.
 - Linux: Run the **whereis java** command in a terminal to find the JDK location. `JAVA_HOME` should be set to parent of the _bin_ folder that contains the **java** executable.
 
