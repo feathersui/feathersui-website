@@ -127,7 +127,7 @@ There is more than one possible reason for seeing this error:
 
 ### Error: Failed to install the following Android SDK packages as some licences have not been accepted.
 
-YOu may need to install a specific version of the Android SDK platform tools in **Android Studio**. The error message will include the version that you need, in a format like this:
+You may need to install a specific version of the Android SDK platform tools in **Android Studio**. The error message will include the version that you need, in a format like this:
 
 > platforms;android-28 Android SDK Platform 28
 
