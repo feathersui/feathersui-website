@@ -78,8 +78,6 @@ When a component validates, its [`update()`](https://api.feathersui.com/current/
 
 ```haxe
 override private function update():Void {
-  super.update();
-
   var dataInvalid = isInvalid(DATA);
   var stylesInvalid = isInvalid(STYLES);
 
@@ -94,6 +92,9 @@ override private function update():Void {
   if (dataInvalid || stylesInvalid) {
     // do something if either flag is set
   }
+
+  // let the superclass finish updating
+  super.update();
 }
 ```
 
