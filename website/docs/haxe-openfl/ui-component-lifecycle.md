@@ -53,7 +53,7 @@ Any time one of a UI component's properties is changed, it should call the [`set
 public var someProperty(default, set):Bool = false;
 
 private function set_someProperty(value:Bool):Bool {
-  if(someProperty == value) {
+  if (someProperty == value) {
     return someProperty;
   }
   someProperty = value;
@@ -83,15 +83,15 @@ override private function update():Void {
   var dataInvalid = isInvalid(DATA);
   var stylesInvalid = isInvalid(STYLES);
 
-  if(dataInvalid) {
+  if (dataInvalid) {
     // do something if InvalidationFlag.DATA is set
   }
 
-  if(stylesInvalid) {
+  if (stylesInvalid) {
     // do something if InvalidationFlag.STYLES is set
   }
 
-  if(dataInvalid || stylesInvalid) {
+  if (dataInvalid || stylesInvalid) {
     // do something if either flag is set
   }
 }
