@@ -124,6 +124,7 @@
       "haxe-openfl/focus",
       "haxe-openfl/haxedef-options",
       "haxe-openfl/pop-ups",
+      "haxe-openfl/semver",
       "haxe-openfl/tool-tips",
       "haxe-openfl/cookbook/index",
       "haxe-openfl/prerelease"
