@@ -9,7 +9,7 @@ Navigation can be enhanced with animation, called a _transition_. Feathers UI pr
 
 > [`RouterNavigator`](https://api.feathersui.com/current/feathers/controls/navigators/RouterNavigator.html) is designed for use with URLs and the HTML history API in web browsers. However, these features are emulated on all platforms, and it is suitable for deployment anywhere.
 
-> ⚠️ **Beta Notice**: This component is still quite new to Feathers UI. It was included in the latest release because it should be stable enough for production use. However, some APIs may go through minor changes in upcoming releases — based on feedback from developers like you.
+> ⚠️ **Beta Notice**: This component is still quite new to Feathers UI. It was included in the latest release because it should be stable enough for production use. However, some APIs may go through minor changes in upcoming releases — based on feedback from developers like you. [Learn more about Beta APIs.](./semver.md#beta-apis)
 
 ## The Basics
 
