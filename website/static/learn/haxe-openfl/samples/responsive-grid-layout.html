@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      id="viewport"
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Feathers UI ResponsiveGridLayout preview</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <script src="https://unpkg.com/openfl@8.9.6/dist/openfl.min.js"></script>
+    <script src="https://unpkg.com/actuate@1.8.9-beta/dist/actuate.min.js"></script>
+    <script src="https://unpkg.com/feathersui-openfl@1.0.0-beta.9/dist/feathersui-openfl.min.js"></script>
+    <script>
+      class HelloWorld extends feathers.controls.Application {
+        constructor() {
+          super();
+
+          this.layout = new feathers.layout.AnchorLayout();
+
+          this.layoutGroup = new feathers.controls.ScrollContainer();
+          var layout = new feathers.layout.ResponsiveGridLayout();
+          layout.columnGap = 10.0;
+          layout.rowGap = 10.0;
+          this.layoutGroup.layout = layout;
+          for (var i = 0; i < 12; i++) {
+            var child = new feathers.controls.Label();
+            child.text = "1";
+            child.backgroundSkin = new feathers.skins.RectangleSkin(
+              feathers.graphics.FillStyle.SolidColor(0xffffff),
+              feathers.graphics.LineStyle.SolidColor(1.0, 0x999999)
+            );
+            child.layoutData = new feathers.layout.ResponsiveGridLayoutData(1);
+            this.layoutGroup.addChild(child);
+          }
+          for (var i = 0; i < 2; i++) {
+            var child = new feathers.controls.Label();
+            child.text = "6";
+            child.backgroundSkin = new feathers.skins.RectangleSkin(
+              feathers.graphics.FillStyle.SolidColor(0xffffff),
+              feathers.graphics.LineStyle.SolidColor(1.0, 0x999999)
+            );
+            child.layoutData = new feathers.layout.ResponsiveGridLayoutData(6);
+            this.layoutGroup.addChild(child);
+          }
+          for (var i = 0; i < 3; i++) {
+            var child = new feathers.controls.Label();
+            child.text = "4";
+            child.backgroundSkin = new feathers.skins.RectangleSkin(
+              feathers.graphics.FillStyle.SolidColor(0xffffff),
+              feathers.graphics.LineStyle.SolidColor(1.0, 0x999999)
+            );
+            child.layoutData = new feathers.layout.ResponsiveGridLayoutData(4);
+            this.layoutGroup.addChild(child);
+          }
+          for (var i = 0; i < 6; i++) {
+            var child = new feathers.controls.Label();
+            child.text = "2";
+            child.backgroundSkin = new feathers.skins.RectangleSkin(
+              feathers.graphics.FillStyle.SolidColor(0xffffff),
+              feathers.graphics.LineStyle.SolidColor(1.0, 0x999999)
+            );
+            child.layoutData = new feathers.layout.ResponsiveGridLayoutData(2);
+            this.layoutGroup.addChild(child);
+          }
+          var child = new feathers.controls.Label();
+          child.text = "12";
+          child.backgroundSkin = new feathers.skins.RectangleSkin(
+            feathers.graphics.FillStyle.SolidColor(0xffffff),
+            feathers.graphics.LineStyle.SolidColor(1.0, 0x999999)
+          );
+          child.layoutData = new feathers.layout.ResponsiveGridLayoutData(12);
+          this.layoutGroup.addChild(child);
+          for (var i = 0; i < 4; i++) {
+            var child = new feathers.controls.Label();
+            child.text = "3";
+            child.backgroundSkin = new feathers.skins.RectangleSkin(
+              feathers.graphics.FillStyle.SolidColor(0xffffff),
+              feathers.graphics.LineStyle.SolidColor(1.0, 0x999999)
+            );
+            child.layoutData = new feathers.layout.ResponsiveGridLayoutData(3);
+            this.layoutGroup.addChild(child);
+          }
+          this.layoutGroup.layoutData = feathers.layout.AnchorLayoutData.fill();
+          this.addChild(this.layoutGroup);
+        }
+      }
+
+      var stage = new openfl.display.Stage(0, 0, null, null, {
+        allowHighDPI: true,
+      });
+      document.body.appendChild(stage.element);
+      stage.addChild(new HelloWorld());
+    </script>
+  </body>
+</html>
