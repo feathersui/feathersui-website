@@ -23,6 +23,14 @@ If your project uses a [custom theme](./custom-themes.md), and the custom theme 
 <haxedef name="feathersui_disable_default_theme"/>
 ```
 
+### `feathersui_theme_manage_stage_color`
+
+Themes are often designed with a specific background color in mind. Add this define to tell the theme to set the color of the stage to the theme's preferred background color when styling the [`Application`](./application.md) component.
+
+```xml
+<haxedef name="feathersui_theme_manage_stage_color"/>
+```
+
 ### `feathersui_disable_application_focus_manager`
 
 May be used to disable the default focus manager initialized by the [`Application`](./application.md) component.
