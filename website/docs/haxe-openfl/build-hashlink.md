@@ -7,9 +7,9 @@ sidebar_label: HashLink VM
 
 ## Prerequisites
 
-In addition to the dependencies specified in the [Feathers UI installation instructions](./installation.md), building a HashLink application with Feathers UI has some additional requirements.
+Follow the standard [Feathers UI installation instructions](./installation.md).
 
-- **Haxe 4.3** or newer. Older versions of Haxe have a bug that prevents certain Feathers UI components from correctly functioning while running on the HashLink virtual machine.
+No additional dependencies are required to target the HashLink virtual machine.
 
 ## Build
 
