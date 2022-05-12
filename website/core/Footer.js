@@ -33,8 +33,8 @@ class Footer extends React.Component {
             <ul>
               <li>
                 <a
-                  href={this.pageUrl(
-                    "download",
+                  href={this.docUrl(
+                    "haxe-openfl/installation",
                     this.props.language == "en"
                       ? undefined
                       : this.props.language
@@ -68,23 +68,6 @@ class Footer extends React.Component {
                 </a>
               </li>
               <li>
-                <a href="https://github.com/sponsors/joshtynjala">
-                  Join Github Sponsors
-                </a>
-              </li>
-              <li>
-                <a
-                  href={this.pageUrl(
-                    "donate",
-                    this.props.language == "en"
-                      ? undefined
-                      : this.props.language
-                  )}
-                >
-                  Make a Donation
-                </a>
-              </li>
-              <li>
                 <a
                   href={this.pageUrl(
                     "premium-support",
@@ -106,7 +89,7 @@ class Footer extends React.Component {
                   this.props.language == "en" ? undefined : this.props.language
                 )}
               >
-                Haxe / OpenFL
+                Documentation
               </a>
             </h5>
             <ul>
@@ -119,7 +102,7 @@ class Footer extends React.Component {
                       : this.props.language
                   )}
                 >
-                  Documentation
+                  Getting Started
                 </a>
               </li>
               <li>
@@ -128,87 +111,22 @@ class Footer extends React.Component {
               <li>
                 <a href="/samples/haxe-openfl/">Samples</a>
               </li>
+            </ul>
+            <ul>
+              <h5>
+                <a
+                  href="https://github.com/feathersui/feathersui-openfl"
+                >
+                  Github
+                </a></h5>
               <li>
-                <a href="https://github.com/feathersui/feathersui-openfl">
-                  GitHub
+                <a href="https://github.com/feathersui/feathersui-openfl/tree/v1.0.0-rc.1">
+                  Source Code
                 </a>
               </li>
               <li>
                 <a href="https://github.com/feathersui/feathersui-openfl/issues">
                   Issue Tracker
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h5>
-              <a
-                href={this.docUrl(
-                  "as3-starling",
-                  this.props.language == "en" ? undefined : this.props.language
-                )}
-              >
-                ActionScript / Starling
-              </a>
-            </h5>
-            <ul>
-              <li>
-                <a
-                  href={this.docUrl(
-                    "as3-starling/getting-started",
-                    this.props.language == "en"
-                      ? undefined
-                      : this.props.language
-                  )}
-                >
-                  Documentation
-                </a>
-              </li>
-              <li>
-                <a href="/api-reference/">API Reference</a>
-              </li>
-              <li>
-                <a href="https://github.com/feathersui/feathersui-starling/tree/master/examples">
-                  Samples
-                </a>
-              </li>
-              <li>
-                <a href="https://github.com/feathersui/feathersui-starling">
-                  GitHub
-                </a>
-              </li>
-              <li>
-                <a href="https://github.com/feathersui/feathersui-starling/issues">
-                  Issue Tracker
-                </a>
-              </li>
-            </ul>
-            <h5>
-              <a
-                href={this.docUrl(
-                  "as3-starling/sdk",
-                  this.props.language == "en" ? undefined : this.props.language
-                )}
-              >
-                Feathers SDK (Starling)
-              </a>
-            </h5>
-            <ul>
-              <li>
-                <a
-                  href={this.docUrl(
-                    "as3-starling/sdk/getting-started-mxml",
-                    this.props.language == "en"
-                      ? undefined
-                      : this.props.language
-                  )}
-                >
-                  Documentation
-                </a>
-              </li>
-              <li>
-                <a href="https://github.com/feathersui/feathersui-starling-sdk">
-                  GitHub
                 </a>
               </li>
             </ul>
@@ -247,8 +165,6 @@ class Footer extends React.Component {
                 </a>
               </li>
             </ul>
-          </div>
-          <div>
             <h5>
               <a href={`${this.props.config.baseUrl}blog`}>
                 News &amp; Updates
@@ -266,6 +182,35 @@ class Footer extends React.Component {
                   rel="noreferrer noopener"
                 >
                   Twitter
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h5>
+              <a
+                href={this.pageUrl(
+                  "donate",
+                  this.props.language == "en"
+                    ? undefined
+                    : this.props.language
+                )}>Make a Donation</a>
+            </h5>
+            <ul>
+              <li>
+                <a href="https://github.com/sponsors/joshtynjala">
+                  Join Github Sponsors
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.paypal.com/donate?hosted_button_id=9A9EB6YEHRNBN&source=url">
+                  Donate with PayPal
+                </a>
+              </li>
+              <li>
+                <a href="https://teespring.com/stores/feathers-ui">
+                  Buy a T-Shirt
                 </a>
               </li>
             </ul>
