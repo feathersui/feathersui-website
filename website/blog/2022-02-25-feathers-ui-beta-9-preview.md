@@ -18,7 +18,7 @@ Feathers UI continues to achieve each new milestone thanks the very generous sup
 
 ## What's new in beta.9
 
-Let's take a look at some of the new features that are included with Feathers UI beta.8.
+Let's take a look at some of the new features that are included with Feathers UI beta.9.
 
 In particular, [`RouterNavigator`](https://feathersui.com/learn/haxe-openfl/router-navigator/) includes a number of improvements. Let's look at a few.
 
