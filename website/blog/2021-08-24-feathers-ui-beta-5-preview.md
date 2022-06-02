@@ -22,7 +22,7 @@ Let's take a look at some of the new UI components and features that are include
 
 ### New Layouts
 
-- [`TiledRowsLayout`](https://feathersui.com/learn/haxe-openfl/tiled-rows-layout/), [`TiledRowsListLayout`](https://feathersui.com/learn/haxe-openfl/tiled-rows-list-layout/), and [`PagedTiledRowsListLayout`](https://feathersui.com/learn/haxe-openfl/paged-tiled-rows-list-layout/) all position items as tiles (where all items have equal dimensions) in one or more rows. `TiledRowsLayout` is meant to be used with simple containers, like `LayoutGroup` and `ScrollContainer`. `TiledRowsListLayout` and `PagedTiledRowsLayout` are meant to be used with data containers, like `ListView`. `PagedTiledRowsLayout` will split tiles among multiple pages, if they don't all fit on one page.
+- [`TiledRowsLayout`](https://feathersui.com/learn/haxe-openfl/tiled-rows-layout/), [`TiledRowsListLayout`](https://feathersui.com/learn/haxe-openfl/tiled-rows-list-layout/), and [`PagedTiledRowsListLayout`](https://feathersui.com/learn/haxe-openfl/paged-tiled-rows-list-layout/) all position items as tiles (where all items have equal dimensions) in one or more rows. `TiledRowsLayout` is meant to be used with simple containers, like `LayoutGroup` and `ScrollContainer`. `TiledRowsListLayout` and `PagedTiledRowsListLayout` are meant to be used with data containers, like `ListView`. `PagedTiledRowsListLayout` will split tiles among multiple pages, if they don't all fit on one page.
 
     <div style="text-align:center;"><a href="https://feathersui.com/learn/haxe-openfl/tiled-rows-layout/"><img src="/blog/img/beta-5-feathersui-tiled-rows-layout.png" style="width:450px"/></a></div>
 
