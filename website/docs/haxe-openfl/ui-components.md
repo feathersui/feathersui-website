@@ -2,7 +2,7 @@
 title: Intro to UI components
 ---
 
-[Feathers UI](/) includes many different types of UI components — from basics like buttons, sliders, and inputs, to scrolling containers, navigation managers, and more.
+[Feathers UI](/) includes many different types of UI components — from basics like buttons, sliders, and inputs, to scrolling containers, navigation managers, and more. It's also possible to create [custom UI components](./custom-ui-components.md).
 
 ## Basic UI components
 
@@ -72,3 +72,7 @@ Various other UI components that don't necessarily fit in one of the above categ
 - [`Callout`](./callout.md) displays content as a pop-up with an arrow pointing at another component.
 - [`Drawer`](./drawer.md) slides in a view above other content.
 - [`TextCallout`](./text-callout.md) displays text as a pop-up with an arrow pointing at another component.
+
+## Related Links
+
+- [Create custom UI components for Feathers UI](./custom-ui-components.md)
