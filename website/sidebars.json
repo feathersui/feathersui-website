@@ -99,7 +99,9 @@
       "haxe-openfl/vertical-layout",
       "haxe-openfl/vertical-list-fixed-row-layout",
       "haxe-openfl/vertical-list-layout",
-      "haxe-openfl/vertical-distributed-layout"
+      "haxe-openfl/vertical-distributed-layout",
+      "haxe-openfl/layout-data",
+      "haxe-openfl/custom-layouts"
     ],
     "Styles and Skins": [
       "haxe-openfl/intro-to-skins",

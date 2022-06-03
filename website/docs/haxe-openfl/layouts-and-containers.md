@@ -3,7 +3,9 @@ title: Introduction to layouts and containers
 sidebar_label: Intro to Layouts
 ---
 
-A number of layouts are available to position and size children in Feathers UI containers. There are two types of containers in Feathers UI, and certain layouts may be better suited for one type over the other.
+A number of _layouts_ are available to position and size children in Feathers UI containers, and it's also possible to create [custom layouts](./custom-layouts.md).
+
+There are two types of containers in Feathers UI, and certain layouts may be better suited for one type over the other.
 
 - [_Simple containers_](#simple-containers) use standard [display list](https://books.openfl.org/openfl-developers-guide/display-programming/basics-of-display-programming.html) APIs (like [`addChild()`](https://api.openfl.org/openfl/display/DisplayObjectContainer.html#addChild) and [`removeChild()`](https://api.openfl.org/openfl/display/DisplayObjectContainer.html#removeChild)) to manage children.
 - [_Data containers_](#data-containers) render children by interpreting objects that have been added to [data collections](./data-collections.md).
@@ -35,7 +37,7 @@ Components that render [data collections](./data-collections.md) may take advant
 - [`GridView`](./grid-view.md)
 - [`GroupListView`](./group-list-view.md)
 - [`TreeView`](./tree-view.md)
-- [`TreeGrudView`](./tree-grid-view.md)
+- [`TreeGridView`](./tree-grid-view.md)
 
 The following layouts are optimized for data containers by providing _virtualization_ and item renderer _recycling_.
 
@@ -50,3 +52,8 @@ The following layouts are optimized for data containers by providing _virtualiza
 Some containers work similarly to simple containers, where one can use the standard [display list](https://books.openfl.org/openfl-developers-guide/display-programming/basics-of-display-programming.html) APIs to add and remove children, but these containers have their own built-in layout and don't support custom layouts.
 
 - [`HDividedBox` and `VDividedBox`](./divided-box.md)
+
+## Related Links
+
+- [Layout data](./layout-data.md)
+- [Create custom layouts for Feathers UI containers](./custom-layouts.md)
