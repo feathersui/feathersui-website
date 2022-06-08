@@ -5,6 +5,18 @@ const MarkdownBlock = CompLibrary.MarkdownBlock;
 
 const showcaseItems = [
   {
+    title: "VIP Solutions",
+    content: `
+With this platform for managing interactive touchscreen kiosks, institutions can publicly highlight individual contributors — such as donors, hall-of-famers, and alumni. Its smooth animations are powered by Feathers UI and OpenFL.
+
+<div class="buttonWrapper">
+  <a class="button" href="https://demo.vipinteract.com">Online Demo</a>
+  <a class="button" href="https://vipinteract.com/">Visit Website</a>
+</div>`,
+    image: "/img/showcase/vip@2x.jpg",
+    imageLink: "https://vipinteract.com/",
+  },
+  {
     title: "NCIS: Hidden Crimes",
     content: `
 Feathers UI and Starling power NCIS: Hidden Crimes, an episodic adventure where you search for clues, reveal the suspects, and make the arrest. Published by Ubisoft.
