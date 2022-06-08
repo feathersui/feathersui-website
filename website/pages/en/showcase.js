@@ -42,7 +42,7 @@ Who wouldn't like to wake up to the pure sound of a Master Memovox, the first au
   {
     title: "Battleborn Tap",
     content: `
-Command your squad of heroes on the field of battle in this game powered by Starling Framework and Feathers. Published by 2K Games.
+Command your squad of heroes on the field of battle in this game powered by Starling Framework and Feathers UI. Published by 2K Games.
 
 <div class="buttonWrapper">
   <a class="button" href="https://www.youtube.com/watch?v=7k0US8ALKoM">Watch Video</a>
@@ -54,7 +54,7 @@ Command your squad of heroes on the field of battle in this game powered by Star
   {
     title: "Drum Pad Beats",
     content: `
-Drum Pad Beats is a fun beat/composer – scene/remixer to capture those ideas when that flash of inspiration hits while away from the studio. Built with the Feathers SDK.
+Drum Pad Beats is a fun beat/composer – scene/remixer to capture those ideas when that flash of inspiration hits while away from the studio. Built with Starling and the Feathers UI.
 
 <div class="buttonWrapper">
   <a class="button" href="https://www.youtube.com/watch?v=udNEq9hEjpw">Watch Video</a>
@@ -77,7 +77,7 @@ Snailboy is a physics based puzzle game, built with Starling and Feathers, that 
   {
     title: "American Cornhole Association",
     content: `
-Create your own cornhole tournaments for parties, reunions, benefits, and other gatherings with this app created by [Red Minnow Interactive](https://redminnow.com/), and powered by Feathers and Starling.
+Create your own cornhole tournaments for parties, reunions, benefits, and other gatherings with this app created by [Red Minnow Interactive](https://redminnow.com/), and powered by Feathers UI and Starling.
 
 <div class="buttonWrapper">
   <a class="button" href="https://www.youtube.com/watch?v=aYeAzBNLosw">Watch Video</a>
@@ -89,7 +89,7 @@ Create your own cornhole tournaments for parties, reunions, benefits, and other 
   {
     title: "SmartPref",
     content: `
-Preferans, the popular Eastern European card game, running smoothly on Feathers &mdash; with a very well-polished UI theme!
+Preferans, the popular Eastern European card game, running smoothly on Feathers UI — with a highly polished Material theme!
 
 <div class="buttonWrapper">
   <a class="button" href="https://www.youtube.com/watch?v=zW4tZJQ0b1o">Watch Video</a>
@@ -111,13 +111,13 @@ Fight against the darkness as you explore the pixel world of Aether Story, a mul
   {
     title: "Street Art Project",
     content: `
-In a matter of weeks, the Less Rain team created an augmented reality app with Feathers and Starling to enable members of the Behance community to showcase and share their artwork as "street art" — on top of real-world locations.`,
+In a matter of weeks, the Less Rain team created an augmented reality app with Feathers UI and Starling to enable members of the Behance community to showcase and share their artwork as "street art" — on top of real-world locations.`,
     image: "/img/showcase/street-art-project@2x.jpg",
   },
   {
     title: "Estee Lauder itCOLORS",
     content: `
-A Spanish language app built with Starling and Feathers that analyzes photos to detect makeup colors and offer product recommendations.
+A Spanish language app built with Starling and Feathers UI that analyzes photos to detect makeup colors and offer product recommendations.
 
 <div class="buttonWrapper">
   <a class="button" href="https://vimeo.com/111209138#t=28s">Watch Video</a>
@@ -128,7 +128,7 @@ A Spanish language app built with Starling and Feathers that analyzes photos to 
   {
     title: "Geophysic",
     content: `
-Explore the original Geophysic watch by Jaeger-LeCoultre, its modern reinterpretation, the geophysical year in 1958, and the USS Nautilus mission in this elegant app created with Feathers.
+Explore the original Geophysic watch by Jaeger-LeCoultre, its modern reinterpretation, the geophysical year in 1958, and the USS Nautilus mission in this elegant app created with Feathers UI.
 
 <div class="buttonWrapper">
   <a class="button" href="https://itunes.apple.com/us/app/geophysic/id928353438?mt=8">iOS App Store</a>
@@ -139,7 +139,7 @@ Explore the original Geophysic watch by Jaeger-LeCoultre, its modern reinterpret
   {
     title: "Fantasy Rivals",
     content: `
-Collect heroes, build your army, and accomplish quests in this virtual trading card game. Use strategy to defeat opponents in live battles to become the greatest warrior of all time. Built with Starling and Feathers.
+Collect heroes, build your army, and accomplish quests in this virtual trading card game. Use strategy to defeat opponents in live battles to become the greatest warrior of all time. Built with Starling and Feathers UI.
 
 <div class="buttonWrapper">
   <a class="button" href="https://www.youtube.com/watch?v=TuL3VNjvJaQ">Watch Video</a>
@@ -150,7 +150,7 @@ Collect heroes, build your army, and accomplish quests in this virtual trading c
   {
     title: "Letter Quest: Grimm's Journey",
     content: `
-Spell words to fight your way through 40 stages in this addictive word game powered by Starling and Feathers.    
+Spell words to fight your way through 40 stages in this addictive word game powered by Starling and Feathers UI.    
 
 <div class="buttonWrapper">
 <a class="button" href="https://www.youtube.com/watch?v=4ZWL5NwUYpY">Watch Video</a>
@@ -162,7 +162,7 @@ Spell words to fight your way through 40 stages in this addictive word game powe
   {
     title: "Schumacher Gallery",
     content: `
-Created by [Red Minnow Interactive](https://redminnow.com/), this Starling and Feathers mobile app highlights the gallery's collections of artwork — with audio tours, detailed images, author bios, and behind-the-scenes info.
+Created by [Red Minnow Interactive](https://redminnow.com/), this Starling and Feathers UI mobile app highlights the gallery's collections of artwork — with audio tours, detailed images, author bios, and behind-the-scenes info.
 
 <div class="buttonWrapper">
   <a class="button" href="https://redminnow.com/work/schumacher-gallery/">Visit Website</a>
