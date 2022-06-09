@@ -212,6 +212,11 @@ const Samples = (props) => {
           </p>
           <ul>
             <li>
+              <a href="https://github.com/feathersui/puremvc-haxe-feathersui-demos">
+                PureMVC Haxe Demos for Feathers UI
+              </a>
+            </li>
+            <li>
               <a href="https://github.com/feathersui/feathersui-7guis">
                 7GUIs for Feathers UI
               </a>
