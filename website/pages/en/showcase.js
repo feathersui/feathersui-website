@@ -232,9 +232,9 @@ const Showcase = (props) => {
             <div className="blockContent">
               <h1>Showcase</h1>
               <p>
-                Check out some beautiful games and apps that talented developers
-                and designers have created using the open source{" "}
-                <a href="/">Feathers UI</a> framework.
+                Check out some beautiful apps, games, and other creative
+                projects that talented developers and designers have created
+                using the open source <a href="/">Feathers UI</a> framework.
               </p>
             </div>
           </div>
