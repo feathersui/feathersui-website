@@ -66,7 +66,7 @@ Drum Pad Beats is a fun beat/composer – scene/remixer to capture those ideas w
   {
     title: "Snailboy: An Epic Adventure",
     content: `
-Snailboy is a physics based puzzle game, built with Starling and Feathers, that combines rich graphics, killer sounds and over 40 levels of gameplay.
+Snailboy is a physics based puzzle game, built with Starling and Feathers UI, that combines rich graphics, killer sounds and over 40 levels of gameplay.
 
 <div class="buttonWrapper">
   <a class="button" href="http://snailboygame.com/">Visit Website</a>
