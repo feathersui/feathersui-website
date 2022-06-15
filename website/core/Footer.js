@@ -114,13 +114,12 @@ class Footer extends React.Component {
             </ul>
             <ul>
               <h5>
-                <a
-                  href="https://github.com/feathersui/feathersui-openfl"
-                >
+                <a href="https://github.com/feathersui/feathersui-openfl">
                   Github
-                </a></h5>
+                </a>
+              </h5>
               <li>
-                <a href="https://github.com/feathersui/feathersui-openfl/tree/v1.0.0-rc.1">
+                <a href="https://github.com/feathersui/feathersui-openfl/tree/v1.0.0-rc.2">
                   Source Code
                 </a>
               </li>
@@ -191,10 +190,11 @@ class Footer extends React.Component {
               <a
                 href={this.pageUrl(
                   "donate",
-                  this.props.language == "en"
-                    ? undefined
-                    : this.props.language
-                )}>Make a Donation</a>
+                  this.props.language == "en" ? undefined : this.props.language
+                )}
+              >
+                Make a Donation
+              </a>
             </h5>
             <ul>
               <li>
@@ -203,8 +203,7 @@ class Footer extends React.Component {
                 </a>
               </li>
               <li>
-                <a
-                  href="https://www.paypal.com/donate?hosted_button_id=9A9EB6YEHRNBN&source=url">
+                <a href="https://www.paypal.com/donate?hosted_button_id=9A9EB6YEHRNBN&source=url">
                   Donate with PayPal
                 </a>
               </li>
