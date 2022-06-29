@@ -167,6 +167,29 @@ Similarly, when `ViewB` dispatches `Event.COMPLETE`, the navigator will create a
 >
 > Just be careful how you use it.
 
+### Navigate with `htmlText` links
+
+> **Note:** This feature requires OpenFL 9.2.0 or newer
+
+To create a link that navigates to a different view, set the [`htmlText`](https://api.openfl.org/openfl/text/TextField.html#htmlText) property of a [`TextField`](https://api.openfl.org/openfl/text/TextField.html) or a Feathers UI [`Label`](./label.md) component. Create an `<a>` element where the `href` attribute starts with `event:router:`, followed by the pathname of the view to push.
+
+The following link navigates to `/users/daredevil`.
+
+```haxe
+label.htmlText = '<a href="event:router:/users/daredevil">Matt Murdock</a>';
+```
+
+When the link is clicked, the [`TextField`](https://api.openfl.org/openfl/text/TextField.html) dispatches [`TextEvent.LINK`](https://api.openfl.org/openfl/events/TextEvent.html#LINK), which is a bubbling event. The [`RouterNavigator`](https://api.feathersui.com/current/feathers/controls/navigators/RouterNavigator.html) listens for this event from the currently active view, and if the `href` text starts with `event:router:`, it automatically creates a [`Push()`](https://api.feathersui.com/current/feathers/controls/navigators/Route.html#Push) action with the specified pathname.
+
+## Redirects
+
+If a route has moved, and you want to automatically redirect users to a new pathname, use [`Route.withRedirect()`](https://api.feathersui.com/current/feathers/controls/navigators/Route.html#withRedirect).
+
+```haxe
+var redirect = Route.withRedirect("/oldpath", "/newpath");
+navigator.addRoute(redirect);
+```
+
 ## Pass data between views
 
 Sometimes, when pushing a new view onto the history stack, the old view needs to pass additional data to the new view. For instance, consider an app for managing contacts. It might have an `AllContactsView` that contains a list of contacts and a `ContactDetailsView` that lists more information about a single contact. When a contact is selected by the user in `AllContactsView`, the app should navigate to `ContactDetailsView` and pass in the selected contact.
