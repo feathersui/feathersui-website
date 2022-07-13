@@ -150,7 +150,7 @@ styleProvider.setStyleFunction(
 The function should use the following signature.
 
 ```haxe
-function setPopUpListView_ListView_Styles(button:ListView):Void {
+function setPopUpListView_ListView_Styles(listView:ListView):Void {
     // ... set styles here
 });
 ```
