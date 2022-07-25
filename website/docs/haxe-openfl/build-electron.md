@@ -29,7 +29,7 @@ openfl build electron -debug
 
 The build's output will be written to the _bin/electron/bin_ folder.
 
-> Your [_project.xml_ file](https://lime.software/docs/project-files/xml-format/) may optionally specify an output folder different from _bin_.
+> Your [_project.xml_ file](https://lime.openfl.org/docs/project-files/xml-format/) may optionally specify an output folder different from _bin_.
 >
 > ```xml
 > <app path="Export"/>

@@ -16,7 +16,7 @@ sidebar_label: Moonshine IDE
 1. Give your project a **Name** and choose a **Parent Directory** to save it on your computer.
 1. Click the **Create** button to create your project.
 
-> Moonshine will automatically install all Haxelib dependencies in the [_project.xml_](https://lime.software/docs/project-files/xml-format/) file, if they are not already available. This includes both [feathersui](https://lib.haxe.org/p/feathersui/) and [openfl](https://lib.haxe.org/p/openfl/). Installation may take several minutes, and progress will be reported in Moonshine's console.
+> Moonshine will automatically install all Haxelib dependencies in the [_project.xml_](https://lime.openfl.org/docs/project-files/xml-format/) file, if they are not already available. This includes both [feathersui](https://lib.haxe.org/p/feathersui/) and [openfl](https://lib.haxe.org/p/openfl/). Installation may take several minutes, and progress will be reported in Moonshine's console.
 
 ## Run the project
 

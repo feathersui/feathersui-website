@@ -38,7 +38,7 @@ This will open a terminal and run the new-project command using the [Feathers UI
 
 Let close that and look at the **Explorer** view where we can see the new project's files. These include:
 
-- The standard [OpenFL _project.xml_ file](https://lime.software/docs/project-files/xml-format/)
+- The standard [OpenFL _project.xml_ file](https://lime.openfl.org/docs/project-files/xml-format/)
 - A _src_ folder for Haxe source files
 - A default icon
 - And the _.vscode_ folder, which contains:

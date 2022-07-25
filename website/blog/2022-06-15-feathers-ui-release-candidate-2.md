@@ -6,7 +6,7 @@ authorTwitter: joshtynjala
 authorImageURL: /img/authors/josh.jpg
 ---
 
-Today, Feathers UI **v1.0.0-rc.2** is now officially available [on Haxelib](https://lib.haxe.org/p/feathersui). If all goes well, the stable 1.0 release should happen in July. The current plan is to wait until updates for both [OpenFL](https://openfl.org/) and [Lime](https://lime.software), both major dependencies, are released.
+Today, Feathers UI **v1.0.0-rc.2** is now officially available [on Haxelib](https://lib.haxe.org/p/feathersui). If all goes well, the stable 1.0 release should happen in July. The current plan is to wait until updates for both [OpenFL](https://openfl.org/) and [Lime](https://lime.openfl.org), both major dependencies, are released.
 
 <img src="/blog/img/feathersui-rc-2.png" width="194">
 

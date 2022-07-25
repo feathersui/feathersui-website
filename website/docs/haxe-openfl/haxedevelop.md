@@ -91,5 +91,5 @@ haxelib install actuate
 ## Further Reading
 
 - [HaxeDevelop documentation](https://haxedevelop.org/system-requirements.html)
-- [OpenFL/Lime project.xml format](https://lime.software/docs/project-files/xml-format/)
+- [OpenFL/Lime project.xml format](https://lime.openfl.org/docs/project-files/xml-format/)
 - [MDN: What are browser developer tools?](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_are_browser_developer_tools)

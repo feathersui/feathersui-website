@@ -31,7 +31,7 @@ openfl build ios -debug
 
 The build's output will be written to the _bin/android/bin_ folder. The _.apk_ file may be found in _bin/android/bin/app/build/outputs/apk/debug_ (including release builds).
 
-> Your [_project.xml_ file](https://lime.software/docs/project-files/xml-format/) may optionally specify an output folder different from _bin_.
+> Your [_project.xml_ file](https://lime.openfl.org/docs/project-files/xml-format/) may optionally specify an output folder different from _bin_.
 >
 > ```xml
 > <app path="Export"/>
@@ -61,7 +61,7 @@ To install the app in the iOS simulator, follow these steps.
 
 The signing options for iOS have not been specified in the OpenFL _project.xml_ file.
 
-One way to resolve this issue is to add your **Team ID** to your [_project.xml_ file](https://lime.software/docs/project-files/xml-format/). The Team ID is assigned by Apple, and it may be found in the _Membership_ section of the [Apple Developer Portal](https://developer.apple.com/account/).
+One way to resolve this issue is to add your **Team ID** to your [_project.xml_ file](https://lime.openfl.org/docs/project-files/xml-format/). The Team ID is assigned by Apple, and it may be found in the _Membership_ section of the [Apple Developer Portal](https://developer.apple.com/account/).
 
 ```xml
 <certificate team-id="XXXXXXXX" />

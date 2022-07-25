@@ -56,7 +56,7 @@ Since the theme won't provide default styles to the instance, be sure to provide
 
 **(Advanced)** When a [custom theme](./custom-themes.md) is used, the default theme will always be available as a fallback option, because a custom theme is not required to customize the styles of every type of UI component.
 
-It's not encouraged, but if you prefer to completely disable the default theme, the `feathersui_disable_default_theme` define may be specified in your [OpenFL _project.xml_ file](https://lime.software/docs/project-files/xml-format/).
+It's not encouraged, but if you prefer to completely disable the default theme, the `feathersui_disable_default_theme` define may be specified in your [OpenFL _project.xml_ file](https://lime.openfl.org/docs/project-files/xml-format/).
 
 ```xml
 <haxedef name="feathersui_disable_default_theme"/>

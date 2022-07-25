@@ -7,7 +7,7 @@ sidebar_label: haxedef options
 
 ## Usage
 
-To use one of the options below, add a [`<haxedef>`](https://lime.software/docs/project-files/xml-format/#haxedef) element in your [_project.xml_ file](https://lime.software/docs/project-files/xml-format/).
+To use one of the options below, add a [`<haxedef>`](https://lime.openfl.org/docs/project-files/xml-format/#haxedef) element in your [_project.xml_ file](https://lime.openfl.org/docs/project-files/xml-format/).
 
 ```xml
 <haxedef name="name_of_haxedef"/>

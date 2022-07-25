@@ -7,7 +7,7 @@ Using a [`DisplayObjectRecycler`](https://api.feathersui.com/current/feathers/ut
 
 ## OpenFL assets
 
-Assets may be defined in your OpenFL [_project.xml_ file](https://lime.software/docs/project-files/xml-format/#assets). In the example below, three image assets are defined with IDs.
+Assets may be defined in your OpenFL [_project.xml_ file](https://lime.openfl.org/docs/project-files/xml-format/#assets). In the example below, three image assets are defined with IDs.
 
 ```xml
 <assets id="pizza" path="assets/img/pizza.png"/>
@@ -19,7 +19,7 @@ The [`openfl.utils.Assets`](https://api.openfl.org/openfl/utils/Assets.html) cla
 
 ## Create the `ListView`
 
-To start, create a [`ListView`](../list-view.md) component and pass it a [data collection](../data-collections.md) that references the asset IDs from the OpenFL [_project.xml_ file](https://lime.software/docs/project-files/xml-format/#assets).
+To start, create a [`ListView`](../list-view.md) component and pass it a [data collection](../data-collections.md) that references the asset IDs from the OpenFL [_project.xml_ file](https://lime.openfl.org/docs/project-files/xml-format/#assets).
 
 ```haxe
 var listView = new ListView();

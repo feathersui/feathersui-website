@@ -6,7 +6,7 @@ authorTwitter: joshtynjala
 authorImageURL: /img/authors/josh.jpg
 ---
 
-Today, Feathers UI **v1.0.0-rc.1** is now officially available [on Haxelib](https://lib.haxe.org/p/feathersui). If all goes well, the stable 1.0 release should happen by the end of June, or possibly in early July. The current plan is to wait until updates for both [OpenFL](https://openfl.org/) and [Lime](https://lime.software) are released. The getting started experience for new developers will be significantly smoother with the latest bug fixes and other improvements from both of these critical dependencies.
+Today, Feathers UI **v1.0.0-rc.1** is now officially available [on Haxelib](https://lib.haxe.org/p/feathersui). If all goes well, the stable 1.0 release should happen by the end of June, or possibly in early July. The current plan is to wait until updates for both [OpenFL](https://openfl.org/) and [Lime](https://lime.openfl.org/) are released. The getting started experience for new developers will be significantly smoother with the latest bug fixes and other improvements from both of these critical dependencies.
 
 ![](/blog/img/feathersui-rc-1.png)
 
@@ -24,7 +24,7 @@ The focus for this release candidate has been primarily on fixing bugs and impro
 
 - [`ResponsiveGridLayout`](https://feathersui.com/learn/haxe-openfl/responsive-grid-layout/) supports a new "xxl" breakpoint, and [`ResponsiveGridLayoutData`](https://api.feathersui.com/v1.0.0-rc.1/feathers/layout/ResponsiveGridLayoutData.html) adds a new [`display`](https://api.feathersui.com/v1.0.0-rc.1/feathers/layout/ResponsiveGridLayoutData.html#display) property (and [`smDisplay`](https://api.feathersui.com/v1.0.0-rc.1/feathers/layout/ResponsiveGridLayoutData.html#smDisplay), [`mdDisplay`](https://api.feathersui.com/v1.0.0-rc.1/feathers/layout/ResponsiveGridLayoutData.html#mdDisplay), [`lgDisplay`](https://api.feathersui.com/v1.0.0-rc.1/feathers/layout/ResponsiveGridLayoutData.html#lgDisplay), etc.) to allow items to be shown or hidden from specific breakpoints.
 
-- If `<haxedef name="feathersui_theme_manage_stage_color"/>` is defined in your [_project.xml_](https://lime.software/docs/project-files/xml-format/) file, the current theme will choose an appropriate color for OpenFL's stage. This is disabled by default to avoid conflicts.
+- If `<haxedef name="feathersui_theme_manage_stage_color"/>` is defined in your [_project.xml_](https://lime.openfl.org/docs/project-files/xml-format/) file, the current theme will choose an appropriate color for OpenFL's stage. This is disabled by default to avoid conflicts.
 
 - The [`toggleBranch()`](https://api.feathersui.com/v1.0.0-rc.1/feathers/controls/TreeView.html#toggleBranch) and [`toggleChildrenOf()`](https://api.feathersui.com/v1.0.0-rc.1/feathers/controls/TreeView.html#toggleChildrenOf) methods of [`TreeView`](https://feathersui.com/learn/haxe-openfl/tree-view/) and [`TreeGridView`](https://feathersui.com/learn/haxe-openfl/tree-grid-view/) received significant performance optimizations.
 

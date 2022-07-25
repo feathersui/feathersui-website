@@ -19,7 +19,7 @@ haxelib run feathersui new-project HelloWorld
 
 The newly created project will include the following defaults:
 
-- A standard [OpenFL _project.xml_ file](https://lime.software/docs/project-files/xml-format/)
+- A standard [OpenFL _project.xml_ file](https://lime.openfl.org/docs/project-files/xml-format/)
 - A _src_ folder for Haxe source files
 - A default icon
 
@@ -64,4 +64,4 @@ This error indicates that the **new-project** CLI command was run in a folder th
 ## Further Reading
 
 - [Feathers UI CLI commands](./cli.md)
-- [OpenFL/Lime project.xml format](https://lime.software/docs/project-files/xml-format/)
+- [OpenFL/Lime project.xml format](https://lime.openfl.org/docs/project-files/xml-format/)

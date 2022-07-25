@@ -9,7 +9,7 @@ sidebar_label: Custom UI components
 
 At the heart of all UI components is the [`FeathersControl`](https://api.feathersui.com/current/feathers/core/FeathersControl.html) class. This abstract base class provides much of the core functionality shared by most UI components in the framework, including hooks for _validation_, _styling_, _measurement_, and _focus_. The most advanced custom UI components will generally extend this class.
 
-Some custom UI components don't require much integration with low-level API hooks in the framework. For instance, a particular custom component might simply need to display several other components as children in a layout. In those cases, it may make sense to extend one of the [simple containers](./layouts-and-containers.md#simple-containers), like [`LayoutGroup`](./layout-group.md), [`ScrollContainer`](./scroll-container.md), or [`Panel`](./panel.md), instead of [`FeathersControl`](https://api.feathersui.com/current/feathers/core/FeathersControl.html).
+> Some custom UI components don't require much integration with low-level API hooks in the framework. For instance, a particular custom component might simply need to display several other components as children in a layout. In those cases, it may make sense to extend one of the [simple containers](./layouts-and-containers.md#simple-containers), like [`LayoutGroup`](./layout-group.md), [`ScrollContainer`](./scroll-container.md), or [`Panel`](./panel.md), instead of [`FeathersControl`](https://api.feathersui.com/current/feathers/core/FeathersControl.html). Many of the techniques below still apply to container subclasses, but you may be able to skip certain things, like manually measuring children and laying them out.
 
 ## A basic `FeathersControl` subclass template
 

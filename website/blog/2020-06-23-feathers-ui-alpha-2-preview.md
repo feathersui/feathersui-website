@@ -50,7 +50,7 @@ The new [CLI interface](https://feathersui.com/learn/haxe-openfl/cli) makes it p
 haxelib run feathersui new-project HelloWorld
 ```
 
-The command above creates a new project in a folder named _HelloWorld_ using a simple template that includes an [OpenFL _project.xml_ file](https://lime.software/docs/project-files/xml-format/), a main class that extends [`Application`](https://feathersui.com/learn/haxe-openfl/application), and a default icon.
+The command above creates a new project in a folder named _HelloWorld_ using a simple template that includes an [OpenFL _project.xml_ file](https://lime.openfl.org/docs/project-files/xml-format/), a main class that extends [`Application`](https://feathersui.com/learn/haxe-openfl/application), and a default icon.
 
 Additionally, if you add the `--vscode` flag, it will create supporting configuration files for [Visual Studio Code](https://feathersui.com/learn/haxe-openfl/visual-studio-code), and you can easily open your project from the command line.
 

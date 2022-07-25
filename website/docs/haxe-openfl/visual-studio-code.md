@@ -20,7 +20,7 @@ With a few free extensions, [Visual Studio Code](https://code.visualstudio.com/)
 
 This will run the [CLI `new-project` command](./cli.md#new-project) in Visual Studio Code's terminal. The newly created project will include the following defaults:
 
-- A standard [OpenFL _project.xml_ file](https://lime.software/docs/project-files/xml-format/)
+- A standard [OpenFL _project.xml_ file](https://lime.openfl.org/docs/project-files/xml-format/)
 - A _src_ folder for Haxe source files
 - A default icon
 - A build [task](https://code.visualstudio.com/docs/editor/tasks) for compiling the project
@@ -87,4 +87,4 @@ This error indicates that the **Feathers UI: Create new project** command was ru
 ## Further Reading
 
 - [Visual Studio Code documentation](https://code.visualstudio.com/docs)
-- [OpenFL/Lime project.xml format](https://lime.software/docs/project-files/xml-format/)
+- [OpenFL/Lime project.xml format](https://lime.openfl.org/docs/project-files/xml-format/)
