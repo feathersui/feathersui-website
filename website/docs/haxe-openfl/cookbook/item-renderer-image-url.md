@@ -39,7 +39,7 @@ var recycler = DisplayObjectRecycler.withFunction(() -> {
     itemRenderer.icon = new AssetLoader();
 
     return itemRenderer;
-};
+});
 listView.itemRendererRecycler = recycler;
 ```
 
