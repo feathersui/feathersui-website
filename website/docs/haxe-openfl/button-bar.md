@@ -99,7 +99,8 @@ Use the [`ButtonBar.CHILD_VARIANT_BUTTON`](https://api.feathersui.com/current/fe
 styleProvider.setStyleFunction(
     Button,
     ButtonBar.CHILD_VARIANT_BUTTON,
-    setButtonBar_Button_Styles);
+    setButtonBar_Button_Styles
+);
 ```
 
 The function should use the following signature.
@@ -107,7 +108,7 @@ The function should use the following signature.
 ```haxe
 function setButtonBar_Button_Styles(button:Button):Void {
     // ... set styles here
-});
+}
 ```
 
 #### Style buttons in a specific `ButtonBar`
@@ -119,7 +120,7 @@ buttons.buttonRecycler = DisplayObjectRecycler.withFunction(() -> {
     var button = new Button();
     // ... set styles here
     return button;
-})
+});
 ```
 
 ## Related Links
