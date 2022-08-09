@@ -263,11 +263,11 @@ The functions should use the following signatures.
 ```haxe
 function setHScrollBarStyles(scrollBar:HScrollBar):Void {
     // ... set styles here
-});
+}
 
 function setVScrollBarStyles(scrollBar:VScrollBar):Void {
     // ... set styles here
-});
+}
 ```
 
 #### Style scroll bars in a specific `GridView`

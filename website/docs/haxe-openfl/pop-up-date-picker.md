@@ -63,7 +63,7 @@ The function should use the following signature.
 ```haxe
 function setPopUpDatePicker_Button_Styles(button:Button):Void {
     // ... set styles here
-});
+}
 ```
 
 #### Style the button in a specific `PopUpDatePicker`
@@ -100,7 +100,7 @@ The function should use the following signature.
 ```haxe
 function setPopUpDatePicker_DatePicker_Styles(datePicker:DatePicker):Void {
     // ... set styles here
-});
+}
 ```
 
 #### Style the date picker in a specific `PopUpDatePicker`

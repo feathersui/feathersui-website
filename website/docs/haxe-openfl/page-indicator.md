@@ -69,7 +69,7 @@ The function should use the following signature.
 ```haxe
 function setPageIndicator_ToggleButton_Styles(button:ToggleButton):Void {
     // ... set styles here
-});
+}
 ```
 
 #### Style the toggle buttons in a specific `PageIndicator`

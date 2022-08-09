@@ -99,8 +99,7 @@ Use the [`ButtonBar.CHILD_VARIANT_BUTTON`](https://api.feathersui.com/current/fe
 styleProvider.setStyleFunction(
     Button,
     ButtonBar.CHILD_VARIANT_BUTTON,
-    setButtonBar_Button_Styles
-);
+    setButtonBar_Button_Styles);
 ```
 
 The function should use the following signature.

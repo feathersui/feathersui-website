@@ -117,7 +117,7 @@ The function should use the following signature.
 ```haxe
 function setComboBox_Button_Styles(button:Button):Void {
     // ... set styles here
-});
+}
 ```
 
 #### Style the button in a specific `ComboBox`
@@ -154,7 +154,7 @@ The function should use the following signature.
 ```haxe
 function setComboBox_TextInput_Styles(button:TextInput):Void {
     // ... set styles here
-});
+}
 ```
 
 #### Style the text input in a specific `ComboBox`
@@ -191,7 +191,7 @@ The function should use the following signature.
 ```haxe
 function setComboBox_ListView_Styles(button:ListView):Void {
     // ... set styles here
-});
+}
 ```
 
 #### Style the list view in a specific `ComboBox`

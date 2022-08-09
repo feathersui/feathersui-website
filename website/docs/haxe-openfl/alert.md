@@ -109,7 +109,7 @@ The function should use the following signature.
 ```haxe
 function setAlert_MessageLabel_Styles(label:Label):Void {
     // ... set styles here
-});
+}
 ```
 
 #### Style the message label in a specific `Alert`
@@ -146,7 +146,7 @@ The function should use the following signature.
 ```haxe
 function setAlert_Header_Styles(header:Header):Void {
     // ... set styles here
-});
+}
 ```
 
 #### Style the header in a specific `Alert`
@@ -183,7 +183,7 @@ The function should use the following signature.
 ```haxe
 function setAlert_ButtonBar_Styles(buttonBar:ButtonBar):Void {
     // ... set styles here
-});
+}
 ```
 
 #### Style the button bar in a specific `Alert`
@@ -218,11 +218,11 @@ The functions should use the following signatures.
 ```haxe
 function setHScrollBarStyles(scrollBar:HScrollBar):Void {
     // ... set styles here
-});
+}
 
 function setVScrollBarStyles(scrollBar:VScrollBar):Void {
     // ... set styles here
-});
+}
 ```
 
 #### Style scroll bars in a specific `Alert`

@@ -115,7 +115,7 @@ The function should use the following signature.
 ```haxe
 function setTabBar_Tab_Styles(tab:ToggleButton):Void {
     // ... set styles here
-});
+}
 ```
 
 #### Style tabs in a specific `TabBar`
@@ -127,7 +127,7 @@ tabs.tabRecycler = DisplayObjectRecycler.withFunction(() -> {
     var tab = new ToggleButton();
     // ... set styles here
     return tab;
-})
+});
 ```
 
 ## Related Links

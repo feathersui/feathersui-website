@@ -249,7 +249,7 @@ The function should use the following signature.
 ```haxe
 function setHierarchicalItemRenderer_DisclosureButton_Styles(button:Button):Void {
     // ... set styles here
-});
+}
 ```
 
 #### Style the disclosure button in a specific `HierarchicalItemRenderer`

@@ -63,7 +63,7 @@ The function should use the following signature.
 ```haxe
 function setDatePicker_MonthTitleView_Styles(view:Label):Void {
     // ... set styles here
-});
+}
 ```
 
 #### Style the month title view in a specific `DatePicker`
@@ -105,7 +105,7 @@ The function should use the following signature.
 ```haxe
 function setDatePicker_DecrementMonthButton_Styles(button:Button):Void {
     // ... set styles here
-});
+}
 ```
 
 #### Style the buttons in a specific `DatePicker`
@@ -149,7 +149,7 @@ The function should use the following signature.
 ```haxe
 function setDatePicker_DateRenderer_Styles(view:ItemRenderer):Void {
     // ... set styles here
-});
+}
 ```
 
 #### Style the date renderers in a specific `DatePicker`

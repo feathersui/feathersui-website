@@ -76,11 +76,11 @@ The functions should use the following signature.
 ```haxe
 function setNumericStepper_DecrementButton_Styles(button:Button):Void {
     // ... set styles here
-});
+}
 
 function setNumericStepper_IncrementButton_Styles(button:Button):Void {
     // ... set styles here
-});
+}
 ```
 
 #### Style the decrement and increment buttons in a specific `NumericStepper`
@@ -123,7 +123,7 @@ The function should use the following signature.
 ```haxe
 function setNumericStepper_TextInput_Styles(textInput:TextInput):Void {
     // ... set styles here
-});
+}
 ```
 
 #### Style the text input in a specific `NumericStepper`

@@ -115,7 +115,7 @@ The function should use the following signature.
 ```haxe
 function setPopUpListView_Button_Styles(button:Button):Void {
     // ... set styles here
-});
+}
 ```
 
 #### Style the button in a specific `PopUpListView`
@@ -152,7 +152,7 @@ The function should use the following signature.
 ```haxe
 function setPopUpListView_ListView_Styles(listView:ListView):Void {
     // ... set styles here
-});
+}
 ```
 
 #### Style the list view in a specific `PopUpListView`
