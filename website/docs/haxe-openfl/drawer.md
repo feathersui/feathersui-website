@@ -48,7 +48,7 @@ var closeDrawerButton = new Button();
 closeDrawerButton.text = "Close Drawer";
 drawer.addChild(closeDrawerButton);
 
-container.drawer = content;
+container.drawer = drawer;
 ```
 
 ## Open or close the drawer programatically
