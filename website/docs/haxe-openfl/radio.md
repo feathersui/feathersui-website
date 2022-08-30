@@ -12,7 +12,7 @@ The [`Radio`](https://api.feathersui.com/current/feathers/controls/Radio.html) c
 
 ## The Basics
 
-Start by creating some [`Radio`](https://api.feathersui.com/current/feathers/controls/Radio.html) controls, give them some text to display, add them to a [`ToggleGroup`](https://api.feathersui.com/current/feathers/controls/ToggleGroup.html), and add them to the [the display list](https://books.openfl.org/openfl-developers-guide/display-programming/basics-of-display-programming.html).
+Start by creating some [`Radio`](https://api.feathersui.com/current/feathers/controls/Radio.html) controls, give them some text to display, add them to a [`ToggleGroup`](https://api.feathersui.com/current/feathers/core/ToggleGroup.html), and add them to the [the display list](https://books.openfl.org/openfl-developers-guide/display-programming/basics-of-display-programming.html).
 
 ```haxe
 var group = new ToggleGroup();
@@ -33,7 +33,7 @@ radio3.toggleGroup = group;
 addChild(radio3);
 ```
 
-Simply pass the [`ToggleGroup`](https://api.feathersui.com/current/feathers/controls/ToggleGroup.html) instance to the [`toggleGroup`](https://api.feathersui.com/current/feathers/controls/Radio.html#toggleGroup) property of each [`Radio`](https://api.feathersui.com/current/feathers/controls/Radio.html) instance.
+Simply pass the [`ToggleGroup`](https://api.feathersui.com/current/feathers/core/ToggleGroup.html) instance to the [`toggleGroup`](https://api.feathersui.com/current/feathers/controls/Radio.html#toggleGroup) property of each [`Radio`](https://api.feathersui.com/current/feathers/controls/Radio.html) instance.
 
 [Add an event listener](https://books.openfl.org/openfl-developers-guide/handling-events/basics-of-handling-events.html) for [`Event.CHANGE`](https://api.openfl.org/openfl/events/Event.html#CHANGE) to perform an action when the user selects a different radio.
 
@@ -62,44 +62,44 @@ function toggleGroup_changeHandler(event:Event):Void {
 
 ## States
 
-When the user interacts with a radio using the mouse, keyboard, or touchscreen, its state will change, which may affect its appearance. For instance, the radio's icon and font styles may all be rendered differently in different states.
+When the user interacts with a radio using the mouse, keyboard, or touchscreen, its state will change, which may affect its appearance. For instance, the radio’s icon and font styles may all be rendered differently in different states.
 
 Similar to [`ToggleButton`](./toggle-button.md), the [`Radio`](https://api.feathersui.com/current/feathers/controls/Radio.html) component uses the [`ToggleButtonState`](https://api.feathersui.com/current/feathers/controls/ToggleButtonState.html) enum, which provides the following values.
 
-- [`UP(selected:Bool)`](https://api.feathersui.com/current/feathers/controls/ToggleButtonState.html#UP) is the radio's default state when the user is not interacting with it, and the radio is enabled.
+- [`UP(selected:Bool)`](https://api.feathersui.com/current/feathers/controls/ToggleButtonState.html#UP) is the radio’s default state when the user is not interacting with it, and the radio is enabled.
 - [`DOWN(selected:Bool)`](https://api.feathersui.com/current/feathers/controls/ToggleButtonState.html#DOWN) is the state when the user presses the radio with a mouse, touchscreen, or by pressing [`Keyboard.SPACE`](https://api.openfl.org/openfl/ui/Keyboard.html#SPACE) when the radio is focused.
 - [`HOVER(selected:Bool)`](https://api.feathersui.com/current/feathers/controls/ToggleButtonState.html#HOVER) is the state when the mouse is hovering over the radio. This state is not used for touchscreens or keyboard interaction.
-- [`DISABLED(selected:Bool)`](https://api.feathersui.com/current/feathers/controls/ToggleButtonState.html#DISABLED) is the radio's state when its [`enabled`](https://api.feathersui.com/current/feathers/core/IUIControl.html#enabled) property has been set to `false`.
+- [`DISABLED(selected:Bool)`](https://api.feathersui.com/current/feathers/controls/ToggleButtonState.html#DISABLED) is the radio’s state when its [`enabled`](https://api.feathersui.com/current/feathers/core/IUIControl.html#enabled) property has been set to `false`.
 
 Notice that each state also defines a boolean value to indicate if the radio is selected or not. `DOWN(true)` and `DOWN(false)` both indicate that the radio is currently pressed down, but the value of `true` indicates that it is currently selected, while `false` means that it is not selected.
 
 ## Styles
 
-A number of styles may be customized on a [`Radio`](https://api.feathersui.com/current/feathers/controls/Radio.html) component, including the icon and font styles. Several more styles may be used to adjust the layout of the radio's children.
+A number of styles may be customized on a [`Radio`](https://api.feathersui.com/current/feathers/controls/Radio.html) component, including the icon and font styles. Several more styles may be used to adjust the layout of the radio’s children.
 
 ### Font styles
 
-The font styles of the radio's text may be customized by passing an [`openfl.text.TextFormat`](https://api.openfl.org/openfl/text/TextFormat.html) object to the [`textFormat`](https://api.feathersui.com/current/feathers/controls/ToggleButton.html#textFormat) property.
+The font styles of the radio’s text may be customized by passing an [`openfl.text.TextFormat`](https://api.openfl.org/openfl/text/TextFormat.html) object to the [`textFormat`](https://api.feathersui.com/current/feathers/controls/ToggleButton.html#textFormat) property.
 
 ```haxe
 radio.textFormat = new TextFormat("Helvetica", 20, 0x3c3c3c);
 ```
 
-If the radio's text should use different font styles when the radio is selected, pass a [`TextFormat`](https://api.openfl.org/openfl/text/TextFormat.html) to the [`selectedTextFormat`](https://api.feathersui.com/current/feathers/controls/ToggleButton.html#selectedTextFormat) property.
+If the radio’s text should use different font styles when the radio is selected, pass a [`TextFormat`](https://api.openfl.org/openfl/text/TextFormat.html) to the [`selectedTextFormat`](https://api.feathersui.com/current/feathers/controls/ToggleButton.html#selectedTextFormat) property.
 
 ```haxe
 radio.selectedTextFormat = new TextFormat("Helvetica", 20, 0x9a9a9a, true);
 ```
 
-Finally, the radio's text may use different font styles in a more fine-grained matter — by targeting an exact state. Use the [`setTextFormatForState()`](https://api.feathersui.com/current/feathers/controls/ToggleButton.html#setTextFormatForState) method to pass in a state value and a [`TextFormat`](https://api.openfl.org/openfl/text/TextFormat.html).
+Finally, the radio’s text may use different font styles in a more fine-grained matter — by targeting an exact state. Use the [`setTextFormatForState()`](https://api.feathersui.com/current/feathers/controls/ToggleButton.html#setTextFormatForState) method to pass in a state value and a [`TextFormat`](https://api.openfl.org/openfl/text/TextFormat.html).
 
 ```haxe
 radio.setTextFormatForState(ToggleButtonState.DISABLED(false), new TextFormat("Helvetica", 20, 0xcc0000));
 ```
 
-Using the code above, the color of the radio's text will change when the radio is disabled and not selected.
+Using the code above, the color of the radio’s text will change when the radio is disabled and not selected.
 
-When font styles aren't available for a specific state, the radio will use the default [`textFormat`](https://api.feathersui.com/current/feathers/controls/ToggleButton.html#textFormat) as a fallback (preferring [`selectedTextFormat`](https://api.feathersui.com/current/feathers/controls/ToggleButton.html#selectedTextFormat) when selected, of course).
+When font styles aren’t available for a specific state, the radio will use the default [`textFormat`](https://api.feathersui.com/current/feathers/controls/ToggleButton.html#textFormat) as a fallback (preferring [`selectedTextFormat`](https://api.feathersui.com/current/feathers/controls/ToggleButton.html#selectedTextFormat) when selected, of course).
 
 ### Icon skin
 
@@ -114,7 +114,7 @@ icon.graphics.endFill();
 radio.icon = icon;
 ```
 
-The appearance of the radio's icon may change when the radio is selected. In the next example, the another OpenFL [`Shape`](https://api.openfl.org/openfl/display/Shape.html) is passed to the radio's [`selectedIcon`](https://api.feathersui.com/current/feathers/controls/ToggleButton.html#selectedIcon) property.
+The appearance of the radio’s icon may change when the radio is selected. In the next example, another OpenFL [`Shape`](https://api.openfl.org/openfl/display/Shape.html) is passed to the radio’s [`selectedIcon`](https://api.feathersui.com/current/feathers/controls/ToggleButton.html#selectedIcon) property.
 
 ```haxe
 var selectedIcon = new Shape();
@@ -151,7 +151,7 @@ radio.paddingBottom = 5.0;
 radio.paddingLeft = 8.0;
 ```
 
-The icon may be positioned on any side of the radio's text. For instance, the following example moves the icon above the text, so that the icon and text are stacked vertically.
+The icon may be positioned on any side of the radio’s text. For instance, the following example moves the icon above the text, so that the icon and text are stacked vertically.
 
 ```haxe
 radio.iconPosition = TOP;
