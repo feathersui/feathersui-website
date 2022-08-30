@@ -95,7 +95,7 @@ icon.graphics.endFill();
 check.icon = icon;
 ```
 
-The appearance of the check's icon may change when the check is selected. In the next example, the another OpenFL [`Shape`](https://api.openfl.org/openfl/display/Shape.html) is passed to the check's [`selectedIcon`](https://api.feathersui.com/current/feathers/controls/ToggleButton.html#selectedIcon) property.
+The appearance of the check's icon may change when the check is selected. In the next example, another OpenFL [`Shape`](https://api.openfl.org/openfl/display/Shape.html) is passed to the check's [`selectedIcon`](https://api.feathersui.com/current/feathers/controls/ToggleButton.html#selectedIcon) property.
 
 ```haxe
 var selectedIcon = new Shape();
