@@ -54,7 +54,7 @@ Command your squad of heroes on the field of battle in this game powered by Star
   {
     title: "Drum Pad Beats",
     content: `
-Drum Pad Beats is a fun beat/composer – scene/remixer to capture those ideas when that flash of inspiration hits while away from the studio. Built with Starling and the Feathers UI.
+Drum Pad Beats is a fun beat/composer – scene/remixer to capture those ideas when that flash of inspiration hits while away from the studio. Built with Starling and Feathers UI.
 
 <div class="buttonWrapper">
   <a class="button" href="https://www.youtube.com/watch?v=udNEq9hEjpw">Watch Video</a>
