@@ -23,10 +23,9 @@ Feathers UI and Starling power NCIS: Hidden Crimes, an episodic adventure where 
 
 <div class="buttonWrapper">
   <a class="button" href="https://www.youtube.com/watch?v=EtrA8BDdqFo">Watch Video</a>
-  <a class="button" href="https://www.ubisoft.com/nn-NO/game/ncis-hidden-crimes/">Visit Website</a>
 </div>`,
     image: "/img/showcase/ncis@2x.jpg",
-    imageLink: "https://www.ubisoft.com/nn-NO/game/ncis-hidden-crimes/",
+    imageLink: "https://www.youtube.com/watch?v=EtrA8BDdqFo",
   },
   {
     title: "Wake-Up Memovox",
@@ -46,10 +45,9 @@ Command your squad of heroes on the field of battle in this game powered by Star
 
 <div class="buttonWrapper">
   <a class="button" href="https://www.youtube.com/watch?v=7k0US8ALKoM">Watch Video</a>
-  <a class="button" href="https://www.2k.com/games/battleborn-tap">Visit Website</a>
 </div>`,
     image: "/img/showcase/battleborn-tap@2x.jpg",
-    imageLink: "https://www.2k.com/games/battleborn-tap",
+    imageLink: "https://www.youtube.com/watch?v=7k0US8ALKoM",
   },
   {
     title: "Drum Pad Beats",
@@ -69,10 +67,10 @@ Drum Pad Beats is a fun beat/composer – scene/remixer to capture those ideas w
 Snailboy is a physics based puzzle game, built with Starling and Feathers UI, that combines rich graphics, killer sounds and over 40 levels of gameplay.
 
 <div class="buttonWrapper">
-  <a class="button" href="http://snailboygame.com/">Visit Website</a>
+  <a class="button" href="https://www.youtube.com/watch?v=bxb4Frwtx-Y">Watch Video</a>
 </div>`,
     image: "/img/showcase/snailboy@2x.jpg",
-    imageLink: "http://snailboygame.com/",
+    imageLink: "https://www.youtube.com/watch?v=bxb4Frwtx-Y",
   },
   {
     title: "American Cornhole Association",
@@ -190,10 +188,9 @@ Spell Cubes is the toddlers first playful meeting with the phonetic alphabet and
 
 <div class="buttonWrapper">
   <a class="button" href="https://vimeo.com/51147143">Watch Video</a>
-  <a class="button" href="http://bjeld.com/apps-i-did/spell-cubes/">Visit Website</a>
 </div>`,
     image: "/img/showcase/spell-cubes.jpg",
-    imageLink: "http://bjeld.com/apps-i-did/spell-cubes/",
+    imageLink: "https://vimeo.com/51147143",
   },
 ];
 
