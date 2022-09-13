@@ -22,6 +22,8 @@ Additionally, the library includes the ability to read and write [Flash Local Sh
 
 Backend services that understand AMF can be used to transfer strongly typed objects that exist both server-side and client-side. A `RemoteObject` service on the frontend is used to call backend methods with typed parameters and to receive typed results back.
 
+> See [feathersui-rpc-services](http://feathersui.com/blog/2022/09/08/feathers-ui-rpc-services-1-0-0-remote-object-http-service-haxe/) for a `RemoteObject` service implementation based on amfio for OpenFL and Feathers UI
+
 Common backend libraries for passing remote objects include [BlazeDS](https://github.com/apache/flex-blazeds), and [AMFPHP](https://github.com/silexlabs/amfphp-2.0), and there are similar implementations available for many other languages too.
 
 #### Streaming media
