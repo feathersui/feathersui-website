@@ -12,7 +12,7 @@ This is just one of many projects that I'm releasing as part of the [Feathers UI
 
 ![](/blog/img/webpack-openfl-loader-v1.0.0.png)
 
-Haxe and OpenFL already bundle all of the generated JavaScript into a single minified file already, so why would you want to use Webpack?
+Haxe and OpenFL already bundle all of the generated JavaScript into a single minified file already, so why would you want to use Webpack? ([or Vite?](http://feathersui.com/blog/2022/09/13/vite-openfl-plugin-1-0-0/))
 
 - In an organization already making heavy use of Webpack, it is helpful if there's a way to integrate OpenFL into common workflows.
 - The Webpack ecosystem offers a ton of [plugins](https://webpack.js.org/plugins/) and [loaders](https://webpack.js.org/loaders/) to process and enhance JavaScript, HTML, and CSS files. These tools make it possible to go beyond the default capabilities of the Haxe compiler when targeting the web.
