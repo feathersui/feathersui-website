@@ -27,10 +27,10 @@ addChild(slider);
 The [`value`](https://api.feathersui.com/current/feathers/controls/supportClasses/BaseSlider.html#value) property indicates the current value of the slider, while the [`minimum`](https://api.feathersui.com/current/feathers/controls/supportClasses/BaseSlider.html#minimum) and [`maximum`](https://api.feathersui.com/current/feathers/controls/supportClasses/BaseSlider.html#maximum) properties establish a range of possible values.
 
 ```haxe
-slider.step = 1.0;
+slider.snapInterval = 1.0;
 ```
 
-The [`step`](https://api.feathersui.com/current/feathers/controls/supportClasses/BaseSlider.html#step) property controls how the slider's value is rounded as it is dragged. When the slider's [`step`](https://api.feathersui.com/current/feathers/controls/supportClasses/BaseSlider.html#step) is set to `1.0`, the slider will be dragged along whole numbers only and it cannot have a value like `4.5`.
+The [`snapInterval`](https://api.feathersui.com/current/feathers/controls/supportClasses/BaseSlider.html#snapInterval) property controls how the slider's value is rounded as it is dragged. When the slider's [`snapInterval`](https://api.feathersui.com/current/feathers/controls/supportClasses/BaseSlider.html#snapInterval) is set to `1.0`, the slider will be dragged along whole numbers only and it cannot have a value like `4.5`.
 
 [Add an event listener](https://books.openfl.org/openfl-developers-guide/handling-events/basics-of-handling-events.html) for [`Event.CHANGE`](https://api.openfl.org/openfl/events/Event.html#CHANGE) to perform an action when the [`value`](https://api.feathersui.com/current/feathers/controls/supportClasses/BaseSlider.html#value) property changes.
 
