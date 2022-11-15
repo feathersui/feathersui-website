@@ -98,15 +98,15 @@ I've created an [official v1.0.0 discussion thread](https://community.feathersui
 
 ## Wait, there's more…
 
-Finally, I'd like to announce that this is the start of **Feathers UI Release Week**. Hold on… did I say _week?!_ Yes, there's a lot more in store.
+Finally, I'd like to announce that this is the start of [**Feathers UI Release Week**](https://feathersui.com/blog/2022/09/16/release-week-summary-feathers-ui-9-open-source-projectss/). Hold on… did I say _week?!_ Yes, there's a lot more in store.
 
-<img src="/blog/img/feathersui-release-week.png">
+<a href="https://feathersui.com/blog/2022/09/16/release-week-summary-feathers-ui-9-open-source-projectss/"><img src="/blog/img/feathersui-release-week.png"></a>
 
-I plan to release several useful new open source projects related to OpenFL and Feathers UI. Get ready for some new build tools, micro-frameworks, and utility libraries to make development easier.
+I've [released several useful new open source projects](https://feathersui.com/blog/2022/09/16/release-week-summary-feathers-ui-9-open-source-projectss/) related to OpenFL and Feathers UI. Get ready for some new build tools, micro-frameworks, and utility libraries to make development easier.
 
-The first of these additional open source releases will happen on Tuesday, September 6, 2022 (because Monday is a holiday in USA). I'll try to release something new each day until my queue is empty. It may continue beyond a week, to be honest. There's so much that I've been working on lately, and I'm super excited to share with you.
+The first of these additional open source releases happened on Tuesday, September 6, 2022 (because Monday was a holiday in USA). Then, I released something new each day until my queue was empty. It continued beyond a week, to be honest! There's just so much to share, and it's super exciting to finally release it all for you.
 
-Please give Feathers UI v1.0 a try, and stay tuned for the start of these bonus open source announcements early next week.
+Please give Feathers UI v1.0 a try, and check out those [bonus open source announcements](https://feathersui.com/blog/2022/09/16/release-week-summary-feathers-ui-9-open-source-projectss/) too.
 
 Happy coding!
 
