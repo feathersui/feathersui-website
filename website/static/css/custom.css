@@ -272,3 +272,20 @@ img.beta {
   vertical-align: middle;
   display: inline;
 }
+
+.homeContainer .homeWrapper {
+  padding-bottom: 0;
+}
+
+.homeContainer .homeWrapper .promoSection .promoRow {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.homeContainer .homeWrapper .promoSection .promoRow .button {
+  margin-bottom: 0;
+}
+
+img.heroImage {
+  max-height: 400px;
+}
