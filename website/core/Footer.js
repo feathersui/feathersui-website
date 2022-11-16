@@ -183,6 +183,14 @@ class Footer extends React.Component {
                   Twitter
                 </a>
               </li>
+              <li>
+                <a
+                  href="https://fosstodon.org/@feathersui"
+                  rel="noreferrer noopener"
+                >
+                  Mastodon
+                </a>
+              </li>
             </ul>
           </div>
           <div>
