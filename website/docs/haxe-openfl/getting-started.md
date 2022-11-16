@@ -53,9 +53,12 @@ A variety of examples are available to show you how to integrate the various pie
 
 The [Feathers UI blog](https://feathersui.com/blog/) is the official source for all announcements and updates about Feathers UI.
 
-You can also follow [@feathersui](https://twitter.com/feathersui) on Twitter for updates and extras, but you won't miss anything essential if you only read the blog.
+You can also follow [Feathers UI on social media](/social-media/) to keep track of the latest updates, and maybe some fun extras.
 
-Not every feature or bug fix in Feathers UI updates deserves its own blog post, but you can find a detailed changelog for every release in the [CHANGELOG.md file in the Feathers UI repository](https://github.com/feathersui/feathersui-openfl/blob/master/CHANGELOG.md).
+- [@feathersui on Twitter](https://twitter.com/feathersui)
+- [@feathersui@fosstodon.org on Mastodon](https://fosstodon.org/@feathersui)
+
+Finally, if you want to dive into the nitty-gritty details of every bug fix in the newest release, check out the [_CHANGELOG.md_ file](https://github.com/feathersui/feathersui-openfl/blob/master/CHANGELOG.md).
 
 ## Need extra, in-depth help?
 

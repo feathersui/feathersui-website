@@ -7,7 +7,7 @@ function Community(props) {
   const { config: siteConfig } = props;
   const { baseUrl } = siteConfig;
 
-  const supportLinks = [
+  const socialLinks = [
     {
       title: "[Twitter](https://twitter.com/feathersui)",
       content: `Follow [@feathersui](https://twitter.com/feathersui) on Twitter to get tweets about the latest news and announcements.
@@ -18,6 +18,16 @@ function Community(props) {
       imageAlign: "top",
       imageLink: "https://twitter.com/feathersui",
     },
+    {
+      title: "[Mastodon](https://fosstodon.org/@feathersui)",
+      content: `Follow [@feathersui@fosstodon.org](https://fosstodon.org/@feathersui) on Mastodon to get informed about the latest news and announcements.
+<div class="buttonWrapper">
+  <a class="button" href="https://fosstodon.org/@feathersui">Follow on Mastodon</a>
+</div>`,
+      image: `${baseUrl}img/mastodon-logo.png`,
+      imageAlign: "top",
+      imageLink: "https://fosstodon.org/@feathersui",
+    },
   ];
 
   return (
@@ -27,7 +37,7 @@ function Community(props) {
           <header className="postHeader">
             <h1>Follow Feathers UI on social media</h1>
           </header>
-          <GridBlock contents={supportLinks} layout="threeColumn" />
+          <GridBlock contents={socialLinks} layout="threeColumn" />
         </div>
       </Container>
     </div>
