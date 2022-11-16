@@ -35,7 +35,7 @@ haxelib update feathersui
 
 Now that Feathers UI and its dependencies are installed, you can create a project in your favorite editor.
 
-- [Create a project in a command line terminal](terminal-new-project.md)
+- [Create a project in a Terminal / Command Line](terminal-new-project.md)
 - [Create a project in HaxeDevelop](haxedevelop.md)
 - [Create a project in Moonshine IDE](moonshine-ide.md)
 - [Create a project in Visual Studio Code](visual-studio-code.md)

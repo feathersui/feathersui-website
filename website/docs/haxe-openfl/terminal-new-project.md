@@ -1,9 +1,9 @@
 ---
-title: Create a Feathers UI project in a command line terminal
-sidebar_label: Command line terminal
+title: Create a Feathers UI project in a Terminal / Command Line
+sidebar_label: Terminal / Command Line
 ---
 
-Create [Feathers UI](/) projects with [Haxe](https://haxe.org/) and [OpenFL](https://openfl.org/) in a terminal, and learn the commands needed to build your project, or run it with different targets.
+Create [Feathers UI](/) projects with [Haxe](https://haxe.org/) and [OpenFL](https://openfl.org/) in a terminal / CLI, and learn the commands needed to build your project, or run it with different targets.
 
 ## Prerequisites
 

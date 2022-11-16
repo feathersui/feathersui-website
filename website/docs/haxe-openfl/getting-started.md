@@ -10,7 +10,7 @@ Learn how to download Feathers UI and how to create your first project.
 
 - [Install Feathers UI](./installation.md), along with all of its required dependencies.
 - Create a new project in the following environments:
-  - [Command line terminal](./terminal-new-project.md)
+  - [Terminal / Command Line](./terminal-new-project.md)
   - [Visual Studio Code](./visual-studio-code.md)
   - [HaxeDevelop](./haxedevelop.md)
   - [Moonshine IDE](./moonshine-ide.md)
