@@ -45,7 +45,11 @@ class HomeSplash extends React.Component {
     return (
       <SplashContainer>
         <div className="inner">
-          <img className="heroImage" src="/img/hero-themes.png" />
+          <img
+            className="heroImage"
+            src="/img/hero-themes.png"
+            alt="Three versions of the same app with different visual appearances"
+          />
           <ProjectTitle siteConfig={siteConfig} />
           <PromoSection>
             <Button href={docUrl("haxe-openfl/getting-started")}>
