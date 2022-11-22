@@ -90,7 +90,7 @@ The [`dividerFactory`](https://api.feathersui.com/current/feathers/controls/supp
 dividedBox.dividerFactory = DisplayObjectRecycler.withFunction(() -> {
     var button = new Button();
     // ... set styles here
-    return button;
+    return cast(button,InteractiveObject);
 });
 ```
 
