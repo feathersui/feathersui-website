@@ -1,3 +1,3 @@
 <?php
-	header("Location: /samples/haxe-openfl/");
+	header("Location: /samples/haxe-openfl/magic-8-ball-chat/");
 ?>
