@@ -178,7 +178,7 @@ class Footer extends React.Component {
               <li>
                 <a
                   href="https://twitter.com/feathersui"
-                  rel="noreferrer noopener"
+                  rel="me noreferrer noopener"
                 >
                   Twitter
                 </a>
@@ -186,7 +186,7 @@ class Footer extends React.Component {
               <li>
                 <a
                   href="https://fosstodon.org/@feathersui"
-                  rel="noreferrer noopener"
+                  rel="me noreferrer noopener"
                 >
                   Mastodon
                 </a>
