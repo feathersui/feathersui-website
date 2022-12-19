@@ -26,7 +26,7 @@ To render some data in the group list view, pass in a [collection](./data-collec
 ```haxe
 var collection = new ArrayHierarchicalCollection( [
     {
-        text: "Group A",
+        headerText: "Group A",
         children: [
             { text: "Node A1" },
             { text: "Node A2" },
@@ -35,7 +35,7 @@ var collection = new ArrayHierarchicalCollection( [
         ]
     },
     {
-        text: "Group B",
+        headerText: "Group B",
         children: [
             { text: "Node B1" },
             { text: "Node B2" },
@@ -43,7 +43,7 @@ var collection = new ArrayHierarchicalCollection( [
         ]
     },
     {
-        text: "Group C",
+        headerText: "Group C",
         children: [
             {text: "Node C1"}
         ]
@@ -64,7 +64,13 @@ Set the [`itemToText()`](https://api.feathersui.com/current/feathers/controls/Gr
 groupListView.itemToText = (item:Dynamic) -> item.text;
 ```
 
-> Items in the collection are not required to be simple object literals, like `{text: "Node A1"}` in the example above. Instances of a class are allowed too (and encouraged as a best practice). If you use a class, be sure to update the item parameter's type in the `itemToChildren` and `itemToText` functions so that the compiler can catch any errors.
+Additionally, set the [`itemToHeaderText()`](https://api.feathersui.com/current/feathers/controls/GroupListView.html#itemToHeaderText) method to get the header text from each group in the collection.
+
+```haxe
+groupListView.itemToHeaderText = (group:Dynamic) -> group.headerText;
+```
+
+> Items in the collection are not required to be simple object literals, like `{text: "Node A1"}` in the example above. Instances of a class are allowed too (and encouraged as a best practice). If you use a class, be sure to update the item parameter's type in the `itemToChildren`, `itemToText`, and `itemToHeaderText` functions so that the compiler can catch any errors.
 
 ### Selection
 
