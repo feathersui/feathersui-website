@@ -49,6 +49,7 @@ var collection = new ArrayHierarchicalCollection( [
         ]
     }
 ]);
+groupListView.dataProvider = collection;
 ```
 
 Set the collection's [`itemToChildren()`](https://api.feathersui.com/current/feathers/controls/ArrayHierarchicalCollection.html#itemToChildren) method to get the children from each branch that need to be rendered by the tree view.
