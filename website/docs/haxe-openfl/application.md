@@ -12,7 +12,7 @@ The [`Application`](https://api.feathersui.com/current/feathers/controls/Applica
 Create a new class that extends [`Application`](https://api.feathersui.com/current/feathers/controls/Application.html).
 
 ```haxe
-import feathers.core.Application;
+import feathers.controls.Application;
 
 class MyProject extends Application {
     public function new() {
