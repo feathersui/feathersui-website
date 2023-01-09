@@ -10,7 +10,7 @@ sidebar_label: Displaying pop-ups
 [`PopUpManager.addPopUp()`](https://api.feathersui.com/current/feathers/core/PopUpManager.html#addPopUp) may be used to add any UI component as a pop-up over the rest of the application.
 
 ```haxe
-var popUp = new Panel();
+var panel = new Panel();
 panel.header = new Header("Warning");
 panel.addChild(new Label("This is a very important message"));
 panel.addChild(new Button("OK"));
