@@ -14,11 +14,6 @@ code {
   padding: 1.5px 4px;
 }
 
-a,
-a:hover {
-  color: #fa9725;
-}
-
 a code {
   background-color: #fdf4ea;
 }
@@ -243,13 +238,14 @@ h2 p,
 }
 
 @media only screen and (min-width: 1024px) {
-  .navigationSlider .slidingNav ul li a {
-    color: #292522;
-  }
-  .navigationSlider .slidingNav ul li a:hover,
+  .navigationSlider .slidingNav ul li > a,
+  .navigationSlider .slidingNav ul li > a:hover,
   .navigationSlider .slidingNav ul li.siteNavItemActive a,
   .navigationSlider .slidingNav ul li.siteNavGroupActive a {
     color: #292522;
+  }
+  .navigationSlider .slidingNav ul li > a:not(:hover) {
+    background: $headerColor;
   }
 }
 
@@ -288,4 +284,12 @@ img.beta {
 
 img.heroImage {
   max-height: 400px;
+}
+
+.fixedHeaderContainer {
+  background: $headerColor;
+}
+
+.mainContainer a:hover {
+  text-decoration: underline;
 }

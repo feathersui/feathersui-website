@@ -73,8 +73,9 @@ const siteConfig = {
 
   /* Colors for website */
   colors: {
-    primaryColor: "#ffa759",
+    primaryColor: "#f08209",
     secondaryColor: "#ffc28c",
+    headerColor: "#ffa759",
   },
 
   /* Custom fonts for website */
@@ -100,7 +101,8 @@ const siteConfig = {
   },
 
   enableUpdateTime: true,
-  editUrl: "https://github.com/feathersui/feathersui-website/edit/master/website/docs/",
+  editUrl:
+    "https://github.com/feathersui/feathersui-website/edit/master/website/docs/",
 
   // Add custom scripts here that would be placed in <script> tags.
   scripts: ["https://buttons.github.io/buttons.js"],
