@@ -2,9 +2,9 @@
 title: How to add a background skin to a custom item renderer based on FeathersControl and IListItemRenderer (Starling version)
 ---
 
-The example [custom item renderer with `FeathersControl` and `IListItemRenderer`](../feathers-control-item-renderers.html) offers an easy-to-understand foundation to build upon. It's pretty limited in features, though. For instance, you may want some kind of background skin.
+The example [custom item renderer with `FeathersControl` and `IListItemRenderer`](../feathers-control-item-renderers.md) offers an easy-to-understand foundation to build upon. It's pretty limited in features, though. For instance, you may want some kind of background skin.
 
-> If you've created a [custom item renderer based on `LayoutGroup`](../layout-group-item-renderers.html), you don't need to implement the background skin yourself. You can simply set the [`backgroundSkin`](/api-reference/feathers/controls/LayoutGroup.html#backgroundSkin) property.
+> If you've created a [custom item renderer based on `LayoutGroup`](../layout-group-item-renderers.md), you don't need to implement the background skin yourself. You can simply set the [`backgroundSkin`](/api-reference/feathers/controls/LayoutGroup.html#backgroundSkin) property.
 
 ## A backgroundSkin getter and setter
 
@@ -92,4 +92,4 @@ The example code above adds only a single background skin. What if you want to d
 ## Related Links
 
 - [Feathers Cookbook (Starling version)](./index.md)
-- [Introduction to Custom Item Renderers](../item-renderers.html)
+- [Introduction to Custom Item Renderers](../item-renderers.md)

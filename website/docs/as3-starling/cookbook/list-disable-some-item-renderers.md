@@ -43,5 +43,5 @@ list.dataProvider.updateItemAt(4);
 ## Related Links
 
 - [Feathers Cookbook (Starling version)](./index.md)
-- [How to use the `List` component](../list.html)
-- [How to use the default Feathers item renderer with `List`, `DataGrid`, `Tree`, and `GroupedList`](../default-item-renderers.html)
+- [How to use the `List` component](../list.md)
+- [How to use the default Feathers item renderer with `List`, `DataGrid`, `Tree`, and `GroupedList`](../default-item-renderers.md)

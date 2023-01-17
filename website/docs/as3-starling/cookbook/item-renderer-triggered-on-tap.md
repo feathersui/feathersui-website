@@ -2,7 +2,7 @@
 title: How to dispatch a triggered event from a custom item renderer (Starling version)
 ---
 
-A [custom item renderer](../item-renderers.html) should dispatch [`Event.TRIGGERED`](http://doc.starling-framework.org/core/starling/events/Event.html#TRIGGERED) when it is tapped or clicked, similar to a [`Button`](../button.html).
+A [custom item renderer](../item-renderers.md) should dispatch [`Event.TRIGGERED`](http://doc.starling-framework.org/core/starling/events/Event.html#TRIGGERED) when it is tapped or clicked, similar to a [`Button`](../button.md).
 
 Using the [`TapToTrigger`](/api-reference/feathers/utils/touch/TapToTrigger.html) class, it's easy to dispatch `Event.TRIGGERED` on tap or click:
 
@@ -26,6 +26,6 @@ You should also [learn how to use `TapToSelect`](./item-renderer-select-on-tap.m
 ## Related Links
 
 - [Feathers Cookbook (Starling version)](./index.md)
-- [Introduction to Custom Item Renderers](../item-renderers.html)
+- [Introduction to Custom Item Renderers](../item-renderers.md)
 - [Feathers Cookbook: Selecting a custom item renderer on tap or click](./item-renderer-select-on-tap.md)
 - [Feathers Cookbook: Dispatching a long press event from a custom item renderer](./item-renderer-long-press.md)

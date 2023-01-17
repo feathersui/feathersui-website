@@ -2,7 +2,7 @@
 title: How to dispatch a long press event from a custom item renderer (Starling version)
 ---
 
-A [custom item renderer](../item-renderers.html) may optionally dispatch [`FeathersEventType.LONG_PRESS`](/api-reference/feathers/events/FeathersEventType.html#LONG_PRESS), similar to a [`Button`](../button.html).
+A [custom item renderer](../item-renderers.md) may optionally dispatch [`FeathersEventType.LONG_PRESS`](/api-reference/feathers/events/FeathersEventType.html#LONG_PRESS), similar to a [`Button`](../button.md).
 
 Using the [`LongPress`](/api-reference/feathers/utils/touch/LongPress.html) class, it's easy to dispatch `FeathersEventType.LONG_PRESS`:
 
@@ -43,6 +43,6 @@ this._longPress.tapToSelect = this._select;
 ## Related Links
 
 - [Feathers Cookbook (Starling version)](./index.md)
-- [Introduction to Custom Item Renderers](../item-renderers.html)
+- [Introduction to Custom Item Renderers](../item-renderers.md)
 - [Feathers Cookbook: How to select (or deselect) a custom item renderer on tap or click](./item-renderer-select-on-tap.md)
 - [Feathers Cookbook: How to dispatch a triggered event from a custom item renderer](./item-renderer-triggered-on-tap.md)

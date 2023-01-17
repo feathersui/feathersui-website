@@ -2,7 +2,7 @@
 title: How to select (or deselect) a custom item renderer on tap or click (Starling version)
 ---
 
-[Custom item renderers](../item-renderers.html) should dispatch `Event.CHANGE` when their [`isSelected`](/api-reference/feathers/controls/renderers/IToggle.html#isSelected) property changes. The list does not select an item renderer on tap or click because some item renderers might be selected with a different interaction, like a long press or a swipe. The item renderer needs to implement this behavior.
+[Custom item renderers](../item-renderers.md) should dispatch `Event.CHANGE` when their [`isSelected`](/api-reference/feathers/controls/renderers/IToggle.html#isSelected) property changes. The list does not select an item renderer on tap or click because some item renderers might be selected with a different interaction, like a long press or a swipe. The item renderer needs to implement this behavior.
 
 Using the [`TapToSelect`](/api-reference/feathers/utils/touch/TapToSelect.html) class, it's easy to change the `isSelected` property on tap or click:
 
@@ -55,6 +55,6 @@ Always be sure to create the `TapToTrigger` instance before the `TapToSelect` in
 ## Related Links
 
 - [Feathers Cookbook (Starling version)](./index.md)
-- [Introduction to Custom Item Renderers](../item-renderers.html)
+- [Introduction to Custom Item Renderers](../item-renderers.md)
 - [Feathers Cookbook: Dispatching a triggered event from a custom item renderer](./item-renderer-triggered-on-tap.md)
 - [Feathers Cookbook: Dispatching a long press event from a custom item renderer](./item-renderer-long-press.md)

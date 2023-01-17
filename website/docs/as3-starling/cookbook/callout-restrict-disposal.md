@@ -2,13 +2,13 @@
 title: How to close a Callout without disposing it (or without disposing its content) (Starling version)
 ---
 
-Normally, a [`Callout`](../callout.html) component will dispose itself (and its content) as soon as you close it. However, sometimes we might want to reuse it again, or we might want to reuse its content in another `Callout` (or elsewhere).
+Normally, a [`Callout`](../callout.md) component will dispose itself (and its content) as soon as you close it. However, sometimes we might want to reuse it again, or we might want to reuse its content in another `Callout` (or elsewhere).
 
 ## Close without disposing content
 
 The [`disposeContent`](/api-reference/feathers/controls/Callout.html#disposeContent) property may be set to `false` to tell the `Callout` that the content should be preserved when the `Callout` closes. Let's create a `Label` that we will show in a `Callout` every time that a `Button` is triggered.
 
-We'll start with a simple class that extends [`LayoutGroup`](../layout-group.html) and we'll create the `Label`, the `Button`, and add a listener for `Event.TRIGGERED` to the `Button`:
+We'll start with a simple class that extends [`LayoutGroup`](../layout-group.md) and we'll create the `Label`, the `Button`, and add a listener for `Event.TRIGGERED` to the `Button`:
 
 ```actionscript
 public class Example extends LayoutGroup
@@ -124,7 +124,7 @@ else
 }
 ```
 
-The [`disposeOnSelfClose`](/api-reference/feathers/controls/Callout.html#disposeOnSelfClose) property ensures that the `Callout` will not dispose itself when closed. Since the `Callout` isn't getting disposed, its content won't be disposed yet either. When we want to show it again, we simply need to add it back to the [`PopUpManager`](../pop-ups.html).
+The [`disposeOnSelfClose`](/api-reference/feathers/controls/Callout.html#disposeOnSelfClose) property ensures that the `Callout` will not dispose itself when closed. Since the `Callout` isn't getting disposed, its content won't be disposed yet either. When we want to show it again, we simply need to add it back to the [`PopUpManager`](../pop-ups.md).
 
 Similar to the previous example, we should make sure that the `Callout` gets disposed when our `LayoutGroup` is disposed.
 
@@ -145,5 +145,5 @@ As long as the `disposeContent` property is set to the default value of `true`, 
 ## Related Links
 
 - [Feathers Cookbook (Starling version)](./index.md)
-- [How to use the `Callout` component](../callout.html)
+- [How to use the `Callout` component](../callout.md)
 - [How to stop a `Callout` from closing automatically after touch or keyboard input](./callout-stop-closing-automatically.md)

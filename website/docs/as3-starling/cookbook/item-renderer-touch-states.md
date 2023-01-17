@@ -129,4 +129,4 @@ You'll notice that we check if `_backgroundDownSkin` and `_backgroundHoverSkin` 
 ## Related Links
 
 - [Feathers Cookbook (Starling version)](./index.md)
-- [Introduction to Custom Item Renderers](../item-renderers.html)
+- [Introduction to Custom Item Renderers](../item-renderers.md)

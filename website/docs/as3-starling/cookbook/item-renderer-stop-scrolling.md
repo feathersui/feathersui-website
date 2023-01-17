@@ -69,4 +69,4 @@ Scrolling will be stopped only when touches originate on the child. If touches o
 ## Related Links
 
 - [Feathers Cookbook (Starling version)](./index.md)
-- [Introduction to Custom Item Renderers](../item-renderers.html)
+- [Introduction to Custom Item Renderers](../item-renderers.md)

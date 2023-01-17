@@ -6,7 +6,7 @@ In order to show as much content as possible, some mobile UIs will only reveal a
 
 ## The Layout
 
-Let's start by defining the [`Header`](../header.html) and [`List`](../list.html) components as member variables:
+Let's start by defining the [`Header`](../header.md) and [`List`](../list.md) components as member variables:
 
 ```actionscript
 private var _header:Header;
@@ -31,7 +31,7 @@ this._list.dataProvider = new ArrayCollection( items );
 this.addChild(this._list);
 ```
 
-Now, we're ready to add the layout code. We'll use [`AnchorLayout`](../anchor-layout.html) to position a header and a list, with the list's position relative to the header. The header and list should be placed inside a container that supports layouts, such as [`LayoutGroup`](../layout-group.html).
+Now, we're ready to add the layout code. We'll use [`AnchorLayout`](../anchor-layout.md) to position a header and a list, with the list's position relative to the header. The header and list should be placed inside a container that supports layouts, such as [`LayoutGroup`](../layout-group.md).
 
 ```actionscript
 this.layout = new AnchorLayout();

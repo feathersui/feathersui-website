@@ -2,9 +2,9 @@
 title: How to set additional properties on the buttons in a ButtonGroup (Starling version)
 ---
 
-[`ButtonGroup`](../button-group.html) supports setting a number of properties on its buttons through its [`dataProvider`](/api-reference/feathers/controls/ButtonGroup.html#dataProvider) property, like [`label`](/api-reference/feathers/controls/Button.html#label) and [`isEnabled`](/api-reference/feathers/core/FeathersControl.html#isEnabled). Sometimes, we may need to set additional properties on the buttons. `ButtonGroup` makes it easy to customize how its `dataProvider` is interpreted with the [`buttonInitializer`](/api-reference/feathers/controls/ButtonGroup.html#dataProvider) property.
+[`ButtonGroup`](../button-group.md) supports setting a number of properties on its buttons through its [`dataProvider`](/api-reference/feathers/controls/ButtonGroup.html#dataProvider) property, like [`label`](/api-reference/feathers/controls/Button.html#label) and [`isEnabled`](/api-reference/feathers/core/FeathersControl.html#isEnabled). Sometimes, we may need to set additional properties on the buttons. `ButtonGroup` makes it easy to customize how its `dataProvider` is interpreted with the [`buttonInitializer`](/api-reference/feathers/controls/ButtonGroup.html#dataProvider) property.
 
-The `buttonInitializer` is a function that is called for each item in the data provider. The `ButtonGroup` passes in a [`Button`](../button.html) and an item from the data provider. The function signature looks like this:
+The `buttonInitializer` is a function that is called for each item in the data provider. The `ButtonGroup` passes in a [`Button`](../button.md) and an item from the data provider. The function signature looks like this:
 
 ```actionscript
 function( button:Button, item:Object ):void
@@ -48,4 +48,4 @@ if( item.hasOwnProperty( "scaleWhenDown" ) )
 ## Related Links
 
 - [Feathers Cookbook (Starling version)](./index.md)
-- [How to use the `ButtonGroup` component](../button-group.html)
+- [How to use the `ButtonGroup` component](../button-group.md)

@@ -2,9 +2,9 @@
 title: How to set additional properties on the tabs in a TabBar (Starling version)
 ---
 
-[`TabBar`](../tab-bar.html) supports setting a number of properties on its tabs through its [`dataProvider`](/api-reference/feathers/controls/TabBar.html#dataProvider) property, like [`label`](/api-reference/feathers/controls/Button.html#label) and [`isEnabled`](/api-reference/feathers/core/FeathersControl.html#isEnabled). Sometimes, we may need to set additional properties on the tabs. `TabBar` makes it easy to customize how its `dataProvider` is interpreted with the [`tabInitializer`](/api-reference/feathers/controls/TabBar.html#dataProvider) property.
+[`TabBar`](../tab-bar.md) supports setting a number of properties on its tabs through its [`dataProvider`](/api-reference/feathers/controls/TabBar.html#dataProvider) property, like [`label`](/api-reference/feathers/controls/Button.html#label) and [`isEnabled`](/api-reference/feathers/core/FeathersControl.html#isEnabled). Sometimes, we may need to set additional properties on the tabs. `TabBar` makes it easy to customize how its `dataProvider` is interpreted with the [`tabInitializer`](/api-reference/feathers/controls/TabBar.html#dataProvider) property.
 
-The `tabInitializer` is a function that is called for each item in the data provider. The `TabBar` passes in a [`ToggleButton`](../toggle-button.html) and an item from the data provider. The function signature looks like this:
+The `tabInitializer` is a function that is called for each item in the data provider. The `TabBar` passes in a [`ToggleButton`](../toggle-button.md) and an item from the data provider. The function signature looks like this:
 
 ```actionscript
 function( tab:ToggleButton, item:Object ):void
@@ -48,4 +48,4 @@ if( item.hasOwnProperty( "scaleWhenDown" ) )
 ## Related Links
 
 - [Feathers Cookbook (Starling version)](./index.md)
-- [How to use the `TabBar` component](../tab-bar.html)
+- [How to use the `TabBar` component](../tab-bar.md)
