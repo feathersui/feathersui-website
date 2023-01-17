@@ -89,13 +89,16 @@ h2 p,
 }
 
 .button {
-  color: #ff8b26;
+  color: $primaryColor;
+  border-color: #ffa759;
   margin-bottom: 1em;
   margin-right: 10px;
 }
 
 .button:hover {
   color: #292522;
+  background: #ff8b26;
+  border-color: #ff8b26;
 }
 
 .quietButton {
