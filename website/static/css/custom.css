@@ -192,6 +192,10 @@ h2 p,
   color: rgba(255, 255, 255, 0.6);
 }
 
+.nav-footer .copyright a:hover {
+  color: #fff;
+}
+
 .nav-footer .sitemap {
   color: rgba(255, 255, 255, 0.6);
 }
@@ -219,6 +223,11 @@ h2 p,
 
 .nav-footer .sitemap h5 > a {
   margin-left: 0;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.nav-footer .sitemap h5 > a:hover {
+  color: #fff;
 }
 
 .buttonWrapper {
