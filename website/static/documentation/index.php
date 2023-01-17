@@ -1,4 +1,4 @@
 <?php
-	header("Location: /learn/as3-starling/");
+	header("Location: /api-reference/");
 	exit;
 ?>
