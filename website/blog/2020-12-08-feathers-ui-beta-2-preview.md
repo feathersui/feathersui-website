@@ -22,7 +22,7 @@ Let's take a look at some of the new features that are included with Feathers UI
 
 ### Restored support for OpenFL 8.9
 
-The [previous beta.1 build](./2020-11-16-feathers-ui-beta-1-preview.md) was unintentionally released containing some incompatibilties with OpenFL 8.9. This was a mistake. Obviously, not everyone is ready to upgrade to [OpenFL 9](https://community.openfl.org/t/openfl-9-is-here/12637) yet. To ensure that this doesn't happen again, the CI server now builds using OpenFL 8.9 so that any new incompatible changes can be caught immediately.
+The [previous beta.1 build](/blog/2020/11/16/feathers-ui-beta-1-preview/) was unintentionally released containing some incompatibilties with OpenFL 8.9. This was a mistake. Obviously, not everyone is ready to upgrade to [OpenFL 9](https://community.openfl.org/t/openfl-9-is-here/12637) yet. To ensure that this doesn't happen again, the CI server now builds using OpenFL 8.9 so that any new incompatible changes can be caught immediately.
 
 ### ToolTipManager
 

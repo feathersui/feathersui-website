@@ -241,11 +241,11 @@ In previous versions of Feathers, a number of constants were duplicated across m
 
 Other duplicate constants have been consolidated in the same way. The following classes with shared constants have been added to Feathers:
 
-- [`feathers.controls.AutoSizeMode`](/api-reference/feathers/layout/AutoSizeMode.html)
+- [`feathers.controls.AutoSizeMode`](/api-reference/feathers/controls/AutoSizeMode.html)
 
-- [`feathers.controls.ButtonState`](/api-reference/feathers/layout/ButtonState.html)
+- [`feathers.controls.ButtonState`](/api-reference/feathers/controls/ButtonState.html)
 
-- [`feathers.controls.DecelerationRate`](/api-reference/feathers/layout/DecelerationRate.html)
+- [`feathers.controls.DecelerationRate`](/api-reference/feathers/controls/DecelerationRate.html)
 
 - [`feathers.controls.ScrollBarDisplayMode`](/api-reference/feathers/controls/ScrollBarDisplayMode.html)
 
@@ -253,7 +253,7 @@ Other duplicate constants have been consolidated in the same way. The following 
 
 - [`feathers.controls.ScrollPolicy`](/api-reference/feathers/controls/ScrollPolicy.html)
 
-- [`feathers.controls.TextInputState`](/api-reference/feathers/layout/TextInputState.html)
+- [`feathers.controls.TextInputState`](/api-reference/feathers/controls/TextInputState.html)
 
 - [`feathers.layout.Direction`](/api-reference/feathers/layout/Direction.html)
 
