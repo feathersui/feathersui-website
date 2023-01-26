@@ -87,7 +87,7 @@ The dividers the [`HDividedBox`](https://api.feathersui.com/current/feathers/con
 The [`dividerFactory`](https://api.feathersui.com/current/feathers/controls/supportClasses/BaseDividedBox.html#dividerFactory) property may be used to customize the creation of the divider resize handles.
 
 ```haxe
-dividedBox.dividerFactory = DisplayObjectRecycler.withFunction(() -> {
+dividedBox.dividerFactory = DisplayObjectFactory.withFunction(() -> {
     var button = new Button();
     // ... set styles here
     return button;
