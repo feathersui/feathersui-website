@@ -89,6 +89,7 @@
       "haxe-openfl/layouts-and-containers",
       "haxe-openfl/anchor-layout",
       "haxe-openfl/flow-rows-layout",
+      "haxe-openfl/form-layout",
       "haxe-openfl/horizontal-layout",
       "haxe-openfl/horizontal-list-layout",
       "haxe-openfl/horizontal-distributed-layout",
