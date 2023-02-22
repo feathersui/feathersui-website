@@ -32,7 +32,7 @@ Let's take a look at some of the new UI components and features that are include
 
 - [`Form`](https://feathersui.com/learn/haxe-openfl/form/) and [`FormItem`](https://api.feathersui.com/current/feathers/controls/FormItem.html) display a set of form controls with labels, including the ability to assign a specific submit button.
 
-    <div style="text-align:center;"><a href="https://feathersui.com/learn/haxe-openfl/form/)"><img src="/blog/img/beta-3-feathersui-form.png" style="width:450px"/></a></div>
+    <div style="text-align:center;"><a href="https://feathersui.com/learn/haxe-openfl/form/"><img src="/blog/img/beta-3-feathersui-form.png" style="width:450px"/></a></div>
 
 - [`Header`](https://feathersui.com/learn/haxe-openfl/header/) display a title in the center and two optional views on the left and right sides.
 
