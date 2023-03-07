@@ -42,6 +42,7 @@
     ],
     "UI Components": [
       "haxe-openfl/ui-components",
+      "haxe-openfl/activity-indicator",
       "haxe-openfl/alert",
       "haxe-openfl/application",
       "haxe-openfl/asset-loader",
