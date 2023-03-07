@@ -10,6 +10,7 @@ sidebar_label: Common shape skins
 ## Shape skins
 
 - [`CircleSkin`](https://api.feathersui.com/current/feathers/skins/CircleSkin.html) renders as a circle.
+- [`DonutSkin`](https://api.feathersui.com/current/feathers/skins/DonutSkin.html) renders as a circle with its center cut out.
 - [`EllipseSkin`](https://api.feathersui.com/current/feathers/skins/EllipseSkin.html) renders as an ellipse.
 - [`HorizontalLineSkin`](https://api.feathersui.com/current/feathers/skins/HorizontalLineSkin.html) renders as a single horizontal line, which may be aligned to the top, middle, or bottom.
 - [`LeftAndRightBorderSkin`](https://api.feathersui.com/current/feathers/skins/TopAndBottomBorderSkin.html) renders as a rectangle, with the border on the left and right edges only.
