@@ -3,7 +3,7 @@ title: Install Feathers UI for Haxe and OpenFL
 sidebar_label: Installation
 ---
 
-The current version of [Feathers UI](/) for Haxe and OpenFL is [**1.0.0**](https://github.com/feathersui/feathersui-openfl/blob/v1.0.0/CHANGELOG.md). It may be installed [from Haxelib](https://lib.haxe.org/p/feathersui).
+The current version of [Feathers UI](/) for Haxe and OpenFL is [**1.1.0**](https://github.com/feathersui/feathersui-openfl/blob/v1.1.0/CHANGELOG.md). It may be installed [from Haxelib](https://lib.haxe.org/p/feathersui).
 
 ## Prerequisites
 

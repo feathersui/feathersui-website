@@ -5,12 +5,10 @@ sidebar_label: ActivityIndicator
 
 The [`ActivityIndicator`](https://api.feathersui.com/current/feathers/controls/ActivityIndicator.html) displays an animation to indicate that an activity of indeterminate length is currently happening. The animation remains active while the activity indicator is added to the display list — unless its `enabled` property is set to `false`.
 
-<!--
 <figure>
 <iframe src="/learn/haxe-openfl/samples/activity-indicator.html" width="100%" height="180"></iframe>
 <figcaption>Live preview of the <a href="https://api.feathersui.com/current/feathers/controls/ActivityIndicator.html"><code>ActivityIndicator</code></a> component</figcaption>
 </figure>
--->
 
 > ⚠️ **Beta Notice**: This component is still quite new to Feathers UI. It was included in the latest release because it should be stable enough for production use. However, some APIs may go through minor changes in upcoming releases — based on feedback from developers like you. [Learn more about Beta APIs.](./semver.md#beta-apis)
 

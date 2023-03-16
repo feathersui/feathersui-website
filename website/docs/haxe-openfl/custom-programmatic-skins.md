@@ -5,7 +5,7 @@ sidebar_label: Custom programmatic skins
 
 [`ProgrammaticSkin`](https://api.feathersui.com/current/feathers/skins/ProgrammaticSkin.html) may be used as a base class for drawing custom graphics to use as a skin for a [Feathers UI](/) component. While the framework provides a number of built-in skins with [common shapes](./shape-skins.md), like rectangles, circles, and ellipses, sometimes a design needs a more customize appearance with multiple borders, transparent overlays, or even animations.
 
-> The code below is based on the [custom-programmatic-skin sample project](https://feathersui.com/samples/haxe-openfl/custom-programmatic-skin/). Full [source code](https://github.com/feathersui/feathersui-openfl/tree/v1.0.0/samples/custom-programmatic-skin) for this sample is available on Github.
+> The code below is based on the [custom-programmatic-skin sample project](https://feathersui.com/samples/haxe-openfl/custom-programmatic-skin/). Full [source code](https://github.com/feathersui/feathersui-openfl/tree/v1.1.0/samples/custom-programmatic-skin) for this sample is available on Github.
 
 To create a custom programmatic skin, subclass [`ProgrammaticSkin`](https://api.feathersui.com/current/feathers/skins/ProgrammaticSkin.html) and override its `update()` method.
 
@@ -46,6 +46,6 @@ Whether you've set the dimensions explicitly, or they've been calculated dynamic
 
 Several sample projects demonstrate how to create different types of custom programmatic skins for Feathers UI components.
 
-- [Sample: Custom Programmatic Skin](https://feathersui.com/samples/haxe-openfl/custom-programmatic-skin/) ([Source Code on Github](https://github.com/feathersui/feathersui-openfl/tree/v1.0.0/samples/custom-programmatic-skin))
-- [Sample: Custom Programmatic Skin with States](https://feathersui.com/samples/haxe-openfl/custom-programmatic-skin-with-states/) ([Source Code on Github](https://github.com/feathersui/feathersui-openfl/tree/v1.0.0/samples/custom-programmatic-skin-with-states))
-- [Sample: Animated Skin with Tween](https://feathersui.com/samples/haxe-openfl/animated-tween-skin/) ([Source Code on Github](https://github.com/feathersui/feathersui-openfl/tree/v1.0.0/samples/animated-tween-skin))
+- [Sample: Custom Programmatic Skin](https://feathersui.com/samples/haxe-openfl/custom-programmatic-skin/) ([Source Code on Github](https://github.com/feathersui/feathersui-openfl/tree/v1.1.0/samples/custom-programmatic-skin))
+- [Sample: Custom Programmatic Skin with States](https://feathersui.com/samples/haxe-openfl/custom-programmatic-skin-with-states/) ([Source Code on Github](https://github.com/feathersui/feathersui-openfl/tree/v1.1.0/samples/custom-programmatic-skin-with-states))
+- [Sample: Animated Skin with Tween](https://feathersui.com/samples/haxe-openfl/animated-tween-skin/) ([Source Code on Github](https://github.com/feathersui/feathersui-openfl/tree/v1.1.0/samples/animated-tween-skin))

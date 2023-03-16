@@ -119,7 +119,7 @@ class Footer extends React.Component {
                 </a>
               </h5>
               <li>
-                <a href="https://github.com/feathersui/feathersui-openfl/tree/v1.0.0">
+                <a href="https://github.com/feathersui/feathersui-openfl/tree/v1.1.0">
                   Source Code
                 </a>
               </li>

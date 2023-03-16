@@ -5,7 +5,7 @@ const GridBlock = CompLibrary.GridBlock;
 
 const samplesBaseUrl = "/samples/haxe-openfl/";
 const githubSamplesBaseUrl =
-  "https://github.com/feathersui/feathersui-openfl/tree/v1.0.0/samples/";
+  "https://github.com/feathersui/feathersui-openfl/tree/v1.1.0/samples/";
 
 //screenshots: 720x450
 //this.stage.nativeWindow.width = 720 + (this.stage.nativeWindow.width - this.stage.stageWidth);
@@ -122,6 +122,18 @@ const featureSampleItems = [
 </div>`,
   },
   {
+    title: `[Dark Mode](${samplesBaseUrl}dark-mode/)`,
+    image: `${samplesBaseUrl}img/dark-mode.png`,
+    imageAlign: "top",
+    imageLink: `${samplesBaseUrl}dark-mode/`,
+    content: `Easily switch between light and dark mode with the default theme.
+  
+  <div class="buttonWrapper">
+  <a class="button" href="${samplesBaseUrl}dark-mode/">Online Demo</a>
+  <a class="button" href="${githubSamplesBaseUrl}dark-mode/">Source Code</a>
+  </div>`,
+  },
+  {
     title: `[Hello world](${samplesBaseUrl}hello-world/)`,
     image: `${samplesBaseUrl}img/hello-world.png`,
     imageAlign: "top",
@@ -143,6 +155,18 @@ const featureSampleItems = [
 <div class="buttonWrapper">
   <a class="button" href="${samplesBaseUrl}login-form/">Online Demo</a>
   <a class="button" href="${githubSamplesBaseUrl}login-form/">Source Code</a>
+</div>`,
+  },
+  {
+    title: `[NumericStepper Button Layouts](${samplesBaseUrl}numeric-stepper-button-layouts/)`,
+    image: `${samplesBaseUrl}img/numeric-stepper-button-layouts.png`,
+    imageAlign: "top",
+    imageLink: `${samplesBaseUrl}numeric-stepper-button-layouts/`,
+    content: `All of the different ways the buttons may be positioned inside aa \`NumericStepper\` component.
+
+<div class="buttonWrapper">
+<a class="button" href="${samplesBaseUrl}numeric-stepper-button-layouts/">Online Demo</a>
+<a class="button" href="${githubSamplesBaseUrl}numeric-stepper-button-layouts/">Source Code</a>
 </div>`,
   },
   {
