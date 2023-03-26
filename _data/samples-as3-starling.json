@@ -1,0 +1,57 @@
+[
+  {
+    "title": "Hello World",
+    "content": "The example used to introduce Feathers in the <a href=\"https://feathersui.com/learn/as3-starling/getting-started/\">Getting Started</a> tutorial.",
+    "codeLink": "https://github.com/feathersui/feathersui-starling/tree/master/examples/HelloWorld/"
+  },
+  {
+    "title": "Components Explorer",
+    "content": "Try out each of the user interface components included with Feathers, presented in a mobile application.",
+    "codeLink": "https://github.com/feathersui/feathersui-starling/tree/master/examples/ComponentsExplorer/"
+  },
+  {
+    "title": "Transitions Explorer",
+    "content": "See all of the <a href=\"https://feathersui.com/learn/as3-starling/transitions/\">animated transitions</a> provided by Feathers for the <code>StackScreenNavigator</code> and <code>ScreenNavigator</code> components.",
+    "codeLink": "https://github.com/feathersui/feathersui-starling/tree/master/examples/TransitionsExplorer/"
+  },
+  {
+    "title": "Magic 8 Chat",
+    "content": "Demonstrates how to create a mobile chat app using the <code>TextInput</code> and <code>List</code> controls.",
+    "codeLink": "https://github.com/feathersui/feathersui-starling/tree/master/examples/Magic8Chat/"
+  },
+  {
+    "title": "Tabs",
+    "content": "Displays tabs in different views using the <code>TabNavigator</code> container.",
+    "codeLink": "https://github.com/feathersui/feathersui-starling/tree/master/examples/Tabs/"
+  },
+  {
+    "title": "To-Dos",
+    "content": "A simple app to manage a to-do list.",
+    "codeLink": "https://github.com/feathersui/feathersui-starling/tree/master/examples/Todos/"
+  },
+  {
+    "title": "StackScreenNavigator Explorer",
+    "content": "Navigate between different screens or menus using the <code>StackScreenNavigator</code> container, including a history stack to go back to the previous screen.",
+    "codeLink": "https://github.com/feathersui/feathersui-starling/tree/master/examples/StackScreenNavigatorExplorer/"
+  },
+  {
+    "title": "Layout Explorer",
+    "content": "Demonstrates each of the layouts available to <code>List</code>, <code>LayoutGroup</code>, and <code>ScrollContainer</code> with configurable properties.",
+    "codeLink": "https://github.com/feathersui/feathersui-starling/tree/master/examples/LayoutExplorer/"
+  },
+  {
+    "title": "Tile List",
+    "content": "An example that configures the List control with a <code>TiledRowsLayout</code> and customizes the appearance of the item renderers.",
+    "codeLink": "https://github.com/feathersui/feathersui-starling/tree/master/examples/TileList/"
+  },
+  {
+    "title": "Drag and Drop",
+    "content": "A simple example of using the Feathers <code>DragDropManager</code>.",
+    "codeLink": "https://github.com/feathersui/feathersui-starling/tree/master/examples/DragAndDrop/"
+  },
+  {
+    "title": "Drawers Explorer",
+    "content": "Demos the <code>Drawers</code> container for mobile-style slide out lists.",
+    "codeLink": "https://github.com/feathersui/feathersui-starling/tree/master/examples/DrawersExplorer/"
+  }
+]

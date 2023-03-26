@@ -1,0 +1,94 @@
+[
+  {
+    "title": "Open House Melbourne",
+    "content": "Explore the architecture and history of Melbourne with this Feathers-powered mobile app for iOS and Android.",
+    "image": "/img/showcase/open-house-melbourne.jpg"
+  },
+  {
+    "title": "Lil Drum Machine",
+    "content": "Experiment with different drum kits and effects to create your own unique beats. Export them to WAV, OGG, MIDI or Caustic. Built with the Feathers SDK.",
+    "image": "/img/showcase/lil-drum-machine@2x.jpg",
+    "videoLink": "https://www.youtube.com/watch?v=7TXARCMPfUI"
+  },
+  {
+    "title": "Missiles Kaboom",
+    "content": "Steer the plane and avoid or kill the missiles to survive in this game created with Starling and Feathers.",
+    "image": "/img/showcase/missiles-kaboom@2x.jpg",
+    "videoLink": "https://www.youtube.com/watch?v=MHHlbM_b8u0"
+  },
+  {
+    "title": "Tiny Climb Racing",
+    "content": "Choose your favorite car and race to win! Tiny Climb Racing is powered by Starling featuring a UI built with Feathers.",
+    "image": "/img/showcase/tiny-climb-racing@2x.jpg",
+    "videoLink": "https://www.youtube.com/watch?v=b106773utL8"
+  },
+  {
+    "title": "World War II: TCG",
+    "content": "Gather an army and take part in the most epic battles and military campaigns of World War II in this trading card game powered by Starling and Feathers.",
+    "image": "/img/showcase/world-war-ii-tcg.jpg",
+    "videoLink": "https://www.youtube.com/watch?v=i1eX6CdMtRU"
+  },
+  {
+    "title": "Total Body Fitness by Prime Mover",
+    "content": "Let this Feathers-powered video fitness app guide your workouts and track your progress.",
+    "image": "/img/showcase/prime-mover.jpg",
+    "videoLink": "https://www.youtube.com/watch?v=7VGSZYMabrE"
+  },
+  {
+    "title": "Appsfordable Appstimator",
+    "content": "Get a real time estimate for the cost of your new mobile app using the Appsfordable Appstimator, built with Feathers.",
+    "image": "/img/showcase/appstimator@2x.jpg"
+  },
+  {
+    "title": "Joolz",
+    "content": "Browse stunning jewelry collections from India with easy swipe gestures, curated by Joolz. Built with Starling and Feathers.",
+    "image": "/img/showcase/joolz@2x.jpg"
+  },
+  {
+    "title": "Golf Caddy Pro",
+    "content": "Improve your golf game with Golf Caddy Pro, this Feathers-powered app that includes features like offline satellite maps, rangefinder, and strokesaver.",
+    "image": "/img/showcase/golf-caddy-pro@2x.jpg"
+  },
+  {
+    "title": "The Monster Match",
+    "content": "Mix, match and discover monstrous, eerie, wacky and funny combinations of characters inside this app built with Starling and Feathers.",
+    "image": "/img/showcase/monster-match.jpg"
+  },
+  {
+    "title": "Paper Critters",
+    "content": "Feathers powers this fun arts and crafts app that lets you design your very own \"paper critter\".",
+    "image": "/img/showcase/paper-critters.jpg"
+  },
+  {
+    "title": "Teleport",
+    "content": "An attractive custom skin helps bring Feathers UI to life in Teleport, a content sharing app.",
+    "image": "/img/showcase/teleport.jpg"
+  },
+  {
+    "title": "Atypic Photo Editor",
+    "content": "With this playful image editor, add filters and special effects simply by drawing on the screen with your finger. Powered by Starling and Feathers.",
+    "image": "/img/showcase/atypic.jpg",
+    "videoLink": "https://www.youtube.com/watch?v=O1-OE9pycuc"
+  },
+  {
+    "title": "Dr. Woo's Twisted Clone Shop",
+    "content": "Work your way through over a dozen genetic experiments (but watch out for mutations!) in this puzzle game created with Starling and Feathers.",
+    "image": "/img/showcase/dr-woo.jpg",
+    "videoLink": "https://www.pixelfarm.com/work/woo/?wvideo=nlpbaf3ofd"
+  },
+  {
+    "title": "DeezCovr",
+    "content": "Got a favorite artist? DeezCovr knows similar bands that you'll love. Feathers looks great with a stylish custom-designed skin.",
+    "image": "/img/showcase/deezcovr.jpg"
+  },
+  {
+    "title": "Isolade",
+    "content": "Isolade is a fast-paced blend of action and strategy running on Starling and Feathers, inside an electrifying nanoworld of chemical elements.",
+    "image": "/img/showcase/isolade.jpg"
+  },
+  {
+    "title": "Bathplanner PRO",
+    "content": "Design and plan a new bathroom. Uses a variety of Feathers controls to build a stylish drag and drop editor.",
+    "image": "/img/showcase/bathplanner.jpg"
+  }
+]

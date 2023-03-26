@@ -1,0 +1,283 @@
+{
+  "learn/haxe-openfl": {
+    "Introduction": [
+      "getting-started",
+      "installation",
+      {
+        "type": "subcategory",
+        "label": "Create a new project in…",
+        "ids": [
+          "terminal-new-project",
+          "haxedevelop",
+          "moonshine-ide",
+          "visual-studio-code"
+        ]
+      },
+      {
+        "type": "subcategory",
+        "label": "Build a project targeting…",
+        "ids": [
+          "build-air",
+          "build-android",
+          "build-electron",
+          "build-hashlink",
+          "build-ios",
+          "build-linux",
+          "build-macos",
+          "build-neko",
+          "build-web",
+          "build-windows"
+        ]
+      },
+      "openfl-intro"
+    ],
+    "UI Components": [
+      "ui-components",
+      "activity-indicator",
+      "alert",
+      "application",
+      "asset-loader",
+      "button",
+      "button-bar",
+      "callout",
+      "check",
+      "combo-box",
+      "date-picker",
+      "divided-box",
+      "drawer",
+      "form",
+      "grid-view",
+      "group-list-view",
+      "header",
+      "hierarchical-item-renderer",
+      "item-renderer",
+      "label",
+      "layout-group",
+      "layout-group-item-renderer",
+      "list-view",
+      "numeric-stepper",
+      "page-indicator",
+      "page-navigator",
+      "panel",
+      "pop-up-date-picker",
+      "pop-up-list-view",
+      "progress-bar",
+      "radio",
+      "router-navigator",
+      "scroll-bar",
+      "scroll-container",
+      "slider",
+      "stack-navigator",
+      "tab-bar",
+      "tab-navigator",
+      "text-area",
+      "text-callout",
+      "text-input",
+      "toggle-button",
+      "toggle-switch",
+      "tree-grid-view",
+      "tree-view"
+    ],
+    "Layouts": [
+      "layouts-and-containers",
+      "anchor-layout",
+      "flow-rows-layout",
+      "form-layout",
+      "horizontal-layout",
+      "horizontal-list-layout",
+      "horizontal-distributed-layout",
+      "responsive-grid-layout",
+      "tiled-rows-layout",
+      "tiled-rows-list-layout",
+      "paged-tiled-rows-list-layout",
+      "vertical-layout",
+      "vertical-list-fixed-row-layout",
+      "vertical-list-layout",
+      "vertical-distributed-layout",
+      "layout-data",
+      "custom-layouts"
+    ],
+    "Styles and Skins": [
+      "intro-to-skins",
+      "shape-skins",
+      "custom-programmatic-skins",
+      "themes",
+      "custom-themes"
+    ],
+    "Animation": ["navigator-transitions", "custom-navigator-transitions"],
+    "Custom UI Components": [
+      "custom-ui-components",
+      "ui-component-lifecycle",
+      "custom-item-renderers",
+      "class-based-custom-item-renderers"
+    ],
+    "Miscellaneous": [
+      "cli",
+      "data-collections",
+      "focus",
+      "haxedef-options",
+      "pop-ups",
+      "semver",
+      "tool-tips",
+      "cookbook/index",
+      "prerelease"
+    ]
+  },
+  "learn/screencasts": {
+    "Getting started": [
+      "index",
+      "installation",
+      {
+        "type": "subcategory",
+        "label": "Create a new project in…",
+        "ids": ["visual-studio-code"]
+      }
+    ]
+  },
+  "learn/as3-starling": {
+    "Getting started": [
+      "installation",
+      "getting-started",
+      {
+        "type": "subcategory",
+        "label": "Create a new project in…",
+        "ids": ["flash-builder", "intellij-idea", "flashdevelop", "flash-pro"]
+      },
+      "features",
+      "faq/index"
+    ],
+    "Components": [
+      "alert",
+      "auto-complete",
+      "button",
+      "button-group",
+      "callout",
+      "check",
+      "data-grid",
+      "date-time-spinner",
+      "default-item-renderers",
+      "drawers",
+      "grouped-list",
+      "header",
+      "image-loader",
+      "label",
+      "layout-group",
+      "list",
+      "numeric-stepper",
+      "page-indicator",
+      "panel",
+      "panel-screen",
+      "picker-list",
+      "progress-bar",
+      "radio",
+      "screen",
+      "screen-navigator",
+      "scroll-bar",
+      "scroll-container",
+      "scroll-screen",
+      "scroll-text",
+      "simple-scroll-bar",
+      "slider",
+      "sound-player",
+      "spinner-list",
+      "stack-screen-navigator",
+      "tab-bar",
+      "tab-navigator",
+      "text-area",
+      "text-callout",
+      "text-input",
+      "toast",
+      "toggle-button",
+      "toggle-switch",
+      "tree",
+      "video-player",
+      "web-view"
+    ],
+    "Media components": [
+      "sound-player",
+      "video-player",
+      "media-player-controls"
+    ],
+    "Text": [
+      "text-renderers",
+      "text-editors",
+      "text-block-text-renderer",
+      "bitmap-font-text-renderer",
+      "text-field-text-renderer",
+      "stage-text-text-editor",
+      "text-block-text-editor",
+      "bitmap-font-text-editor",
+      "text-field-text-editor"
+    ],
+    "Layouts": [
+      "anchor-layout",
+      "flow-layout",
+      "horizontal-layout",
+      "horizontal-spinner-layout",
+      "slide-show-layout",
+      "tiled-columns-layout",
+      "tiled-rows-layout",
+      "vertical-layout",
+      "vertical-spinner-layout",
+      "waterfall-layout",
+      "custom-layouts",
+      "layout-data",
+      "virtual-custom-layouts"
+    ],
+    "Skinning and themes": [
+      "skinning",
+      "themes",
+      "extending-themes",
+      "custom-themes",
+      "style-providers",
+      "theme-assets",
+      "theme-sources"
+    ],
+    "Custom components": [
+      "component-lifecycle",
+      "component-properties-methods",
+      "component-validation",
+      "item-renderers",
+      "layout-group-item-renderers",
+      "feathers-control-item-renderers"
+    ],
+    "Animation": ["effects", "transitions"],
+    "Miscellaneous": [
+      "pop-ups",
+      "focus",
+      "drag-drop",
+      "tool-tips",
+      "cookbook/index",
+      "faq/index",
+      "prerelease",
+      "deprecation-policy",
+      "beta-policy"
+    ],
+    "Contributing": ["build", "coding-conventions"],
+    "Migration guides": [
+      "migration-guide-4.0",
+      "migration-guide-3.3",
+      "migration-guide-3.1",
+      "migration-guide-3.0",
+      "migrating-themes"
+    ]
+  },
+  "learn/as3-starling/sdk": {
+    "Getting started": [
+      "installation-instructions",
+      "getting-started-mxml",
+      {
+        "type": "subcategory",
+        "label": "Create a new project in…",
+        "ids": ["flash-builder", "intellij-idea", "visual-studio-code"]
+      },
+      "features"
+    ],
+    "Core concepts": ["mxml"],
+    "Advanced": [
+      "custom-starling-initialization",
+      "build-source-code",
+      "build-binary-distribution"
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+---
+title: "Showcase Archive"
+layout: "article.html"
+---
+
+<h1>Showcase Archive</h1>
+
+<p>Remembering a variety of classic projects built with <a href="/">Feathers UI</a> and <a href="https://gamua.com/starling/">Starling</a>.</p>
+
+{% for item in showcase-archive %}
+<div class="showcase-item">
+  <div class="showcase-item-img">
+    {% if item.videoLink %}<a href="{{item.videoLink}}">{% endif %}<img src="{{item.image}}">{% if item.videoLink %}</a>{% endif %}
+  </div>
+  <h2>{{item.title}}</h2>
+  <p>{{item.content}}</p>
+  <div class="btn-wrapper">
+    {% if item.videoLink %}<a class="btn" href="{{item.videoLink}}">Watch Video</a>{% endif %}
+  </div>
+</div>
+{% endfor %}
+
+<p>See more apps and games in the main <a href="/showcase">Feathers UI Showcase</a>.</p>

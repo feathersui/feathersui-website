@@ -1,0 +1,16 @@
+[
+  {
+    "title": "Mastodon",
+    "content": "Follow <a href=\"https://fosstodon.org/@feathersui\">@feathersui@fosstodon.org</a> on Mastodon to get informed about the latest news and announcements.",
+    "buttonText": "Follow on Mastodon",
+    "image": "/img/mastodon-logo.png",
+    "link": "https://fosstodon.org/@feathersui"
+  },
+  {
+    "title": "Twitter",
+    "content": "Follow <a href=\"https://twitter.com/feathersui\">@feathersui</a> on Twitter to get tweets about the latest news and announcements.",
+    "buttonText": "Follow on Twitter",
+    "image": "/img/twitter-logo.png",
+    "link": "https://twitter.com/feathersui"
+  }
+]

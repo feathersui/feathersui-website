@@ -1,0 +1,23 @@
+---
+title: "Who is using Feathers UI?"
+layout: "article.html"
+---
+<h1>Who is using Feathers UI?</h1>
+<p>The <a href="/">Feathers UI</a> open source project is used by many folks!</p>
+
+<section class="section-users">
+  <div class="section-row">
+    {% for item in users %}
+    <div class="section-column">
+      <div class="section-column-img"><a href="{{item.link}}"><img src="{{item.image}}" alt="{{item.name}}"></a></div>
+    </div>
+    {% endfor %}
+  </div>
+</section
+>
+
+
+<p>Are you using Feathers UI?</p>
+<div class="btn-wrapper">
+  <a class="btn" href="https://github.com/feathersui/feathersui-website/tree/master/_data/users.json">Add Your Company</a>
+</div>

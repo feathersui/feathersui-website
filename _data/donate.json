@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Github Sponsors",
+    "content": "If you become a <a href=\"https://github.com/sponsors/joshtynjala\">sponsor on Github</a>, you can get some special perks as a community supporter.",
+    "buttonText": "Sponsor the Project",
+    "image": "/img/github-sponsors.png",
+    "link": "https://github.com/sponsors/joshtynjala"
+  },
+  {
+    "title": "PayPal Donation",
+    "content": "Choose between a monthly and one-time <a href=\"https://www.paypal.com/donate?hosted_button_id=9A9EB6YEHRNBN&amp;source=url\">donation with PayPal</a>.",
+    "buttonText": "Donate",
+    "image": "/img/paypal.png",
+    "link": "https://www.paypal.com/donate?hosted_button_id=9A9EB6YEHRNBN&source=url"
+  },
+  {
+    "title": "Buy a Shirt",
+    "content": "Get yourself a <a href=\"https://teespring.com/stores/feathers-ui\">Feathers UI t-shirt or hoodie</a>. Many colors and styles available — in both men's and women's sizes.",
+    "buttonText": "Shop Now",
+    "image": "/img/teespring.png",
+    "link": "https://teespring.com/stores/feathers-ui"
+  }
+]

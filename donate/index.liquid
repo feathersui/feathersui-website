@@ -1,0 +1,22 @@
+---
+title: "Donate to the Feathers UI open source project"
+layout: "article.html"
+---
+<h1>How can I support Feathers UI?</h1>
+
+<p>If <a href="/">Feathers UI</a> has saved you time and money, you can show your appreciation by financially supporting the project. Thank you!</p>
+
+<section class="section-three-column">
+  <div class="section-row">
+    {% for item in donate %}
+    <div class="section-column">
+      <div class="section-column-img"><img src="{{item.image}}"></div>
+      <h2><a href="{{item.link}}">{{item.title}}</a></h2>
+      <p>{{item.content}}</p>
+      <div class="btn-wrapper">
+        <a class="btn" href="{{item.link}}">{{item.buttonText}}</a>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>

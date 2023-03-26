@@ -1,0 +1,62 @@
+---
+title: "Samples"
+layout: "article.html"
+---
+
+<h1>Samples</h1>
+<p>Official sample projects built with <a href="/">Feathers UI</a>, <a href="https://openfl.org/">OpenFL</a>, and the <a href="https://haxe.org/">Haxe</a> programming language.</p>
+
+<h2>Application Samples</h2>
+<p>Full sample application projects built using Feathers UI.</p>
+
+<section class="section-three-column section-samples">
+  <div class="section-row">
+    {% for item in samples-haxe-openfl %}
+    {% if item.app == true %}
+    <div class="section-column">
+      <div class="section-column-img">
+        
+        <img src="{{item.image}}"></a>
+      </div>
+      <h2><a href="{{item.demoLink}}">{{item.title}}</a></h2>
+      <p>{{item.content}}</p>
+      <div class="btn-wrapper">
+        <a class="btn" href="{{item.demoLink}}">Online Demo</a>
+        <a class="btn" href="{{item.codeLink}}">Source Code</a>
+      </div>
+    </div>
+    {% endif %}
+    {% endfor %}
+  </div>
+</section>
+
+<h2>Feature Samples</h2>
+<p>Demonstrations of specific features offered by Feathers UI components.</p>
+
+<section class="section-three-column section-samples">
+  <div class="section-row">
+    {% for item in samples-haxe-openfl %}
+    {% if item.app != true %}
+    <div class="section-column">
+      <div class="section-column-img">
+        <a href="{{item.demoLink}}"><img src="{{item.image}}"></a>
+      </div>
+      <h2><a href="{{item.demoLink}}">{{item.title}}</a></h2>
+      <p>{{item.content}}</p>
+      <div class="btn-wrapper">
+        <a class="btn" href="{{item.demoLink}}">Online Demo</a>
+        <a class="btn" href="{{item.codeLink}}">Source Code</a>
+      </div>
+    </div>
+    {% endif %}
+    {% endfor %}
+  </div>
+</section>
+
+<h2>Additional Samples</h2>
+<p>The following sample projects have been shared by the Feathers UI developer community.</p>
+<ul>
+  <li><a href="https://github.com/feathersui/puremvc-haxe-feathersui-demos">PureMVC Haxe Demos for Feathers UI</a></li>
+  <li><a href="https://github.com/feathersui/feathersui-7guis">7GUIs for Feathers UI</a></li>
+  <li><a href="https://github.com/teotigraphix/haxe-feathersui-webaudio">Feathers UI Web Audio Samples</a></li>
+</ul>

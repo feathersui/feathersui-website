@@ -1,0 +1,163 @@
+---
+layout: "marketing.html"
+---
+<section class="section-one-column section-hero">
+  <div class="section-row">
+    <img src="/img/hero-themes.png" alt="Three versions of the same app with different visual appearances"/>
+
+    <h2>Feathers UI</h2>
+
+    <p>Cross-platform user interface components for creative frontend projects</p>
+
+    <div class="btn-wrapper">
+      <a class="btn" href="/learn/haxe-openfl/">Get Started</a>
+      <a class="btn btn-quiet" href="/learn/haxe-openfl/installation">Download →</a>
+    </div>
+  </div>
+</section>
+
+<section class="section-three-column">
+  <div class="section-row">
+    <div class="section-column">
+      <div class="section-column-img"><img src="/img/undraw_product_teardown_elol.svg"></div>
+      <h3>Dozens of UI controls</h3>
+      <p>Mix and match a variety of UI components, including buttons, sliders, toggles, scrolling lists, layout containers, navigators, and more.</p>
+      <p><a href="/learn/haxe-openfl/ui-components">See all UI components →</a></p>
+    </div>
+
+    <div class="section-column">
+      <div class="section-column-img"><img src="/img/cross-platform.png"></div>
+      <h3>Cross-platform</h3>
+      <p>Build stunning, GPU-accelerated user interfaces on a variety of platforms — including mobile devices, desktop computers, and web browsers.</p>
+
+      <p><a href="/cross-platform-guis/">Available platforms →</a></p>
+    </div>
+
+    <div class="section-column">
+      <div class="section-column-img"><img src="/img/undraw_making_art_759c.svg"></div>
+      <h3>Styles and themes</h3>
+      <p>Match your designer's requirements with a flexible styling system that supports bitmap and vector graphics, filters, blend modes, and more.</p>
+
+      <p><a href="/showcase">Get inspired by the app showcase →</a></p>
+    </div>
+  </div>
+</section>
+
+
+<section class="section-img section-dark">
+  <div class="section-row">
+    <img src="/img/undraw_code_typing_7jnv.svg">
+    <div>
+      <h2>Free and open source</h2>
+      
+      <p>The core Feathers UI library — with dozens of user interface controls — doesn't cost anything. Everyone has access to the complete source code to read, customize, share, and extend.</p>
+
+      <ul>
+      <li>Full access to the framework internals and architecture</li>
+      <li>MIT-licensed — Use in both commercial and open source projects</li>
+      <li>Fork and submit pull requests on Github</li>
+      </ul>
+
+      <p><a href="https://github.com/feathersui/feathersui-openfl">Go to Github project →</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="section-two-column">
+  <div class="section-row">
+    <div class="section-column">
+      <h2>Quick Start</h2>
+
+      <p>First, install <a href="https://haxe.org/download/">Haxe</a>. Then, run the following commands in a terminal.</p>
+
+      <pre><code>haxelib install feathersui
+haxelib run openfl setup</code></pre>
+
+      <p>To create your first project, run the next command.</p>
+
+      <pre><code>haxelib run feathersui new-project MyFirstProject</code></pre>
+
+      <p>To build and launch in a web browser, run the next command inside your project folder.</p>
+
+      <pre><code>openfl test html5</code></pre>
+
+      <p>If you prefer, create a project in <a href="/learn/haxe-openfl/visual-studio-code">Visual Studio Code</a>, <a href="/learn/haxe-openfl/haxedevelop">HaxeDevelop</a>, and <a href="/learn/haxe-openfl/moonshine-ide">Moonshine IDE</a>.</p>
+    </div>
+
+    <div class="section-column">
+      <h2>Sample Code</h2>
+      <p>Create your first project using the <a href="/learn/haxe-openfl/application"><code>Application</code></a> and <a href="/learn/haxe-openfl/button"><code>Button</code></a> components:</p>
+
+      <pre><code class="language-haxe">import feathers.controls.Application;
+import feathers.controls.Button;
+import feathers.events.TriggerEvent;
+
+class ExampleProject extends Application {
+    public function new() {
+        super();
+
+        var button = new Button();
+        button.text = "Click Me";
+        button.addEventListener(TriggerEvent.TRIGGER, onTrigger);
+        addChild(button);
+    }
+
+    private function onTrigger(event:TriggerEvent):Void {
+        trace("Button was clicked or tapped");
+    }
+}</code></pre>
+    </div>
+  </div>
+</section>
+
+<section class="section-dark section-three-column section-testimonials">
+  <div class="section-row">
+    {% for item in testimonials %}
+    {% if item.pinned %}
+    <div class="section-column">
+      <div class="section-column-img"><img src="{{item.image}}"></div>
+      <h2>{{item.title}}</h2>
+      <p>{{item.content}}</p>
+      <cite>{{item.author}}</cite>
+    </div>
+    {% endif %}
+    {% endfor %}
+  </div>
+  <div class="btn-wrapper">
+    <a class="btn" href="/testimonials">More testimonials →</a>
+  </div>
+</section>
+
+<section class="section-users">
+  <p>Many thanks to everyone on <a href="https://github.com/sponsors/joshtynjala">Github Sponsors</a> who <br />
+  generously support the Feathers UI open source project:</p>
+  <div class="section-row">
+    {% for item in users %}
+    {% if item.github and item.pinned %}
+    <div class="section-column">
+      <div class="section-column-img"><a href="{{item.link}}"><img src="{{item.image}}" alt="{{item.name}}"></a></div>
+    </div>
+    {% endif %}
+    {% endfor %}
+    <div class="section-column">
+      <div class="section-column-img">
+        <div class="btn-wrapper">
+          <a class="btn" href="https://github.com/sponsors/joshtynjala">Support this project →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-users">
+  <p>An additional thank you to all of the Kickstarter backers!</p>
+  <div class="section-row">
+    {% for item in users %}
+    {% if item.kickstarter and item.pinned %}
+    <div class="section-column">
+      <div class="section-column-img"><a href="{{item.link}}"><img src="{{item.image}}" alt="{{item.name}}"></a></div>
+    </div>
+    {% endif %}
+    {% endfor %}
+  </div>
+</section>

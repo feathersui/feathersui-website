@@ -1,26 +1,36 @@
-# feathersui-website
+# feathersui.com
 
-Source code for the [Feathers UI website](https://feathersui.com/).
+Source code for the [Feathers UI website](https://feathersui.com/). Built with [Eleventy](https://11ty.dev/).
 
-- _website/docs_: The Feathers UI documentation for Haxe/OpenFL and AS3/Starling, written in Markdown
-- _website/blog_: Blog posts, written in Markdown
+## Content
+
+Some important directories in this site.
+
+- _learn_: The Feathers UI documentation, written in Markdown
+- _blog_: Blog posts, written in Markdown
 - _website/pages_: Various pages that are not part of the documentation or blog, written as React components
-- _website/static_: Static asset files, like images and styles
+- _static_: Static asset files, like images and styles, and even HTML that shouldn't be processed by Eleventy
+- __data_: JSON files containing data used in generating certain pages
+- __includes_: Shared include files for generating HTML pages
 
-## Run locally
+## Prerequisites
 
-Running `npm start` in the _website_ folder starts the server for local development:
+Install dependencies.
 
 ```sh
-cd website
+npm ci
+```
+
+## Run Local Server
+
+```sh
 npm start
 ```
 
-## Build site
-
-Running `npm run build` in the _website_ folder will build the site for deployment:
+## Build
 
 ```sh
-cd website
 npm run build
 ```
+
+Build output will be in __site_ directory.

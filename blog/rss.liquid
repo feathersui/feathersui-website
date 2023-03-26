@@ -1,0 +1,33 @@
+---
+# Metadata comes from _data/feedmeta.json
+permalink: "/blog/feed.xml"
+eleventyExcludeFromCollections: true
+layout: null
+---
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <channel>
+        <title>{{ feedmeta.title }}</title>
+        <link>{{ feedmeta.url }}</link>
+        <description>{{ feedmeta.description }}</description>
+        <lastBuildDate>{{ collections.blog | rss_getNewestCollectionItemDate | rss_dateToRfc822 }}</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>Eleventy</generator>
+        <image>
+            <title>{{ feedmeta.title }}</title>
+            <url>{{ feedmeta.logoUrl }}</url>
+            <link>{{ feedmeta.url }}</link>
+        </image>
+        <copyright>Copyright © {{ collections.blog | rss_getNewestCollectionItemDate | date: "%Y" }} {{ feedmeta.copyright }}</copyright>
+        <language>{{ feedmeta.language }}</language>
+        {% for post in collections.blog reversed %}{% assign absolutePostUrl = post.url | url | rss_absoluteUrl: feedmeta.url %}
+        <item>
+            <title>{{ post.data.title }}</title>
+            <link>{{ absolutePostUrl }}</link>
+            <guid>{{ absolutePostUrl }}</guid>
+            <pubDate>{{ post.date | rss_dateToRfc822 }}</pubDate>
+            <dc:creator><![CDATA[{% if post.data.author %}{{ post.data.author }}{% else %}{{ feedmeta.defaultAuthor }}{% endif %}]]></dc:creator>
+            <description><![CDATA[{{ post.templateContent | htmlToExcerpt | rss_htmlToAbsoluteUrls: absolutePostUrl }}]]></description>
+        </item>{% endfor %}
+    </channel>
+</rss>

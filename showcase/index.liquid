@@ -1,0 +1,26 @@
+---
+title: "Showcase"
+layout: "article.html"
+---
+<h1>Showcase</h1>
+
+<p>Check out some beautiful apps, games, and other creative projects that talented developers and designers have created using the open source <a href="/">Feathers UI</a> framework.</p>
+
+{% for item in showcase %}
+<div class="showcase-item">
+  <div class="showcase-item-img">
+    {% if item.webLink %}<a href="{{item.webLink}}">{% elsif item.videoLink %}<a href="{{item.videoLink}}">{% endif %}<img src="{{item.image}}">{% if item.videoLink || item.webLink %}</a>{% endif %}
+  </div>
+  <h2>{{item.title}}</h2>
+  <p>{{item.content}}</p>
+  <div class="btn-wrapper">
+    {% if item.demoLink %}<a class="btn" href="{{item.demoLink}}">Online Demo</a>{% endif %}
+    {% if item.webLink %}<a class="btn" href="{{item.webLink}}">Visit Website</a>{% endif %}
+    {% if item.videoLink %}<a class="btn" href="{{item.videoLink}}">Watch Video</a>{% endif %}
+    {% if item.iosLink %}<a class="btn" href="{{item.iosLink}}">iOS App Store</a>{% endif %}
+  </div>
+</div>
+{% endfor %}
+
+<p>Visit the <a href="/showcase/archive">Showcase Archive</a> to see additional, classic Feathers UI apps.</p>
+<p>🚀 Let Feathers UI help you build your game or app. <a href="/download">Download Feathers UI</a> and get started.</p>

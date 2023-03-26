@@ -1,9 +1,14 @@
 {
+  "[css][javascript][json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
   "editor.tabSize": 2,
   "editor.insertSpaces": true,
-  "editor.formatOnSave": true,
   "search.exclude": {
+    "_site": true,
     "**/node_modules": true,
-    "website/static/api-reference": true
+    "static/api-reference": true,
+    "static/samples": true
   }
 }

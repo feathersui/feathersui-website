@@ -1,0 +1,24 @@
+---
+title: "Testimonials"
+layout: "marketing.html"
+---
+
+<section class="section-one-column">
+  <div class="section-row">
+    <h1>Testimonials</h1>
+    <p>What developers working with <a href="/">Feathers UI</a> have said about the framework.</p>
+  </div>
+</section>
+
+<section class="section-four-column section-testimonials">
+  <div class="section-row">
+    {% for item in testimonials %}
+    <div class="section-column">
+      <div class="section-column-img"><img src="{{item.image}}"></div>
+      <h2>{{item.title}}</h2>
+      <p>{{item.content}}</p>
+      <cite>{{item.author}}</cite>
+    </div>
+    {% endfor %}
+  </div>
+</section>

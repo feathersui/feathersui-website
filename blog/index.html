@@ -1,0 +1,32 @@
+---
+title: "Feathers UI Blog"
+pagination:
+  data: collections.blog
+  size: 10
+  reverse: true
+  alias: blog
+layout: "blog-index.html"
+permalink: "/blog{% if pagination.pageNumber > 0 %}/page{{ pagination.pageNumber | plus: 1 }}{% endif %}/"
+---
+{% for post in blog %}
+<h2 class="post-title"><a href="{{ post.url }}">{{ post.data.title }}</a></h2>
+<div class="post-meta">
+  <p>{{ post.date | date: "%B %d, %Y" }}</p>
+  <p class="post-author">
+    {% if post.data.authorURL %}<a href="{{ post.data.authorURL }}">{% endif %}
+    {% if post.data.authorImageURL %}<img class="post-avatar" src="{{ post.data.authorImageURL }}"/>{% endif %}
+    {{ post.data.author }}
+    {% if post.data.authorURL %}</a>{% endif %}
+  </p>
+</div>
+<div>{{ post.templateContent }}</div>
+{% endfor %}
+
+<div class="btn-wrapper">
+{% if pagination.href.previous %}
+  <a class="btn" href="{{ pagination.href.previous }}">← Prev</a>
+{% endif %}
+{% if pagination.href.next %}
+  <a class="btn" href="{{ pagination.href.next }}">Next →</a>
+{% endif %}
+</div>

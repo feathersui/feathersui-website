@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Red Minnow",
+    "image": "/img/sponsors/redminnow.png",
+    "link": "https://redminnow.com/",
+    "pinned": true,
+    "github": true
+  },
+  {
+    "name": "InnoGames",
+    "image": "/img/sponsors/innogames.png",
+    "link": "https://www.innogames.com/",
+    "pinned": true,
+    "kickstarter": true
+  },
+  {
+    "name": "Spellweaver TCG",
+    "image": "/img/sponsors/spellweaver.png",
+    "link": "https://spellweaver-tcg.com",
+    "pinned": true,
+    "kickstarter": true
+  },
+  {
+    "name": "Moonshine IDE",
+    "image": "/img/sponsors/moonshine-ide.png",
+    "link": "https://moonshine-ide.com/",
+    "pinned": true,
+    "kickstarter": true
+  }
+]

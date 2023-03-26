@@ -1,0 +1,29 @@
+---
+# Metadata comes from _data/feedmeta.json
+permalink: "/blog/atom.xml"
+eleventyExcludeFromCollections: true
+layout: null
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>{{ feedmeta.url }}</id>
+    <title>{{ feedmeta.title }}</title>
+    <updated>{{ collections.blog | rss_getNewestCollectionItemDate | rss_dateToRfc3339 }}</updated>
+    <generator>Eleventy</generator>
+    <link rel="alternate" href="{{ feedmeta.url }}"/>
+    <subtitle>{{ feedmeta.description }}</subtitle>
+    <logo>{{ feedmeta.logoUrl }}</logo>
+    <rights>Copyright © {{ collections.blog | rss_getNewestCollectionItemDate | date: "%Y" }} {{ feedmeta.copyright }}</rights>
+    {% for post in collections.blog reversed %}{% assign absolutePostUrl = post.url | url | rss_absoluteUrl: feedmeta.url %}
+    <entry>
+        <title type="html"><![CDATA[{{ post.data.title }}]]></title>
+        <id>{{ absolutePostUrl }}</id>
+        <link href="{{ absolutePostUrl }}"/>
+        <updated>{{ post.date | rss_dateToRfc3339 }}</updated>
+        <summary type="html"><![CDATA[{{ post.templateContent | htmlToExcerpt | rss_htmlToAbsoluteUrls: absolutePostUrl }}]]></summary>
+        <author>
+            <name>{% if post.data.author %}{{ post.data.author }}{% else %}{{ feedmeta.defaultAuthor }}{% endif %}</name>
+            <uri>{% if post.data.authorURL %}{{ post.data.authorURL }}{% else %}{{ feedmeta.url }}{% endif %}</uri>
+        </author>
+    </entry>  {% endfor %}
+</feed>

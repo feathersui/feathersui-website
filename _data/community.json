@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Community Forum",
+    "content": "Get help, show off your projects, find jobs, and more on the <a href=\"https://community.feathersui.com/\">Feathers UI community forum</a>.",
+    "image": "/img/undraw_ideas_s70l.svg",
+    "link": "https://community.feathersui.com/"
+  },
+  {
+    "title": "Discord",
+    "content": "Chat with fellow developers in real time on the <a href=\"https://discord.feathersui.com/\">Feathers UI Discord server</a>.",
+    "image": "/img/discord-logo-color.svg",
+    "link": "https://discord.feathersui.com/"
+  },
+  {
+    "title": "Stack Overflow",
+    "content": "Use the <a href=\"https://stackoverflow.com/questions/tagged/feathersui\"><code>feathersui</code></a> tag when you ask questions on <a href=\"https://stackoverflow.com/\">Stack Overflow</a>.",
+    "image": "/img/stack-overflow-icon.svg",
+    "link": "https://stackoverflow.com/questions/tagged/feathersui"
+  }
+]

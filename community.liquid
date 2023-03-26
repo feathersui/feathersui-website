@@ -1,0 +1,16 @@
+---
+title: "Community forums, chat, and Q&A"
+layout: "article.html"
+---
+<h1>Join the Feathers UI community</h1>
+
+<section class="section-three-column">
+  <div class="section-row">
+    {% for item in community %}
+    <div class="section-column">
+      <div class="section-column-img"><img src="{{item.image}}"></div>
+      <h2><a href="{{item.link}}">{{item.title}}</a></h2>
+      <p>{{item.content}}</p>
+    </div>
+    {% endfor %}
+</section>

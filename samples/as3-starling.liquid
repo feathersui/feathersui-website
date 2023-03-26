@@ -1,0 +1,22 @@
+---
+title: "Samples (legacy AS3/Starling version)"
+layout: "article.html"
+---
+
+<h1>Samples (legacy AS3/Starling version)</h1>
+
+<p>Sample projects built with the legacy <a href="/learn/as3-starling">Feathers UI for AS3/Starling</a>.</p>
+
+<section class="section-three-column section-samples">
+  <div class="section-row">
+    {% for item in samples-as3-starling %}
+    <div class="section-column">
+      <h2><a href="{{item.codeLink}}">{{item.title}}</a></h2>
+      <p>{{item.content}}</p>
+      <div class="btn-wrapper">
+        <a class="btn" href="{{item.codeLink}}">Source Code</a>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
