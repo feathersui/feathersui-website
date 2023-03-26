@@ -671,13 +671,16 @@ iframe {
     max-height: 100%;
     flex-grow: 1;
     flex-basis: 100%;
+    margin-bottom: 100%;
   }
   .sidebars .main-content > input#sidebar-toggle:checked ~ #toc-toggle-label,
   .sidebars
     .main-content
     > input#sidebar-toggle:checked
     ~ input#toc-toggle:checked
-    ~ .toc-container {
+    ~ .toc-container,
+  .sidebars .main-content > input#sidebar-toggle:checked ~ article,
+  .sidebars .main-content > input#toc-toggle:checked ~ article {
     display: none;
   }
 }
