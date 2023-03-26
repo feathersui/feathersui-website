@@ -311,12 +311,18 @@ iframe {
 .footer > .footer-content > .sitemap {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   margin-bottom: 2rem;
+  gap: 1rem;
 }
 
 .footer > .footer-content > .sitemap > div {
   margin: 0 1rem;
+  width: 7rem;
+}
+
+.footer > .footer-content > .sitemap > div:first-of-type {
+  width: auto;
 }
 
 .footer > .footer-content > .sitemap img:first-of-type {
