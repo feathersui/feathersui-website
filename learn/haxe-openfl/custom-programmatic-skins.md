@@ -47,6 +47,6 @@ Whether you've set the dimensions explicitly, or they've been calculated dynamic
 
 Several sample projects demonstrate how to create different types of custom programmatic skins for Feathers UI components.
 
-- [Sample: Custom Programmatic Skin](https://feathersui.com/samples/haxe-openfl/custom-programmatic-skin/) ([Source Code on Github](https://github.com/feathersui/feathersui-openfl/tree/v1.1.0/samples/custom-programmatic-skin))
-- [Sample: Custom Programmatic Skin with States](https://feathersui.com/samples/haxe-openfl/custom-programmatic-skin-with-states/) ([Source Code on Github](https://github.com/feathersui/feathersui-openfl/tree/v1.1.0/samples/custom-programmatic-skin-with-states))
-- [Sample: Animated Skin with Tween](https://feathersui.com/samples/haxe-openfl/animated-tween-skin/) ([Source Code on Github](https://github.com/feathersui/feathersui-openfl/tree/v1.1.0/samples/animated-tween-skin))
+- [Sample: Custom Programmatic Skin](https://github.com/feathersui/feathersui-openfl/tree/v1.1.0/samples/custom-programmatic-skin)
+- [Sample: Custom Programmatic Skin with States](https://github.com/feathersui/feathersui-openfl/tree/v1.1.0/samples/custom-programmatic-skin-with-states)
+- [Sample: Animated Skin with Tween](https://github.com/feathersui/feathersui-openfl/tree/v1.1.0/samples/animated-tween-skin)

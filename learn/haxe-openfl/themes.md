@@ -68,3 +68,4 @@ You might do this to save on final output file size, if you are certain that you
 ## Related Links
 
 - [Create a custom Feathers UI theme](./custom-themes.md)
+- [Sample: Theme Dark Mode](https://github.com/feathersui/feathersui-openfl/tree/v1.1.0/samples/dark-mode/)
