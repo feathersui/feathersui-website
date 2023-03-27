@@ -31,7 +31,7 @@ stepper.step = 1;
 
 The [`step`](https://api.feathersui.com/current/feathers/controls/NumericStepper.html#step) property controls how the numeric stepper's value is rounded as the user interacts with it. If we set the stepper's [`step`](https://api.feathersui.com/current/feathers/controls/NumericStepper.html#step) to `1.0`, as we do above, the stepper will increment on whole numbers only, and it cannot have a value like `4.5`, for instance.
 
-Add a listener to the [`Event.CHANGE`](/api-reference/feathers/controls/NumericStepper.html#event:change) event to know when the [`value`](https://api.feathersui.com/current/feathers/controls/NumericStepper.html#value) property changes:
+[Add an event listener](https://books.openfl.org/openfl-developers-guide/handling-events/basics-of-handling-events.html) for [`Event.CHANGE`](https://api.openfl.org/openfl/events/Event.html#CHANGE) to perform an action when the [`value`](https://api.feathersui.com/current/feathers/controls/NumericStepper.html#value) property changes:
 
 ```haxe
 stepper.addEventListener(Event.CHANGE, stepper_changeHandler);
@@ -49,6 +49,26 @@ function stepper_changeHandler(event:Event):Void {
 ## Styles
 
 A number of styles may be customized on the sub-components of a [`NumericStepper`](https://api.feathersui.com/current/feathers/controls/NumericStepper.html) component, including styles on the decrement and increment buttons and the text input.
+
+### Layout
+
+A couple of styles are available for customizing the position of the decrement and increment buttons, relative to the text input.
+
+> To see a live demonstration of button layouts with [`NumericStepper`](https://api.feathersui.com/current/feathers/controls/NumericStepper.html), open the [_numeric-stepper-button-layouts_ sample](https://feathersui.com/samples/haxe-openfl/numeric-stepper-button-layouts/) in your web browser. ([Source Code](https://github.com/feathersui/feathersui-openfl/tree/v1.1.0/samples/numeric-stepper-button-layouts/))
+
+
+Set the [`buttonDirection`](https://api.feathersui.com/current/feathers/controls/NumericStepper.html#buttonDirection) property to specify if the buttons should be positioned vertically or horizontally.
+
+```haxe
+stepper.buttonDirection = VERTICAL;
+```
+
+
+Set the [`textInputPosition`](https://api.feathersui.com/current/feathers/controls/NumericStepper.html#textInputPosition) property to specify how the text input should be placed, relative to the buttons.
+
+```haxe
+stepper.textInputPosition = LEFT;
+```
 
 ### Decrement and increment buttons
 
@@ -142,3 +162,4 @@ stepper.textInputFactory = () -> {
 ## Related Links
 
 - [`feathers.controls.NumericStepper` API Documentation](https://api.feathersui.com/current/feathers/controls/NumericStepper.html)
+- [Sample: NumericStepper Button Layouts](https://github.com/feathersui/feathersui-openfl/tree/v1.1.0/samples/numeric-stepper-button-layouts/)
