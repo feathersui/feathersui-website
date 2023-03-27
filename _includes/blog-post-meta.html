@@ -1,9 +1,0 @@
-<div class="post-meta">
-  <p>{{ date | date: "%B %d, %Y" }}</p>
-  <p class="post-author">
-    {% if authorURL %}<a href="{{ authorURL }}">{% endif %}
-    {% if authorImageURL %}<img class="post-avatar" src="{{authorImageURL}}"/>{% endif %}
-    {{ author }}
-    {% if authorURL %}</a>{% endif %}
-  </p>
-</div>

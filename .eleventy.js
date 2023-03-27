@@ -61,6 +61,18 @@ module.exports = function (eleventyConfig) {
     console.log(value, typeof value);
     return value;
   });
+  eleventyConfig.addFilter("utc_date", (/** @type Date */ date) => {
+    var pageUtcDate = new Date(
+      date.getUTCFullYear(),
+      date.getUTCMonth(),
+      date.getUTCDate(),
+      date.getUTCHours(),
+      date.getUTCMinutes(),
+      date.getUTCSeconds(),
+      date.getUTCMilliseconds()
+    );
+    return pageUtcDate;
+  });
   eleventyConfig.addFilter("blog_permalink", (page) => {
     const /** @type Date */ pageDate = page.date;
     var pageUtcDate = new Date(
@@ -71,7 +83,6 @@ module.exports = function (eleventyConfig) {
       pageDate.getUTCMinutes(),
       pageDate.getUTCSeconds()
     );
-    pageDate.setHours(pageDate.getHours() - pageDate.getTimezoneOffset());
     const year = pageUtcDate.getFullYear();
     const month = (pageUtcDate.getMonth() + 1).toString().padStart(2, "0");
     const date = pageUtcDate.getDate().toString().padStart(2, "0");

@@ -13,13 +13,13 @@ layout: null
     <link rel="alternate" href="{{ feedmeta.url }}"/>
     <subtitle>{{ feedmeta.description }}</subtitle>
     <logo>{{ feedmeta.logoUrl }}</logo>
-    <rights>Copyright © {{ collections.blog | rss_getNewestCollectionItemDate | date: "%Y" }} {{ feedmeta.copyright }}</rights>
+    <rights>Copyright © {{ collections.blog | rss_getNewestCollectionItemDate | utc_date | date: "%Y" }} {{ feedmeta.copyright }}</rights>
     {% for post in collections.blog reversed %}{% assign absolutePostUrl = post.url | url | rss_absoluteUrl: feedmeta.url %}
     <entry>
         <title type="html"><![CDATA[{{ post.data.title }}]]></title>
         <id>{{ absolutePostUrl }}</id>
         <link href="{{ absolutePostUrl }}"/>
-        <updated>{{ post.date | rss_dateToRfc3339 }}</updated>
+        <updated>{{ post.date | utc_date | rss_dateToRfc3339 }}</updated>
         <summary type="html"><![CDATA[{{ post.templateContent | htmlToExcerpt | rss_htmlToAbsoluteUrls: absolutePostUrl }}]]></summary>
         <author>
             <name>{% if post.data.author %}{{ post.data.author }}{% else %}{{ feedmeta.defaultAuthor }}{% endif %}</name>
