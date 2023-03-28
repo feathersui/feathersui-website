@@ -7,6 +7,7 @@ layout: "docs.html"
 
 ## Basic UI components
 
+- [`ActivityIndicator`](./activity-indicator.md) <a href="./semver#beta-apis"><img class="beta" src="/img/beta.png" alt="(Beta)"/></a> displays an animation to indicate that an activity is currently in progress.
 - [`AssetLoader`](./asset-loader.md) displays images and other assets.
 - [`Button`](./button.md) is a standard push button that may be clicked or tapped.
 - [`Check`](./check.md) is a check box that may be selected and deselected with a click/tap.
