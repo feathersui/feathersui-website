@@ -740,3 +740,13 @@ iframe {
 .blog .main-content article h1 a:visited {
   text-decoration: none;
 }
+
+/************ customizations ************/
+
+img.beta {
+  width: 28px;
+  height: 11px;
+  vertical-align: middle;
+  display: inline;
+  margin: 0 0.3rem 0 0;
+}
