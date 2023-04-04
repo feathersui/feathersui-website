@@ -1047,8 +1047,9 @@ Many IDEs and text editors offer the ability to use regular expressions to **Fin
 > These regular expressions are provided for convenience only, and they may not work perfectly in all cases. After making replacements, be sure to double-check the modified code to verify that no unexpected errors were introduced.
 
 | Find                                                                | Replace                           |
-| ------------------------------------------------------------------- | --------------------------------- | ----------------------- | -------------------- | ---------------- |
+| ------------------------------------------------------------------- | --------------------------------- |
 | `\w+\.HORIZONTAL_ALIGN_(\w+)`                                       | `HorizontalAlign.$1`              |
+| `\w+\.VERTICAL_ALIGN_(\w+)`                                         | `VerticalAlign.$1`                |
 | `\w+\.VERTICAL_ALIGN_(\w+)`                                         | `VerticalAlign.$1`                |
 | `\w+\.ICON_POSITION_(\w+)`                                          | `RelativePosition.$1`             |
 | `\w+\.ACCESSORY_POSITION_(\w+)`                                     | `RelativePosition.$1`             |
@@ -1060,11 +1061,11 @@ Many IDEs and text editors offer the ability to use regular expressions to **Fin
 | `\w+\.VERTICAL_SCROLL_BAR_POSITION_(\w+)`                           | `RelativePosition.$1`             |
 | `\w+\.DECELERATION_RATE_(\w+)`                                      | `DecelerationRate.$1`             |
 | `(?:(?<=[\s\,\(])(?!PageIndicator)(?:\w+))\.INTERACTION_MODE_(\w+)` | `ScrollInteractionMode.$1`        |
-| `(?:TextInput                                                       | TextArea).STATE\_(\w+)`           | `TextInputState.$1`     |
-| `(?:Button                                                          | ToggleButton                      | Check                   | Radio).STATE\_(\w+)` | `ButtonState.$1` |
+| `(?:TextInput\|TextArea).STATE\_(\w+)`                              | `TextInputState.$1`     					|
+| `(?:Button\|ToggleButton\|Check\|Radio).STATE\_(\w+)`               | `ButtonState.$1`                  |
 | `\w+ItemRenderer.STATE_(\w+)`                                       | `ButtonState.$1`                  |
 | `\w+\.TRACK_LAYOUT_MODE_SINGLE`                                     | `TrackLayoutMode.SINGLE`          |
-| `\w+\.TRACK*LAYOUT_MODE*(MIN_MAX                                    | ON_OFF)`                          | `TrackLayoutMode.SPLIT` |
+| `\w+\.TRACK*LAYOUT_MODE*(MIN_MAX\|ON_OFF)`                          | `TrackLayoutMode.SPLIT`           |
 | `\w+\.TRACK_SCALE_MODE_(\w+)`                                       | `TrackScaleMode.$1`               |
 | `\w+\.TRACK_INTERACTION_MODE_(\w+)`                                 | `TrackInteractionMode.$1`         |
 | `\w+\.EDITING_MODE_(\w+)`                                           | `DateTimeMode.$1`                 |
