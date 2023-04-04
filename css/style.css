@@ -120,11 +120,6 @@ a > code {
   padding: 2px;
 }
 
-ul,
-ol {
-  list-style-position: inside;
-}
-
 article h1 {
   font-size: 1.8em;
   margin-top: 0;
@@ -136,6 +131,11 @@ figure {
 
 iframe {
   border: none;
+}
+
+table {
+  display: block;
+  overflow-x: auto;
 }
 
 .btn-wrapper {
@@ -584,6 +584,10 @@ iframe {
 .sidebars .main-content > .sidebar-container > .sidebar a:active {
   color: var(--action-color);
   text-decoration: underline;
+}
+
+.sidebars .main-content > .toc-container > .toc {
+  overflow-x: auto;
 }
 
 .sidebars .main-content > .toc-container > .toc ol {
