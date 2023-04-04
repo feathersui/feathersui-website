@@ -564,7 +564,6 @@ iframe {
 .sidebars .main-content > .sidebar-container > .sidebar ul {
   padding: 0.25rem 0.25rem 0 0.75rem;
   list-style-type: none;
-  font-size: 0.9rem;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
@@ -594,7 +593,6 @@ iframe {
   padding: 1rem 1.25rem;
   list-style-type: none;
   gap: 0.5rem;
-  font-size: 0.8rem;
 }
 
 .sidebars .main-content > .toc-container > .toc ol ol {
@@ -658,6 +656,12 @@ iframe {
     position: sticky;
     top: 80px;
     padding: 0.25rem 1rem;
+  }
+  .sidebars .main-content > .sidebar-container > .sidebar ul {
+    font-size: 0.9rem;
+  }
+  .sidebars .main-content > .toc-container > .toc ol {
+    font-size: 0.8rem;
   }
   .sidebars .main-content > #sidebar-toggle-label,
   .sidebars .main-content > #toc-toggle-label {
