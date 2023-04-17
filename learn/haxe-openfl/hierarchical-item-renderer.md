@@ -82,8 +82,8 @@ An item renderer may optionally display an icon or image. See the following tuto
 
 > The tutorials below use the [`ItemRenderer`](./item-renderer.md) component, but `HierarchicalItemRenderer` works nearly the same way.
 
-- [Cookbook: Display an image from a URL in an `ItemRenderer` component](cookbook/item-renderer-image-url.md)
-- [Cookbook: Display an OpenFL asset in an `ItemRenderer` component](cookbook/item-renderer-openfl-assets.md)
+- [Cookbook: Display an image from a URL in an `ItemRenderer` component](./cookbook/item-renderer-image-url.md)
+- [Cookbook: Display an OpenFL asset in an `ItemRenderer` component](./cookbook/item-renderer-openfl-assets.md)
 
 ### Accessory
 
@@ -91,7 +91,7 @@ An item renderer may optionally display an accessory to the right of the other c
 
 > The tutorial below uses the [`ItemRenderer`](./item-renderer.md) component, but `HierarchicalItemRenderer` works nearly the same way.
 
-- [Cookbook: Add a UI control to an `ItemRenderer` component](cookbook/item-renderer-ui-control-accessory.md)
+- [Cookbook: Add a UI control to an `ItemRenderer` component](./cookbook/item-renderer-ui-control-accessory.md)
 
 ## States
 

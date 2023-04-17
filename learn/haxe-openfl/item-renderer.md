@@ -80,14 +80,14 @@ Inside the recycler's [`update()`](https://api.feathersui.com/current/feathers/u
 
 An item renderer may optionally display an icon or image. See the following tutorials for more details.
 
-- [Cookbook: Display an image from a URL in an `ItemRenderer` component](cookbook/item-renderer-image-url.md)
-- [Cookbook: Display an OpenFL asset in an `ItemRenderer` component](cookbook/item-renderer-openfl-assets.md)
+- [Cookbook: Display an image from a URL in an `ItemRenderer` component](./cookbook/item-renderer-image-url.md)
+- [Cookbook: Display an OpenFL asset in an `ItemRenderer` component](./cookbook/item-renderer-openfl-assets.md)
 
 ### Accessory
 
 An item renderer may optionally display an accessory to the right of the other content. An accessory may be a UI control, an image, or any OpenFL display object. See the following tutorial for more details.
 
-- [Cookbook: Add a UI control to an `ItemRenderer` component](cookbook/item-renderer-ui-control-accessory.md)
+- [Cookbook: Add a UI control to an `ItemRenderer` component](./cookbook/item-renderer-ui-control-accessory.md)
 
 ## States
 
