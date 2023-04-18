@@ -4,8 +4,7 @@ layout: "docs.html"
 sidebarTitle: AnchorLayout
 ---
 
-The [`AnchorLayout`](/api-reference/feathers/layout/AnchorLayout.html) class may be used by containers that support layout, such as [`LayoutGroup`](./layout-group.md) and [`ScrollContainer`](./s
-croll-container.md), to constrain, or _anchor_, the edges of a component to the edges of its parent container. `AnchorLayout` is often used for _fluid_ layouts that can automatically adjust themselves as the container is resized. For example, we might use it to display one or more sidebars next to a main view in an application. The main view can be anchored to the sidebars and the container to fill the remaining space.
+The [`AnchorLayout`](/api-reference/feathers/layout/AnchorLayout.html) class may be used by containers that support layout, such as [`LayoutGroup`](./layout-group.md) and [`ScrollContainer`](./scroll-container.md), to constrain, or _anchor_, the edges of a component to the edges of its parent container. `AnchorLayout` is often used for _fluid_ layouts that can automatically adjust themselves as the container is resized. For example, we might use it to display one or more sidebars next to a main view in an application. The main view can be anchored to the sidebars and the container to fill the remaining space.
 
 `AnchorLayout` also provides the ability to anchor a component relative to the edges of its siblings in the parent container.
 
