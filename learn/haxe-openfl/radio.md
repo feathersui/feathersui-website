@@ -4,7 +4,7 @@ layout: "docs.html"
 sidebarTitle: Radio
 ---
 
-The [`Radio`](https://api.feathersui.com/current/feathers/controls/Radio.html) class may be selected when clicked or tapped — similar to a [toggle button](toggle-button.md) — but it is included in a group containing multiple radios, and only one radio may be selected at a time.
+The [`Radio`](https://api.feathersui.com/current/feathers/controls/Radio.html) class may be selected when clicked or tapped — similar to a [toggle button](./toggle-button.md) — but it is included in a group containing multiple radios, and only one radio may be selected at a time.
 
 <figure>
 <iframe src="/learn/haxe-openfl/samples/radio.html" width="100%" height="150"></iframe>

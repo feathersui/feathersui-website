@@ -94,7 +94,7 @@ In addition to being used for background skins, `ImageSkin` can also be used for
 
 ### Setting font styles on text renderers
 
-[Text renderers](text-renderers.md) in Feathers components can now change their own font styles when their parent component changes state. Previously, the `Button` class managed multiple sets of properties for different states (like `defaultLabelProperties` and `downLabelProperties`) using objects that were not strictly type-checked at compile-time. The new approach is stricter, and easier to customize outside of the theme:
+[Text renderers](./text-renderers.md) in Feathers components can now change their own font styles when their parent component changes state. Previously, the `Button` class managed multiple sets of properties for different states (like `defaultLabelProperties` and `downLabelProperties`) using objects that were not strictly type-checked at compile-time. The new approach is stricter, and easier to customize outside of the theme:
 
 ```actionscript
 button.labelFactory = function():ITextRenderer
@@ -106,7 +106,7 @@ button.labelFactory = function():ITextRenderer
 };
 ```
 
-In the code above, we create a [`BitmapFontTextRenderer`](bitmap-font-text-renderer.md) and we use the `textFormat` property to set its font styles in the `labelFactory` of a `Button`.
+In the code above, we create a [`BitmapFontTextRenderer`](./bitmap-font-text-renderer.md) and we use the `textFormat` property to set its font styles in the `labelFactory` of a `Button`.
 
 On the `BitmapFontTextRenderer`, we can call the `setTextFormatForState()` function to pass in different font styles of each of the button's states. Let's do that in the same `labelFactory`:
 
@@ -120,7 +120,7 @@ textRenderer.setTextFormatForState( ButtonState.DISABLED,
 
 > To display text with a different text renderer, the approach is mostly the same, but each text renderer has its own way to set font styles. To use a `TextBlockTextRenderer`, pass the default font styles to the `elementFormat` property. Call the `setElementFormatForState()` function to pass in font styles for different states.
 
-If you prefer to keep all of your styling code in your theme, you can [create a new style name](extending-themes.md) for the text renderer class. On a `Button`, you'd pass this custom style name to the `customLabelStyleName` property:
+If you prefer to keep all of your styling code in your theme, you can [create a new style name](./extending-themes.md) for the text renderer class. On a `Button`, you'd pass this custom style name to the `customLabelStyleName` property:
 
 ```actionscript
 button.customLabelStyleName = "my-custom-text-renderer";
@@ -195,7 +195,7 @@ All of the core Feathers components now calculate minimum dimensions, if they ar
 
 ## Return type API changes
 
-The [`Drawers`](drawers.md) component now requires its content and drawers to be Feathers components. Previously, `starling.display.Sprite` was allowed. To replace `Sprite` as a generic container, consider using [`LayoutGroup`](layout-group.md) instead.
+The [`Drawers`](./drawers.md) component now requires its content and drawers to be Feathers components. Previously, `starling.display.Sprite` was allowed. To replace `Sprite` as a generic container, consider using [`LayoutGroup`](./layout-group.md) instead.
 
 The [`INativeFocusOwner`](/api-reference/feathers/core/INativeFocusOwner.html) interface now returns type `Object` for its `nativeFocus` property to allow objects like `flash.text.StageText` to receive focus. Previously, the return type was `flash.display.InteractiveObject`.
 

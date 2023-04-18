@@ -4,7 +4,7 @@ layout: "docs.html"
 sidebarTitle: 3.1 Migration Guide
 ---
 
-This guide explains how to migrate an application created with [Feathers 3.0](migration-guide-3.0.md) to Feathers 3.1. Be aware that, as a minor update, the new features in this version are not considered "breaking" changes. You are not required to make any modifications to your projects to update to this version. However, you will see benefits from switching to some of the newer, simplified APIs. The focus of this release is to improve the developer experience, especially when dealing with font styles and skinning.
+This guide explains how to migrate an application created with [Feathers 3.0](./migration-guide-3.0.md) to Feathers 3.1. Be aware that, as a minor update, the new features in this version are not considered "breaking" changes. You are not required to make any modifications to your projects to update to this version. However, you will see benefits from switching to some of the newer, simplified APIs. The focus of this release is to improve the developer experience, especially when dealing with font styles and skinning.
 
 - [Font styles with `starling.text.TextFormat`](#font-styles-with-starling.text.textformat)
 
@@ -12,11 +12,11 @@ This guide explains how to migrate an application created with [Feathers 3.0](mi
 
 ## Font styles with `starling.text.TextFormat`
 
-Starling 2 introduced a new [`starling.text.TextFormat`](http://doc.starling-framework.org/current/starling/text/TextFormat.html) class that defines common font styles used by all types of text, including bitmap fonts and TTF/OTF fonts. Previously, to customize font styles on Feathers [text renderers](text-renderers.md), you needed to use different classes and set different properties, depending on which text renderer you were using. For instance, [`TextBlockTextRenderer`](text-block-text-renderer.md) has an `elementFormat` property of type `flash.text.engine.ElementFormat` while [`TextFieldTextRenderer`](text-field-text-renderer.md) has a `textFormat` property of type `flash.text.TextFormat`. Now, all text renderers have a unified way to support the `starling.text.TextFormat` class.
+Starling 2 introduced a new [`starling.text.TextFormat`](http://doc.starling-framework.org/current/starling/text/TextFormat.html) class that defines common font styles used by all types of text, including bitmap fonts and TTF/OTF fonts. Previously, to customize font styles on Feathers [text renderers](./text-renderers.md), you needed to use different classes and set different properties, depending on which text renderer you were using. For instance, [`TextBlockTextRenderer`](./text-block-text-renderer.md) has an `elementFormat` property of type `flash.text.engine.ElementFormat` while [`TextFieldTextRenderer`](./text-field-text-renderer.md) has a `textFormat` property of type `flash.text.TextFormat`. Now, all text renderers have a unified way to support the `starling.text.TextFormat` class.
 
 In fact, the font styles don't need to be set directly on the text renderer anymore. Instead, you can set them on the component that uses the text renderer, such as a `Label` or `Button`. They parent component will automatically pass them down to the text renderer.
 
-Let's customize the font styles on a [`Label`](label.md) component to see how it works:
+Let's customize the font styles on a [`Label`](./label.md) component to see how it works:
 
 ```actionscript
 var label:Label = new Label();
@@ -35,7 +35,7 @@ label.disabledFontStyles = new TextFormat( "_sans", 20, 0x999999 );
 
 Most components that contain a text renderer will now have `fontStyles` and `disabledFontStyles` properties. If a component can be toggled or selected, it may also have a `selectedFontStyles` property.
 
-Finally, if a component supports a more complex set of mutiple states, such as the touch states in a `Button`, it will have a `setFontStylesForState()` method. This method accepts the name of the state along with a `TextFormat` object to use when the component is in that state. In the following example, we set separate font styles for the "down" and "hover" states of a [`Button`](button.md):
+Finally, if a component supports a more complex set of mutiple states, such as the touch states in a `Button`, it will have a `setFontStylesForState()` method. This method accepts the name of the state along with a `TextFormat` object to use when the component is in that state. In the following example, we set separate font styles for the "down" and "hover" states of a [`Button`](./button.md):
 
 ```actionscript
 var button:Button = new Button();
@@ -45,7 +45,7 @@ button.setFontStylesForState( ButtonState.HOVER, new TextFormat( "_sans", 20, 0x
 
 ## Style properties and themes
 
-In previous versions of Feathers, it was easy to run into conflicts with the theme when attempting to skin components. To avoid this issue, you could use the [`AddOnFunctionStyleProvider`](/api-reference/feathers/skins/AddOnFunctionStyleProvider.html) class, set the [`styleProvider`](/api-reference/feathers/core/FeathersControl.html#styleProvider) property to `null`, wait until a component initialized, or [extend the theme](extending-themes.md). However, each of these options could be somewhat cumbersome for minor tweaks to a single component's appearance.
+In previous versions of Feathers, it was easy to run into conflicts with the theme when attempting to skin components. To avoid this issue, you could use the [`AddOnFunctionStyleProvider`](/api-reference/feathers/skins/AddOnFunctionStyleProvider.html) class, set the [`styleProvider`](/api-reference/feathers/core/FeathersControl.html#styleProvider) property to `null`, wait until a component initialized, or [extend the theme](./extending-themes.md). However, each of these options could be somewhat cumbersome for minor tweaks to a single component's appearance.
 
 Starting with Feathers 3.1, certain properties are now considered "styles". If you set a "style property" outside of the theme, you don't need to worry about the theme replacing it later. However, any other styles from the theme won't be affected. As an example, if you wanted to customize a button's font styles outside the theme, but keep the background skin from the theme, it's easy.
 
@@ -101,4 +101,4 @@ Starling will not ask the GPU to render a fully transparent display object, so t
 
 ## Related Links
 
-- [Feathers 3.0 Migration Guide](migration-guide-3.0.md)
+- [Feathers 3.0 Migration Guide](./migration-guide-3.0.md)

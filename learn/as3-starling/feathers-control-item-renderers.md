@@ -4,7 +4,7 @@ layout: "docs.html"
 sidebarTitle: Custom item renderers with FeathersControl
 ---
 
-The [`FeathersControl`](/api-reference/feathers/core/FeathersControl.html) class it the most basic foundation of all Feathers user interface components, including item renderers. With that in mind, if you need a custom item renderer for a [`List`](./list.md), [`DataGrid`](./data-grid.md), [`Tree`](./tree.md) or [`GroupedList`](./grouped-list.md), you're actually going to create a [custom Feathers component](component-properties-methods.md). An item renderer will have a few extra properties that are needed to communicate with its owner, but ultimately, it will be very similar to any regular Feathers component.
+The [`FeathersControl`](/api-reference/feathers/core/FeathersControl.html) class it the most basic foundation of all Feathers user interface components, including item renderers. With that in mind, if you need a custom item renderer for a [`List`](./list.md), [`DataGrid`](./data-grid.md), [`Tree`](./tree.md) or [`GroupedList`](./grouped-list.md), you're actually going to create a [custom Feathers component](./component-properties-methods.md). An item renderer will have a few extra properties that are needed to communicate with its owner, but ultimately, it will be very similar to any regular Feathers component.
 
 Feathers includes several interfaces that define the API used by the `List`, `DataGrid`, `Tree`, or `GroupedList` components to communicate with their item renderers.
 

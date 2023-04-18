@@ -70,5 +70,5 @@ The following tables list all deprecated APIs, organized by class. The replaceme
 
 ## Related Links
 
-- [Feathers 3.1 Migration Guide](migration-guide-3.1.md)
-- [Feathers 3.0 Migration Guide](migration-guide-3.0.md)
+- [Feathers 3.1 Migration Guide](./migration-guide-3.1.md)
+- [Feathers 3.0 Migration Guide](./migration-guide-3.0.md)
