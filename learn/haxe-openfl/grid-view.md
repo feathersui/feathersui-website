@@ -183,7 +183,7 @@ In this case, the value of [`text`](https://api.feathersui.com/current/feathers/
 
 It's always a good practice to provide a [`reset()`](https://api.feathersui.com/current/feathers/utils/DisplayObjectRecycler.html) method to the [`DisplayObjectRecycler`](https://api.feathersui.com/current/feathers/utils/DisplayObjectRecycler.html), which will clean up a custom cell renderer when it is no longer used by the [`GridView`](https://api.feathersui.com/current/feathers/controls/GridView.html).
 
-```
+```haxe
 recycler.reset = (cellRenderer:LayoutGroupItemRenderer, state:GridViewCellState) -> {
     var label = cast(cellRenderer.getChildByName("label"), Label);
     var loader = cast(cellRenderer.getChildByName("loader"), AssetLoader);
@@ -194,6 +194,27 @@ recycler.reset = (cellRenderer:LayoutGroupItemRenderer, state:GridViewCellState)
 ```
 
 > **Warning:** A [`DisplayObjectRecycler`](https://api.feathersui.com/current/feathers/utils/DisplayObjectRecycler.html) without a [`reset()`](https://api.feathersui.com/current/feathers/utils/DisplayObjectRecycler.html) method could potentially cause memory leaks or other unexpected behavior, if the same data needs to be used again later.
+
+## Resize and sort columns
+
+Set the [`resizableColumns`](https://api.feathersui.com/current/feathers/controls/GridView.html#resizableColumns) property to `true` on a [`GridView`](https://api.feathersui.com/current/feathers/controls/GridView.html) to allow users to drag the dividers between columns to resize them.
+
+```haxe
+gridView.resizableColumns = true;
+```
+
+Set the [`sortableColumns`](https://api.feathersui.com/current/feathers/controls/GridView.html#sortableColumns) property to `true` to allow users to click a column header to sort the items in a [`GridView`](https://api.feathersui.com/current/feathers/controls/GridView.html).
+
+```haxe
+gridView.sortableColumns = true;
+```
+
+To programmatically adjust the sorting, set the [`sortedColumn`](https://api.feathersui.com/current/feathers/controls/GridView.html#sortedColumn) property and the [`sortOrder`](https://api.feathersui.com/current/feathers/controls/GridView.html#sortOrder) property.
+
+```haxe
+gridView.sortedColumn = gridView.columns.get(0);
+gridView.sortOrder = ASCENDING;
+```
 
 ## Styles
 
