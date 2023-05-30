@@ -20,7 +20,9 @@ The document explains how to build the Feathers SDK from a binary distribution. 
 
 1.  In the Feathers SDK directory, run the following command:
 
-        ant -f installer.xml
+		```sh
+    ant -f installer.xml
+		```
 
 1.  When prompted to install each dependency, type `y` and press Enter.
 

@@ -19,7 +19,9 @@ The document explains how to build the Feathers SDK from source code.
 
 1.  Clone the Feathers SDK repository from Github:
 
-        git clone --recursive https://github.com/feathersui/feathersui-starling-sdk.git ./feathersui-starling-sdk
+    ```sh
+    git clone --recursive https://github.com/feathersui/feathersui-starling-sdk.git ./feathersui-starling-sdk
+    ```
 
     You must include the `--recursive` flag to load the required sub-modules for Starling Framework and Feathers.
 
@@ -35,7 +37,9 @@ The document explains how to build the Feathers SDK from source code.
 
 1.  Run the following command in the root of the cloned repository:
 
-        ant main
+    ```sh
+    ant main
+    ```
 
     When asked if you want to integrate with Adobe's embedded font support, type `y` and press the `Enter` key.
 
