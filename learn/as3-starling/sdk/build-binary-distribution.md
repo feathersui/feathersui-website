@@ -20,9 +20,9 @@ The document explains how to build the Feathers SDK from a binary distribution. 
 
 1.  In the Feathers SDK directory, run the following command:
 
-		```sh
+    ```sh
     ant -f installer.xml
-		```
+    ```
 
 1.  When prompted to install each dependency, type `y` and press Enter.
 
@@ -34,20 +34,20 @@ Some versions of Java do not support the level of encryption used on the servers
 
 ```code
 javax.net.ssl.SSLHandshakeException: Received fatal alert: handshake_failure
-	at sun.security.ssl.Alerts.getSSLException(Alerts.java:192)
-	at sun.security.ssl.Alerts.getSSLException(Alerts.java:154)
-	at sun.security.ssl.SSLSocketImpl.recvAlert(SSLSocketImpl.java:2023)
-	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:1125)
-	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1375)
-	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1403)
-	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1387)
-	at sun.net.www.protocol.https.HttpsClient.afterConnect(HttpsClient.java:559)
-	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:185)
-	at sun.net.www.protocol.https.HttpsURLConnectionImpl.connect(HttpsURLConnectionImpl.java:153)
-	at org.apache.tools.ant.taskdefs.Get$GetThread.openConnection(Get.java:690)
-	at org.apache.tools.ant.taskdefs.Get$GetThread.openConnection(Get.java:715)
-	at org.apache.tools.ant.taskdefs.Get$GetThread.get(Get.java:606)
-	at org.apache.tools.ant.taskdefs.Get$GetThread.run(Get.java:596)
+    at sun.security.ssl.Alerts.getSSLException(Alerts.java:192)
+    at sun.security.ssl.Alerts.getSSLException(Alerts.java:154)
+    at sun.security.ssl.SSLSocketImpl.recvAlert(SSLSocketImpl.java:2023)
+    at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:1125)
+    at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1375)
+    at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1403)
+    at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1387)
+    at sun.net.www.protocol.https.HttpsClient.afterConnect(HttpsClient.java:559)
+    at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:185)
+    at sun.net.www.protocol.https.HttpsURLConnectionImpl.connect(HttpsURLConnectionImpl.java:153)
+    at org.apache.tools.ant.taskdefs.Get$GetThread.openConnection(Get.java:690)
+    at org.apache.tools.ant.taskdefs.Get$GetThread.openConnection(Get.java:715)
+    at org.apache.tools.ant.taskdefs.Get$GetThread.get(Get.java:606)
+    at org.apache.tools.ant.taskdefs.Get$GetThread.run(Get.java:596)
 ```
 
 To fix this issue, you must download and install the [Java Cryptography Extension (JCE) Unlimited Strength Jurisdiction Policy Files](http://www.oracle.com/technetwork/java/javase/downloads/jce8-download-2133166.html).
