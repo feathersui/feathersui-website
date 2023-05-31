@@ -61,3 +61,11 @@ May be used to disable the default tool tip manager initialized by the [`Applica
 ```
 
 A tool tip manager may be enabled manually, if desired. Otherwise, the `toolTip` property will be ignored.
+
+### `feathersui_strict_set_invalid`
+
+When this define is enabled, Feathers UI will throw an exception if `setInvalid()` is called during validation. Useful when developing custom components or item renderers to find performance issues.
+
+```xml
+<haxedef name="feathersui_strict_set_invalid"/>
+```
