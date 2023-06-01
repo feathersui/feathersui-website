@@ -100,7 +100,7 @@ layout.verticalAlign = JUSTIFY;
 
 The dimensions of each child in a container using [`HorizontalLayout`](https://api.feathersui.com/current/feathers/layout/HorizontalLayout.html) may optionally be set to some percentage of the container's total width or height.
 
-> To see a live demonstration of percentage sizing with [`HorizontalLayout`](https://api.feathersui.com/current/feathers/layout/HorizontalLayout.html), open the [_horizontal-layout-percentage-sizing_ sample](https://feathersui.com/samples/haxe-openfl/horizontal-layout-percentage-sizing/) in your web browser. ([Source Code](https://github.com/feathersui/feathersui-openfl/tree/v1.1.0/samples/horizontal-layout-percentage-sizing/))
+> To see a live demonstration of percentage sizing with [`HorizontalLayout`](https://api.feathersui.com/current/feathers/layout/HorizontalLayout.html), open the [_horizontal-layout-percentage-sizing_ sample](https://feathersui.com/samples/haxe-openfl/horizontal-layout-percentage-sizing/) in your web browser. ([Source Code](https://github.com/feathersui/feathersui-openfl/tree/v1.2.0/samples/horizontal-layout-percentage-sizing/))
 
 ### percentWidth
 
@@ -186,4 +186,4 @@ Notice that fixed pixel values may be mixed with percentage values on the same c
 ## Related Links
 
 - [`feathers.layout.HorizontalLayout` API Documentation](https://api.feathersui.com/current/feathers/layout/HorizontalLayout.html)
-- [Sample: Percentage Sizing](https://github.com/feathersui/feathersui-openfl/tree/v1.1.0/samples/horizontal-layout-percentage-sizing/)
+- [Sample: Percentage Sizing](https://github.com/feathersui/feathersui-openfl/tree/v1.2.0/samples/horizontal-layout-percentage-sizing/)
