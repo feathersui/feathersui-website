@@ -4,7 +4,7 @@ layout: "docs.html"
 sidebarTitle: HaxeDevelop
 ---
 
-[HaxeDevelop](https://haxedevelop.org/) (or [FlashDevelop](https://flashdevelop.org/)) supports an [OpenFL](https://openfl.org/) project template that we'll use to create a new [Feathers UI](/) project.
+[HaxeDevelop](https://github.com/fdorg/flashdevelop) (or [FlashDevelop](https://flashdevelop.org/)) supports an [OpenFL](https://openfl.org/) project template that we'll use to create a new [Feathers UI](/) project.
 
 ## Prerequisites
 
@@ -91,6 +91,5 @@ haxelib install actuate
 
 ## Further Reading
 
-- [HaxeDevelop documentation](https://haxedevelop.org/system-requirements.html)
+- [HaxeDevelop documentation](https://github.com/HaxeFoundation/haxedevelop.org/tree/master/assets/content/documentation)
 - [OpenFL/Lime project.xml format](https://lime.openfl.org/docs/project-files/xml-format/)
-- [MDN: What are browser developer tools?](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_are_browser_developer_tools)
