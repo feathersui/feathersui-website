@@ -73,4 +73,4 @@ Want to help new components get added and keep the servers running? Please contr
 
 ## Questions or comments?
 
-I've created an [official v1.2.0 discussion thread](https://community.feathersui.com/d/114-feathers-ui-v11-update-for-haxe-and-openfl) in the [community forums](https://community.feathersui.com/). Do you love one of the new features? Ran into a strange bug that wasn't in the last release? Head over there to leave a comment about this release!
+I've created an [official v1.2.0 discussion thread](https://community.feathersui.com/d/121-feathers-ui-v12-update-for-haxe-and-openfl) in the [community forums](https://community.feathersui.com/). Do you love one of the new features? Ran into a strange bug that wasn't in the last release? Head over there to leave a comment about this release!
