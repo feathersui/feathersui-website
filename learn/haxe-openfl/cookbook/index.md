@@ -13,3 +13,8 @@ Learn how to customize the [`ItemRenderer`](../item-renderer.md) and [`Hierarchi
 - [Display an image from a URL in an `ItemRenderer` component](./item-renderer-image-url.md)
 - [Display an OpenFL asset in an `ItemRenderer` component](./item-renderer-openfl-assets.md)
 - [Add a UI control to an `ItemRenderer` component](./item-renderer-ui-control-accessory.md)
+
+
+<div class="btn-wrapper">
+  <a class="btn" href="/learn/haxe-openfl/">← Haxe/OpenFL Documentation</a>
+</div>

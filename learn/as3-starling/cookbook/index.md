@@ -75,3 +75,7 @@ Simple and targeted tutorials about Feathers (Starling version) designed to demo
 ## `TabNavigator`
 
 - [How to change font styles in a `TabNavigator` component](./tab-navigator-font-styles.md)
+
+<div class="btn-wrapper">
+  <a class="btn" href="/learn/as3-starling/">← AS3/Starling Documentation</a>
+</div>
