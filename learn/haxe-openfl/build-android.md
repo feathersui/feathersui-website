@@ -10,23 +10,19 @@ sidebarTitle: Android
 
 In addition to the dependencies specified in the [Feathers UI installation instructions](./installation.md), building an Android application with Feathers UI has some additional requirements.
 
-- [Install the Java OpenJDK](https://adoptium.net/) (version 8 or newer)
+- [Install the Java OpenJDK](https://adoptium.net/) (version 11 or newer)
 
 - [Download Android Studio](https://developer.android.com/studio)
 
   - Launch Android Studio at least once to go through its setup wizard that downloads the Android SDK components.
 
-- [Download Android NDK **r21e**](https://developer.android.com/ndk/downloads/older_releases)
+- [Download Android NDK **r21e** (21.4.7075529)](https://developer.android.com/ndk/downloads/older_releases)
 
-  - Note: The Android NDK is not the same as the Android SDK. You need both.
+  - _Note:_ The Android NDK is not the same as the Android SDK. You need both.
 
-  - Do **not** download versions that are newer than NDK r21. NDK r22 and newer are not currently compatible with Haxe. The version of the NDK that Android Studio offers to install will be too new for Haxe.
+  - You _must_ download **NDK version 21** at this time. NDK 22 and newer are not currently compatible with Haxe.
 
-  - Extract the archive somewhere on your file system, and take note of the absolute path because it will be used in a later step.
-
-  > On macOS, be sure to download the _Mac App Bundle_ rather than the _.zip_ bundle. You will download a _.dmg_ file. By using the signed and notarized _Mac App Bundle_, you will ensure that Gatekeeper does not block the executables from the NDK from running.
-  >
-  > When you open the _.dmg_ file, it will contain an _.app_ file. Right click this _.app_ file, and choose **Show Package Contents**. Inside the _.app_ file, the NDK is located at _Contents/NDK_. Copy this folder somewhere on your hard drive.
+  - In Android Studio's **SDK Manager**, you can find the NDK in the **SDK Tools** tab. It will try to download the newest version by default. To see older versions of the NDK, you may need to select **Show Package Details**.
 
 ### Configure OpenFL for Android
 
@@ -52,7 +48,13 @@ Typically, when the Android SDK is installed by Android Studio, it is located at
 
 #### Android NDK
 
-Pass in the absolute path where you extracted the Android NDK.
+Pass in the absolute path to the Android NDK.
+
+Typically, Android Studio installs the NDK inside the SDK. The default path should be similar to below for each platform:
+
+- Windows: _C:\Users\\**username**\AppData\Local\Android\Sdk\ndk\21.4.7075529_
+- macOS: _~/Library/Android/sdk/ndk/21.4.7075529_
+- Linux: _~/Android/Sdk/ndk/21.4.7075529_
 
 #### Java JDK
 
