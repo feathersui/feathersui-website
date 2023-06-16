@@ -577,7 +577,7 @@ Looking to do more with your custom item renderer? Check out the [Feathers Cookb
 
 - [Introduction to Custom Item Renderers](./item-renderers.md)
 
-- [Feathers Cookbook: Recipes for Custom Item Renderers](./cookbook/index.md#custom_item_renderers)
+- [Feathers Cookbook: Recipes for Custom Item Renderers](./cookbook/index.md#custom-item-renderers)
 
 - [`feathers.controls.renderers.IListItemRenderer` API Documentation](/api-reference/feathers/controls/renderers/IListItemRenderer.html)
 
