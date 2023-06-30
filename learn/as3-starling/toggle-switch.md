@@ -117,14 +117,14 @@ If you are not using a theme, you can use [`thumbFactory`](/api-reference/feathe
 ```actionscript
 toggle.thumbFactory = function():Button
 {
-    var button:Button = new Button();
+    var thumb:Button = new Button();
 
     //skin the thumb here, if not using a theme
     var skin:ImageSkin = new ImageSkin( texture );
     skin.scale9Grid = new Rectangle( 2, 3, 1, 6 );
     thumb.defaultSkin = skin;
 
-    return button;
+    return thumb;
 }
 ```
 
