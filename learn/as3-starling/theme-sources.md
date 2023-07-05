@@ -4,7 +4,7 @@ layout: "docs.html"
 sidebarTitle: Original design sources for example themes
 ---
 
-If you'd like to modify the appearance of an example theme provided with Feathers, you may download the original source files below. Each theme is available as a FLA file for Animate CC, where you can modify the original vector artwork and export a new sprite sheet for Starling. Alternatively, you may download a set of individual PNG files that may be used with other tools, such as Texture Packer.
+If you'd like to modify the appearance of an example theme provided with Feathers, you may download the original source files below. Each theme is available as a _.fla_ file for Adobe Animate, where you can modify the original vector artwork and export a new sprite sheet for Starling. Alternatively, you may export a set of individual _.png_ files using [this _.jsfl_ script](https://github.com/feathersui/feathersui-starling/blob/v4.1.1/themes/Export%20Theme%20PNGs.jsfl) to use them with other tools, such as Texture Packer.
 
 ### Metal Works Mobile Theme
 
