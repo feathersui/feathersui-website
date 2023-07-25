@@ -12,7 +12,12 @@ sidebarTitle: Electron
 
 In addition to the dependencies specified in the [Feathers UI installation instructions](./installation.md), building an Electron application with Feathers UI has some additional requirements.
 
-- [Node.js](https://nodejs.org/en/) is required to install Electron.
+- [Node.js](https://nodejs.org/)
+- [Electron](https://www.electronjs.org/) may be installed using the following command:
+
+  ```sh
+  npm install -g electron
+  ```
 
 ## Build
 
@@ -38,25 +43,31 @@ The build's output will be written to the _bin/electron/bin_ folder.
 >
 > In the example above, the output would be generated in _Export/electron/bin_ instead.
 
-After building with OpenFL, be sure to install the npm dependencies for Electron.
-
-```sh
-cd bin/electron/bin
-npm install
-```
-
 ## Run / Debug
 
-Use the **npm start** command in your output folder to run the Electron application.
+OpenFL provides the `test` command to launch your project using Electron.
 
 ```sh
-cd bin/electron/bin
-npm start
+openfl test electron
 ```
 
 ## Troubleshooting
 
-In the future, common error messages and their solutions will appear in this section.
+### Error on macOS says "electron: command not found"
+
+Electron is not installed globally. Run the following command to install Electron.
+
+```sh
+npm install -g electron
+```
+
+### Error on Windows says "'electron' is not recognized as an internal or external command, operable program or batch file."
+
+Electron is not installed globally. Run the following command to install Electron.
+
+```sh
+npm install -g electron
+```
 
 > ### Did you get some other error message that you don't understand?
 >
