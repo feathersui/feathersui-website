@@ -76,7 +76,25 @@ openfl test air -android -air-simulator
 
 ## Troubleshooting
 
-In the future, common error messages and their solutions will appear in this section.
+## Error on macOS says "adl: No such file or directory"
+
+The configured path to the Adobe AIR SDK may be invalid.
+
+Run the following command (replace _path/to/AIR\_SDK_ with the correct path on your computer) to re-configure the AIR SDK path.
+
+```sh
+openfl config AIR_SDK path/to/AIR_SDK
+```
+
+## Error on Windows says "The system cannot find the path specified."
+
+The configured path to the Adobe AIR SDK may be invalid.
+
+Run the following command (replace _path/to/AIR\_SDK_ with the correct path on your computer) to re-configure the AIR SDK path.
+
+```sh
+openfl config AIR_SDK path/to/AIR_SDK
+```
 
 > ### Did you get some other error message that you don't understand?
 >
