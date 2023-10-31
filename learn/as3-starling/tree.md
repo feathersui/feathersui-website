@@ -37,7 +37,7 @@ this.addChild( tree );
 Next, we want the tree to display some items, so let's create an [`ArrayHierarchicalCollection`](/api-reference/feathers/data/ArrayHierarchicalCollection.html) as its data provider. In the example below, a specially-formatted set of objects is passed to the `ArrayHierarchicalCollection`:
 
 ```actionscript
-var groceryList:ArrayHierarchicalCollection = new ArrayHierarchicalCollection(
+var treeData:ArrayHierarchicalCollection = new ArrayHierarchicalCollection(
 [
     {
         text: "Node 1",
@@ -65,7 +65,7 @@ var groceryList:ArrayHierarchicalCollection = new ArrayHierarchicalCollection(
         ]
     }
 ]);
-tree.dataProvider = groceryList;
+tree.dataProvider = treeData;
 ```
 
 `ArrayHierarchicalCollection` wraps a regular ActionScript `Array`, and it adds special events and things that the `Tree` uses to add, update, and remove item renderers in real time. The wrapped `Array` contains objects that represent items to display in the tree, which can be branches or just simple items. Each branch object has a `children` property (you can [customize this property name](/api-reference/feathers/data/ArrayChildrenHierarchicalCollectionDataDescriptor.html#childrenField), if you prefer) that contains another `Array` of the child objects in the branch. Branches may be nested any number of levels deep.
