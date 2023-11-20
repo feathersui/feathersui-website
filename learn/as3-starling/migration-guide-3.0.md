@@ -953,7 +953,7 @@ No APIs are deprecated.
 | `HorizontalLayout.VERTICAL_ALIGN_TOP`      | [`VerticalAlign.TOP`](/api-reference/feathers/layout/VerticalAlign.html#TOP)           |
 | `HorizontalLayout.VERTICAL_ALIGN_MIDDLE`   | [`VerticalAlign.MIDDLE`](/api-reference/feathers/layout/VerticalAlign.html#MIDDLE)     |
 | `HorizontalLayout.VERTICAL_ALIGN_BOTTOM`   | [`VerticalAlign.BOTTOM`](/api-reference/feathers/layout/VerticalAlign.html#BOTTOM)     |
-| `HorizontalLayout.VERTICAL_ALIGN_JUSTIFY`  | [`VerticalAlign.JUSTIFY`](/api-reference/feathers/layout/VerticalAlign.JUSTIFY#BOTTOM) |
+| `HorizontalLayout.VERTICAL_ALIGN_JUSTIFY`  | [`VerticalAlign.JUSTIFY`](/api-reference/feathers/layout/VerticalAlign.html#JUSTIFY) |
 
 ### `HorizontalSpinnerLayout`
 
@@ -962,7 +962,7 @@ No APIs are deprecated.
 | `HorizontalSpinnerLayout.VERTICAL_ALIGN_TOP`     | [`VerticalAlign.TOP`](/api-reference/feathers/layout/VerticalAlign.html#TOP)           |
 | `HorizontalSpinnerLayout.VERTICAL_ALIGN_MIDDLE`  | [`VerticalAlign.MIDDLE`](/api-reference/feathers/layout/VerticalAlign.html#MIDDLE)     |
 | `HorizontalSpinnerLayout.VERTICAL_ALIGN_BOTTOM`  | [`VerticalAlign.BOTTOM`](/api-reference/feathers/layout/VerticalAlign.html#BOTTOM)     |
-| `HorizontalSpinnerLayout.VERTICAL_ALIGN_JUSTIFY` | [`VerticalAlign.JUSTIFY`](/api-reference/feathers/layout/VerticalAlign.JUSTIFY#BOTTOM) |
+| `HorizontalSpinnerLayout.VERTICAL_ALIGN_JUSTIFY` | [`VerticalAlign.JUSTIFY`](/api-reference/feathers/layout/VerticalAlign.html#JUSTIFY) |
 
 ### `TiledColumnsLayout`
 
