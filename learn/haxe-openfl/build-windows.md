@@ -47,7 +47,15 @@ openfl test windows
 
 ## Troubleshooting
 
-In the future, common error messages and their solutions will appear in this section.
+## App executable crashes without exception, and a try/catch around the line where it happens has no effect when targeting C++ for Windows, macOS, or Linux
+
+Haxe's _cpp_ target is stricter than other Haxe targets when you try to access a field or method on a `null` value. Instead of throwing an exception, a Haxe C++ app immediately crashes — with no way to recover, not even with [try/catch](https://haxe.org/manual/expression-try-catch.html). However, it is possible to enable a flag to force Haxe's C++ target to behave more like other targets. Add the following define to your OpenFL _project.xml_ file, and then create a new build with the `-clean` command line option (or delete your output directory before building).
+
+```xml
+<haxedef name="HXCPP_CHECK_POINTER" />
+```
+
+Using `HXCPP_CHECK_POINTER` may add some overhead that could negatively affect performance. It may be a good idea to enable it temporarily for debugging purposes, fix the issue, and then disable it again.
 
 > ### Did you get some other error message that you don't understand?
 >

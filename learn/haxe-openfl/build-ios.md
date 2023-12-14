@@ -76,6 +76,16 @@ Run the following command in a terminal to resolve this issue.
 sudo xcode-select -s /Applications/Xcode.app/Contents/Developer
 ```
 
+## App executable crashes without exception, and a try/catch around the line where it happens has no effect when targeting C++ for Android or iOS
+
+Haxe's _cpp_ target is stricter than other Haxe targets when you try to access a field or method on a `null` value. Instead of throwing an exception, a Haxe C++ app immediately crashes — with no way to recover, not even with [try/catch](https://haxe.org/manual/expression-try-catch.html). However, it is possible to enable a flag to force Haxe's C++ target to behave more like other targets. Add the following define to your OpenFL _project.xml_ file, and then create a new build with the `-clean` command line option (or delete your output directory before building).
+
+```xml
+<haxedef name="HXCPP_CHECK_POINTER" />
+```
+
+Using `HXCPP_CHECK_POINTER` may add some overhead that could negatively affect performance. It may be a good idea to enable it temporarily for debugging purposes, fix the issue, and then disable it again.
+
 > ### Did you get some other error message that you don't understand?
 >
 > Configuring OpenFL to build for native targets, like iOS or Android, can be a little tricky! Head over to either the [Feathers UI community forum](https://community.feathersui.com/) or the [Feathers UI Discord](https://discord.feathersui.com/). Explain which command you tried to run, be sure to mention that you are targeting **ios**, and post the error message (and any additional relevant output). Ideally, we can help you figure out a solution, and then we'll also add it to this troubleshooting section, so that everyone can benefit.
