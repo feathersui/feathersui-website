@@ -4,7 +4,7 @@ layout: "docs.html"
 sidebarTitle: Introduction to OpenFL
 ---
 
-[Feathers UI](/) is powered by the [OpenFL](https://openfl.org/) library and the [Haxe](https://haxe.org/) programming language. OpenFL provides APIs for rendering, networking, user input, and more. At the core of OpenFL is [the display list](https://books.openfl.org/openfl-developers-guide/display-programming/basics-of-display-programming.html), its graphics system that can be used to draw vectors and bitmaps with the ability to intuitively group objects together in a parent-child hierarchy.
+[Feathers UI](/) is powered by the [OpenFL](https://openfl.org/) library and the [Haxe](https://haxe.org/) programming language. OpenFL provides APIs for rendering, networking, user input, and more. At the core of OpenFL is [the display list](https://books.openfl.org/openfl-developers-guide/display-programming/basics-of-display-programming.html), its graphics system that can be used to [draw vectors](https://books.openfl.org/openfl-developers-guide/using-the-drawing-api/) and bitmaps with the ability to intuitively [group objects together in a parent-child hierarchy](https://books.openfl.org/openfl-developers-guide/display-programming/working-with-display-objects/working-with-display-object-containers.html).
 
 These primitives in OpenFL are combined in Feathers UI to create a set of flexible user interface components for creative projects — whether you are building rich applications, menu screens for games, interactive data visualizations, or immersive multimedia experiences.
 
@@ -18,7 +18,7 @@ These primitives in OpenFL are combined in Feathers UI to create a set of flexib
 
 [The OpenFL display list](https://books.openfl.org/openfl-developers-guide/display-programming/basics-of-display-programming.html) provides a number of [primitive _display objects_](https://books.openfl.org/openfl-developers-guide/display-programming/core-display-classes.html) for rendering graphics.
 
-One of these core primitives is the [`openfl.display.Sprite`](https://api.openfl.org/openfl/display/Sprite.html) class, which provides vector drawing capabilities — plus the ability to behave as a container where you may add other display objects as children.
+One of these core primitives is the [`openfl.display.Sprite`](https://api.openfl.org/openfl/display/Sprite.html) class, which provides [vector drawing](https://books.openfl.org/openfl-developers-guide/using-the-drawing-api/) capabilities — plus the ability to behave as a container where you may add other display objects as children.
 
 ```haxe
 var sprite = new Sprite();
@@ -32,7 +32,7 @@ addChild(sprite);
 
 The code above [draws a red rectangle](https://books.openfl.org/openfl-developers-guide/using-the-drawing-api/drawing-shapes-using-built-in-methods.html), [changes its position](https://books.openfl.org/openfl-developers-guide/display-programming/manipulating-display-objects/changing-position.html), and [adds it as a child](https://books.openfl.org/openfl-developers-guide/display-programming/working-with-display-objects/working-with-display-object-containers.html) on the display list.
 
-Another primitive offered by OpenFL is the [`openfl.text.TextField`](https://api.openfl.org/openfl/text/TextField.html) class, which is used for rendering text.
+Another primitive offered by OpenFL is the [`openfl.text.TextField`](https://api.openfl.org/openfl/text/TextField.html) class, which is used for [rendering text](https://books.openfl.org/openfl-developers-guide/using-the-textfield-class/displaying-text.html).
 
 ```haxe
 var textField = new TextField();
@@ -52,7 +52,7 @@ OpenFL dispatches events for user input from a variety of sources, including key
 
 ### Keyboard
 
-To listen for keyboard events globally, [add an event listener](https://books.openfl.org/openfl-developers-guide/handling-events/basics-of-handling-events.html) for [`openfl.events.KeyboardEvent.KEY_DOWN`](https://api.openfl.org/openfl/events/KeyboardEvent.html#KEY_DOWN) to the OpenFL [`Stage`](https://api.openfl.org/openfl/display/Stage.html) object.
+To listen for [keyboard events](https://books.openfl.org/openfl-developers-guide/keyboard-input/capturing-keyboard-input.html) globally, [add an event listener](https://books.openfl.org/openfl-developers-guide/handling-events/basics-of-handling-events.html) for [`openfl.events.KeyboardEvent.KEY_DOWN`](https://api.openfl.org/openfl/events/KeyboardEvent.html#KEY_DOWN) to the OpenFL [`Stage`](https://api.openfl.org/openfl/display/Stage.html) object.
 
 ```haxe
 stage.addEventListener(KeyboardEvent.KEY_DOWN, (event:KeyboardEvent) -> {
@@ -77,7 +77,7 @@ In many cases, a listener is also added for [`openfl.events.KeyboardEvent.KEY_UP
 
 ### Mouse
 
-To react when the user clicks a display object with the mouse, [add an event listener](https://books.openfl.org/openfl-developers-guide/handling-events/basics-of-handling-events.html) for [`openfl.events.MouseEvent.CLICK`](https://api.openfl.org/openfl/events/MouseEvent.html#CLICK).
+To react when the user [clicks a display object](https://books.openfl.org/openfl-developers-guide/mouse-input/capturing-mouse-input.html) with the mouse, [add an event listener](https://books.openfl.org/openfl-developers-guide/handling-events/basics-of-handling-events.html) for [`openfl.events.MouseEvent.CLICK`](https://api.openfl.org/openfl/events/MouseEvent.html#CLICK).
 
 ```haxe
 sprite.addEventListener(MouseEvent.CLICK, (event:MouseEvent) -> {
@@ -96,7 +96,7 @@ Several more commonly-used mouse events offer real-time access to the mouse posi
 
 ### Touch
 
-To run some code when the user taps a display object on a mobile device's touchscreen, [add an event listener](https://books.openfl.org/openfl-developers-guide/handling-events/basics-of-handling-events.html) for [`openfl.events.TouchEvent.TOUCH_TAP`](https://api.openfl.org/openfl/events/TouchEvent.html#TOUCH_TAP).
+To run some code when the user [taps a display object](https://books.openfl.org/openfl-developers-guide/touch-multitouch-and-gesture-input/touch-event-handling.html) on a mobile device's touchscreen, [add an event listener](https://books.openfl.org/openfl-developers-guide/handling-events/basics-of-handling-events.html) for [`openfl.events.TouchEvent.TOUCH_TAP`](https://api.openfl.org/openfl/events/TouchEvent.html#TOUCH_TAP).
 
 ```haxe
 sprite.addEventListener(TouchEvent.TOUCH_TAP, (event:TouchEvent) -> {
@@ -114,7 +114,7 @@ These events might be used to drag objects around or to create multitouch gestur
 
 ## Networking
 
-One way that OpenFL provides to load data over the network is the [`openfl.net.URLLoader`](https://api.openfl.org/openfl/net/URLLoader.html) class, which can parse the returned data in multiple formats — including plaintext or binary.
+One way that OpenFL provides to [load data over the network](https://books.openfl.org/openfl-developers-guide/http-communications/loading-external-data.html) is the [`openfl.net.URLLoader`](https://api.openfl.org/openfl/net/URLLoader.html) class, which can parse the returned data in multiple formats — including plaintext or binary.
 
 ```haxe
 var loader = new URLLoader();
