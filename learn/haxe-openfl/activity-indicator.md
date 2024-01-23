@@ -25,7 +25,7 @@ addChild(activity);
 To customize the duration (in seconds) of the activity indicator's animation, set the [`indeterminateDuration`](https://api.feathersui.com/current/feathers/controls/ActivityIndicator.html#indeterminateDuration) property.
 
 ```haxe
-activity.duration = 1.0;
+activity.indeterminateDuration = 1.0;
 ```
 
 ## Styles
