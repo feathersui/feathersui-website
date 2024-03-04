@@ -15,8 +15,8 @@ sidebarTitle: Installation
 Click the button below to download the latest version of Feathers UI for ActionScript 3 and Starling:
 
 <div class="alignCenter">
-  <div class="buttonWrapper">
-    <a class="button" href="https://github.com/feathersui/feathersui-starling/releases/download/v4.1.1/feathers-ui-4.1.1.zip" onClick="_gaq.push(['_trackEvent', 'Downloads', 'Build', '4.1.1']);">Download Feathers 4.1.1</a>
+  <div class="btn-wrapper">
+    <a class="btn" href="https://github.com/feathersui/feathersui-starling/releases/download/v4.1.1/feathers-ui-4.1.1.zip" onClick="_gaq.push(['_trackEvent', 'Downloads', 'Build', '4.1.1']);">Download Feathers 4.1.1</a>
   </div>
 </div>
 

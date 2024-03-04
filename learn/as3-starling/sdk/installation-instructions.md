@@ -10,12 +10,12 @@ The Feathers SDK may be installed using the **Feathers SDK Manager**, an app des
 
 1. Download the installer for the Feathers SDK Manager for either Windows or macOS.
 
-  <div class="alignCenter">
-    <div class="pluginWrapper buttonWrapper">
-      <a class="button" href="https://github.com/feathersui/feathersui-starling-sdk-manager/releases/download/v1.2.3/FeathersSDKManagerInstaller-1.2.3.exe" onClick="_gaq.push(['_trackEvent', 'Downloads', 'SDKManagerWin', '1.2.3']);">Download Windows</a>
-      <a class="button" href="https://github.com/feathersui/feathersui-starling-sdk-manager/releases/download/v1.2.3/FeathersSDKManagerInstaller-1.2.3.pkg" onClick="_gaq.push(['_trackEvent', 'Downloads', 'SDKManagerMac', '1.2.3']);">Download macOS</a>
+    <div class="alignCenter">
+      <div class="btn-wrapper">
+        <a class="btn" href="https://github.com/feathersui/feathersui-starling-sdk-manager/releases/download/v1.2.3/FeathersSDKManagerInstaller-1.2.3.exe" onClick="_gaq.push(['_trackEvent', 'Downloads', 'SDKManagerWin', '1.2.3']);">Download Windows</a>
+        <a class="btn" href="https://github.com/feathersui/feathersui-starling-sdk-manager/releases/download/v1.2.3/FeathersSDKManagerInstaller-1.2.3.pkg" onClick="_gaq.push(['_trackEvent', 'Downloads', 'SDKManagerMac', '1.2.3']);">Download macOS</a>
+      </div>
     </div>
-  </div>
 
 2. Run the installer and follow the steps in the wizard.
 
