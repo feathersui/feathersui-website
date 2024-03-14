@@ -76,7 +76,7 @@ The decrement and increment buttons in a [`NumericStepper`](https://api.feathers
 
 > See [How to use the `Button` component](./button.md#styles) for complete details about which styles are available for the button.
 
-#### Style the decement and increment buttons globally
+#### Style the decrement and increment buttons globally
 
 Use the [`NumericStepper.CHILD_VARIANT_DECREMENT_BUTTON`](https://api.feathersui.com/current/feathers/controls/NumericStepper.html#CHILD_VARIANT_DECREMENT_BUTTON) and [`NumericStepper.CHILD_VARIANT_INCREMENT_BUTTON`](https://api.feathersui.com/current/feathers/controls/NumericStepper.html#CHILD_VARIANT_INCREMENT_BUTTON) constants in a [theme](./themes.md) to provide a function that globally styles the buttons in all [`NumericStepper`](https://api.feathersui.com/current/feathers/controls/NumericStepper.html) components.
 
