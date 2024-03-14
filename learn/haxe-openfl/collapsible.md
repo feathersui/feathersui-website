@@ -13,6 +13,8 @@ The [`Collapsible`](https://api.feathersui.com/unstable/feathers/controls/Collap
 </figure>
 -->
 
+> ⚠️ **Beta Notice**: This component is still quite new to Feathers UI. It was included in the latest release because it should be stable enough for production use. However, some APIs may go through minor changes in upcoming releases — based on feedback from developers like you. [Learn more about Beta APIs.](./semver.md#beta-apis)
+
 ## The Basics
 
 Start by creating a [`Collapsible`](https://api.feathersui.com/unstable/feathers/controls/Collapsible.html) control, giving it some text to display in the header, and add it to the [the display list](https://books.openfl.org/openfl-developers-guide/display-programming/basics-of-display-programming.html).
