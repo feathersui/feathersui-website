@@ -15,7 +15,7 @@ You can add this _.swc_ file to the compiler's **library path**, and the Feather
 If using the command line compiler, you'd use the `--library-path` compiler option:
 
 ```sh
-mxmlc --library-path+=libs/feathersui-openfl-x.y.z.swc
+mxmlc --library-path+=libs/feathersui-openfl-x.y.z.swc src/MyProject.as
 ```
 
 In the various IDEs that support AS3, you can typically add _.swc_ libraries somewhere in your project or module settings.
