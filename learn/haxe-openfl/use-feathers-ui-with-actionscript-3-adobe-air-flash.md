@@ -4,7 +4,7 @@ sidebarTitle: Use with ActionScript 3.0
 layout: "docs.html"
 ---
 
-While Feathers UI is written in the [Haxe programming language](https://haxe.org) and targets [OpenFL](https://openfl.org/), it can be used with [ActionScript 3.0](https://airsdk.dev/docs/development) instead, if you prefer. This allows Feathers UI to be integrated in to AS3 projects that target [Adobe AIR](https://airsdk.dev).
+While Feathers UI is written in the [Haxe programming language](https://haxe.org) and targets [OpenFL](https://openfl.org/), it can be used with [ActionScript 3.0](https://airsdk.dev/docs/development) instead, if you prefer. This allows Feathers UI to be integrated with AS3 projects that target [Adobe AIR](https://airsdk.dev).
 
 ## Installation
 
