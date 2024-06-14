@@ -56,10 +56,12 @@ The [Feathers UI blog](https://feathersui.com/blog/) is the official source for 
 
 You can also follow [Feathers UI on social media](/social-media/) to keep track of the latest updates, and maybe some fun extras.
 
-- [@feathersui on Twitter](https://twitter.com/feathersui)
 - [@feathersui@fosstodon.org on Mastodon](https://fosstodon.org/@feathersui)
+- [@feathersui on Twitter](https://twitter.com/feathersui)
 
-Finally, if you want to dive into the nitty-gritty details of every bug fix in the newest release, check out the [_CHANGELOG.md_ file](https://github.com/feathersui/feathersui-openfl/blob/master/CHANGELOG.md).
+If you want to dive into the nitty-gritty details of every feature and bug fix in the newest release (and all past releases), check out the [_CHANGELOG.md_ file](https://github.com/feathersui/feathersui-openfl/blob/master/CHANGELOG.md) on GitHub.
+
+Finally, if you're curious about what's planned for the next release, check out the [Feathers UI Roadmap](/learn/haxe-openfl/roadmap).
 
 ## Need extra, in-depth help?
 

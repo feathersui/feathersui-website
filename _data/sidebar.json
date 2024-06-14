@@ -122,7 +122,8 @@
       "cookbook/index",
       "use-feathers-ui-with-actionscript-3-adobe-air-flash",
       "use-feathers-ui-with-javascript",
-      "prerelease"
+      "prerelease",
+      "roadmap"
     ]
   },
   "learn/screencasts": {
