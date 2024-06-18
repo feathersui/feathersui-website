@@ -9,7 +9,7 @@ layout: "article.html"
 {% for item in showcase %}
 <div class="showcase-item">
   <div class="showcase-item-img">
-    {% if item.webLink %}<a href="{{item.webLink}}">{% elsif item.videoLink %}<a href="{{item.videoLink}}">{% endif %}<img src="{{item.image}}">{% if item.videoLink || item.webLink %}</a>{% endif %}
+    {% if item.webLink %}<a href="{{item.webLink}}">{% elsif item.videoLink %}<a href="{{item.videoLink}}">{% endif %}<img src="{{item.image}}">{% if item.videoLink or item.webLink %}</a>{% endif %}
   </div>
   <h2>{{item.title}}</h2>
   <p>{{item.content}}</p>
