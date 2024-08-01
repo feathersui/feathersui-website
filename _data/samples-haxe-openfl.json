@@ -3,7 +3,7 @@
     "title": "Calculator",
     "image": "/samples/haxe-openfl/img/calculator.png",
     "demoLink": "/samples/haxe-openfl/calculator/",
-    "codeLink": "https://github.com/feathersui/feathersui-openfl/tree/v1.2.0/samples/calculator/",
+    "codeLink": "https://github.com/feathersui/feathersui-openfl/tree/v1.3.0/samples/calculator/",
     "content": "A sample calculator application.",
     "app": true
   },
@@ -11,7 +11,7 @@
     "title": "HN Reader",
     "image": "/samples/haxe-openfl/img/hn-reader.png",
     "demoLink": "/samples/haxe-openfl/hn-reader/",
-    "codeLink": "https://github.com/feathersui/feathersui-openfl/tree/v1.2.0/samples/hn-reader/",
+    "codeLink": "https://github.com/feathersui/feathersui-openfl/tree/v1.3.0/samples/hn-reader/",
     "content": "A sample application that demonstrates the <code>RouterNavigator</code> component by displaying Hacker News feeds.",
     "app": true
   },
@@ -19,7 +19,7 @@
     "title": "TodoMVC",
     "image": "/samples/haxe-openfl/img/todomvc.png",
     "demoLink": "/samples/haxe-openfl/todomvc/",
-    "codeLink": "https://github.com/feathersui/feathersui-openfl/tree/v1.2.0/samples/todomvc/",
+    "codeLink": "https://github.com/feathersui/feathersui-openfl/tree/v1.3.0/samples/todomvc/",
     "content": "A sample application that recreates the iconic <a href=\"https://todomvc.com/\"/>TodoMVC</a> project.",
     "app": true
   },
@@ -27,91 +27,91 @@
     "title": "Animated Tween Skin",
     "image": "/samples/haxe-openfl/img/animated-tween-skin.png",
     "demoLink": "/samples/haxe-openfl/animated-tween-skin/",
-    "codeLink": "https://github.com/feathersui/feathersui-openfl/tree/v1.2.0/samples/animated-tween-skin/",
+    "codeLink": "https://github.com/feathersui/feathersui-openfl/tree/v1.3.0/samples/animated-tween-skin/",
     "content": "Create a custom skin for a button that includes an animated effect."
   },
   {
     "title": "Collection Sorting",
     "image": "/samples/haxe-openfl/img/list-view-data-provider-collection-sorting.png",
     "demoLink": "/samples/haxe-openfl/list-view-data-provider-collection-sorting/",
-    "codeLink": "https://github.com/feathersui/feathersui-openfl/tree/v1.2.0/samples/list-view-data-provider-collection-sorting/",
+    "codeLink": "https://github.com/feathersui/feathersui-openfl/tree/v1.3.0/samples/list-view-data-provider-collection-sorting/",
     "content": "Sort the items in a collection rendered by the Feathers UI <code>ListView</code> component."
   },
   {
     "title": "Components Explorer",
     "image": "/samples/haxe-openfl/img/components-explorer.png",
     "demoLink": "/samples/haxe-openfl/components-explorer/",
-    "codeLink": "https://github.com/feathersui/feathersui-openfl/tree/v1.2.0/samples/components-explorer/",
+    "codeLink": "https://github.com/feathersui/feathersui-openfl/tree/v1.3.0/samples/components-explorer/",
     "content": "A listing of all of the UI components available in Feathers UI."
   },
   {
     "title": "Custom Programmatic Skin",
     "image": "/samples/haxe-openfl/img/custom-programmatic-skin.png",
     "demoLink": "/samples/haxe-openfl/custom-programmatic-skin/",
-    "codeLink": "https://github.com/feathersui/feathersui-openfl/tree/v1.2.0/samples/custom-programmatic-skin/",
+    "codeLink": "https://github.com/feathersui/feathersui-openfl/tree/v1.3.0/samples/custom-programmatic-skin/",
     "content": "Use code to draw a custom background skin."
   },
   {
     "title": "Custom Programmatic Skin with States",
     "image": "/samples/haxe-openfl/img/custom-programmatic-skin-with-states.png",
     "demoLink": "/samples/haxe-openfl/custom-programmatic-skin-with-states/",
-    "codeLink": "https://github.com/feathersui/feathersui-openfl/tree/v1.2.0/samples/custom-programmatic-skin-with-states/",
+    "codeLink": "https://github.com/feathersui/feathersui-openfl/tree/v1.3.0/samples/custom-programmatic-skin-with-states/",
     "content": "Create a custom button skin that changes appearance when the mouse is over or down."
   },
   {
     "title": "Custom Theme",
     "image": "/samples/haxe-openfl/img/custom-theme.png",
     "demoLink": "/samples/haxe-openfl/custom-theme/",
-    "codeLink": "https://github.com/feathersui/feathersui-openfl/tree/v1.2.0/samples/custom-theme/",
+    "codeLink": "https://github.com/feathersui/feathersui-openfl/tree/v1.3.0/samples/custom-theme/",
     "content": "An example of how to create a custom theme that gives custom styles to Feathers UI components."
   },
   {
     "title": "Dark Mode",
     "image": "/samples/haxe-openfl/img/dark-mode.png",
     "demoLink": "/samples/haxe-openfl/dark-mode/",
-    "codeLink": "https://github.com/feathersui/feathersui-openfl/tree/v1.2.0/samples/dark-mode/",
+    "codeLink": "https://github.com/feathersui/feathersui-openfl/tree/v1.3.0/samples/dark-mode/",
     "content": "Easily switch between light and dark mode with the default theme."
   },
   {
     "title": "Hello world",
     "image": "/samples/haxe-openfl/img/hello-world.png",
     "demoLink": "/samples/haxe-openfl/hello-world/",
-    "codeLink": "https://github.com/feathersui/feathersui-openfl/tree/v1.2.0/samples/hello-world/",
+    "codeLink": "https://github.com/feathersui/feathersui-openfl/tree/v1.3.0/samples/hello-world/",
     "content": "Every project needs a \"Hello World\" to get you started!"
   },
   {
     "title": "Login Form",
     "image": "/samples/haxe-openfl/img/login-form.png",
     "demoLink": "/samples/haxe-openfl/login-form/",
-    "codeLink": "https://github.com/feathersui/feathersui-openfl/tree/v1.2.0/samples/login-form/",
+    "codeLink": "https://github.com/feathersui/feathersui-openfl/tree/v1.3.0/samples/login-form/",
     "content": "Creates a simple login form with the Feathers UI <code>TextInput</code> component."
   },
   {
     "title": "NumericStepper Button Layouts",
     "image": "/samples/haxe-openfl/img/numeric-stepper-button-layouts.png",
     "demoLink": "/samples/haxe-openfl/numeric-stepper-button-layouts/",
-    "codeLink": "https://github.com/feathersui/feathersui-openfl/tree/v1.2.0/samples/numeric-stepper-button-layouts/",
+    "codeLink": "https://github.com/feathersui/feathersui-openfl/tree/v1.3.0/samples/numeric-stepper-button-layouts/",
     "content": "All of the different ways the buttons may be positioned inside a <code>NumericStepper</code> component."
   },
   {
     "title": "Percentage Sizing",
     "image": "/samples/haxe-openfl/img/horizontal-layout-percentage-sizing.png",
     "demoLink": "/samples/haxe-openfl/horizontal-layout-percentage-sizing/",
-    "codeLink": "https://github.com/feathersui/feathersui-openfl/tree/v1.2.0/samples/horizontal-layout-percentage-sizing/",
+    "codeLink": "https://github.com/feathersui/feathersui-openfl/tree/v1.3.0/samples/horizontal-layout-percentage-sizing/",
     "content": "Demonstrates how layouts support sizing UI component based on a percentage of their parent's size."
   },
   {
     "title": "RouterNavigator Data Passing",
     "image": "/samples/haxe-openfl/img/router-navigator-pass-data-between-views.png",
     "demoLink": "/samples/haxe-openfl/router-navigator-pass-data-between-views/",
-    "codeLink": "https://github.com/feathersui/feathersui-openfl/tree/v1.2.0/samples/router-navigator-pass-data-between-views/",
+    "codeLink": "https://github.com/feathersui/feathersui-openfl/tree/v1.3.0/samples/router-navigator-pass-data-between-views/",
     "content": "When navigating between views in a <code>RouterNavigator</code> component, data may be passed from view to view."
   },
   {
     "title": "StackNavigator Data Passing",
     "image": "/samples/haxe-openfl/img/stack-navigator-pass-data-between-views.png",
     "demoLink": "/samples/haxe-openfl/stack-navigator-pass-data-between-views/",
-    "codeLink": "https://github.com/feathersui/feathersui-openfl/tree/v1.2.0/samples/stack-navigator-pass-data-between-views/",
+    "codeLink": "https://github.com/feathersui/feathersui-openfl/tree/v1.3.0/samples/stack-navigator-pass-data-between-views/",
     "content": "When navigating between views in a <code>StackNavigator</code> component, data may be passed forward or back."
   }
 ]

@@ -299,5 +299,5 @@ The [`updateState()`](https://api.feathersui.com/current/feathers/controls/navig
 - [HTML History API](https://developer.mozilla.org/en-US/docs/Web/API/History_API)
 - [Animated transitions for view navigators](./navigator-transitions.md)
 - [Custom transitions for view navigators](./custom-navigator-transitions.md)
-- [Sample: RouterNavigator Data Passing Between Views](https://github.com/feathersui/feathersui-openfl/tree/v1.2.0/samples/router-navigator-pass-data-between-views/)
-- [Sample: RouterNavigator Save and Restore Data](https://github.com/feathersui/feathersui-openfl/tree/v1.2.0/samples/router-navigator-save-and-restore/)
+- [Sample: RouterNavigator Data Passing Between Views](https://github.com/feathersui/feathersui-openfl/tree/v1.3.0/samples/router-navigator-pass-data-between-views/)
+- [Sample: RouterNavigator Save and Restore Data](https://github.com/feathersui/feathersui-openfl/tree/v1.3.0/samples/router-navigator-save-and-restore/)

@@ -41,6 +41,7 @@
       "button-bar",
       "callout",
       "check",
+      "collapsible",
       "combo-box",
       "date-picker",
       "divided-box",
@@ -114,6 +115,7 @@
     "Miscellaneous": [
       "cli",
       "data-collections",
+      "drag-and-drop",
       "focus",
       "haxedef-options",
       "pop-ups",

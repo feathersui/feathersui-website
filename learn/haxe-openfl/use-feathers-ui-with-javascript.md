@@ -24,9 +24,9 @@ npm install feathersui-openfl
 If you prefer, you can load Feathers UI and OpenFL directly from the [unpkg CDN](https://unpkg.com/) in any HTML file.
 
 ```html
-<script src="https://unpkg.com/openfl@8.9.6/dist/openfl.min.js"></script>
-<script src="https://unpkg.com/actuate@1.8.9-beta/dist/actuate.min.js"></script>
-<script src="https://unpkg.com/feathersui-openfl@1.2.0/dist/feathersui-openfl.min.js"></script>
+<script src="https://unpkg.com/openfl@9.3.4/dist/openfl.min.js"></script>
+<script src="https://unpkg.com/actuate@1.9.0/dist/actuate.min.js"></script>
+<script src="https://unpkg.com/feathersui-openfl@1.3.0/dist/feathersui-openfl.min.js"></script>
 ```
 
 The following sample code demonstrates a simple Hello World project:

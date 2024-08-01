@@ -129,4 +129,4 @@ button.variant = CustomTheme.VARIANT_FANCY_BUTTON;
 ## Related Links
 
 - [Introduction to Feathers UI themes](./themes.md)
-- [Sample: Custom Theme](https://github.com/feathersui/feathersui-openfl/tree/v1.2.0/samples/custom-theme/)
+- [Sample: Custom Theme](https://github.com/feathersui/feathersui-openfl/tree/v1.3.0/samples/custom-theme/)

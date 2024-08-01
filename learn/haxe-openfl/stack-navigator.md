@@ -347,5 +347,5 @@ StackItem.withClass(ComposeMessageView.ID, ComposeMessageView, [
 - [`feathers.controls.navigators.StackNavigator` API Documentation](https://api.feathersui.com/current/feathers/controls/navigators/StackNavigator.html)
 - [Animated transitions for view navigators](./navigator-transitions.md)
 - [Custom transitions for view navigators](./custom-navigator-transitions.md)
-- [Sample: StackNavigator Data Passing Between Views](https://github.com/feathersui/feathersui-openfl/tree/v1.2.0/samples/stack-navigator-pass-data-between-views/)
-- [Sample: StackNavigator Save and Restore Data](https://github.com/feathersui/feathersui-openfl/tree/v1.2.0/samples/stack-navigator-save-and-restore/)
+- [Sample: StackNavigator Data Passing Between Views](https://github.com/feathersui/feathersui-openfl/tree/v1.3.0/samples/stack-navigator-pass-data-between-views/)
+- [Sample: StackNavigator Save and Restore Data](https://github.com/feathersui/feathersui-openfl/tree/v1.3.0/samples/stack-navigator-save-and-restore/)

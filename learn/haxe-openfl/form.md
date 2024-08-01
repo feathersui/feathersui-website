@@ -183,4 +183,4 @@ formItem.verticalAlign = MIDDLE;
 - [`feathers.controls.Form` API Reference](https://api.feathersui.com/current/feathers/controls/Form.html)
 - [`feathers.controls.FormItem` API Reference](https://api.feathersui.com/current/feathers/controls/FormItem.html)
 - [How to use the `FormLayout` layout](./form-layout.md)
-- [Sample: Login Form](https://github.com/feathersui/feathersui-openfl/tree/v1.2.0/samples/login-form/)
+- [Sample: Login Form](https://github.com/feathersui/feathersui-openfl/tree/v1.3.0/samples/login-form/)

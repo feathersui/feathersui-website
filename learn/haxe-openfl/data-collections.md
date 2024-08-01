@@ -34,4 +34,4 @@ Feathers UI provides the following implementations of a hierarchical collection 
 
 ## Related Links
 
-- [Sample: Collection Sorting](https://github.com/feathersui/feathersui-openfl/tree/v1.2.0/samples/list-view-data-provider-collection-sorting/)
+- [Sample: Collection Sorting](https://github.com/feathersui/feathersui-openfl/tree/v1.3.0/samples/list-view-data-provider-collection-sorting/)

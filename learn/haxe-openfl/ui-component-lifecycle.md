@@ -117,6 +117,14 @@ The process of 1) invalidation, 2) update, and 3) rendering will repeat indefini
 
 When a UI component is removed from the display list, it will no longer update automatically. Any additional property changes will be stored, but they will not be committed unless the UI component is added to the display list again.
 
+## Disposal
+
+All UI components have a [`dispose()`](https://api.feathersui.com/current/feathers/core/IUIControl.html#dispose) function that may be used to clean things up when a UI component will no longer be used in the app anymore. Disposal can perform actions like clearing data providers, removing and disposing children, unloading assets, and removing event listeners.
+
+Disposal is considered optional, but should be considered a good practice as part of maintaining a well-optimized codebase. The garbage collector can certainly handle an undisposed UI component with no more references in other code. However, disposing it may make the GC's job a bit easier and faster, with fewer strong references to traverse.
+
+Once a UI component is disposed, it should not be added to the display list again or validated again. This may result in runtime exceptions or undefined behavior. Additionally, disposed components may be completely unresponsive to user interaction, such as mouse, touch, or keyboard.
+
 ## Garbage collection
 
 After all references to the UI component instance have been removed (for instance, by setting variables to `null`), it becomes eligible for garbage collection. The component's lifecycle has completed.
