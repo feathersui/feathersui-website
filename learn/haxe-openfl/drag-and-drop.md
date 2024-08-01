@@ -22,7 +22,7 @@ listView.dropEnabled = true;
 listView.removeOnDragDropComplete = true;
 ```
 
-> See the [`list-view-drag-and-drop` sample](https://github.com/feathersui/feathersui-openfl/tree/v1.3.0/samples/list-view-drag-and-drop) for a demonstration of how to enable drag-and-drop in a [`ListView`](./list-view.md) component.
+> See the [`list-view-drag-and-drop` sample](https://github.com/feathersui/feathersui-openfl/tree/v{% include "feathersui-openfl-version.html" %}/samples/list-view-drag-and-drop) for a demonstration of how to enable drag-and-drop in a [`ListView`](./list-view.md) component.
 
 ## Custom drag and drop
 
@@ -70,7 +70,7 @@ The [`IDragSource`](https://api.feathersui.com/current/feathers/dragDrop/IDragSo
 
 - [`DragDropEvent.DRAG_COMPLETE`](https://api.feathersui.com/current/feathers/events/DragDropEvent.html#DRAG_COMPLETE) is dispatched either when the data is dropped, or when the drag gesture is cancelled without being accepted.
 
-> See the [`drag-and-drop` sample](https://github.com/feathersui/feathersui-openfl/tree/v1.3.0/samples/drag-and-drop) for a demonstration of how to enable drag-and-drop in a [custom UI component](./custom-ui-components.md).
+> See the [`drag-and-drop` sample](https://github.com/feathersui/feathersui-openfl/tree/v{% include "feathersui-openfl-version.html" %}/samples/drag-and-drop) for a demonstration of how to enable drag-and-drop in a [custom UI component](./custom-ui-components.md).
 
 ## Layout support for drag and drop
 
@@ -83,5 +83,5 @@ If a layout implements the [`IDragDropLayout`](https://api.feathersui.com/curren
 ## Related Links
 
 - [`feathers.dragDrop.DragDropManager` API Documentation](https://api.feathersui.com/current/feathers/dragDrop/DragDropManager.html)
-- [Sample: `ListView` Drag and Drop](https://github.com/feathersui/feathersui-openfl/tree/v1.3.0/samples/list-view-drag-and-drop)
-- [Sample: Custom Drag and Drop](https://github.com/feathersui/feathersui-openfl/tree/v1.3.0/samples/drag-and-drop)
+- [Sample: `ListView` Drag and Drop](https://github.com/feathersui/feathersui-openfl/tree/v{% include "feathersui-openfl-version.html" %}/samples/list-view-drag-and-drop)
+- [Sample: Custom Drag and Drop](https://github.com/feathersui/feathersui-openfl/tree/v{% include "feathersui-openfl-version.html" %}/samples/drag-and-drop)

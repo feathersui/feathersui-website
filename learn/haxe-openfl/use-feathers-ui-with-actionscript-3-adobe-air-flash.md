@@ -8,7 +8,7 @@ While Feathers UI is written in the [Haxe programming language](https://haxe.org
 
 ## Installation
 
-Visit the [Feathers UI releases](https://github.com/feathersui/feathersui-openfl/releases) page on GitHub, and look for the _.swc_ file attached to the version of Feathers UI that you want to use. The file name should be in the format _feathersui-openfl-x.y.z.swc_ where _x.y.z_ is replaced by the version number, such as _1.3.0_.
+Visit the [Feathers UI releases](https://github.com/feathersui/feathersui-openfl/releases) page on GitHub, and look for the _.swc_ file attached to the version of Feathers UI that you want to use. The file name should be in the format _feathersui-openfl-x.y.z.swc_ where _x.y.z_ is replaced by the version number, such as _{% include "feathersui-openfl-version.html" %}_.
 
 You can add this _.swc_ file to the compiler's **library path**, and the Feathers UI classes will be available in your project.
 

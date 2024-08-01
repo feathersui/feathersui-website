@@ -291,3 +291,5 @@ listView.scrollBarYFactory = () -> {
 
 - [`feathers.controls.ListView` API Documentation](https://api.feathersui.com/current/feathers/controls/ListView.html)
 - [Create custom item renderers for data containers](./custom-item-renderers.md)
+- [Sample: ListView Data Provider Collection Sorting](https://github.com/feathersui/feathersui-openfl/tree/v{% include "feathersui-openfl-version.html" %}/samples/list-view-data-provider-collection-sorting/)
+- [Sample: ListView Drag-and-drop](https://github.com/feathersui/feathersui-openfl/tree/v{% include "feathersui-openfl-version.html" %}/samples/list-view-drag-and-drop/)
