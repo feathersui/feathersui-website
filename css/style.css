@@ -129,6 +129,11 @@ figure {
   margin: 0;
 }
 
+figcaption {
+  text-align: center;
+  font-size: 0.85rem;
+}
+
 iframe {
   border: none;
 }
