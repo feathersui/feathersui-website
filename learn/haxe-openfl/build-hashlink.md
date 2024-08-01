@@ -2,6 +2,8 @@
 title: Build a Feathers UI project as a HashLink VM desktop app
 layout: "docs.html"
 sidebarTitle: HashLink VM
+ogDescription: "Build for Windows, macOS, and Linux with Haxe and HashLink"
+ogImageURL: /img/feathersui-hashlink-og.png
 ---
 
 [Feathers UI](/) may be used to build desktop applications targeting the [HashLink](https://hashlink.haxe.org) virtual machine.

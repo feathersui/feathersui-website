@@ -2,6 +2,8 @@
 title: Build a Feathers UI project as a macOS app
 layout: "docs.html"
 sidebarTitle: macOS
+ogDescription: "Native macOS C++ desktop app with Haxe and Feathers UI"
+ogImageURL: /img/feathersui-macos-og.png
 ---
 
 [Feathers UI](/) may be used to build desktop applications targeting Apple's macOS operating system.

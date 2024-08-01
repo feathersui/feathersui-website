@@ -2,6 +2,8 @@
 title: Create a Feathers UI project in Visual Studio Code
 layout: "docs.html"
 sidebarTitle: Visual Studio Code
+ogDescription: "Start by opening the Command Palette in VSCode…"
+ogImageURL: /img/feathersui-vscode-og.png
 ---
 
 With a few free extensions, [Visual Studio Code](https://code.visualstudio.com/) may be configured as a fully-featured development environment for [Feathers UI](/) projects built with [Haxe](https://haxe.org/) and [OpenFL](https://openfl.org/).

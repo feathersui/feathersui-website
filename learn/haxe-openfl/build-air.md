@@ -2,6 +2,8 @@
 title: Build a Feathers UI project as an Adobe AIR mobile or desktop app
 layout: "docs.html"
 sidebarTitle: Adobe AIR
+ogDescription: "Build for Android, iOS, Windows, and macOS with Haxe and the Adobe AIR SDK"
+ogImageURL: /img/feathersui-adobe-air-og.png
 ---
 
 [Feathers UI](/) may be used to build mobile and desktop applications targeting the [Adobe AIR](https://airsdk.dev) runtime, maintained by [HARMAN](https://airsdk.harman.com/).

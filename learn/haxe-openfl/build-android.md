@@ -2,6 +2,8 @@
 title: Build a Feathers UI project as an Android app
 layout: "docs.html"
 sidebarTitle: Android
+ogDescription: "Native Android C++ mobile app with Haxe and Feathers UI"
+ogImageURL: /img/feathersui-android-og.png
 ---
 
 [Feathers UI](/) may be used to build mobile applications targeting Google's Android operating system.

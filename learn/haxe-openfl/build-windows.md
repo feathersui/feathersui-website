@@ -2,6 +2,8 @@
 title: Build a Feathers UI project as a Windows app
 layout: "docs.html"
 sidebarTitle: Windows
+ogDescription: "Native Windows C++ desktop app with Haxe and Feathers UI"
+ogImageURL: /img/feathersui-windows-og.png
 ---
 
 [Feathers UI](/) may be used to build desktop applications targeting Microsoft's Windows operating system.

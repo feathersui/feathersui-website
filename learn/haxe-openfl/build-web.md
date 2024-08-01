@@ -2,6 +2,8 @@
 title: Build a Feathers UI project as an HTML/JS web app
 layout: "docs.html"
 sidebarTitle: Web
+ogDescription: "Native HTML and JavaScript web app with Haxe and Feathers UI"
+ogImageURL: /img/feathersui-html5-og.png
 ---
 
 [Feathers UI](/) may be used to build web applications targeting all modern web browsers — supporting both desktop and mobile. Built on top of [OpenFL](https://openfl.org/), Feathers UI components may be rendered using WebGL, Canvas, or the HTML DOM.

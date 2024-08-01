@@ -2,6 +2,8 @@
 title: Create a Feathers UI project in a Terminal / Command Line
 layout: "docs.html"
 sidebarTitle: Terminal / Command Line
+ogDescription: "haxelib run feathersui new-project HelloWorld"
+ogImageURL: /img/feathersui-terminal-create-project-og.png
 ---
 
 Create [Feathers UI](/) projects with [Haxe](https://haxe.org/) and [OpenFL](https://openfl.org/) in a terminal / CLI, and learn the commands needed to build your project, or run it with different targets.

@@ -2,6 +2,8 @@
 title: Build a Feathers UI project as a Linux app
 layout: "docs.html"
 sidebarTitle: Linux
+ogDescription: "Native Linux C++ desktop app with Haxe and Feathers UI"
+ogImageURL: /img/feathersui-linux-og.png
 ---
 
 [Feathers UI](/) may be used to build desktop applications targeting Linux distributions.

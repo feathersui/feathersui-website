@@ -2,6 +2,8 @@
 title: Build a Feathers UI project as an Electron desktop app
 layout: "docs.html"
 sidebarTitle: Electron
+ogDescription: "Build for Windows, macOS, and Linux with Haxe and Electron"
+ogImageURL: /img/feathersui-electron-og.png
 ---
 
 [Feathers UI](/) may be used to build [Electron](https://www.electronjs.org) desktop applications with HTML/JS.

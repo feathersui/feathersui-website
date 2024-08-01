@@ -2,6 +2,8 @@
 title: Build a Feathers UI project as an iOS app
 layout: "docs.html"
 sidebarTitle: iOS
+ogDescription: "Native iOS C++ mobile app with Haxe and Feathers UI"
+ogImageURL: /img/feathersui-ios-og.png
 ---
 
 [Feathers UI](/) may be used to build mobile applications targeting Apple's iOS operating system (including iPadOS).
