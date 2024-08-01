@@ -1,6 +1,8 @@
 ---
 title: Getting Started
 layout: "docs.html"
+ogDescription: "Build cross-platform GUIs for creative, frontend projects on mobile, desktop, and web"
+ogImageURL: /img/feathersui-getting-started-og.png
 ---
 
 This page is an overview of the Feathers UI documentation and related resources. [Feathers UI](/) is a cross-platform framework of UI components for creative frontend projects.

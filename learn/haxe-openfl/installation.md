@@ -2,6 +2,8 @@
 title: Install Feathers UI for Haxe and OpenFL
 layout: "docs.html"
 sidebarTitle: Installation
+ogDescription: "haxelib install feathersui"
+ogImageURL: /img/feathersui-haxelib-install-og.png
 ---
 
 The current version of [Feathers UI](/) for Haxe and OpenFL is [**v{% include "feathersui-openfl-version.html" %}**](https://github.com/feathersui/feathersui-openfl/blob/v{% include "feathersui-openfl-version.html" %}/CHANGELOG.md). It may be installed [from Haxelib](https://lib.haxe.org/p/feathersui/{% include "feathersui-openfl-version.html" %}).
