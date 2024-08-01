@@ -9,6 +9,9 @@ siteTitle: Feathers UI
   {% include "meta.html" %}
   <title>{{ title }} - {{ siteTitle }}</title>
   {% include "styles.html" %}
+  {% if ogImage or ogDescription %}
+    {% include "opengraph.html" %}
+  {% endif %}
 </head>
 <body class="docs sidebars">
   {% include "header.html" %}

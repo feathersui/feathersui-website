@@ -10,6 +10,9 @@ siteTitle: Feathers UI Blog
   <title>{{ title }}</title>
   {% include "styles.html" %}
   {% include "blog-feeds-meta.html" %}
+  {% if ogImage or ogDescription %}
+    {% include "opengraph.html" %}
+  {% endif %}
 </head>
 <body class="blog sidebars">
   {% include "header.html" %}

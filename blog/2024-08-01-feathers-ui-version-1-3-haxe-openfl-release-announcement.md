@@ -7,6 +7,8 @@ authorImageURL: /img/authors/josh.jpg
 layout: "blog-post.html"
 permalink: "{{ page | blog_permalink }}"
 tags: ["blog"]
+ogDescription: The new Feathers UI v1.3.0 update is now officially available on Haxelib
+ogImageURL: /blog/img/feathersui-v1.3.0-og.png
 ---
 
 Today, Feathers UI **v1.3.0** is now officially available [on Haxelib](https://lib.haxe.org/p/feathersui/1.3.0). This release includes a new `DragDropManager` used by components like `ListView` and `GridView`, a new [`Collapsible`](https://feathersui.com/learn/haxe-openfl/collapsible/) component with a clickable header to toggle the visibility of its content, and a new `dispose()` method to help with UI component cleanup. It also includes over a year of bug fixes, which means even more stability for your projects.
