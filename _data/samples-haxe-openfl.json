@@ -73,11 +73,25 @@
     "content": "Easily switch between light and dark mode with the default theme."
   },
   {
+    "title": "Custom Drag-and-Drop",
+    "image": "/samples/haxe-openfl/img/custom-drag-and-drop.png",
+    "demoLink": "/samples/haxe-openfl/drag-and-drop/",
+    "codeLink": "https://github.com/feathersui/feathersui-openfl/tree/v1.3.0/samples/drag-and-drop/",
+    "content": "Demonstrates using the drag-and-drop interfaces in Feathers UI."
+  },
+  {
     "title": "Hello world",
     "image": "/samples/haxe-openfl/img/hello-world.png",
     "demoLink": "/samples/haxe-openfl/hello-world/",
     "codeLink": "https://github.com/feathersui/feathersui-openfl/tree/v1.3.0/samples/hello-world/",
     "content": "Every project needs a \"Hello World\" to get you started!"
+  },
+  {
+    "title": "List View Drag-and-Drop",
+    "image": "/samples/haxe-openfl/img/list-view-drag-and-drop.png",
+    "demoLink": "/samples/haxe-openfl/list-view-drag-and-drop/",
+    "codeLink": "https://github.com/feathersui/feathersui-openfl/tree/v1.3.0/samples/list-view-drag-and-drop/",
+    "content": "Demonstrates drag-and-drop with the Feathers UI <code>ListView</code> component."
   },
   {
     "title": "Login Form",
