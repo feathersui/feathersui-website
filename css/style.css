@@ -182,7 +182,8 @@ table {
   padding: 0;
 }
 
-.main-content img {
+.main-content img,
+.main-content video {
   max-width: 100%;
 }
 
