@@ -11,7 +11,7 @@ layout: "article.html"
 
 <section class="section-three-column section-samples">
   <div class="section-row">
-    {% for item in samples-haxe-openfl %}
+    {% for item in samples-haxe-openfl.samples %}
     {% if item.app == true %}
     <div class="section-column">
       <div class="section-column-img">
@@ -35,7 +35,7 @@ layout: "article.html"
 
 <section class="section-three-column section-samples">
   <div class="section-row">
-    {% for item in samples-haxe-openfl %}
+    {% for item in samples-haxe-openfl.samples %}
     {% if item.app != true %}
     <div class="section-column">
       <div class="section-column-img">
@@ -56,7 +56,7 @@ layout: "article.html"
 <h2>Additional Samples</h2>
 <p>The following sample projects have been shared by the Feathers UI developer community.</p>
 <ul>
-  <li><a href="https://github.com/feathersui/puremvc-haxe-feathersui-demos">PureMVC Haxe Demos for Feathers UI</a></li>
-  <li><a href="https://github.com/feathersui/feathersui-7guis">7GUIs for Feathers UI</a></li>
-  <li><a href="https://github.com/teotigraphix/haxe-feathersui-webaudio">Feathers UI Web Audio Samples</a></li>
+  {% for item in samples-haxe-openfl.externalLinks %}
+  <li><a href="{{item.link}}">{{item.title}}</a></li>
+  {% endfor %}
 </ul>
