@@ -124,6 +124,7 @@ See [Create custom transitions for navigator components](./custom-navigator-tran
 
 ## Related Links
 
+- [Live Demo: Transitions Story Explorer](/samples/haxe-openfl/story-explorer/transitions/)
 - [Create custom transitions for navigator components](./custom-navigator-transitions.md)
 - [How to use the `StackNavigator` component](./stack-navigator.md)
 - [How to use the `RouterNavigator` component](./router-navigator.md)

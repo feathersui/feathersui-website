@@ -38,3 +38,7 @@ The [`LineStyle`](https://api.feathersui.com/current/feathers/graphics/LineStyle
 - [`SolidColor`](https://api.feathersui.com/current/feathers/graphics/LineStyle.html#SolidColor) displays the border using a solid color. Its parameters are passed to the [`Graphics.lineStyle()`](https://api.openfl.org/openfl/display/Graphics.html#lineStyle) method.
 - [`Gradient`](https://api.feathersui.com/current/feathers/graphics/LineStyle.html#Gradient) displays the border as a gradient. Its parameters are passed to the [`Graphics.lineGradientStyle()`](https://api.openfl.org/openfl/display/Graphics.html#lineGradientStyle) method.
 - [`Bitmap`](https://api.feathersui.com/current/feathers/graphics/LineStyle.html#Bitmap) displays the border using [`BitmapData`](https://api.openfl.org/openfl/display/BitmapData.html). Its parameters are passed to the [`Graphics.lineBitmapStyle()`](https://api.openfl.org/openfl/display/Graphics.html#lineBitmapStyle) method.
+
+## Related Links
+
+- [Live Demo: Shape Skins Story Explorer](/samples/haxe-openfl/story-explorer/shape-skins/)

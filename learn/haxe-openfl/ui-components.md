@@ -78,4 +78,5 @@ Various other UI components that don't necessarily fit in one of the above categ
 
 ## Related Links
 
+- [Live Demo: Core Components Story Explorer](/samples/haxe-openfl/story-explorer/core-components/)
 - [Create custom UI components for Feathers UI](./custom-ui-components.md)
