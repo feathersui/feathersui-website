@@ -11,7 +11,7 @@ layout: "docs.html"
 - [`AssetLoader`](./asset-loader.md) displays images and other assets.
 - [`Button`](./button.md) is a standard push button that may be clicked or tapped.
 - [`Check`](./check.md) is a check box that may be selected and deselected with a click/tap.
-- [`Collapsible`](./collapsible.md) displays a header that can be clicked to hide and show its main content.
+- [`Collapsible`](./collapsible.md) <a href="./semver.md#beta-apis"><img class="beta" src="/img/beta.png" alt="(Beta)"/></a> displays a header that can be clicked to hide and show its main content.
 - [`DatePicker`](./date-picker.md) <a href="./semver.md#beta-apis"><img class="beta" src="/img/beta.png" alt="(Beta)"/></a> displays a month view where dates may be selected and deselected with a click/tap.
 - [`Header`](./header.md) displays a title with optional views on the left and right sides.
 - [`HProgressBar` and `VProgressBar`](./progress-bar.md) displays a numeric value with a simple linear fill.
