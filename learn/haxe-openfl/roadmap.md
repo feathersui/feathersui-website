@@ -11,7 +11,10 @@ To learn what's new in the [current Feathers UI stable release](/learn/haxe-open
 
 ## 1.4.0 (2024-2025)
 
-- Currently in planning stages. Stay tuned for updates!
+- `VARIANT_QUIET` added to `Button` and `ToggleButton` (no "up" skin, perfect for tool bars).
+- `DrillDownItemRenderer` displays a drill down icon on the right side (in addition to the existing icon and accessory).
+- `MenuBar` and `Menu` components.
+- Currently in planning stages. Stay tuned for additional updates!
 
 ## Future
 
