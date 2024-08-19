@@ -162,10 +162,22 @@ module.exports = function (eleventyConfig) {
     ) {
       const lastSlashIndex = this.inputPath.lastIndexOf("/");
       const startURL = this.inputPath.substring(1, lastSlashIndex + 1);
+      const lastLastSlashIndex = this.inputPath.lastIndexOf(
+        "/",
+        lastSlashIndex - 1
+      );
+      const startURLParent =
+        lastLastSlashIndex !== -1
+          ? this.inputPath.substring(1, lastLastSlashIndex + 1)
+          : startURL;
       return content
         .replace(
-          /<a( class="[\w\-]+")? href="\.?\.\/([\w\-\/]+)\.md(#[\w+\-]+)?"/g,
+          /<a( class="[\w\-]+")? href="\.\/([\w\-\/]+)\.md(#[\w+\-]+)?"/g,
           `<a$1 href="${startURL}$2/$3"`
+        )
+        .replace(
+          /<a( class="[\w\-]+")? href="\.\.\/([\w\-\/]+)\.md(#[\w+\-]+)?"/g,
+          `<a$1 href="${startURLParent}$2/$3"`
         )
         .replace("/index/", "/");
     }
