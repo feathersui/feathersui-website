@@ -59,7 +59,6 @@ The [Feathers UI blog](https://feathersui.com/blog/) is the official source for 
 You can also follow [Feathers UI on social media](/social-media/) to keep track of the latest updates, and maybe some fun extras.
 
 - [@feathersui@fosstodon.org on Mastodon](https://fosstodon.org/@feathersui)
-- [@feathersui on Twitter](https://twitter.com/feathersui)
 
 If you want to dive into the nitty-gritty details of every feature and bug fix in the newest release (and all past releases), check out the [_CHANGELOG.md_ file](https://github.com/feathersui/feathersui-openfl/blob/master/CHANGELOG.md) on GitHub.
 
@@ -71,4 +70,4 @@ Gain full access to the core Feathers UI framework developers — including prio
 
 ## Anything missing?
 
-If something is missing in the documentation, or if you found some part particularly confusing, please [open an issue on the feathersui-website repository](https://github.com/feathersui/feathersui-website/issues/new), or send a tweet to [@feathersui](https://twitter.com/feathersui) on Twitter.
+If something is missing in the documentation, or if you found some part particularly confusing, please [open an issue on the feathersui-website repository](https://github.com/feathersui/feathersui-website/issues/new), or drop a message to [@feathersui on Mastodon](https://fosstodon.org/@feathersui).
