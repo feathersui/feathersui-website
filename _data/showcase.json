@@ -9,9 +9,14 @@
   {
     "title": "NCIS: Hidden Crimes",
     "content": "Feathers UI and Starling power NCIS: Hidden Crimes, an episodic adventure where you search for clues, reveal the suspects, and make the arrest. Published by Ubisoft.",
-
     "image": "/img/showcase/ncis@2x.jpg",
     "videoLink": "https://www.youtube.com/watch?v=EtrA8BDdqFo"
+  },
+  {
+    "title": "Moonshine.dev",
+    "content": "Whether you're prototyping or building production-ready interfaces, Moonshine.dev provides platform designed to make UI development in Haxe more intuitive and efficient. At its core, Moonshine.dev provides a drag-and-drop visual form designer powered by MXHX, a declarative UI language for Haxe with Feathers UI.",
+    "image": "/img/showcase/moonshine-design-view@2x.png",
+    "webLink": "https://moonshine.dev"
   },
   {
     "title": "Wake-Up Memovox",
