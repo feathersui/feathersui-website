@@ -5,5 +5,12 @@
     "buttonText": "Follow on Mastodon",
     "image": "/img/mastodon-logo.png",
     "link": "https://fosstodon.org/@feathersui"
+  },
+  {
+    "title": "Bluesky",
+    "content": "Follow <a href=\"https://bsky.app/profile/feathersui.bsky.social\">@feathersui.bsky.social</a> on Bluesky to get informed about the latest news and announcements.",
+    "buttonText": "Follow on Bluesky",
+    "image": "/img/bluesky-logo.svg",
+    "link": "https://bsky.app/profile/feathersui.bsky.social"
   }
 ]
