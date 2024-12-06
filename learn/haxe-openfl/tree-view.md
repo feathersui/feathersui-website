@@ -52,7 +52,7 @@ var collection = new ArrayHierarchicalCollection([
 treeView.dataProvider = collection;
 ```
 
-Set the collection's [`itemToChildren()`](https://api.feathersui.com/current/feathers/controls/ArrayHierarchicalCollection.html#itemToChildren) method to get the children from each branch that need to be rendered by the tree view.
+Set the collection's [`itemToChildren()`](https://api.feathersui.com/current/feathers/data/ArrayHierarchicalCollection.html#itemToChildren) method to get the children from each branch that need to be rendered by the tree view.
 
 ```haxe
 collection.itemToChildren = (item:Dynamic) -> item.children;
@@ -64,7 +64,7 @@ Set the [`itemToText()`](https://api.feathersui.com/current/feathers/controls/Tr
 treeView.itemToText = (item:Dynamic) -> item.text;
 ```
 
-> Items in the collection are not required to be simple object literals, like `{text: "Node 1"}` in the example above. Instances of a class are allowed too (and encouraged as a best practice). If you use a class, be sure to update the item parameter's type in the `itemToChildren` and `itemToText` functions so that the compiler can catch any errors.
+> Items in the collection are _not_ required to be [anonymous structures](https://haxe.org/manual/types-anonymous-structure.html), like `{text: "Node 1B"}` in the example above. [Class instances](https://haxe.org/manual/types-class-instance.html) are allowed too (and encouraged as a best practice; you should prefer classes over anonymous structures). If you use a class, be sure to update the item parameter's type in the `itemToChildren` and `itemToText` functions so that the compiler can catch any errors.
 
 ### Selection
 
@@ -79,7 +79,7 @@ Check for the new value of the [`selectedItem`](https://api.feathersui.com/curre
 ```haxe
 function treeView_changeHandler(event:Event):Void {
     var treeView = cast(event.currentTarget, TreeView);
-    trace("TreeView selectedItem change: " + treeView.selectedItem.data.text);
+    trace("TreeView selectedItem change: " + treeView.selectedItem.text);
 }
 ```
 
@@ -155,7 +155,7 @@ var recycler = DisplayObjectRecycler.withFunction(() -> {
 });
 ```
 
-> Developers are not required to use the [`LayoutGroupItemRenderer`](./layout-group-item-renderer.md) class. In fact, a custom item renderer may be created from any OpenFL display object, including primitives like [`openfl.display.Sprite`](https://api.openfl.org/openfl/display/Sprite.html) and all other Feathers UI components.
+> Developers are not required to use the [`LayoutGroupItemRenderer`](./layout-group-item-renderer.md) class. In fact, a custom item renderer may be created from any OpenFL display object, including primitives like [`openfl.display.Sprite`](https://api.openfl.org/openfl/display/Sprite.html) and [all other Feathers UI components](./ui-components.md).
 
 Pass the [`DisplayObjectRecycler`](https://api.feathersui.com/current/feathers/utils/DisplayObjectRecycler.html) to the [`itemRendererRecycler`](https://api.feathersui.com/current/feathers/controls/TreeView.html#itemRendererRecycler) property.
 
@@ -200,7 +200,7 @@ treeView.itemToText = function(item:Dynamic):String {
 
 It's always a good practice to provide a [`reset()`](https://api.feathersui.com/current/feathers/utils/DisplayObjectRecycler.html) method to the [`DisplayObjectRecycler`](https://api.feathersui.com/current/feathers/utils/DisplayObjectRecycler.html), which will clean up a custom item renderer when it is no longer used by the [`TreeView`](https://api.feathersui.com/current/feathers/controls/TreeView.html).
 
-```
+```haxe
 recycler.reset = (itemRenderer:LayoutGroupItemRenderer, state:TreeViewItemState) -> {
     var label = cast(itemRenderer.getChildByName("label"), Label);
     var loader = cast(itemRenderer.getChildByName("loader"), AssetLoader);

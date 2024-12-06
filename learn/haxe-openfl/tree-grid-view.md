@@ -24,7 +24,7 @@ addChild(treeGridView);
 
 ### Data provider and columns
 
-To render some data in the tree view, pass in a [hierarchical collection](./data-collections.md#hierarchical-collections) that contains an object for each row.
+To render some data in the tree grid view, pass in a [hierarchical collection](./data-collections.md#hierarchical-collections) that contains an object for each row.
 
 ```haxe
 var collection = new ArrayHierarchicalCollection([
@@ -60,7 +60,7 @@ var collection = new ArrayHierarchicalCollection([
 treeGridView.dataProvider = collection;
 ```
 
-Set the collection's [`itemToChildren()`](https://api.feathersui.com/current/feathers/controls/ArrayHierarchicalCollection.html#itemToChildren) method to get the children from each branch that need to be rendered by the tree grid view.
+Set the collection's [`itemToChildren()`](https://api.feathersui.com/current/feathers/data/ArrayHierarchicalCollection.html#itemToChildren) method to get the children from each branch that need to be rendered by the tree grid view.
 
 ```haxe
 collection.itemToChildren = (item:Dynamic) -> item.children;
@@ -84,7 +84,7 @@ treeGridView.columns = new ArrayCollection([
 
 The first parameter of the [`TreeGridViewColumn`](https://api.feathersui.com/current/feathers/controls/TreeGridViewColumn.html) is the text to display in each column header. The second parameter is passed to the [`itemToText()`](https://api.feathersui.com/current/feathers/controls/TreeGridViewColumn.html#itemToText) property, which is a function that returns the text to display in a cell renderer.
 
-> Items in the collection are not required to be simple object literals, like `{ item: "Bacon", dept: "Meat", price: "4.49" }` in the example above. Instances of a class are allowed too (and encouraged as a best practice).
+> Items in the collection are _not_ required to be [anonymous structures](https://haxe.org/manual/types-anonymous-structure.html), like `{ item: "Bacon", dept: "Meat", price: "4.49" }` in the example above. [Class instances](https://haxe.org/manual/types-class-instance.html) are allowed too (and encouraged as a best practice; you should prefer classes over anonymous structures).
 
 ### Selection
 
@@ -99,11 +99,11 @@ Check for the new value of the [`selectedItem`](https://api.feathersui.com/curre
 ```haxe
 function treeGridView_changeHandler(event:Event):Void {
     var treeGridView = cast(event.currentTarget, TreeGridView);
-    trace("TreeGridView selectedItem change: " + treeGridView.selectedItem.data.text);
+    trace("TreeGridView selectedItem change: " + treeGridView.selectedItem.text);
 }
 ```
 
-Alternatively, the value of the [`selectedLocation`](https://api.feathersui.com/current/feathers/controls/TreeGridView.html#selectedLocation) property references the location of the items in the tree view's collection as an `Array` of integers.
+Alternatively, the value of the [`selectedLocation`](https://api.feathersui.com/current/feathers/controls/TreeGridView.html#selectedLocation) property references the location of the items in the tree grid view's collection as an `Array` of integers.
 
 ```haxe
 function treeGridView_changeHandler(event:Event):Void {
@@ -175,7 +175,7 @@ var recycler = DisplayObjectRecycler.withFunction(() -> {
 });
 ```
 
-> Developers are not required to use the [`LayoutGroupItemRenderer`](./layout-group-item-renderer.md) class. In fact, a custom cell renderer may be created from any OpenFL display object, including primitives like [`openfl.display.Sprite`](https://api.openfl.org/openfl/display/Sprite.html) and all other Feathers UI components.
+> Developers are not required to use the [`LayoutGroupItemRenderer`](./layout-group-item-renderer.md) class. In fact, a custom cell renderer may be created from any OpenFL display object, including primitives like [`openfl.display.Sprite`](https://api.openfl.org/openfl/display/Sprite.html) and [all other Feathers UI components](./ui-components.md).
 
 Both [`TreeGridView`](https://api.feathersui.com/current/feathers/controls/TreeGridView.html) and [`TreeGridViewColumn`](https://api.feathersui.com/current/feathers/controls/TreeGridViewColumn.html) define `cellRendererRecycler` properties. On [`TreeGridViewColumn`](https://api.feathersui.com/current/feathers/controls/TreeGridViewColumn.html), the [`cellRendererRecycler`](https://api.feathersui.com/current/feathers/controls/TreeGridViewColumn.html#cellRendererRecycler) property may be used to customize the cell renderers in that specific column. On [`TreeGridView`](https://api.feathersui.com/current/feathers/controls/TreeGridView.html), the [`cellRendererRecycler`](https://api.feathersui.com/current/feathers/controls/TreeGridView.html#cellRendererRecycler) property may be used to customize the default cell renderers used when a particular column doesn't have a specific cell renderer.
 
@@ -217,7 +217,7 @@ In this case, the value of [`text`](https://api.feathersui.com/current/feathers/
 
 It's always a good practice to provide a [`reset()`](https://api.feathersui.com/current/feathers/utils/DisplayObjectRecycler.html) method to the [`DisplayObjectRecycler`](https://api.feathersui.com/current/feathers/utils/DisplayObjectRecycler.html), which will clean up a custom cell renderer when it is no longer used by the [`TreeGridView`](https://api.feathersui.com/current/feathers/controls/TreeGridView.html).
 
-```
+```haxe
 recycler.reset = (cellRenderer:LayoutGroupItemRenderer, state:TreeGridViewCellState) -> {
     var openedToggle = cast(cellRenderer.getChildByName("openedToggle"), ToggleButton);
     var label = cast(cellRenderer.getChildByName("label"), Label);

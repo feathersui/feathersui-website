@@ -40,7 +40,9 @@ tabs.itemToText = function(item:Dynamic):String {
 };
 ```
 
-> Items in the collection are not required to be simple object literals, like in the example above. Instances of a class are allowed too (and encouraged as a best practice).
+> Items in the collection are _not_ required to be [anonymous structures](https://haxe.org/manual/types-anonymous-structure.html), like in the example above. [Class instances](https://haxe.org/manual/types-class-instance.html) are allowed too (and encouraged as a best practice; you should prefer classes over anonymous structures).
+
+### Selection
 
 [Add an event listener](https://books.openfl.org/openfl-developers-guide/handling-events/basics-of-handling-events.html) for [`Event.CHANGE`](https://api.openfl.org/openfl/events/Event.html#CHANGE) to perform an action when the user selects a different tab.
 

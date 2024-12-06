@@ -40,7 +40,7 @@ listView.itemToText = function(item:Dynamic):String {
 };
 ```
 
-> Items in the collection are not required to be simple object literals, like `{ text: "A" }` in the example above. Instances of a class are allowed too (and encouraged as a best practice).
+> Items in the collection are _not_ required to be [anonymous structures](https://haxe.org/manual/types-anonymous-structure.html), like `{ text: "A" }` in the example above. [Class instances](https://haxe.org/manual/types-class-instance.html) are allowed too (and encouraged as a best practice; you should prefer classes over anonymous structures).
 
 ### Selection
 
@@ -132,7 +132,7 @@ var recycler = DisplayObjectRecycler.withFunction(() -> {
 });
 ```
 
-> Developers are not required to use the [`LayoutGroupItemRenderer`](./layout-group-item-renderer.md) class. In fact, a custom item renderer may be created from any OpenFL display object, including primitives like [`openfl.display.Sprite`](https://api.openfl.org/openfl/display/Sprite.html) and all other Feathers UI components.
+> Developers are not required to use the [`LayoutGroupItemRenderer`](./layout-group-item-renderer.md) class. In fact, a custom item renderer may be created from any OpenFL display object, including primitives like [`openfl.display.Sprite`](https://api.openfl.org/openfl/display/Sprite.html) and [all other Feathers UI components](./ui-components.md).
 
 Pass the [`DisplayObjectRecycler`](https://api.feathersui.com/current/feathers/utils/DisplayObjectRecycler.html) to the [`itemRendererRecycler`](https://api.feathersui.com/current/feathers/controls/ListView.html#itemRendererRecycler) property.
 

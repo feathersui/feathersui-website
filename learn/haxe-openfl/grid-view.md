@@ -55,7 +55,7 @@ gridView.columns = new ArrayCollection([
 
 The first parameter of the [`GridViewColumn`](https://api.feathersui.com/current/feathers/controls/GridViewColumn.html) is the text to display in each column header. The second parameter is passed to the [`itemToText()`](https://api.feathersui.com/current/feathers/controls/GridViewColumn.html#itemToText) property, which is a function that returns the text to display in a cell renderer.
 
-> Items in the collection are not required to be simple object literals, like `{ item: "Bacon", dept: "Meat", price: "4.49" }` in the example above. Instances of a class are allowed too (and encouraged as a best practice).
+> Items in the collection are _not_ required to be [anonymous structures](https://haxe.org/manual/types-anonymous-structure.html), like `{ item: "Bacon", dept: "Meat", price: "4.49" }` in the example above. [Class instances](https://haxe.org/manual/types-class-instance.html) are allowed too (and encouraged as a best practice; you should prefer classes over anonymous structures).
 
 ### Selection
 
@@ -147,7 +147,7 @@ var recycler = DisplayObjectRecycler.withFunction(() -> {
 });
 ```
 
-> Developers are not required to use the [`LayoutGroupItemRenderer`](./layout-group-item-renderer.md) class. In fact, a custom cell renderer may be created from any OpenFL display object, including primitives like [`openfl.display.Sprite`](https://api.openfl.org/openfl/display/Sprite.html) and all other Feathers UI components.
+> Developers are not required to use the [`LayoutGroupItemRenderer`](./layout-group-item-renderer.md) class. In fact, a custom cell renderer may be created from any OpenFL display object, including primitives like [`openfl.display.Sprite`](https://api.openfl.org/openfl/display/Sprite.html) and [all other Feathers UI components](./ui-components.md).
 
 Both [`GridView`](https://api.feathersui.com/current/feathers/controls/GridView.html) and [`GridViewColumn`](https://api.feathersui.com/current/feathers/controls/GridViewColumn.html) define `cellRendererRecycler` properties. On [`GridViewColumn`](https://api.feathersui.com/current/feathers/controls/GridViewColumn.html), the [`cellRendererRecycler`](https://api.feathersui.com/current/feathers/controls/GridViewColumn.html#cellRendererRecycler) property may be used to customize the cell renderers in that specific column. On [`GridView`](https://api.feathersui.com/current/feathers/controls/GridView.html), the [`cellRendererRecycler`](https://api.feathersui.com/current/feathers/controls/GridView.html#cellRendererRecycler) property may be used to customize the default cell renderers used when a particular column doesn't have a specific cell renderer.
 

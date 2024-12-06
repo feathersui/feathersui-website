@@ -53,7 +53,7 @@ var collection = new ArrayHierarchicalCollection( [
 groupListView.dataProvider = collection;
 ```
 
-Set the collection's [`itemToChildren()`](https://api.feathersui.com/current/feathers/controls/ArrayHierarchicalCollection.html#itemToChildren) method to get the children from each branch that need to be rendered by the tree view.
+Set the collection's [`itemToChildren()`](https://api.feathersui.com/current/feathers/data/ArrayHierarchicalCollection.html#itemToChildren) method to get the children from each branch that need to be rendered by the tree view.
 
 ```haxe
 collection.itemToChildren = (item:Dynamic) -> item.children;
@@ -71,7 +71,7 @@ Additionally, set the [`itemToHeaderText()`](https://api.feathersui.com/current/
 groupListView.itemToHeaderText = (group:Dynamic) -> group.headerText;
 ```
 
-> Items in the collection are not required to be simple object literals, like `{text: "Node A1"}` in the example above. Instances of a class are allowed too (and encouraged as a best practice). If you use a class, be sure to update the item parameter's type in the `itemToChildren`, `itemToText`, and `itemToHeaderText` functions so that the compiler can catch any errors.
+> Items in the collection are _not_ required to be [anonymous structures](https://haxe.org/manual/types-anonymous-structure.html), like `{text: "Node A1"}` in the example above. [Class instances](https://haxe.org/manual/types-class-instance.html) are allowed too (and encouraged as a best practice; you should prefer classes over anonymous structures). If you use a class, be sure to update the item parameter's type in the `itemToChildren`, `itemToText`, and `itemToHeaderText` functions so that the compiler can catch any errors.
 
 ### Selection
 
@@ -86,7 +86,7 @@ Check for the new value of the [`selectedItem`](https://api.feathersui.com/curre
 ```haxe
 function groupListView_changeHandler(event:Event):Void {
     var groupListView = cast(event.currentTarget, GroupListView);
-    trace("GroupListView selectedItem change: " + groupListView.selectedItem.data.text);
+    trace("GroupListView selectedItem change: " + groupListView.selectedItem.text);
 }
 ```
 
@@ -158,7 +158,7 @@ var recycler = DisplayObjectRecycler.withFunction(() -> {
 });
 ```
 
-> Developers are not required to use the [`LayoutGroupItemRenderer`](./layout-group-item-renderer.md) class. In fact, a custom item renderer may be created from any OpenFL display object, including primitives like [`openfl.display.Sprite`](https://api.openfl.org/openfl/display/Sprite.html) and all other Feathers UI components.
+> Developers are not required to use the [`LayoutGroupItemRenderer`](./layout-group-item-renderer.md) class. In fact, a custom item renderer may be created from any OpenFL display object, including primitives like [`openfl.display.Sprite`](https://api.openfl.org/openfl/display/Sprite.html) and [all other Feathers UI components](./ui-components.md).
 
 Pass the [`DisplayObjectRecycler`](https://api.feathersui.com/current/feathers/utils/DisplayObjectRecycler.html) to the [`itemRendererRecycler`](https://api.feathersui.com/current/feathers/controls/GroupListView.html#itemRendererRecycler) property.
 
