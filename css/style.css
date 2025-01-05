@@ -45,6 +45,7 @@ html {
   font-size: 16px;
   background: #20232a;
   color: #fff;
+  scroll-padding-top: 132px;
 }
 
 h1,
@@ -259,6 +260,9 @@ table {
 }
 
 @media screen and (min-width: 960px) {
+  html {
+    scroll-padding-top: 60px;
+  }
   .header > .header-content {
     height: 60px;
   }
@@ -616,10 +620,10 @@ table {
   font-size: 0;
   background: #f1f1f1 url("../img/menu-lines-toggle.png") center left no-repeat;
   background-size: 20px 18px;
-  min-width: 20px;
-  height: 20px;
-  padding: 1rem;
-  background-position-x: 1rem;
+  min-width: 32px;
+  height: 32px;
+  padding: 16px;
+  background-position-x: 16px;
   z-index: 900;
 }
 .sidebars #toc-toggle-label {
@@ -628,9 +632,9 @@ table {
   font-size: 0;
   background: #f1f1f1 url("../img/menu-dots-toggle.png") center center no-repeat;
   background-size: 6px 20px;
-  width: 20px;
-  height: 20px;
-  padding: 1rem;
+  width: 32px;
+  height: 32px;
+  padding: 16px;
   z-index: 900;
 }
 .sidebars input#sidebar-toggle,
