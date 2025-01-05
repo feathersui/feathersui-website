@@ -9,8 +9,8 @@ Some important directories in this site.
 - _learn_: The Feathers UI documentation, written in Markdown
 - _blog_: Blog posts, written in Markdown
 - _static_: Static asset files, like images and styles, and even HTML that shouldn't be processed by Eleventy
-- __data_: JSON files containing data used in generating certain pages
-- __includes_: Shared include files for generating HTML pages
+- _\_data_: JSON files containing data used in generating certain pages
+- _\_includes_: Shared include files for generating HTML pages
 
 ## Prerequisites
 
