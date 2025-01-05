@@ -32,4 +32,4 @@ npm start
 npm run build
 ```
 
-Build output will be in __site_ directory.
+Build output will be in _\_site_ directory.
