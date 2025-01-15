@@ -1,5 +1,5 @@
 ---
-title: How to use the Toast component (Starling version)
+title: How to use the Toast component (AS3/Starling version)
 layout: "docs.html"
 sidebarTitle: Toast
 ---

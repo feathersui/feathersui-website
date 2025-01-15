@@ -1,5 +1,5 @@
 ---
-title: How to use the default Feathers item renderer with List, DataGrid, Tree, and GroupedList (Starling version)
+title: How to use the default Feathers item renderer with List, DataGrid, Tree, and GroupedList (AS3/Starling version)
 layout: "docs.html"
 sidebarTitle: Default item renderers
 ---

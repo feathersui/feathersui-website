@@ -1,5 +1,5 @@
 ---
-title: How to use the TabNavigator component (Starling version)
+title: How to use the TabNavigator component (AS3/Starling version)
 layout: "docs.html"
 sidebarTitle: TabNavigator
 ---

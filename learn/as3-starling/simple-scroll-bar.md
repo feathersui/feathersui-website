@@ -1,5 +1,5 @@
 ---
-title: How to use the SimpleScrollBar component (Starling version)
+title: How to use the SimpleScrollBar component (AS3/Starling version)
 layout: "docs.html"
 sidebarTitle: SimpleScrollBar
 ---

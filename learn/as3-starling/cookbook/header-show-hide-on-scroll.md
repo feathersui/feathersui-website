@@ -1,5 +1,5 @@
 ---
-title: How to show or hide a header when scrolling a list or container (Starling version)
+title: How to show or hide a header when scrolling a list or container (AS3/Starling version)
 layout: "docs.html"
 ---
 

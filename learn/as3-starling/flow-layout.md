@@ -1,5 +1,5 @@
 ---
-title: Using FlowLayout in Feathers containers (Starling version)
+title: Using FlowLayout in Feathers containers (AS3/Starling version)
 layout: "docs.html"
 sidebarTitle: FlowLayout
 ---

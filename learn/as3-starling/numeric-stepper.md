@@ -1,5 +1,5 @@
 ---
-title: How to use the NumericStepper component (Starling version) (Starling version)
+title: How to use the NumericStepper component (Starling version) (AS3/Starling version)
 layout: "docs.html"
 sidebarTitle: NumericStepper
 ---

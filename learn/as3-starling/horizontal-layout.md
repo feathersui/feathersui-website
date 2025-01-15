@@ -1,5 +1,5 @@
 ---
-title: Using HorizontalLayout in Feathers containers (Starling version)
+title: Using HorizontalLayout in Feathers containers (AS3/Starling version)
 layout: "docs.html"
 sidebarTitle: HorizontalLayout
 ---

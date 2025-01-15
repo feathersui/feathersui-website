@@ -1,5 +1,5 @@
 ---
-title: Feathers Frequently Asked Questions (FAQ) (Starling version)
+title: Feathers Frequently Asked Questions (FAQ) (AS3/Starling version)
 layout: "docs.html"
 sidebarTitle: FAQ
 ---

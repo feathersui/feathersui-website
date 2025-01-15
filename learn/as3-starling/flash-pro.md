@@ -1,5 +1,5 @@
 ---
-title: Setting up Feathers in Adobe Animate CC (Starling version)
+title: Setting up Feathers in Adobe Animate CC (AS3/Starling version)
 layout: "docs.html"
 sidebarTitle: Adobe Animate
 ---

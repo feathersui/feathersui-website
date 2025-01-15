@@ -1,5 +1,5 @@
 ---
-title: Why do the Feathers component skins and font sizes appear very small when simulating a mobile device on my computer? (Starling version)
+title: Why do the Feathers component skins and font sizes appear very small when simulating a mobile device on my computer? (AS3/Starling version)
 layout: "docs.html"
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: Original design sources for Feathers example themes (Starling version)
+title: Original design sources for Feathers example themes (AS3/Starling version)
 layout: "docs.html"
 sidebarTitle: Original design sources for example themes
 ---

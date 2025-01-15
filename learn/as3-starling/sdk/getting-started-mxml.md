@@ -1,5 +1,5 @@
 ---
-title: Getting started with MXML in the Feathers SDK (Starling version)
+title: Getting started with MXML in the Feathers SDK (AS3/Starling version)
 layout: "docs.html"
 sidebarTitle: Hello World with MXML
 ---

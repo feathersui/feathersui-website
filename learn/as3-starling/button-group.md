@@ -1,5 +1,5 @@
 ---
-title: How to use the ButtonGroup component (Starling version)
+title: How to use the ButtonGroup component (AS3/Starling version)
 layout: "docs.html"
 sidebarTitle: ButtonGroup
 ---

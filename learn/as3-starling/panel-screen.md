@@ -1,5 +1,5 @@
 ---
-title: How to use the PanelScreen component (Starling version)
+title: How to use the PanelScreen component (AS3/Starling version)
 layout: "docs.html"
 sidebarTitle: PanelScreen
 ---

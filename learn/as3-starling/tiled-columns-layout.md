@@ -1,5 +1,5 @@
 ---
-title: Using TiledColumnsLayout in Feathers containers (Starling version)
+title: Using TiledColumnsLayout in Feathers containers (AS3/Starling version)
 layout: "docs.html"
 sidebarTitle: TiledColumnsLayout
 ---

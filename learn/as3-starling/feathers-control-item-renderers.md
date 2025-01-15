@@ -1,5 +1,5 @@
 ---
-title: Creating custom item renderers with FeathersControl and IListItemRenderer, IDataGridCellRenderer, ITreeItemRenderer, or IGroupedListItemRenderer (Starling version)
+title: Creating custom item renderers with FeathersControl and IListItemRenderer, IDataGridCellRenderer, ITreeItemRenderer, or IGroupedListItemRenderer (AS3/Starling version)
 layout: "docs.html"
 sidebarTitle: Custom item renderers with FeathersControl
 ---

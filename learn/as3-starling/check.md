@@ -1,5 +1,5 @@
 ---
-title: How to use the Check component (Starling version)
+title: How to use the Check component (AS3/Starling version)
 layout: "docs.html"
 sidebarTitle: Check
 ---

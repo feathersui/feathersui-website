@@ -1,5 +1,5 @@
 ---
-title: How to dispatch a triggered event from a custom item renderer (Starling version)
+title: How to dispatch a triggered event from a custom item renderer (AS3/Starling version)
 layout: "docs.html"
 ---
 

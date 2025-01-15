@@ -1,5 +1,5 @@
 ---
-title: Why does the compiler throw errors that some classes cannot be found when I use the Feathers SWC? (Starling version)
+title: Why does the compiler throw errors that some classes cannot be found when I use the Feathers SWC? (AS3/Starling version)
 layout: "docs.html"
 ---
 

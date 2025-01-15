@@ -1,5 +1,5 @@
 ---
-title: Skinning Feathers components (Starling version)
+title: Skinning Feathers components (AS3/Starling version)
 layout: "docs.html"
 sidebarTitle: Skinning Feathers components
 ---

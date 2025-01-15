@@ -1,5 +1,5 @@
 ---
-title: Extending Feathers example themes (Starling version)
+title: Extending Feathers example themes (AS3/Starling version)
 layout: "docs.html"
 sidebarTitle: Extending the example themes
 ---

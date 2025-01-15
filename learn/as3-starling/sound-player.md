@@ -1,5 +1,5 @@
 ---
-title: How to use the SoundPlayer component (Starling version)
+title: How to use the SoundPlayer component (AS3/Starling version)
 layout: "docs.html"
 sidebarTitle: SoundPlayer
 ---

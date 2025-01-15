@@ -1,5 +1,5 @@
 ---
-title: How to use the AutoComplete component (Starling version)
+title: How to use the AutoComplete component (AS3/Starling version)
 layout: "docs.html"
 sidebarTitle: AutoComplete
 ---

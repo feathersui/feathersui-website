@@ -1,5 +1,5 @@
 ---
-title: How to use the StageTextTextEditor component (Starling version)
+title: How to use the StageTextTextEditor component (AS3/Starling version)
 layout: "docs.html"
 sidebarTitle: StageTextTextEditor
 ---

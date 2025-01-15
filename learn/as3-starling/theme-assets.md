@@ -1,5 +1,5 @@
 ---
-title: Managing assets in Feathers themes (Starling version)
+title: Managing assets in Feathers themes (AS3/Starling version)
 layout: "docs.html"
 sidebarTitle: Managing assets in themes
 ---

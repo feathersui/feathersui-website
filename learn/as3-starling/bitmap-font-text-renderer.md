@@ -1,5 +1,5 @@
 ---
-title: How to use the BitmapFontTextRenderer component (Starling version)
+title: How to use the BitmapFontTextRenderer component (AS3/Starling version)
 layout: "docs.html"
 sidebarTitle: BitmapFontTextRenderer
 ---

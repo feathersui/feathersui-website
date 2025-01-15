@@ -1,5 +1,5 @@
 ---
-title: Feathers installation (Starling version)
+title: Feathers installation (AS3/Starling version)
 layout: "docs.html"
 sidebarTitle: Installation
 ---

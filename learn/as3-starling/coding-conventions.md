@@ -1,5 +1,5 @@
 ---
-title: Feathers coding conventions for contributors (Starling version)
+title: Feathers coding conventions for contributors (AS3/Starling version)
 layout: "docs.html"
 sidebarTitle: Coding conventions
 ---

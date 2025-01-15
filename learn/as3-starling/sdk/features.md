@@ -1,5 +1,5 @@
 ---
-title: Feathers SDK Features (Starling version)
+title: Feathers SDK Features (AS3/Starling version)
 layout: "docs.html"
 sidebarTitle: SDK Features
 ---

@@ -1,5 +1,5 @@
 ---
-title: Feathers Features (Starling version)
+title: Feathers Features (AS3/Starling version)
 layout: "docs.html"
 sidebarTitle: Features
 ---

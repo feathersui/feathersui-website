@@ -1,5 +1,5 @@
 ---
-title: How to set additional properties on the tabs in a TabBar (Starling version)
+title: How to set additional properties on the tabs in a TabBar (AS3/Starling version)
 layout: "docs.html"
 ---
 

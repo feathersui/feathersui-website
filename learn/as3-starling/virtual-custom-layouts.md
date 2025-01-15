@@ -1,5 +1,5 @@
 ---
-title: Creating custom Feathers layouts with virtualization (Starling version)
+title: Creating custom Feathers layouts with virtualization (AS3/Starling version)
 layout: "docs.html"
 sidebarTitle: Custom layouts with virtualization
 ---

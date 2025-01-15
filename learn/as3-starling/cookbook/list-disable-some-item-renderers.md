@@ -1,5 +1,5 @@
 ---
-title: How to disable some item renderers in a Feathers List component (Starling version)
+title: How to disable some item renderers in a Feathers List component (AS3/Starling version)
 layout: "docs.html"
 ---
 

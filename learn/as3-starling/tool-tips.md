@@ -1,5 +1,5 @@
 ---
-title: Adding tool-tips to Feathers components (Starling version)
+title: Adding tool-tips to Feathers components (AS3/Starling version)
 layout: "docs.html"
 sidebarTitle: Tool-tips
 ---

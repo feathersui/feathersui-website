@@ -1,5 +1,5 @@
 ---
-title: How to select (or deselect) a custom item renderer on tap or click (Starling version)
+title: How to select (or deselect) a custom item renderer on tap or click (AS3/Starling version)
 layout: "docs.html"
 ---
 

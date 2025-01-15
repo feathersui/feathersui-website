@@ -1,5 +1,5 @@
 ---
-title: Using VerticalLayout in Feathers containers (Starling version)
+title: Using VerticalLayout in Feathers containers (AS3/Starling version)
 layout: "docs.html"
 sidebarTitle: VerticalLayout
 ---

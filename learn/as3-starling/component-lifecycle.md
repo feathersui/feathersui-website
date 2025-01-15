@@ -1,5 +1,5 @@
 ---
-title: The Feathers user interface component lifecycle (Starling version)
+title: The Feathers user interface component lifecycle (AS3/Starling version)
 layout: "docs.html"
 sidebarTitle: Component lifecycle
 ---

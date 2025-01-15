@@ -1,5 +1,5 @@
 ---
-title: Creating custom item renderers for the Feathers List, DataGrid, Tree and GroupedList components (Starling version)
+title: Creating custom item renderers for the Feathers List, DataGrid, Tree and GroupedList components (AS3/Starling version)
 layout: "docs.html"
 sidebarTitle: Custom item renderers
 ---

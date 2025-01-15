@@ -1,5 +1,5 @@
 ---
-title: How to support multiple touch states in a custom item renderer (Starling version)
+title: How to support multiple touch states in a custom item renderer (AS3/Starling version)
 layout: "docs.html"
 ---
 

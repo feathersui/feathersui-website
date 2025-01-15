@@ -1,5 +1,5 @@
 ---
-title: How to display a context menu with Feathers (Starling version)
+title: How to display a context menu with Feathers (AS3/Starling version)
 layout: "docs.html"
 ---
 

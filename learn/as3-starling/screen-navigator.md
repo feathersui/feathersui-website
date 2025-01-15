@@ -1,5 +1,5 @@
 ---
-title: How to use the ScreenNavigator component (Starling version)
+title: How to use the ScreenNavigator component (AS3/Starling version)
 layout: "docs.html"
 sidebarTitle: ScreenNavigator
 ---

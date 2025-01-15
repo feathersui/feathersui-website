@@ -1,5 +1,5 @@
 ---
-title: Customize the initialization of Starling in a Feathers MXML application (Starling version)
+title: Customize the initialization of Starling in a Feathers MXML application (AS3/Starling version)
 layout: "docs.html"
 sidebarTitle: Customize Starling initialization
 ---

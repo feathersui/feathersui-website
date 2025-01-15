@@ -1,5 +1,5 @@
 ---
-title: How to use the ScrollScreen component (Starling version)
+title: How to use the ScrollScreen component (AS3/Starling version)
 layout: "docs.html"
 sidebarTitle: ScrollScreen
 ---

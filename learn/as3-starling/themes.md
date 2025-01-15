@@ -1,5 +1,5 @@
 ---
-title: Introduction to Feathers themes (Starling version)
+title: Introduction to Feathers themes (AS3/Starling version)
 layout: "docs.html"
 sidebarTitle: Introduction to themes
 ---

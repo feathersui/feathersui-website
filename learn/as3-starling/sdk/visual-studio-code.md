@@ -1,5 +1,5 @@
 ---
-title: Set up the Feathers SDK in Visual Studio Code (Starling version)
+title: Set up the Feathers SDK in Visual Studio Code (AS3/Starling version)
 layout: "docs.html"
 sidebarTitle: Visual Studio Code
 ---

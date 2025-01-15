@@ -1,5 +1,5 @@
 ---
-title: Feathers Cookbook (Starling version)
+title: Feathers Cookbook (AS3/Starling version)
 layout: "docs.html"
 sidebarTitle: Cookbook
 ---

@@ -1,5 +1,5 @@
 ---
-title: How to set additional properties on the buttons in a ButtonGroup (Starling version)
+title: How to set additional properties on the buttons in a ButtonGroup (AS3/Starling version)
 layout: "docs.html"
 ---
 

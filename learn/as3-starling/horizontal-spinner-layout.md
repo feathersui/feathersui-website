@@ -1,5 +1,5 @@
 ---
-title: Using HorizontalSpinnerLayout in the Feathers SpinnerList component (Starling version)
+title: Using HorizontalSpinnerLayout in the Feathers SpinnerList component (AS3/Starling version)
 layout: "docs.html"
 sidebarTitle: HorizontalSpinnerLayout
 ---

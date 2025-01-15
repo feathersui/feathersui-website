@@ -1,5 +1,5 @@
 ---
-title: Introduction to Feathers text renderers (Starling version)
+title: Introduction to Feathers text renderers (AS3/Starling version)
 layout: "docs.html"
 sidebarTitle: Text renderers
 ---

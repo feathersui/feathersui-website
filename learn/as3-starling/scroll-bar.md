@@ -1,5 +1,5 @@
 ---
-title: How to use the ScrollBar component (Starling version)
+title: How to use the ScrollBar component (AS3/Starling version)
 layout: "docs.html"
 sidebarTitle: ScrollBar
 ---

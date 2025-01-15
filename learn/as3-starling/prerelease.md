@@ -1,5 +1,5 @@
 ---
-title: Feathers prerelease information (Starling version)
+title: Feathers prerelease information (AS3/Starling version)
 layout: "docs.html"
 sidebarTitle: Prerelease
 ---

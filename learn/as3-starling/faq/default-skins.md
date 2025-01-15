@@ -1,5 +1,5 @@
 ---
-title: Why don't the Feathers components have default skins? (Starling version)
+title: Why don't the Feathers components have default skins? (AS3/Starling version)
 layout: "docs.html"
 ---
 

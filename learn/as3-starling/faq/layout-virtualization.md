@@ -1,5 +1,5 @@
 ---
-title: What is layout virtualization in Feathers? (Starling version)
+title: What is layout virtualization in Feathers? (AS3/Starling version)
 layout: "docs.html"
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: Feathers 3.1 Migration Guide (Starling version)
+title: Feathers 3.1 Migration Guide (AS3/Starling version)
 layout: "docs.html"
 sidebarTitle: 3.1 Migration Guide
 ---

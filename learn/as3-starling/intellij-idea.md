@@ -1,5 +1,5 @@
 ---
-title: Setting up Feathers in IntelliJ IDEA (Starling version)
+title: Setting up Feathers in IntelliJ IDEA (AS3/Starling version)
 layout: "docs.html"
 sidebarTitle: IntelliJ IDEA
 ---

@@ -1,5 +1,5 @@
 ---
-title: An in-depth look at Feathers style providers (Starling version)
+title: An in-depth look at Feathers style providers (AS3/Starling version)
 layout: "docs.html"
 sidebarTitle: Style providers in-depth
 ---

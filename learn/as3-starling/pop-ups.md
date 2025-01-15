@@ -1,5 +1,5 @@
 ---
-title: Displaying pop-ups above other content in Feathers (Starling version)
+title: Displaying pop-ups above other content in Feathers (AS3/Starling version)
 layout: "docs.html"
 sidebarTitle: Displaying pop-ups
 ---

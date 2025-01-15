@@ -1,5 +1,5 @@
 ---
-title: How to use the TextCallout component (Starling version)
+title: How to use the TextCallout component (AS3/Starling version)
 layout: "docs.html"
 sidebarTitle: TextCallout
 ---

@@ -1,5 +1,5 @@
 ---
-title: Setting up Feathers in FlashDevelop (Starling version)
+title: Setting up Feathers in FlashDevelop (AS3/Starling version)
 layout: "docs.html"
 sidebarTitle: FlashDevelop
 ---

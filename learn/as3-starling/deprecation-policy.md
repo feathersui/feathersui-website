@@ -1,5 +1,5 @@
 ---
-title: Feathers deprecation policy (Starling version)
+title: Feathers deprecation policy (AS3/Starling version)
 layout: "docs.html"
 sidebarTitle: Deprecation policy
 ---

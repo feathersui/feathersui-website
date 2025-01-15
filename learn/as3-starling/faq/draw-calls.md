@@ -1,5 +1,5 @@
 ---
-title: Why do Feathers component require so many draw calls? Aren't those bad? (Starling version)
+title: Why do Feathers component require so many draw calls? Aren't those bad? (AS3/Starling version)
 layout: "docs.html"
 ---
 

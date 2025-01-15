@@ -1,5 +1,5 @@
 ---
-title: How to change font styles in a ButtonGroup component (Starling version)
+title: How to change font styles in a ButtonGroup component (AS3/Starling version)
 layout: "docs.html"
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: How to use the Callout component (Starling version)
+title: How to use the Callout component (AS3/Starling version)
 layout: "docs.html"
 sidebarTitle: Callout
 ---

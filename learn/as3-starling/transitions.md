@@ -1,5 +1,5 @@
 ---
-title: Transitions for Feathers screen navigators (Starling version)
+title: Transitions for Feathers screen navigators (AS3/Starling version)
 layout: "docs.html"
 sidebarTitle: Navigator animated transitions
 ---

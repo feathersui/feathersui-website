@@ -1,5 +1,5 @@
 ---
-title: How to use the TextBlockTextRenderer component (Starling version)
+title: How to use the TextBlockTextRenderer component (AS3/Starling version)
 layout: "docs.html"
 sidebarTitle: TextBlockTextRenderer
 ---

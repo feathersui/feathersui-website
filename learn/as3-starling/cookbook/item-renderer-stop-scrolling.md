@@ -1,5 +1,5 @@
 ---
-title: How to prevent a List from scrolling when a child of a custom item renderer is touched (Starling version)
+title: How to prevent a List from scrolling when a child of a custom item renderer is touched (AS3/Starling version)
 layout: "docs.html"
 ---
 

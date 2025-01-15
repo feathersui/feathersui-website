@@ -1,5 +1,5 @@
 ---
-title: How to use the ToggleButton component (Starling version)
+title: How to use the ToggleButton component (AS3/Starling version)
 layout: "docs.html"
 sidebarTitle: ToggleButton
 ---

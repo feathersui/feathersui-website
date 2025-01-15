@@ -1,5 +1,5 @@
 ---
-title: Using SlideShowLayout in Feathers containers (Starling version)
+title: Using SlideShowLayout in Feathers containers (AS3/Starling version)
 layout: "docs.html"
 sidebarTitle: SlideShowLayout
 ---

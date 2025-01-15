@@ -1,5 +1,5 @@
 ---
-title: The complete guide to MXML in the Feathers SDK (Starling version)
+title: The complete guide to MXML in the Feathers SDK (AS3/Starling version)
 layout: "docs.html"
 sidebarTitle: MXML
 ---

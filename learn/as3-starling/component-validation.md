@@ -1,5 +1,5 @@
 ---
-title: Creating a draw() function to validate a custom Feathers component (Starling version)
+title: Creating a draw() function to validate a custom Feathers component (AS3/Starling version)
 layout: "docs.html"
 sidebarTitle: Validating with draw()
 ---

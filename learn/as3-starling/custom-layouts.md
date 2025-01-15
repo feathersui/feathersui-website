@@ -1,5 +1,5 @@
 ---
-title: Introduction to custom layouts for Feathers containers (Starling version)
+title: Introduction to custom layouts for Feathers containers (AS3/Starling version)
 layout: "docs.html"
 sidebarTitle: Custom layouts
 ---

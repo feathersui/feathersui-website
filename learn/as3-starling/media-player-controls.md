@@ -1,5 +1,5 @@
 ---
-title: Feathers media player controls (Starling version)
+title: Feathers media player controls (AS3/Starling version)
 layout: "docs.html"
 sidebarTitle: More media controls
 ---

@@ -1,5 +1,5 @@
 ---
-title: Migrating legacy themes to Feathers 2.0 (Starling version)
+title: Migrating legacy themes to Feathers 2.0 (AS3/Starling version)
 layout: "docs.html"
 sidebarTitle: 2.0 Migration Guide
 ---

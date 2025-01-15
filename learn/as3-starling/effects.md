@@ -1,5 +1,5 @@
 ---
-title: Effects and animations for Feathers components (Starling version)
+title: Effects and animations for Feathers components (AS3/Starling version)
 layout: "docs.html"
 sidebarTitle: Effects and animations
 ---

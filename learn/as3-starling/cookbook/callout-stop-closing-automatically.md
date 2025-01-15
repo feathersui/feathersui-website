@@ -1,5 +1,5 @@
 ---
-title: How to stop a Callout from closing automatically after touch or keyboard input (Starling version)
+title: How to stop a Callout from closing automatically after touch or keyboard input (AS3/Starling version)
 layout: "docs.html"
 ---
 

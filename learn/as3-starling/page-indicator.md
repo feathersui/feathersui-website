@@ -1,5 +1,5 @@
 ---
-title: How to use the PageIndicator component (Starling version)
+title: How to use the PageIndicator component (AS3/Starling version)
 layout: "docs.html"
 sidebarTitle: PageIndicator
 ---

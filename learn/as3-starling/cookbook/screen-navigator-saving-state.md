@@ -1,5 +1,5 @@
 ---
-title: How to save the state of a screen in a ScreenNavigator and restore it later (Starling version)
+title: How to save the state of a screen in a ScreenNavigator and restore it later (AS3/Starling version)
 layout: "docs.html"
 ---
 

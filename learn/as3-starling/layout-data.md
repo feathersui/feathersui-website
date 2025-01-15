@@ -1,5 +1,5 @@
 ---
-title: ILayoutDisplayObject and ILayoutData (Starling version)
+title: ILayoutDisplayObject and ILayoutData (AS3/Starling version)
 layout: "docs.html"
 ---
 

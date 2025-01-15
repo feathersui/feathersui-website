@@ -1,5 +1,5 @@
 ---
-title: Drag and drop between Feathers components (Starling version)
+title: Drag and drop between Feathers components (AS3/Starling version)
 layout: "docs.html"
 sidebarTitle: Drag and drop
 ---

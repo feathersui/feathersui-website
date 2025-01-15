@@ -1,5 +1,5 @@
 ---
-title: How to use the DateTimeSpinner component (Starling version)
+title: How to use the DateTimeSpinner component (AS3/Starling version)
 layout: "docs.html"
 sidebarTitle: DateTimeSpinner
 ---

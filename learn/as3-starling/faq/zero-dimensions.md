@@ -1,5 +1,5 @@
 ---
-title: When I try to access the width or height properties of a Feathers component, why do I get 0? (Starling version)
+title: When I try to access the width or height properties of a Feathers component, why do I get 0? (AS3/Starling version)
 layout: "docs.html"
 ---
 

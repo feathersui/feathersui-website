@@ -1,5 +1,5 @@
 ---
-title: Creating custom item renderers with the LayoutGroup container (Starling version)
+title: Creating custom item renderers with the LayoutGroup container (AS3/Starling version)
 layout: "docs.html"
 sidebarTitle: Custom item renderers with LayoutGroup
 ---

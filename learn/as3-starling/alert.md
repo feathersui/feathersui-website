@@ -1,5 +1,5 @@
 ---
-title: How to use the Alert component (Starling version)
+title: How to use the Alert component (AS3/Starling version)
 layout: "docs.html"
 sidebarTitle: Alert
 ---

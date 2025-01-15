@@ -1,5 +1,5 @@
 ---
-title: How to use the Screen component (Starling version)
+title: How to use the Screen component (AS3/Starling version)
 layout: "docs.html"
 sidebarTitle: Screen
 ---

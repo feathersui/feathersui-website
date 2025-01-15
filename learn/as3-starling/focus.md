@@ -1,5 +1,5 @@
 ---
-title: Keyboard focus management in Feathers (Starling version)
+title: Keyboard focus management in Feathers (AS3/Starling version)
 layout: "docs.html"
 sidebarTitle: Focus management
 ---

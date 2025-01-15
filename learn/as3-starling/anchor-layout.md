@@ -1,5 +1,5 @@
 ---
-title: Using AnchorLayout in Feathers containers (Starling version)
+title: Using AnchorLayout in Feathers containers (AS3/Starling version)
 layout: "docs.html"
 sidebarTitle: AnchorLayout
 ---

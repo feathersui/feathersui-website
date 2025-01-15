@@ -1,5 +1,5 @@
 ---
-title: Getting started with Feathers (Starling version)
+title: Getting started with Feathers (AS3/Starling version)
 layout: "docs.html"
 sidebarTitle: Hello World
 ---

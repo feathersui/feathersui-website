@@ -1,5 +1,5 @@
 ---
-title: Anatomy of a Feathers user interface component (Starling version)
+title: Anatomy of a Feathers user interface component (AS3/Starling version)
 layout: "docs.html"
 sidebarTitle: Component anatomy
 ---

@@ -1,5 +1,5 @@
 ---
-title: How to use the SpinnerList component (Starling version)
+title: How to use the SpinnerList component (AS3/Starling version)
 layout: "docs.html"
 sidebarTitle: SpinnerList
 ---

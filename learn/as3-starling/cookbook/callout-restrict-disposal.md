@@ -1,5 +1,5 @@
 ---
-title: How to close a Callout without disposing it (or without disposing its content) (Starling version)
+title: How to close a Callout without disposing it (or without disposing its content) (AS3/Starling version)
 layout: "docs.html"
 ---
 

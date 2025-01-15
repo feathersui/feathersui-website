@@ -1,5 +1,5 @@
 ---
-title: Creating custom Feathers themes (Starling version)
+title: Creating custom Feathers themes (AS3/Starling version)
 layout: "docs.html"
 sidebarTitle: Creating custom themes
 ---

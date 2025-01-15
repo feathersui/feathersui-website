@@ -1,5 +1,5 @@
 ---
-title: When I try to change a Feathers component's skins, why do I always see the default skins? (Starling version)
+title: When I try to change a Feathers component's skins, why do I always see the default skins? (AS3/Starling version)
 layout: "docs.html"
 ---
 

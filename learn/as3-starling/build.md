@@ -1,5 +1,5 @@
 ---
-title: Building the Feathers SWC binary from source code (Starling version)
+title: Building the Feathers SWC binary from source code (AS3/Starling version)
 layout: "docs.html"
 sidebarTitle: Build Feathers from source
 ---

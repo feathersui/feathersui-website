@@ -1,5 +1,5 @@
 ---
-title: Using WaterfallLayout in Feathers containers (Starling version)
+title: Using WaterfallLayout in Feathers containers (AS3/Starling version)
 layout: "docs.html"
 sidebarTitle: WaterfallLayout
 ---

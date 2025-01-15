@@ -1,5 +1,5 @@
 ---
-title: How to use the WebView component (Starling version)
+title: How to use the WebView component (AS3/Starling version)
 layout: "docs.html"
 sidebarTitle: WebView
 ---

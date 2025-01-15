@@ -1,5 +1,5 @@
 ---
-title: Feathers beta policy (Starling version)
+title: Feathers beta policy (AS3/Starling version)
 layout: "docs.html"
 sidebarTitle: Beta policy
 ---

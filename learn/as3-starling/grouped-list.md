@@ -1,5 +1,5 @@
 ---
-title: How to use the GroupedList component (Starling version)
+title: How to use the GroupedList component (AS3/Starling version)
 layout: "docs.html"
 sidebarTitle: GroupedList
 ---

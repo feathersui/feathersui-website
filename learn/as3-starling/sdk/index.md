@@ -1,5 +1,5 @@
 ---
-title: Feathers SDK and MXML (Starling version)
+title: Feathers SDK and MXML (AS3/Starling version)
 layout: "docs.html"
 sidebarTitle: Feathers SDK and MXML
 ---
