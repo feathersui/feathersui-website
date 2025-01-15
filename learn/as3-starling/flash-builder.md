@@ -1,10 +1,10 @@
 ---
-title: Setting up Feathers in Adobe Flash Builder (AS3/Starling version)
+title: Setting up Feathers in Adobe Flash Builder (legacy AS3/Starling version)
 layout: "docs.html"
 sidebarTitle: Adobe Flash Builder
 ---
 
-Let's create a [Feathers](/) and [Starling](https://gamua.com/starling/) project in [Adobe Flash Builder](http://www.adobe.com/products/flash-builder.html).
+Let's create a [Feathers](./getting-started.md) and [Starling](https://gamua.com/starling/) project in [Adobe Flash Builder](http://www.adobe.com/products/flash-builder.html).
 
 > These instructions apply to Flash Builder 4.7. Minor variations may exist between different versions of Flash Builder.
 

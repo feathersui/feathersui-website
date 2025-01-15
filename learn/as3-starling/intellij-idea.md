@@ -1,10 +1,10 @@
 ---
-title: Setting up Feathers in IntelliJ IDEA (AS3/Starling version)
+title: Setting up Feathers in IntelliJ IDEA (legacy AS3/Starling version)
 layout: "docs.html"
 sidebarTitle: IntelliJ IDEA
 ---
 
-Let's create a [Feathers](/) and [Starling](https://gamua.com/starling/) project in [IntelliJ IDEA](http://www.jetbrains.com/idea/).
+Let's create a [Feathers](./getting-started.md) and [Starling](https://gamua.com/starling/) project in [IntelliJ IDEA](http://www.jetbrains.com/idea/).
 
 > These instructions apply to IntelliJ IDEA 12. Minor variations may exist between different versions of IntelliJ IDEA.
 

@@ -1,10 +1,10 @@
 ---
-title: Setting up Feathers in Adobe Animate CC (AS3/Starling version)
+title: Setting up Feathers in Adobe Animate CC (legacy AS3/Starling version)
 layout: "docs.html"
 sidebarTitle: Adobe Animate
 ---
 
-Let's create a [Feathers](/) and [Starling](https://gamua.com/starling/) project in [Adobe Animate](https://www.adobe.com/products/animate.html).
+Let's create a [Feathers](./getting-started.md) and [Starling](https://gamua.com/starling/) project in [Adobe Animate](https://www.adobe.com/products/animate.html).
 
 > These instructions apply to Animate CC. Minor variations may exist between different versions of Animate (or older versions of Flash Professional).
 

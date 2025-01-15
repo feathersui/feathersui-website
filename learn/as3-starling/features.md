@@ -1,10 +1,10 @@
 ---
-title: Feathers Features (AS3/Starling version)
+title: Feathers Features (legacy AS3/Starling version)
 layout: "docs.html"
 sidebarTitle: Features
 ---
 
-[Feathers](/) is an open source library of user interface components for [Starling](http://gamua.com/starling/) and [Adobe AIR](http://www.adobe.com/products/air.html). Let's take a look at some of what Feathers has to offer.
+[Feathers](./getting-started.md) is an open source library of user interface components for [Starling](http://gamua.com/starling/) and [Adobe AIR](http://www.adobe.com/products/air.html). Let's take a look at some of what Feathers has to offer.
 
 ## Overview
 

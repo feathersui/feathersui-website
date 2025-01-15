@@ -1,5 +1,5 @@
 ---
-title: Install the Feathers SDK (AS3/Starling version)
+title: Install the Feathers SDK (legacy AS3/Starling version)
 layout: "docs.html"
 sidebarTitle: Installation
 ---

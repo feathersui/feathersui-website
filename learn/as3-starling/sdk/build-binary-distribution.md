@@ -1,5 +1,5 @@
 ---
-title: Build the Feathers SDK from a Binary Distribution (AS3/Starling version)
+title: Build the Feathers SDK from a Binary Distribution (legacy AS3/Starling version)
 layout: "docs.html"
 sidebarTitle: Build SDK from Binary Distribution
 ---

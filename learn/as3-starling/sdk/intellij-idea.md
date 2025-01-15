@@ -1,5 +1,5 @@
 ---
-title: Set up the Feathers SDK in IntelliJ IDEA
+title: Set up the Feathers SDK in IntelliJ IDEA (legacy AS3/Starling version)
 layout: "docs.html"
 sidebarTitle: IntelliJ IDEA
 ---

@@ -1,10 +1,10 @@
 ---
-title: Setting up Feathers in FlashDevelop (AS3/Starling version)
+title: Setting up Feathers in FlashDevelop (legacy AS3/Starling version)
 layout: "docs.html"
 sidebarTitle: FlashDevelop
 ---
 
-Let's create a [Feathers](/) and [Starling](https://gamua.com/starling/) project in [FlashDevelop](http://www.flashdevelop.org/).
+Let's create a [Feathers](./getting-started.md) and [Starling](https://gamua.com/starling/) project in [FlashDevelop](http://www.flashdevelop.org/).
 
 > These instructions apply to FlashDevelop 4.2. Minor variations may exist between different versions of FlashDevelop.
 

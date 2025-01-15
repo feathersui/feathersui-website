@@ -1,10 +1,14 @@
 ---
-title: Getting started with Feathers (AS3/Starling version)
+title: Getting started with Feathers (legacy AS3/Starling version)
 layout: "docs.html"
 sidebarTitle: Hello World
 ---
 
-In the following beginner-level tutorial for [Feathers](/), we'll use our first [`Button`](./button.md) component. This is a very simple demonstration that sets a label, adds an event listener, and creates a theme that will apply some styles.
+The following beginner-level tutorial for Feathers helps you create your first [`Button`](./button.md) component. It is a very simple demonstration that displays a text label, adds an event listener to listen for clicks, and creates a theme that will apply some default visual styles.
+
+> **What's Feathers?** It is a GUI component library for the [Adobe AIR](https://airsdk.dev/) cross-platform run-time and [Starling Framework](https://gamua.com/starling/), a popular ActionScript 3.0 library. _Feathers is no longer under active development,_ and you should not expect any new features to be added in the future. However, we'll try our best to keep it working with new updates to Adobe AIR that are released by Harman.
+>
+> Be sure to check out [Feathers UI for OpenFL and Haxe](../haxe-openfl/). OpenFL is an implementation of the same APIs as Adobe AIR, and it can compile not just native desktop and mobile apps, but it can also be deployed to the web!
 
 ## Prerequisites
 
