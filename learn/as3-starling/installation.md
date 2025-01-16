@@ -4,7 +4,7 @@ layout: "docs.html"
 sidebarTitle: Installation
 ---
 
-[Feathers UI](./getting-started.md) for ActionScript 3 and [Starling](https://gamua.com/starling/) is packaged up as a _.zip_ file that contains a compiled _.swc_ binary library, original source code, documentation, and examples. Add the _.swc_ file to the _library path_ in your favorite editor to make the Feathers components available inside your Starling project.
+[Feathers](./getting-started.md) for ActionScript 3 and [Starling](https://gamua.com/starling/) is packaged up as a _.zip_ file that contains a compiled _.swc_ binary library, original source code, documentation, and examples. Add the _.swc_ file to the _library path_ in your favorite editor to make the Feathers components available inside your Starling project.
 
 ## Prerequisites
 

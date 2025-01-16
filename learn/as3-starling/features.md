@@ -120,4 +120,4 @@ sidebarTitle: Features
 
 ## Sound useful?
 
-[Download Feathers](./installation.md), and [get started](./getting-started.md) building cross-platform, hardware-accelerated user interfaces for apps and games with Starling Framework and Feathers.
+[Download Feathers](./installation.md), and [get started](./hello-world.md) building cross-platform, hardware-accelerated user interfaces for apps and games with Starling Framework and Feathers.

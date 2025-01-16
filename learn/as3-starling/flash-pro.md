@@ -26,7 +26,7 @@ Let's create a [Feathers](./getting-started.md) and [Starling](https://gamua.com
 
 6. An **FPS** value of **60** is recommended.
 
-Your project is ready. If you're unsure how to proceed, start by using the code in the **Create your Game** section of the [Starling First Steps Tutorial](http://gamua.com/starling/first-steps/). Then take a look at the [Feathers Getting Started Tutorial](./getting-started.md).
+Your project is ready. If you're unsure how to proceed, start by using the code in the **Create your Game** section of the [Starling First Steps Tutorial](http://gamua.com/starling/first-steps/). Then take a look at the [Feathers Hello World Tutorial](./hello-world.md).
 
 > Animate's ability to properly simulate devices on AIR is limited compared to other development environments. Animate's AIR simulator does not provide the correct screen DPI/PPI for the mobile device that it is simulating. The value of `Capabilities.screenDPI` is used by Feathers themes to scale skins to an appropriate physical size for each device.
 >

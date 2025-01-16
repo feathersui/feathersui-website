@@ -28,4 +28,4 @@ Let's create a [Feathers](./getting-started.md) and [Starling](https://gamua.com
 
 9. Open your project's **-app.xml** file. Inside the `<initialWindow>` section, add `<renderMode>direct</renderMode>`.
 
-Your project is ready. If you're unsure how to proceed, start by using the code in the **Create your Game** section of the [Starling First Steps Tutorial](http://gamua.com/starling/first-steps/). Then take a look at the [Feathers Getting Started Tutorial](./getting-started.md).
+Your project is ready. If you're unsure how to proceed, start by using the code in the **Create your Game** section of the [Starling First Steps Tutorial](http://gamua.com/starling/first-steps/). Then take a look at the [Feathers Hello World Tutorial](./hello-world.md).
