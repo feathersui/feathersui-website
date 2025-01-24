@@ -3,6 +3,9 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true
   },
+  "files.associations": {
+    "*.liquid": "html"
+  },
   "editor.tabSize": 2,
   "editor.insertSpaces": true,
   "search.exclude": {
