@@ -18,7 +18,7 @@ These primitives in OpenFL are combined in Feathers UI to create a set of flexib
 
 [The OpenFL display list](https://books.openfl.org/openfl-developers-guide/display-programming/basics-of-display-programming.html) provides a number of [primitive _display objects_](https://books.openfl.org/openfl-developers-guide/display-programming/core-display-classes.html) for rendering graphics.
 
-One of these core primitives is the [`openfl.display.Sprite`](https://api.openfl.org/openfl/display/Sprite.html) class, which provides [vector drawing](https://books.openfl.org/openfl-developers-guide/using-the-drawing-api/) capabilities — plus the ability to behave as a container where you may add other display objects as children.
+One of these core primitives is the [`openfl.display.Sprite`](https://api.openfl.org/openfl/display/Sprite.html) class, which provides [vector drawing](https://books.openfl.org/openfl-developers-guide/using-the-drawing-api/) capabilities — plus the ability to behave as a [container](https://books.openfl.org/openfl-developers-guide/display-programming/working-with-display-objects/working-with-display-object-containers.html) where you may add other display objects as children.
 
 ```haxe
 var sprite = new Sprite();
@@ -44,11 +44,11 @@ textField.y = (sprite.height - textField.height) / 2.0;
 sprite.addChild(textField);
 ```
 
-The example above adds the text "Hello OpenFL" as a child of the [`Sprite`](https://api.openfl.org/openfl/display/Sprite.html). The text's font styles are customized with [`openfl.text.TextFormat`](https://api.openfl.org/openfl/text/TextFormat.html), and it is positioned in the center of the rectangle.
+The example above adds the text "Hello OpenFL" as a child of the [`Sprite`](https://api.openfl.org/openfl/display/Sprite.html). The text's [font styles are customized](https://books.openfl.org/openfl-developers-guide/using-the-textfield-class/formatting-text.html) with [`openfl.text.TextFormat`](https://api.openfl.org/openfl/text/TextFormat.html), and it is positioned in the center of the rectangle.
 
 ## User input
 
-OpenFL dispatches events for user input from a variety of sources, including keyboard, mouse, touchscreen, and game pads.
+OpenFL [dispatches events](https://books.openfl.org/openfl-developers-guide/handling-events/) for user input from a variety of sources, including [keyboard](https://books.openfl.org/openfl-developers-guide/keyboard-input/), [mouse](https://books.openfl.org/openfl-developers-guide/mouse-input/), [touchscreen](https://books.openfl.org/openfl-developers-guide/touch-multitouch-and-gesture-input/), and game pads.
 
 ### Keyboard
 
