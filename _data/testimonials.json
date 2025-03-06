@@ -1,18 +1,5 @@
 [
   {
-    "title": "I've used Feathers daily, for several years.",
-    "content": "Just want to thank Feathers for the most amazing UI components. I've used them daily, for several years.",
-    "author": "Mike Gowan, <a href=\"https://twitter.com/mrmikegowan/status/674662861143150592\">on Twitter</a>",
-    "image": "/img/testimonials/mikegowan-testimonial@2x.jpg"
-  },
-  {
-    "title": "Absolute joy to develop with",
-    "content": "We have a pretty significant app completely built with the Feathers SDK. Very happy with the results, and early feedback has been amazing. Absolute joy to develop with it. Thank you so much.",
-    "author": "Darren Yuhar, Software Developer at Profilze",
-    "image": "/img/testimonials/darren-testimonial@2x.jpg",
-    "pinned": true
-  },
-  {
     "title": "Very short development times",
     "content": "I do not trust in any other tool to do 2D fast development considering that the UI has to be retina enabled, responsive and with transitions and animations to be programmed in very short development times.",
     "author": "Luis Guajardo Diaz",
@@ -21,15 +8,34 @@
   },
   {
     "title": "Runs very smoothly on all platforms",
-    "content": "I started a professional tablet application based on Starling and Feathers, and these libraries save me a lot of time and pain in the development process. The app runs very smoothly on all platforms, including Android tablets, iPad, and Windows 8 Pro tablets. That's simply awesome.",
+    "content": "I started a professional tablet application based on Feathers, and this library saves me a lot of time and pain in the development process. The app runs very smoothly on all platforms, including Android tablets, iPad, and Windows tablets. That's simply awesome.",
     "author": "Elefantz, Feathers UI forum member",
     "image": "/img/testimonials/elefantz-testimonial.png"
   },
   {
+    "title": "Game-changer!",
+    "content": "Feathers UI is a game-changer when it comes to creating beautiful, high-performance user interfaces quickly and efficiently. One of the standout features is the ability to skin and fully customize all the UI components to align perfectly with the look-and-feel of our product. From buttons to sliders to entire menus, every UI element can be tailored exactly how I want, making it easy to achieve a consistent and polished design. It really helps give our app its unique identity.",
+    "author": "Steve Easley, VIP Interactive",
+    "image": "/img/testimonials/vipinteract-testimonial@2x.png"
+  },
+  {
+    "title": "Absolute joy to develop with",
+    "content": "We have a pretty significant app completely built with the Feathers. Very happy with the results, and early feedback has been amazing. Absolute joy to develop with it. Thank you so much.",
+    "author": "Darren Yuhar, Software Developer at Profilze",
+    "image": "/img/testimonials/darren-testimonial@2x.jpg",
+    "pinned": true
+  },
+  {
     "title": "For an enterprise of 20,000+ employees",
-    "content": "I've built cross-platform mobile apps in AIR/Starling/Feathers for an enterprise of 20,000+ employees. Engineers, scientists all over the world are using it to great advantage and are extremely happy with it. The UI is snappy &amp; appealing, AIR SDK/ANEs provide access to native os/hardware features, and the application itself is easily customizable. Thank you for all your great work!",
+    "content": "I've built cross-platform mobile apps in Feathers for an enterprise of 20,000+ employees. Engineers, scientists all over the world are using it to great advantage and are extremely happy with it. The UI is snappy &amp; appealing, native extensions provide access to os/hardware features, and the application itself is easily customizable. Thank you for all your great work!",
     "author": "Thomas Wooldridge, Software Developer",
     "image": "/img/testimonials/thomas-testimonial@2x.jpg"
+  },
+  {
+    "title": "I've used Feathers daily, for several years.",
+    "content": "Just want to thank Feathers for the most amazing UI components. I've used them daily, for several years.",
+    "author": "Mike Gowan",
+    "image": "/img/testimonials/mikegowan-testimonial@2x.jpg"
   },
   {
     "title": "My client was really impressed",
@@ -47,7 +53,7 @@
   {
     "title": "Engineers and scientists using it",
     "content": "We've got engineers and scientists using it all over the world to help our clients!",
-    "author": "Mike Cizenski, <a href=\"https://twitter.com/mikeciz/status/546296508841484288\">on Twitter</a>",
+    "author": "Mike Cizenski",
     "image": "/img/testimonials/mike-cizenski-testimonial@2x.jpg"
   }
 ]
