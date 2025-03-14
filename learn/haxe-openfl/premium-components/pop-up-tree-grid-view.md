@@ -71,9 +71,9 @@ The item has three fields, `item`, `dept`, and `price`. Create a separate [`Tree
 
 ```haxe
 popUpTreeGridView.columns = new ArrayCollection([
-    new TreeGridViewColumn("Item", (data) -> data.item),
-    new TreeGridViewColumn("Department", (data) -> data.dept),
-    new TreeGridViewColumn("Unit Price", (data) -> data.price)
+    new TreeGridViewColumn("Item", (data:Dynamic) -> data.item),
+    new TreeGridViewColumn("Department", (data:Dynamic) -> data.dept),
+    new TreeGridViewColumn("Unit Price", (data:Dynamic) -> data.price)
 ]);
 ```
 
@@ -175,7 +175,7 @@ var recycler = DisplayObjectRecycler.withFunction(() -> {
 Both [`PopUpTreeGridView`](https://api.feathersui.com/premium-components/data-containers-pack/com/feathersui/controls/PopUpTreeGridView.html) and [`TreeGridViewColumn`](https://api.feathersui.com/current/feathers/controls/TreeGridViewColumn.html) define `cellRendererRecycler` properties. On [`TreeGridViewColumn`](https://api.feathersui.com/current/feathers/controls/TreeGridViewColumn.html), the [`cellRendererRecycler`](https://api.feathersui.com/current/feathers/controls/TreeGridViewColumn.html#cellRendererRecycler) property may be used to customize the cell renderers in that specific column. On [`PopUpTreeGridView`](https://api.feathersui.com/premium-components/data-containers-pack/com/feathersui/controls/PopUpTreeGridView.html), the [`cellRendererRecycler`](https://api.feathersui.com/premium-components/data-containers-pack/com/feathersui/controls/PopUpTreeGridView.html#cellRendererRecycler) property may be used to customize the default cell renderers used when a particular column doesn't have a specific cell renderer.
 
 ```haxe
-var column = new TreeGridViewColumn("Item", (data) -> data.item);
+var column = new TreeGridViewColumn("Item", (data:Dynamic) -> data.item);
 column.cellRendererRecycler = recycler;
 ```
 

@@ -4,7 +4,7 @@ layout: "docs.html"
 sidebarTitle: PhoneNumberTextInput
 ---
 
-The [`PhoneNumberTextInput`](https://api.feathersui.com/premium-components/text-inputs-pack/com/feathersui/controls/PhoneNumberTextInput.html) class creates an editable text field for phone numbers that use the [Wikipedia: North American Numbering Plan](https://en.wikipedia.org/wiki/North_American_Numbering_Plan) (including the USA, Canada, and the Caribbean). A phone number in this format consists of ten digits, divided into three parts — a three-digit area code, a three-digit central office (or exchange) code, and a four-digit line number. Examples include `(800) 555-1212`, `377-867-5309`, and `123-456-7890`.
+The [`PhoneNumberTextInput`](https://api.feathersui.com/premium-components/text-inputs-pack/com/feathersui/controls/PhoneNumberTextInput.html) class creates an editable text field for phone numbers that use the [North American Numbering Plan](https://en.wikipedia.org/wiki/North_American_Numbering_Plan) (including the USA, Canada, and the Caribbean). A phone number in this format consists of ten digits, divided into three parts — a three-digit area code, a three-digit central office (or exchange) code, and a four-digit line number. Examples include `(800) 555-1212`, `377-867-5309`, and `123-456-7890`.
 
 > ⚠️ **Beta Notice**: This component is still quite new. Some APIs may go through minor changes in upcoming releases.
 

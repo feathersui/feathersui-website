@@ -44,9 +44,9 @@ The item has three fields, `item`, `dept`, and `price`. Create a separate [`Grid
 
 ```haxe
 popUpGridView.columns = new ArrayCollection([
-    new GridViewColumn("Item", (data) -> data.item),
-    new GridViewColumn("Department", (data) -> data.dept),
-    new GridViewColumn("Unit Price", (data) -> data.price)
+    new GridViewColumn("Item", (data:Dynamic) -> data.item),
+    new GridViewColumn("Department", (data:Dynamic) -> data.dept),
+    new GridViewColumn("Unit Price", (data:Dynamic) -> data.price)
 ]);
 ```
 
@@ -149,7 +149,7 @@ var recycler = DisplayObjectRecycler.withFunction(() -> {
 Both [`PopUpGridView`](https://api.feathersui.com/premium-components/data-containers-pack/com/feathersui/controls/PopUpGridView.html) and [`GridViewColumn`](https://api.feathersui.com/current/feathers/controls/GridViewColumn.html) define `cellRendererRecycler` properties. On [`GridViewColumn`](https://api.feathersui.com/current/feathers/controls/GridViewColumn.html), the [`cellRendererRecycler`](https://api.feathersui.com/current/feathers/controls/GridViewColumn.html#cellRendererRecycler) property may be used to customize the cell renderers in that specific column. On [`PopUpGridView`](https://api.feathersui.com/premium-components/data-containers-pack/com/feathersui/controls/PopUpGridView.html), the [`cellRendererRecycler`](https://api.feathersui.com/premium-components/data-containers-pack/com/feathersui/controls/PopUpGridView.html#cellRendererRecycler) property may be used to customize the default cell renderers used when a particular column doesn't have a specific cell renderer.
 
 ```haxe
-var column = new GridViewColumn("Item", (data) -> data.item);
+var column = new GridViewColumn("Item", (data:Dynamic) -> data.item);
 column.cellRendererRecycler = recycler;
 ```
 

@@ -128,6 +128,43 @@
       "roadmap"
     ]
   },
+  "learn/haxe-openfl/premium-components": {
+    "Premium UI Components": ["index"],
+    "Barcodes Pack": [
+      "barcodes-pack",
+      "code39-barcode",
+      "code128a-barcode",
+      "code128b-barcode",
+      "ean8-barcode",
+      "ean13-barcode",
+      "qr-code",
+      "upca-barcode",
+      "upce-barcode"
+    ],
+    "Data Containers Pack": [
+      "data-containers-pack",
+      "cascade-list-view",
+      "grid-combo-box",
+      "pop-up-grid-view",
+      "pop-up-tree-grid-view",
+      "pop-up-tree-view"
+    ],
+    "Sparklines": [
+      "sparklines",
+      "sparkline-type-column",
+      "sparkline-type-line"
+    ],
+    "Text Inputs Pack": [
+      "text-inputs-pack",
+      "ein-text-input",
+      "ipv4-address-text-input",
+      "masked-text-input",
+      "phone-number-text-input",
+      "sin-text-input",
+      "ssn-text-input",
+      "zip-code-text-input"
+    ]
+  },
   "learn/screencasts": {
     "Getting started": [
       "index",
