@@ -177,9 +177,10 @@
     ]
   },
   "learn/as3-starling": {
-    "Getting started": [
-      "installation",
+    "Introduction": [
       "getting-started",
+      "installation",
+      "hello-world",
       {
         "type": "subcategory",
         "label": "Create a new project in…",
