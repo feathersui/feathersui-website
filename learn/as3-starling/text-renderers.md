@@ -109,7 +109,7 @@ The choice of a text renderer can be left to your theme instead of cluttering up
 
 ## Custom Text Renderers
 
-If you'd like to use a different approach to rendering text, you may implement the [`ITextRenderer`](/api-reference/feathers/core/ITextRenderer.html) interface. This interface provides a simple API for passing a string to a text renderer to display and measuring the text. One example of a custom text renderer might be one that uses [Text Layout Framework (TLF)](http://www.adobe.com/devnet/tlf.html) to provide a number of advanced capabilities.
+If you'd like to use a different approach to rendering text, you may implement the [`ITextRenderer`](/api-reference/feathers/core/ITextRenderer.html) interface. This interface provides a simple API for passing a string to a text renderer to display and measuring the text. One example of a custom text renderer might be one that uses Text Layout Framework (TLF) to provide a number of advanced capabilities.
 
 Unless your custom renderer is capable of drawing directly to the GPU, chances are that you will need to implement some form of texture snapshots, similar to the `TextFieldTextRenderer` or `TextBlockTextRenderer`. Since Feathers is open source, feel free to look through the source code for one of these text renderer classes for inspiration.
 

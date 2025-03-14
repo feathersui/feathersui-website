@@ -10,7 +10,7 @@ Frequently asked questions about Feathers (Starling version).
 
 ### Who is behind the development of Feathers?
 
-Feathers is designed and developed by [Josh Tynjala](https://twitter.com/joshtynjala), an experienced, frontend software developer who has worked in the Adobe Flash ecosystem since 2004. He has years of experience developing custom Flash user interface components, and he has built many apps with Adobe Flash Player and Adobe AIR for web, desktop, and mobile.
+Feathers is designed and developed by [Josh Tynjala](https://github.com/joshtynjala), an experienced, frontend software developer who has worked in the Adobe Flash ecosystem since 2004. He has years of experience developing custom Flash user interface components, and he has built many apps with Adobe Flash Player and Adobe AIR for web, desktop, and mobile.
 
 Feathers originated during a time when Josh was developing mobile games for iOS and Android with Adobe AIR. Josh needed UI components that offered excellent performance, touch-centric behavior, and flexible skinning options. None of the Flash UI frameworks at the time were optimized for mobile, and everything was designed for a keyboard and mouse instead of touch screens. He needed to start fresh — focusing on mobile first.
 
@@ -42,13 +42,13 @@ Feel free to [report bugs and request features](https://github.com/feathersui/fe
 
 Pull requests are welcome for bug fixes. Before submitting a pull request, be sure to take a look at the [Feathers Coding Conventions for Contributors](../coding-conventions.md). All code in Feathers is expected to match the coding style described in that document. Contributions that don't follow the coding conventions may be given a lower priority due to the extra effort required to reformat your code.
 
-For new components and other major contributions, I encourage you to create your own project on [Github](https://github.com/) as an extension to Feathers or as a fork. [Send me a link](https://twitter.com/joshtynjala), and I'll be happy to share it with the community. If enough developers show interest in your project, and there's demand for including it in the core Feathers library, we can discuss the details further.
+For new components and other major contributions, I encourage you to create your own project on [Github](https://github.com/) as an extension to Feathers or as a fork. [Share a link on the forums](https://forum.starling-framework.org/t/feathers), and I'll be happy to share it with the community. If enough developers show interest in your project, and there's demand for including it in the core Feathers library, we can discuss the details further.
 
 ## Technical Requirements
 
 ### What operating systems can run apps made with Feathers?
 
-Feathers uses [Adobe AIR](http://www.adobe.com/products/air.html), which can create completely standalone, native apps on iOS, Android (including Barnes & Noble's NOOK devices, Amazon's Kindle devices, and the OUYA console), Windows, and macOS. It also works with the Adobe Flash Player plugin in web browsers.
+Feathers uses [Adobe AIR](https://airsdk.dev), which can create completely standalone, native apps on iOS, Android (including Barnes & Noble's NOOK devices, Amazon's Kindle devices, and the OUYA console), Windows, and macOS. It also works with the Adobe Flash Player plugin in web browsers.
 
 ### Doesn't Adobe AIR require a separate runtime to be installed?
 

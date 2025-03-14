@@ -14,7 +14,7 @@ Let's create a [Feathers](./getting-started.md) and [Starling](https://gamua.com
 
 3. In the **Properties** panel, ensure that the **Target** is set to an appropriate version of the Flash runtime that you are targeting. Please check the Feathers README file to see which versions of the Flash runtimes are required for the version of Feathers that you are using.
 
-   If the minimum version of Adobe AIR or Flash Player specified in the Feathers README file is not listed, go to the **Help** menu and select **Manage AIR SDK…** to manually add the appropriate version of the AIR SDK. You can [download the latest AIR SDK](http://www.adobe.com/devnet/air/air-sdk-download.html) from Adobe's website.
+   If the minimum version of Adobe AIR or Flash Player specified in the Feathers README file is not listed, go to the **Help** menu and select **Manage AIR SDK…** to manually add the appropriate version of the AIR SDK. You can [download the latest AIR SDK](http://airsdk.harman.com/download/) from Harman's website.
 
 4. Set up the `renderMode` or `wmode` for your target platform.
 

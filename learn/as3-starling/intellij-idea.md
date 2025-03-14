@@ -16,7 +16,7 @@ Let's create a [Feathers](./getting-started.md) and [Starling](https://gamua.com
 
 4. In the next section, select the approporite **Target platform** (Web, Desktop, or Mobile) and select **Pure ActionScript**. For **Output type**, select **Application**. Select an appropriate **Flex/AIR SDK** (see below where to download the latest version of the AIR SDK). Then click **Finish**.
 
-   You can download the latest [Adobe AIR SDK and Compiler](http://www.adobe.com/devnet/air/air-sdk-download.html) from Adobe's website. This SDK can be used to target both Adobe AIR and Adobe Flash Player in the browser. Check the Feathers README file to see the minimum required versions of Adobe AIR and Flash Player for the version of Feathers that you are using.
+   You can download the latest [Adobe AIR SDK and Compiler](http://airsdk.harman.com/download/) from Harman's website. This SDK can be used to target both Adobe AIR and Adobe Flash Player in the browser. Check the Feathers README file to see the minimum required versions of Adobe AIR and Flash Player for the version of Feathers that you are using.
 
 5. Now that the project is created, you will need to add Feathers and Starling Framework to the project. Select the **File** menu → **Project Structure**, then under **Project Settings** choose **Libraries**. Click the **+** (plus sign) at the top. Next, select **ActionScript/Flex** and specify the location of **starling.swc**.
 

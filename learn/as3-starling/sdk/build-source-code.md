@@ -13,7 +13,7 @@ The document explains how to build the Feathers SDK from source code.
 - [Apache Ant](http://ant.apache.org) 1.9.1 or newer
 - Java 8 update 101 or newer
 - [_playerglobal.swc_](https://fpdownload.macromedia.com/get/flashplayer/updaters/32/playerglobal32_0.swc) for Flash Player 32.0
-- Adobe AIR SDK 32.0 _without_ the ASC 2.0 compiler (Download from [Archived Adobe AIR SDK versions](https://helpx.adobe.com/air/kb/archived-air-sdk-version.html))
+- Adobe AIR SDK _for Flex developers_ (Download from [Harman's AIR SDK website](https://airsdk.harman.com/download/))
 
 ## Build Steps
 

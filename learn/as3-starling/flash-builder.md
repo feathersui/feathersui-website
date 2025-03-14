@@ -4,11 +4,11 @@ layout: "docs.html"
 sidebarTitle: Adobe Flash Builder
 ---
 
-Let's create a [Feathers](./getting-started.md) and [Starling](https://gamua.com/starling/) project in [Adobe Flash Builder](http://www.adobe.com/products/flash-builder.html).
+Let's create a [Feathers](./getting-started.md) and [Starling](https://gamua.com/starling/) project in [Adobe Flash Builder](https://en.wikipedia.org/wiki/Adobe_Flash_Builder).
 
 > These instructions apply to Flash Builder 4.7. Minor variations may exist between different versions of Flash Builder.
 
-1. Follow Adobe's guide [How to update AIR SDK for Adobe Flash Builder 4.7](https://helpx.adobe.com/flash-builder/kb/overlay-air-sdk-flash-builder.html) to ensure that Flash Builder is using the latest version of the [Adobe AIR SDK](https://www.adobe.com/go/air_sdk).
+1. Follow Adobe's guide [How to update AIR SDK for Adobe Flash Builder 4.7](https://web.archive.org/web/20220820143150/https://helpx.adobe.com/flash-builder/kb/overlay-air-sdk-flash-builder.html) to ensure that Flash Builder is using the latest version of the [Adobe AIR SDK](http://airsdk.harman.com/download/).
 
 2. Download the latest stable versions of [Feathers](./installation.md) and [Starling Framework](http://gamua.com/starling/download/).
 

@@ -4,7 +4,7 @@ layout: "docs.html"
 sidebarTitle: Build SDK from Binary Distribution
 ---
 
-The document explains how to build the Feathers SDK from a binary distribution. The build process automatically downloads the [Adobe AIR SDK](https://helpx.adobe.com/air/kb/archived-air-sdk-version.html), [_playerglobal.swc_](https://fpdownload.macromedia.com/get/flashplayer/updaters/32/playerglobal32_0.swc), and some [font embedding utilities from the Adobe Flex SDK](https://sourceforge.net/adobe/flexsdk/code/HEAD/tree/trunk/lib/) that are not open source. When finished, the Feathers SDK will be ready to use with a supported IDE.
+The document explains how to build the Feathers SDK from a binary distribution. The build process automatically downloads the Adobe AIR SDK, [_playerglobal.swc_](https://fpdownload.macromedia.com/get/flashplayer/updaters/32/playerglobal32_0.swc), and some [font embedding utilities from the Adobe Flex SDK](https://sourceforge.net/adobe/flexsdk/code/HEAD/tree/trunk/lib/) that are not open source. When finished, the Feathers SDK will be ready to use with a supported IDE.
 
 > Most developers should use the [Feathers SDK Manager](./installation-instructions.md) instead. This tutorial is meant for advanced developers who want to modify the Feathers SDK compiler source code to contribute or to create a fork.
 

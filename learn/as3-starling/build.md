@@ -14,7 +14,7 @@ Whether you're using the latest unstable version of Feathers or you've made chan
 
 - [Apache Ant](http://ant.apache.org/)
 
-- [Adobe AIR SDK with Compiler](http://www.adobe.com/go/air_sdk)
+- [Adobe AIR SDK with Compiler](http://airsdk.harman.com/download/)
 
 ## Build Instructions
 

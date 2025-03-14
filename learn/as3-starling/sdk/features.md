@@ -4,7 +4,7 @@ layout: "docs.html"
 sidebarTitle: SDK Features
 ---
 
-The Feathers SDK offers everything you need to build [Feathers](https://feathersui.com/) applications using [MXML](./mxml.md) and [ActionScript 3](https://www.adobe.com/devnet/actionscript/articles/actionscript3_overview.html), including compilers and user interface components, in one open source package.
+The Feathers SDK offers everything you need to build [Feathers](https://feathersui.com/) applications using [MXML](./mxml.md) and [ActionScript 3](https://github.com/joshtynjala/learning-actionscript-3.0), including compilers and user interface components, in one open source package.
 
 ## Overview
 

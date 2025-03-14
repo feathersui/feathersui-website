@@ -4,7 +4,7 @@ layout: "docs.html"
 sidebarTitle: Adobe Flash Builder
 ---
 
-Let's get your [Flash Builder](http://www.adobe.com/products/flash-builder.html) development environment setup to use the [Feathers SDK](https://feathersui.com/sdk/).
+Let's get your [Flash Builder](https://en.wikipedia.org/wiki/Adobe_Flash_Builder) development environment setup to use the [Feathers SDK](https://feathersui.com/sdk/).
 
 > These instructions apply to both Flash Builder 4.6 and Flash Builder 4.7. Older versions of Flash Builder are not supported.
 
