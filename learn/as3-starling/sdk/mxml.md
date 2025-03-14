@@ -4,7 +4,7 @@ layout: "docs.html"
 sidebarTitle: MXML
 ---
 
-The [Feathers SDK](https://feathersui.com/sdk/) supports using MXML to declaratively layout user interfaces at compile time. MXML provides a number of features to reduce boilerplate ActionScript code and make user interface code more readable.
+The [Feathers SDK](/learn/as3-starling/sdk/) supports using MXML to declaratively layout user interfaces at compile time. MXML provides a number of features to reduce boilerplate ActionScript code and make user interface code more readable.
 
 - [Add children to containers](#add-children-to-containers)
 - [Set properties on objects](#set-properties-on-objects)

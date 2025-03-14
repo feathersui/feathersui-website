@@ -53,9 +53,9 @@ grid.dataProvider = items;
 
 > `ArrayCollection` is one of multiple classes that implement the [`IListCollection`](/api-reference/feathers/data/IListCollection.html) interface. `IListCollection` may wrap any type of data to provide a common API that the `DataGrid` component can understand. Out of the box, we may use these collection implementations:
 >
-> - [`ArrayCollection`](/api-reference/feathers/data/ArrayCollection.html) for data based on an [`Array`](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/Array.html)
-> - [`VectorCollection`](/api-reference/feathers/data/VectorCollection.html) for data based on a [`Vector`](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/Vector.html)
-> - [`XMLListCollection`](/api-reference/feathers/data/XMLListCollection.html) for data based on an [`XMLList`](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XMLList.html)
+> - [`ArrayCollection`](/api-reference/feathers/data/ArrayCollection.html) for data based on an [`Array`](https://airsdk.dev/reference/actionscript/3.0/Array.html)
+> - [`VectorCollection`](/api-reference/feathers/data/VectorCollection.html) for data based on a [`Vector`](https://airsdk.dev/reference/actionscript/3.0/Vector.html)
+> - [`XMLListCollection`](/api-reference/feathers/data/XMLListCollection.html) for data based on an [`XMLList`](https://airsdk.dev/reference/actionscript/3.0/XMLList.html)
 >
 > It's even possible for anyone to create new `IListCollection` implementations to display custom data types, if needed.
 

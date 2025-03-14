@@ -4,14 +4,14 @@ layout: "docs.html"
 sidebarTitle: Build SDK from Binary Distribution
 ---
 
-The document explains how to build the Feathers SDK from a binary distribution. The build process automatically downloads the Adobe AIR SDK, [_playerglobal.swc_](https://fpdownload.macromedia.com/get/flashplayer/updaters/32/playerglobal32_0.swc), and some [font embedding utilities from the Adobe Flex SDK](https://sourceforge.net/adobe/flexsdk/code/HEAD/tree/trunk/lib/) that are not open source. When finished, the Feathers SDK will be ready to use with a supported IDE.
+The document explains how to build the [Feathers SDK](/learn/as3-starling/sdk/) from a binary distribution. The build process automatically downloads the Adobe AIR SDK, [_playerglobal.swc_](https://fpdownload.macromedia.com/get/flashplayer/updaters/32/playerglobal32_0.swc), and some [font embedding utilities from the Adobe Flex SDK](https://sourceforge.net/adobe/flexsdk/code/HEAD/tree/trunk/lib/) that are not open source. When finished, the Feathers SDK will be ready to use with a supported IDE.
 
 > Most developers should use the [Feathers SDK Manager](./installation-instructions.md) instead. This tutorial is meant for advanced developers who want to modify the Feathers SDK compiler source code to contribute or to create a fork.
 
 ## Requirements
 
 - A _binary distribution_ of the Feathers SDK [(available from Github)](https://github.com/feathersui/feathersui-starling-sdk/releases)
-- [Apache Ant](http://ant.apache.org) 1.9.1 or newer
+- [Apache Ant](https://ant.apache.org) 1.9.1 or newer
 - Java 8 update 101 or newer
 
 ## Build Steps
@@ -50,4 +50,4 @@ javax.net.ssl.SSLHandshakeException: Received fatal alert: handshake_failure
     at org.apache.tools.ant.taskdefs.Get$GetThread.run(Get.java:596)
 ```
 
-To fix this issue, you must download and install the [Java Cryptography Extension (JCE) Unlimited Strength Jurisdiction Policy Files](http://www.oracle.com/technetwork/java/javase/downloads/jce8-download-2133166.html).
+To fix this issue, you must download and install the [Java Cryptography Extension (JCE) Unlimited Strength Jurisdiction Policy Files](https://www.oracle.com/technetwork/java/javase/downloads/jce8-download-2133166.html).

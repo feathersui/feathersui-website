@@ -4,7 +4,7 @@ layout: "docs.html"
 sidebarTitle: Features
 ---
 
-[Feathers](./getting-started.md) is an open source library of user interface components for [Starling](http://gamua.com/starling/) and [Adobe AIR](https://airdsk.dev). Let's take a look at some of what Feathers has to offer.
+[Feathers](/learn/as3-starling/getting-started/) is an open source library of user interface components for [Starling](https://gamua.com/starling/) and [Adobe AIR](https://airdsk.dev). Let's take a look at some of what Feathers has to offer.
 
 ## Overview
 
@@ -52,7 +52,7 @@ sidebarTitle: Features
 
 - Factories and interfaces allow you to customize sub-components. For instance, select the type of sub-component best suited for phone, tablet, or desktop.
 
-- Choice of [text rendering](./text-renderers.md) between bitmap fonts or vector fonts drawn to textures. Vector fonts may be rendered with either `flash.text.TextField` or Flash Text Engine.
+- Choice of [text rendering](./text-renderers.md) between bitmap fonts or vector fonts drawn to textures. Vector fonts may be rendered with either [`flash.text.TextField`](https://airsdk.dev/docs/development/text/using-the-textfield-class) or [Flash Text Engine](https://airsdk.dev/docs/development/text/using-the-flash-text-engine).
 
 ## Containers
 

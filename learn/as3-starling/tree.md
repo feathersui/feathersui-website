@@ -72,9 +72,9 @@ tree.dataProvider = treeData;
 
 > `ArrayHierarchicalCollection` is one of multiple classes that implement the `IHierarchicalCollection` interface. `IHierarchicalCollection` wraps any type of data to provide a common API that the `Tree` component can understand. Out of the box, we may use these collection implementations:
 >
-> - [`ArrayHierarchicalCollection`](/api-reference/feathers/data/ArrayHierarchicalCollection.html) for data based on an [`Array`](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/Array.html)
-> - [`VectorHierarchicalCollection`](/api-reference/feathers/data/VectorHierarchicalCollection.html) for data based on a [`Vector`](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/Vector.html)
-> - [`XMLListHierarchicalCollection`](/api-reference/feathers/data/XMLListHierarchicalCollection.html) for data based on an [`XMLList`](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/XMLList.html)
+> - [`ArrayHierarchicalCollection`](/api-reference/feathers/data/ArrayHierarchicalCollection.html) for data based on an [`Array`](https://airsdk.dev/reference/actionscript/3.0/Array.html)
+> - [`VectorHierarchicalCollection`](/api-reference/feathers/data/VectorHierarchicalCollection.html) for data based on a [`Vector`](https://airsdk.dev/reference/actionscript/3.0/Vector.html)
+> - [`XMLListHierarchicalCollection`](/api-reference/feathers/data/XMLListHierarchicalCollection.html) for data based on an [`XMLList`](https://airsdk.dev/reference/actionscript/3.0/XMLList.html)
 >
 > It's even possible for anyone to create new `IHierarhicalCollection` implementations to display custom data types, if needed.
 

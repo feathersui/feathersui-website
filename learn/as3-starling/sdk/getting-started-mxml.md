@@ -4,7 +4,7 @@ layout: "docs.html"
 sidebarTitle: Hello World with MXML
 ---
 
-In the following beginner-level tutorial, we'll create our first Feathers SDK application that includes a simple [`Button`](../button.md) component. We'll set some properties, listen for an event, and skin the button with a theme.
+In the following beginner-level tutorial, we'll create our first [Feathers SDK](/learn/as3-starling/sdk/) application that includes a simple [`Button`](../button.md) component. We'll set some properties, listen for an event, and skin the button with a theme.
 
 ## Prerequisites
 

@@ -4,7 +4,7 @@ layout: "docs.html"
 sidebarTitle: TextFieldTextEditor
 ---
 
-The [`TextFieldTextEditor`](/api-reference/feathers/controls/text/TextFieldTextEditor.html) class renders text using the classic [flash.text.TextField](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/text/TextField.html), a software-based vector font renderer. Text may be rendered with either device fonts (the fonts installed on a user's operating system) or embedded fonts (in TTF or OTF formats). The [`type`](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/text/TextField.html#type) property of the `TextField` is set to [`TextFieldType.INPUT`](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/text/TextFieldType.html#INPUT).
+The [`TextFieldTextEditor`](/api-reference/feathers/controls/text/TextFieldTextEditor.html) class renders text using the classic [`flash.text.TextField`](https://airsdk.dev/docs/development/text/using-the-textfield-class), a software-based vector font renderer. Text may be rendered with either device fonts (the fonts installed on a user's operating system) or embedded fonts (in TTF or OTF formats). The [`type`](https://airsdk.dev/reference/actionscript/3.0/flash/text/TextField.html#type) property of the `TextField` is set to [`TextFieldType.INPUT`](https://airsdk.dev/reference/actionscript/3.0/flash/text/TextFieldType.html#INPUT).
 
 When the `TextInput` has focus, the `TextField` instance is displayed on the classic display list above other Starling content. When focus is lost, the `TextField` is drawn to `BitmapData` and converted to a Starling `Texture` to display as a snapshot within the Starling display list. This snapshot allows the `TextInput` to be added to a scrolling container, and it will be properly clipped without the `TextField` appearing above the other Starling content when it is not in focus.
 
@@ -16,9 +16,9 @@ The classic Flash `TextField` may render text using device fonts, which are the 
 
 This text editor displays the classic Flash `TextField` on the display list above Starling when the `TextInput` has focus. When focused, this `TextField` will not appear below other Starling display objects that might cover up the `TextInput` when it is not focused. Generally, this situation does not happen frequently.
 
-Because each passage of vector text needs to be drawn to `BitmapData`, each separate renderer requires its own separate texture on the GPU. This results in more [state changes](http://wiki.starling-framework.org/manual/performance_optimization#minimize_state_changes) and [draw calls](./faq/draw-calls.md), which can create more work for the GPU, and it might hurt performance if you have many different instances of `TextFieldTextEditor` on screen at the same time.
+Because each passage of vector text needs to be drawn to `BitmapData`, each separate renderer requires its own separate texture on the GPU. This results in more [state changes](https://wiki.starling-framework.org/manual/performance_optimization#minimize_state_changes) and [draw calls](./faq/draw-calls.md), which can create more work for the GPU, and it might hurt performance if you have many different instances of `TextFieldTextEditor` on screen at the same time.
 
-`flash.text.TextField` can sometimes render a bit faster than Flash Text Engine. However, this performance difference is generally negligible.
+`flash.text.TextField` can sometimes render a bit faster than [Flash Text Engine (FTE)](https://airsdk.dev/docs/development/text/using-the-flash-text-engine). However, this performance difference is generally negligible.
 
 `TextFieldTextEditor` provides a slightly less native experience on mobile than `StageTextTextEditor`. More advanced capabilities like copy and paste may not be available on all platforms when using `TextFieldTextEditor`. `TextFieldTextEditor` is best suited for situations where `StageTextTextEditor` lacks other capabilities that your app requires, such as using embedded fonts.
 
@@ -26,7 +26,7 @@ Because each passage of vector text needs to be drawn to `BitmapData`, each sepa
 
 ### Advanced font styles
 
-> In general, you should customize font styles on the parent component of a text editor using a [`starling.text.TextFormat`](http://doc.starling-framework.org/current/starling/text/TextFormat.html) object. For example, to customize the font styles on a [`TextInput`](./text-input.md) component, you'd set the input's [`fontStyles`](/api-reference/feathers/controls/TextInput.html#fontStyles) property.
+> In general, you should customize font styles on the parent component of a text editor using a [`starling.text.TextFormat`](https://doc.starling-framework.org/current/starling/text/TextFormat.html) object. For example, to customize the font styles on a [`TextInput`](./text-input.md) component, you'd set the input's [`fontStyles`](/api-reference/feathers/controls/TextInput.html#fontStyles) property.
 >
 > ```actionscript
 > input.fontStyles = new TextFormat( "Helvetica", 20, 0xcc0000 );
@@ -51,7 +51,7 @@ input.textEditorFactory = function():ITextEditor
 
 > You may need to remove the text editor's style provider in the factory before changing font styles to avoid conflicts with the default styles set by a theme. That's why the `styleProvider` property is set to `null` in the code above.
 
-Advanced font styles may be customized using the native [`flash.text.TextFormat`](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/text/TextFormat.html) class. Pass an instance of `TextFormat` to the text editor's [`textFormat`](/api-reference/feathers/controls/text/TextFieldTextEditor.html#textFormat) property:
+Advanced font styles may be customized using the native [`flash.text.TextFormat`](https://airsdk.dev/reference/actionscript/3.0/flash/text/TextFormat.html) class. Pass an instance of `TextFormat` to the text editor's [`textFormat`](/api-reference/feathers/controls/text/TextFieldTextEditor.html#textFormat) property:
 
 ```actionscript
 textEditor.textFormat = new TextFormat( "Source Sans Pro", 16, 0xcccccc );

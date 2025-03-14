@@ -105,7 +105,7 @@ private function list_touchHandler(event:TouchEvent):void
 }
 ```
 
-It's mostly boilerplate for tracking the appropriate touch ID. There are two important things to note. First, in the section for [`TouchPhase.BEGAN`](http://doc.starling-framework.org/core/starling/events/TouchPhase.html#BEGAN), we initialize the value of the `_previousGlobalTouchY` variable. Second, in the section for [`TouchPhase.MOVED`](http://doc.starling-framework.org/core/starling/events/TouchPhase.html#BEGAN), we call another function named `dragHeader()`. Let's implement that function now.
+It's mostly boilerplate for tracking the appropriate touch ID. There are two important things to note. First, in the section for [`TouchPhase.BEGAN`](https://doc.starling-framework.org/core/starling/events/TouchPhase.html#BEGAN), we initialize the value of the `_previousGlobalTouchY` variable. Second, in the section for [`TouchPhase.MOVED`](https://doc.starling-framework.org/core/starling/events/TouchPhase.html#BEGAN), we call another function named `dragHeader()`. Let's implement that function now.
 
 ```actionscript
 private function dragHeader(touch:Touch):void

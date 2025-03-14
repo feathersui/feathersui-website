@@ -48,7 +48,7 @@ The font styles of the label may be customized using the [`fontStyles`](/api-ref
 label.fontStyles = new TextFormat( "Helvetica", 20, 0x3c3c3c );
 ```
 
-Pass in a [`starling.text.TextFormat`](http://doc.starling-framework.org/current/starling/text/TextFormat.html) object, which will work with any type of [text renderer](./text-renderers.md).
+Pass in a [`starling.text.TextFormat`](https://doc.starling-framework.org/current/starling/text/TextFormat.html) object, which will work with any type of [text renderer](./text-renderers.md).
 
 If the label should use different font styles when it is disabled, you may set the [`disabledFontStyles`](/api-reference/feathers/controls/Label.html#disabledFontStyles) property too:
 

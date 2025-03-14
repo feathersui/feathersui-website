@@ -4,7 +4,7 @@ layout: "docs.html"
 sidebarTitle: TextFieldTextRenderer
 ---
 
-The [`TextFieldTextRenderer`](/api-reference/feathers/controls/text/TextFieldTextRenderer.html) class renders text using the classic [flash.text.TextField](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/text/TextField.html) a software-based vector font renderer. Text may be rendered with either device fonts (the fonts installed on a user's operating system) or embedded fonts (in TTF or OTF formats). The [`TextField`](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/text/engine/TextBlock.html) is drawn to `BitmapData` and converted to a Starling `Texture` to display as a snapshot within the Starling display list.
+The [`TextFieldTextRenderer`](/api-reference/feathers/controls/text/TextFieldTextRenderer.html) class renders text using the classic [`flash.text.TextField`](https://airsdk.dev/docs/development/text/using-the-textfield-class) a software-based vector font renderer. Text may be rendered with either device fonts (the fonts installed on a user's operating system) or embedded fonts (in TTF or OTF formats). The [`TextField`](https://airsdk.dev/reference/actionscript/3.0/flash/text/engine/TextBlock.html) is drawn to `BitmapData` and converted to a Starling `Texture` to display as a snapshot within the Starling display list.
 
 > `TextFieldTextRenderer` is one of many different [text renderers](./text-renderers.md) supported by Feathers. Since no method of rendering text on the GPU is considered definitively better than the others, Feathers allows you to choose the best text renderer for your project's requirements. See [Introduction to Feathers text renderers](./text-renderers.md) for complete details about all of the text rendering options supported by Feathers.
 
@@ -16,21 +16,21 @@ Similarly, since embedded vector fonts often require less memory than embedded b
 
 Changing vector-based text on the GPU is slower than with bitmap fonts because the text needs to be redrawn to `BitmapData` and then it needs to be uploaded to a texture on the GPU. However, once this texture is on the GPU, performance will be very smooth as long as the text doesn't change again. For text that changes often, the texture upload time may become a bottleneck.
 
-Because each passage of vector text needs to be drawn to `BitmapData`, each separate renderer requires its own separate texture on the GPU. This results in more [state changes](http://wiki.starling-framework.org/manual/performance_optimization#minimize_state_changes) and [draw calls](./faq/draw-calls.md), which can create more work for the GPU, and it might hurt performance if you have many different instances of `TextFieldTextRenderer` on screen at the same time.
+Because each passage of vector text needs to be drawn to `BitmapData`, each separate renderer requires its own separate texture on the GPU. This results in more [state changes](https://wiki.starling-framework.org/manual/performance_optimization#minimize_state_changes) and [draw calls](./faq/draw-calls.md), which can create more work for the GPU, and it might hurt performance if you have many different instances of `TextFieldTextRenderer` on screen at the same time.
 
-`flash.text.TextField` can sometimes render a bit faster than Flash Text Engine. However, this performance difference is generally negligible.
+[`flash.text.TextField`](https://airsdk.dev/docs/development/text/using-the-textfield-class) can sometimes render a bit faster than [Flash Text Engine (FTE)](https://airsdk.dev/docs/development/text/using-the-flash-text-engine). However, this performance difference is generally negligible.
 
-[`flash.text.TextField`](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/text/TextField.html) has some known issues and limitations:
+[`flash.text.TextField`](https://airsdk.dev/reference/actionscript/3.0/flash/text/TextField.html) has some known issues and limitations:
 
 - `TextField` may render incorrectly when drawn to `BitmapData` immediately after its properties have been changed. As a workaround, `TextFieldTextRenderer` can wait one frame before drawing to `BitmapData` and uploading as a texture when the text or font styles are changed. Often, this delay will not be an issue, but it can be seen if watching closely.
 
 - `TextField` offers limited support for some languages, including right-to-left languages and bi-directional text, and Flash Text Engine is recommended for these languages.
 
-`TextFieldTextRenderer` supports [a limited subset of HTML](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/text/TextField.html#htmlText) courtesy of `flash.text.TextField`. This may be used to render richer text with multiple font styles.
+`TextFieldTextRenderer` supports [a limited subset of HTML](https://airsdk.dev/reference/actionscript/3.0/flash/text/TextField.html#htmlText) courtesy of `flash.text.TextField`. This may be used to render richer text with multiple font styles.
 
 ### Advanced font styles
 
-> In general, you should customize font styles on the parent component of a text renderer using a [`starling.text.TextFormat`](http://doc.starling-framework.org/current/starling/text/TextFormat.html) object. For example, to customize the font styles on a [`Button`](./button.md) component, you'd set the button's [`fontStyles`](/api-reference/feathers/controls/Button.html#fontStyles) property.
+> In general, you should customize font styles on the parent component of a text renderer using a [`starling.text.TextFormat`](https://doc.starling-framework.org/current/starling/text/TextFormat.html) object. For example, to customize the font styles on a [`Button`](./button.md) component, you'd set the button's [`fontStyles`](/api-reference/feathers/controls/Button.html#fontStyles) property.
 >
 > ```actionscript
 > button.fontStyles = new TextFormat( "Helvetica", 20, 0xcc0000 );
@@ -56,7 +56,7 @@ button.labelFactory = function():ITextRenderer
 
 > You may need to remove the text renderer's style provider in the factory before changing font styles to avoid conflicts with the default styles set by a theme. That's why the `styleProvider` property is set to `null` in the code above.
 
-Advanced font styles may be customized using the native [`flash.text.TextFormat`](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/text/TextFormat.html) class. Pass an instance of `TextFormat` to the text renderer's [`textFormat`](/api-reference/feathers/controls/text/TextFieldTextRenderer.html#textFormat) property:
+Advanced font styles may be customized using the native [`flash.text.TextFormat`](https://airsdk.dev/reference/actionscript/3.0/flash/text/TextFormat.html) class. Pass an instance of `TextFormat` to the text renderer's [`textFormat`](/api-reference/feathers/controls/text/TextFieldTextRenderer.html#textFormat) property:
 
 ```actionscript
 textRenderer.textFormat = new TextFormat( "Source Sans Pro", 16, 0xcccccc );
@@ -71,7 +71,7 @@ format.color = 0xc4c4c4;
 format.align = TextFormatAlign.CENTER;
 ```
 
-To render the `text` property of the `TextFieldTextRenderer` using [a limited subset of HTML](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/text/TextField.html#htmlText), set the `isHTML` property to `true`:
+To render the `text` property of the `TextFieldTextRenderer` using [a limited subset of HTML](https://airsdk.dev/reference/actionscript/3.0/flash/text/TextField.html#htmlText), set the `isHTML` property to `true`:
 
 ```actionscript
 textRenderer.text = "<span class='heading'>hello</span> world!";

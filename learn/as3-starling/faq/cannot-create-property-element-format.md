@@ -3,7 +3,7 @@ title: 'Why does my Feathers app throw "Error #1056: Cannot create property elem
 layout: "docs.html"
 ---
 
-> Before Feathers 3.1, different [text renderers](../text-renderers.md) each had unique ways to set font styles. For instance, [`TextBlockTextRenderer`](../text-block-text-renderer.md) used `flash.text.engine.ElementFormat`, but [`TextFieldTextRenderer`](../text-field-text-renderer.md) used `flash.text.TextFormat` instead. Today, the architecture has been redesigned to allow developers to set font styles on any text renderer using [`starling.text.TextFormat`](http://doc.starling-framework.org/current/starling/text/TextFormat.html).
+> Before Feathers 3.1, different [text renderers](../text-renderers.md) each had unique ways to set font styles. For instance, [`TextBlockTextRenderer`](../text-block-text-renderer.md) used `flash.text.engine.ElementFormat`, but [`TextFieldTextRenderer`](../text-field-text-renderer.md) used `flash.text.TextFormat` instead. Today, the architecture has been redesigned to allow developers to set font styles on any text renderer using [`starling.text.TextFormat`](https://doc.starling-framework.org/current/starling/text/TextFormat.html).
 >
 > If you are using Feathers 3.1 or newer, **this document is considered obsolete**. It remains available to assist developers who need to support legacy apps that are still using older versions of Feathers.
 

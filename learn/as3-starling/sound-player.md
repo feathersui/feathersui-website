@@ -30,10 +30,10 @@ var player:SoundPlayer = new SoundPlayer();
 this.addChild( player );
 ```
 
-To play a sound file, pass the URL (or a [`flash.media.Sound`](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/media/Sound.html) object) to the [`soundSource`](/api-reference/feathers/media/SoundPlayer.html#soundSource) property:
+To play a sound file, pass the URL (or a [`flash.media.Sound`](https://airsdk.dev/reference/actionscript/3.0/flash/media/Sound.html) object) to the [`soundSource`](/api-reference/feathers/media/SoundPlayer.html#soundSource) property:
 
 ```actionscript
-player.soundSource = "http://example.com/sound.mp3";
+player.soundSource = "https://example.com/sound.mp3";
 ```
 
 Next, we'll add some components as children to control playback.
@@ -118,7 +118,7 @@ player.seek( 5.0 );
 
 The time is measured in seconds.
 
-To change the volume, we can pass a [`flash.media.SoundTransform`](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/media/SoundTransform.html) object to the [`soundTransform`](/api-reference/feathers/media/SoundPlayer.html#soundTransform) property:
+To change the volume, we can pass a [`flash.media.SoundTransform`](https://airsdk.dev/reference/actionscript/3.0/flash/media/SoundTransform.html) object to the [`soundTransform`](/api-reference/feathers/media/SoundPlayer.html#soundTransform) property:
 
 ```actionscript
 player.soundTransform = new SoundTransform( 0.5 );

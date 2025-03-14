@@ -40,7 +40,7 @@ label2.fontStyles.color = 0xff0000; //changes only label2
 
 In Feathers SDK 3.3, two changes have been made to the "implicit" imports when using MXML. As you may be aware, certain packages are automatically imported in an MXML file, and if you use any classes from one of those packages, they do not need to be imported manually.
 
-Because Feathers has embraced the use of [`starling.text.TextFormat`](http://doc.starling-framework.org/current/starling/text/TextFormat.html) for font styles, the `starling.text.*` package is now imported implicitly in MXML.
+Because Feathers has embraced the use of [`starling.text.TextFormat`](https://doc.starling-framework.org/current/starling/text/TextFormat.html) for font styles, the `starling.text.*` package is now imported implicitly in MXML.
 
 To avoid conflicts between classes in the `starling.text.*` package and the `flash.text.*` package, `flash.text.*` is no longer implicitly imported in MXML.
 

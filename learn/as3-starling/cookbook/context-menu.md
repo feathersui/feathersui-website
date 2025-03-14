@@ -5,7 +5,7 @@ layout: "docs.html"
 
 > This will only work in Adobe AIR. It will not work in Adobe Flash Player.
 
-First, let's create a simple [`flash.ui.ContextMenu`](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/ui/ContextMenu.html).
+First, let's create a simple [`flash.ui.ContextMenu`](https://airsdk.dev/reference/actionscript/3.0/flash/ui/ContextMenu.html).
 
 ```actionscript
 function item_menuItemSelectHandler(event:ContextMenuEvent):void

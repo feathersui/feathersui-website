@@ -4,7 +4,7 @@ layout: "docs.html"
 sidebarTitle: WebView
 ---
 
-The [`WebView`](/api-reference/feathers/controls/WebView.html) class displays a native web browser control. The web browser is displayed in an overlay above Starling using [`flash.media.StageWebView`](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/media/StageWebView.html), but Feathers wraps `StageWebView` in a way that allows this component to be positioned using local coordinates on any parent.
+The [`WebView`](/api-reference/feathers/controls/WebView.html) class displays a native web browser control. The web browser is displayed in an overlay above Starling using [`flash.media.StageWebView`](https://airsdk.dev/reference/actionscript/3.0/flash/media/StageWebView.html), but Feathers wraps `StageWebView` in a way that allows this component to be positioned using local coordinates on any parent.
 
 > The `WebView` component cannot be used in the Adobe Flash Player plugin in a web browser. It is only available in Adobe AIR applications on mobile or desktop.
 

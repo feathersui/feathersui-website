@@ -56,7 +56,7 @@ The input's callout styles may be customized using the [`fontStyles`](/api-refer
 callout.fontStyles = new TextFormat( "Helvetica", 20, 0x3c3c3c );
 ```
 
-Pass in a [`starling.text.TextFormat`](http://doc.starling-framework.org/current/starling/text/TextFormat.html) object, which will work with any type of [text renderer](./text-renderers.md).
+Pass in a [`starling.text.TextFormat`](https://doc.starling-framework.org/current/starling/text/TextFormat.html) object, which will work with any type of [text renderer](./text-renderers.md).
 
 ### Skinning a `TextCallout` without a theme
 

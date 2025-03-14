@@ -4,7 +4,7 @@ layout: "docs.html"
 sidebarTitle: TextBlockTextRenderer
 ---
 
-The [`TextBlockTextRenderer`](/api-reference/feathers/controls/text/TextBlockTextRenderer.html) class displays text using [Flash Text Engine](http://help.adobe.com/en_US/as3/dev/WS9dd7ed846a005b294b857bfa122bd808ea6-8000.html), a software-based vector font renderer with many advanced features. Text may be rendered with either device fonts (the fonts installed on a user's operating system) or embedded fonts (in TTF or OTF formats). A [`flash.text.engine.TextBlock`](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/text/engine/TextBlock.html) is drawn to `BitmapData` and converted to a Starling `Texture` to display as a snapshot within the Starling display list.
+The [`TextBlockTextRenderer`](/api-reference/feathers/controls/text/TextBlockTextRenderer.html) class displays text using [Flash Text Engine](https://airsdk.dev/docs/development/text/using-the-flash-text-engine), a software-based vector font renderer with many advanced features. Text may be rendered with either device fonts (the fonts installed on a user's operating system) or embedded fonts (in TTF or OTF formats). A [`flash.text.engine.TextBlock`](https://airsdk.dev/reference/actionscript/3.0/flash/text/engine/TextBlock.html) is drawn to `BitmapData` and converted to a Starling `Texture` to display as a snapshot within the Starling display list.
 
 > `TextBlockTextRenderer` is one of many different [text renderers](./text-renderers.md) supported by Feathers. Since no method of rendering text on the GPU is considered definitively better than the others, Feathers allows you to choose the best text renderer for your project's requirements. See [Introduction to Feathers text renderers](./text-renderers.md) for complete details about all of the text rendering options supported by Feathers.
 
@@ -18,15 +18,15 @@ Flash Text Engine has the best support for right-to-left languages and bi-direct
 
 Changing vector-based text on the GPU is slower than with bitmap fonts because the text needs to be redrawn to `BitmapData` and then it needs to be uploaded to a texture on the GPU. However, once this texture is on the GPU, performance will be very smooth as long as the text doesn't change again. For text that changes often, the texture upload time may become a bottleneck.
 
-Because each passage of vector text needs to be drawn to `BitmapData`, each separate renderer requires its own separate texture on the GPU. This results in more [state changes](http://wiki.starling-framework.org/manual/performance_optimization#minimize_state_changes) and [draw calls](./faq/draw-calls.md), which can create more work for the GPU, and it might hurt performance if you have many different instances of `TextBlockTextRenderer` on screen at the same time.
+Because each passage of vector text needs to be drawn to `BitmapData`, each separate renderer requires its own separate texture on the GPU. This results in more [state changes](https://wiki.starling-framework.org/manual/performance_optimization#minimize_state_changes) and [draw calls](./faq/draw-calls.md), which can create more work for the GPU, and it might hurt performance if you have many different instances of `TextBlockTextRenderer` on screen at the same time.
 
 Flash Text Engine may render a bit slower than `flash.text.TextField` sometimes. In general, this performance difference is negligible, and the more advanced capabilities of FTE are often more compelling than a minor risk of reduced performance.
 
-`TextBlockTextRenderer` optionally supports rich text, but it needs to be constructed manually adding multiple [`TextElement`](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/text/engine/TextElement.html) objects, each with different [`ElementFormat`](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/text/engine/ElementFormat.html) values, to a [`GroupElement`](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/text/engine/GroupElement.html) object. You may pass the `GroupElement` to the text renderer's [`content`](/api-reference/feathers/controls/text/TextBlockTextRenderer.html#content) property. `TextBlockTextRenderer` does not support the simple subset of HTML that `TextFieldTextRenderer` can display.
+`TextBlockTextRenderer` optionally supports rich text, but it needs to be constructed manually adding multiple [`TextElement`](https://airsdk.dev/reference/actionscript/3.0/flash/text/engine/TextElement.html) objects, each with different [`ElementFormat`](https://airsdk.dev/reference/actionscript/3.0/flash/text/engine/ElementFormat.html) values, to a [`GroupElement`](https://airsdk.dev/reference/actionscript/3.0/flash/text/engine/GroupElement.html) object. You may pass the `GroupElement` to the text renderer's [`content`](/api-reference/feathers/controls/text/TextBlockTextRenderer.html#content) property. `TextBlockTextRenderer` does not support the simple subset of HTML that `TextFieldTextRenderer` can display.
 
 ### Advanced font styles
 
-> In general, you should customize font styles on the parent component of a text renderer using a [`starling.text.TextFormat`](http://doc.starling-framework.org/current/starling/text/TextFormat.html) object. For example, to customize the font styles on a [`Button`](./button.md) component, you'd set the button's [`fontStyles`](/api-reference/feathers/controls/Button.html#fontStyles) property.
+> In general, you should customize font styles on the parent component of a text renderer using a [`starling.text.TextFormat`](https://doc.starling-framework.org/current/starling/text/TextFormat.html) object. For example, to customize the font styles on a [`Button`](./button.md) component, you'd set the button's [`fontStyles`](/api-reference/feathers/controls/Button.html#fontStyles) property.
 >
 > ```actionscript
 > button.fontStyles = new TextFormat( "Helvetica", 20, 0xcc0000 );
@@ -52,7 +52,7 @@ button.labelFactory = function():ITextRenderer
 
 > You may need to remove the text renderer's style provider in the factory before changing font styles to avoid conflicts with the default styles set by a theme. That's why the `styleProvider` property is set to `null` in the code above.
 
-Advanced font styles may be customized by passing a [`flash.text.engine.ElementFormat`](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/text/engine/ElementFormat.html) instance to the text renderer's [`elementFormat`](/api-reference/feathers/controls/text/TextBlockTextRenderer.html#elementFormat) property:
+Advanced font styles may be customized by passing a [`flash.text.engine.ElementFormat`](https://airsdk.dev/reference/actionscript/3.0/flash/text/engine/ElementFormat.html) instance to the text renderer's [`elementFormat`](/api-reference/feathers/controls/text/TextBlockTextRenderer.html#elementFormat) property:
 
 ```actionscript
 var font:FontDescription = new FontDescription(
@@ -60,7 +60,7 @@ var font:FontDescription = new FontDescription(
 textRenderer.elementFormat = new ElementFormat( font, 16, 0xcccccc );
 ```
 
-The first parameter to the `ElementFormat` constructor is a [`FontDescription`](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/text/engine/FontDescription.html) object. This class is provided by Flash Text Engine to handle font lookup, including name, weight (whether it is bold or normal), posture (whether it is italicized or not), and whether the font is embedded or installed on the device.
+The first parameter to the `ElementFormat` constructor is a [`FontDescription`](https://airsdk.dev/reference/actionscript/3.0/flash/text/engine/FontDescription.html) object. This class is provided by Flash Text Engine to handle font lookup, including name, weight (whether it is bold or normal), posture (whether it is italicized or not), and whether the font is embedded or installed on the device.
 
 The `ElementFormat` allows you to customize font size, color, alpha, and more.
 
@@ -123,7 +123,7 @@ var font:FontDescription = new FontDescription(
 font.fontLookup = FontLookup.EMBEDDED_CFF;
 ```
 
-Be sure to set the [`fontLookup`](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/text/engine/FontDescription.html#fontLookup) property to [`FontLookup.EMBEDDED_CFF`](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/text/engine/FontLookup.html#EMBEDDED_CFF).
+Be sure to set the [`fontLookup`](https://airsdk.dev/reference/actionscript/3.0/flash/text/engine/FontDescription.html#fontLookup) property to [`FontLookup.EMBEDDED_CFF`](https://airsdk.dev/reference/actionscript/3.0/flash/text/engine/FontLookup.html#EMBEDDED_CFF).
 
 > When setting font styles with `starling.text.TextFormat`, the `TextBlockTextRenderer` automatically detects if a font is embedded. The `fontLookup` property only needs to be set when using `flash.text.engine.ElementFormat` to provide advanced font styles.
 

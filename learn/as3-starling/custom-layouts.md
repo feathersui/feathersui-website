@@ -189,7 +189,7 @@ We'll go into the low-level details in a moment, but let's look at a couple of i
 
 - The class implements [`feathers.layout.ILayout`](/api-reference/feathers/layout/ILayout.html). This interface defines some properties and methods that all layouts need, which we'll be digging into next. There are some other interfaces for more advanced layout capabilities, but `ILayout` is the bare minimum.
 
-- The class extends the standard Starling [`starling.events.EventDispatcher`](http://doc.starling-framework.org/core/starling/events/EventDispatcher.html) because `ILayout` specifies that layouts should dispatch `Event.CHANGE` when their properties change. This will allow components that use layouts to properly invalidate when they need to call the [`layout()`](</api-reference/feathers/layout/ILayout.html#layout()>) function again.
+- The class extends the standard Starling [`starling.events.EventDispatcher`](https://doc.starling-framework.org/core/starling/events/EventDispatcher.html) because `ILayout` specifies that layouts should dispatch `Event.CHANGE` when their properties change. This will allow components that use layouts to properly invalidate when they need to call the [`layout()`](</api-reference/feathers/layout/ILayout.html#layout()>) function again.
 
 ## The `requiresLayoutOnScroll` property
 
@@ -394,7 +394,7 @@ The third and fourth arguments are the x and y position of the view port. These 
 
 The fifth and sixth arguments are the final dimensions of the view port. They're equivalent to the `viewPortWidth` and `viewPortHeight` properties of the `LayoutBoundsResult` object returned by `layout()`. We don't need these values in this example, but other layouts may use them if items need to be resized based on the width and height of the view port.
 
-The seventh, and final, argument is an optional [`flash.geom.Point`](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/geom/Point.html) object where the `x` and `y` properties are equivalent, respectively, to `horizontalScrollPosition` and `verticalScrollPosition` values of a scrolling container.
+The seventh, and final, argument is an optional [`flash.geom.Point`](https://airsdk.dev/reference/actionscript/3.0/flash/geom/Point.html) object where the `x` and `y` properties are equivalent, respectively, to `horizontalScrollPosition` and `verticalScrollPosition` values of a scrolling container.
 
 If the result value isn't `null`, `getScrollPositionForIndex()` must use it as the return value. By passing in (and reusing) a pre-created `Point` object, Feathers can avoid unnecessary garbage collection. It is optional, though, so the layout is expected to create a new instance of `Point` if the argument is `null`.
 

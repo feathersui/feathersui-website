@@ -184,7 +184,7 @@ tween.animate( "alpha", 1 );
 
 As you can see, we animate the `x` and `alpha` properties for a duration of one second, and we specify an easing function. Try not to get confused about the name of the `Transitions` class used above. That's simply what Starling calls an easing function. A transition for a Feathers screen navigator is something different, of course.
 
-> For more information about Starling's `Tween` class, see [Animations](http://manual.starling-framework.org/en/#_animations) in the Starling Manual.
+> For more information about Starling's `Tween` class, see [Animations](https://manual.starling-framework.org/en/#_animations) in the Starling Manual.
 
 Now, we need to use the callback to notify the screen navigator when the animation is complete. If there isn't anything to clean up after the animation is complete, then we can simply pass to callback to its `onComplete` property:
 

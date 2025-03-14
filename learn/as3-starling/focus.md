@@ -42,7 +42,7 @@ focusManager.focus = null;
 
 ## Customizing focus order
 
-By default, when the user changes focus with Tab or Shift+Tab on the keyboard, Feathers will pass focus using display list ordering. With [`getChildIndex()`](<http://doc.starling-framework.org/core/starling/display/DisplayObjectContainer.html#getChildIndex()>) and other standard display list APIs, the focus manager will search the display list in a generally intuitive order to find the next (or previous) child that can receive focus.
+By default, when the user changes focus with Tab or Shift+Tab on the keyboard, Feathers will pass focus using display list ordering. With [`getChildIndex()`](<https://doc.starling-framework.org/core/starling/display/DisplayObjectContainer.html#getChildIndex()>) and other standard display list APIs, the focus manager will search the display list in a generally intuitive order to find the next (or previous) child that can receive focus.
 
 If things end up a bit out of the ordering that you expected, you can customize the focus order using the [`nextTabFocus`](/api-reference/feathers/core/IFocusDisplayObject.html#nextTabFocus) and [`previousTabFocus`](/api-reference/feathers/core/IFocusDisplayObject.html#previousTabFocus) properties:
 

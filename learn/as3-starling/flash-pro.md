@@ -4,17 +4,17 @@ layout: "docs.html"
 sidebarTitle: Adobe Animate
 ---
 
-Let's create a [Feathers](./getting-started.md) and [Starling](https://gamua.com/starling/) project in [Adobe Animate](https://www.adobe.com/products/animate.html).
+Let's create a [Feathers](/learn/as3-starling/getting-started/) and [Starling](https://gamua.com/starling/) project in [Adobe Animate](https://www.adobe.com/products/animate.html).
 
 > These instructions apply to Animate CC. Minor variations may exist between different versions of Animate (or older versions of Flash Professional).
 
-1. Download the latest stable versions of [Feathers](./installation.md) and [Starling Framework](http://gamua.com/starling/download/).
+1. Download the latest stable versions of [Feathers](./installation.md) and [Starling Framework](https://gamua.com/starling/download/).
 
 2. In Animate, create a new project. For mobile, you will want to create an **AIR for Android** or **AIR for iOS** project. For desktop, you will want to create an **AIR** project. For Flash Player in the browser, you will want to create an **ActionScript 3.0** project.
 
 3. In the **Properties** panel, ensure that the **Target** is set to an appropriate version of the Flash runtime that you are targeting. Please check the Feathers README file to see which versions of the Flash runtimes are required for the version of Feathers that you are using.
 
-   If the minimum version of Adobe AIR or Flash Player specified in the Feathers README file is not listed, go to the **Help** menu and select **Manage AIR SDK…** to manually add the appropriate version of the AIR SDK. You can [download the latest AIR SDK](http://airsdk.harman.com/download/) from Harman's website.
+   If the minimum version of Adobe AIR or Flash Player specified in the Feathers README file is not listed, go to the **Help** menu and select **Manage AIR SDK…** to manually add the appropriate version of the AIR SDK. You can [download the latest AIR SDK](https://airsdk.harman.com/download/) from Harman's website.
 
 4. Set up the `renderMode` or `wmode` for your target platform.
 
@@ -26,7 +26,7 @@ Let's create a [Feathers](./getting-started.md) and [Starling](https://gamua.com
 
 6. An **FPS** value of **60** is recommended.
 
-Your project is ready. If you're unsure how to proceed, start by using the code in the **Create your Game** section of the [Starling First Steps Tutorial](http://gamua.com/starling/first-steps/). Then take a look at the [Feathers Hello World Tutorial](./hello-world.md).
+Your project is ready. If you're unsure how to proceed, start by using the code in the **Create your Game** section of the [Starling First Steps Tutorial](https://gamua.com/starling/first-steps/). Then take a look at the [Feathers Hello World Tutorial](./hello-world.md).
 
 > Animate's ability to properly simulate devices on AIR is limited compared to other development environments. Animate's AIR simulator does not provide the correct screen DPI/PPI for the mobile device that it is simulating. The value of `Capabilities.screenDPI` is used by Feathers themes to scale skins to an appropriate physical size for each device.
 >

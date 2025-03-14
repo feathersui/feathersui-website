@@ -12,7 +12,7 @@ The following beginner-level tutorial for Feathers helps you create your first [
 
 ## Prerequisites
 
-- You should understand how to set up a regular [Starling](https://gamua.com/starling/) project first. If you're new to Starling, please start with the [Starling guides and tutorials](http://gamua.com/starling/help/).
+- You should understand how to set up a regular [Starling](https://gamua.com/starling/) project first. If you're new to Starling, please start with the [Starling guides and tutorials](https://gamua.com/starling/help/).
 
 - [Download Feathers](./installation.md).
 
@@ -25,8 +25,6 @@ The following beginner-level tutorial for Feathers helps you create your first [
 ## Final Result
 
 [![feathers-hello-world.jpg](/learn/as3-starling/images/feathers-hello-world.jpg)](https://feathersui.com/examples/hello-world/)
-
-See the [Hello World example](https://feathersui.com/examples/hello-world/) running live in your browser. Requires [Adobe Flash Player](http://get.adobe.com/flash).
 
 ## Walkthrough
 

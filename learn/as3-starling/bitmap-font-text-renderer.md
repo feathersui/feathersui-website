@@ -4,7 +4,7 @@ layout: "docs.html"
 sidebarTitle: BitmapFontTextRenderer
 ---
 
-The [`BitmapFontTextRenderer`](/api-reference/feathers/controls/text/BitmapFontTextRenderer.html) class renders text using [bitmap fonts](http://wiki.starling-framework.org/manual/displaying_text#bitmap_fonts).
+The [`BitmapFontTextRenderer`](/api-reference/feathers/controls/text/BitmapFontTextRenderer.html) class renders text using [bitmap fonts](https://wiki.starling-framework.org/manual/displaying_text#bitmap_fonts).
 
 > `BitmapFontTextRenderer` is one of many different [text renderers](./text-renderers.md) supported by Feathers. Since no method of rendering text on the GPU is considered definitively better than the others, Feathers allows you to choose the best text renderer for your project's requirements. See [Introduction to Feathers text renderers](./text-renderers.md) for complete details about all of the text rendering options supported by Feathers.
 
@@ -24,7 +24,7 @@ Bitmap fonts may be scaled, but because they use bitmaps, only scaling down is r
 
 ### Advanced font styles
 
-> In general, you should customize font styles on the parent component of a text renderer using a [`starling.text.TextFormat`](http://doc.starling-framework.org/current/starling/text/TextFormat.html) object. For example, to customize the font styles on a [`Button`](./button.md) component, you'd set the button's [`fontStyles`](/api-reference/feathers/controls/Button.html#fontStyles) property.
+> In general, you should customize font styles on the parent component of a text renderer using a [`starling.text.TextFormat`](https://doc.starling-framework.org/current/starling/text/TextFormat.html) object. For example, to customize the font styles on a [`Button`](./button.md) component, you'd set the button's [`fontStyles`](/api-reference/feathers/controls/Button.html#fontStyles) property.
 >
 > ```actionscript
 > button.fontStyles = new TextFormat( "Helvetica", 20, 0xcc0000 );
@@ -56,7 +56,7 @@ Advanced font styles may be customized by passing a [`BitmapFontTextFormat`](/ap
 var format:BitmapFontTextFormat = new BitmapFontTextFormat( "FontName" );
 ```
 
-Pass the font to display to the `BitmapFontTextFormat` constructor. In the code above, we pass in the name of a font registered with [`TextField.registerCompositor()`](<http://doc.starling-framework.org/core/starling/text/TextField.html#registerCompositor()>). We could also pass in a [`starling.text.BitmapFont`](http://doc.starling-framework.org/core/starling/text/BitmapFont.html) instance that has not been registered.
+Pass the font to display to the `BitmapFontTextFormat` constructor. In the code above, we pass in the name of a font registered with [`TextField.registerCompositor()`](<https://doc.starling-framework.org/core/starling/text/TextField.html#registerCompositor()>). We could also pass in a [`starling.text.BitmapFont`](https://doc.starling-framework.org/core/starling/text/BitmapFont.html) instance that has not been registered.
 
 The tint of the text can be customized with the [`color`](/api-reference/feathers/text/BitmapFontTextFormat.html#color) property:
 
@@ -64,7 +64,7 @@ The tint of the text can be customized with the [`color`](/api-reference/feather
 format.color = 0xc4c4c4;
 ```
 
-The RGB values of the tint color are multiplied with the RGB values of each of the font texture's pixels, similar to [`starling.display.BlendMode.MULTIPLY`](http://doc.starling-framework.org/current/starling/display/BlendMode.html#MULTIPLY).
+The RGB values of the tint color are multiplied with the RGB values of each of the font texture's pixels, similar to [`starling.display.BlendMode.MULTIPLY`](https://doc.starling-framework.org/current/starling/display/BlendMode.html#MULTIPLY).
 
 > To support the maximum range of colors, the bitmap font image should be exported with completely white pixels.
 

@@ -4,13 +4,13 @@ layout: "docs.html"
 sidebarTitle: Build SDK from Source
 ---
 
-The document explains how to build the Feathers SDK from source code.
+The document explains how to build the [Feathers SDK](/learn/as3-starling/sdk/) from source code.
 
 > Most developers should use the [Feathers SDK Manager](./installation-instructions.md) instead. This tutorial is meant for advanced developers who want to modify the Feathers SDK compiler source code to contribute or to create a fork.
 
 ## Requirements
 
-- [Apache Ant](http://ant.apache.org) 1.9.1 or newer
+- [Apache Ant](https://ant.apache.org) 1.9.1 or newer
 - Java 8 update 101 or newer
 - [_playerglobal.swc_](https://fpdownload.macromedia.com/get/flashplayer/updaters/32/playerglobal32_0.swc) for Flash Player 32.0
 - Adobe AIR SDK _for Flex developers_ (Download from [Harman's AIR SDK website](https://airsdk.harman.com/download/))

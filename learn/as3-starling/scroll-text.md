@@ -29,7 +29,7 @@ scrollText.text = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
 this.addChild( scrollText );
 ```
 
-As you can see, the `ScrollText` is added to the Starling display list. This is merely an abstraction. Behind the scenes, a [`flash.text.TextField`](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/text/TextField.html) is created and added to the classic display list. As you move and scale the `ScrollText` instance on the Starling display list, the `TextField` will be manipulated on the classic display list.
+As you can see, the `ScrollText` is added to the Starling display list. This is merely an abstraction. Behind the scenes, a [`flash.text.TextField`](https://airsdk.dev/docs/development/text/using-the-textfield-class) is created and added to the classic display list. As you move and scale the `ScrollText` instance on the Starling display list, the `TextField` will be manipulated on the classic display list.
 
 If we set the `width` property, the `ScrollText` content will automatically word wrap, and the height will grow.
 
@@ -56,7 +56,7 @@ The font styles of the `ScrollText` may be customized using the [`fontStyles`](/
 scrollText.fontStyles = new TextFormat( "Helvetica", 20, 0x3c3c3c );
 ```
 
-Pass in a [`starling.text.TextFormat`](http://doc.starling-framework.org/current/starling/text/TextFormat.html) object, the same as you would for a [text renderer](./text-renderers.md).
+Pass in a [`starling.text.TextFormat`](https://doc.starling-framework.org/current/starling/text/TextFormat.html) object, the same as you would for a [text renderer](./text-renderers.md).
 
 If the `ScrollText` should use different font styles when it is disabled, you may set the [`disabledFontStyles`](/api-reference/feathers/controls/ScrollText.html#disabledFontStyles) property too:
 

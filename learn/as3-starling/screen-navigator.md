@@ -254,7 +254,7 @@ The function may optionally receives the event listener arguments.
 ```actionscript
 protected function openHomePageLink():void
 {
-    navigateToURL( new URLRequest( "http://www.example.com/" ), "_blank" );
+    navigateToURL( new URLRequest( "https://www.example.com/" ), "_blank" );
 }
 ```
 

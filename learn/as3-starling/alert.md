@@ -124,7 +124,7 @@ alert.fontStyles = new TextFormat( "Helvetica", 20, 0x3c3c3c );
 alert.disabledFontStyles = new TextFormat( "Helvetica", 20, 0x9a9a9a );
 ```
 
-Pass in a [`starling.text.TextFormat`](http://doc.starling-framework.org/current/starling/text/TextFormat.html) object, which will work with any type of [text renderer](./text-renderers.md).
+Pass in a [`starling.text.TextFormat`](https://doc.starling-framework.org/current/starling/text/TextFormat.html) object, which will work with any type of [text renderer](./text-renderers.md).
 
 The font styles of the alert's title may be customized on the alert's `Header` component. See [How to use the `Header` component](./header.md) for details.
 

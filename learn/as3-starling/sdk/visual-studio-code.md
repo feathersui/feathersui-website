@@ -4,7 +4,7 @@ layout: "docs.html"
 sidebarTitle: Visual Studio Code
 ---
 
-Let's get your [Visual Studio Code](https://code.visualstudio.com/) development environment setup to use the [Feathers SDK](https://feathersui.com/sdk/).
+Let's get your [Visual Studio Code](https://code.visualstudio.com/) development environment setup to use the [Feathers SDK](/learn/as3-starling/sdk/).
 
 ## Prerequisites
 

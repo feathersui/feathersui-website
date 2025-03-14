@@ -3,7 +3,7 @@ title: How to dispatch a triggered event from a custom item renderer (AS3/Starli
 layout: "docs.html"
 ---
 
-A [custom item renderer](../item-renderers.md) should dispatch [`Event.TRIGGERED`](http://doc.starling-framework.org/core/starling/events/Event.html#TRIGGERED) when it is tapped or clicked, similar to a [`Button`](../button.md).
+A [custom item renderer](../item-renderers.md) should dispatch [`Event.TRIGGERED`](https://doc.starling-framework.org/core/starling/events/Event.html#TRIGGERED) when it is tapped or clicked, similar to a [`Button`](../button.md).
 
 Using the [`TapToTrigger`](/api-reference/feathers/utils/touch/TapToTrigger.html) class, it's easy to dispatch `Event.TRIGGERED` on tap or click:
 

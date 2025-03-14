@@ -32,7 +32,7 @@ We can easily add a title to the panel's header by setting the [`title`](/api-re
 panel.title = "Tools";
 ```
 
-A `Panel` works a lot like any [`DisplayObjectContainer`](http://doc.starling-framework.org/core/starling/display/DisplayObjectContainer.html), so you can use the standard `addChild()`, `removeChild()` and other display list manipulation functions.
+A `Panel` works a lot like any [`DisplayObjectContainer`](https://doc.starling-framework.org/core/starling/display/DisplayObjectContainer.html), so you can use the standard `addChild()`, `removeChild()` and other display list manipulation functions.
 
 ```actionscript
 var xPosition:Number = 0;
@@ -45,7 +45,7 @@ for(var i:int = 0; i < 5; i++)
 }
 ```
 
-The children of a `Panel` do not need to be Feathers UI controls. As you can see above, we've added some Starling [`Quad`](http://doc.starling-framework.org/core/starling/display/Quad.html) instances.
+The children of a `Panel` do not need to be Feathers UI controls. As you can see above, we've added some Starling [`Quad`](https://doc.starling-framework.org/core/starling/display/Quad.html) instances.
 
 By default, the `Panel` will automatically resize itself to fit the area that the children occupy (plus its header and footer). We can set the width and height manually, if desired, to override this behavior:
 

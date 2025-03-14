@@ -75,7 +75,7 @@ button.fontStyles = new TextFormat( "_sans", 20, 0x4c4c4c );
 this.addChild(button);
 ```
 
-The button's background skin, padding, and other styles will still be set by the theme, but the text will display with our custom [`starling.text.TextFormat`](http://doc.starling-framework.org/current/starling/text/TextFormat.html).
+The button's background skin, padding, and other styles will still be set by the theme, but the text will display with our custom [`starling.text.TextFormat`](https://doc.starling-framework.org/current/starling/text/TextFormat.html).
 
 > In previous versions of Feathers, customizing styles outside of the theme was a bit cumbersome, in comparison. Simply setting a style property could result in the theme replacing it at a later time. Starting with Feathers 3.1, style properties may be set without conflict.
 

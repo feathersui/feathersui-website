@@ -12,9 +12,9 @@ Whether you're using the latest unstable version of Feathers or you've made chan
 
 - [Starling Framework source code from Github](https://github.com/Gamua/Starling-Framework)
 
-- [Apache Ant](http://ant.apache.org/)
+- [Apache Ant](https://ant.apache.org/)
 
-- [Adobe AIR SDK with Compiler](http://airsdk.harman.com/download/)
+- [Adobe AIR SDK with Compiler](https://airsdk.harman.com/download/)
 
 ## Build Instructions
 

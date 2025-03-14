@@ -86,7 +86,7 @@ The `this` keyword should be used to reference member variables and functions. T
 
 ## Documentation
 
--   Use [asdoc comments](http://help.adobe.com/en_US/flex/using/WSd0ded3821e0d52fe1e63e3d11c2f44bb7b-7fed.html) for all public APIs.
+-   Use [asdoc comments](https://airsdk.dev/docs/development/asdoc-comments) for all public APIs.
 
 -   Mark private APIs `@private` so that they are hidden from the generated HTML. If needed, they may still contain a description, but it will only be seen when reading the source code.
 

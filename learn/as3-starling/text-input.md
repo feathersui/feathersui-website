@@ -74,7 +74,7 @@ input.addEventListener( Event.CHANGE, input_changeHandler );
 
 We can listen for [`Event.CHANGE`](/api-reference/feathers/controls/TextInput.html#event:change).
 
-We might also want to know when the user presses [`Keyboard.ENTER`](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/ui/Keyboard.html#ENTER):
+We might also want to know when the user presses [`Keyboard.ENTER`](https://airsdk.dev/reference/actionscript/3.0/flash/ui/Keyboard.html#ENTER):
 
 ```actionscript
 input.addEventListener( FeathersEventType.ENTER, input_enterHandler );
@@ -133,7 +133,7 @@ The text input's font styles may be customized using the [`fontStyles`](/api-ref
 input.fontStyles = new TextFormat( "Helvetica", 20, 0x3c3c3c );
 ```
 
-Pass in a [`starling.text.TextFormat`](http://doc.starling-framework.org/current/starling/text/TextFormat.html) object, which will work with any type of [text editor](./text-editors.md).
+Pass in a [`starling.text.TextFormat`](https://doc.starling-framework.org/current/starling/text/TextFormat.html) object, which will work with any type of [text editor](./text-editors.md).
 
 If the input should use different font styles when it is disabled, you may set the [`disabledFontStyles`](/api-reference/feathers/controls/TextInput.html#disabledFontStyles) property too:
 

@@ -19,7 +19,7 @@ The [`Callout`](/api-reference/feathers/controls/Callout.html) class renders con
 
 ## The Basics
 
-We create a `Callout` a bit differently than other components. Rather than calling a constructor, we call the static function [`Callout.show()`](</api-reference/feathers/controls/Callout.html#show()>). Let's see how this works by displaying a [`starling.display.Image`](http://doc.starling-framework.org/core/starling/display/Image.html) in a `Callout` when we touch a button. First, let's create the button:
+We create a `Callout` a bit differently than other components. Rather than calling a constructor, we call the static function [`Callout.show()`](</api-reference/feathers/controls/Callout.html#show()>). Let's see how this works by displaying a [`starling.display.Image`](https://doc.starling-framework.org/core/starling/display/Image.html) in a `Callout` when we touch a button. First, let's create the button:
 
 ```actionscript
 var button:Button = new Button();

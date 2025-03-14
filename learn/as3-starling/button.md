@@ -67,7 +67,7 @@ The font styles of the button's label text renderer may be customized using the 
 button.fontStyles = new TextFormat( "Helvetica", 20, 0x3c3c3c );
 ```
 
-Pass in a [`starling.text.TextFormat`](http://doc.starling-framework.org/current/starling/text/TextFormat.html) object, which will work with any type of [text renderer](./text-renderers.md).
+Pass in a [`starling.text.TextFormat`](https://doc.starling-framework.org/current/starling/text/TextFormat.html) object, which will work with any type of [text renderer](./text-renderers.md).
 
 If the button's label should use different font styles when the button is disabled, you may set the [`disabledFontStyles`](/api-reference/feathers/controls/Button.html#disabledFontStyles) property too:
 

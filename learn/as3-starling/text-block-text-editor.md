@@ -4,7 +4,7 @@ layout: "docs.html"
 sidebarTitle: TextBlockTextEditor
 ---
 
-The [`TextBlockTextEditor`](/api-reference/feathers/controls/text/TextBlockTextEditor.html) class displays text using [Flash Text Engine](http://help.adobe.com/en_US/as3/dev/WS9dd7ed846a005b294b857bfa122bd808ea6-8000.html), a software-based vector font renderer with many advanced features. Text may be rendered with either device fonts (the fonts installed on a user's operating system) or embedded fonts (in TTF or OTF formats). A [`flash.text.engine.TextBlock`](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/text/engine/TextBlock.html) is drawn to `BitmapData` and converted to a Starling `Texture` to display as a snapshot within the Starling display list. This text editor is fully integrated with the Starling display list, which means that nothing appears as an overlay when the text editor is focused. The texture snapshot is updated in real time as the the user types.
+The [`TextBlockTextEditor`](/api-reference/feathers/controls/text/TextBlockTextEditor.html) class displays text using [Flash Text Engine](https://airsdk.dev/docs/development/text/using-the-flash-text-engine), a software-based vector font renderer with many advanced features. Text may be rendered with either device fonts (the fonts installed on a user's operating system) or embedded fonts (in TTF or OTF formats). A [`flash.text.engine.TextBlock`](https://airsdk.dev/reference/actionscript/3.0/flash/text/engine/TextBlock.html) is drawn to `BitmapData` and converted to a Starling `Texture` to display as a snapshot within the Starling display list. This text editor is fully integrated with the Starling display list, which means that nothing appears as an overlay when the text editor is focused. The texture snapshot is updated in real time as the the user types.
 
 > `TextBlockTextEditor` is intended for use in desktop applications only, and it does not provide support for software keyboards on mobile devices.
 
@@ -20,13 +20,13 @@ Due to limitations in the Adobe AIR runtime, this text editor cannot be used on 
 
 Changing vector-based text on the GPU is slower than with bitmap fonts because the text needs to be redrawn to `BitmapData` and then it needs to be uploaded to a texture on the GPU. For text editors where the user is expected to enter longer passages of text, the texture upload time may become a bottleneck on slower devices.
 
-Because each passage of vector text needs to be drawn to `BitmapData`, each separate renderer requires its own separate texture on the GPU. This results in more [state changes](http://wiki.starling-framework.org/manual/performance_optimization#minimize_state_changes) and [draw calls](./faq/draw-calls.md), which can create more work for the GPU, and it might hurt performance if you have many different instances of `TextBlockTextEditor` on screen at the same time.
+Because each passage of vector text needs to be drawn to `BitmapData`, each separate renderer requires its own separate texture on the GPU. This results in more [state changes](https://wiki.starling-framework.org/manual/performance_optimization#minimize_state_changes) and [draw calls](./faq/draw-calls.md), which can create more work for the GPU, and it might hurt performance if you have many different instances of `TextBlockTextEditor` on screen at the same time.
 
 Flash Text Engine may render a bit slower than `flash.text.TextField` sometimes. In general, this performance difference is negligible, and the more advanced capabilities of FTE are often more compelling than a minor risk of reduced performance.
 
 ### Advanced font styles
 
-> In general, you should customize font styles on the parent component of a text editor using a [`starling.text.TextFormat`](http://doc.starling-framework.org/current/starling/text/TextFormat.html) object. For example, to customize the font styles on a [`TextInput`](./text-input.md) component, you'd set the input's [`fontStyles`](/api-reference/feathers/controls/TextInput.html#fontStyles) property.
+> In general, you should customize font styles on the parent component of a text editor using a [`starling.text.TextFormat`](https://doc.starling-framework.org/current/starling/text/TextFormat.html) object. For example, to customize the font styles on a [`TextInput`](./text-input.md) component, you'd set the input's [`fontStyles`](/api-reference/feathers/controls/TextInput.html#fontStyles) property.
 >
 > ```actionscript
 > input.fontStyles = new TextFormat( "Helvetica", 20, 0xcc0000 );
@@ -51,14 +51,14 @@ input.textEditorFactory = function():ITextEditor
 
 > You may need to clear the text editor's style provider in the factory before changing font styles to avoid conflicts with the default styles set by a theme. That's why the `styleProvider` property is set to `null` in the code above.
 
-Advanced font styles may be customized using the native [`flash.text.engine.ElementFormat`](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/text/engine/ElementFormat.html) class. Pass an instance of `ElementFormat` to the text editor's [`elementFormat`](/api-reference/feathers/controls/text/TextBlockTextEditor.html#elementFormat) property:
+Advanced font styles may be customized using the native [`flash.text.engine.ElementFormat`](https://airsdk.dev/reference/actionscript/3.0/flash/text/engine/ElementFormat.html) class. Pass an instance of `ElementFormat` to the text editor's [`elementFormat`](/api-reference/feathers/controls/text/TextBlockTextEditor.html#elementFormat) property:
 
 ```actionscript
 var fontDescription:FontDescription = new FontDescription( "Source Sans Pro", FontWeight.NORMAL, FontPosture.NORMAL, FontLookup.EMBEDDED_CFF, RenderingMode.CFF, CFFHinting.NONE );
 textEditor.elementFormat = new ElementFormat( fontDescription, 16, 0xcccccc );
 ```
 
-The first parameter to the `ElementFormat` constructor is a [`FontDescription`](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/text/engine/FontDescription.html) object. This class is provided by Flash Text Engine to handle font lookup, including name, weight, posture, whether the font is embedded or not, and how the font is rendered.
+The first parameter to the `ElementFormat` constructor is a [`FontDescription`](https://airsdk.dev/reference/actionscript/3.0/flash/text/engine/FontDescription.html) object. This class is provided by Flash Text Engine to handle font lookup, including name, weight, posture, whether the font is embedded or not, and how the font is rendered.
 
 The `ElementFormat` allows you to customize font size, color, alpha, and more.
 
@@ -113,7 +113,7 @@ var font:FontDescription = new FontDescription(
 font.fontLookup = FontLookup.EMBEDDED_CFF;
 ```
 
-Be sure to set the [`fontLookup`](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/text/engine/FontDescription.html#fontLookup) property to [`FontLookup.EMBEDDED_CFF`](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/text/engine/FontLookup.html#EMBEDDED_CFF).
+Be sure to set the [`fontLookup`](https://airsdk.dev/reference/actionscript/3.0/flash/text/engine/FontDescription.html#fontLookup) property to [`FontLookup.EMBEDDED_CFF`](https://airsdk.dev/reference/actionscript/3.0/flash/text/engine/FontLookup.html#EMBEDDED_CFF).
 
 > When setting font styles with `starling.text.TextFormat`, the `TextBlockTextEditor` automatically detects if a font is embedded. The `fontLookup` property only needs to be set when using `flash.text.engine.ElementFormat` to provide advanced font styles.
 

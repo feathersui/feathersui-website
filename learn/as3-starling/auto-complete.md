@@ -67,18 +67,18 @@ In this case, if one types "ap" using the same data provider as in the previous 
 
 As you can see above, the first argument to the `compareFunction` is typed as `Object`, meaning that suggestions don't necessarily need to be strings.
 
-> When using objects that aren't strings for suggestions, we must provide an implementation of the [`toString()`](<http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/Object.html#toString()>) function so that each suggestion can be converted to a string that the text input can display.
+> When using objects that aren't strings for suggestions, we must provide an implementation of the [`toString()`](<https://airsdk.dev/reference/actionscript/3.0/Object.html#toString()>) function so that each suggestion can be converted to a string that the text input can display.
 
 ### `URLAutoCompleteSource`
 
 In some cases, you may want to request personalized suggestions from a server instead. We can pass the text entered by the user to a backend API using [`URLAutoCompleteSource`](/api-reference/feathers/data/URLAutoCompleteSource.html).
 
-To load suggestions from the web, we need a URL. The [`urlRequestFunction`](/api-reference/feathers/data/URLAutoCompleteSource.html#urlRequestFunction) property can be used to generate a [`URLRequest`](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/net/URLRequest.html):
+To load suggestions from the web, we need a URL. The [`urlRequestFunction`](/api-reference/feathers/data/URLAutoCompleteSource.html#urlRequestFunction) property can be used to generate a [`URLRequest`](https://airsdk.dev/reference/actionscript/3.0/flash/net/URLRequest.html):
 
 ```actionscript
 function createURLRequest( textToMatch:String ):URLRequest
 {
-	var request:URLRequest = new URLRequest( "http://example.com/search_suggestions" );
+	var request:URLRequest = new URLRequest( "https://example.com/search_suggestions" );
 	var variables:URLVariables = new URLVariables();
 	variables.query = textToMatch;
 	request.data = variables;

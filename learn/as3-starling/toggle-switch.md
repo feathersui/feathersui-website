@@ -54,7 +54,7 @@ toggle.onLabelFontStyles = new TextFormat( "Helvetica", 20, 0xcc0000 );
 toggle.offLabelFontStyles = new TextFormat( "Helvetica", 20, 0x000000 );
 ```
 
-Pass in a [`starling.text.TextFormat`](http://doc.starling-framework.org/current/starling/text/TextFormat.html) object, which will work with any type of [text renderer](./text-renderers.md).
+Pass in a [`starling.text.TextFormat`](https://doc.starling-framework.org/current/starling/text/TextFormat.html) object, which will work with any type of [text renderer](./text-renderers.md).
 
 If the labels should use different font styles when it is disabled, you may set the [`onLabelDisabledFontStyles`](/api-reference/feathers/controls/ToggleSwitch.html#onLabelDisabledFontStyles) and [`offLabelDisabledFontStyles`](/api-reference/feathers/controls/ToggleSwitch.html#offLabelDisabledFontStyles) properties too:
 

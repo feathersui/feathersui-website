@@ -4,7 +4,7 @@ layout: "docs.html"
 sidebarTitle: Installation
 ---
 
-[Feathers](./getting-started.md) for ActionScript 3 and [Starling](https://gamua.com/starling/) is packaged up as a _.zip_ file that contains a compiled _.swc_ binary library, original source code, documentation, and examples. Add the _.swc_ file to the _library path_ in your favorite editor to make the Feathers components available inside your Starling project.
+[Feathers](/learn/as3-starling/getting-started/) for [ActionScript 3](https://github.com/joshtynjala/learning-actionscript-3.0) and [Starling](https://gamua.com/starling/) is packaged up as a _.zip_ file that contains a compiled _.swc_ binary library, original source code, documentation, and examples. Add the _.swc_ file to the _library path_ in your favorite editor to make the Feathers components available inside your Starling project.
 
 ## Prerequisites
 
@@ -12,7 +12,7 @@ sidebarTitle: Installation
 
 ## Download Feathers
 
-Click the button below to download the latest version of Feathers UI for ActionScript 3 and Starling:
+Click the button below to download the latest version of [Feathers](/learn/as3-starling/getting-started/) for [ActionScript 3](https://github.com/joshtynjala/learning-actionscript-3.0) and [Starling](https://gamua.com/starling/):
 
 <div class="alignCenter">
   <div class="btn-wrapper">

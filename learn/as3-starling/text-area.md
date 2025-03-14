@@ -113,7 +113,7 @@ The text area's font styles may be customized using the [`fontStyles`](/api-refe
 textArea.fontStyles = new TextFormat( "Helvetica", 20, 0x3c3c3c );
 ```
 
-Pass in a [`starling.text.TextFormat`](http://doc.starling-framework.org/current/starling/text/TextFormat.html) object, which will work with any type of [text editor](./text-editors.md).
+Pass in a [`starling.text.TextFormat`](https://doc.starling-framework.org/current/starling/text/TextFormat.html) object, which will work with any type of [text editor](./text-editors.md).
 
 If the text area should use different font styles when it is disabled, you may set the [`disabledFontStyles`](/api-reference/feathers/controls/TextArea.html#disabledFontStyles) property too:
 

@@ -14,11 +14,11 @@ Feathers is designed and developed by [Josh Tynjala](https://github.com/joshtynj
 
 Feathers originated during a time when Josh was developing mobile games for iOS and Android with Adobe AIR. Josh needed UI components that offered excellent performance, touch-centric behavior, and flexible skinning options. None of the Flash UI frameworks at the time were optimized for mobile, and everything was designed for a keyboard and mouse instead of touch screens. He needed to start fresh — focusing on mobile first.
 
-Before long, Josh released Feathers as an open source project, built on top of the excellent [Starling Framework](http://starling-framework.org/). Feathers soon gained the attention of Adobe, and Josh continues to expand the Feathers library with the company's support.
+Before long, Josh released Feathers as an open source project, built on top of the excellent [Starling Framework](https://gamua.com/starling/). Feathers soon gained the attention of Adobe, and Josh continues to expand the Feathers library with the company's support.
 
 ### Where did the name "Feathers" come from?
 
-A bird's feathers provide functional and aesthetic benefits that I think closely match how user interface components can enhance a graphics library like [Starling Framework](http://starling-framework.org/).
+A bird's feathers provide functional and aesthetic benefits that I think closely match how user interface components can enhance a graphics library like [Starling Framework](https://gamua.com/starling/).
 
 ### Where can I download the most recent stable version of Feathers?
 
@@ -28,13 +28,9 @@ Visit the [Feathers website](https://feathersui.com/) for the most recent stable
 
 Visit the [Feathers project on Github](https://github.com/feathersui/feathersui-starling) for the newest Feathers code that will eventually become a part of the next stable version. Watch out for bugs!
 
-### How do I know that you won't abandon Feathers next week?
-
-Though Feathers is an independent open source project, development of Feathers is supported by Adobe. As a first step in this partnership, Feathers is included with the [Adobe Gaming SDK](http://gaming.adobe.com/technologies/gamingsdk/), along with Starling Framework and other tools for developing games with Adobe technologies. Looking forward, Adobe plans to integrate Starling Framework and Feathers more tightly into its upcoming design and development tools.
-
 ### Where can I get help?
 
-Please visit the [Feathers forum](http://forum.starling-framework.org/forum/feathers). Be sure to try a couple of searches to see if someone else has had the same issue. Maybe your questions have been answered already. If not, then feel free to start a new thread.
+Please visit the [Feathers forum](https://forum.starling-framework.org/forum/feathers). Be sure to try a couple of searches to see if someone else has had the same issue. Maybe your questions have been answered already. If not, then feel free to start a new thread.
 
 ### How can I contribute?
 
@@ -62,13 +58,13 @@ Typically, the most recent version of Adobe AIR or Adobe Flash Player is support
 
 ### Which version of Starling Framework is supported or required?
 
-Generally, the version of Feathers that is available from the [Feathers website](../installation.md) will work with the most recent version of Starling Framework that is available from the [official Starling download page](http://gamua.com/starling/download/). Older versions of Starling may remain compatible with the latest version of Feathers, but they are not officially supported.
+Generally, the version of Feathers that is available from the [Feathers website](../installation.md) will work with the most recent version of Starling Framework that is available from the [official Starling download page](https://gamua.com/starling/download/). Older versions of Starling may remain compatible with the latest version of Feathers, but they are not officially supported.
 
 Use the latest, bleeding edge code from the [Feathers Github project](https://github.com/feathersui/feathersui-starling) at your own risk. This code is in development, and it may be unstable at times. The newest code from the [Starling Github project](https://github.com/Gamua/Starling-Framework) may be required to use it if Feathers has begun using new features or if anything in the Starling APIs has changed. Check the [Feathers README file](https://github.com/feathersui/feathersui-starling/blob/master/README.md) to see which version of Starling is currently required by the unstable version of Feathers.
 
 ### Does Feathers support visual debugging similar to "inspect element" in web browsers?
 
-Check out the [monsterdebugger-client-starling](https://github.com/joshtynjala/monsterdebugger-client-starling) open source project. It adds support for Starling and Feathers to [Monster Debugger](http://www.monsterdebugger.com/) by De Monsters.
+Check out the [monsterdebugger-client-starling](https://github.com/joshtynjala/monsterdebugger-client-starling) open source project. It adds support for Starling and Feathers to [Monster Debugger](https://github.com/demonsters/monsterdebugger) by De Monsters.
 
 ## Architecture
 
@@ -98,7 +94,7 @@ To quickly get up and running with some sample skins, you may want to use a [the
 
 ### Why do the Feathers component skins and font sizes appear very small when I run my app on a mobile device?
 
-Did you chose a strategy for [scaling Starling to multiple screen resolutions](http://manual.starling-framework.org/en/#_multi_resolution_development)? In addition to the techniques mentioned in the _Starling Manual_, Feathers also provides the [`ScreenDensityScaleFactorManager`](/api-reference/feathers/utils/ScreenDensityScaleFactorManager.html) class to scale your application like native mobile apps on iOS and Android.
+Did you chose a strategy for [scaling Starling to multiple screen resolutions](https://manual.starling-framework.org/en/#_multi_resolution_development)? In addition to the techniques mentioned in the _Starling Manual_, Feathers also provides the [`ScreenDensityScaleFactorManager`](/api-reference/feathers/utils/ScreenDensityScaleFactorManager.html) class to scale your application like native mobile apps on iOS and Android.
 
 ### Why do the Feathers component skins and font sizes appear very small when simulating a mobile app on my computer?
 

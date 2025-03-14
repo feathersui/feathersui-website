@@ -40,7 +40,7 @@ There are two ways to include assets with a theme. Each has its own advantages a
 
 The simplest way to include assets to _embed_ the assets at compile time. This approach lets us simply instantiate the classes when they are needed, and we don't need to wait for an event to indicate that they are ready. However, embedding files will increase the memory that our app requires at runtime. On mobile, memory can be limited, and this approach will restrict how many textures that we can keep in memory simultaneously. For a small set of assets, that may be a small price to pay for convenience. For multiple texture atlases, using up memory that we might need at runtime is often unacceptable.
 
-Let's start by embedding a [texture atlas](http://wiki.starling-framework.org/manual/textures_and_images#texture_atlases) in our `CustomTheme` class:
+Let's start by embedding a [texture atlas](https://wiki.starling-framework.org/manual/textures_and_images#texture_atlases) in our `CustomTheme` class:
 
 ```actionscript
 [Embed(source="/../assets/images/atlas.png")]
@@ -50,7 +50,7 @@ private static const ATLAS_BITMAP:Class;
 private static const ATLAS_XML:Class;
 ```
 
-A texture atlas requires of two files, an image and an XML file. Let's add a member variable to our theme to hold the [`TextureAtlas`](http://doc.starling-framework.org/core/starling/textures/TextureAtlas.html) once it is created:
+A texture atlas requires of two files, an image and an XML file. Let's add a member variable to our theme to hold the [`TextureAtlas`](https://doc.starling-framework.org/core/starling/textures/TextureAtlas.html) once it is created:
 
 ```actionscript
 private var atlas:TextureAtlas;
@@ -82,9 +82,9 @@ If our theme requires other embedded assets, such as bitmap fonts or additional 
 
 ### Loading assets at runtime
 
-Another approach to including assets with a theme is to load them from external files at runtime. Starling's [`AssetManager`](http://doc.starling-framework.org/core/starling/utils/AssetManager.html) supports loading a set of multiple files at runtime, and it provides conveniences like automatically converting bitmaps to textures and registering bitmap fonts. Once everything is loaded, our assets will use less memory than if they were embedded, meaning that we can pack in more textures and things. Loading assets doesn't happen instantaneously, though, and we cannot initialize the theme until the `AssetManager` finishes loading our assets. Additionally, our app will need to wait before it can instantiate Feathers components.
+Another approach to including assets with a theme is to load them from external files at runtime. Starling's [`AssetManager`](https://doc.starling-framework.org/core/starling/utils/AssetManager.html) supports loading a set of multiple files at runtime, and it provides conveniences like automatically converting bitmaps to textures and registering bitmap fonts. Once everything is loaded, our assets will use less memory than if they were embedded, meaning that we can pack in more textures and things. Loading assets doesn't happen instantaneously, though, and we cannot initialize the theme until the `AssetManager` finishes loading our assets. Additionally, our app will need to wait before it can instantiate Feathers components.
 
-Similar to the previous example that used embedded assets, we want to load a [texture atlas](http://wiki.starling-framework.org/manual/textures_and_images#texture_atlases) to be used by our `CustomTheme` class. We'll need two files for the texture atlas, we'll call them `atlas.png` and `atlas.xml`.
+Similar to the previous example that used embedded assets, we want to load a [texture atlas](https://wiki.starling-framework.org/manual/textures_and_images#texture_atlases) to be used by our `CustomTheme` class. We'll need two files for the texture atlas, we'll call them `atlas.png` and `atlas.xml`.
 
 > When packaging an AIR application, we need to manually add each of the files that we want to include with our app to our project's settings. They will not be included automatically, even if we put them into the same folder as our source code. Every development environment provides a different UI for including files with an AIR application, so please refer to the appropriate IDE documentation for details.
 
@@ -122,7 +122,7 @@ private function assets_onProgress( progress:Number ):void
 }
 ```
 
-If the assets aren't loaded, we simply return. Once the assets are ready, we can access the `TextureAtlas` from the `AssetManager`. We pass the name of the texture atlas to the [`getTextureAtlas()`](<http://doc.starling-framework.org/core/starling/utils/AssetManager.html#getTextureAtlas()>) function. The name of a texture atlas is the image's file name, without the extension. In this case, our file is named `atlas.png`, so we pass `"atlas"` to `getTextureAtlas()`.
+If the assets aren't loaded, we simply return. Once the assets are ready, we can access the `TextureAtlas` from the `AssetManager`. We pass the name of the texture atlas to the [`getTextureAtlas()`](<https://doc.starling-framework.org/core/starling/utils/AssetManager.html#getTextureAtlas()>) function. The name of a texture atlas is the image's file name, without the extension. In this case, our file is named `atlas.png`, so we pass `"atlas"` to `getTextureAtlas()`.
 
 Once we've set the `atlas` member variable, we can call `initialize()`. If our custom theme needed to load more assets, we'd want to get them all from the `AssetManager` before calling `initialize()`.
 

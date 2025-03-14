@@ -97,7 +97,7 @@ The font styles of the toast's message may be customized using the [`fontStyles`
 toast.fontStyles = new TextFormat( "Helvetica", 20, 0x3c3c3c );
 ```
 
-Pass in a [`starling.text.TextFormat`](http://doc.starling-framework.org/current/starling/text/TextFormat.html) object, which will work with any type of [text renderer](./text-renderers.md).
+Pass in a [`starling.text.TextFormat`](https://doc.starling-framework.org/current/starling/text/TextFormat.html) object, which will work with any type of [text renderer](./text-renderers.md).
 
 The font styles of the toast's action buttons may be customized through the toast's `ButtonGroup` component. See [How to use the `ButtonGroup` component](./button-group.md) for details.
 

@@ -4,7 +4,7 @@ layout: "docs.html"
 sidebarTitle: Customize Starling initialization
 ---
 
-When you create a new Feathers application in MXML, Starling is initialized automatically by the compiler, behind the scenes. The default settings will work well for most Feathers apps to support common requirements — like stage and view port resizing, high DPI displays on desktop, and creating a theme. However, advanced developers may wish to customize some of these settings.
+When you create a new [Feathers SDK](/learn/as3-starling/sdk/) application in MXML, Starling is initialized automatically by the compiler, behind the scenes. The default settings will work well for most Feathers apps to support common requirements — like stage and view port resizing, high DPI displays on desktop, and creating a theme. However, advanced developers may wish to customize some of these settings.
 
 In your project's application, you can add `[Frame]` metadata to provide your own custom class that initializes Starling:
 
@@ -109,5 +109,5 @@ Once the assets are fully loaded, we can start Starling. If the app has a theme,
 
 ## Related Links
 
-- [Starling Manual: Asset Management](http://wiki.starling-framework.org/manual/asset_management)
-- [The `rootClass` property API documentation](http://doc.starling-framework.org/current/starling/core/Starling.html#rootClass)
+- [Starling Manual: Asset Management](https://wiki.starling-framework.org/manual/asset_management)
+- [The `rootClass` property API documentation](https://doc.starling-framework.org/current/starling/core/Starling.html#rootClass)

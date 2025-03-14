@@ -23,11 +23,11 @@ Ensure that the module type is an **ActionScript application for AIR mobile plat
 
 #### Other Environments
 
-[AIR Debug Launcher](http://help.adobe.com/en_US/air/build/WSfffb011ac560372f-6fa6d7e0128cca93d31-8000.html) offers a few important command line options that will allow you to simulate any device's screen resolution, screen density, and platform name.
+[AIR Debug Launcher](https://airsdk.dev/docs/building/air-debug-launcher) offers a few important command line options that will allow you to simulate any device's screen resolution, screen density, and platform name.
 
 - The `-screensize` argument will specify the device's screen resolution. Some IDEs may provide this automatically, but it should always be specified on the command line.
 
-  A number of predefined strings are available to simulate common devices. For instance, you can use `iPhone5Retina` to simulate an iPhone 5 with Retina display. The full list of predefined device strings is available in the [ADL documentation](http://help.adobe.com/en_US/air/build/WSfffb011ac560372f-6fa6d7e0128cca93d31-8000.html).
+  A number of predefined strings are available to simulate common devices. For instance, you can use `iPhone5Retina` to simulate an iPhone 5 with Retina display. The full list of predefined device strings is available in the [ADL documentation](https://airsdk.dev/docs/building/air-debug-launcher).
 
   If you want to simulate any device that doesn't have a predefined string, you can also pass in numeric values for the screen dimensions, in pixels. For example, the same iPhone device can be simulated by passing in `640×1096:640×1136` instead. The first set of dimensions is when the app is displayed with the OS chrome (status bars and things), and the second set of dimensions is when the app is displayed full screen.
 

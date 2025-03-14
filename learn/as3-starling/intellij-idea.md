@@ -4,11 +4,11 @@ layout: "docs.html"
 sidebarTitle: IntelliJ IDEA
 ---
 
-Let's create a [Feathers](./getting-started.md) and [Starling](https://gamua.com/starling/) project in [IntelliJ IDEA](http://www.jetbrains.com/idea/).
+Let's create a [Feathers](/learn/as3-starling/getting-started/) and [Starling](https://gamua.com/starling/) project in [IntelliJ IDEA](https://www.jetbrains.com/idea/).
 
 > These instructions apply to IntelliJ IDEA 12. Minor variations may exist between different versions of IntelliJ IDEA.
 
-1. Download the latest stable versions of [Feathers](./installation.md) and [Starling Framework](http://gamua.com/starling/download/).
+1. Download the latest stable versions of [Feathers](./installation.md) and [Starling Framework](https://gamua.com/starling/download/).
 
 2. In IDEA, select the **File** menu → **New Project**. A wizard will guide you through the creation process.
 
@@ -16,7 +16,7 @@ Let's create a [Feathers](./getting-started.md) and [Starling](https://gamua.com
 
 4. In the next section, select the approporite **Target platform** (Web, Desktop, or Mobile) and select **Pure ActionScript**. For **Output type**, select **Application**. Select an appropriate **Flex/AIR SDK** (see below where to download the latest version of the AIR SDK). Then click **Finish**.
 
-   You can download the latest [Adobe AIR SDK and Compiler](http://airsdk.harman.com/download/) from Harman's website. This SDK can be used to target both Adobe AIR and Adobe Flash Player in the browser. Check the Feathers README file to see the minimum required versions of Adobe AIR and Flash Player for the version of Feathers that you are using.
+   You can download the latest [Adobe AIR SDK and Compiler](https://airsdk.harman.com/download/) from Harman's website. This SDK can be used to target both Adobe AIR and Adobe Flash Player in the browser. Check the Feathers README file to see the minimum required versions of Adobe AIR and Flash Player for the version of Feathers that you are using.
 
 5. Now that the project is created, you will need to add Feathers and Starling Framework to the project. Select the **File** menu → **Project Structure**, then under **Project Settings** choose **Libraries**. Click the **+** (plus sign) at the top. Next, select **ActionScript/Flex** and specify the location of **starling.swc**.
 
@@ -54,4 +54,4 @@ Let's create a [Feathers](./getting-started.md) and [Starling](https://gamua.com
 
 ## Conclusion
 
-Your project is ready. If you're unsure how to proceed, start by using the code in the **Create your Game** section of the [Starling First Steps Tutorial](http://gamua.com/starling/first-steps/). Then, take a look at the [Feathers Hello World Tutorial](./hello-world.md).
+Your project is ready. If you're unsure how to proceed, start by using the code in the **Create your Game** section of the [Starling First Steps Tutorial](https://gamua.com/starling/first-steps/). Then, take a look at the [Feathers Hello World Tutorial](./hello-world.md).

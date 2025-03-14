@@ -18,13 +18,13 @@ These factors may impact things like performance and memory usage, depending on 
 
 Feathers provides four different text editors. We'll learn the capabilities of each, along with their advantages and disadvantages. These text editors are listed below:
 
-- [`StageTextTextEditor`](./stage-text-text-editor.md) uses [`flash.text.StageText`](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/text/StageText.html) to natively support entering text on all platforms, but especially on mobile. When the `TextInput` has focus, the `StageText` is displayed above Starling. Without focus, the `TextField` is drawn to [`BitmapData`](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/BitmapData.html) and uploaded as a texture to the GPU.
+- [`StageTextTextEditor`](./stage-text-text-editor.md) uses [`flash.text.StageText`](https://airsdk.dev/reference/actionscript/3.0/flash/text/StageText.html) to natively support entering text on all platforms, but especially on mobile. When the `TextInput` has focus, the `StageText` is displayed above Starling. Without focus, the `TextField` is drawn to [`BitmapData`](https://airsdk.dev/reference/actionscript/3.0/flash/display/BitmapData.html) and uploaded as a texture to the GPU.
 
-- [`TextFieldTextEditor`](./text-field-text-editor.md) uses [`flash.text.TextField`](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/text/TextField.html) to natively support entering text on all platforms. When the `TextInput` has focus, it is added to the classic display list above Starling. Without focus, the `TextField` is drawn to [`BitmapData`](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/BitmapData.html) and uploaded as a texture to the GPU.
+- [`TextFieldTextEditor`](./text-field-text-editor.md) uses [`flash.text.TextField`](https://airsdk.dev/docs/development/text/using-the-textfield-class) to natively support entering text on all platforms. When the `TextInput` has focus, it is added to the classic display list above Starling. Without focus, the `TextField` is drawn to [`BitmapData`](https://airsdk.dev/reference/actionscript/3.0/flash/display/BitmapData.html) and uploaded as a texture to the GPU.
 
-- [`TextBlockTextEditor`](./text-block-text-editor.md) uses [Flash Text Engine](http://help.adobe.com/en_US/as3/dev/WS9dd7ed846a005b294b857bfa122bd808ea6-8000.html) to render text in software and the result is drawn to [`BitmapData`](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/BitmapData.html) and uploaded as a texture to the GPU. This text editor is not compatible with mobile apps.
+- [`TextBlockTextEditor`](./text-block-text-editor.md) uses [Flash Text Engine](https://airsdk.dev/docs/development/text/using-the-flash-text-engine) to render text in software and the result is drawn to [`BitmapData`](https://airsdk.dev/reference/actionscript/3.0/flash/display/BitmapData.html) and uploaded as a texture to the GPU. This text editor is not compatible with mobile apps.
 
-- [`BitmapFontTextEditor`](./bitmap-font-text-editor.md) uses [bitmap fonts](http://wiki.starling-framework.org/manual/displaying_text#bitmap_fonts) to display characters as separate textured quads. This text editor is not compatible with mobile apps.
+- [`BitmapFontTextEditor`](./bitmap-font-text-editor.md) uses [bitmap fonts](https://wiki.starling-framework.org/manual/displaying_text#bitmap_fonts) to display characters as separate textured quads. This text editor is not compatible with mobile apps.
 
 Each text renderer has different capabilities, so be sure to study each one in detail to choose the best one for your project.
 
@@ -91,7 +91,7 @@ On mobile, `StageTextTextEditor` can be used to edit text with multiple word-wra
 
 For desktop apps, the [`TextArea`](./text-area.md) component may be used. It will work on mobile, in a pinch, but it only recommended for desktop. `TextArea` supports special text editors with an extended the [`ITextEditorViewPort`](/api-reference/feathers/controls/text/ITextEditorViewPort.html) interface. Currently, Feathers provides one text editor for `TextArea`:
 
-- [`TextFieldTextEditorViewPort`](/api-reference/feathers/controls/text/TextFieldTextEditorViewPort.html) is similar to `TextFieldTextEditor`. It renders text using a [`flash.text.TextField`](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/text/TextField.html). This is the default text editor used by `TextArea`.
+- [`TextFieldTextEditorViewPort`](/api-reference/feathers/controls/text/TextFieldTextEditorViewPort.html) is similar to `TextFieldTextEditor`. It renders text using a [`flash.text.TextField`](https://airsdk.dev/docs/development/text/using-the-textfield-class). This is the default text editor used by `TextArea`.
 
 ## Related Links
 

@@ -36,7 +36,7 @@ this.addChild( player );
 To play a video file, pass the URL to the [`videoSource`](/api-reference/feathers/media/VideoPlayer.html#videoSource) property:
 
 ```actionscript
-player.videoSource = "http://example.com/video.m4v";
+player.videoSource = "https://example.com/video.m4v";
 ```
 
 > For additional ways to play videos (such as streaming from a server), see the [Loading Videos](#loading-videos) section below.
@@ -183,7 +183,7 @@ player.seek( 5.0 );
 
 The time is measured in seconds.
 
-To change the volume, we can pass a [`flash.media.SoundTransform`](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/media/SoundTransform.html) object to the [`soundTransform`](/api-reference/feathers/media/VideoPlayer.html#soundTransform) property:
+To change the volume, we can pass a [`flash.media.SoundTransform`](https://airsdk.dev/reference/actionscript/3.0/flash/media/SoundTransform.html) object to the [`soundTransform`](/api-reference/feathers/media/VideoPlayer.html#soundTransform) property:
 
 ```actionscript
 player.soundTransform = new SoundTransform( 0.5 );
@@ -206,7 +206,7 @@ Previously, we loaded a video using a simple URL. Let's look at all of the ways 
 First, we'll review how to load a video from a URL:
 
 ```actionscript
-player.videoSource = "http://example.com/video.mp4";
+player.videoSource = "https://example.com/video.mp4";
 ```
 
 ### Loading from the file system

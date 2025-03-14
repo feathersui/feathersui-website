@@ -4,7 +4,7 @@ layout: "docs.html"
 sidebarTitle: ImageLoader
 ---
 
-The [`ImageLoader`](/api-reference/feathers/controls/ImageLoader.html) class wraps [`starling.display.Image`](http://doc.starling-framework.org/core/starling/display/Image.html) inside a Feathers component to add additional features. For instance, you can easily load an image from a URL and automatically convert it to a texture that is fully managed by the `ImageLoader`. The texture will be disposed when the `ImageLoader` is disposed. A number of other useful properties have been added to `ImageLoader`. See below for more details.
+The [`ImageLoader`](/api-reference/feathers/controls/ImageLoader.html) class wraps [`starling.display.Image`](https://doc.starling-framework.org/core/starling/display/Image.html) inside a Feathers component to add additional features. For instance, you can easily load an image from a URL and automatically convert it to a texture that is fully managed by the `ImageLoader`. The texture will be disposed when the `ImageLoader` is disposed. A number of other useful properties have been added to `ImageLoader`. See below for more details.
 
 ## The Basics
 
@@ -19,10 +19,10 @@ this.addChild( loader );
 Alternatively, you can pass a URL to the [`source`](/api-reference/feathers/controls/ImageLoader.html#source) property to load an external image:
 
 ```actionscript
-loader.source = "http://www.example.com/image.png";
+loader.source = "https://www.example.com/image.png";
 ```
 
-The URL may point to any image file that may be loaded by [`flash.display.Loader`](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/Loader.html) to create a [`flash.display.BitmapData`](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/BitmapData.html) object. The loaded image will be converted to a [`starling.textures.Texture`](http://doc.starling-framework.org/core/starling/textures/Texture.html).
+The URL may point to any image file that may be loaded by [`flash.display.Loader`](https://airsdk.dev/reference/actionscript/3.0/flash/display/Loader.html) to create a [`flash.display.BitmapData`](https://airsdk.dev/reference/actionscript/3.0/flash/display/BitmapData.html) object. The loaded image will be converted to a [`starling.textures.Texture`](https://doc.starling-framework.org/core/starling/textures/Texture.html).
 
 > At this time, ATF files cannot be loaded by `ImageLoader` using a URL.
 
@@ -58,9 +58,9 @@ function loader_ioErrorHandler( event:Event, data:IOErrorEvent ):void
 }
 ```
 
-The `data` parameter in the function signature is optional, as always. It is a [`flash.events.IOErrorEvent`](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/IOErrorEvent.html) that is dispatched by the internal [`flash.display.Loader`](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/Loader.html) used internally by the `ImageLoader`.
+The `data` parameter in the function signature is optional, as always. It is a [`flash.events.IOErrorEvent`](https://airsdk.dev/reference/actionscript/3.0/flash/events/IOErrorEvent.html) that is dispatched by the internal [`flash.display.Loader`](https://airsdk.dev/reference/actionscript/3.0/flash/display/Loader.html) used internally by the `ImageLoader`.
 
-Similarly, you may listen for [`Event.SECURITY_ERROR`](/api-reference/feathers/controls/ImageLoader.html#event:securityError). The `data` property of the event is a [`flash.events.SecurityErrorEvent`](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/events/SecurityErrorEvent.html) dispatched by the internal `Loader`.
+Similarly, you may listen for [`Event.SECURITY_ERROR`](/api-reference/feathers/controls/ImageLoader.html#event:securityError). The `data` property of the event is a [`flash.events.SecurityErrorEvent`](https://airsdk.dev/reference/actionscript/3.0/flash/events/SecurityErrorEvent.html) dispatched by the internal `Loader`.
 
 ### Caching Textures
 
@@ -135,11 +135,11 @@ When images are loaded in a component like a [`List`](./list.md), it's often mor
 loader.delayTextureCreation = true;
 ```
 
-Set the [`delayTextureCreation`](/api-reference/feathers/controls/ImageLoader.html#delayTextureCreation) property to `true` when the container starts scrolling and set it back to `false` after scrolling finishes. While this property is `true`, the image may load from a URL, but the [`BitmapData`](http://help.adobe.com/en_US/FlashPlatform/reference/actionscript/3/flash/display/BitmapData.html) will be kept in memory without being converted to a texture on the GPU. Once the property is set back to `false`, the texture will be created immediately.
+Set the [`delayTextureCreation`](/api-reference/feathers/controls/ImageLoader.html#delayTextureCreation) property to `true` when the container starts scrolling and set it back to `false` after scrolling finishes. While this property is `true`, the image may load from a URL, but the [`BitmapData`](https://airsdk.dev/reference/actionscript/3.0/flash/display/BitmapData.html) will be kept in memory without being converted to a texture on the GPU. Once the property is set back to `false`, the texture will be created immediately.
 
 If desired, we can set the [`textureQueueDuration`](/api-reference/feathers/controls/ImageLoader.html#textureQueueDuration) property to a specific number of seconds. When `delayTextureCreation` is `true`, the loaded image will be converted to a `Texture` after a short delay instead of waiting for `delayTextureCreation` to be set back to `false`.
 
-When you resize a regular [`starling.display.Image`](http://doc.starling-framework.org/core/starling/display/Image.html), it may distort. `ImageLoader` allows you control whether the image maintains its aspect ratio within the dimensions of the `ImageLoader`:
+When you resize a regular [`starling.display.Image`](https://doc.starling-framework.org/core/starling/display/Image.html), it may distort. `ImageLoader` allows you control whether the image maintains its aspect ratio within the dimensions of the `ImageLoader`:
 
 ```actionscript
 loader.maintainAspectRatio = true;

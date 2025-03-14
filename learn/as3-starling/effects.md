@@ -205,7 +205,7 @@ Effect properties on Feathers components are simply typed as `Function`. Let's s
 function( target:DisplayObject ):IEffectContext
 ```
 
-An effect function should accept a single argument, the target of the effect. It should return an implementation of [`feathers.motion.effectClasses.IEffectContext`](/api-reference/feathers/motion/effectClasses/IEffectContext.html). The component uses this context to start, pause, and stop the effect, as needed. Typically, you'll want to animate something using [`starling.animation.Tween`](http://doc.starling-framework.org/current/starling/animation/Tween.html), so the return value is often an instance of [`feathers.motion.effectClasses.TweenEffectContext`](/api-reference/feathers/motion/effectClasses/TweenEffectContext.html). Let's take a look at an example that uses `Tween` and `TweenEffectContext` to create our first custom effect.
+An effect function should accept a single argument, the target of the effect. It should return an implementation of [`feathers.motion.effectClasses.IEffectContext`](/api-reference/feathers/motion/effectClasses/IEffectContext.html). The component uses this context to start, pause, and stop the effect, as needed. Typically, you'll want to animate something using [`starling.animation.Tween`](https://doc.starling-framework.org/current/starling/animation/Tween.html), so the return value is often an instance of [`feathers.motion.effectClasses.TweenEffectContext`](/api-reference/feathers/motion/effectClasses/TweenEffectContext.html). Let's take a look at an example that uses `Tween` and `TweenEffectContext` to create our first custom effect.
 
 ### A custom transition using `starling.animation.Tween`
 
@@ -232,7 +232,7 @@ tween.animate( "alpha", 1.0 );
 
 As you can see, we animate the `alpha` property for a duration of one second, and we specify an easing function.
 
-> For more information about Starling's `Tween` class, see [Animations](http://manual.starling-framework.org/en/#_animations) in the Starling Manual.
+> For more information about Starling's `Tween` class, see [Animations](https://manual.starling-framework.org/en/#_animations) in the Starling Manual.
 
 Finally, we need to pass our `Tween` instance to a `TweenEffectContext` to return from our function.
 

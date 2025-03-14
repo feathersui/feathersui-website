@@ -103,7 +103,7 @@ For an item renderer to add the display object as a child, it needs to know abou
 itemRenderer.iconField = "control";
 ```
 
-When using `iconField`, it's important to understand that the display object in the data provider will not be automatically disposed when the item renderer or the list is disposed. This display object may need to be used in another list later, and Feathers cannot know whether it is safe to dispose it, similar to how a [`starling.display.Image`](http://doc.starling-framework.org/core/starling/display/Image.html) cannot dispose its [`starling.textures.Texture`](http://doc.starling-framework.org/core/starling/textures/Texture.html). To avoid memory leaks, remember to dispose any display objects included in the list's data provider when the list is disposed. The [`dispose()`](</api-reference/feathers/data/IListCollection.html#dispose()>) function on the data provider makes it easy to dispose display objects in an `IListCollection`.
+When using `iconField`, it's important to understand that the display object in the data provider will not be automatically disposed when the item renderer or the list is disposed. This display object may need to be used in another list later, and Feathers cannot know whether it is safe to dispose it, similar to how a [`starling.display.Image`](https://doc.starling-framework.org/core/starling/display/Image.html) cannot dispose its [`starling.textures.Texture`](https://doc.starling-framework.org/core/starling/textures/Texture.html). To avoid memory leaks, remember to dispose any display objects included in the list's data provider when the list is disposed. The [`dispose()`](</api-reference/feathers/data/IListCollection.html#dispose()>) function on the data provider makes it easy to dispose display objects in an `IListCollection`.
 
 Finally, it's possible to skin the icon without passing it through the data provider. For example, you might want to display a checkmark as the icon when an item renderer is selected. Set the [`itemHasIcon`](/api-reference/feathers/controls/renderers/BaseDefaultItemRenderer.html#itemHasIcon) property to `false`, and you can skin the icon using [`defaultIcon`](/api-reference/feathers/controls/Button.html#defaultIcon) and [`setIconForState()`](</api-reference/feathers/controls/Button.html#setIconForState()>) just like you would for a button.
 
@@ -131,7 +131,7 @@ If the item renderer's accessory is a label set using `accessoryLabelField` or `
 itemRenderer.accessoryLabelFontStyles = new TextFormat( "Helvetica", 20, 0x3c3c3c );
 ```
 
-Pass in a [`starling.text.TextFormat`](http://doc.starling-framework.org/current/starling/text/TextFormat.html) object, which will work with any type of [text renderer](./text-renderers.md).
+Pass in a [`starling.text.TextFormat`](https://doc.starling-framework.org/current/starling/text/TextFormat.html) object, which will work with any type of [text renderer](./text-renderers.md).
 
 If the accessory label should use different font styles when the item renderer is disabled, you may set the [`accessoryLabelDisabledFontStyles`](/api-reference/feathers/controls/renderers/BaseDefaultItemRenderer.html#accessoryLabelDisabledFontStyles) property too:
 

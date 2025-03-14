@@ -4,7 +4,7 @@ layout: "docs.html"
 sidebarTitle: Installation
 ---
 
-The Feathers SDK may be installed using the **Feathers SDK Manager**, an app designed to download both the SDK and all of its dependencies.
+The [Feathers SDK](/learn/as3-starling/sdk/) may be installed using the **Feathers SDK Manager**, an app designed to download both the SDK and all of its dependencies.
 
 ![](/learn/as3-starling/sdk/images/feathers-sdk-manager-screenshot@2x.png)
 

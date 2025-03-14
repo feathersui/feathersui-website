@@ -201,13 +201,13 @@ The [`INativeFocusOwner`](/api-reference/feathers/core/INativeFocusOwner.html) i
 
 ## Multi-Resolution Development with Feathers
 
-Feathers 3.0 fully embraces Starling's `contentScaleFactor` system described in [Starling Multi-Resolution Development](http://wiki.starling-framework.org/manual/multi-resolution_development). Feathers even has some tricks up its sleeve to make it easy to scale to any mobile device's screen, while using its native aspect ratio.
+Feathers 3.0 fully embraces Starling's `contentScaleFactor` system described in [Starling Multi-Resolution Development](https://wiki.starling-framework.org/manual/multi-resolution_development). Feathers even has some tricks up its sleeve to make it easy to scale to any mobile device's screen, while using its native aspect ratio.
 
 ### `ScreenDensityScaleFactorManager`
 
 The [`ScreenDensityScaleFactorManager`](/api-reference/feathers/utils/ScreenDensityScaleFactorManager.html) class provides a convienent way to automatically calculate an appropriate `contentScaleFactor` value while maintaining the aspect ratio of any mobile device's screen. It uses a system inspired by Android that takes into account the screen density and the screen's resolution.
 
-The following example shows how to use `ScreenDensityScaleFactorManager` by modifying the sample [Startup Code](http://wiki.starling-framework.org/manual/startup_code) from the Starling wiki.
+The following example shows how to use `ScreenDensityScaleFactorManager` by modifying the sample [Startup Code](https://wiki.starling-framework.org/manual/startup_code) from the Starling wiki.
 
 ```actionscript
 public class Startup extends Sprite
@@ -226,7 +226,7 @@ public class Startup extends Sprite
 
 You don't need to set the dimensions of Starling's view port, or the `stageWidth` and `stageHeight` properties of the Starling stage. `ScreenDensityScaleFactorManager` handles it all for you — even when the device's orientation changes.
 
-`ScreenDensityScaleFactorManager` is considered optional, and if you'd prefer to manage the Starling view port and stage size manually using the techniques in [Multi-Resolution Development](http://wiki.starling-framework.org/manual/multi-resolution_development), Feathers fully supports that approach too.
+`ScreenDensityScaleFactorManager` is considered optional, and if you'd prefer to manage the Starling view port and stage size manually using the techniques in [Multi-Resolution Development](https://wiki.starling-framework.org/manual/multi-resolution_development), Feathers fully supports that approach too.
 
 ### Changes to example themes
 

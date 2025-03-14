@@ -53,7 +53,7 @@ The font styles of the header's title may be customized using the [`fontStyles`]
 header.fontStyles = new TextFormat( "Helvetica", 20, 0x3c3c3c );
 ```
 
-Pass in a [`starling.text.TextFormat`](http://doc.starling-framework.org/current/starling/text/TextFormat.html) object, which will work with any type of [text renderer](./text-renderers.md).
+Pass in a [`starling.text.TextFormat`](https://doc.starling-framework.org/current/starling/text/TextFormat.html) object, which will work with any type of [text renderer](./text-renderers.md).
 
 If the header's title should use different font styles when the header is disabled, you may set the [`disabledFontStyles`](/api-reference/feathers/controls/Header.html#disabledFontStyles) property too:
 

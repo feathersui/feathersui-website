@@ -66,7 +66,7 @@ package feathersx.layout
 }
 ```
 
-The class needs to extend [`starling.events.EventDispatcher`](http://doc.starling-framework.org/core/starling/events/EventDispatcher.html) in order to be able to dispatch `Event.CHANGE` when its `percentWidth` property changes. The metadata for this event appears above the class definition. Obviously, we implement the `ILayoutData` interface.
+The class needs to extend [`starling.events.EventDispatcher`](https://doc.starling-framework.org/core/starling/events/EventDispatcher.html) in order to be able to dispatch `Event.CHANGE` when its `percentWidth` property changes. The metadata for this event appears above the class definition. Obviously, we implement the `ILayoutData` interface.
 
 The `percentWidth` getter and setter are also defined. The getter simply returns the `_percentWidth` member variable used to store the value. The setter checks if the value has changed. If so, it stores the new value in the `_percentWidth` member variable and then dispatches `Event.CHANGE`.
 

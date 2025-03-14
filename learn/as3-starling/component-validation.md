@@ -4,7 +4,7 @@ layout: "docs.html"
 sidebarTitle: Validating with draw()
 ---
 
-`FeathersControl` provides a single, simple `draw()` function that may be overridden for validation. In general, though, a little extra structure can go a long way to help organize a component's validation code. The core components in Feathers typically break up validation into three phases. If you're familiar with the component internals [Apache Flex](http://flex.apache.org/) (formerly Adobe Flex), you should recognize that this is a similar, but also slightly simpler, approach.
+`FeathersControl` provides a single, simple `draw()` function that may be overridden for validation. In general, though, a little extra structure can go a long way to help organize a component's validation code. The core components in Feathers typically break up validation into three phases. If you're familiar with the component internals [Apache Flex](https://flex.apache.org/) (formerly Adobe Flex), you should recognize that this is a similar, but also slightly simpler, approach.
 
 ## Phase 1: Commit
 

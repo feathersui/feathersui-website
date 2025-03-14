@@ -35,7 +35,7 @@ PopUpManager.removePopUp( popUp, true );
 
 The first argument is the pop-up to remove. If the object passed in is not a pop-up, a runtime error will be thrown. The second argument is whether to dispose the pop-up or not.
 
-If you prefer, you may also use the standard [`removeFromParent()`](<http://doc.starling-framework.org/core/starling/display/DisplayObject.html#removeFromParent()>) function available to all Starling display objects:
+If you prefer, you may also use the standard [`removeFromParent()`](<https://doc.starling-framework.org/core/starling/display/DisplayObject.html#removeFromParent()>) function available to all Starling display objects:
 
 ```actionscript
 popUp.removeFromParent( true );
@@ -53,7 +53,7 @@ If you choose not to center a pop-up when you call `PopUpManager.addPopUp()`, yo
 
 ## Customizing the `PopUpManager`
 
-By customizing [`PopUpManager.overlayFactory`](/api-reference/feathers/core/PopUpManager.html#overlayFactory) you can change the appearance of the modal overlay. By default, this overlay is a fully transparent [`Quad`](http://doc.starling-framework.org/core/starling/display/Quad.html). It will block touches to the content below, but it has no appearance.
+By customizing [`PopUpManager.overlayFactory`](/api-reference/feathers/core/PopUpManager.html#overlayFactory) you can change the appearance of the modal overlay. By default, this overlay is a fully transparent [`Quad`](https://doc.starling-framework.org/core/starling/display/Quad.html). It will block touches to the content below, but it has no appearance.
 
 If you wanted to use a semi-transparent, colored Quad or another Starling display object for overlays, you can pass in a new `overlayFactory`:
 

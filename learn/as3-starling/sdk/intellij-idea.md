@@ -4,7 +4,7 @@ layout: "docs.html"
 sidebarTitle: IntelliJ IDEA
 ---
 
-Let's get your [IntelliJ IDEA](http://www.jetbrains.com/idea/) development environment ready to use the Feathers SDK.
+Let's get your [IntelliJ IDEA](https://www.jetbrains.com/idea/) development environment ready to use the [Feathers SDK](/learn/as3-starling/sdk/).
 
 > These instructions apply to IntelliJ IDEA 14. Minor variations may exist between different versions of IntelliJ IDEA.
 
