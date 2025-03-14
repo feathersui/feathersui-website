@@ -12,11 +12,9 @@ sidebarTitle: Features
 
 - Hardware-accelerated graphics.
 
-- Target iOS, Android, Windows, macOS, and Android TV.
+- Target Windows and macOS on desktop, Android and iOS on mobile.
 
-- Built on top of Starling Framework and Adobe AIR.
-
-- Backed by Adobe and the community.
+- Built on top of [Starling Framework](https://gamua.com/starling/) and [Adobe AIR](https://airsdk.dev/).
 
 ## Cross Platform
 

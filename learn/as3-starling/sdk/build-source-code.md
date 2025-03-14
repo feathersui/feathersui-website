@@ -11,7 +11,10 @@ The document explains how to build the [Feathers SDK](/learn/as3-starling/sdk/) 
 ## Requirements
 
 - [Apache Ant](https://ant.apache.org) 1.9.1 or newer
-- Java 8 update 101 or newer
+- Java OpenJDK 8 or newer
+
+    > A variety of vendors offer free Java OpenJDK builds that work well. If you’re not sure which one to choose, a good option is [Temurin OpenJDK from Adoptium.net](https://adoptium.net/).
+
 - [_playerglobal.swc_](https://fpdownload.macromedia.com/get/flashplayer/updaters/32/playerglobal32_0.swc) for Flash Player 32.0
 - Adobe AIR SDK _for Flex developers_ (Download from [Harman's AIR SDK website](https://airsdk.harman.com/download/))
 

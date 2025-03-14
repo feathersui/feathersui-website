@@ -6,7 +6,7 @@ layout: "docs.html"
 
 This page is an overview of the Feathers (AS3/Starling version) documentation and related resources.
 
-> **What's Feathers?** It is a GUI component library for the [Adobe AIR](https://airsdk.dev/) cross-platform run-time and [Starling Framework](https://gamua.com/starling/), a popular ActionScript 3.0 library. _The AS3/Starling version of Feathers is no longer under active development,_ and you should not expect any new features to be added in the future. However, we'll try our best to keep everything working whenever Harman releases new updates to Adobe AIR in the future.
+> **What's Feathers?** It is an [ActionScript 3](https://github.com/joshtynjala/learning-actionscript-3.0) GUI component library for the [Adobe AIR](https://airsdk.dev/) cross-platform run-time and [Starling Framework](https://gamua.com/starling/), a popular AS3 library. _The AS3/Starling version of Feathers is no longer under active development,_ and you should not expect any new features to be added in the future. However, we'll try our best to keep everything working whenever Harman releases new updates to Adobe AIR in the future.
 >
 > Be sure to check out [Feathers UI for OpenFL and Haxe](../../haxe-openfl/). OpenFL is an implementation of many of the same APIs as Adobe AIR, and it can compile not just native desktop and mobile apps, but it can also be deployed to the web!
 
@@ -27,9 +27,9 @@ Then, check out the following tutorial for creating a "hello world" style projec
 
 ## API Reference
 
-This documentation section is useful when you want to learn more details about a particular Feathers class, property, or method. For example, [`feathers.controls.Button` API reference](https://feathersui.com/api-reference/feathers/controls/Button.html) can provide you with details about all properties, styles, and events that are available on a [`Button` component](./button.md).
+This documentation section is useful when you want to learn more details about a particular Feathers class, property, or method. For example, [`feathers.controls.Button` API reference](/api-reference/feathers/controls/Button.html) can provide you with details about all properties, styles, and events that are available on a [`Button` component](./button.md).
 
-- [Feathers UI AS3/Starling API Reference](https://feathersui.com/api-reference/)
+- [Feathers UI AS3/Starling API Reference](/api-reference/)
 
 ## Sample projects
 

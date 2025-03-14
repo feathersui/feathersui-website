@@ -12,7 +12,9 @@ The document explains how to build the [Feathers SDK](/learn/as3-starling/sdk/) 
 
 - A _binary distribution_ of the Feathers SDK [(available from Github)](https://github.com/feathersui/feathersui-starling-sdk/releases)
 - [Apache Ant](https://ant.apache.org) 1.9.1 or newer
-- Java 8 update 101 or newer
+- Java OpenJDK 8 or newer
+
+    > A variety of vendors offer free Java OpenJDK builds that work well. If you’re not sure which one to choose, a good option is [Temurin OpenJDK from Adoptium.net](https://adoptium.net/).
 
 ## Build Steps
 

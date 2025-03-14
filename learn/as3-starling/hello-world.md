@@ -6,7 +6,7 @@ sidebarTitle: Hello World
 
 The following beginner-level tutorial for Feathers helps you create your first [`Button`](./button.md) component. It is a very simple demonstration that displays a text label, adds an event listener to listen for clicks, and creates a theme that will apply some default visual styles.
 
-> **What's Feathers?** It is a GUI component library for the [Adobe AIR](https://airsdk.dev/) cross-platform run-time and [Starling Framework](https://gamua.com/starling/), a popular ActionScript 3.0 library. _The AS3/Starling version of Feathers is no longer under active development,_ and you should not expect any new features to be added in the future. However, we'll try our best to keep everything working whenever Harman releases new updates to Adobe AIR in the future.
+> **What's Feathers?** It is an [ActionScript 3](https://github.com/joshtynjala/learning-actionscript-3.0) GUI component library for the [Adobe AIR](https://airsdk.dev/) cross-platform run-time and [Starling Framework](https://gamua.com/starling/), a popular AS3 library. _The AS3/Starling version of Feathers is no longer under active development,_ and you should not expect any new features to be added in the future. However, we'll try our best to keep everything working whenever Harman releases new updates to Adobe AIR in the future.
 >
 > Be sure to check out [Feathers UI for OpenFL and Haxe](../../haxe-openfl/). OpenFL is an implementation of many of the same APIs as Adobe AIR, and it can compile not just native desktop and mobile apps, but it can also be deployed to the web!
 
@@ -24,7 +24,7 @@ The following beginner-level tutorial for Feathers helps you create your first [
 
 ## Final Result
 
-[![feathers-hello-world.jpg](/learn/as3-starling/images/feathers-hello-world.jpg)](https://feathersui.com/examples/hello-world/)
+![feathers-hello-world.jpg](/learn/as3-starling/images/feathers-hello-world.jpg)
 
 ## Walkthrough
 

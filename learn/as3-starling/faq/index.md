@@ -22,7 +22,7 @@ A bird's feathers provide functional and aesthetic benefits that I think closely
 
 ### Where can I download the most recent stable version of Feathers?
 
-Visit the [Feathers website](https://feathersui.com/) for the most recent stable version of Feathers.
+Visit the [Feathers website](/learn/as3-starling/getting-started/) for the most recent stable version of Feathers.
 
 ### Where can I download the most recent unstable/development/beta version of Feathers?
 
@@ -58,7 +58,7 @@ Typically, the most recent version of Adobe AIR or Adobe Flash Player is support
 
 ### Which version of Starling Framework is supported or required?
 
-Generally, the version of Feathers that is available from the [Feathers website](../installation.md) will work with the most recent version of Starling Framework that is available from the [official Starling download page](https://gamua.com/starling/download/). Older versions of Starling may remain compatible with the latest version of Feathers, but they are not officially supported.
+Generally, the version of Feathers that is available from the [Feathers website](../installation.md) will work with the most recent version of [Starling Framework](https://gamua.com/starling/) that is available from the [official Starling download page](https://gamua.com/starling/download/). Older versions of Starling may remain compatible with the latest version of Feathers, but they are not officially supported.
 
 Use the latest, bleeding edge code from the [Feathers Github project](https://github.com/feathersui/feathersui-starling) at your own risk. This code is in development, and it may be unstable at times. The newest code from the [Starling Github project](https://github.com/Gamua/Starling-Framework) may be required to use it if Feathers has begun using new features or if anything in the Starling APIs has changed. Check the [Feathers README file](https://github.com/feathersui/feathersui-starling/blob/master/README.md) to see which version of Starling is currently required by the unstable version of Feathers.
 

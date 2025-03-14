@@ -8,6 +8,7 @@ sidebarTitle: Installation
 
 ## Prerequisites
 
+- Requires [Adobe AIR](https://airsdk.dev)
 - Requires [Starling 2.6 or newer](https://gamua.com/starling/download/).
 
 ## Download Feathers
@@ -24,7 +25,7 @@ Check out the <a href="https://github.com/feathersui/feathersui-starling/blob/v4
 
 ## Older versions
 
-Previous releases of Feathers UI for ActionScript 3 and Starling are available for download from Github:
+Previous releases of [Feathers](/learn/as3-starling/getting-started/) for [ActionScript 3](https://github.com/joshtynjala/learning-actionscript-3.0) and [Starling](https://gamua.com/starling/) are available for download from Github:
 
 - [feathersui-starling releases on Github](https://github.com/feathersui/feathersui-starling/releases)
 

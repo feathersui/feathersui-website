@@ -6,9 +6,9 @@ sidebarTitle: Prerelease
 
 Riding the cutting edge of commits to the [Feathers Github project](https://github.com/feathersui/feathersui-starling)? You might be interested in the following links to information about the upcoming version of Feathers:
 
-- [Feathers Prerelease Help](https://feathersui.com/beta/help/)
+- [Feathers Prerelease Help](/beta/help/)
 
-- [Feathers Prerelease API Reference](https://feathersui.com/beta/api-reference/)
+- [Feathers Prerelease API Reference](/beta/api-reference/)
 
 - [Feathers Commit Log](https://github.com/feathersui/feathersui-starling/commits/master)
 

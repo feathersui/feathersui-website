@@ -4,7 +4,7 @@ layout: "docs.html"
 sidebarTitle: FlashDevelop
 ---
 
-Let's create a [Feathers](/learn/as3-starling/getting-started/) and [Starling](https://gamua.com/starling/) project in [FlashDevelop](https://github.com/fdorg/flashdevelop).
+Let's create a [Feathers](/learn/as3-starling/getting-started/), [Starling](https://gamua.com/starling/), and [ActionScript 3](https://github.com/joshtynjala/learning-actionscript-3.0) project in [FlashDevelop](https://github.com/fdorg/flashdevelop).
 
 > These instructions apply to FlashDevelop 4.2. Minor variations may exist between different versions of FlashDevelop.
 
