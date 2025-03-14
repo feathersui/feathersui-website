@@ -2,7 +2,6 @@
 title: Support Feathers UI on Github Sponsors
 author: Josh Tynjala
 authorURL: https://bowlerhat.dev/
-authorTwitter: joshtynjala
 authorImageURL: /img/authors/josh.jpg
 layout: "blog-post.html"
 permalink: "{{ page | blog_permalink }}"

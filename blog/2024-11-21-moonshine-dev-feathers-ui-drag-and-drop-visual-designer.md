@@ -2,7 +2,6 @@
 title: Moonshine.dev introduces a Feathers UI drag-and-drop visual designer and MXHX markup
 author: Josh Tynjala
 authorURL: https://bowlerhat.dev/
-authorTwitter: joshtynjala
 authorImageURL: /img/authors/josh.jpg
 layout: "blog-post.html"
 permalink: "{{ page | blog_permalink }}"

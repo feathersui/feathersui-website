@@ -2,7 +2,6 @@
 title: "Kickstarter Devlog Roundup 3: May 2020"
 author: Josh Tynjala
 authorURL: http://bowlerhat.dev/
-authorTwitter: joshtynjala
 authorImageURL: /img/authors/josh.jpg
 layout: "blog-post.html"
 permalink: "{{ page | blog_permalink }}"

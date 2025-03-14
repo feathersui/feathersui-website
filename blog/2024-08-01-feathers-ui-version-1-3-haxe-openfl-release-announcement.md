@@ -2,7 +2,6 @@
 title: Feathers UI v1.3 — Drag-and-drop, Collapsible component, dispose() method, and tons of bugs fixed
 author: Josh Tynjala
 authorURL: https://bowlerhat.dev/
-authorTwitter: joshtynjala
 authorImageURL: /img/authors/josh.jpg
 layout: "blog-post.html"
 permalink: "{{ page | blog_permalink }}"

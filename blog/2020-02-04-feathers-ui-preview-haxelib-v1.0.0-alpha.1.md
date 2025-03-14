@@ -2,7 +2,6 @@
 title: Feathers UI alpha preview build on Haxelib (v1.0.0-alpha.1)
 author: Josh Tynjala
 authorURL: https://bowlerhat.dev/
-authorTwitter: joshtynjala
 authorImageURL: /img/authors/josh.jpg
 layout: "blog-post.html"
 permalink: "{{ page | blog_permalink }}"

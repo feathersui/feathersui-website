@@ -2,7 +2,6 @@
 title: Webpack OpenFL Loader 1.0
 author: Josh Tynjala
 authorURL: https://bowlerhat.dev/
-authorTwitter: joshtynjala
 authorImageURL: /img/authors/josh.jpg
 layout: "blog-post.html"
 permalink: "{{ page | blog_permalink }}"

@@ -2,7 +2,6 @@
 title: "Kickstarter Devlog Roundup: August 2021"
 author: Josh Tynjala
 authorURL: http://bowlerhat.dev/
-authorTwitter: joshtynjala
 authorImageURL: /img/authors/josh.jpg
 layout: "blog-post.html"
 permalink: "{{ page | blog_permalink }}"

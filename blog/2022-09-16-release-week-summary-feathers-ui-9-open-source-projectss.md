@@ -2,7 +2,6 @@
 title: What a journey! The conclusion of Feathers UI v1.0 Release Week
 author: Josh Tynjala
 authorURL: https://bowlerhat.dev/
-authorTwitter: joshtynjala
 authorImageURL: /img/authors/josh.jpg
 layout: "blog-post.html"
 permalink: "{{ page | blog_permalink }}"

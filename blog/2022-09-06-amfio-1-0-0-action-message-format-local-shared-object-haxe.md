@@ -2,7 +2,6 @@
 title: amfio 1.0 — AMF0/AMF3 and SharedObject library for OpenFL
 author: Josh Tynjala
 authorURL: https://bowlerhat.dev/
-authorTwitter: joshtynjala
 authorImageURL: /img/authors/josh.jpg
 layout: "blog-post.html"
 permalink: "{{ page | blog_permalink }}"
