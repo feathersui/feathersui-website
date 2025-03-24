@@ -1,10 +1,17 @@
 [
   {
     "title": "Github Sponsors",
-    "content": "If you become a <a href=\"https://github.com/sponsors/joshtynjala\">sponsor on Github</a>, you can get some special perks as a community supporter.",
+    "content": "Becoming a <a href=\"https://github.com/sponsors/joshtynjala\">sponsor on Github</a> gives you the options of monthly or one-time donations.",
     "buttonText": "Sponsor the Project",
     "image": "/img/github-sponsors.png",
     "link": "https://github.com/sponsors/joshtynjala"
+  },
+  {
+    "title": "Liberapay",
+    "content": "Support the project by <a href=\"https://liberapay.com/joshtynjala\">donating on Liberapay</a> at weekly, monthly, or yearly intervals.",
+    "buttonText": "Donate on Liberapay",
+    "image": "/img/liberapay.png",
+    "link": "https://liberapay.com/joshtynjala"
   },
   {
     "title": "PayPal Donation",
