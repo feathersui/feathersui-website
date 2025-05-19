@@ -9,11 +9,19 @@ What big new features are currently planned for the next release of [Feathers UI
 
 To learn what's new in the [current Feathers UI stable release](/learn/haxe-openfl/installation), including changes in all previous releases, see the [feathersui-openfl CHANGELOG.md](https://github.com/feathersui/feathersui-openfl/blob/v{% include "feathersui-openfl-version.html" %}/CHANGELOG.md) on GitHub.
 
-## 1.4.0 (2024-2025)
+## 1.4.0 (estimated 2025)
 
+- New `MenuBar` and `Menu` components.
+- New `HRule` and `VRule` components.
+- New `BitmapImage` component.
 - `VARIANT_QUIET` added to `Button` and `ToggleButton` (no "up" skin, perfect for tool bars).
+- `NumericStepper` and scroll bars have a new `repeatDelay` property to allow repeating while buttons are held down.
 - `DrillDownItemRenderer` displays a drill down icon on the right side (in addition to the existing icon and accessory).
-- `MenuBar` and `Menu` components.
+- `Tree` and `TreeGridView` get `BRANCH_OPENING` and `BRANCH_CLOSING` cancelable events.
+- `HSlider` and `VSlider` expose styles to offset the position of the thumb.
+- Text components have new `textAlpha` and `disabledTextAlpha` properties.
+- `HierarchicalSubCollection` wraps another collection to display only a subset.
+- `ComboBox` gets new `selectRange()`, `selectAll()`, `selectionAnchorIndex`, and `selectionActiveIndex` members for its text input.
 - Currently in planning stages. Stay tuned for additional updates!
 
 ## Future
