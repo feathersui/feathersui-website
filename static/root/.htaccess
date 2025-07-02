@@ -40,3 +40,8 @@ RewriteRule ^/?api-reference/robotlegs-starling($|/[A-Za-z0-9\-/.]*)$ http://jos
 <IfModule mod_mime.c>
 AddType application/vnd.adobe.air-application-installer-package+zip air
 </IfModule>
+
+<IfModule mod_headers.c>
+Header set X-Frame-Options "SAMEORIGIN"
+Header set Strict-Transport-Security "max-age=63072000; includeSubDomains; preload"
+</IfModule>
