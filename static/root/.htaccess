@@ -37,4 +37,6 @@ RewriteRule ^/?sdk/feathers-sdk-manager/$ /sdk/download/$1 [R=301,L]
 RewriteRule ^/?api-reference/robotlegs-starling($|/[A-Za-z0-9\-/.]*)$ http://joshtynjala.github.io/robotlegs-framework-starling/api-reference$1 [R=301,L]
 </IfModule>
 
+<IfModule mod_mime.c>
 AddType application/vnd.adobe.air-application-installer-package+zip air
+</IfModule>
