@@ -137,6 +137,7 @@
       "code128b-barcode",
       "ean8-barcode",
       "ean13-barcode",
+      "pharmacode-barcode",
       "qr-code",
       "upca-barcode",
       "upce-barcode"

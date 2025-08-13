@@ -11,6 +11,7 @@ The _Barcodes Pack_ is a set of premium [Feathers UI](/) components that feature
 - [`Code128BBarcode`](./code128b-barcode.md) <a href="../semver.md#beta-apis"><img class="beta" src="/img/beta.png" alt="(Beta)"/></a>
 - [`EAN8Barcode`](./ean8-barcode.md) <a href="../semver.md#beta-apis"><img class="beta" src="/img/beta.png" alt="(Beta)"/></a>
 - [`EAN13Barcode`](./ean13-barcode.md) <a href="../semver.md#beta-apis"><img class="beta" src="/img/beta.png" alt="(Beta)"/></a>
+- [`Pharmacode`](./pharmacode-barcode.md) <a href="../semver.md#beta-apis"><img class="beta" src="/img/beta.png" alt="(Beta)"/></a>
 - [`QRCode`](./qr-code.md) <a href="../semver.md#beta-apis"><img class="beta" src="/img/beta.png" alt="(Beta)"/></a>
 - [`UPCABarcode`](./upca-barcode.md) <a href="../semver.md#beta-apis"><img class="beta" src="/img/beta.png" alt="(Beta)"/></a>
 - [`UPCEBarcode`](./upce-barcode.md) <a href="../semver.md#beta-apis"><img class="beta" src="/img/beta.png" alt="(Beta)"/></a>
