@@ -17,13 +17,13 @@ var barcode = new Code39Barcode();
 addChild(barcode);
 ```
 
-The data displayed by the barcode may be changed programatically by setting the [`code`](https://api.feathersui.com/premium-components/barcodes-pack/com/feathersui/barcodes/controls/EAN13Barcode.html#code) property.
+The data displayed by the barcode may be changed programatically by setting the [`code`](https://api.feathersui.com/premium-components/barcodes-pack/com/feathersui/barcodes/controls/Code39Barcode.html#code) property.
 
 ```haxe
 barcode.code = "*WIKIPEDIA*";
 ```
 
-> **Warning!** If the string value passed to the [`code`](https://api.feathersui.com/premium-components/barcodes-pack/com/feathersui/barcodes/controls/EAN13Barcode.html#code) property setter is not formatted correctly, an [`ArgumentError`](https://api.openfl.org/openfl/errors/ArgumentError.html) may be thrown. The code may include a single asterisk (`*`) character at both the start and end of the string, or they may both be omitted. It may contain uppercase letters (A-Z), numeric digits (0-9), spaces, and the special characters `-`, `.`, `$`, `/`, `+`, and `%` only. Lower case characters and other special characters are not allowed.
+> **Warning!** If the string value passed to the [`code`](https://api.feathersui.com/premium-components/barcodes-pack/com/feathersui/barcodes/controls/Code39Barcode.html#code) property setter is not formatted correctly, an [`ArgumentError`](https://api.openfl.org/openfl/errors/ArgumentError.html) may be thrown. The code may include a single asterisk (`*`) character at both the start and end of the string, or they may both be omitted. It may contain uppercase letters (A-Z), numeric digits (0-9), spaces, and the special characters `-`, `.`, `$`, `/`, `+`, and `%` only. Lower case characters and other special characters are not allowed.
 
 ## Related Links
 
