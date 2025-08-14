@@ -6,12 +6,18 @@ sidebarTitle: Getting Started
 
 The _Barcodes Pack_ is a set of premium [Feathers UI](/) components that features the ability to render various types of barcodes and QR codes.
 
+- [`Code11Barcode`](./code11-barcode.md) <a href="../semver.md#beta-apis"><img class="beta" src="/img/beta.png" alt="(Beta)"/></a>
 - [`Code39Barcode`](./code39-barcode.md) <a href="../semver.md#beta-apis"><img class="beta" src="/img/beta.png" alt="(Beta)"/></a>
+- [`Code93Barcode`](./code93-barcode.md) <a href="../semver.md#beta-apis"><img class="beta" src="/img/beta.png" alt="(Beta)"/></a>
 - [`Code128ABarcode`](./code128a-barcode.md) <a href="../semver.md#beta-apis"><img class="beta" src="/img/beta.png" alt="(Beta)"/></a>
 - [`Code128BBarcode`](./code128b-barcode.md) <a href="../semver.md#beta-apis"><img class="beta" src="/img/beta.png" alt="(Beta)"/></a>
 - [`EAN8Barcode`](./ean8-barcode.md) <a href="../semver.md#beta-apis"><img class="beta" src="/img/beta.png" alt="(Beta)"/></a>
 - [`EAN13Barcode`](./ean13-barcode.md) <a href="../semver.md#beta-apis"><img class="beta" src="/img/beta.png" alt="(Beta)"/></a>
+- [`ITFBarcode`](./itf-barcode.md) <a href="../semver.md#beta-apis"><img class="beta" src="/img/beta.png" alt="(Beta)"/></a>
+- [`ITF14Barcode`](./itf14-barcode.md) <a href="../semver.md#beta-apis"><img class="beta" src="/img/beta.png" alt="(Beta)"/></a>
+- [`MSIBarcode`](./msi-barcode.md) <a href="../semver.md#beta-apis"><img class="beta" src="/img/beta.png" alt="(Beta)"/></a>
 - [`Pharmacode`](./pharmacode-barcode.md) <a href="../semver.md#beta-apis"><img class="beta" src="/img/beta.png" alt="(Beta)"/></a>
+- [`PostnetBarcode`](./postnet-barcode.md) <a href="../semver.md#beta-apis"><img class="beta" src="/img/beta.png" alt="(Beta)"/></a>
 - [`QRCode`](./qr-code.md) <a href="../semver.md#beta-apis"><img class="beta" src="/img/beta.png" alt="(Beta)"/></a>
 - [`UPCABarcode`](./upca-barcode.md) <a href="../semver.md#beta-apis"><img class="beta" src="/img/beta.png" alt="(Beta)"/></a>
 - [`UPCEBarcode`](./upce-barcode.md) <a href="../semver.md#beta-apis"><img class="beta" src="/img/beta.png" alt="(Beta)"/></a>

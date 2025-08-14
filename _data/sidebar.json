@@ -132,12 +132,18 @@
     "Premium UI Components": ["index"],
     "Barcodes Pack": [
       "barcodes-pack",
+      "code11-barcode",
       "code39-barcode",
+      "code93-barcode",
       "code128a-barcode",
       "code128b-barcode",
       "ean8-barcode",
       "ean13-barcode",
+      "itf-barcode",
+      "itf14-barcode",
+      "msi-barcode",
       "pharmacode-barcode",
+      "postnet-barcode",
       "qr-code",
       "upca-barcode",
       "upce-barcode"
