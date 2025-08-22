@@ -1,33 +1,33 @@
 ---
-title: How to use the Code39Barcode component
+title: How to use the CodabarBarcode component
 layout: "docs.html"
-sidebarTitle: Code39Barcode
+sidebarTitle: CodabarBarcode
 ---
 
-The [`Code39Barcode`](https://api.feathersui.com/premium-components/barcodes-pack/com/feathersui/barcodes/controls/Code39Barcode.html) class displays a [Code 39 barcode](https://en.wikipedia.org/wiki/Code_39), which encodes a string of variable length, with a set of 43 available characters. Code39 barcodes are sometimes know as Alpha39, Code 3 of 9, Code 3/9, Type 39, USS Code 39, and USD-3. This type of barcode is standardized in ISO/IEC 16388:2007.
+The [`CodabarBarcode`](https://api.feathersui.com/premium-components/barcodes-pack/com/feathersui/barcodes/controls/CodabarBarcode.html) class displays a [Codabar barcode](https://en.wikipedia.org/wiki/Codabar), which encodes a string of variable length, supporting numeric digits (0-9), the letters A-D, and the special characters `-`, `$`, `.`, `/`, `:`, and `+` only.
 
 > ⚠️ **Beta Notice**: This component is still quite new. Some APIs may go through minor changes in upcoming releases.
 
 ## The Basics
 
-Start by creating a [`Code39Barcode`](https://api.feathersui.com/premium-components/barcodes-pack/com/feathersui/barcodes/controls/Code39Barcode.html) control and add it to [the display list](https://books.openfl.org/openfl-developers-guide/display-programming/basics-of-display-programming.html).
+Start by creating a [`CodabarBarcode`](https://api.feathersui.com/premium-components/barcodes-pack/com/feathersui/barcodes/controls/CodabarBarcode.html) control and add it to [the display list](https://books.openfl.org/openfl-developers-guide/display-programming/basics-of-display-programming.html).
 
 ```haxe
-var barcode = new Code39Barcode();
+var barcode = new CodabarBarcode();
 addChild(barcode);
 ```
 
-The data displayed by the barcode may be changed programatically by setting the [`code`](https://api.feathersui.com/premium-components/barcodes-pack/com/feathersui/barcodes/controls/Code39Barcode.html#code) property.
+The data displayed by the barcode may be changed programatically by setting the [`code`](https://api.feathersui.com/premium-components/barcodes-pack/com/feathersui/barcodes/controls/CodabarBarcode.html#code) property.
 
 ```haxe
-barcode.code = "*FEATHERS UI*";
+barcode.code = "A1234567890B";
 ```
 
-> **Warning!** If the string value passed to the [`code`](https://api.feathersui.com/premium-components/barcodes-pack/com/feathersui/barcodes/controls/Code39Barcode.html#code) property setter is not formatted correctly, an [`ArgumentError`](https://api.openfl.org/openfl/errors/ArgumentError.html) may be thrown. The code may include a single asterisk (`*`) character at both the start and end of the string, or they may both be omitted. It may contain uppercase letters (A-Z), numeric digits (0-9), spaces, and the special characters `-`, `.`, `$`, `/`, `+`, and `%` only. Lower case characters and other special characters are not allowed.
+> **Warning!** If the string value passed to the [`code`](https://api.feathersui.com/premium-components/barcodes-pack/com/feathersui/barcodes/controls/CodabarBarcode.html#code) property setter is not formatted correctly, an [`ArgumentError`](https://api.openfl.org/openfl/errors/ArgumentError.html) may be thrown. The code may contain numeric digits (0-9), the letters A-D, and the special characters `-`, `$`, `.`, `/`, `:`, and `+` only.
 
 ## Styles
 
-A number of styles may be customized on a [`Code39Barcode`](https://api.feathersui.com/premium-components/barcodes-pack/com/feathersui/barcodes/controls/Code39Barcode.html) component, including the an optional background skin and padding around the edges.
+A number of styles may be customized on a [`CodabarBarcode`](https://api.feathersui.com/premium-components/barcodes-pack/com/feathersui/barcodes/controls/CodabarBarcode.html) component, including the an optional background skin and padding around the edges.
 
 ### Background skin
 
@@ -87,4 +87,4 @@ barcode.paddingLeft = 8.0;
 
 ## Related Links
 
-- [`com.feathersui.barcodes.controls.Code39Barcode` API Documentation](https://api.feathersui.com/premium-components/barcodes-pack/com/feathersui/barcodes/controls/Code39Barcode.html)
+- [`com.feathersui.barcodes.controls.CodabarBarcode` API Documentation](https://api.feathersui.com/premium-components/barcodes-pack/com/feathersui/barcodes/controls/CodabarBarcode.html)

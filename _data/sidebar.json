@@ -132,6 +132,7 @@
     "Premium UI Components": ["index"],
     "Barcodes Pack": [
       "barcodes-pack",
+      "codabar-barcode",
       "code11-barcode",
       "code39-barcode",
       "code93-barcode",

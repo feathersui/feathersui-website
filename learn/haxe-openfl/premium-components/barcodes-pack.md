@@ -6,6 +6,7 @@ sidebarTitle: Getting Started
 
 The _Barcodes Pack_ is a set of premium [Feathers UI](/) components that features the ability to render various types of barcodes and QR codes.
 
+- [`CodabarBarcode`](./codabar-barcode.md) <a href="../semver.md#beta-apis"><img class="beta" src="/img/beta.png" alt="(Beta)"/></a>
 - [`Code11Barcode`](./code11-barcode.md) <a href="../semver.md#beta-apis"><img class="beta" src="/img/beta.png" alt="(Beta)"/></a>
 - [`Code39Barcode`](./code39-barcode.md) <a href="../semver.md#beta-apis"><img class="beta" src="/img/beta.png" alt="(Beta)"/></a>
 - [`Code93Barcode`](./code93-barcode.md) <a href="../semver.md#beta-apis"><img class="beta" src="/img/beta.png" alt="(Beta)"/></a>
