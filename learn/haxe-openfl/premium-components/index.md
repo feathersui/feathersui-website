@@ -8,7 +8,6 @@ Developers looking for capabilities that go beyond the core, open source [Feathe
 
 - [Barcodes Pack](./barcodes-pack.md)
 - [Data Containers Pack](./data-containers-pack.md)
-- [Sparklines](./sparklines.md)
 - [Text Inputs Pack](./text-inputs-pack.md)
 
 All premium UI components for Feathers UI include:
