@@ -6,6 +6,8 @@ sidebarTitle: Getting Started
 
 The _Barcodes Pack_ is a set of premium [Feathers UI](/) components that features the ability to render various types of barcodes and QR codes.
 
+To purchase these components, visit the the Feathers UI Store (**NOTE:** not yet launched).
+
 - [`CodabarBarcode`](./codabar-barcode.md) <a href="../semver.md#beta-apis"><img class="beta" src="/img/beta.png" alt="(Beta)"/></a>
 - [`Code11Barcode`](./code11-barcode.md) <a href="../semver.md#beta-apis"><img class="beta" src="/img/beta.png" alt="(Beta)"/></a>
 - [`Code39Barcode`](./code39-barcode.md) <a href="../semver.md#beta-apis"><img class="beta" src="/img/beta.png" alt="(Beta)"/></a>
@@ -25,7 +27,7 @@ The _Barcodes Pack_ is a set of premium [Feathers UI](/) components that feature
 
 ## Installation
 
-When you purchase the _Barcodes Pack_, you will download a _.zip_ bundle that contains everything you need to use the UI components in the pack. Start by extracting the _.zip_ file in a directory somewhere on your local file system. The _.zip_ bundle contains several things, including:
+When you purchase the _Barcodes Pack_ from the Feathers UI Store (**NOTE:** not yet launched), you will download a _.zip_ bundle that contains everything you need to use the UI components in the pack. Start by extracting the _.zip_ file in a directory somewhere on your local file system. The _.zip_ bundle contains several things, including:
 
 - A _README.md_ file
 - Full _.hx_ source code files

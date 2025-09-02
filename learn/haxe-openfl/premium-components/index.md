@@ -4,7 +4,7 @@ layout: "docs.html"
 sidebarTitle: Introduction
 ---
 
-Developers looking for capabilities that go beyond the core, open source [Feathers UI](/) library should visit the Feathers UI Store to purchase premium UI component packs with advanced, new capabilities. The following sets of premium UI components are available for purchase.
+Developers looking for capabilities that go beyond the core, open source [Feathers UI](/) library should visit the Feathers UI Store (**NOTE:** not yet launched) to purchase premium UI component packs with advanced, new capabilities. The following sets of premium UI components are available for purchase.
 
 - [Barcodes Pack](./barcodes-pack.md)
 - [Data Containers Pack](./data-containers-pack.md)

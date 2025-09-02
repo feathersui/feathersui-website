@@ -6,6 +6,8 @@ sidebarTitle: Getting Started
 
 The _Data Containers Pack_ is a set of premium [Feathers UI](/) components that includes advanced containers for displaying [collections](../data-collections.md).
 
+To purchase these components, visit the the Feathers UI Store (**NOTE:** not yet launched).
+
 - [`CascadeListView`](./cascade-list-view.md) <a href="../semver.md#beta-apis"><img class="beta" src="/img/beta.png" alt="(Beta)"/></a>
 - [`GridComboBox`](./grid-combo-box.md) <a href="../semver.md#beta-apis"><img class="beta" src="/img/beta.png" alt="(Beta)"/></a>
 - [`PopUpGridView`](./pop-up-grid-view.md) <a href="../semver.md#beta-apis"><img class="beta" src="/img/beta.png" alt="(Beta)"/></a>
@@ -14,7 +16,7 @@ The _Data Containers Pack_ is a set of premium [Feathers UI](/) components that 
 
 ## Installation
 
-When you purchase the _Data Containers Pack_, you will download a _.zip_ bundle that contains everything you need to use the UI components in the pack. Start by extracting the _.zip_ file in a directory somewhere on your local file system. The _.zip_ bundle contains several things, including:
+When you purchase the _Data Containers Pack_ from the Feathers UI Store (**NOTE:** not yet launched), you will download a _.zip_ bundle that contains everything you need to use the UI components in the pack. Start by extracting the _.zip_ file in a directory somewhere on your local file system. The _.zip_ bundle contains several things, including:
 
 - A _README.md_ file
 - Full _.hx_ source code files
