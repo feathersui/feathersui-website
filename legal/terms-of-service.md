@@ -51,7 +51,7 @@ We shall not be liable to you or to any third-party for any modification, price 
 
 ## Section 5 - Products or Services (if applicable)
 
-Certain products or Services may be available exclusively online through the website. These products or Services may have limited quantities and are subject to return or exchange only according to our Return Policy. To view our Return Policy, please visit [_https://feathersui.com/return-policy/_](./return-policy.md).
+Certain products or Services may be available exclusively online through the website. These products or Services may have limited quantities and are subject to return or exchange only according to our Return Policy. To view our Return Policy, please visit [_https://feathersui.com/legal/return-policy/_](./return-policy.md).
 
 We reserve the right, but are not obligated, to limit the sales of our products or Services to any person, geographic region, or jurisdiction. We may exercise this right on a case-by-case basis. We reserve the right to limit the quantities of any products or Services that we offer. All descriptions of products or product pricing are subject to change at anytime without notice, at the sole discretion of us. We reserve the right to discontinue any product at any time. Any offer for any product or service made on this site is void where prohibited.
 
@@ -93,7 +93,7 @@ You agree that your comments will not violate any right of any third-party, incl
 
 ## Section 10 - Personal Information
 
-Your submission of personal information through the store is governed by our Privacy Policy. To view our Privacy Policy, please see [_https://feathersui.com/privacy-policy/_](./privacy-policy.md).
+Your submission of personal information through the store is governed by our Privacy Policy. To view our Privacy Policy, please see [_https://feathersui.com/legal/privacy-policy/_](./privacy-policy.md).
 
 ## Section 11 - Errors, Inaccuracies, and Omissions
 
