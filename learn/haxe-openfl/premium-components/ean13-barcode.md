@@ -23,7 +23,7 @@ The data displayed by the barcode may be changed programatically by setting the 
 barcode.code = "0012345678905";
 ```
 
-> **Warning!** If the string value passed to the [`code`](https://api.feathersui.com/premium-components/barcodes-pack/com/feathersui/barcodes/controls/EAN13Barcode.html#code) property setter is not formatted correctly, an [`ArgumentError`](https://api.openfl.org/openfl/errors/ArgumentError.html) may be thrown. The code must have a length of exactly thirteen (13) numeric digits (0-9).
+> **Warning!** If the string value passed to the [`code`](https://api.feathersui.com/premium-components/barcodes-pack/com/feathersui/barcodes/controls/EAN13Barcode.html#code) property setter is not formatted correctly, an [`ArgumentError`](https://api.openfl.org/openfl/errors/ArgumentError.html) may be thrown. The code must have a length of exactly twelve (12) or thirteen (13) numeric digits (0-9). Letters or other special characters are not allowed. If only twelve (12) digits are provided, the final checksum digit will be calculated automatically.
 
 ## Styles
 
