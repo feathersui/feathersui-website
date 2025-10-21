@@ -5,7 +5,13 @@ const markdownItAnchor = require("markdown-it-anchor");
 const pluginToc = require("eleventy-plugin-toc");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 
-module.exports = function (eleventyConfig) {
+/**
+ * @typedef {import('@11ty/eleventy/UserConfig').default} UserConfig
+ */
+
+module.exports = /** @param eleventyConfig {UserConfig} */ function (
+  eleventyConfig
+) {
   eleventyConfig.addPassthroughCopy({
     "static/root": ".",
     "static/api-reference": "api-reference",
