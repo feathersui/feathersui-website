@@ -4,7 +4,7 @@ RewriteEngine On
 # require https
 
 RewriteCond %{HTTPS} !=on
-RewriteRule ^/?(.*) https://%{SERVER_NAME}/$1 [R,L]
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 # redirect /help to /learn/as3-starling
 
