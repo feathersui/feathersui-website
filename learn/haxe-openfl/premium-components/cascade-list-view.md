@@ -99,7 +99,7 @@ Set the [`itemToText()`](https://api.feathersui.com/premium-components/data-cont
 cascadeListView.itemToText = (item:Dynamic) -> item.text;
 ```
 
-> Items in the collection are not required to be [anonymous structures](https://haxe.org/manual/types-anonymous-structure.html), like `{text: "Node 1B"}` in the example above. [Class instances](https://haxe.org/manual/types-class-instance.html) are allowed too (and encouraged as a best practice; you should prefer classes over anonymous structures). If you use a class, be sure to update the item parameter's type in the `itemToChildren` and `itemToText` functions so that the compiler can catch any errors.
+> Items in the collection are not required to be [anonymous structures](https://haxe.org/manual/types-anonymous-structure.html), like `{text: "Node 1B"}` in the example above. [Class instances](https://haxe.org/manual/types-class-instance.html) are allowed too (and encouraged as a best practice; you should prefer classes over anonymous structures). If not using class instances, consider creating a [typedef](https://haxe.org/manual/type-system-typedef.html) for improved type checking at compile-time. If you use a class, be sure to update the item parameter's type in the `itemToChildren` and `itemToText` functions so that the compiler can catch any errors.
 
 ### Selection
 

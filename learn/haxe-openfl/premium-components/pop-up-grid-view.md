@@ -52,7 +52,7 @@ popUpGridView.columns = new ArrayCollection([
 
 The first parameter of the [`GridViewColumn`](https://api.feathersui.com/current/feathers/controls/GridViewColumn.html) is the text to display in each column header. The second parameter is passed to the [`itemToText()`](https://api.feathersui.com/current/feathers/controls/GridViewColumn.html#itemToText) property, which is a function that returns the text to display in a cell renderer.
 
-> Items in the collection are not required to be [anonymous structures](https://haxe.org/manual/types-anonymous-structure.html), like `{ item: "Bacon", dept: "Meat", price: "4.49" }` in the example above. [Class instances](https://haxe.org/manual/types-class-instance.html) are allowed too (and encouraged as a best practice; you should prefer classes over anonymous structures).
+> Items in the collection are not required to be [anonymous structures](https://haxe.org/manual/types-anonymous-structure.html), like `{ item: "Bacon", dept: "Meat", price: "4.49" }` in the example above. [Class instances](https://haxe.org/manual/types-class-instance.html) are allowed too (and encouraged as a best practice; you should prefer classes over anonymous structures). If not using class instances, consider creating a [typedef](https://haxe.org/manual/type-system-typedef.html) for improved type checking at compile-time.
 
 ### Selection
 
