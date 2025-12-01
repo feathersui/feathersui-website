@@ -62,7 +62,7 @@ After a drag is started, and the user moves the pointer around, each [`IDropTarg
 
 - [`DragDropEvent.DRAG_EXIT`](https://api.feathersui.com/current/feathers/events/DragDropEvent.html#DRAG_EXIT) is dispatched when the pointer is no longer over the [`IDropTarget`](https://api.feathersui.com/current/feathers/dragDrop/IDropTarget.html).
 
-- [`DragDropEvent.DRAG_DROP`](https://api.feathersui.com/current/feathers/events/DragDropEvent.html#DRAG_DROP) is dispatched on mouse up or touch end, the pointer is over the [`IDropTarget`](https://api.feathersui.com/current/feathers/dragDrop/IDropTarget.html), and the [`IDropTarget`](https://api.feathersui.com/current/feathers/dragDrop/IDropTarget.html) has called [`DragDropManager.acceptDrag()`](https://api.feathersui.com/current/feathers/dragDrop/DragDropManager.html#acceptDrag).
+- [`DragDropEvent.DRAG_DROP`](https://api.feathersui.com/current/feathers/events/DragDropEvent.html#DRAG_DROP) is dispatched on mouse up or touch end, when the pointer is over the [`IDropTarget`](https://api.feathersui.com/current/feathers/dragDrop/IDropTarget.html), and when the [`IDropTarget`](https://api.feathersui.com/current/feathers/dragDrop/IDropTarget.html) has called [`DragDropManager.acceptDrag()`](https://api.feathersui.com/current/feathers/dragDrop/DragDropManager.html#acceptDrag).
 
 The [`IDragSource`](https://api.feathersui.com/current/feathers/dragDrop/IDragSource.html) will also dispatch some events.
 
