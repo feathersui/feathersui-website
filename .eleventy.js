@@ -6,7 +6,7 @@ const pluginToc = require("eleventy-plugin-toc");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 
 /**
- * @typedef {import('@11ty/eleventy/UserConfig').default} UserConfig
+ * @import UserConfig from "@11ty/eleventy/UserConfig"
  */
 
 module.exports = /** @param eleventyConfig {UserConfig} */ function (
