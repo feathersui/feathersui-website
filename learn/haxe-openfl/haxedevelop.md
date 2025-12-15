@@ -4,7 +4,7 @@ layout: "docs.html"
 sidebarTitle: HaxeDevelop
 ---
 
-[HaxeDevelop](https://github.com/fdorg/flashdevelop) (or [FlashDevelop](https://flashdevelop.org/)) supports an [OpenFL](https://openfl.org/) project template that we'll use to create a new [Feathers UI](/) project.
+[HaxeDevelop](https://github.com/HaxeFoundation/haxedevelop.org/releases/download/v5.3.3/HaxeDevelop-5.3.3.exe) (or [FlashDevelop](https://github.com/fdorg/flashdevelop)) supports an [OpenFL](https://openfl.org/) project template that we'll use to create a new [Feathers UI](/) project.
 
 ## Prerequisites
 
