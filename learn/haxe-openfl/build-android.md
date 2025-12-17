@@ -144,6 +144,27 @@ You may need to install a specific version of the Android SDK platform tools in 
 
 Open the **Android Studio** settings, and install the Android SDK platform tools with the specified API version. For the example above, API version _28_ refers to _Android 9.0 (Pie)_.
 
+### Error: cannot locate symbol "__atomic_compare_exchange_4"
+
+This run-time error can occur on Android when using Haxe 4.3 with hxcpp 4.3.2. When it happens, a dialog appears on the Android device with a message similar to the following:
+
+> **SDL Error**
+>
+> An error occurred while trying to start the application. Please try again and/or reinstall.
+>
+> Error: dlopen failed: cannot locate symbol "__atomic_compare_exchange_4" referenced by "/data/app/com.example.myapp/lib/arm/libApplicationMain.so" …
+
+There are two known workarounds:
+
+- Downgrade to Haxe 4.2.5 and hxcpp 4.2.1.
+- Install a version of hxcpp that is newer than 4.3.2.
+
+If Haxelib does not yet have a newer release than hxcpp 4.3.2, you may download a [hxcpp release from GitHub](https://github.com/HaxeFoundation/hxcpp/releases). Download the compiled _.zip_ bundle and install it in a terminal with the following command:
+
+```sh
+haxelib install ./hxcpp-x.y.z.zip
+```
+
 ### Error: Unsupported class file major version XYZ
 
 In some cases, error means that the current version of Java that you have configured for Lime is too old. However, even if you have the newest version of Java configured, this error may still be reported.
