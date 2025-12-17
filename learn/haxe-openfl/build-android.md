@@ -18,13 +18,19 @@ In addition to the dependencies specified in the [Feathers UI installation instr
 
   - Launch Android Studio at least once to go through its setup wizard that downloads the Android SDK components.
 
-- [Download Android NDK **r21e** (21.4.7075529)](https://developer.android.com/ndk/downloads/older_releases)
+- Download Android NDK **r21e** (21.4.7075529) or newer
 
   - _Note:_ The Android NDK is not the same as the Android SDK. You need both.
 
-  - You _must_ download **NDK version 21** at this time. NDK 22 and newer are not currently compatible with Haxe.
-
   - In Android Studio's **SDK Manager**, you can find the NDK in the **SDK Tools** tab. It will try to download the newest version by default. To see older versions of the NDK, you may need to select **Show Package Details**.
+
+  - To use **NDK version 22 or newer**, you may need to download the latest [hxcpp release from GitHub](https://github.com/HaxeFoundation/hxcpp/releases), and install it manually using the following command.
+  
+    ```sh
+    haxelib install ./hxcpp-x.y.z.zip
+    ```
+
+    > This is temporary. If the latest release on Haxelib is newer than 4.3.2 at the time that you read this, then you should be able to safely use the Haxelib version instead of downloading from GitHub.
 
 ### Configure OpenFL for Android
 
