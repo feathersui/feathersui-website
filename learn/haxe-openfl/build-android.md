@@ -138,6 +138,20 @@ You may need to install a specific version of the Android SDK platform tools in 
 
 Open the **Android Studio** settings, and install the Android SDK platform tools with the specified API version. For the example above, API version _28_ refers to _Android 9.0 (Pie)_.
 
+### Error: Unsupported class file major version XYZ
+
+In some cases, error means that the current version of Java that you have configured for Lime is too old. However, even if you have the newest version of Java configured, this error may still be reported.
+
+Sometimes, if you have customized the Android `target-sdk-version` configuration value in your _project.xml_, this error could indicate that the Gradle version and AGP (Android Gradle Plugin) version need to be customized because the default values are too old for the `target-sdk-version`.
+
+If you need to customize the `target-sdk-version`, please see the various charts in the [Android Gradle Plugin Release Notes](https://developer.android.com/build/releases/gradle-plugin) to determine which values you need to specify for `gradle-version` and `gradle-plugin` in your _project.xml_ file.
+
+As an example, to target Android SDK version 35, the following Gradle and AGP versions should be valid:
+
+```xml
+<config:android target-sdk-version="35" gradle-version="8.9" gradle-plugin="8.7.3" />
+```
+
 ## App executable crashes without exception, and a try/catch around the line where it happens has no effect when targeting C++ for Android or iOS
 
 Haxe's _cpp_ target is stricter than other Haxe targets when you try to access a field or method on a `null` value. Instead of throwing an exception, a Haxe C++ app immediately crashes — with no way to recover, not even with [try/catch](https://haxe.org/manual/expression-try-catch.html). However, it is possible to enable a flag to force Haxe's C++ target to behave more like other targets. Add the following define to your OpenFL _project.xml_ file, and then create a new build with the `-clean` command line option (or delete your output directory before building).
