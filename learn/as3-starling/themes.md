@@ -6,7 +6,7 @@ sidebarTitle: Introduction to themes
 
 A Feathers _theme_ is class that packages up the styling code for multiple UI components in one location. Style providers are registered globally, and when any Feathers component is initialized, it will be styled automatically. It's easy to drop a theme into your new Feathers app, and have it skin every component in the same style. If you need a custom skin for any individual component (even one that looks wildly different than the default), you can easily exclude the component from the theme completely. If you like the default styles, but you want to make some tweaks, Feathers can do that too!
 
-<picture><img src="/learn/as3-starling/images/themes.jpg" srcset="/learn/as3-starling/images/themes@2x.png 2x" alt="Screenshot of multiple Feathers themes side-by-side" /></picture>
+<picture><img src="/learn/as3-starling/images/themes.png" srcset="/learn/as3-starling/images/themes@2x.png 2x" alt="Screenshot of multiple Feathers themes side-by-side" /></picture>
 
 Themes are not required, of course. You can skin any Feathers component manually by setting its style properties directly, if you prefer. However, the main advantage of a theme is to keep your styling code from getting mixed up with things like the business logic of your productivity app or the gameplay mechanics of a your hot new shoot-em-up. Themes help you to reduce clutter by organizing your code. Plus, pre-made themes are a great way to get started if you want to focus on your app's functionality before you start worrying about the appearance of components. You may even be able to swap themes with little impact on the rest of your project, if you decide to stick with pre-made themes for an app that doesn't need its own custom design.
 
