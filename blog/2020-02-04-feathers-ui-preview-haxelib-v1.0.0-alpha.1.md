@@ -14,7 +14,7 @@ Today, for very the first time, Feathers UI may be installed [from Haxelib](http
 
 > 🚨 Please note that this version of Feathers UI is considered to be **alpha** quality. Many of the planned UI components and features are still missing, and some APIs are likely to change in future builds. It is _not_ ready for production yet.
 
-Feathers UI has reached this first big milestone thanks the very generous support of all of the backers from the [Feathers UI Kickstarter campaign](https://www.kickstarter.com/projects/feathersui/feathers-ui-cross-platform-components-for-haxe-and-openfl), which completed successfully in the summer of 2019. A big, enthusastic thank you to everyone who has supported the project, whether you are a backer, shared the Kickstarter with your friends on social media, or simply encouraged me ([Josh](https://twitter.com/joshtynjala)) to keep it up!
+Feathers UI has reached this first big milestone thanks the very generous support of all of the backers from the [Feathers UI Kickstarter campaign](https://www.kickstarter.com/projects/feathersui/feathers-ui-cross-platform-components-for-haxe-and-openfl), which completed successfully in the summer of 2019. A big, enthusastic thank you to everyone who has supported the project, whether you are a backer, shared the Kickstarter with your friends on social media, or simply encouraged me ([Josh](https://github.com/joshtynjala)) to keep it up!
 
 Let's take a look at a few of the [samples](https://feathersui.com/samples/haxe-openfl/) that are included with Feathers UI. Each one includes a live web demo that you can try out in your browser.
 
