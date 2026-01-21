@@ -14,15 +14,11 @@
 	<meta name="description" content="">
 	<meta name="author" content="Josh Tynjala">
 	<link rel="stylesheet" type="text/css" href="../css/examples.css">
-	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+	<script type="text/javascript" src="/examples/swfobject.js"></script>
+	<!-- <script type="text/javascript" src="/examples/ruffle/ruffle.js"></script> -->
 	<script type="text/javascript">
 		swfobject.registerObject("example", "<?php echo $flash_version; ?>", "/examples/expressInstall.swf");
 	</script>
-	<script type="text/javascript" src="//use.typekit.net/tsu5tna.js"></script>
-	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-	<!--[if lt IE 9]>
-		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
 </head>
 <body>
 	<div>	
@@ -43,14 +39,5 @@
 		</object>
 		<p>Built with <a href="/">Feathers</a>, a UI component library for <a href="http://starling-framework.org/">Starling Framework</a>.</p>
 	</div>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-34854617-1"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
-		gtag('js', new Date());
-
-		gtag('config', 'UA-34854617-1');
-	</script>
 </body>
 </html>
