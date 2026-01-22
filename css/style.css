@@ -88,6 +88,7 @@ pre code {
   overflow-x: auto;
   font-size: 1em;
   border-radius: 0.5em;
+  tab-size: 4;
 }
 
 p,
