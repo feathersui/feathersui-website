@@ -1,6 +1,7 @@
 @font-face {
   font-family: "Source Sans Pro";
-  src: url("../fnt/SourceSansPro-SemiBoldItalic.woff2") format("woff2"),
+  src:
+    url("../fnt/SourceSansPro-SemiBoldItalic.woff2") format("woff2"),
     url("../fnt/SourceSansPro-SemiBoldItalic.woff") format("woff");
   font-weight: 600;
   font-style: italic;
@@ -9,7 +10,8 @@
 
 @font-face {
   font-family: "Source Sans Pro";
-  src: url("../fnt/SourceSansPro-Regular.woff2") format("woff2"),
+  src:
+    url("../fnt/SourceSansPro-Regular.woff2") format("woff2"),
     url("../fnt/SourceSansPro-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
@@ -18,7 +20,8 @@
 
 @font-face {
   font-family: "Source Sans Pro";
-  src: url("../fnt/SourceSansPro-SemiBold.woff2") format("woff2"),
+  src:
+    url("../fnt/SourceSansPro-SemiBold.woff2") format("woff2"),
     url("../fnt/SourceSansPro-SemiBold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
@@ -27,7 +30,8 @@
 
 @font-face {
   font-family: "Source Sans Pro";
-  src: url("../fnt/SourceSansPro-Italic.woff2") format("woff2"),
+  src:
+    url("../fnt/SourceSansPro-Italic.woff2") format("woff2"),
     url("../fnt/SourceSansPro-Italic.woff") format("woff");
   font-weight: normal;
   font-style: italic;
@@ -71,7 +75,8 @@ body {
 
 code,
 pre {
-  font-family: "Menlo", "Monaco", "Cascadia Code", "Cascadia Mono", "Consolas",
+  font-family:
+    "Menlo", "Monaco", "Cascadia Code", "Cascadia Mono", "Consolas",
     "Courier New", monospace;
   font-size: 0.85em;
   line-height: 1.5em;
