@@ -116,11 +116,18 @@ function menu_itemTriggerHandler(event:MenuEvent):Void {
 
 The [`state`](https://api.feathersui.com/unstable/feathers/events/MenuEvent.html#state) is an instance of the[`MenuItemState`](https://api.feathersui.com/unstable/feathers/data/MenuItemState.html) class, which includes various properties, such as the menu item's [`text`](https://api.feathersui.com/unstable/feathers/data/MenuItemState.html#text), the full item [`data`](https://api.feathersui.com/unstable/feathers/data/MenuItemState.html#data) from the collection, and the [`index`](https://api.feathersui.com/unstable/feathers/data/MenuItemState.html#index) position of the item in the collection.
 
-To perform actions when the menu opens or closes, [add an event listener](https://books.openfl.org/openfl-developers-guide/handling-events/basics-of-handling-events.html) for [`MenuEvent.MENU_OPEN`](https://api.feathersui.com/unstable/feathers/events/MenuEvent.html#MENU_OPEN) or [`MenuEvent.MENU_CLOSE`](https://api.feathersui.com/unstable/feathers/events/MenuEvent.html#MENU_CLOSE).
+To perform actions when the menu closes, [add an event listener](https://books.openfl.org/openfl-developers-guide/handling-events/basics-of-handling-events.html) for [`Event.CLOSE`](https://api.openfl.org/openfl/events/Event.html#CLOSE).
 
 ```haxe
-menu.addEventListener(MenuEvent.MENU_OPEN, menu_menuOpenHandler);
-menu.addEventListener(MenuEvent.MENU_CLOSE, menu_menuCloseHandler);
+menu.addEventListener(Event.CLOSE, menu_closeHandler);
+```
+
+The following example shows a sample listener for [`Event.CLOSE`](https://api.openfl.org/openfl/events/Event.html#CLOSE).
+
+```haxe
+private function menuBar_closeHandler(event:Event):Void {
+    trace("Menu close");
+}
 ```
 
 ## Add or remove items
