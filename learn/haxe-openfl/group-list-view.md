@@ -262,7 +262,7 @@ In the example above, the group list view will have a separate skins when enable
 
 ### Layout
 
-Set the group list view's [`layout`](https://api.feathersui.com/current/feathers/layout/feathers/controls/GroupListView.html#layout) property to change how its children are positioned and sized. By default, a list view uses [`VerticalListLayout`](./vertical-list-layout.md), but it may be changed to a different layout, if desired.
+Set the group list view's [`layout`](https://api.feathersui.com/current/feathers/layout/feathers/controls/GroupListView.html#layout) property to change how its children are positioned and sized. By default, a group list view uses [`VerticalListLayout`](./vertical-list-layout.md), but it may be changed to a different layout, if desired.
 
 ```haxe
 groupListView.layout = new HorizontalListLayout();

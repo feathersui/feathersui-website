@@ -263,7 +263,7 @@ In the example above, the tree view will have a separate skins when enabled and 
 
 ### Layout
 
-Set the tree view's [`layout`](https://api.feathersui.com/current/feathers/layout/feathers/controls/TreeView.html#layout) property to change how its children are positioned and sized. By default, a list view uses [`VerticalListLayout`](./vertical-list-layout.md), but it may be changed to a different layout, if desired.
+Set the tree view's [`layout`](https://api.feathersui.com/current/feathers/layout/feathers/controls/TreeView.html#layout) property to change how its children are positioned and sized. By default, a tree view uses [`VerticalListLayout`](./vertical-list-layout.md), but it may be changed to a different layout, if desired.
 
 ```haxe
 treeView.layout = new HorizontalListLayout();
