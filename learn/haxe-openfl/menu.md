@@ -29,33 +29,18 @@ To render some data in the menu, pass in a [hierarchical collection](./data-coll
 ```haxe
 var collection = new ArrayHierarchicalCollection([
     {
-        text: "File",
+        text: "Create New",
         children: [
-            { text: "New" },
-            { text: "Open" },
-            { separator: true },
-            { text: "Print" },
-            { separator: true },
-            { text: "Exit" },
+            { text: "Text File" },
+            { text: "Shortcut" }
         ]
     },
-    {
-      text: "Edit",
-      children: [
-          { text: "Undo" },
-          { text: "Redo" },
-          { separator: true },
-          { text: "Cut" },
-          { text: "Copy" },
-          { text: "Paste" }
-      ]
-    },
-    {
-      text: "View",
-      children: [
-          { text: "Full Screen" },
-      ]
-    }
+    { separator: true },
+    { text: "Cut" },
+    { text: "Copy" },
+    { text: "Paste" },
+    { separator: true },
+    { text: "Properties" }
 ]);
 menu.dataProvider = collection;
 ```
