@@ -100,13 +100,13 @@ menu.close();
 
 ### Listen for events
 
-[Add an event listener](https://books.openfl.org/openfl-developers-guide/handling-events/basics-of-handling-events.html) for [`MenuEvent.ITEM_TRIGGER`](https://api.feathersui.com/unstable/feathers/events/MenuEvent.html#ITEM_TRIGGER) to perform an action when the user clicks or taps a button.
+[Add an event listener](https://books.openfl.org/openfl-developers-guide/handling-events/basics-of-handling-events.html) for [`MenuEvent.ITEM_TRIGGER`](https://api.feathersui.com/unstable/feathers/events/MenuEvent.html#ITEM_TRIGGER) to perform an action when the user clicks or taps a menu item.
 
 ```haxe
 menu.addEventListener(MenuEvent.ITEM_TRIGGER, menu_itemTriggerHandler);
 ```
 
-Check the event's [`state`](https://api.feathersui.com/unstable/feathers/events/MenuEvent.html#state) property in the listener to determine which button was triggered.
+Check the event's [`state`](https://api.feathersui.com/unstable/feathers/events/MenuEvent.html#state) property in the listener to determine which menu item was triggered.
 
 ```haxe
 function menu_itemTriggerHandler(event:MenuEvent):Void {
@@ -114,7 +114,7 @@ function menu_itemTriggerHandler(event:MenuEvent):Void {
 }
 ```
 
-The [`state`](https://api.feathersui.com/unstable/feathers/events/MenuEvent.html#state) is an instance of the[`MenuItemState`](https://api.feathersui.com/unstable/feathers/data/MenuItemState.html) class, which includes various properties, such as the button's [`text`](https://api.feathersui.com/unstable/feathers/data/MenuItemState.html#text), the full item [`data`](https://api.feathersui.com/unstable/feathers/data/MenuItemState.html#data) from the collection, and the [`index`](https://api.feathersui.com/unstable/feathers/data/MenuItemState.html#index) position of the item in the collection.
+The [`state`](https://api.feathersui.com/unstable/feathers/events/MenuEvent.html#state) is an instance of the[`MenuItemState`](https://api.feathersui.com/unstable/feathers/data/MenuItemState.html) class, which includes various properties, such as the menu item's [`text`](https://api.feathersui.com/unstable/feathers/data/MenuItemState.html#text), the full item [`data`](https://api.feathersui.com/unstable/feathers/data/MenuItemState.html#data) from the collection, and the [`index`](https://api.feathersui.com/unstable/feathers/data/MenuItemState.html#index) position of the item in the collection.
 
 To perform actions when the menu opens or closes, [add an event listener](https://books.openfl.org/openfl-developers-guide/handling-events/basics-of-handling-events.html) for [`MenuEvent.MENU_OPEN`](https://api.feathersui.com/unstable/feathers/events/MenuEvent.html#MENU_OPEN) or [`MenuEvent.MENU_CLOSE`](https://api.feathersui.com/unstable/feathers/events/MenuEvent.html#MENU_CLOSE).
 
