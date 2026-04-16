@@ -1,4 +1,4 @@
-const htmlmin = require("html-minifier");
+const htmlmin = require("html-minifier-next");
 const CleanCSS = require("clean-css");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
@@ -10,7 +10,7 @@ const pluginRss = require("@11ty/eleventy-plugin-rss");
  */
 
 module.exports = /** @param eleventyConfig {UserConfig} */ function (
-  eleventyConfig
+  eleventyConfig,
 ) {
   eleventyConfig.addPassthroughCopy({
     "static/root": ".",
@@ -33,21 +33,21 @@ module.exports = /** @param eleventyConfig {UserConfig} */ function (
   eleventyConfig.addPlugin(pluginToc);
   eleventyConfig.setLibrary(
     "md",
-    markdownIt({ html: true }).use(markdownItAnchor)
+    markdownIt({ html: true }).use(markdownItAnchor),
   );
   eleventyConfig.addFilter("dateToISOString", function (date) {
     return date.toISOString();
   });
   eleventyConfig.addLiquidFilter(
     "rss_getNewestCollectionItemDate",
-    pluginRss.getNewestCollectionItemDate
+    pluginRss.getNewestCollectionItemDate,
   );
   eleventyConfig.addLiquidFilter("rss_dateToRfc3339", pluginRss.dateToRfc3339);
   eleventyConfig.addLiquidFilter("rss_dateToRfc822", pluginRss.dateToRfc822);
   eleventyConfig.addLiquidFilter("rss_absoluteUrl", pluginRss.absoluteUrl);
   eleventyConfig.addLiquidFilter(
     "rss_htmlToAbsoluteUrls",
-    pluginRss.convertHtmlToAbsoluteUrls
+    pluginRss.convertHtmlToAbsoluteUrls,
   );
   eleventyConfig.addFilter("getSliceOfCollectionItems", function (value) {
     return value.slice(0, Math.min(value.length, 3));
@@ -75,7 +75,7 @@ module.exports = /** @param eleventyConfig {UserConfig} */ function (
       date.getUTCHours(),
       date.getUTCMinutes(),
       date.getUTCSeconds(),
-      date.getUTCMilliseconds()
+      date.getUTCMilliseconds(),
     );
     return pageUtcDate;
   });
@@ -87,7 +87,7 @@ module.exports = /** @param eleventyConfig {UserConfig} */ function (
       pageDate.getUTCDate(),
       pageDate.getUTCHours(),
       pageDate.getUTCMinutes(),
-      pageDate.getUTCSeconds()
+      pageDate.getUTCSeconds(),
     );
     const year = pageUtcDate.getFullYear();
     const month = (pageUtcDate.getMonth() + 1).toString().padStart(2, "0");
@@ -114,7 +114,7 @@ module.exports = /** @param eleventyConfig {UserConfig} */ function (
       result += `</ul></li>`;
       result += `</ul>`;
       return result;
-    }
+    },
   );
   eleventyConfig.addShortcode(
     "create_docs_sidebar",
@@ -123,12 +123,12 @@ module.exports = /** @param eleventyConfig {UserConfig} */ function (
       if (this.page.filePathStem.endsWith("/index")) {
         sectionName = this.page.filePathStem.substring(
           1,
-          this.page.filePathStem.length - 6
+          this.page.filePathStem.length - 6,
         );
       } else {
         sectionName = this.page.filePathStem.substring(
           1,
-          this.page.filePathStem.length - this.page.fileSlug.length - 1
+          this.page.filePathStem.length - this.page.fileSlug.length - 1,
         );
       }
       if (!(sectionName in sidebar)) {
@@ -142,12 +142,12 @@ module.exports = /** @param eleventyConfig {UserConfig} */ function (
           sectionName,
           section[category],
           this.page,
-          all
+          all,
         );
       }
       result += `</ul>`;
       return result;
-    }
+    },
   );
   eleventyConfig.addTemplateFormats("css");
   eleventyConfig.addExtension("css", {
@@ -170,7 +170,7 @@ module.exports = /** @param eleventyConfig {UserConfig} */ function (
       const startURL = this.inputPath.substring(1, lastSlashIndex + 1);
       const lastLastSlashIndex = this.inputPath.lastIndexOf(
         "/",
-        lastSlashIndex - 1
+        lastSlashIndex - 1,
       );
       const startURLParent =
         lastLastSlashIndex !== -1
@@ -179,11 +179,11 @@ module.exports = /** @param eleventyConfig {UserConfig} */ function (
       return content
         .replace(
           /<a( class="[\w\-]+")? href="\.\/([\w\-\/]+)\.md(#[\w+\-]+)?"/g,
-          `<a$1 href="${startURL}$2/$3"`
+          `<a$1 href="${startURL}$2/$3"`,
         )
         .replace(
           /<a( class="[\w\-]+")? href="\.\.\/([\w\-\/]+)\.md(#[\w+\-]+)?"/g,
-          `<a$1 href="${startURLParent}$2/$3"`
+          `<a$1 href="${startURLParent}$2/$3"`,
         )
         .replace("/index/", "/");
     }
@@ -219,13 +219,13 @@ function generateSidebarCategory(categoryName, categoryRoot, items, page, all) {
         categoryRoot,
         item.ids,
         page,
-        all
+        all,
       );
     } else {
       const link = generateSidebarLink(
         "/" + categoryRoot + "/" + item,
         page,
-        all
+        all,
       );
       if (link) {
         result += link;
