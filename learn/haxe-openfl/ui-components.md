@@ -9,12 +9,14 @@ layout: "docs.html"
 
 - [`ActivityIndicator`](./activity-indicator.md) displays an animation to indicate that an activity is currently in progress.
 - [`AssetLoader`](./asset-loader.md) displays images and other assets.
+- [`BitmapImage`](./bitmap-image.md) <a href="./semver.md#beta-apis"><img class="beta" src="/img/beta.png" alt="(Beta)"/></a> displays `BitmapData` as a UI component.
 - [`Button`](./button.md) is a standard push button that may be clicked or tapped.
 - [`Check`](./check.md) is a check box that may be selected and deselected with a click/tap.
 - [`Collapsible`](./collapsible.md) displays a header that can be clicked to hide and show its main content.
 - [`DatePicker`](./date-picker.md) displays a month view where dates may be selected and deselected with a click/tap.
 - [`Header`](./header.md) displays a title with optional views on the left and right sides.
 - [`HProgressBar` and `VProgressBar`](./progress-bar.md) displays a numeric value with a simple linear fill.
+- [`HRule` and `VRule`](./rule.md) <a href="./semver.md#beta-apis"><img class="beta" src="/img/beta.png" alt="(Beta)"/></a> display a dividing line between sections.
 - [`HScrollBar` and `VScrollBar`](./scroll-bar.md) display a numeric value with a thumb that may be dragged along a track with step and page adjustments.
 - [`HSlider` and `VSlider`](./slider.md) display a numeric value with a thumb that may be dragged along a track.
 - [`Label`](./label.md) displays text in a single line or multiple lines.
@@ -54,8 +56,14 @@ Containers that display data from [collections](./data-collections.md), with lay
 The following components are designed for rendering each individual item from the container's collection.
 
 - [`ItemRenderer`](./item-renderer.md) displays a background skin, up to two lines of text, and an icon.
+- [`DrillDownItemRenderer`](./drill-down-item-renderer.md) <a href="./semver.md#beta-apis"><img class="beta" src="/img/beta.png" alt="(Beta)"/></a> extends the default item renderer to add a drill-down indicator.
 - [`HierarchicalItemRenderer`](./hierarchical-item-renderer.md) is like `ItemRenderer`, but designed for data containers that display hierarchical data, such as `TreeView` and `TreeGridView`.
 - [`LayoutGroupItemRenderer`](./layout-group-item-renderer.md) allows the creation of new types of item renderers with custom content.
+
+## Menus
+
+- [`Menu`](./menu.md) <a href="./semver.md#beta-apis"><img class="beta" src="/img/beta.png" alt="(Beta)"/></a> displays a pop-up menu with items that may be tapped or clicked.
+- [`MenuBar`](./menu-bar.md) <a href="./semver.md#beta-apis"><img class="beta" src="/img/beta.png" alt="(Beta)"/></a> displays a row of items that display pop-up menus when clicked or tapped.
 
 ## Navigators
 

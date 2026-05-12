@@ -24,6 +24,7 @@ Use the standard [display list](https://books.openfl.org/openfl-developers-guide
 The following layouts are best suited for simple containers.
 
 - [`AnchorLayout`](./anchor-layout.md)
+- [`FlowColumnsLayout`](./flow-columns-layout.md)
 - [`FlowRowsLayout`](./flow-rows-layout.md)
 - [`HorizontalLayout`](./horizontal-layout.md)
 - [`ResponsiveGridLayout`](./responsive-grid-layout.md)
