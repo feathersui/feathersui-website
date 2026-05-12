@@ -10,7 +10,7 @@ The [`AnchorLayout`](https://api.feathersui.com/current/feathers/layout/AnchorLa
 
 <figure>
 <iframe src="/learn/haxe-openfl/samples/anchor-layout.html" width="100%" height="200"></iframe>
-<figcaption>Live preview of <a href="https://api.feathersui.com/current/feathers/layout/FlowRowsLayout.html"><code>AnchorLayout</code></a></figcaption>
+<figcaption>Live preview of <a href="https://api.feathersui.com/current/feathers/layout/AnchorLayout.html"><code>AnchorLayout</code></a></figcaption>
 </figure>
 
 ## The Basics
