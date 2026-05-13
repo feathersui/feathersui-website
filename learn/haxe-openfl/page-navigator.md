@@ -4,7 +4,7 @@ layout: "docs.html"
 sidebarTitle: PageNavigator
 ---
 
-The [`PageNavigator`](https://api.feathersui.com/current/feathers/controls/navigators/PageNavigator.html) class supports navigation between views using a [`PageIndicator`](./tab-bar.md) component to select the current view.
+The [`PageNavigator`](https://api.feathersui.com/current/feathers/controls/navigators/PageNavigator.html) class supports navigation between views using a [`PageIndicator`](./page-indicator.md) component to select the current view.
 
 Navigation can be enhanced with animation, called a _transition_. Feathers UI provides a number of [animated transitions](./navigator-transitions.md) out of the box, and a simple API allows anyone to create [custom transitions](./custom-navigator-transitions.md).
 
