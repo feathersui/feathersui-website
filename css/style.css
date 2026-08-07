@@ -67,8 +67,9 @@ body {
   padding: 0;
   margin: 0;
   --text-color: #2f2f2f;
-  --action-color: #f07209;
-  --active-color: #ff8b26;
+  --action-color: #f06209;
+  --active-color: #ff7b26;
+  --btn-active-color: #ffa759;
   color: var(--text-color);
   background: #fcfaf7;
 }
@@ -170,8 +171,8 @@ table {
 
 .btn:hover {
   color: var(--text-color);
-  background: var(--active-color);
-  border-color: var(--active-color);
+  background: var(--btn-active-color);
+  border-color: var(--btn-active-color);
   text-decoration: none;
 }
 
