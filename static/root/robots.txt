@@ -1,8 +1,8 @@
-Sitemap: /sitemap.xml
+Sitemap: https://feathersui.com/sitemap.xml
 
 User-agent: anthropic-ai
 Disallow: /
-‍User-agent: Claude-Web
+User-agent: Claude-Web
 Disallow: /
 User-agent: ClaudeBot
 Disallow: /
