@@ -48,3 +48,11 @@ Header set Strict-Transport-Security "max-age=63072000; includeSubDomains; prelo
 Header set X-Content-Type-Options "nosniff"
 Header set Content-Security-Policy "img-src 'self'; script-src 'self' 'unsafe-inline' 'wasm-unsafe-eval' https://downloads.mailchimp.com; style-src 'self' 'unsafe-inline' https://*.typekit.net; frame-src 'self' https://player.vimeo.com; object-src 'self'; font-src 'self' https://*.typekit.net; worker-src 'self'"
 </IfModule>
+
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType font/woff2 "access plus 1 year"
+ExpiresByType font/woff "access plus 1 year"
+ExpiresByType font/ttf "access plus 1 year"
+ExpiresByType font/otf "access plus 1 year"
+</IfModule>
