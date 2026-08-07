@@ -2,23 +2,25 @@
   <div class="header-content">
     <h1 class="title"><a href="/">{{ siteTitle }}</a></h1>
     {% unless limited_header %}
-    <ul class="menu" role="navigation" aria-label="Main">
-      <li>
-        <a href="/learn/haxe-openfl/getting-started">Docs</a>
-      </li>
-      <li>
-        <a href="https://api.feathersui.com/">API</a>
-      </li>
-      <li>
-        <a href="/showcase/">Showcase</a>
-      </li>
-      <li>
-        <a href="/blog/">Blog</a>
-      </li>
-      <li>
-        <a href="/community/">Community</a>
-      </li>
-    </ul>
+    <nav aria-label="Main">
+      <menu>
+        <li>
+          <a href="/learn/haxe-openfl/getting-started">Docs</a>
+        </li>
+        <li>
+          <a href="https://api.feathersui.com/">API</a>
+        </li>
+        <li>
+          <a href="/showcase/">Showcase</a>
+        </li>
+        <li>
+          <a href="/blog/">Blog</a>
+        </li>
+        <li>
+          <a href="/community/">Community</a>
+        </li>
+      </menu>
+    </nav>
     {% endunless %}
   </div>
 </header>
