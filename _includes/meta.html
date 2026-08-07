@@ -1,3 +1,6 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+{% if ogDescription %}
+<meta name="description" content="{{ ogDescription }}">
+{% endif %}
 <link rel="canonical" href="https://feathersui.com{{ page.url | url }}" />
