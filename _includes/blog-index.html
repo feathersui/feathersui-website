@@ -17,14 +17,14 @@ siteTitle: Feathers UI Blog
 <body class="blog sidebars">
   {% include "header.html" %}
   <div class="main">
-    <div class="main-content">
+    <main class="main-content">
       <input type="checkbox" id="sidebar-toggle"/>
       <label id="sidebar-toggle-label" for="sidebar-toggle">Toggle Sidebar</label>
       <aside class="sidebar-container">
         {% create_blog_sidebar collections.blog %}
       </aside>
       <article>{{ content }}</article>
-    </div>
+    </main>
   </div>
   {% include "footer.html" %}
 </body>
