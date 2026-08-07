@@ -17,7 +17,8 @@ Click the button below to download the latest version of [Feathers](/learn/as3-s
 
 <div class="alignCenter">
   <div class="btn-wrapper">
-    <a class="btn" href="https://github.com/feathersui/feathersui-starling/releases/download/v4.1.1/feathers-ui-4.1.1.zip" onClick="_gaq.push(['_trackEvent', 'Downloads', 'Build', '4.1.1']);">Download Feathers 4.1.1</a>
+    <a class="btn btn-cta" href="https://github.com/feathersui/feathersui-starling/releases/download/v4.1.1/feathers-ui-4.1.1.zip" onClick="_gaq.push(['_trackEvent', 'Downloads', 'Build', '4.1.1']);">Download Feathers 4.1.1</a>
+    <a class="btn" href="https://github.com/feathersui/feathersui-starling/releases/">Other Versions →</a>
   </div>
 </div>
 

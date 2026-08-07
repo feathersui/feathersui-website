@@ -14,10 +14,10 @@ layout: "article.html"
   <h2>{{item.title}}</h2>
   <p>{{item.content}}</p>
   <div class="btn-wrapper">
-    {% if item.demoLink %}<a class="btn" href="{{item.demoLink}}">Online Demo</a>{% endif %}
-    {% if item.webLink %}<a class="btn" href="{{item.webLink}}">Visit Website</a>{% endif %}
-    {% if item.videoLink %}<a class="btn" href="{{item.videoLink}}">Watch Video</a>{% endif %}
-    {% if item.iosLink %}<a class="btn" href="{{item.iosLink}}">iOS App Store</a>{% endif %}
+    {% if item.demoLink %}<a class="btn" href="{{item.demoLink}}">Online Demo →</a>{% endif %}
+    {% if item.webLink %}<a class="btn" href="{{item.webLink}}">Visit Website →</a>{% endif %}
+    {% if item.videoLink %}<a class="btn" href="{{item.videoLink}}">Watch Video →</a>{% endif %}
+    {% if item.iosLink %}<a class="btn" href="{{item.iosLink}}">iOS App Store →</a>{% endif %}
   </div>
 </div>
 {% endfor %}
