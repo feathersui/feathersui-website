@@ -72,7 +72,7 @@ The following interfaces are supported by all data containers.
 
 - [`IDataRenderer`](https://api.feathersui.com/current/feathers/controls/dataRenderers/IDataRenderer.html) - The data container automatically sets the item renderer's [`data`](https://api.feathersui.com/current/feathers/controls/dataRenderers/IDataRenderer.html#data) property to an item from the [collection](./data-collections.md).
 - [`ILayoutIndexObject`](https://api.feathersui.com/current/feathers/layout/ILayoutIndexObject.html) The data container automatically updates the [`layoutIndex`](https://api.feathersui.com/current/feathers/layout/ILayoutIndexObject.html#layoutIndex) property to indicate where the item is located within the layout's order.
-- [`IToggle`](https://api.feathersui.com/current/feathers/core/IToggle.html) - The data container automatically updates the item renderer's [`selected`](https://api.feathersui.com/current/feathers/core/IToggle.html#selected) property when the selected item changes.
+- [`IToggle`](https://api.feathersui.com/current/feathers/controls/IToggle.html) - The data container automatically updates the item renderer's [`selected`](https://api.feathersui.com/current/feathers/controls/IToggle.html#selected) property when the selected item changes.
 - [`ITriggerView`](https://api.feathersui.com/current/feathers/controls/ITriggerView.html) - The data container will listen for `TriggerEvent.TRIGGER` instead of `MouseEvent.CLICK` and `TouchEvent.TOUCH_TAP` to determine when selection changes.
 - [`IUIControl`](https://api.feathersui.com/current/feathers/core/IUIControl.html) automatically updates the [`enabled`](https://api.feathersui.com/current/feathers/core/IUIControl.html#enabled) property.
 

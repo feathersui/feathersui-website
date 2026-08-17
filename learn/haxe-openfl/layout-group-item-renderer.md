@@ -90,7 +90,7 @@ skin.setFillForState(ToggleButtonState.DOWN(false), SolidColor(0xaa9999));
 skin.setBorderForState(ToggleButtonState.DOWN(false), SolidColor(1.0, 0x9999cc));
 ```
 
-In the examples above, the item renderer uses the same [`RectangleSkin`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html) for all states, and that skin listens for changes to the item renderer's current state. Alternatively, the item renderer's [`selectedBackgroundSkin`](https://api.feathersui.com/current/feathers/controls/dataRenderers/LayoutGroup.html#selectedBackgroundSkin) property and [`setSkinForState()`](https://api.feathersui.com/current/feathers/controls/dataRenderers/LayoutGroupItemRenderer.html#setSkinForState) method allow the item renderer to display a completely different display object when its current state changes.
+In the examples above, the item renderer uses the same [`RectangleSkin`](https://api.feathersui.com/current/feathers/skins/RectangleSkin.html) for all states, and that skin listens for changes to the item renderer's current state. Alternatively, the item renderer's [`selectedBackgroundSkin`](https://api.feathersui.com/current/feathers/controls/LayoutGroup.html#selectedBackgroundSkin) property and [`setSkinForState()`](https://api.feathersui.com/current/feathers/controls/dataRenderers/LayoutGroupItemRenderer.html#setSkinForState) method allow the item renderer to display a completely different display object when its current state changes.
 
 ```haxe
 var defaultSkin = new RectangleSkin();

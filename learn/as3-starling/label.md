@@ -34,7 +34,7 @@ label.width = 100;
 label.wordWrap = true;
 ```
 
-Set the [`wordWrap`](/api-reference/feathers/controls/Label.as#wordWrap) property to `true` to enable wrapping.
+Set the [`wordWrap`](/api-reference/feathers/controls/Label.html#wordWrap) property to `true` to enable wrapping.
 
 ## Skinning a `Label`
 
