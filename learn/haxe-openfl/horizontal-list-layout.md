@@ -4,7 +4,7 @@ layout: "docs.html"
 sidebarTitle: HorizontalListLayout
 ---
 
-The [`HorizontalListLayout`](https://api.feathersui.com/current/feathers/layout/HorizontalListLayout.html) class may be used to position the children of a data container from left to right, in a single row that fills the entire height. Examples of data containers include [`ListView`](./list-view), [`TreeView`](./tree-view.md), and [`GridView`](./grid-view.md). This layout supports a number of useful options for adjusting the spacing around the container's children.
+The [`HorizontalListLayout`](https://api.feathersui.com/current/feathers/layout/HorizontalListLayout.html) class may be used to position the children of a data container from left to right, in a single row that fills the entire height. Examples of data containers include [`ListView`](./list-view.md), [`TreeView`](./tree-view.md), and [`GridView`](./grid-view.md). This layout supports a number of useful options for adjusting the spacing around the container's children.
 
 ## The Basics
 

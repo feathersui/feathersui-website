@@ -4,7 +4,7 @@ layout: "docs.html"
 sidebarTitle: VerticalListLayout
 ---
 
-The [`VerticalListLayout`](https://api.feathersui.com/current/feathers/layout/VerticalListLayout.html) class may be used to position the children of a data container from top to bottom, in a single column that fills the entire width. Examples of data containers include [`ListView`](./list-view), [`TreeView`](./tree-view.md), and [`GridView`](./grid-view.md). This layout supports a number of useful options for adjusting the spacing around the container's children.
+The [`VerticalListLayout`](https://api.feathersui.com/current/feathers/layout/VerticalListLayout.html) class may be used to position the children of a data container from top to bottom, in a single column that fills the entire width. Examples of data containers include [`ListView`](./list-view.md), [`TreeView`](./tree-view.md), and [`GridView`](./grid-view.md). This layout supports a number of useful options for adjusting the spacing around the container's children.
 
 > If all items in the layout should render with the exact same height, consider using [`VerticalListFixedRowLayout`](./vertical-list-fixed-row-layout.md) for improved performance.
 

@@ -218,7 +218,7 @@ When the [`update()`](https://api.feathersui.com/unstable/feathers/utils/Display
 - [`location`](https://api.feathersui.com/unstable/feathers/data/MenuItemState.html#location) is the position of the item within the collection.
 - [`separator`](https://api.feathersui.com/unstable/feathers/data/MenuItemState.html#separator) indicates if the item is a separator or not.
 - [`menuOwner`](https://api.feathersui.com/unstable/feathers/data/MenuItemState.html#menuOwner) is the [`Menu`](https://api.feathersui.com/unstable/feathers/controls/Menu.html) that contains the item.
-- [`menuOwner`](https://api.feathersui.com/unstable/feathers/data/MenuItemState.html#menuBarOwner) is the [`Menu`](./menu-bar) that contains the item. It may be `null` if the `Menu` did not originate from a `MenuBar`.
+- [`menuOwner`](https://api.feathersui.com/unstable/feathers/data/MenuItemState.html#menuBarOwner) is the [`MenuBar`](./menu-bar.md) that contains the item. It may be `null` if the `Menu` did not originate from a `MenuBar`.
 - [`selected`](https://api.feathersui.com/unstable/feathers/data/MenuItemState.html#selected) is populated by comparing to [`selectedItem`](https://api.feathersui.com/unstable/feathers/controls/Menu.html#selectedItem).
 - [`text`](https://api.feathersui.com/unstable/feathers/data/MenuItemState.html#text) is populated using [`itemToText()`](https://api.feathersui.com/unstable/feathers/controls/Menu.html#itemToText)
 
