@@ -33,6 +33,9 @@ RewriteRule ^/?index/?$ / [R=301,L]
 
 RewriteRule ^/?sdk/feathers-sdk-manager/$ /sdk/download/$1 [R=301,L]
 
+# redirect blog .html
+RewriteRule ^/?blog/(\d{4}/\d{2}/\d{2}/[A-Za-z0-9\-]+).html$ /blog/$1/ [R=301,L]
+
 # redirect robotlegs-framework-starling API to new github.io site
 
 RewriteRule ^/?api-reference/robotlegs-starling($|/[A-Za-z0-9\-/.]*)$ http://joshtynjala.github.io/robotlegs-framework-starling/api-reference$1 [R=301,L]
