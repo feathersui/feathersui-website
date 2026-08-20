@@ -2,42 +2,34 @@
 RewriteEngine On
 
 # require https
-
 RewriteCond %{HTTPS} !=on
 RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 # redirect /help to /learn/as3-starling
-
 RewriteRule ^/?help/index.html$ /learn/as3-starling/ [R=301,L]
 RewriteRule ^/?help($|[A-Za-z0-9\-/]*)(\.[A-Za-z]+)?$ /learn/as3-starling$1 [R=301,L]
 
 # redirect /en to /
-
 RewriteRule ^/?en($|/[A-Za-z0-9\-/]*)(\.[A-Za-z]+)?$ /$1 [R=301,L]
 
 # redirect to /api-reference
-
 RewriteRule ^/?documentation($|/[A-Za-z0-9\-/.]*)$ /api-reference$1 [R=301,L]
 RewriteRule ^/?asdoc($|/[A-Za-z0-9\-/.]*)$ /api-reference$1 [R=301,L]
 RewriteRule ^/?beta/documentation($|/[A-Za-z0-9\-/.]*)$ /api-reference$1 [R=301,L]
 
 # redirect /api to api.feathersui.com
-
 RewriteRule ^/?api($|/[A-Za-z0-9\-/.]*)$ https://api.feathersui.com$1 [R=301,L]
 
 # redirect /index/ and /index to / (docusaurus sitemap is broken)
-
 RewriteRule ^/?index/?$ / [R=301,L]
 
 # redirect /sdk/feathers-sdk-manager/ to /sdk/download/
-
 RewriteRule ^/?sdk/feathers-sdk-manager/$ /sdk/download/$1 [R=301,L]
 
 # redirect blog .html
 RewriteRule ^/?blog/(\d{4}/\d{2}/\d{2}/[A-Za-z0-9\-]+).html$ /blog/$1/ [R=301,L]
 
 # redirect robotlegs-framework-starling API to new github.io site
-
 RewriteRule ^/?api-reference/robotlegs-starling($|/[A-Za-z0-9\-/.]*)$ http://joshtynjala.github.io/robotlegs-framework-starling/api-reference$1 [R=301,L]
 </IfModule>
 
