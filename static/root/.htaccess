@@ -5,9 +5,10 @@ RewriteEngine On
 RewriteCond %{HTTPS} !=on
 RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-# redirect /help to /learn/as3-starling
+# redirect /help and /as3-starling to /learn/as3-starling
 RewriteRule ^/?help/index.html$ /learn/as3-starling/ [R=301,L]
-RewriteRule ^/?help($|[A-Za-z0-9\-/]*)(\.[A-Za-z]+)?$ /learn/as3-starling$1 [R=301,L]
+RewriteRule ^/?help($|/[A-Za-z0-9\-/]*)(\.[A-Za-z]+)?$ /learn/as3-starling$1 [R=301,L]
+RewriteRule ^/?as3-starling($|/[A-Za-z0-9\-/]*)(\.[A-Za-z]+)?$ /learn/as3-starling$1 [R=301,L]
 
 # redirect /en to /
 RewriteRule ^/?en($|/[A-Za-z0-9\-/]*)(\.[A-Za-z]+)?$ /$1 [R=301,L]
