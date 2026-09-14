@@ -38,7 +38,7 @@ Don't create a new project yet! We have a couple of things to tweak first.
 
 Next, we're going to import custom templates for new MXML files. The default templates provided by Flash Builder don't work with Feathers components, so these custom templates will provide the right settings.
 
-1. Download the <a href="ide-file-templates/feathers-file-templates-flash-builder.xml" download>Feathers SDK file templates for Flash Builder 4.6 and 4.7</a>.
+1. Download the <a href="../ide-file-templates/feathers-file-templates-flash-builder.xml" download>Feathers SDK file templates for Flash Builder 4.6 and 4.7</a>.
 
 2. Open the Flash Builder preferences on Mac OS X by going to the **Flash Builder** menu → **Preferences**. On Windows, select the **Window** menu → **Preferences...**.
 
