@@ -106,7 +106,7 @@ label.textRendererFactory = function():ITextRenderer
 };
 ```
 
-If the [`textRendererFactory`](/api-reference/feathers/control/Label.html#textRendererFactory) property is not `null`, it will be used instead of `FeathersControl.defaultTextRendererFactory()`.
+If the [`textRendererFactory`](/api-reference/feathers/controls/Label.html#textRendererFactory) property is not `null`, it will be used instead of `FeathersControl.defaultTextRendererFactory()`.
 
 The `fontStyles` property will work with any type of text renderer.
 
