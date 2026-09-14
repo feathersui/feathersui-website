@@ -66,7 +66,7 @@ Finally, be sure to check out the new skinning capabilities using OpenFL's graph
 <a href="https://feathersui.com/samples/haxe-openfl/custom-theme/" target="_blank"><img src="/blog/img/feathersui-custom-theme-sample.png"></a>
 
 - [Common shape skins](https://feathersui.com/learn/haxe-openfl/shape-skins/) explains how to skin a UI component with vector graphic shapes, such as rectangles, circles, tabs, pills, and more. Customize fills and strokes with solid colors, gradients, and tiled bitmaps.
-- [Custom programmatic skins](https://feathersui.com/learn/haxe-openfl/custom-programmatic-skins/) shows you how to use the new [`ProgrammaticSkin`](https://api.feathersui.com/current/feathers/skins/ProgrammaticSkin.html) base class to create even more advanced custom skins with your own graphical shapes, state changes, and animation.
+- [Custom programmatic skins](https://feathersui.com/learn/haxe-openfl/custom-programmatic-skins/) shows you how to use the new [`ProgrammaticSkin`](https://api.feathersui.com/v1.0.0/feathers/skins/ProgrammaticSkin.html) base class to create even more advanced custom skins with your own graphical shapes, state changes, and animation.
 
 ## Install Feathers UI v1.0.0
 

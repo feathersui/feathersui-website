@@ -53,7 +53,7 @@ Be sure to take a look at the complete [installation instructions](https://feath
 ## Documentation
 
 - The [Feathers UI Manual](https://feathersui.com/learn/haxe-openfl/) teaches you how to use all of the components in Feathers UI.
-- The [v1.0.0-alpha.3 API Reference](https://api.feathersui.com/v1.0.0-alpha.3/) includes descriptions of all APIs available on Feathers UI components, layouts, utility functions, and more.
+- The [Feathers UI API Reference](https://api.feathersui.com/current/) includes descriptions of all APIs available on Feathers UI components, layouts, utility functions, and more.
 
 ## Community
 

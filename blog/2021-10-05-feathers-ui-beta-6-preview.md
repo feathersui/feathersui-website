@@ -28,19 +28,19 @@ A number of new [animated transitions](https://feathersui.com/learn/haxe-openfl/
 
 <div style="text-align:center;"><a href="https://feathersui.com/learn/haxe-openfl/navigator-transitions/"><img src="/blog/img/beta-6-feathersui-transitions.png"></a></div>
 
-- [`ColorFadeTransitionBuilder`](https://api.feathersui.com/current/feathers/motion/transitions/ColorFadeTransitionBuilder.html) offers a classic "fade to black" sort of effect. Obviously, you can fade to any color that you prefer. It doesn't need to be black.
+- [`ColorFadeTransitionBuilder`](https://api.feathersui.com/v1.0.0/feathers/motion/transitions/ColorFadeTransitionBuilder.html) offers a classic "fade to black" sort of effect. Obviously, you can fade to any color that you prefer. It doesn't need to be black.
 
-- [`CoverTransitionBuilder`](https://api.feathersui.com/current/feathers/motion/transitions/CoverTransitionBuilder.html) "covers" the old view a new one by sliding in the new view on top.
+- [`CoverTransitionBuilder`](https://api.feathersui.com/v1.0.0/feathers/motion/transitions/CoverTransitionBuilder.html) "covers" the old view a new one by sliding in the new view on top.
 
-- [`FadeTransitionBuilder`](https://api.feathersui.com/current/feathers/motion/transitions/FadeTransitionBuilder.html) fades the new view in, fades the old view out, or cross-fades both views at the same time.
+- [`FadeTransitionBuilder`](https://api.feathersui.com/v1.0.0/feathers/motion/transitions/FadeTransitionBuilder.html) fades the new view in, fades the old view out, or cross-fades both views at the same time.
 
-- [`IrisTransitionBuilder`](https://api.feathersui.com/current/feathers/motion/transitions/IrisTransitionBuilder.html) animates the scale of a circular mask to replace the old view with the new view.
+- [`IrisTransitionBuilder`](https://api.feathersui.com/v1.0.0/feathers/motion/transitions/IrisTransitionBuilder.html) animates the scale of a circular mask to replace the old view with the new view.
 
-- [`RevealTransitionBuilder`](https://api.feathersui.com/current/feathers/motion/transitions/RevealTransitionBuilder.html) is the opposite of [`CoverTransitionBuilder`](https://api.feathersui.com/current/feathers/motion/transitions/CoverTransitionBuilder.html). It "reveals" the new view below the old view, by sliding the old view out of the way.
+- [`RevealTransitionBuilder`](https://api.feathersui.com/v1.0.0/feathers/motion/transitions/RevealTransitionBuilder.html) is the opposite of [`CoverTransitionBuilder`](https://api.feathersui.com/v1.0.0/feathers/motion/transitions/CoverTransitionBuilder.html). It "reveals" the new view below the old view, by sliding the old view out of the way.
 
-- [`SlideTransitionBuilder`](https://api.feathersui.com/current/feathers/motion/transitions/SlideTransitionBuilder.html) "slides" both views in the same direction by translating their position, with the new view starting out of bounds and ending where the old view started.
+- [`SlideTransitionBuilder`](https://api.feathersui.com/v1.0.0/feathers/motion/transitions/SlideTransitionBuilder.html) "slides" both views in the same direction by translating their position, with the new view starting out of bounds and ending where the old view started.
 
-- [`WipeTransitionBuilder`](https://api.feathersui.com/current/feathers/motion/transitions/WipeTransitionBuilder.html) uses a retangular mask to "wipe" the old view away to reveal the new view below.
+- [`WipeTransitionBuilder`](https://api.feathersui.com/v1.0.0/feathers/motion/transitions/WipeTransitionBuilder.html) uses a retangular mask to "wipe" the old view away to reveal the new view below.
 
 Want to see the transitions in action? Check out the new [Transitions Story Explorer](https://feathersui.com/samples/haxe-openfl/story-explorer/transitions/).
 
@@ -52,9 +52,9 @@ Each animated transition includes a number of configurable parameters, such as t
 
 This build also fixes several bugs, and it includes many new features too. Here's a few worth highlighting:
 
-- [`TreeView`](https://feathersui.com/learn/haxe-openfl/tree-view/) has a new [`toggleChildrenOf()`](https://api.feathersui.com/current/feathers/controls/TreeView.html#toggleChildrenOf) method that allows you to programmatically open and close all children of a branch. It also now supports using the keyboard's left and right arrow keys to open and close branches interactively, like how native UI trees work on desktop operating systems.
+- [`TreeView`](https://feathersui.com/learn/haxe-openfl/tree-view/) has a new [`toggleChildrenOf()`](https://api.feathersui.com/v1.0.0/feathers/controls/TreeView.html#toggleChildrenOf) method that allows you to programmatically open and close all children of a branch. It also now supports using the keyboard's left and right arrow keys to open and close branches interactively, like how native UI trees work on desktop operating systems.
 
-- Scrolling containers have a new [`scrollMode`](https://api.feathersui.com/current/feathers/controls/supportClasses/BaseScrollContainer.html#scrollMode) property that controls whether the internal implementation uses `scrollRect` or `mask` on its internal view port. This is an advanced property, and the difference will be subtle, but there may be times when one or the other works better. I wanted to make that choice available.
+- Scrolling containers have a new [`scrollMode`](https://api.feathersui.com/v1.0.0/feathers/controls/supportClasses/BaseScrollContainer.html#scrollMode) property that controls whether the internal implementation uses `scrollRect` or `mask` on its internal view port. This is an advanced property, and the difference will be subtle, but there may be times when one or the other works better. I wanted to make that choice available.
 
 For complete details, check out the [beta.6 CHANGELOG](https://github.com/feathersui/feathersui-openfl/blob/v1.0.0-beta.6/CHANGELOG.md).
 
@@ -71,7 +71,7 @@ Be sure to take a look at the complete [installation instructions](https://feath
 ## Documentation
 
 - The [Feathers UI Getting Started guide](https://feathersui.com/learn/haxe-openfl/getting-started) provides the most essential links for creating your first Feathers UI project and learning about all of the features and [UI components](https://feathersui.com/learn/haxe-openfl/ui-components) that are available in the framework.
-- The [v1.0.0-beta.6 API Reference](https://api.feathersui.com/v1.0.0-beta.6/) includes descriptions of all APIs available on Feathers UI components, layouts, utility functions, and more.
+- The [Feathers UI API Reference](https://api.feathersui.com/current/) includes descriptions of all APIs available on Feathers UI components, layouts, utility functions, and more.
 
 ## Community
 

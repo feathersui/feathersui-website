@@ -38,9 +38,9 @@ A couple of new [UI components](https://feathersui.com/learn/haxe-openfl/ui-comp
 
 This build also fixes several bugs, and it includes a some new features too. Here's a few worth highlighting:
 
-- [`RouterNavigator`](https://feathersui.com/learn/haxe-openfl/router-navigator/) now supports URL hashes for managing history when targeting HTML/JS and full URLs are not supported. The navigator will attempt to use full URLs by default. However, when targeting Electron, or when the page is loaded with the `file:` protocol, the navigator will automatically switch to hashes. If needed, you can set a new [`preferHashRouting`](https://api.feathersui.com/current/feathers/controls/navigators/RouterNavigator.html#preferHashRouting) to `true` to always use hash routing in HTML/JS. On all other targets, same as previously, history is always saved in memory.
+- [`RouterNavigator`](https://feathersui.com/learn/haxe-openfl/router-navigator/) now supports URL hashes for managing history when targeting HTML/JS and full URLs are not supported. The navigator will attempt to use full URLs by default. However, when targeting Electron, or when the page is loaded with the `file:` protocol, the navigator will automatically switch to hashes. If needed, you can set a new [`preferHashRouting`](https://api.feathersui.com/v1.0.0/feathers/controls/navigators/RouterNavigator.html#preferHashRouting) to `true` to always use hash routing in HTML/JS. On all other targets, same as previously, history is always saved in memory.
 - [`RouterNavigator`](https://feathersui.com/learn/haxe-openfl/router-navigator/) and [`StackNavigator`](https://feathersui.com/learn/haxe-openfl/stack-navigator/) support new `saveData` and `restoreData` methods to persist a view's session data when navigating away, and to restore that data when returning to the same view later.
-- Added a new [`disabledAlpha`](https://api.feathersui.com/current/feathers/core/FeathersControl.html#disabledAlpha) property to all components, to optionally lower the component's opacity when disabling it.
+- Added a new [`disabledAlpha`](https://api.feathersui.com/v1.0.0/feathers/core/FeathersControl.html#disabledAlpha) property to all components, to optionally lower the component's opacity when disabling it.
 
 For complete details, check out the [beta.7 CHANGELOG](https://github.com/feathersui/feathersui-openfl/blob/v1.0.0-beta.7/CHANGELOG.md).
 
@@ -57,7 +57,7 @@ Be sure to take a look at the complete [installation instructions](https://feath
 ## Documentation
 
 - The [Feathers UI Getting Started guide](https://feathersui.com/learn/haxe-openfl/getting-started) provides the most essential links for creating your first Feathers UI project and learning about all of the features and [UI components](https://feathersui.com/learn/haxe-openfl/ui-components) that are available in the framework.
-- The [v1.0.0-beta.7 API Reference](https://api.feathersui.com/v1.0.0-beta.7/) includes descriptions of all APIs available on Feathers UI components, layouts, utility functions, and more.
+- The [Feathers UI API Reference](https://api.feathersui.com/current/) includes descriptions of all APIs available on Feathers UI components, layouts, utility functions, and more.
 
 ## Community
 

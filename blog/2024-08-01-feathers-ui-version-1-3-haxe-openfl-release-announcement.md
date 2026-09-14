@@ -31,7 +31,7 @@ listView.dropEnabled = true;
 listView.removeOnDragDropComplete = true;
 ```
 
-Custom components may also implement the [`IDragSource`](https://api.feathersui.com/current/feathers/dragDrop/IDragSource.html) and [`IDropTarget`](https://api.feathersui.com/current/feathers/dragDrop/IDropTarget.html) interfaces, and add listeners for certain [`DragDropEvent`](https://api.feathersui.com/current/feathers/events/DragDropEvent.html) constants to add their own support for drag-and-drop.
+Custom components may also implement the [`IDragSource`](https://api.feathersui.com/v1.3.0/feathers/dragDrop/IDragSource.html) and [`IDropTarget`](https://api.feathersui.com/v1.3.0/feathers/dragDrop/IDropTarget.html) interfaces, and add listeners for certain [`DragDropEvent`](https://api.feathersui.com/v1.3.0/feathers/events/DragDropEvent.html) constants to add their own support for drag-and-drop.
 
 See the [Drag and drop](https://feathersui.com/learn/haxe-openfl/drag-and-drop) page for more details, and try out the new sample projects.
 
@@ -58,7 +58,7 @@ addChild(collapsible);
 
 ### The `dispose()` method
 
-All UI components in Feathers UI now have a new [`dispose()`](https://api.feathersui.com/current/feathers/core/IUIControl.html#dispose) method that may be used to clean things up before the object will be garbage collected. Disposal can perform actions like clearing data providers, removing and disposing children, unloading assets, and removing event listeners. It's basically intended to make things a little bit easier for the garbage collector when you know that a UI component will no longer be used in your app.
+All UI components in Feathers UI now have a new [`dispose()`](https://api.feathersui.com/v1.3.0/feathers/core/IUIControl.html#dispose) method that may be used to clean things up before the object will be garbage collected. Disposal can perform actions like clearing data providers, removing and disposing children, unloading assets, and removing event listeners. It's basically intended to make things a little bit easier for the garbage collector when you know that a UI component will no longer be used in your app.
 
 ```haxe
 myComponent.dispose();

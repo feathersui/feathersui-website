@@ -46,8 +46,8 @@ A new [layout](https://feathersui.com/learn/haxe-openfl/layouts-and-containers/)
 
 This build also fixes several bugs, and it includes a some new features too. Here are a few worth highlighting:
 
-- [`FormItem`](https://feathersui.com/learn/haxe-openfl/form/) now includes a [`required`](https://api.feathersui.com/current/feathers/controls/FormItem.html#required) property to display an icon that indicates if the item is required before submitting the form. You can customize this icon with the [`requiredSkin`](https://api.feathersui.com/current/feathers/controls/FormItem.html#requiredSkin) style.
-- [`FormItem`](https://feathersui.com/learn/haxe-openfl/form/) also gets a new [`submitOnEnterEnabled`](https://api.feathersui.com/current/feathers/controls/FormItem.html#submitOnEnterEnabled) property that makes it possible to disable submitting the form if the Enter/Return key is pressed when the item's content has focus. This is useful for compoennts like [`TextArea`](https://feathersui.com/learn/haxe-openfl/text-area/) that use the Enter/Return key for other purposes and should not trigger a form submit event.
+- [`FormItem`](https://feathersui.com/learn/haxe-openfl/form/) now includes a [`required`](https://api.feathersui.com/v1.0.0/feathers/controls/FormItem.html#required) property to display an icon that indicates if the item is required before submitting the form. You can customize this icon with the [`requiredSkin`](https://api.feathersui.com/v1.0.0/feathers/controls/FormItem.html#requiredSkin) style.
+- [`FormItem`](https://feathersui.com/learn/haxe-openfl/form/) also gets a new [`submitOnEnterEnabled`](https://api.feathersui.com/v1.0.0/feathers/controls/FormItem.html#submitOnEnterEnabled) property that makes it possible to disable submitting the form if the Enter/Return key is pressed when the item's content has focus. This is useful for compoennts like [`TextArea`](https://feathersui.com/learn/haxe-openfl/text-area/) that use the Enter/Return key for other purposes and should not trigger a form submit event.
 
 For complete details, check out the [beta.8 CHANGELOG](https://github.com/feathersui/feathersui-openfl/blob/v1.0.0-beta.8/CHANGELOG.md).
 
@@ -70,7 +70,7 @@ Be sure to take a look at the complete [installation instructions](https://feath
 ## Documentation
 
 - The [Feathers UI Getting Started guide](https://feathersui.com/learn/haxe-openfl/getting-started) provides the most essential links for creating your first Feathers UI project and learning about all of the features and [UI components](https://feathersui.com/learn/haxe-openfl/ui-components) that are available in the framework.
-- The [v1.0.0-beta.8 API Reference](https://api.feathersui.com/v1.0.0-beta.8/) includes descriptions of all APIs available on Feathers UI components, layouts, utility functions, and more.
+- The [Feathers UI API Reference](https://api.feathersui.com/current/) includes descriptions of all APIs available on Feathers UI components, layouts, utility functions, and more.
 
 ## Community
 

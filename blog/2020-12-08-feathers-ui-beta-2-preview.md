@@ -30,7 +30,7 @@ The [previous beta.1 build](/blog/2020/11/16/feathers-ui-beta-1-preview/) was un
 
 ![](/blog/img/beta-2-feathersui-tool-tip-manager.png)
 
-In desktop apps, a tool tip may be added to a UI component so that a helpful description is displayed when the mouse hovers over it. Now, all Feathers UI components have a [`toolTip` property](https://api.feathersui.com/current/feathers/core/IUIControl.html#toolTip) that accepts a string value.
+In desktop apps, a tool tip may be added to a UI component so that a helpful description is displayed when the mouse hovers over it. Now, all Feathers UI components have a [`toolTip` property](https://api.feathersui.com/v1.0.0/feathers/core/IUIControl.html#toolTip) that accepts a string value.
 
 ```hx
 var button = new Button();
@@ -39,9 +39,9 @@ button.toolTip = "If you click me, you'll win a prize!";
 addChild(button);
 ```
 
-The [`Application`](https://feathersui.com/learn/haxe-openfl/application) component enables the [`ToolTipManager`](https://api.feathersui.com/current/feathers/core/ToolTipManager.html) automatically, but it may be disabled with `<haxdef name="disable_tool_tip_manager">` in your [_project.xml_ file](https://lime.openfl.org/docs/project-files/xml-format/). If your root class isn't an [`Application`](https://feathersui.com/learn/haxe-openfl/application), you may manually call [`ToolTipManager.addRoot()`](https://api.feathersui.com/current/feathers/core/ToolTipManager.html#addRoot) to enable tool tips.
+The [`Application`](https://feathersui.com/learn/haxe-openfl/application) component enables the [`ToolTipManager`](https://api.feathersui.com/v1.0.0/feathers/core/ToolTipManager.html) automatically, but it may be disabled with `<haxdef name="disable_tool_tip_manager">` in your [_project.xml_ file](https://lime.openfl.org/docs/project-files/xml-format/). If your root class isn't an [`Application`](https://feathersui.com/learn/haxe-openfl/application), you may manually call [`ToolTipManager.addRoot()`](https://api.feathersui.com/v1.0.0/feathers/core/ToolTipManager.html#addRoot) to enable tool tips.
 
-As with all "managers" in Feathers UI, there is an [`IToolTipManager` interface](https://api.feathersui.com/current/feathers/core/IToolTipManager.html) that may be used to implement a custom tool-tip manager, if the default one does not completely meet your needs.
+As with all "managers" in Feathers UI, there is an [`IToolTipManager` interface](https://api.feathersui.com/v1.0.0/feathers/core/IToolTipManager.html) that may be used to implement a custom tool-tip manager, if the default one does not completely meet your needs.
 
 ### Multiple item renderers
 
@@ -92,7 +92,7 @@ Be sure to take a look at the complete [installation instructions](https://feath
 ## Documentation
 
 - The [Feathers UI Getting Started guide](https://feathersui.com/learn/haxe-openfl/getting-started) provides the most essential links for creating your first Feathers UI project and learning about all of the features and [UI components](https://feathersui.com/learn/haxe-openfl/ui-components) that are available in the framework.
-- The [v1.0.0-beta.2 API Reference](https://api.feathersui.com/v1.0.0-beta.2/) includes descriptions of all APIs available on Feathers UI components, layouts, utility functions, and more.
+- The [Feathers UI API Reference](https://api.feathersui.com/current/) includes descriptions of all APIs available on Feathers UI components, layouts, utility functions, and more.
 
 ## Community
 

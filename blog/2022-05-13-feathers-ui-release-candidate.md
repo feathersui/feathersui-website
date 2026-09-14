@@ -24,11 +24,11 @@ The focus for this release candidate has been primarily on fixing bugs and impro
 
 - Most of the APIs marked `@:deprecated` in previous beta builds have been removed. Developers must migrate to specified replacement APIs. A few of the more recent `@:deprecated` APIs remain in this build only, and they will be removed in the final 1.0 stable release.
 
-- [`ResponsiveGridLayout`](https://feathersui.com/learn/haxe-openfl/responsive-grid-layout/) supports a new "xxl" breakpoint, and [`ResponsiveGridLayoutData`](https://api.feathersui.com/v1.0.0-rc.1/feathers/layout/ResponsiveGridLayoutData.html) adds a new [`display`](https://api.feathersui.com/v1.0.0-rc.1/feathers/layout/ResponsiveGridLayoutData.html#display) property (and [`smDisplay`](https://api.feathersui.com/v1.0.0-rc.1/feathers/layout/ResponsiveGridLayoutData.html#smDisplay), [`mdDisplay`](https://api.feathersui.com/v1.0.0-rc.1/feathers/layout/ResponsiveGridLayoutData.html#mdDisplay), [`lgDisplay`](https://api.feathersui.com/v1.0.0-rc.1/feathers/layout/ResponsiveGridLayoutData.html#lgDisplay), etc.) to allow items to be shown or hidden from specific breakpoints.
+- [`ResponsiveGridLayout`](https://feathersui.com/learn/haxe-openfl/responsive-grid-layout/) supports a new "xxl" breakpoint, and [`ResponsiveGridLayoutData`](https://api.feathersui.com/v1.0.0/feathers/layout/ResponsiveGridLayoutData.html) adds a new [`display`](https://api.feathersui.com/v1.0.0/feathers/layout/ResponsiveGridLayoutData.html#display) property (and [`smDisplay`](https://api.feathersui.com/v1.0.0/feathers/layout/ResponsiveGridLayoutData.html#smDisplay), [`mdDisplay`](https://api.feathersui.com/v1.0.0/feathers/layout/ResponsiveGridLayoutData.html#mdDisplay), [`lgDisplay`](https://api.feathersui.com/v1.0.0/feathers/layout/ResponsiveGridLayoutData.html#lgDisplay), etc.) to allow items to be shown or hidden from specific breakpoints.
 
 - If `<haxedef name="feathersui_theme_manage_stage_color"/>` is defined in your [_project.xml_](https://lime.openfl.org/docs/project-files/xml-format/) file, the current theme will choose an appropriate color for OpenFL's stage. This is disabled by default to avoid conflicts.
 
-- The [`toggleBranch()`](https://api.feathersui.com/v1.0.0-rc.1/feathers/controls/TreeView.html#toggleBranch) and [`toggleChildrenOf()`](https://api.feathersui.com/v1.0.0-rc.1/feathers/controls/TreeView.html#toggleChildrenOf) methods of [`TreeView`](https://feathersui.com/learn/haxe-openfl/tree-view/) and [`TreeGridView`](https://feathersui.com/learn/haxe-openfl/tree-grid-view/) received significant performance optimizations.
+- The [`toggleBranch()`](https://api.feathersui.com/v1.0.0/feathers/controls/TreeView.html#toggleBranch) and [`toggleChildrenOf()`](https://api.feathersui.com/v1.0.0/feathers/controls/TreeView.html#toggleChildrenOf) methods of [`TreeView`](https://feathersui.com/learn/haxe-openfl/tree-view/) and [`TreeGridView`](https://feathersui.com/learn/haxe-openfl/tree-grid-view/) received significant performance optimizations.
 
 For complete details about what's new in this build, check out the [rc.1 CHANGELOG](https://github.com/feathersui/feathersui-openfl/blob/v1.0.0-rc.1/CHANGELOG.md).
 
@@ -45,7 +45,7 @@ Be sure to take a look at the complete [installation instructions](https://feath
 ## Documentation
 
 - The [Feathers UI Getting Started guide](https://feathersui.com/learn/haxe-openfl/getting-started) provides the most essential links for creating your first Feathers UI project and learning about all of the features and [UI components](https://feathersui.com/learn/haxe-openfl/ui-components) that are available in the framework.
-- The [v1.0.0-rc.1 API Reference](https://api.feathersui.com/v1.0.0-rc.1/) includes descriptions of all APIs available on Feathers UI components, layouts, utility functions, and more.
+- The [Feathers UI API Reference](https://api.feathersui.com/current/) includes descriptions of all APIs available on Feathers UI components, layouts, utility functions, and more.
 
 ## Community
 

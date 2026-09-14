@@ -38,9 +38,9 @@ Let's take a look at some of the new UI components and features that are include
 
 This build also fixes a ton of bugs, and it includes many new features too. Here's a few worth highlighting:
 
-- Scrolling containers, like [`ListView`](https://feathersui.com/learn/haxe-openfl/list-view/) and [`ScrollContainer`](https://feathersui.com/learn/haxe-openfl/scroll-container/), now support snapping to pages. These snap positions, which may be arbitrary values (not just pages), may be specified by layouts. For instance, the new [`PagedTiledRowsListLayout`](https://api.feathersui.com/current/feathers/layout/PagedTiledRowsListLayout.html), mentioned above, returns either an array of x or y values, depending on whether the pages are oriented horizontally or vertically.
+- Scrolling containers, like [`ListView`](https://feathersui.com/learn/haxe-openfl/list-view/) and [`ScrollContainer`](https://feathersui.com/learn/haxe-openfl/scroll-container/), now support snapping to pages. These snap positions, which may be arbitrary values (not just pages), may be specified by layouts. For instance, the new [`PagedTiledRowsListLayout`](https://api.feathersui.com/v1.0.0/feathers/layout/PagedTiledRowsListLayout.html), mentioned above, returns either an array of x or y values, depending on whether the pages are oriented horizontally or vertically.
 
-- Layouts may now implement the new [`IKeyboardNavigationLayout`](https://api.feathersui.com/current/feathers/layout/IKeyboardNavigationLayout.html) interface, if they need to customize how selection in components like [`ListView`](https://feathersui.com/learn/haxe-openfl/list-view/) changes when the keyboard arrow keys, page up/down keys, or home/end keys are pressed. This is used primarily by the new tiled layouts, but custom layouts will be able to use the same interface to customize their own behavior too, if they have interesting positioning algorithms.
+- Layouts may now implement the new [`IKeyboardNavigationLayout`](https://api.feathersui.com/v1.0.0/feathers/layout/IKeyboardNavigationLayout.html) interface, if they need to customize how selection in components like [`ListView`](https://feathersui.com/learn/haxe-openfl/list-view/) changes when the keyboard arrow keys, page up/down keys, or home/end keys are pressed. This is used primarily by the new tiled layouts, but custom layouts will be able to use the same interface to customize their own behavior too, if they have interesting positioning algorithms.
 
 - [`LayoutGroup`](https://feathersui.com/learn/haxe-openfl/layout-group/) and scrolling containers like [`ListView`](https://feathersui.com/learn/haxe-openfl/list-view/), [`ScrollContainer`](https://feathersui.com/learn/haxe-openfl/scroll-container/), and [`Panel`](https://feathersui.com/learn/haxe-openfl/panel/) have a new `maskSkin` property. This mask will automatically resize when the container resizes. Scrolling containers also add a similar `viewPortMaskSkin` property to mask only the view port (which is the region containing scrollable content).
 
@@ -59,7 +59,7 @@ Be sure to take a look at the complete [installation instructions](https://feath
 ## Documentation
 
 - The [Feathers UI Getting Started guide](https://feathersui.com/learn/haxe-openfl/getting-started) provides the most essential links for creating your first Feathers UI project and learning about all of the features and [UI components](https://feathersui.com/learn/haxe-openfl/ui-components) that are available in the framework.
-- The [v1.0.0-beta.5 API Reference](https://api.feathersui.com/v1.0.0-beta.5/) includes descriptions of all APIs available on Feathers UI components, layouts, utility functions, and more.
+- The [Feathers UI API Reference](https://api.feathersui.com/current/) includes descriptions of all APIs available on Feathers UI components, layouts, utility functions, and more.
 
 ## Community
 

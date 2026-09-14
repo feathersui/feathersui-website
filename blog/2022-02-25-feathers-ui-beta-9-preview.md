@@ -24,15 +24,15 @@ Let's take a look at some of the new features that are included with Feathers UI
 
 In particular, [`RouterNavigator`](https://feathersui.com/learn/haxe-openfl/router-navigator/) includes a number of improvements. Let's look at a few.
 
-- [`Route`](https://api.feathersui.com/v1.0.0-beta.9/feathers/controls/navigators/Route.html) now supports URL parameters. You probably wouldn't want to manually add separate routes for all user generated content from your database. That could be hundreds, thousands, or millions of URLs. Instead, your URLs probably follow a particular pattern, and you want to be able to make certain parts of those URLs into dynamic parameters.
+- [`Route`](https://api.feathersui.com/v1.0.0/feathers/controls/navigators/Route.html) now supports URL parameters. You probably wouldn't want to manually add separate routes for all user generated content from your database. That could be hundreds, thousands, or millions of URLs. Instead, your URLs probably follow a particular pattern, and you want to be able to make certain parts of those URLs into dynamic parameters.
 
   As an example, you might want to allow navigation to individual user profiles. You can specify a parameter starting with the `:` character, so `/users/:id` has an parameter named `id`. If someone navigates to "/users/coolguy12" or "/users/mrs_megan", the `id` parameter would extract the "coolguy12" and "mrs_megan" strings, respectively, and you could use that to load different user data using a single, shared route.
 
-- The new [`Route.withRedirect()`](https://api.feathersui.com/v1.0.0-beta.9/feathers/controls/navigators/Route.html#withRedirect) static method allows developers to specify a route that redirects to another. For example, you might want to redirect from "/users" to "/users/list", or you might change how URLs work in your website, and you want to redirect existing users from their old bookmarks to the new URLs.
+- The new [`Route.withRedirect()`](https://api.feathersui.com/v1.0.0/feathers/controls/navigators/Route.html#withRedirect) static method allows developers to specify a route that redirects to another. For example, you might want to redirect from "/users" to "/users/list", or you might change how URLs work in your website, and you want to redirect existing users from their old bookmarks to the new URLs.
 
 - [`RouterNavigator`](https://feathersui.com/learn/haxe-openfl/router-navigator/) now listens for [`TextEvent.LINK`](https://api.openfl.org/openfl/events/TextEvent.html#LINK) If the event text starts with "router:", the router will navigate to the specified URL. For instance, you could pass `<a href="event:router:/users/neo">Thomas Anderson</a>` to the `htmlText` property of a component like [`Label`](https://feathersui.com/learn/haxe-openfl/label/), the [`RouterNavigator`](https://feathersui.com/learn/haxe-openfl/router-navigator/) will detect when that link is clicked and navigate to "/users/neo" automatically.
 
-- The [`Route`](https://api.feathersui.com/v1.0.0-beta.9/feathers/controls/navigators/Route.html) class has a new [`updateState()`](https://api.feathersui.com/v1.0.0-beta.9/feathers/controls/navigators/Route.html#updateState) method that is called when a new route is displayed. The navigator passes a [`RouteState`](https://api.feathersui.com/v1.0.0-beta.9/feathers/data/RouteState.html) object, which contains all of the information about the URL, including parameters, history data, and query arguments parsed as [`URLVariables`](https://api.openfl.org/openfl/net/URLVariables.html).
+- The [`Route`](https://api.feathersui.com/v1.0.0/feathers/controls/navigators/Route.html) class has a new [`updateState()`](https://api.feathersui.com/v1.0.0/feathers/controls/navigators/Route.html#updateState) method that is called when a new route is displayed. The navigator passes a [`RouteState`](https://api.feathersui.com/v1.0.0/feathers/data/RouteState.html) object, which contains all of the information about the URL, including parameters, history data, and query arguments parsed as [`URLVariables`](https://api.openfl.org/openfl/net/URLVariables.html).
 
 <div style="text-align:center;"><img src="/blog/img/beta-9-hn-reader-and-todomvc.png" width="550"></div>
 
@@ -56,7 +56,7 @@ Be sure to take a look at the complete [installation instructions](https://feath
 ## Documentation
 
 - The [Feathers UI Getting Started guide](https://feathersui.com/learn/haxe-openfl/getting-started) provides the most essential links for creating your first Feathers UI project and learning about all of the features and [UI components](https://feathersui.com/learn/haxe-openfl/ui-components) that are available in the framework.
-- The [v1.0.0-beta.9 API Reference](https://api.feathersui.com/v1.0.0-beta.9/) includes descriptions of all APIs available on Feathers UI components, layouts, utility functions, and more.
+- The [Feathers UI API Reference](https://api.feathersui.com/current/) includes descriptions of all APIs available on Feathers UI components, layouts, utility functions, and more.
 
 ## Community
 

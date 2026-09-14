@@ -58,8 +58,8 @@ This build also includes a ton of minor improvements. Here's a few worth highlig
 
 - Drag-and-drop column resizing in the [`GridView`](https://feathersui.com/learn/haxe-openfl/grid-view) component
 - Multiple selection in the [`ListView`](https://feathersui.com/learn/haxe-openfl/list-view) and [`GridView`](https://feathersui.com/learn/haxe-openfl/grid-view) components
-- A new [`ResponsiveGridLayout`](https://api.feathersui.com/v1.0.0-beta.1/feathers/layout/ResponsiveGridLayout.html) class
-- New shape skins ([`TriangleSkin`](https://api.feathersui.com/v1.0.0-beta.1/feathers/skins/TriangleSkin.html), [`PillSkin`](https://api.feathersui.com/v1.0.0-beta.1/feathers/skins/PillSkin.html), and [`TabSkin`](https://api.feathersui.com/v1.0.0-beta.1/feathers/skins/TabSkin.html))
+- A new [`ResponsiveGridLayout`](https://api.feathersui.com/v1.0.0/feathers/layout/ResponsiveGridLayout.html) class
+- New shape skins ([`TriangleSkin`](https://api.feathersui.com/v1.0.0/feathers/skins/TriangleSkin.html), [`PillSkin`](https://api.feathersui.com/v1.0.0/feathers/skins/PillSkin.html), and [`TabSkin`](https://api.feathersui.com/v1.0.0/feathers/skins/TabSkin.html))
 - Big improvements to the focus manager
 - Touch gestures for the navigator components
 
@@ -84,7 +84,7 @@ Be sure to take a look at the complete [installation instructions](https://feath
 ## Documentation
 
 - The [Feathers UI Getting Started guide](https://feathersui.com/learn/haxe-openfl/getting-started) provides the most essential links for creating your first Feathers UI project and learning about all of the features and [UI components](https://feathersui.com/learn/haxe-openfl/ui-components) that are available in the framework.
-- The [v1.0.0-beta.1 API Reference](https://api.feathersui.com/v1.0.0-beta.1/) includes descriptions of all APIs available on Feathers UI components, layouts, utility functions, and more.
+- The [Feathers UI API Reference](https://api.feathersui.com/current/) includes descriptions of all APIs available on Feathers UI components, layouts, utility functions, and more.
 
 ## Community
 
