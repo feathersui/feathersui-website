@@ -234,7 +234,7 @@ In the example above, the list view will have a separate skins when enabled and 
 
 ### Layout
 
-Set the list view's [`layout`](https://api.feathersui.com/current/feathers/layout/feathers/controls/ListView.html#layout) property to change how its children are positioned and sized. By default, a list view uses [`VerticalListLayout`](./vertical-list-layout.md), but it may be changed to a different layout, if desired.
+Set the list view's [`layout`](https://api.feathersui.com/current/feathers/controls/ListView.html#layout) property to change how its children are positioned and sized. By default, a list view uses [`VerticalListLayout`](./vertical-list-layout.md), but it may be changed to a different layout, if desired.
 
 ```haxe
 listView.layout = new HorizontalListLayout();

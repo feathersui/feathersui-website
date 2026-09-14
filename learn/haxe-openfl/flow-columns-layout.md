@@ -34,7 +34,7 @@ child3.text = "Three";
 container.addChild(child3);
 ```
 
-Set the container's [`layout`](https://api.feathersui.com/unstable/feathers/layout/feathers/controls/LayoutGroup.html#layout) property to a new [`FlowColumnsLayout`](https://api.feathersui.com/unstable/feathers/layout/FlowColumnsLayout.html) instance.
+Set the container's [`layout`](https://api.feathersui.com/unstable/feathers/controls/LayoutGroup.html#layout) property to a new [`FlowColumnsLayout`](https://api.feathersui.com/unstable/feathers/layout/FlowColumnsLayout.html) instance.
 
 ```haxe
 container.layout = new FlowColumnsLayout();

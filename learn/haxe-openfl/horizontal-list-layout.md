@@ -20,7 +20,7 @@ container.dataProvider = new ArrayCollection([
 addChild(container);
 ```
 
-Set the container's [`layout`](https://api.feathersui.com/current/feathers/layout/feathers/controls/ListView.html#layout) property to a new [`HorizontalListLayout`](https://api.feathersui.com/current/feathers/layout/HorizontalListLayout.html) instance.
+Set the container's [`layout`](https://api.feathersui.com/current/feathers/controls/ListView.html#layout) property to a new [`HorizontalListLayout`](https://api.feathersui.com/current/feathers/layout/HorizontalListLayout.html) instance.
 
 ```haxe
 container.layout = new HorizontalListLayout();

@@ -27,7 +27,7 @@ panel.addChild(child2);
 
 A mix of [OpenFL's core display objects](https://books.openfl.org/openfl-developers-guide/display-programming/core-display-classes.html) and other Feathers UI components may be added to the panel.
 
-Set the panel's [`layout`](https://api.feathersui.com/current/feathers/layout/feathers/controls/ScrollContainer.html#layout) property to automatically position its children.
+Set the panel's [`layout`](https://api.feathersui.com/current/feathers/controls/ScrollContainer.html#layout) property to automatically position its children.
 
 ```haxe
 panel.layout = new HorizontalLayout();

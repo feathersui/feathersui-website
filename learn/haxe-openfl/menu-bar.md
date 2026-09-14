@@ -180,7 +180,7 @@ In the example above, the menu bar will have a separate skins when enabled and d
 
 ### Layout
 
-Set the menu bar's [`layout`](https://api.feathersui.com/unstable/feathers/layout/feathers/controls/MenuBar.html#layout) property to change how its children are positioned and sized. By default, a menu bar uses [`HorizontalLayout`](./horizontal-layout.md), but it may be changed to a different layout, if desired.
+Set the menu bar's [`layout`](https://api.feathersui.com/unstable/feathers/controls/MenuBar.html#layout) property to change how its children are positioned and sized. By default, a menu bar uses [`HorizontalLayout`](./horizontal-layout.md), but it may be changed to a different layout, if desired.
 
 ```haxe
 menuBar.layout = new VerticalLayout();

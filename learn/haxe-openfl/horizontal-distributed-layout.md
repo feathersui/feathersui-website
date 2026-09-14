@@ -34,7 +34,7 @@ child3.text = "Three";
 container.addChild(child3);
 ```
 
-Set the container's [`layout`](https://api.feathersui.com/current/feathers/layout/feathers/controls/LayoutGroup.html#layout) property to a new [`HorizontalDistributedLayout`](https://api.feathersui.com/current/feathers/layout/HorizontalDistributedLayout.html) instance.
+Set the container's [`layout`](https://api.feathersui.com/current/feathers/controls/LayoutGroup.html#layout) property to a new [`HorizontalDistributedLayout`](https://api.feathersui.com/current/feathers/layout/HorizontalDistributedLayout.html) instance.
 
 ```haxe
 container.layout = new HorizontalDistributedLayout();

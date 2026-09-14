@@ -27,7 +27,7 @@ item3.text = "Three";
 form.addChild(item3);
 ```
 
-Set the container's [`layout`](https://api.feathersui.com/current/feathers/layout/feathers/controls/LayoutGroup.html#layout) property to a new [`FormLayout`](https://api.feathersui.com/current/feathers/layout/FormLayout.html) instance.
+Set the container's [`layout`](https://api.feathersui.com/current/feathers/controls/LayoutGroup.html#layout) property to a new [`FormLayout`](https://api.feathersui.com/current/feathers/layout/FormLayout.html) instance.
 
 ```haxe
 form.layout = new FormLayout();

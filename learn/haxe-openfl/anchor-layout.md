@@ -28,7 +28,7 @@ child.text = "Anchored Button";
 container.addChild(child);
 ```
 
-Set the container's [`layout`](https://api.feathersui.com/current/feathers/layout/feathers/controls/LayoutGroup.html#layout) property to a new [`AnchorLayout`](https://api.feathersui.com/current/feathers/layout/AnchorLayout.html) instance.
+Set the container's [`layout`](https://api.feathersui.com/current/feathers/controls/LayoutGroup.html#layout) property to a new [`AnchorLayout`](https://api.feathersui.com/current/feathers/layout/AnchorLayout.html) instance.
 
 ```haxe
 container.layout = new AnchorLayout();
@@ -44,12 +44,12 @@ child.layoutData = new AnchorLayoutData();
 
 To position a child in a container using [`AnchorLayout`](https://api.feathersui.com/current/feathers/layout/AnchorLayout.html), a number of _anchor_ properties are available on the [`AnchorLayoutData`](https://api.feathersui.com/current/feathers/layout/AnchorLayoutData.html) class.
 
-- [`top`](https://api.feathersui.com/current/feathers/layout/feathers/layout/AnchorLayoutData.html#top) positions the child's top edge relative to the parent container or another child.
-- [`right`](https://api.feathersui.com/current/feathers/layout/feathers/layout/AnchorLayoutData.html#right) positions the child's right edge relative to the parent container or another child.
-- [`bottom`](https://api.feathersui.com/current/feathers/layout/feathers/layout/AnchorLayoutData.html#bottom) positions the child's bottom edge relative to the parent container or another child.
-- [`left`](https://api.feathersui.com/current/feathers/layout/feathers/layout/AnchorLayoutData.html#left) positions the child's left edge relative to the parent container or another child.
-- [`horizontalCenter`](https://api.feathersui.com/current/feathers/layout/feathers/layout/AnchorLayoutData.html#horizontalCenter) positions the child relative to the center of the parent container's x-axis.
-- [`verticalCenter`](https://api.feathersui.com/current/feathers/layout/feathers/layout/AnchorLayoutData.html#verticalCenter) positions the child relative to the center of the parent container's y-axis.
+- [`top`](https://api.feathersui.com/current/feathers/layout/AnchorLayoutData.html#top) positions the child's top edge relative to the parent container or another child.
+- [`right`](https://api.feathersui.com/current/feathers/layout/AnchorLayoutData.html#right) positions the child's right edge relative to the parent container or another child.
+- [`bottom`](https://api.feathersui.com/current/feathers/layout/AnchorLayoutData.html#bottom) positions the child's bottom edge relative to the parent container or another child.
+- [`left`](https://api.feathersui.com/current//feathers/layout/AnchorLayoutData.html#left) positions the child's left edge relative to the parent container or another child.
+- [`horizontalCenter`](https://api.feathersui.com/current/feathers/layout/AnchorLayoutData.html#horizontalCenter) positions the child relative to the center of the parent container's x-axis.
+- [`verticalCenter`](https://api.feathersui.com/current/feathers/layout/AnchorLayoutData.html#verticalCenter) positions the child relative to the center of the parent container's y-axis.
 
 The following example positions a child `10.0` pixels from the top edge and `15.0` pixels from the left edge of the parent container.
 

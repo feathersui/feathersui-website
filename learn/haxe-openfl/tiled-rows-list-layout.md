@@ -22,7 +22,7 @@ container.dataProvider = new ArrayCollection([
 addChild(container);
 ```
 
-Set the container's [`layout`](https://api.feathersui.com/current/feathers/layout/feathers/controls/ListView.html#layout) property to a new [`TiledRowsListLayout`](https://api.feathersui.com/current/feathers/layout/TiledRowsListLayout.html) instance.
+Set the container's [`layout`](https://api.feathersui.com/current/feathers/controls/ListView.html#layout) property to a new [`TiledRowsListLayout`](https://api.feathersui.com/current/feathers/layout/TiledRowsListLayout.html) instance.
 
 By default, the first child will be positioned in the top-left corner. Each additional child will be positioned to the right of the previous child — creating a horizontal row, until the total width exceeds the width of the parent container. Then, the next child will be positioned below the previous children to start a new row.
 

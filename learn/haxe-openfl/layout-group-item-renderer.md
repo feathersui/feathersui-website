@@ -110,7 +110,7 @@ In the example above, the item renderer will display a custom skin when it is no
 
 ## Layout
 
-Set the item renderer's [`layout`](https://api.feathersui.com/current/feathers/layout/feathers/controls/LayoutGroup.html#layout) property to automatically position its children.
+Set the item renderer's [`layout`](https://api.feathersui.com/current/feathers/controls/LayoutGroup.html#layout) property to automatically position its children.
 
 ```haxe
 var itemLayout = new HorizontalLayout();

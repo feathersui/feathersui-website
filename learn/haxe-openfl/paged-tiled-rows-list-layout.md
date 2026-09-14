@@ -20,7 +20,7 @@ container.dataProvider = new ArrayCollection([
 addChild(container);
 ```
 
-Set the container's [`layout`](https://api.feathersui.com/current/feathers/layout/feathers/controls/ListView.html#layout) property to a new [`PagedTiledRowsListLayout`](https://api.feathersui.com/current/feathers/layout/PagedTiledRowsListLayout.html) instance.
+Set the container's [`layout`](https://api.feathersui.com/current/feathers/controls/ListView.html#layout) property to a new [`PagedTiledRowsListLayout`](https://api.feathersui.com/current/feathers/layout/PagedTiledRowsListLayout.html) instance.
 
 By default, the first child will be positioned in the top-left corner. Each additional child will be positioned to the right of the previous child — creating a horizontal row, until the total width exceeds the width of the parent container. Then, the next child will be positioned below the previous children to start a new row. When the total combined height of the rows in a page exceeds the height of the parent container, the next child will be positioned at the top-left corner of a new page.
 

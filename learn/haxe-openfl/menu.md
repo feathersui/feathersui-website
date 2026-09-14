@@ -269,7 +269,7 @@ The menu automatically calculates its preferred size based on the initial dimens
 
 ### Layout
 
-Set the menu's [`layout`](https://api.feathersui.com/unstable/feathers/layout/feathers/controls/Menu.html#layout) property to change how its children are positioned and sized. By default, a menu uses [`VerticalListLayout`](./vertical-list-layout.md), but it may be changed to a different layout, if desired.
+Set the menu's [`layout`](https://api.feathersui.com/unstable/feathers/controls/Menu.html#layout) property to change how its children are positioned and sized. By default, a menu uses [`VerticalListLayout`](./vertical-list-layout.md), but it may be changed to a different layout, if desired.
 
 ```haxe
 menu.layout = new HorizontalListLayout();
